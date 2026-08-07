@@ -217,8 +217,8 @@
   // aile: 0-5, donem: 0-7
   const N = [
     // --- dönem 0 ---
-    {id:"chp", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1923 –", durum:"faal", aile:0, donem:0,
-     sembol:"Altı Ok", not:"1981'de kapatıldı, 1992'de açıldı; 2026'da 91 vekil ayrıldı"},
+    {id:"chp23", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1923 – 1981", durum:"kapatildi", aile:0, donem:0,
+     sembol:"Altı Ok", not:"Cumhuriyeti kuran parti; 12 Eylül'le kapatıldı"},
     {id:"tcf", kisa:"TCF", ad:"Terakkiperver Cumhuriyet Fırkası", yil:"1924 – 1925", durum:"kapatildi", aile:0, donem:0,
      not:"İlk muhalefet partisi"},
     {id:"scf", kisa:"SCF", ad:"Serbest Cumhuriyet Fırkası", yil:"1930", durum:"kapatildi", aile:0, donem:0,
@@ -272,6 +272,8 @@
      not:"TKP ile TİP'in birleşmesi"},
 
     // --- dönem 5 ---
+    {id:"chp92", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1992 –", durum:"faal", aile:0, donem:5,
+     sembol:"Altı Ok", not:"Kapalı kaldığı 11 yılın ardından aynı adla yeniden açıldı"},
     {id:"mhp93", kisa:"MHP", ad:"Milliyetçi Hareket Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
      sembol:"Üç hilal", not:"MÇP'nin adını yeniden alması"},
     {id:"bbp", kisa:"BBP", ad:"Büyük Birlik Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
@@ -330,12 +332,13 @@
 
   // tip: 'devam' | 'bolunme' | 'katilma'
   const E = [
-    ["chp","tcf","bolunme"], ["chp","scf","bolunme"],
-    ["chp","hp83","bolunme"], ["chp","sodep","bolunme"],
+    ["chp23","tcf","bolunme"], ["chp23","scf","bolunme"],
+    ["chp23","hp83","bolunme"], ["chp23","sodep","bolunme"],
     ["hp83","shp","katilma"], ["sodep","shp","katilma"],
-    ["shp","chp","katilma"], ["chp","dsp","bolunme"],
-    ["chp","memleket","bolunme"], ["memleket","chp","katilma"],
-    ["chp","yeniparti","bolunme"], ["shp","hep","bolunme"],
+    ["chp23","chp92","devam"],
+    ["shp","chp92","katilma"], ["chp23","dsp","bolunme"],
+    ["chp92","memleket","bolunme"], ["memleket","chp92","katilma"],
+    ["chp92","yeniparti","bolunme"], ["shp","hep","bolunme"],
 
     ["dp46","ap","devam"], ["dp46","ytp","devam"],
     ["ap","demp70","bolunme"], ["demp70","ap","katilma"],
