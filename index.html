@@ -19,6 +19,7 @@
     --a4:#28457A; /* milliyetçi */
     --a5:#7B3F9D; /* kürt siyasi hareketi */
     --a6:#8E2050; /* sosyalist sol */
+    --a7:#0F7A80; /* liberal */
   }
 
   *{box-sizing:border-box}
@@ -73,7 +74,7 @@
   .scroller{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:10px}
 
   /* ---------- şema ---------- */
-  #chart{position:relative;min-width:1190px;max-width:1360px;margin:0 auto}
+  #chart{position:relative;min-width:1360px;max-width:1500px;margin:0 auto}
   #edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
 
   .banner{
@@ -88,7 +89,7 @@
   .banner.kesinti .ad{opacity:1;font-style:normal;font-weight:600;font-family:"IBM Plex Sans",sans-serif;font-size:12.5px}
 
   .satir{
-    display:grid;grid-template-columns:repeat(6,1fr);gap:0 14px;
+    display:grid;grid-template-columns:repeat(7,1fr);gap:0 12px;
     margin-bottom:26px;position:relative;z-index:1;
   }
   .hucre{display:flex;flex-direction:column;gap:12px}
@@ -200,7 +201,8 @@
     {ad:"Milli Görüş / muhafazakâr", renk:"var(--a3)", ham:"#25795A"},
     {ad:"Milliyetçi", renk:"var(--a4)", ham:"#28457A"},
     {ad:"Kürt siyasi hareketi", renk:"var(--a5)", ham:"#7B3F9D"},
-    {ad:"Sosyalist sol", renk:"var(--a6)", ham:"#8E2050"}
+    {ad:"Sosyalist sol", renk:"var(--a6)", ham:"#8E2050"},
+    {ad:"Liberal", renk:"var(--a7)", ham:"#0F7A80"}
   ];
 
   const DONEMLER = [
@@ -282,6 +284,14 @@
     // --- dönem 5 ---
     {id:"chp92", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1992 –", durum:"faal", aile:0, donem:5,
      sembol:"Altı Ok", not:"Kapalı kaldığı 11 yılın ardından aynı adla yeniden açıldı"},
+    {id:"dp92", kisa:"DP", ad:"Demokrat Parti", yil:"1992 – 2005", durum:"katildi", aile:1, donem:5,
+     not:"CHP ile aynı yasayla yeniden açıldı; 2005'te isim hakkıyla ANAP'a katıldı"},
+    {id:"ldp", kisa:"LDP", ad:"Liberal Demokrat Parti", yil:"1994 –", durum:"faal", aile:6, donem:5,
+     sembol:"Yunus", not:"Tibuk, DP genel başkanlığını kaybedince ayrılıp kurdu"},
+    {id:"ydh", kisa:"YDH", ad:"Yeni Demokrasi Hareketi", yil:"1994 – 1997", durum:"katildi", aile:6, donem:5,
+     not:"Boyner liderliğinde, ağırlıkla sol kökenli aydın ve iş insanı kadrosu"},
+    {id:"dtp97", kisa:"DTP", ad:"Demokrat Türkiye Partisi", yil:"1997 – 2005", durum:"katildi", aile:1, donem:5,
+     sembol:"Şemsiye", not:"DYP'den kopan \"Yeni Oluşumcular\"; 2005'te HÜRPARTİ oldu"},
     {id:"mhp93", kisa:"MHP", ad:"Milliyetçi Hareket Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
      sembol:"Üç hilal", not:"MÇP'nin adını yeniden alması"},
     {id:"bbp", kisa:"BBP", ad:"Büyük Birlik Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
@@ -326,6 +336,8 @@
      not:"Özel ve 91 vekilin ayrılışı; TBMM'de ana muhalefet"},
     {id:"anahtar", kisa:"A Parti", ad:"Anahtar Parti", yil:"2024 –", durum:"faal", aile:3, donem:7,
      sembol:"Anahtar", not:"İYİ Parti'den ayrılan Ağıralioğlu; amblemi MSP'yi andırıyor"},
+    {id:"tdp", kisa:"TDP", ad:"Türkiye Değişim Partisi", yil:"2020 – 2023", durum:"katildi", aile:0, donem:7,
+     not:"Mustafa Sarıgül; 2023'te CHP ile birleşti"},
     {id:"yrp", kisa:"YRP", ad:"Yeniden Refah Partisi", yil:"2018 –", durum:"faal", aile:2, donem:7,
      not:"Saadet'ten ayrılan Erbakan çizgisi"},
     {id:"gelecek", kisa:"Gelecek P.", ad:"Gelecek Partisi", yil:"2019 – 2026", durum:"kapandi", aile:2, donem:7,
@@ -358,10 +370,13 @@
     ["dsp","ytp02","bolunme"], ["ytp02","chp92","katilma"],
     ["chp92","anadolu","bolunme"],
 
-    ["dp46","ap","devam"], ["dp46","ytp","devam"],
+    ["dp46","ap","devam"], ["dp46","ytp","devam"], ["dp46","dp92","devam"],
+    ["dp92","ldp","bolunme"], ["dp92","anap","katilma"], ["shp","ydh","bolunme"], ["tip61","ydh","bolunme"],
     ["ap","demp70","bolunme"], ["demp70","ap","katilma"],
     ["ap","dyp","devam"], ["ap","anap","bolunme"],
     ["dyp","dp07","devam"], ["anap","dp07","katilma"],
+    ["dyp","dtp97","bolunme"],
+    ["dsp","tdp","bolunme"], ["tdp","chp92","katilma"],
 
     ["mnp","msp","devam"], ["msp","rp","devam"], ["rp","fp","devam"],
     ["fp","sp","devam"], ["fp","akp","bolunme"],
@@ -405,7 +420,7 @@
     rows.appendChild(b);
 
     const s=document.createElement("div"); s.className="satir";
-    for(let c=0;c<6;c++){
+    for(let c=0;c<7;c++){
       const h=document.createElement("div"); h.className="hucre"; h.dataset.col=c;
       N.filter(n=>n.donem===i && n.aile===c).forEach(n=>h.appendChild(kart(n)));
       s.appendChild(h);
