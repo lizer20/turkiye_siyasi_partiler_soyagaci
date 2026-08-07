@@ -1,0 +1,480 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --kagit:#D8DACF;
+    --kagit2:#C9CCC0;
+    --murekkep:#151810;
+    --kart:#F5F5F0;
+    --soluk:#6A6E60;
+    --cizgi:#A9AD9E;
+
+    --a1:#C0392B; /* cumhuriyetçi / sosyal demokrat */
+    --a2:#B57B18; /* merkez sağ */
+    --a3:#25795A; /* milli görüş / muhafazakâr */
+    --a4:#28457A; /* milliyetçi */
+    --a5:#7B3F9D; /* kürt siyasi hareketi */
+    --a6:#8E2050; /* sosyalist sol */
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0}
+  .wrap{
+    background:var(--kagit);
+    color:var(--murekkep);
+    font-family:"IBM Plex Sans",system-ui,sans-serif;
+    padding:28px 20px 40px;
+    line-height:1.45;
+  }
+
+  /* ---------- başlık ---------- */
+  header{max-width:1100px;margin:0 auto 26px}
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--soluk);margin-bottom:10px;
+  }
+  h1{
+    font-family:"Fraunces",Georgia,serif;font-weight:700;
+    font-size:clamp(30px,5.2vw,52px);line-height:1.02;margin:0 0 14px;
+    letter-spacing:-.015em;
+  }
+  h1 em{font-style:italic;font-weight:500}
+  .lede{max-width:62ch;font-size:15px;color:#33372B;margin:0 0 6px}
+  .disclaimer{
+    max-width:62ch;font-size:12.5px;color:var(--soluk);
+    border-left:2px solid var(--cizgi);padding-left:12px;margin-top:16px;
+  }
+
+  /* ---------- lejant ---------- */
+  .lejant{
+    max-width:1100px;margin:22px auto 0;display:flex;flex-wrap:wrap;gap:6px 20px;
+    padding-top:16px;border-top:1px solid var(--cizgi);
+  }
+  .lej{display:flex;align-items:center;gap:8px;font-size:12.5px;font-weight:500}
+  .dot{width:11px;height:11px;border-radius:50%;flex:none}
+  .lejant2{
+    max-width:1100px;margin:14px auto 0;display:flex;flex-wrap:wrap;gap:6px 20px;
+    font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--soluk);
+  }
+  .lejant2 span{display:flex;align-items:center;gap:7px}
+  .swatch{width:26px;height:0;border-top:2px solid var(--soluk);flex:none}
+  .swatch.kesik{border-top-style:dashed}
+  .swatch.nokta{border-top-style:dotted}
+
+  /* ---------- kaydırma ---------- */
+  .kaydir-ipucu{
+    max-width:1100px;margin:24px auto 8px;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;color:var(--soluk);letter-spacing:.06em;
+  }
+  .scroller{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding-bottom:10px}
+
+  /* ---------- şema ---------- */
+  #chart{position:relative;min-width:1190px;max-width:1360px;margin:0 auto}
+  #edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
+
+  .banner{
+    position:relative;z-index:1;
+    background:var(--murekkep);color:var(--kagit);
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+    padding:7px 14px;margin:0 0 14px;
+  }
+  .banner .yil{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:12px;letter-spacing:.1em}
+  .banner .ad{font-family:"Fraunces",serif;font-size:14px;font-style:italic;opacity:.85}
+  .banner.kesinti{background:#7A1509}
+  .banner.kesinti .ad{opacity:1;font-style:normal;font-weight:600;font-family:"IBM Plex Sans",sans-serif;font-size:12.5px}
+
+  .satir{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:0 14px;
+    margin-bottom:26px;position:relative;z-index:1;
+  }
+  .hucre{display:flex;flex-direction:column;gap:12px}
+
+  .kart{
+    background:var(--kart);
+    border:1px solid var(--cizgi);
+    border-left:4px solid var(--aile);
+    padding:9px 11px 10px;
+    position:relative;
+    transition:box-shadow .18s, transform .18s, opacity .18s;
+  }
+  .kart .kisa{
+    font-family:"Fraunces",serif;font-weight:700;font-size:16px;line-height:1.1;
+    color:var(--aile);margin-bottom:2px;letter-spacing:-.01em;
+  }
+  .kart .ad{font-size:11.5px;line-height:1.25;color:#2A2E22;margin-bottom:6px}
+  .kart .yil{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;color:var(--soluk);
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+  }
+  .kart .sembol{
+    font-size:10.5px;color:var(--soluk);margin-top:5px;padding-top:5px;
+    border-top:1px dotted var(--cizgi);
+  }
+  .kart .sembol b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:#2A2E22}
+  .kart .not{font-size:10.5px;color:var(--soluk);margin-top:5px;font-style:italic}
+
+  .rozet{
+    font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;
+    letter-spacing:.07em;text-transform:uppercase;
+    padding:1px 5px;border:1px solid currentColor;white-space:nowrap;
+  }
+  .r-kapatildi{color:#7A1509}
+  .r-faal{color:#25795A}
+  .r-katildi{color:#5C5F52}
+
+  /* kapatılmış partiler: taranmış zemin — şemanın imzası */
+  .kart.kapatildi{
+    background:
+      repeating-linear-gradient(-45deg,
+        transparent 0 6px,
+        rgba(122,21,9,.09) 6px 7px);
+    background-color:var(--kart);
+    border-style:dashed;
+  }
+
+  .kart:hover{transform:translateY(-2px);box-shadow:0 4px 0 rgba(21,24,16,.18)}
+  #chart.odak .kart{opacity:.28}
+  #chart.odak .kart.aktif{opacity:1}
+  #chart.odak .kart.komsu{opacity:1}
+
+  path.kenar{fill:none;stroke-width:1.6;opacity:.5;transition:opacity .18s,stroke-width .18s}
+  path.kenar.bolunme{stroke-dasharray:6 4}
+  path.kenar.katilma{stroke-dasharray:2 4;stroke-width:2}
+  #chart.odak path.kenar{opacity:.07}
+  #chart.odak path.kenar.aktif{opacity:1;stroke-width:2.6}
+
+  footer{
+    max-width:1100px;margin:26px auto 0;padding-top:16px;border-top:1px solid var(--cizgi);
+    font-size:12px;color:var(--soluk);
+  }
+  footer p{margin:0 0 8px;max-width:70ch}
+
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+  @media (max-width:700px){
+    .wrap{padding:20px 14px 30px}
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">1923 — 2026 · süreklilikler, kopuşlar, kapatmalar · son güncelleme Ağustos 2026</div>
+    <h1>Türkiye siyasi partileri<br><em>soyağacı</em></h1>
+    <p class="lede">Altı ana gelenek, yüz yıllık bir çizelge. Düz çizgiler doğrudan devamlılığı (isim değişikliği, yeniden kuruluş), kesikli çizgiler bölünmeleri, noktalı çizgiler katılma ve birleşmeleri gösterir.</p>
+    <p class="lede" style="margin-top:10px">Taralı ve kesik çerçeveli kartlar, <b>kapatılmış</b> partilerdir. Kırmızı bantlar ise şemadaki kopuş anları: askerî müdahaleler ve kapatma dalgaları.</p>
+    <p class="disclaimer">Parti amblemleri tescilli marka olduğu için çizilmedi; bunun yerine her gelenek bir renkle temsil ediliyor ve yaygın bilinen semboller yazıyla belirtiliyor. Bazı bağlantılar hukuki halefiyet değil siyasi süreklilik iddiasıdır ve tartışmalıdır — kartlardaki notlara bakın.</p>
+  </header>
+
+  <div class="lejant" id="lejant"></div>
+  <div class="lejant2">
+    <span><i class="swatch"></i> doğrudan devam / isim değişikliği</span>
+    <span><i class="swatch kesik"></i> bölünme, ayrılan kadro</span>
+    <span><i class="swatch nokta"></i> katılma / birleşme</span>
+  </div>
+
+  <div class="kaydir-ipucu">↔ şemayı yatay kaydırabilir, bir partinin üstüne gelerek bağlarını izleyebilirsiniz</div>
+
+  <div class="scroller">
+    <div id="chart">
+      <svg id="edges"></svg>
+      <div id="rows"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p><b>Okuma notu.</b> Şema kurucu tarihe göre dizilmiştir; bir parti kurulduğu dönem bandında görünür, faaliyeti sonraki yıllara uzasa da. 12 Eylül 1980'de mevcut bütün partiler kapatıldığı için 1983 bandı neredeyse tümüyle yeniden kuruluşlardan oluşur.</p>
+    <p><b>Yeni Yol hakkında.</b> Şemadaki tek "çatı parti". TBMM İçtüzüğü grup kurmak için tek bir partiden en az 20 milletvekili şartı aradığından, Saadet, Gelecek ve DEVA 2025'te ortak bir tüzel kişilik kurdu. Üç parti örgütlerini, programlarını ve genel başkanlarını korudu; bu yüzden şemada birleşme değil, üç ayrı noktalı bağla gösteriliyor.</p>
+    <p><b>Rozetler.</b> "kapatıldı" yargı ya da darbe kararıyla sona ermeyi, "feshedildi" partinin kendi kararıyla kapanmasını, "devredildi" kadro ve üyelerin başka bir partiye geçmesini belirtir.</p>
+    <p><b>Kapsam.</b> Meclise girmiş, kapatılmış ya da bir geleneğin halkası olan partiler alınmıştır; Türkiye'de kurulmuş yüzlerce partinin tamamı değil.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  const AILE = [
+    {ad:"Cumhuriyetçi / sosyal demokrat", renk:"var(--a1)", ham:"#C0392B"},
+    {ad:"Merkez sağ", renk:"var(--a2)", ham:"#B57B18"},
+    {ad:"Milli Görüş / muhafazakâr", renk:"var(--a3)", ham:"#25795A"},
+    {ad:"Milliyetçi", renk:"var(--a4)", ham:"#28457A"},
+    {ad:"Kürt siyasi hareketi", renk:"var(--a5)", ham:"#7B3F9D"},
+    {ad:"Sosyalist sol", renk:"var(--a6)", ham:"#8E2050"}
+  ];
+
+  const DONEMLER = [
+    {yil:"1923 – 1945", ad:"Tek parti dönemi", kesinti:null},
+    {yil:"1946 – 1960", ad:"Çok partili hayata geçiş", kesinti:"27 Mayıs 1960 — DP kapatıldı, liderleri idam edildi"},
+    {yil:"1961 – 1971", ad:"1961 Anayasası ve yeni kurulan partiler", kesinti:"12 Mart 1971 — TİP ve MNP kapatıldı"},
+    {yil:"1972 – 1980", ad:"Koalisyonlar çağı", kesinti:"12 Eylül 1980 — bütün siyasi partiler kapatıldı"},
+    {yil:"1983 – 1990", ad:"Yeniden kuruluş", kesinti:null},
+    {yil:"1991 – 2000", ad:"Koalisyonlar ve kapatma davaları", kesinti:"28 Şubat 1997 — Refah Partisi kapatıldı"},
+    {yil:"2001 – 2015", ad:"AK Parti dönemi", kesinti:null},
+    {yil:"2016 – 2026", ad:"Yeni bölünmeler ve ittifaklar", kesinti:null}
+  ];
+
+  // aile: 0-5, donem: 0-7
+  const N = [
+    // --- dönem 0 ---
+    {id:"chp23", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1923 – 1981", durum:"kapatildi", aile:0, donem:0,
+     sembol:"Altı Ok", not:"Cumhuriyeti kuran parti; 12 Eylül'le kapatıldı"},
+    {id:"tcf", kisa:"TCF", ad:"Terakkiperver Cumhuriyet Fırkası", yil:"1924 – 1925", durum:"kapatildi", aile:0, donem:0,
+     not:"İlk muhalefet partisi"},
+    {id:"scf", kisa:"SCF", ad:"Serbest Cumhuriyet Fırkası", yil:"1930", durum:"kapatildi", aile:0, donem:0,
+     not:"Aynı yıl kendini feshetti"},
+    {id:"tkp20", kisa:"TKP", ad:"Türkiye Komünist Partisi", yil:"1920 – 1988", durum:"kapatildi", aile:5, donem:0,
+     not:"Uzun süre yasadışı faaliyet"},
+
+    // --- dönem 1 ---
+    {id:"dp46", kisa:"DP", ad:"Demokrat Parti", yil:"1946 – 1960", durum:"kapatildi", aile:1, donem:1,
+     not:"1950–60 arası iktidar; darbeyle kapatıldı"},
+    {id:"mp48", kisa:"MP", ad:"Millet Partisi", yil:"1948 – 1958", durum:"kapatildi", aile:3, donem:1},
+    {id:"ckmp", kisa:"CKMP", ad:"Cumhuriyetçi Köylü Millet Partisi", yil:"1958 – 1969", durum:"katildi", aile:3, donem:1,
+     not:"1965'te Türkeş partiye katıldı"},
+
+    // --- dönem 2 ---
+    {id:"ap", kisa:"AP", ad:"Adalet Partisi", yil:"1961 – 1981", durum:"kapatildi", aile:1, donem:2,
+     sembol:"Kır at", not:"DP'nin ana halefi, Demirel liderliğinde"},
+    {id:"ytp", kisa:"YTP", ad:"Yeni Türkiye Partisi", yil:"1961 – 1973", durum:"kapatildi", aile:1, donem:2,
+     not:"DP mirasını paylaşan ikinci damar"},
+    {id:"demp70", kisa:"DP", ad:"Demokratik Parti", yil:"1970 – 1980", durum:"katildi", aile:1, donem:2,
+     not:"AP'den ayrıldı, 1980'de AP'ye döndü"},
+    {id:"mhp69", kisa:"MHP", ad:"Milliyetçi Hareket Partisi", yil:"1969 – 1981", durum:"kapatildi", aile:3, donem:2,
+     sembol:"Üç hilal", not:"CKMP'nin ad değişikliğiyle kuruldu"},
+    {id:"mnp", kisa:"MNP", ad:"Milli Nizam Partisi", yil:"1970 – 1971", durum:"kapatildi", aile:2, donem:2,
+     not:"Milli Görüş'ün ilk partisi"},
+    {id:"tip61", kisa:"TİP", ad:"Türkiye İşçi Partisi", yil:"1961 – 1971", durum:"kapatildi", aile:5, donem:2,
+     not:"Sosyalist solun meclise ilk girişi"},
+
+    // --- dönem 3 ---
+    {id:"msp", kisa:"MSP", ad:"Milli Selamet Partisi", yil:"1972 – 1981", durum:"kapatildi", aile:2, donem:3,
+     sembol:"Anahtar", not:"1970'ler koalisyonlarının ortağı"},
+
+    // --- dönem 4 ---
+    {id:"hp83", kisa:"HP", ad:"Halkçı Parti", yil:"1983 – 1985", durum:"katildi", aile:0, donem:4},
+    {id:"sodep", kisa:"SODEP", ad:"Sosyal Demokrasi Partisi", yil:"1983 – 1985", durum:"katildi", aile:0, donem:4},
+    {id:"shp", kisa:"SHP", ad:"Sosyaldemokrat Halkçı Parti", yil:"1985 – 1995", durum:"katildi", aile:0, donem:4,
+     not:"1995'te CHP'ye katıldı"},
+    {id:"dsp", kisa:"DSP", ad:"Demokratik Sol Parti", yil:"1985 –", durum:"faal", aile:0, donem:4,
+     sembol:"Güvercin", not:"Ecevit çizgisi, CHP'den ayrı damar"},
+    {id:"anap", kisa:"ANAP", ad:"Anavatan Partisi", yil:"1983 – 2009", durum:"katildi", aile:1, donem:4,
+     sembol:"Bal peteği", not:"\"Dört eğilimi birleştirme\" iddiası; Özal"},
+    {id:"dyp", kisa:"DYP", ad:"Doğru Yol Partisi", yil:"1983 – 2007", durum:"katildi", aile:1, donem:4,
+     sembol:"Kır at", not:"AP'nin doğrudan devamı"},
+    {id:"rp", kisa:"RP", ad:"Refah Partisi", yil:"1983 – 1998", durum:"kapatildi", aile:2, donem:4,
+     not:"1996–97 arası iktidar ortağı"},
+    {id:"mcp", kisa:"MÇP", ad:"Milliyetçi Çalışma Partisi", yil:"1983 – 1993", durum:"katildi", aile:3, donem:4,
+     not:"MHP'nin kapatılma sonrası devamı"},
+    {id:"hep", kisa:"HEP", ad:"Halkın Emek Partisi", yil:"1990 – 1993", durum:"kapatildi", aile:4, donem:4,
+     not:"SHP'den ayrılan milletvekilleriyle kuruldu"},
+    {id:"tbkp", kisa:"TBKP", ad:"Türkiye Birleşik Komünist Partisi", yil:"1990 – 1991", durum:"kapatildi", aile:5, donem:4,
+     not:"TKP ile TİP'in birleşmesi"},
+
+    // --- dönem 5 ---
+    {id:"chp92", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1992 –", durum:"faal", aile:0, donem:5,
+     sembol:"Altı Ok", not:"Kapalı kaldığı 11 yılın ardından aynı adla yeniden açıldı"},
+    {id:"mhp93", kisa:"MHP", ad:"Milliyetçi Hareket Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
+     sembol:"Üç hilal", not:"MÇP'nin adını yeniden alması"},
+    {id:"bbp", kisa:"BBP", ad:"Büyük Birlik Partisi", yil:"1993 –", durum:"faal", aile:3, donem:5,
+     not:"MHP'den ayrılan Yazıcıoğlu kanadı"},
+    {id:"fp", kisa:"FP", ad:"Fazilet Partisi", yil:"1997 – 2001", durum:"kapatildi", aile:2, donem:5,
+     not:"Refah kapatılınca kuruldu"},
+    {id:"dep", kisa:"DEP", ad:"Demokrasi Partisi", yil:"1993 – 1994", durum:"kapatildi", aile:4, donem:5},
+    {id:"hadep", kisa:"HADEP", ad:"Halkın Demokrasi Partisi", yil:"1994 – 2003", durum:"kapatildi", aile:4, donem:5},
+    {id:"dehap", kisa:"DEHAP", ad:"Demokratik Halk Partisi", yil:"1997 – 2005", durum:"katildi", aile:4, donem:5},
+    {id:"odp", kisa:"ÖDP", ad:"Özgürlük ve Dayanışma Partisi", yil:"1996 –", durum:"faal", aile:5, donem:5,
+     not:"Sosyalist grupların birleşmesi"},
+    {id:"emep", kisa:"EMEP", ad:"Emek Partisi", yil:"1996 –", durum:"faal", aile:5, donem:5},
+    {id:"ip92", kisa:"İP", ad:"İşçi Partisi", yil:"1992 – 2015", durum:"katildi", aile:5, donem:5,
+     not:"Perinçek çizgisi"},
+
+    // --- dönem 6 ---
+    {id:"akp", kisa:"AK Parti", ad:"Adalet ve Kalkınma Partisi", yil:"2001 –", durum:"faal", aile:2, donem:6,
+     sembol:"Ampul", not:"Fazilet'in \"yenilikçi\" kanadı"},
+    {id:"sp", kisa:"SP", ad:"Saadet Partisi", yil:"2001 –", durum:"faal", aile:2, donem:6,
+     not:"Fazilet'in \"gelenekçi\" kanadı"},
+    {id:"dp07", kisa:"DP", ad:"Demokrat Parti", yil:"2007 –", durum:"faal", aile:1, donem:6,
+     not:"DYP'nin ad değişikliği; 2009'da ANAP katıldı"},
+    {id:"dtp", kisa:"DTP", ad:"Demokratik Toplum Partisi", yil:"2005 – 2009", durum:"kapatildi", aile:4, donem:6},
+    {id:"bdp", kisa:"BDP", ad:"Barış ve Demokrasi Partisi", yil:"2008 – 2014", durum:"katildi", aile:4, donem:6,
+     not:"2014'te DBP adını aldı, vekiller HDP'ye geçti"},
+    {id:"hdp", kisa:"HDP", ad:"Halkların Demokratik Partisi", yil:"2012 –", durum:"faal", aile:4, donem:6},
+    {id:"yesilsol", kisa:"YSP", ad:"Yeşil Sol Parti", yil:"2012 – 2023", durum:"faal", aile:4, donem:6,
+     not:"2023 seçimlerinde HDP'nin listesi oldu"},
+    {id:"vatan", kisa:"Vatan P.", ad:"Vatan Partisi", yil:"2015 –", durum:"faal", aile:5, donem:6,
+     not:"İşçi Partisi'nin ad değişikliği"},
+
+    // --- dönem 7 ---
+    {id:"memleket", kisa:"Memleket P.", ad:"Memleket Partisi", yil:"2021 – 2025", durum:"katildi", aile:0, donem:7,
+     not:"İnce 2025'te CHP'ye döndü; parti kurultay kararıyla kapandı"},
+    {id:"yeniparti", kisa:"Yeni Parti", ad:"Yeni Parti", yil:"2026 –", durum:"faal", aile:0, donem:7,
+     not:"Özel ve 91 vekilin ayrılışı; TBMM'de ana muhalefet"},
+    {id:"anahtar", kisa:"A Parti", ad:"Anahtar Parti", yil:"2024 –", durum:"faal", aile:3, donem:7,
+     sembol:"Anahtar", not:"İYİ Parti'den ayrılan Ağıralioğlu; amblemi MSP'yi andırıyor"},
+    {id:"yrp", kisa:"YRP", ad:"Yeniden Refah Partisi", yil:"2018 –", durum:"faal", aile:2, donem:7,
+     not:"Saadet'ten ayrılan Erbakan çizgisi"},
+    {id:"gelecek", kisa:"Gelecek P.", ad:"Gelecek Partisi", yil:"2019 – 2026", durum:"kapandi", aile:2, donem:7,
+     not:"AK Parti'den ayrılan Davutoğlu; Temmuz 2026'da feshedildi"},
+    {id:"yeniyol", kisa:"Yeni Yol", ad:"Yeni Yol Partisi", yil:"2025 –", durum:"faal", aile:2, donem:7,
+     not:"Saadet + Gelecek + DEVA'nın ortak Meclis grubu; partiler ayrı kaldı"},
+    {id:"deva", kisa:"DEVA", ad:"Demokrasi ve Atılım Partisi", yil:"2020 –", durum:"faal", aile:2, donem:7,
+     not:"AK Parti'den ayrılan Babacan"},
+    {id:"iyi", kisa:"İYİ Parti", ad:"İyi Parti", yil:"2017 –", durum:"faal", aile:3, donem:7,
+     sembol:"16 ışınlı güneş", not:"MHP'den ayrılan Akşener kanadı"},
+    {id:"zafer", kisa:"Zafer P.", ad:"Zafer Partisi", yil:"2021 –", durum:"faal", aile:3, donem:7,
+     not:"İYİ Parti'den ayrılan Özdağ"},
+    {id:"dem", kisa:"DEM Parti", ad:"Halkların Eşitlik ve Demokrasi Partisi", yil:"2023 –", durum:"faal", aile:4, donem:7,
+     not:"Yeşil Sol Parti'nin ad değişikliği"},
+    {id:"tip17", kisa:"TİP", ad:"Türkiye İşçi Partisi", yil:"2017 –", durum:"faal", aile:5, donem:7,
+     not:"Tarihsel TİP adının yeniden kullanımı"}
+  ];
+
+  // tip: 'devam' | 'bolunme' | 'katilma'
+  const E = [
+    ["chp23","tcf","bolunme"], ["chp23","scf","bolunme"],
+    ["chp23","hp83","bolunme"], ["chp23","sodep","bolunme"],
+    ["hp83","shp","katilma"], ["sodep","shp","katilma"],
+    ["chp23","chp92","devam"],
+    ["shp","chp92","katilma"], ["chp23","dsp","bolunme"],
+    ["chp92","memleket","bolunme"], ["memleket","chp92","katilma"],
+    ["chp92","yeniparti","bolunme"], ["shp","hep","bolunme"],
+
+    ["dp46","ap","devam"], ["dp46","ytp","devam"],
+    ["ap","demp70","bolunme"], ["demp70","ap","katilma"],
+    ["ap","dyp","devam"], ["ap","anap","bolunme"],
+    ["dyp","dp07","devam"], ["anap","dp07","katilma"],
+
+    ["mnp","msp","devam"], ["msp","rp","devam"], ["rp","fp","devam"],
+    ["fp","sp","devam"], ["fp","akp","bolunme"],
+    ["sp","yrp","bolunme"], ["akp","gelecek","bolunme"], ["akp","deva","bolunme"],
+    ["sp","yeniyol","katilma"], ["gelecek","yeniyol","katilma"], ["deva","yeniyol","katilma"],
+
+    ["mp48","ckmp","devam"], ["ckmp","mhp69","devam"],
+    ["mhp69","mcp","devam"], ["mcp","mhp93","devam"],
+    ["mhp93","bbp","bolunme"], ["mhp93","iyi","bolunme"], ["iyi","zafer","bolunme"],
+    ["iyi","anahtar","bolunme"],
+
+    ["hep","dep","devam"], ["dep","hadep","devam"], ["hadep","dehap","devam"],
+    ["dehap","dtp","devam"], ["dtp","bdp","devam"], ["bdp","hdp","katilma"],
+    ["yesilsol","dem","devam"], ["hdp","dem","bolunme"],
+
+    ["tkp20","tbkp","katilma"], ["tip61","tbkp","katilma"],
+    ["tip61","odp","bolunme"], ["tip61","emep","bolunme"],
+    ["tip61","tip17","bolunme"], ["ip92","vatan","devam"]
+  ];
+
+  const ROZET = {
+    kapatildi:["kapatıldı","r-kapatildi"],
+    faal:["faal","r-faal"],
+    katildi:["devredildi","r-katildi"],
+    kapandi:["feshedildi","r-katildi"]
+  };
+
+  /* ---- lejant ---- */
+  const lej = document.getElementById("lejant");
+  AILE.forEach(a=>{
+    const d=document.createElement("div"); d.className="lej";
+    d.innerHTML='<i class="dot" style="background:'+a.ham+'"></i>'+a.ad;
+    lej.appendChild(d);
+  });
+
+  /* ---- satırlar ---- */
+  const rows=document.getElementById("rows");
+  DONEMLER.forEach((d,i)=>{
+    const b=document.createElement("div"); b.className="banner";
+    b.innerHTML='<span class="yil">'+d.yil+'</span><span class="ad">'+d.ad+'</span>';
+    rows.appendChild(b);
+
+    const s=document.createElement("div"); s.className="satir";
+    for(let c=0;c<6;c++){
+      const h=document.createElement("div"); h.className="hucre"; h.dataset.col=c;
+      N.filter(n=>n.donem===i && n.aile===c).forEach(n=>h.appendChild(kart(n)));
+      s.appendChild(h);
+    }
+    rows.appendChild(s);
+
+    if(d.kesinti){
+      const k=document.createElement("div"); k.className="banner kesinti";
+      k.innerHTML='<span class="yil">⚡</span><span class="ad">'+d.kesinti+'</span>';
+      rows.appendChild(k);
+    }
+  });
+
+  function kart(n){
+    const el=document.createElement("div");
+    el.className="kart"+(n.durum==="kapatildi"?" kapatildi":"");
+    el.style.setProperty("--aile",AILE[n.aile].ham);
+    el.dataset.id=n.id;
+    const r=ROZET[n.durum];
+    el.innerHTML =
+      '<div class="kisa">'+n.kisa+'</div>'+
+      '<div class="ad">'+n.ad+'</div>'+
+      '<div class="yil">'+n.yil+' <span class="rozet '+r[1]+'">'+r[0]+'</span></div>'+
+      (n.sembol?'<div class="sembol">sembol · <b>'+n.sembol+'</b></div>':'')+
+      (n.not?'<div class="not">'+n.not+'</div>':'');
+    return el;
+  }
+
+  /* ---- bağlantılar ---- */
+  const chart=document.getElementById("chart");
+  const svg=document.getElementById("edges");
+  const yol={};
+
+  function ciz(){
+    svg.innerHTML="";
+    const cb=chart.getBoundingClientRect();
+    svg.setAttribute("viewBox","0 0 "+chart.offsetWidth+" "+chart.offsetHeight);
+    for(const k in yol) delete yol[k];
+
+    E.forEach((e,idx)=>{
+      const a=chart.querySelector('[data-id="'+e[0]+'"]');
+      const b=chart.querySelector('[data-id="'+e[1]+'"]');
+      if(!a||!b) return;
+      const ra=a.getBoundingClientRect(), rb=b.getBoundingClientRect();
+      const ax=ra.left-cb.left+ra.width/2, bx=rb.left-cb.left+rb.width/2;
+
+      let ay,by;
+      if(rb.top>=ra.bottom-4){ ay=ra.bottom-cb.top; by=rb.top-cb.top; }
+      else if(rb.bottom<=ra.top+4){ ay=ra.top-cb.top; by=rb.bottom-cb.top; }
+      else { ay=ra.top-cb.top+ra.height/2; by=rb.top-cb.top+rb.height/2; }
+
+      const dy=(by-ay);
+      const c=Math.max(28,Math.min(90,Math.abs(dy)*0.55));
+      const d="M "+ax+" "+ay+" C "+ax+" "+(ay+Math.sign(dy||1)*c)+", "+bx+" "+(by-Math.sign(dy||1)*c)+", "+bx+" "+by;
+
+      const p=document.createElementNS("http://www.w3.org/2000/svg","path");
+      p.setAttribute("d",d);
+      p.setAttribute("class","kenar "+e[2]);
+      const kaynak=N.find(n=>n.id===e[0]);
+      p.setAttribute("stroke",AILE[kaynak?kaynak.aile:0].ham);
+      svg.appendChild(p);
+
+      (yol[e[0]]=yol[e[0]]||[]).push({p:p,other:e[1]});
+      (yol[e[1]]=yol[e[1]]||[]).push({p:p,other:e[0]});
+    });
+  }
+
+  /* ---- odak etkileşimi ---- */
+  chart.addEventListener("mouseover",ev=>{
+    const k=ev.target.closest(".kart"); if(!k) return;
+    chart.classList.add("odak");
+    k.classList.add("aktif");
+    (yol[k.dataset.id]||[]).forEach(o=>{
+      o.p.classList.add("aktif");
+      const m=chart.querySelector('[data-id="'+o.other+'"]');
+      if(m) m.classList.add("komsu");
+    });
+  });
+  chart.addEventListener("mouseout",ev=>{
+    if(!ev.target.closest(".kart")) return;
+    chart.classList.remove("odak");
+    chart.querySelectorAll(".aktif,.komsu").forEach(x=>x.classList.remove("aktif","komsu"));
+  });
+
+  ciz();
+  window.addEventListener("resize",()=>{clearTimeout(window.__t);window.__t=setTimeout(ciz,120)});
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(ciz);
+  setTimeout(ciz,400);
+})();
+</script>
