@@ -207,7 +207,7 @@
     {yil:"1923 – 1945", ad:"Tek parti dönemi", kesinti:null},
     {yil:"1946 – 1960", ad:"Çok partili hayata geçiş", kesinti:"27 Mayıs 1960 — DP kapatıldı, liderleri idam edildi"},
     {yil:"1961 – 1971", ad:"1961 Anayasası ve yeni kurulan partiler", kesinti:"12 Mart 1971 — TİP ve MNP kapatıldı"},
-    {yil:"1972 – 1980", ad:"Koalisyonlar çağı", kesinti:"12 Eylül 1980 — bütün siyasi partiler kapatıldı"},
+    {yil:"1972 – 1980", ad:"Koalisyonlar ve Milliyetçi Cephe hükümetleri", kesinti:"12 Eylül 1980 — bütün siyasi partiler kapatıldı"},
     {yil:"1983 – 1990", ad:"Yeniden kuruluş", kesinti:null},
     {yil:"1991 – 2000", ad:"Koalisyonlar ve kapatma davaları", kesinti:"28 Şubat 1997 — Refah Partisi kapatıldı"},
     {yil:"2001 – 2015", ad:"AK Parti dönemi", kesinti:null},
@@ -244,12 +244,20 @@
      sembol:"Üç hilal", not:"CKMP'nin ad değişikliğiyle kuruldu"},
     {id:"mnp", kisa:"MNP", ad:"Milli Nizam Partisi", yil:"1970 – 1971", durum:"kapatildi", aile:2, donem:2,
      not:"Milli Görüş'ün ilk partisi"},
+    {id:"gp", kisa:"GP", ad:"Güven Partisi / Millî Güven Partisi", yil:"1967 – 1973", durum:"katildi", aile:0, donem:2,
+     not:"Feyzioğlu ve 47 vekil, \"ortanın solu\"na itiraz ederek ayrıldı"},
     {id:"tip61", kisa:"TİP", ad:"Türkiye İşçi Partisi", yil:"1961 – 1971", durum:"kapatildi", aile:5, donem:2,
      not:"Sosyalist solun meclise ilk girişi"},
 
     // --- dönem 3 ---
+    {id:"cp72", kisa:"CP", ad:"Cumhuriyetçi Parti", yil:"1972 – 1973", durum:"katildi", aile:0, donem:3,
+     not:"Ecevit'in genel başkanlığına karşı çıkan Satır ve 18 vekil"},
+    {id:"cgp", kisa:"CGP", ad:"Cumhuriyetçi Güven Partisi", yil:"1973 – 1981", durum:"kapatildi", aile:0, donem:3,
+     not:"MGP ile CP'nin birleşmesi; MC hükümetlerinin ortağı"},
     {id:"msp", kisa:"MSP", ad:"Milli Selamet Partisi", yil:"1972 – 1981", durum:"kapatildi", aile:2, donem:3,
-     sembol:"Anahtar", not:"1970'ler koalisyonlarının ortağı"},
+     sembol:"Anahtar", not:"1970'ler koalisyonlarının değişmez ortağı"},
+    {id:"tip75", kisa:"TİP", ad:"Türkiye İşçi Partisi", yil:"1975 – 1980", durum:"kapatildi", aile:5, donem:3,
+     not:"Behice Boran liderliğinde yeniden kuruldu"},
 
     // --- dönem 4 ---
     {id:"hp83", kisa:"HP", ad:"Halkçı Parti", yil:"1983 – 1985", durum:"katildi", aile:0, donem:4},
@@ -336,6 +344,8 @@
     ["chp23","hp83","bolunme"], ["chp23","sodep","bolunme"],
     ["hp83","shp","katilma"], ["sodep","shp","katilma"],
     ["chp23","chp92","devam"],
+    ["chp23","gp","bolunme"], ["chp23","cp72","bolunme"],
+    ["gp","cgp","katilma"], ["cp72","cgp","katilma"],
     ["shp","chp92","katilma"], ["chp23","dsp","bolunme"],
     ["chp92","memleket","bolunme"], ["memleket","chp92","katilma"],
     ["chp92","yeniparti","bolunme"], ["shp","hep","bolunme"],
@@ -359,8 +369,8 @@
     ["dehap","dtp","devam"], ["dtp","bdp","devam"], ["bdp","hdp","katilma"],
     ["yesilsol","dem","devam"], ["hdp","dem","bolunme"],
 
-    ["tkp20","tbkp","katilma"], ["tip61","tbkp","katilma"],
-    ["tip61","odp","bolunme"], ["tip61","emep","bolunme"],
+    ["tkp20","tbkp","katilma"], ["tip61","tip75","devam"], ["tip75","tbkp","katilma"],
+    ["tip75","odp","bolunme"], ["tip75","emep","bolunme"],
     ["tip61","tip17","bolunme"], ["ip92","vatan","devam"]
   ];
 
