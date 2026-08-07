@@ -161,7 +161,7 @@
 
 <div class="wrap">
   <header>
-    <div class="eyebrow">1923 — 2026 · süreklilikler, kopuşlar, kapatmalar</div>
+    <div class="eyebrow">1923 — 2026 · süreklilikler, kopuşlar, kapatmalar · son güncelleme Ağustos 2026</div>
     <h1>Türkiye siyasi partileri<br><em>soyağacı</em></h1>
     <p class="lede">Altı ana gelenek, yüz yıllık bir çizelge. Düz çizgiler doğrudan devamlılığı (isim değişikliği, yeniden kuruluş), kesikli çizgiler bölünmeleri, noktalı çizgiler katılma ve birleşmeleri gösterir.</p>
     <p class="lede" style="margin-top:10px">Taralı ve kesik çerçeveli kartlar, <b>kapatılmış</b> partilerdir. Kırmızı bantlar ise şemadaki kopuş anları: askerî müdahaleler ve kapatma dalgaları.</p>
@@ -186,6 +186,8 @@
 
   <footer>
     <p><b>Okuma notu.</b> Şema kurucu tarihe göre dizilmiştir; bir parti kurulduğu dönem bandında görünür, faaliyeti sonraki yıllara uzasa da. 12 Eylül 1980'de mevcut bütün partiler kapatıldığı için 1983 bandı neredeyse tümüyle yeniden kuruluşlardan oluşur.</p>
+    <p><b>Yeni Yol hakkında.</b> Şemadaki tek "çatı parti". TBMM İçtüzüğü grup kurmak için tek bir partiden en az 20 milletvekili şartı aradığından, Saadet, Gelecek ve DEVA 2025'te ortak bir tüzel kişilik kurdu. Üç parti örgütlerini, programlarını ve genel başkanlarını korudu; bu yüzden şemada birleşme değil, üç ayrı noktalı bağla gösteriliyor.</p>
+    <p><b>Rozetler.</b> "kapatıldı" yargı ya da darbe kararıyla sona ermeyi, "feshedildi" partinin kendi kararıyla kapanmasını, "devredildi" kadro ve üyelerin başka bir partiye geçmesini belirtir.</p>
     <p><b>Kapsam.</b> Meclise girmiş, kapatılmış ya da bir geleneğin halkası olan partiler alınmıştır; Türkiye'de kurulmuş yüzlerce partinin tamamı değil.</p>
   </footer>
 </div>
@@ -216,7 +218,7 @@
   const N = [
     // --- dönem 0 ---
     {id:"chp", kisa:"CHP", ad:"Cumhuriyet Halk Partisi", yil:"1923 –", durum:"faal", aile:0, donem:0,
-     sembol:"Altı Ok", not:"1981'de kapatıldı, 1992'de yeniden açıldı"},
+     sembol:"Altı Ok", not:"1981'de kapatıldı, 1992'de açıldı; 2026'da 91 vekil ayrıldı"},
     {id:"tcf", kisa:"TCF", ad:"Terakkiperver Cumhuriyet Fırkası", yil:"1924 – 1925", durum:"kapatildi", aile:0, donem:0,
      not:"İlk muhalefet partisi"},
     {id:"scf", kisa:"SCF", ad:"Serbest Cumhuriyet Fırkası", yil:"1930", durum:"kapatildi", aile:0, donem:0,
@@ -302,12 +304,18 @@
      not:"İşçi Partisi'nin ad değişikliği"},
 
     // --- dönem 7 ---
-    {id:"memleket", kisa:"Memleket P.", ad:"Memleket Partisi", yil:"2021 –", durum:"faal", aile:0, donem:7,
-     not:"CHP'den ayrılan İnce tarafından kuruldu"},
+    {id:"memleket", kisa:"Memleket P.", ad:"Memleket Partisi", yil:"2021 – 2025", durum:"katildi", aile:0, donem:7,
+     not:"İnce 2025'te CHP'ye döndü; parti kurultay kararıyla kapandı"},
+    {id:"yeniparti", kisa:"Yeni Parti", ad:"Yeni Parti", yil:"2026 –", durum:"faal", aile:0, donem:7,
+     not:"Özel ve 91 vekilin ayrılışı; TBMM'de ana muhalefet"},
+    {id:"anahtar", kisa:"A Parti", ad:"Anahtar Parti", yil:"2024 –", durum:"faal", aile:3, donem:7,
+     sembol:"Anahtar", not:"İYİ Parti'den ayrılan Ağıralioğlu; amblemi MSP'yi andırıyor"},
     {id:"yrp", kisa:"YRP", ad:"Yeniden Refah Partisi", yil:"2018 –", durum:"faal", aile:2, donem:7,
      not:"Saadet'ten ayrılan Erbakan çizgisi"},
-    {id:"gelecek", kisa:"Gelecek P.", ad:"Gelecek Partisi", yil:"2019 –", durum:"faal", aile:2, donem:7,
-     not:"AK Parti'den ayrılan Davutoğlu"},
+    {id:"gelecek", kisa:"Gelecek P.", ad:"Gelecek Partisi", yil:"2019 – 2026", durum:"kapandi", aile:2, donem:7,
+     not:"AK Parti'den ayrılan Davutoğlu; Temmuz 2026'da feshedildi"},
+    {id:"yeniyol", kisa:"Yeni Yol", ad:"Yeni Yol Partisi", yil:"2025 –", durum:"faal", aile:2, donem:7,
+     not:"Saadet + Gelecek + DEVA'nın ortak Meclis grubu; partiler ayrı kaldı"},
     {id:"deva", kisa:"DEVA", ad:"Demokrasi ve Atılım Partisi", yil:"2020 –", durum:"faal", aile:2, donem:7,
      not:"AK Parti'den ayrılan Babacan"},
     {id:"iyi", kisa:"İYİ Parti", ad:"İyi Parti", yil:"2017 –", durum:"faal", aile:3, donem:7,
@@ -326,7 +334,8 @@
     ["chp","hp83","bolunme"], ["chp","sodep","bolunme"],
     ["hp83","shp","katilma"], ["sodep","shp","katilma"],
     ["shp","chp","katilma"], ["chp","dsp","bolunme"],
-    ["chp","memleket","bolunme"], ["shp","hep","bolunme"],
+    ["chp","memleket","bolunme"], ["memleket","chp","katilma"],
+    ["chp","yeniparti","bolunme"], ["shp","hep","bolunme"],
 
     ["dp46","ap","devam"], ["dp46","ytp","devam"],
     ["ap","demp70","bolunme"], ["demp70","ap","katilma"],
@@ -336,10 +345,12 @@
     ["mnp","msp","devam"], ["msp","rp","devam"], ["rp","fp","devam"],
     ["fp","sp","devam"], ["fp","akp","bolunme"],
     ["sp","yrp","bolunme"], ["akp","gelecek","bolunme"], ["akp","deva","bolunme"],
+    ["sp","yeniyol","katilma"], ["gelecek","yeniyol","katilma"], ["deva","yeniyol","katilma"],
 
     ["mp48","ckmp","devam"], ["ckmp","mhp69","devam"],
     ["mhp69","mcp","devam"], ["mcp","mhp93","devam"],
     ["mhp93","bbp","bolunme"], ["mhp93","iyi","bolunme"], ["iyi","zafer","bolunme"],
+    ["iyi","anahtar","bolunme"],
 
     ["hep","dep","devam"], ["dep","hadep","devam"], ["hadep","dehap","devam"],
     ["dehap","dtp","devam"], ["dtp","bdp","devam"], ["bdp","hdp","katilma"],
@@ -353,7 +364,8 @@
   const ROZET = {
     kapatildi:["kapatıldı","r-kapatildi"],
     faal:["faal","r-faal"],
-    katildi:["devredildi","r-katildi"]
+    katildi:["devredildi","r-katildi"],
+    kapandi:["feshedildi","r-katildi"]
   };
 
   /* ---- lejant ---- */
