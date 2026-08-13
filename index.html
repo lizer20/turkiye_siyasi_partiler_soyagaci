@@ -133,7 +133,9 @@
     border-style:dashed;
   }
 
+  .kart{cursor:pointer}
   .kart:hover{transform:translateY(-2px);box-shadow:0 4px 0 rgba(21,24,16,.18)}
+  .kart:focus-visible{outline:2px solid var(--murekkep);outline-offset:2px}
   #chart.odak .kart{opacity:.28}
   #chart.odak .kart.aktif{opacity:1}
   #chart.odak .kart.komsu{opacity:1}
@@ -143,6 +145,74 @@
   path.kenar.katilma{stroke-dasharray:2 4;stroke-width:2}
   #chart.odak path.kenar{opacity:.07}
   #chart.odak path.kenar.aktif{opacity:1;stroke-width:2.6}
+
+  /* ---------- açıklama paneli ---------- */
+  #perde{
+    position:fixed;inset:0;background:rgba(21,24,16,.35);
+    opacity:0;pointer-events:none;transition:opacity .22s;z-index:40;
+  }
+  #perde.acik{opacity:1;pointer-events:auto}
+
+  #panel{
+    position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);
+    background:var(--kart);border-left:6px solid var(--aile,#151810);
+    z-index:50;overflow-y:auto;padding:26px 24px 40px;
+    transform:translateX(102%);transition:transform .26s cubic-bezier(.4,0,.2,1);
+    box-shadow:-6px 0 0 rgba(21,24,16,.12);
+  }
+  #panel.acik{transform:translateX(0)}
+
+  #kapat{
+    position:absolute;top:16px;right:18px;background:none;border:1px solid var(--cizgi);
+    color:var(--soluk);font-family:"IBM Plex Mono",monospace;font-size:13px;
+    width:30px;height:30px;cursor:pointer;line-height:1;
+  }
+  #kapat:hover{background:var(--murekkep);color:var(--kagit);border-color:var(--murekkep)}
+
+  #panel .p-kisa{
+    font-family:"Fraunces",serif;font-weight:700;font-size:30px;line-height:1;
+    color:var(--aile);margin:0 0 6px;letter-spacing:-.02em;
+  }
+  #panel .p-ad{font-size:14px;color:#2A2E22;margin-bottom:14px;padding-right:30px}
+  #panel .p-meta{
+    font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--soluk);
+    display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+    padding-bottom:14px;border-bottom:1px solid var(--cizgi);margin-bottom:16px;
+  }
+  #panel .p-etiket{
+    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--soluk);margin:20px 0 7px;
+  }
+  #panel .p-kurucu{font-size:13px;color:#2A2E22;line-height:1.5}
+  #panel .p-ozet{font-size:13.5px;color:#2A2E22;line-height:1.6}
+  #panel .p-sembol{
+    font-size:12.5px;color:#2A2E22;
+    border:1px dashed var(--cizgi);padding:8px 10px;margin-top:6px;
+  }
+  #panel ul{list-style:none;margin:0;padding:0}
+  #panel li{
+    font-size:12.5px;padding:7px 0;border-bottom:1px dotted var(--cizgi);
+    display:flex;gap:9px;align-items:baseline;
+  }
+  #panel li b{color:#2A2E22;font-weight:600;flex:none}
+  #panel li span{color:var(--soluk);font-size:11.5px}
+  #panel li i{width:8px;height:8px;border-radius:50%;flex:none;align-self:center}
+  .p-git{
+    background:none;border:none;padding:0;cursor:pointer;text-align:left;
+    font:inherit;color:#2A2E22;font-weight:600;text-decoration:underline;
+    text-decoration-color:var(--cizgi);text-underline-offset:3px;
+  }
+  .p-git:hover{text-decoration-color:currentColor}
+
+  @media (max-width:760px){
+    #panel{
+      top:auto;left:0;right:0;bottom:0;width:100%;max-height:78vh;
+      border-left:none;border-top:6px solid var(--aile,#151810);
+      transform:translateY(102%);box-shadow:0 -6px 0 rgba(21,24,16,.12);
+      padding:22px 18px 34px;
+    }
+    #panel.acik{transform:translateY(0)}
+  }
 
   footer{
     max-width:1100px;margin:26px auto 0;padding-top:16px;border-top:1px solid var(--cizgi);
@@ -170,7 +240,7 @@
     <span><i class="swatch nokta"></i> katılma / birleşme</span>
   </div>
 
-  <div class="kaydir-ipucu">↔ şemayı yatay kaydırabilir, bir partinin üstüne gelerek bağlarını izleyebilirsiniz</div>
+  <div class="kaydir-ipucu">↔ yatay kaydırın · üstüne gelince bağlar aydınlanır · <b>tıklayınca partinin künyesi açılır</b></div>
 
   <div class="scroller">
     <div id="chart">
@@ -178,6 +248,12 @@
       <div id="rows"></div>
     </div>
   </div>
+
+  <div id="perde"></div>
+  <aside id="panel" role="dialog" aria-modal="true" aria-labelledby="p-kisa">
+    <button id="kapat" aria-label="Kapat">✕</button>
+    <div id="p-govde"></div>
+  </aside>
 
   <footer>
     <p><b>Okuma notu.</b> Şema kurucu tarihe göre dizilmiştir; bir parti kurulduğu dönem bandında görünür, faaliyeti sonraki yıllara uzasa da. 12 Eylül 1980'de parti faaliyetleri yasaklandı, hukuki fesih ise 16 Ekim 1981'de gerçekleşti — bu yüzden o dönemin kartlarında bitiş yılı 1981'dir. Mal varlıkları Hazine'ye devredildiği için 1983 bandı neredeyse tümüyle sıfırdan kuruluşlardan oluşur.</p>
@@ -199,6 +275,75 @@
     {ad:"Radikal sol", ham:"#7B3F9D"},
     {ad:"Liberal", ham:"#0F7A80"}
   ];
+
+  const BILGI = {
+    chp23:{k:"Mustafa Kemal", o:"Kurtuluş Savaşı'nı yürüten Anadolu ve Rumeli Müdafaa-i Hukuk Cemiyeti'nin partiye dönüşmesiyle doğdu. 1946'ya kadar tek parti olarak ülkeyi yönetti, 1950'de iktidarı seçimle devretti. 1965'ten sonra Ecevit önderliğinde \"ortanın solu\" çizgisine kaydı ve 12 Eylül'e kadar sosyal demokrat bir kitle partisi oldu."},
+    tcf:{k:"Kâzım Karabekir, Rauf Orbay, Ali Fuat Cebesoy", o:"Cumhuriyetin ilk muhalefet partisi. Kurtuluş Savaşı'nın önde gelen komutanları tarafından, tek elde toplanan yetkiye itiraz olarak kuruldu. Şeyh Sait İsyanı'nın ardından Takrir-i Sükûn Kanunu'na dayanılarak kapatıldı."},
+    scf:{k:"Fethi Okyar", o:"Denetimli bir muhalefet yaratmak amacıyla, Mustafa Kemal'in isteğiyle kuruldu. Beklenenden çok daha büyük bir halk desteği görünce rejim açısından risk sayıldı ve parti aynı yıl kendini feshetti."},
+    tkp20:{k:"Mustafa Suphi", o:"Bakü'de, Kızıl Ordu kulübünde 74 delegenin katılımıyla kuruldu; Türkiye'de değil yurt dışında doğdu. Suphi ve on dört yoldaşı 1921 başında Trabzon açıklarında öldürüldü. Parti bundan sonra onlarca yıl boyunca yasa dışı çalıştı, 1988'de kendini feshederek TBKP'ye katıldı."},
+    thif:{k:"Şerif Manatov, Salih Hacıoğlu", o:"TKP'nin Ankara'daki yasal görünümlü kolu olarak kuruldu. Birkaç ay içinde kapatıldı, 1922 yazında kısa süre yeniden faaliyet gösterebildi. Şemadaki en kısa ömürlü parti."},
+    dp46:{k:"Celâl Bayar, Adnan Menderes", o:"CHP'den ayrılan \"Dörtlü Takrir\" imzacıları tarafından kuruldu ve çok partili hayatın başlangıcı oldu. 1950 seçimini kazanarak on yıl iktidarda kaldı; kırsal kalkınma, karayolu ve tarım politikalarıyla anıldı. 27 Mayıs darbesiyle kapatıldı, Menderes ve iki bakanı idam edildi."},
+    mp48:{k:"Fevzi Çakmak, Osman Bölükbaşı", o:"DP'den ayrılan muhafazakâr ve milliyetçi kanadın partisi. Din ve gelenek vurgusuyla DP'nin sağında konumlandı. 1958'de Köylü Partisi ile birleşerek CKMP'ye dönüştü."},
+    ckmp:{k:"Osman Bölükbaşı", o:"Millet Partisi ile Türkiye Köylü Partisi'nin birleşmesiyle kuruldu. 1965'te Alparslan Türkeş ve arkadaşlarının katılmasıyla yön değiştirdi ve 1969'da adını Milliyetçi Hareket Partisi olarak değiştirdi."},
+    ap:{k:"Ragıp Gümüşpala, ardından Süleyman Demirel", o:"27 Mayıs sonrası DP tabanının ana adresi oldu ve 1965'te tek başına iktidara geldi. Demirel liderliğinde merkez sağın en uzun soluklu partisi haline geldi, 1970'lerde Milliyetçi Cephe hükümetlerini kurdu. 12 Eylül'le birlikte feshedildi."},
+    ytp:{k:"Ekrem Alican", o:"DP mirasını paylaşan ikinci damar olarak kuruldu ve 1961–65 koalisyonlarında yer aldı. AP'nin tabanı toparlamasıyla hızla eridi."},
+    demp70:{k:"Ferruh Bozbeyli", o:"AP'nin \"kırk dörtler\" olarak anılan muhalif kanadının ayrılmasıyla kuruldu. Demirel'e karşı sağda alternatif olmayı denedi ama başaramadı ve 1980'de yeniden AP'ye katıldı."},
+    mhp69:{k:"Alparslan Türkeş", o:"CKMP'nin adını ve simgesini değiştirmesiyle doğdu; üç hilal ve bozkurt sembolleri bu dönemde benimsendi. 1970'lerde Milliyetçi Cephe hükümetlerine ortak oldu. 12 Eylül'de kapatıldı ve yöneticileri uzun süre yargılandı."},
+    mnp:{k:"Necmettin Erbakan", o:"Milli Görüş hareketinin ilk partisi. Ağır sanayi hamlesi ve manevi kalkınma söylemiyle merkez sağdan ayrıştı. 12 Mart muhtırasının ardından laiklik gerekçesiyle kapatıldı."},
+    gp:{k:"Turhan Feyzioğlu", o:"CHP'nin \"ortanın solu\" çizgisine itiraz eden 47 milletvekilinin ayrılmasıyla kuruldu. Kemalist ama sola mesafeli bir çizgi izledi. 1971'de Millî Güven Partisi adını aldı, 1973'te Cumhuriyetçi Parti ile birleşti."},
+    tip61:{k:"On iki sendikacı, ardından Mehmet Ali Aybar", o:"Sosyalist solun parlamentoya ilk kez girmesini sağladı; 1965'te 15 milletvekili kazandı. Sosyalizmi seçim yoluyla savunan ilk yasal parti oldu. 12 Mart muhtırasının ardından Anayasa Mahkemesi tarafından kapatıldı."},
+    cp72:{k:"Kemal Satır", o:"Ecevit'in CHP genel başkanı olmasına karşı çıkan 18 milletvekili tarafından kuruldu. Hiçbir genel seçime kendi adıyla giremeden, altı ay sonra Millî Güven Partisi ile birleşti."},
+    cgp:{k:"Turhan Feyzioğlu", o:"MGP ile Cumhuriyetçi Parti'nin birleşmesinden doğdu. Kendini \"ne aşırı sol ne aşırı sağ\" diye tanımladı ve 1970'lerin koalisyonlarında denge unsuru oldu; Feyzioğlu I. Milliyetçi Cephe hükümetinde başbakan yardımcılığı yaptı. 12 Eylül'le feshedildi."},
+    msp:{k:"Necmettin Erbakan", o:"MNP'nin kapatılmasının ardından Milli Görüş'ün ikinci partisi olarak kuruldu. 1973'te CHP ile, ardından AP ile koalisyon kurarak dönemin kilit partisi haline geldi. Kıbrıs Barış Harekâtı bu koalisyonlar döneminde gerçekleşti."},
+    tip75:{k:"Behice Boran", o:"Kapatılan TİP'in kadrosuyla yeniden kuruldu; Boran, Türkiye'de bir partinin genel başkanı olan ilk kadın oldu. 12 Eylül'le kapatıldı, yöneticileri yurt dışına çıkmak zorunda kaldı."},
+    hp83:{k:"Necdet Calp", o:"12 Eylül sonrası kurulmasına izin verilen üç partiden biri. CHP geleneğinin devamı sayıldı ve 1983 seçiminde ana muhalefet oldu. 1985'te SODEP ile birleşti."},
+    sodep:{k:"Erdal İnönü", o:"CHP kadrolarının kurduğu, ancak 1983 seçimine katılmasına izin verilmeyen sosyal demokrat parti. İki yıl sonra Halkçı Parti ile birleşerek SHP'yi oluşturdu."},
+    shp:{k:"Erdal İnönü", o:"1980'lerin sonunda sosyal demokrat solun ana partisi oldu ve 1991'de DYP ile koalisyon kurdu. Kürt sorununda açılım arayışları partinin içinde büyük gerilim yarattı; ayrılan milletvekilleri HEP'i kurdu. 1995'te CHP'ye katılarak sona erdi."},
+    dsp:{k:"Rahşan Ecevit, ardından Bülent Ecevit", o:"Ecevit'e siyaset yasağı sürerken eşi Rahşan Ecevit tarafından kuruldu. CHP geleneğinden ayrı, daha ulusalcı bir sol çizgi izledi. 1999 seçiminde birinci parti oldu ve Ecevit başbakanlığında koalisyon kurdu."},
+    anap:{k:"Turgut Özal", o:"12 Eylül sonrası ilk seçimi kazanarak tek başına iktidara geldi. Piyasa ekonomisine geçiş, dışa açılma ve özelleştirme politikalarıyla ekonomiyi köklü biçimde dönüştürdü. Merkez sağ, milliyetçi ve muhafazakâr \"dört eğilimi\" birleştirme iddiasıyla kuruldu."},
+    dyp:{k:"Süleyman Demirel, ardından Tansu Çiller", o:"AP'nin doğrudan devamı olarak kuruldu ve kır at simgesini sürdürdü. 1991'de iktidara geldi; Çiller, Türkiye'nin ilk kadın başbakanı oldu. 2007'de Demokrat Parti adını alarak tarihe karıştı."},
+    rp:{k:"Necmettin Erbakan", o:"Milli Görüş'ün üçüncü partisi. 1994 yerel seçimlerinde İstanbul ve Ankara'yı kazandı, 1995'te birinci parti oldu ve Erbakan başbakanlığında Refahyol hükümetini kurdu. 28 Şubat süreci sonrası Anayasa Mahkemesi tarafından kapatıldı."},
+    mcp:{k:"Alparslan Türkeş", o:"MHP kapatıldıktan sonra aynı geleneğin devamı olarak kuruldu. Türkeş'in siyasi yasağı kalkınca partinin başına geçti ve 1993'te MHP adı geri alındı."},
+    hep:{k:"Fehmi Işıklar", o:"SHP'den ihraç edilen ve istifa eden milletvekilleri tarafından kuruldu. Kürt kimliği taleplerini meclis siyasetine taşıyan ilk parti oldu. 1993'te Anayasa Mahkemesi tarafından kapatıldı; bu, uzun bir kapatma zincirinin ilk halkası oldu."},
+    tbkp:{k:"Haydar Kutlu, Nihat Sargın", o:"TKP ile TİP'in yurt dışında birleşmesiyle kuruldu; kurucuları Türkiye'ye döndüklerinde tutuklandı. Bir yıl bile dayanamadan Anayasa Mahkemesi tarafından kapatıldı. Bu karar sonradan Avrupa İnsan Hakları Mahkemesi'nde Türkiye aleyhine sonuçlandı."},
+    chp92:{k:"Deniz Baykal", o:"Kapatılan partilerin yeniden açılmasına izin veren 3821 sayılı yasayla, on bir yıl aradan sonra aynı adla açıldı. 1995'te SHP'yi bünyesine kattı ve sosyal demokrat solun ana partisi oldu. 2026'da 91 milletvekilinin ayrılışıyla meclisteki konumunu kaybetti."},
+    dp92:{k:"Aydın Menderes ve eski Demokrat Partililer", o:"CHP ile aynı yasa sayesinde yeniden açıldı, 1946'nın DP'sinin halefi olma iddiasını taşıdı. Sık sık genel başkan değiştirdi, kayda değer bir seçim başarısı elde edemedi. 2005'te kendini feshederek isim hakkıyla ANAP'a katıldı."},
+    dtp97:{k:"Hüsamettin Cindoruk", o:"Refahyol hükümetine tepki gösteren \"Yeni Oluşumcular\" DYP'den ayrılarak kurdu. 55. hükümetin ortağı oldu. 2005'te adını Hürriyet ve Değişim Partisi olarak değiştirdi."},
+    ldp:{k:"Besim Tibuk", o:"Tibuk, Demokrat Parti genel başkanlığı yarışını kaybedince ayrılıp kurdu; ilk adı Liberal Parti'ydi. Klasik liberal, devletin küçültülmesini savunan bir program izledi. Simgesi yunustur ve parti hiçbir zaman meclise girememiştir."},
+    ydh:{k:"Cem Boyner", o:"İş dünyası ve aydın çevrelerinin birlikte kurduğu, medyada büyük ilgi gören liberal hareket. Kurucu kadrosunun önemli bölümü TİP, TKP ve SHP gibi sol geleneklerden geliyordu. 1995 seçiminde binde beşin altında oy alınca 1997'de kendini feshetti."},
+    mhp93:{k:"Alparslan Türkeş, ardından Devlet Bahçeli", o:"MÇP'nin eski adını geri almasıyla doğdu. 1999'da ikinci parti olarak koalisyon ortağı oldu; 2018'den sonra Cumhur İttifakı'nın kurucu unsuru haline geldi."},
+    bbp:{k:"Muhsin Yazıcıoğlu", o:"MHP içindeki daha İslami vurgulu kanadın ayrılmasıyla kuruldu. Milliyetçilikle muhafazakârlığı birleştiren bir çizgi izledi. Yazıcıoğlu'nun 2009'da bir helikopter kazasında ölümü partide derin bir kırılma yarattı."},
+    fp:{k:"Recai Kutan", o:"Refah kapatılınca kurulan Milli Görüş'ün dördüncü partisi. İçinde \"gelenekçi\" ve \"yenilikçi\" kanatların çekişmesi büyüdü. 2001'de kapatılınca bu iki kanat Saadet ve AK Parti olarak ayrıldı."},
+    dep:{k:"Yaşar Kaya", o:"HEP kapatılınca kurulan ikinci halka. Milletvekillerinin dokunulmazlıklarının kaldırılıp meclis içinde gözaltına alınması Türkiye siyasetinde derin iz bıraktı. Bir yıl içinde kapatıldı."},
+    hadep:{k:"Murat Bozlak", o:"DEP'in kapatılmasının ardından kuruldu ve seçim barajı yüzünden meclise giremese de yerel yönetimlerde güçlendi. 2003'te kapatıldı."},
+    dehap:{k:"Mehmet Abbasoğlu", o:"HADEP hakkındaki kapatma davası sürerken yedek parti olarak kuruldu ve 2002 seçimine girdi. 2005'te DTP çatısı altında birleşme kararıyla sona erdi."},
+    odp:{k:"Ufuk Uras", o:"Farklı sosyalist grupların bir araya gelmesiyle kuruldu; sol içinde çoğulculuk arayışının simgesi sayıldı. Küçük ölçekli kalsa da çevre, emek ve özgürlük gündemlerinde etkili oldu."},
+    emep:{k:"Levent Tüzel", o:"Sınıf eksenli, sendikal mücadeleye dayanan bir sosyalist parti olarak kuruldu. Genellikle seçimlere ittifaklar üzerinden katıldı."},
+    ip92:{k:"Doğu Perinçek", o:"Sosyalist Parti'nin kapatılmasının ardından aynı kadroyla kuruldu. Zamanla ulusalcı ve Avrasyacı bir çizgiye kaydı. 2015'te Vatan Partisi adını aldı."},
+    akp:{k:"Recep Tayyip Erdoğan", o:"Fazilet Partisi'nin \"yenilikçi\" kanadı tarafından kuruldu ve kurulduktan bir yıl sonra tek başına iktidara geldi. AB üyelik süreci, ekonomik büyüme ve 2017 referandumuyla başkanlık sistemine geçiş bu dönemin dönüm noktaları oldu. Türkiye tarihinin en uzun süre kesintisiz iktidarda kalan partisidir."},
+    sp:{k:"Recai Kutan", o:"Fazilet'in \"gelenekçi\" kanadının partisi; Erbakan çizgisini sürdürdü. Seçim başarısı sınırlı kaldı ama Milli Görüş'ün asıl mirasçısı olma iddiasını korudu. 2025'te Yeni Yol çatısına katıldı."},
+    has:{k:"Numan Kurtulmuş", o:"Saadet Partisi genel başkanlığından ayrılan Kurtulmuş ve kadrosu tarafından kuruldu. İki yıl sonra AK Parti ile birleşerek feshedildi; Kurtulmuş burada üst düzey görevlere geldi."},
+    ytp02:{k:"İsmail Cem, Hüsamettin Özkan, Kemal Derviş", o:"Ecevit'in hastalığı sırasında DSP'den istifa eden 64 vekilin 63'ünün katılımıyla kuruldu. Beklenen ilgiyi göremedi, 2002 seçiminde yüzde 1'in biraz üzerinde kaldı. 2004'te CHP'ye katıldı."},
+    anadolu:{k:"Emine Ülker Tarhan", o:"CHP'den ayrılan Tarhan tarafından kuruldu. 2015 seçiminde varlık gösteremeyince aynı yıl faaliyetlerini sonlandırdı."},
+    dp07:{k:"Mehmet Ağar", o:"DYP'nin adını değiştirmesiyle doğdu; 2009'da ANAP'ın katılmasıyla merkez sağın dağılmış mirasını tek çatı altında toplamayı denedi. Eski gücüne dönemedi ama meclise bağımsız adaylar ve ittifaklar üzerinden temsilci gönderdi."},
+    dtp:{k:"Ahmet Türk, Aysel Tuğluk", o:"DEHAP'ın devamı olarak kuruldu ve 2007'de bağımsız adaylar yoluyla meclise grup sokmayı başardı. 2009'da Anayasa Mahkemesi tarafından kapatıldı."},
+    bdp:{k:"Selahattin Demirtaş", o:"DTP hakkındaki kapatma davası sürerken hazırlık olarak kuruldu. 2014'te vekillerini HDP'ye devredip Demokratik Bölgeler Partisi adıyla yerel siyasete odaklandı."},
+    hdp:{k:"Selahattin Demirtaş, Figen Yüksekdağ", o:"Kürt hareketi ile Türkiye solunu ve çevre, kadın, LGBT gibi hareketleri ortak çatıda buluşturma iddiasıyla kuruldu. Haziran 2015'te yüzde 13 alarak barajı aşan ilk parti oldu. Eş genel başkanları 2016'da tutuklandı."},
+    yesilsol:{k:"Yeşiller ve Sol Gelecek Partisi kadroları", o:"Yeşil siyaset ile solu birleştirmek üzere kuruldu. HDP hakkındaki kapatma davası nedeniyle 2023 seçimlerinde HDP'nin listesi olarak kullanıldı, ardından adını değiştirdi."},
+    vatan:{k:"Doğu Perinçek", o:"İşçi Partisi'nin ad değişikliğiyle doğdu. Ulusalcı, Avrasyacı ve devletçi bir çizgi izliyor; seçim desteği düşük olmakla birlikte gündem belirlemede etkili."},
+    memleket:{k:"Muharrem İnce", o:"CHP'nin 2018 cumhurbaşkanı adayı olan İnce'nin partiden ayrılarak kurduğu parti. 2023 seçiminde İnce adaylıktan çekildi. 2025'te İnce CHP'ye döndü ve parti kurultay kararıyla kapandı."},
+    tdp:{k:"Mustafa Sarıgül", o:"Uzun yıllar Şişli belediye başkanlığı yapan Sarıgül tarafından kuruldu. 2023'te CHP ile birleşerek sona erdi."},
+    yeniparti:{k:"Özgür Özel", o:"Özel'in CHP genel başkanlığının yargı kararıyla düşmesinin ardından, 91 milletvekiliyle kuruldu ve mecliste ana muhalefet konumuna geçti. Kuruluş tarihi Lozan Antlaşması'nın yıl dönümüne denk getirildi. Türkiye tarihinde bir partinin bu ölçekte bölünmesinin ilk örneği."},
+    yrp:{k:"Fatih Erbakan", o:"Necmettin Erbakan'ın oğlu tarafından, Saadet Partisi'nden ayrılarak kuruldu. 2023'te meclise girdi ve 2024 yerel seçimlerinde beklenenin üzerinde oy alarak dikkat çekti."},
+    gelecek:{k:"Ahmet Davutoğlu", o:"AK Parti'nin eski başbakanı ve genel başkanı tarafından kuruldu. Kendi başına seçime girmek yerine ittifaklar üzerinden meclise vekil soktu. Temmuz 2026'da Davutoğlu tarafından feshedildi."},
+    deva:{k:"Ali Babacan", o:"AK Parti'nin ekonomiden sorumlu eski bakanı tarafından kuruldu. Hukuk devleti ve ekonomi vurgusuyla merkeze oynadı, meclise ittifak yoluyla girdi."},
+    yeniyol:{k:"Saadet, Gelecek ve DEVA'nın ortak girişimi", o:"Meclis grubu kurmak için tek partiden 20 vekil şartı arayan İçtüzük nedeniyle, üç parti ortak bir tüzel kişilik kurdu. Partiler örgütlerini, programlarını ve genel başkanlarını korudu; yalnızca meclis çalışmalarında birlikte hareket ediyorlar. Gelecek Partisi'nin feshiyle grubun sürekliliği tartışmalı hale geldi."},
+    iyi:{k:"Meral Akşener", o:"MHP içindeki muhalif kanadın ayrılmasıyla kuruldu; Akşener, Türkiye'de bir partinin kadın genel başkanı olarak dikkat çekti. Milliyetçi ama merkeze açık bir çizgi izledi ve 2018'den itibaren muhalefet ittifaklarında yer aldı."},
+    zafer:{k:"Ümit Özdağ", o:"İYİ Parti'den ayrılan Özdağ tarafından kuruldu. Göç ve sığınmacı politikalarını merkezine alan bir söylemle tanındı."},
+    anahtar:{k:"Yavuz Ağıralioğlu", o:"İYİ Parti'den ayrılan Ağıralioğlu tarafından kuruldu. Resmî kısaltması A Parti; amblemindeki anahtarın MSP'nin simgesini andırması dikkat çekmişti. Henüz mecliste temsil edilmiyor."},
+    dem:{k:"Tülay Hatimoğulları, Tuncer Bakırhan", o:"Yeşil Sol Parti'nin ad değişikliğiyle doğdu ve HDP kadrolarının siyasi adresi oldu. 2024 yerel seçimlerinde çok sayıda belediye kazandı."},
+    tip17:{k:"Erkan Baş", o:"1961'de kurulan TİP'in adını yeniden kullanan sosyalist parti; ikisi arasında hukuki süreklilik yoktur. 2018 ve 2023'te ittifaklar yoluyla meclise girdi ve sosyalist solun uzun aradan sonra parlamentodaki sesi oldu."}
+  };
 
   const DONEMLER = [
     {yil:"1923 – 1945", ad:"Tek parti dönemi", kesinti:null},
@@ -434,6 +579,11 @@
     el.className="kart"+(n.durum==="kapatildi"?" kapatildi":"");
     el.style.setProperty("--aile",AILE[n.aile].ham);
     el.dataset.id=n.id;
+    el.tabIndex=0;
+    el.setAttribute("role","button");
+    el.addEventListener("keydown",e=>{
+      if(e.key==="Enter"||e.key===" "){ e.preventDefault(); ac(n.id); }
+    });
     const r=ROZET[n.durum];
     el.innerHTML =
       '<div class="kisa">'+n.kisa+'</div>'+
@@ -497,6 +647,65 @@
     chart.classList.remove("odak");
     chart.querySelectorAll(".aktif,.komsu").forEach(x=>x.classList.remove("aktif","komsu"));
   });
+
+  /* ---- açıklama paneli ---- */
+  const panel=document.getElementById("panel");
+  const perde=document.getElementById("perde");
+  const govde=document.getElementById("p-govde");
+  const ETIKET={devam:"doğrudan devam",bolunme:"bölünme",katilma:"katılma"};
+
+  function bul(id){ return N.find(n=>n.id===id); }
+
+  function satirlar(liste){
+    return liste.map(x=>{
+      const n=bul(x.id); if(!n) return "";
+      return '<li><i style="background:'+AILE[n.aile].ham+'"></i>'+
+             '<button class="p-git" data-git="'+n.id+'">'+n.kisa+'</button>'+
+             '<span>'+n.yil+' · '+x.tur+'</span></li>';
+    }).join("");
+  }
+
+  function ac(id){
+    const n=bul(id); if(!n) return;
+    const b=BILGI[id]||{};
+    const renk=AILE[n.aile].ham;
+    const r=ROZET[n.durum];
+
+    const oncul=E.filter(e=>e[1]===id).map(e=>({id:e[0],tur:ETIKET[e[2]]}));
+    const ardil=E.filter(e=>e[0]===id).map(e=>({id:e[1],tur:ETIKET[e[2]]}));
+
+    panel.style.setProperty("--aile",renk);
+    govde.innerHTML =
+      '<div class="p-kisa" id="p-kisa" style="color:'+renk+'">'+n.kisa+'</div>'+
+      '<div class="p-ad">'+n.ad+'</div>'+
+      '<div class="p-meta">'+n.yil+' <span class="rozet '+r[1]+'">'+r[0]+'</span>'+
+        ' · '+AILE[n.aile].ad+'</div>'+
+      (b.k?'<div class="p-etiket">Kurucu</div><div class="p-kurucu">'+b.k+'</div>':'')+
+      (b.o?'<div class="p-etiket">Özet</div><div class="p-ozet">'+b.o+'</div>':'')+
+      (n.sembol?'<div class="p-etiket">Sembol</div><div class="p-sembol">'+n.sembol+'</div>':'')+
+      (oncul.length?'<div class="p-etiket">Nereden geldi</div><ul>'+satirlar(oncul)+'</ul>':'')+
+      (ardil.length?'<div class="p-etiket">Nereye gitti</div><ul>'+satirlar(ardil)+'</ul>':'');
+
+    panel.classList.add("acik"); perde.classList.add("acik");
+    panel.scrollTop=0;
+    document.getElementById("kapat").focus();
+  }
+
+  function kapat(){ panel.classList.remove("acik"); perde.classList.remove("acik"); }
+
+  chart.addEventListener("click",ev=>{
+    const k=ev.target.closest(".kart"); if(!k) return;
+    ac(k.dataset.id);
+  });
+  govde.addEventListener("click",ev=>{
+    const g=ev.target.closest("[data-git]"); if(!g) return;
+    ac(g.dataset.git);
+    const hedef=chart.querySelector('[data-id="'+g.dataset.git+'"]');
+    if(hedef) hedef.scrollIntoView({block:"center",inline:"center",behavior:"smooth"});
+  });
+  document.getElementById("kapat").addEventListener("click",kapat);
+  perde.addEventListener("click",kapat);
+  document.addEventListener("keydown",e=>{ if(e.key==="Escape") kapat(); });
 
   ciz();
   window.addEventListener("resize",()=>{clearTimeout(window.__t);window.__t=setTimeout(ciz,120)});
