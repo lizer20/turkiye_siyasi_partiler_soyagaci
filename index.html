@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+<html lang="tr">
 <meta charset="utf-8">
 <title>Türkiye Siyasi Partileri Soyağacı</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="1923'ten bugüne Türkiye'de kurulan siyasi partilerin soyağacı: yedi gelenek, süreklilikler, bölünmeler, birleşmeler ve kapatmalar tek şemada.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Türkiye Siyasi Partileri Soyağacı">
+<meta property="og:description" content="1923'ten bugüne Türkiye'de kurulan siyasi partilerin soyağacı: yedi gelenek, süreklilikler, bölünmeler, birleşmeler ve kapatmalar tek şemada.">
+<meta property="og:locale" content="tr_TR">
 <link rel="stylesheet" href="ortak.css">
 <style>
   /* Bu sayfaya (soyağacı şeması) özel stiller. Fontlar, tasarım tokenları, üst menü ve temel tipografi ortak.css içinde. */
@@ -69,7 +75,13 @@
   }
   .banner .yil{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:12px;letter-spacing:.1em}
   .banner .ad{font-family:"Fraunces",serif;font-size:14px;font-style:italic;opacity:.85}
-  .banner .ok{display:none}
+  .banner:not(.kesinti){cursor:pointer}
+  .banner:not(.kesinti):focus-visible{outline:2px solid var(--kagit);outline-offset:-3px}
+  .banner .ok{
+    display:inline-block;margin-left:auto;font-family:"IBM Plex Mono",monospace;
+    font-size:14px;line-height:1;
+  }
+  .banner.kesinti .ok{display:none}
   .banner.kesinti{background:#7A1509}
   .banner.kesinti .ad{opacity:1;font-style:normal;font-weight:600;font-family:"IBM Plex Sans",sans-serif;font-size:12.5px}
 
@@ -77,6 +89,7 @@
     display:grid;grid-template-columns:repeat(7,1fr);gap:0 12px;
     margin-bottom:26px;position:relative;z-index:1;
   }
+  .satir.kapali{display:none}
   .hucre{display:flex;flex-direction:column;gap:12px}
 
   .kart{
@@ -211,11 +224,7 @@
     #chart{min-width:0;max-width:100%}
     #edges{display:none}
 
-    .banner:not(.kesinti){cursor:pointer}
-    .banner .ok{display:inline-block;margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:14px;line-height:1}
-
     .satir{display:flex;flex-direction:column;gap:10px}
-    .satir.kapali{display:none}
     .hucre:empty{display:none}
 
     .araclar{gap:12px}
@@ -268,7 +277,7 @@
   </div>
 
   <div id="perde"></div>
-  <aside id="panel" role="dialog" aria-modal="true" aria-labelledby="p-kisa">
+  <aside id="panel" role="dialog" aria-modal="true" aria-labelledby="p-kisa" inert aria-hidden="true">
     <button id="kapat" aria-label="Kapat">✕</button>
     <div id="p-govde"></div>
   </aside>
@@ -483,7 +492,7 @@
     {id:"bdp", kisa:"BDP", ad:"Barış ve Demokrasi Partisi", yil:"2008 – 2014", durum:"katildi", aile:5, donem:6,
      not:"2014'te DBP adını aldı, vekiller HDP'ye geçti"},
     {id:"hdp", kisa:"HDP", ad:"Halkların Demokratik Partisi", yil:"2012 –", durum:"faal", aile:5, donem:6},
-    {id:"yesilsol", kisa:"YSP", ad:"Yeşil Sol Parti", yil:"2012 – 2023", durum:"faal", aile:5, donem:6,
+    {id:"yesilsol", kisa:"YSP", ad:"Yeşil Sol Parti", yil:"2012 – 2023", durum:"katildi", aile:5, donem:6,
      not:"2023 seçimlerinde HDP'nin listesi oldu"},
     {id:"vatan", kisa:"Vatan P.", ad:"Vatan Partisi", yil:"2015 –", durum:"faal", aile:4, donem:6,
      not:"İşçi Partisi'nin ad değişikliği"},
@@ -606,6 +615,7 @@
       b.classList.toggle("kapali",kapali);
       b.setAttribute("aria-expanded",String(!kapali));
       b.querySelector(".ok").textContent=kapali?"+":"−";
+      ciz();
     }
     b.addEventListener("click",ackapa);
     b.addEventListener("keydown",e=>{
@@ -653,6 +663,8 @@
       const a=chart.querySelector('[data-id="'+e[0]+'"]');
       const b=chart.querySelector('[data-id="'+e[1]+'"]');
       if(!a||!b) return;
+      // kapalı dönemdeki kart ölçülemez; ucu görünmeyen bağı hiç çizme
+      if(a.offsetParent===null||b.offsetParent===null) return;
       const ra=a.getBoundingClientRect(), rb=b.getBoundingClientRect();
       const ax=ra.left-cb.left+ra.width/2, bx=rb.left-cb.left+rb.width/2;
 
@@ -693,7 +705,7 @@
     }
     if(arama){
       const q=arama.toLocaleLowerCase("tr");
-      const hedef=(n.id+" "+n.kisa+" "+n.ad).toLocaleLowerCase("tr");
+      const hedef=(n.kisa+" "+n.ad).toLocaleLowerCase("tr");
       if(hedef.indexOf(q)===-1) return false;
     }
     return true;
@@ -710,20 +722,25 @@
       const n=bul(el.dataset.id);
       el.classList.toggle("sonuc",filtreAktif && eslesiyorMu(n));
     });
+    let duzenDegisti=false;
     if(filtreAktif){
       document.querySelectorAll(".satir.kapali").forEach(s=>{
         if(!s.querySelector(".kart.sonuc")) return;
         s.classList.remove("kapali");
+        duzenDegisti=true;
         const b=document.querySelector('.banner[aria-controls="'+s.id+'"]');
         if(b){ b.classList.remove("kapali"); b.setAttribute("aria-expanded","true"); b.querySelector(".ok").textContent="−"; }
       });
     }
     document.getElementById("filtreTemizle").classList.toggle("aktif",filtreAktif);
+    // sadece kapalı bir dönem açıldıysa yükseklikler değişir; her tuş vuruşunda yeniden çizme
+    if(duzenDegisti) ciz();
   }
 
-  chart.addEventListener("mouseover",ev=>{
-    if(filtreAktif) return;
-    const k=ev.target.closest(".kart"); if(!k) return;
+  function vurgula(k){
+    if(filtreAktif||!k) return;
+    if(k.classList.contains("aktif")) return;   // aynı kart içinde gezinirken titremesin
+    vurguyuSil();
     chart.classList.add("odak");
     k.classList.add("aktif");
     (yol[k.dataset.id]||[]).forEach(o=>{
@@ -731,11 +748,23 @@
       const m=chart.querySelector('[data-id="'+o.other+'"]');
       if(m) m.classList.add("komsu");
     });
-  });
-  chart.addEventListener("mouseout",ev=>{
-    if(!ev.target.closest(".kart")) return;
+  }
+  function vurguyuSil(){
     chart.classList.remove("odak");
     chart.querySelectorAll(".aktif,.komsu").forEach(x=>x.classList.remove("aktif","komsu"));
+  }
+  chart.addEventListener("mouseover",ev=>vurgula(ev.target.closest(".kart")));
+  chart.addEventListener("mouseout",ev=>{
+    // kart içindeki alt öğeler arasında gezinirken vurguyu düşürme
+    const k=ev.target.closest(".kart"); if(!k) return;
+    if(ev.relatedTarget&&k.contains(ev.relatedTarget)) return;
+    vurguyuSil();
+  });
+  chart.addEventListener("focusin",ev=>vurgula(ev.target.closest(".kart")));
+  chart.addEventListener("focusout",ev=>{
+    const k=ev.target.closest(".kart"); if(!k) return;
+    if(ev.relatedTarget&&k.contains(ev.relatedTarget)) return;
+    vurguyuSil();
   });
 
   /* ---- açıklama paneli ---- */
@@ -743,6 +772,7 @@
   const perde=document.getElementById("perde");
   const govde=document.getElementById("p-govde");
   const ETIKET={devam:"doğrudan devam",bolunme:"bölünme",katilma:"katılma"};
+  let sonOdak=null;   // panel kapanınca odağın geri döneceği kart
 
   function bul(id){ return N.find(n=>n.id===id); }
 
@@ -776,12 +806,35 @@
       (oncul.length?'<div class="p-etiket">Nereden geldi</div><ul>'+satirlar(oncul)+'</ul>':'')+
       (ardil.length?'<div class="p-etiket">Nereye gitti</div><ul>'+satirlar(ardil)+'</ul>':'');
 
+    // paneli açan kartı hatırla; panel içindeki bağlantılardan gelindiyse ilkini koru
+    const o=document.activeElement&&document.activeElement.closest?document.activeElement.closest(".kart"):null;
+    if(o) sonOdak=o;
+
+    panel.removeAttribute("inert");
+    panel.removeAttribute("aria-hidden");
     panel.classList.add("acik"); perde.classList.add("acik");
     panel.scrollTop=0;
     document.getElementById("kapat").focus();
   }
 
-  function kapat(){ panel.classList.remove("acik"); perde.classList.remove("acik"); }
+  function kapat(){
+    if(!panel.classList.contains("acik")) return;
+    panel.classList.remove("acik"); perde.classList.remove("acik");
+    panel.setAttribute("inert","");
+    panel.setAttribute("aria-hidden","true");
+    if(sonOdak&&document.body.contains(sonOdak)) sonOdak.focus();
+    sonOdak=null;
+  }
+
+  // açıkken odak panelin dışına kaçmasın (aria-modal'ın davranışsal karşılığı)
+  panel.addEventListener("keydown",e=>{
+    if(e.key!=="Tab") return;
+    const o=panel.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+    if(!o.length) return;
+    const ilk=o[0], son=o[o.length-1];
+    if(e.shiftKey&&document.activeElement===ilk){ e.preventDefault(); son.focus(); }
+    else if(!e.shiftKey&&document.activeElement===son){ e.preventDefault(); ilk.focus(); }
+  });
 
   chart.addEventListener("click",ev=>{
     const k=ev.target.closest(".kart"); if(!k) return;
@@ -791,7 +844,7 @@
     const g=ev.target.closest("[data-git]"); if(!g) return;
     ac(g.dataset.git);
     const hedef=chart.querySelector('[data-id="'+g.dataset.git+'"]');
-    if(hedef) hedef.scrollIntoView({block:"center",inline:"center",behavior:"smooth"});
+    if(hedef){ sonOdak=hedef; hedef.scrollIntoView({block:"center",inline:"center",behavior:"smooth"}); }
   });
   document.getElementById("kapat").addEventListener("click",kapat);
   perde.addEventListener("click",kapat);
@@ -809,7 +862,9 @@
   yilKaydirici.min=YMIN; yilKaydirici.max=YMAX; yilKaydirici.value=YMAX;
   yilDeger.textContent=YMAX;
   yilKaydirici.addEventListener("input",()=>{
-    yilFiltre=+yilKaydirici.value;
+    const v=+yilKaydirici.value;
+    // en sağ uç "filtre yok" demektir; yoksa kaydırıcıyı geri çekince filtre kapanmıyordu
+    yilFiltre = (v===YMAX) ? null : v;
     yilDeger.textContent=yilKaydirici.value;
     filtreUygula();
   });
