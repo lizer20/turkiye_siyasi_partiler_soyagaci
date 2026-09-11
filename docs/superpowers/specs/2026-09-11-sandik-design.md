@@ -78,6 +78,7 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Yürütme | Görev başına alt ajan (kullanıcı kararı, 2026-09-11) |
 | Askerî yönetim kabının bitişi | Geçiş genel seçiminden bir gün önce; 1961 ve 1983 seçimleri sıradaki bandı açar |
 | Haber veritabanları | Tam tablo yayımlayan ulusal gazete seçim veritabanları yalnızca ikinci kaynak olabilir |
+| Sandalyesi bilinmeyen parti | Panelde girenler/giremeyenler dışında ayrı "Sandalye bilgisi yok" listesinde; hiçbir satır kaybolmaz |
 
 ## 4. Mimari
 
@@ -373,7 +374,7 @@ Panel kabuğu, odak tuzağı, `inert`/`aria-hidden`, odak iadesi ve Escape davra
 
 | Tür | Panel içeriği |
 |---|---|
-| Genel | Başlık · tarih · meclis büyüklüğü · katılım · baraj · **meclise girenler** (parti, oy %, sandalye) · **giremeyenler** · bağımsızlar · Diğer · ittifak notları · **bu seçimden sonra kurulan hükümetler** · not |
+| Genel | Başlık · tarih · meclis büyüklüğü · katılım · baraj · **meclise girenler** (parti, oy %, sandalye) · **giremeyenler** · **sandalye bilgisi yok** (sandalyesi doğrulanamayanlar) · bağımsızlar · Diğer · ittifak notları · **bu seçimden sonra kurulan hükümetler** · not |
 | Yerel | Başlık · tarih · katılım · ölçü ("belediye meclisi oyları") · tüm sıralama · üç büyükşehir (parti + aday) · not |
 | Referandum | Konu · tarih · katılım · evet/hayır · sonuç · **partilerin tutumları** (evet / hayır / boykot / serbest grupları) · not |
 | CB (halk) | Her tur için tarih, katılım, bütün adaylar ve oyları · seçilen · not |
