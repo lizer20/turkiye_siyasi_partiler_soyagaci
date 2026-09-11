@@ -112,6 +112,23 @@
   footer p{margin:0 0 8px;max-width:70ch}
 
   /* ---------- ortak bileşenler: dönem bandı, kart kutusu, rozet, açıklama paneli ---------- */
+  .araclar{
+    max-width:1100px;margin:18px auto 0;padding-top:16px;border-top:1px solid var(--cizgi);
+    display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;
+  }
+  .yil-filtre{
+    display:flex;align-items:center;gap:9px;font-family:"IBM Plex Mono",monospace;
+    font-size:11px;color:var(--soluk);letter-spacing:.06em;
+  }
+  .yil-filtre input[type=range]{width:170px;accent-color:var(--murekkep)}
+  .yil-deger{font-weight:600;color:var(--murekkep);min-width:32px;display:inline-block}
+  .temizle-buton{
+    font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.05em;color:var(--soluk);
+    background:none;border:1px solid var(--cizgi);padding:6px 10px;cursor:pointer;
+  }
+  .temizle-buton:hover{background:var(--murekkep);color:var(--kagit);border-color:var(--murekkep)}
+  .temizle-buton.aktif{color:var(--murekkep);border-color:var(--murekkep);font-weight:600}
+
   .banner{
     position:relative;z-index:1;
     background:var(--murekkep);color:var(--kagit);
@@ -223,4 +240,8 @@
       padding:22px 18px 34px;
     }
     #panel.acik{transform:translateY(0)}
+
+    .araclar{gap:12px}
+    .yil-filtre{width:100%}
+    .yil-filtre input[type=range]{flex:1}
   }

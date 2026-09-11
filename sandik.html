@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<meta charset="utf-8">
+<title>Sandık — Türkiye Siyasi Partileri Soyağacı</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="1923'ten bugüne Türkiye'deki genel ve yerel seçimler, referandumlar, cumhurbaşkanlığı seçimleri ve hükümetler tek kronolojide.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sandık — Türkiye Siyasi Partileri Soyağacı">
+<meta property="og:description" content="1923'ten bugüne seçimler, referandumlar ve hükümetler tek kronolojide.">
+<meta property="og:locale" content="tr_TR">
+<link rel="stylesheet" href="ortak.css">
+<link rel="stylesheet" href="sandik.css">
+
+<nav class="ustmenu">
+  <div class="ustmenu-ic">
+    <a href="index.html" class="ustmenu-link">Ana sayfa</a>
+    <a href="sandik.html" class="ustmenu-link aktif">Sandık</a>
+    <a href="kaynakca.html" class="ustmenu-link">Kaynakça &amp; metodoloji</a>
+  </div>
+</nav>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">1923 — 2026 · seçimler, referandumlar, hükümetler</div>
+    <h1>Sandık<br><em>seçimler ve hükümetler</em></h1>
+    <p class="lede">Genel ve yerel seçimler, referandumlar, cumhurbaşkanlığı seçimleri, ara seçimler ve
+      kurulan hükümetler; soyağacıyla aynı dönem bantlarında, tarih sırasıyla.</p>
+    <p class="disclaimer">"—" işareti, sayının iki kaynakla doğrulanamadığı anlamına gelir; tahmin
+      yazılmaz. İttifak listelerinde YSK'nın resmî liste sonucu esas alınır; listeden seçilen başka
+      parti vekilleri ayrıca belirtilir.</p>
+  </header>
+
+  <div class="araclar">
+    <div class="turlar" id="turlar" role="group" aria-label="Kayıt türleri"></div>
+    <div class="yil-filtre">
+      <span>yıl</span>
+      <input id="yilKaydirici" type="range" step="1" aria-label="Yıl filtresi">
+      <span id="yilDeger" class="yil-deger"></span>
+    </div>
+    <button id="filtreTemizle" class="temizle-buton" type="button">filtreleri temizle</button>
+  </div>
+
+  <div id="rows"></div>
+
+  <div id="perde"></div>
+  <aside id="panel" role="dialog" aria-modal="true" aria-labelledby="p-kisa" inert aria-hidden="true">
+    <button id="kapat" aria-label="Kapat">✕</button>
+    <div id="p-govde"></div>
+  </aside>
+
+  <footer>
+    <p><b>Okuma notu.</b> Seçimler tarihlerine, hükümetler kuruluş tarihlerine göre soyağacındaki
+      dönem bantlarına yerleşir. Askerî yönetim dönemlerinde yapılanlar kırmızı kesinti bandının
+      altında toplanır.</p>
+    <p><b>Ölçüler ve kaynaklar.</b> Hangi sayının neye göre hesaplandığı
+      <a href="kaynakca.html">kaynakça &amp; metodoloji</a> sayfasındadır.</p>
+  </footer>
+</div>
+
+<script src="veri/partiler.js"></script>
+<script src="veri/sandik.js"></script>
+<script src="ortak.js"></script>
+<script src="sandik-mantik.js"></script>
+<script src="sandik-sayfa.js"></script>
