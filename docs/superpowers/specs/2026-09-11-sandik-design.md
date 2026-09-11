@@ -494,16 +494,32 @@ Mevcut soyağacı bütünlük denetimleri de bu betiğe taşınır: yinelenen id
 Tasarım sırasında hafızadan kullanılan şu bilgiler, uygulamanın ilk işi olarak §8.1
 kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 
-- Refah Partisi'nin kapatılma kararının tarihi (§5.9'daki metin).
-- 1960 ve 1980 `yonetim` aralıklarının başlangıç ve bitiş tarihleri (§5.9).
-- MDP'nin 1983'te meclise girmiş olması (§7, madde 5).
-- Belediye başkanlarının doğrudan halk oyuyla ilk kez hangi yerel seçimde seçildiği (§5.3;
-  1963 öncesi kayıtlarda `buyuksehir` alanının yazılıp yazılmayacağı buna bağlı).
+- ~~Refah Partisi'nin kapatılma kararının tarihi (§5.9'daki metin).~~
+  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 1 — 2026-09-11):** 16 Ocak
+  1998 (Esas 1997/1, Karar 1998/1; RG yayım tarihi 22 Şubat 1998). Resmi AYM/Resmi Gazete
+  kaynağına bu ortamdan doğrudan erişilemedi (bkz. defter); birden çok bağımsız ikincil kaynakla
+  doğrulandı, sonraki bir görevde resmi kaynağa erişim tekrar denenmeli.
+- ~~1960 ve 1980 `yonetim` aralıklarının başlangıç ve bitiş tarihleri (§5.9).~~
+  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 2 — 2026-09-11):** geçiş genel
+  seçimleri TÜİK Ek-1 (s. 259) ile doğrulandı — 27 Mayıs 1960 kabı `bit: "1961-10-14"` (geçiş
+  seçimi 15 Ekim 1961), 12 Eylül 1980 kabı `bit: "1983-11-05"` (geçiş seçimi 6 Kasım 1983).
+- ~~MDP'nin 1983'te meclise girmiş olması (§7, madde 5).~~
+  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 3 — 2026-09-11):** TÜİK
+  Tablo 1 (s. 22) ve YSK'nın resmi 1983 seçim sonuçları PDF'i ile doğrulandı; MDP 71 sandalyeyle
+  üçüncü parti olarak meclise girdi.
+- ~~Belediye başkanlarının doğrudan halk oyuyla ilk kez hangi yerel seçimde seçildiği (§5.3;
+  1963 öncesi kayıtlarda `buyuksehir` alanının yazılıp yazılmayacağı buna bağlı).~~
+  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 4 — 2026-09-11):** 17 Kasım
+  1963 yerel seçimi (307 sayılı Kanun, 19.7.1963 kabul, RG 27.7.1963/11465). `buyuksehir` alanı
+  bu seçimden itibaren yazılabilir; öncesinde yazılmaz.
 - ~~2024 yerel seçimlerinden sonra yapılmış bir seçim ya da referandum olup olmadığı.~~
   **Web aramasıyla kontrol edildi (2026-09-11):** 7 Haziran 2026'da 6 beldede ara yerel
   seçim yapıldı; bu seçim kapsam dışıdır (§2). Erken genel seçim ya da referandum yapılmadı;
   olağan takvim 14 Mayıs 2028. Bir anayasa referandumu kamuoyunda tartışıldığı için, iş
   tamamlanmadan önce son bir güncellik kontrolü yapılır.
+  **Görev 1, Adım 3.3'te yeniden kontrol edildi (2026-09-11):** yeni bir referandum ya da erken
+  seçim ilanına rastlanmadı; bulunan tek yakın tarihli olay yukarıda zaten kapsam dışı olarak
+  işaretlenmiş 7 Haziran 2026 yerel ara seçimiydi.
 
 ## 9. Kaynakça sayfası güncellemesi
 
