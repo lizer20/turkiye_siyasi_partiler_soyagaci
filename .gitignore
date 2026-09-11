@@ -1,2 +1,5 @@
 # Claude Code kişisel ayarları
 .claude/settings.local.json
+
+# Alt ajan yürütme çalışma alanı (defter, brief, rapor, inceleme paketleri)
+.superpowers/
