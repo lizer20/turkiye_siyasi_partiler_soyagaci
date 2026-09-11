@@ -22,7 +22,7 @@ boş (`—`) gösterilir.
 | Tür | Kapsam |
 |---|---|
 | Genel seçimler | 1923'ten bugüne hepsi; tek parti dönemi seçimleri de ayrı kayıt olarak |
-| Yerel seçimler | Ülke geneli oy oranları (belediye meclisi) ile İstanbul, Ankara ve İzmir büyükşehir sonuçları; 2019 İstanbul yenileme seçimi ayrı kayıt |
+| Yerel seçimler | Ülke geneli oy oranları (belediye meclisi) ile İstanbul, Ankara ve İzmir büyükşehir sonuçları; 2019 İstanbul yenileme seçimi ayrı kayıt; 1963 öncesi belediye seçimleri de bulunabildiği kadarıyla (§5.3) |
 | Referandumlar | Hepsi; sonuç, katılım ve partilerin tutumlarıyla |
 | Cumhurbaşkanlığı — halk | Halk oylamasıyla yapılanların hepsi, turlarıyla birlikte |
 | Cumhurbaşkanlığı — TBMM | 1923'ten halk oylamasına geçişe kadar TBMM'nin yaptığı bütün seçimler |
@@ -74,6 +74,8 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Yerel ara seçimler | Kapsam dışı (2019 İstanbul yenilemesi hariç); metodoloji sayfasında belirtilir |
 | Saklama biçimi | Ham sayılar tutulur, yüzdeler ekranda hesaplanır; yalnızca yüzde yayımlanmışsa yüzde yedeği |
 | Ulusal toplamlar | Resmî il tablosundan betikle hesaplanabilir; ikinci kaynağın ulusal rakamıyla eşleşmeli |
+| Yerel seçim başlangıcı | Bulunabilen en eski belediye seçimi; 1963 öncesi kayıtlarda bulunamayan her alan `—` |
+| Yürütme | Görev başına alt ajan (kullanıcı kararı, 2026-09-11) |
 
 ## 4. Mimari
 
@@ -188,6 +190,10 @@ değerler §8'deki kuralla doldurulur.)
   alanı taşır ve yalnızca `buyuksehir.istanbul` içerir; `sonuc` yazılmaz.
 - **Aşama 2 uyumu:** harita verisi ileride aynı kayda `iller:{…}` alanı olarak eklenecek.
   Aşama 1'de bu alan yazılmaz; `dogrula.js` bilinmeyen alanlara hata vermez.
+- **1963 öncesi belediye seçimleri:** envanter ve sayılar tamamen kaynaktan çıkarılır. Ülke geneli
+  belediye meclisi oyu bulunamazsa `sonuc: []` yazılır ve seçmen sayıları `null` kalır (kart "veri
+  yok" gösterir). Belediye başkanlarının o dönemde doğrudan halk oyuyla seçilip seçilmediği
+  doğrulanmadan `buyuksehir` alanı yazılmaz (§8.5).
 
 ### 5.4 Referandum
 
@@ -487,6 +493,8 @@ kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 - Refah Partisi'nin kapatılma kararının tarihi (§5.9'daki metin).
 - 1960 ve 1980 `yonetim` aralıklarının başlangıç ve bitiş tarihleri (§5.9).
 - MDP'nin 1983'te meclise girmiş olması (§7, madde 5).
+- Belediye başkanlarının doğrudan halk oyuyla ilk kez hangi yerel seçimde seçildiği (§5.3;
+  1963 öncesi kayıtlarda `buyuksehir` alanının yazılıp yazılmayacağı buna bağlı).
 - ~~2024 yerel seçimlerinden sonra yapılmış bir seçim ya da referandum olup olmadığı.~~
   **Web aramasıyla kontrol edildi (2026-09-11):** 7 Haziran 2026'da 6 beldede ara yerel
   seçim yapıldı; bu seçim kapsam dışıdır (§2). Erken genel seçim ya da referandum yapılmadı;
@@ -507,6 +515,8 @@ kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 - Tek parti dönemi seçimlerinin iki dereceli olması.
 - Referandum tutumlarının neyi ifade ettiği (`serbest` dahil).
 - Yerel ara seçimlerin kapsam dışında olduğu (2019 İstanbul yenilemesi hariç).
+- 1963 öncesi yerel seçimlerin bulunabildiği kadarıyla alındığı ve bu kayıtlarda boş alanların
+  beklendiği.
 
 "Bu tür bilgiler nereden doğrulanabilir" listesine TÜİK seçim yayınları eklenir.
 
