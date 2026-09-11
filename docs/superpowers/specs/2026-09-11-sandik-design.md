@@ -72,6 +72,8 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Kaynak defteri | Projede tutulur, sitede gösterilmez |
 | Soyağacı eksikleri | Toplanır, kullanıcı onayıyla soyağacına eklenir |
 | Yerel ara seçimler | Kapsam dışı (2019 İstanbul yenilemesi hariç); metodoloji sayfasında belirtilir |
+| Saklama biçimi | Ham sayılar tutulur, yüzdeler ekranda hesaplanır; yalnızca yüzde yayımlanmışsa yüzde yedeği |
+| Ulusal toplamlar | Resmî il tablosundan betikle hesaplanabilir; ikinci kaynağın ulusal rakamıyla eşleşmeli |
 
 ## 4. Mimari
 
@@ -82,11 +84,18 @@ siyasi parti/
 ├─ kaynakca.html       + "Sandık: ölçüler ve kurallar" bölümü
 ├─ ortak.css           + panel, dönem bandı, rozet ve kart temel stilleri
 ├─ ortak.js            YENİ · panel, odak yönetimi, dönem bandı, tarih biçimleme
+├─ sandik-mantik.js    YENİ · Sandık'ın saf mantığı ve HTML üreticileri (Node'da test edilir)
+├─ sandik-sayfa.js     YENİ · Sandık sayfasının DOM bağlaması (araç çubuğu, bantlar, panel, hash)
+├─ sandik.css          YENİ · Sandık'a özgü stiller (sandik.html ve fikstür test sayfası paylaşır)
 ├─ veri/
 │  ├─ partiler.js      AILE, N, E, BILGI, DONEMLER  (index.html'den taşınır)
 │  └─ sandik.js        secimler, hukumetler
 ├─ araclar/
 │  ├─ dogrula.js       node araclar/dogrula.js
+│  ├─ topla.js         resmî il tablosundan ulusal toplam (§8.1)
+│  ├─ yukle.js         veri dosyalarını Node'da yükler
+│  ├─ test/            node --test "araclar/test/*.test.js" (+ sahte fikstür)
+│  ├─ denetim/         tarayıcı denetim betikleri + fikstür test sayfası
 │  └─ kaynak-defteri.md
 └─ docs/superpowers/specs/   tasarım belgeleri (site bunları kullanmaz)
 ```
@@ -94,9 +103,11 @@ siyasi parti/
 - Klasik `<script src>` kullanılır. Site çift tıklanıp `file://` ile açılmaya devam eder;
   harici istek yapılmaz.
 - Yükleme sırası her sayfada aynıdır: `veri/partiler.js` → `veri/sandik.js` → `ortak.js`
-  → sayfanın kendi satır içi betiği.
+  → `sandik-mantik.js` → sayfanın kendi satır içi betiği.
 - Her dosya tek bir global ad alanı tanımlar: `window.PARTILER`, `window.SANDIK`,
-  `window.Ortak`. Sayfa betikleri bugünkü gibi IIFE içinde çalışır.
+  `window.Ortak`, `window.SandikMantik`. Sayfa betikleri bugünkü gibi IIFE içinde çalışır.
+- `ortak.js` ve `sandik-mantik.js` hem tarayıcıda hem Node'da yüklenebilir; saf fonksiyonlar
+  `node --test "araclar/test/*.test.js"` ile sınanır.
 - `index.html` de `veri/sandik.js`'i yükler (künyedeki "girdiği seçimler" için).
   `kaynakca.html` yalnızca `ortak.css`'i yükler, betik gerektirmez.
 
@@ -110,8 +121,13 @@ siyasi parti/
 - **Tür:** `genel` · `yerel` · `referandum` · `cb-halk` · `cb-tbmm` · `ara`.
 - **Sıra:** `secimler` dizisi tarihe göre sıralı tutulur; `dogrula.js` bunu denetler.
 - **Bilinmeyen sayı:** `null`, ekranda `—`. Tahmin, yuvarlama ya da aralık yazılmaz.
-- **Yüzde:** sayı olarak ve kaynağın verdiği ondalık hassasiyetle tutulur (`52.68`). Ekranda
-  Türkçe ondalık virgülüyle ve tek basamakla gösterilir ("%52,7").
+- **Sayılar, yüzdeler değil:** oy ve seçmen verisi ham sayı olarak tutulur (`kayitli`,
+  `kullanilan`, `gecerli` ve satır başına `oy`). Yüzdeler ekranda hesaplanır: oy oranı
+  `oy / gecerli`, katılım `kullanilan / kayitli`. Türkçe ondalık virgülüyle, tek basamakla
+  gösterilir ("%52,7").
+- **Yüzde yedeği:** kaynaklar bir kayıt için yalnızca yüzde yayımlamışsa (sayı yoksa) satırda
+  `oyYuzde`, kayıtta `katilimYuzde` kullanılır. Aynı satırda `oy` ile `oyYuzde`, aynı kayıtta
+  seçmen sayıları ile `katilimYuzde` birlikte bulunmaz.
 - **Parti referansı:** soyağacındaki bir parti için `parti:"dp46"`. Soyağacında olmayan
   katılımcılar (bağımsızlar, "Diğer", küçük partiler) için `ad:"…"`. İkisi aynı satırda
   birlikte bulunmaz.
@@ -123,10 +139,10 @@ siyasi parti/
 { id:"1999-04-genel", tur:"genel", tarih:"1999-04-18",
   tekParti:false,              // 1923–1943 için true
   meclis:550,                  // toplam sandalye
-  katilim:null,                // %
+  kayitli:null, kullanilan:null, gecerli:null,   // seçmen ve oy sayıları
   baraj:10,                    // ulusal baraj %, yoksa null
   sonuc:[
-    {parti:"dsp",  oy:null, sandalye:null},
+    {parti:"dsp",  oy:null, sandalye:null},      // oy: sayı
     {ad:"Bağımsız", oy:null, sandalye:null},
     {ad:"Diğer", partiSayisi:null, oy:null, sandalye:0}
   ],
@@ -155,7 +171,7 @@ değerler §8'deki kuralla doldurulur.)
 ```js
 { id:"2024-03-yerel", tur:"yerel", tarih:"2024-03-31",
   olcu:"belediye-meclisi",
-  katilim:null,
+  kayitli:null, kullanilan:null, gecerli:null,
   sonuc:[ {parti:"chp92", oy:null}, {ad:"Diğer", partiSayisi:null, oy:null} ],
   buyuksehir:{
     istanbul:{parti:"chp92", aday:"…"},
@@ -178,8 +194,9 @@ değerler §8'deki kuralla doldurulur.)
 ```js
 { id:"2017-04-referandum", tur:"referandum", tarih:"2017-04-16",
   konu:"…",                    // tek cümle: neyin oylandığı
-  katilim:null, evet:null, hayir:null,     // %; ikisi birlikte ≈ 100
-  sonuc:"kabul",               // "kabul" | "ret"
+  kayitli:null, kullanilan:null, gecerli:null,
+  evet:null, hayir:null,       // sayı; evet + hayir = gecerli
+  karar:"kabul",               // "kabul" | "ret"
   tutumlar:[ {parti:"akp", tutum:"evet"}, {parti:"chp92", tutum:"hayir"} ],
   not:"…" }
 ```
@@ -188,16 +205,19 @@ değerler §8'deki kuralla doldurulur.)
   ya da üyelerini serbest bıraktığı durum).
 - Tutumlar yalnızca soyağacındaki partiler için tutulur. Tutumu kaynaklarla
   doğrulanamayan parti listeye hiç yazılmaz; `null` tutum olmaz.
-- `sonuc`, `evet`/`hayir` bilinmese de yazılabilir, ama kaynakla doğrulanmış olmalıdır.
+- `karar`, `evet`/`hayir` bilinmese de yazılabilir, ama kaynakla doğrulanmış olmalıdır.
+- Alanın adı bilerek `sonuc` değil `karar`: diğer bütün türlerde `sonuc` bir dizidir ve aynı
+  ad iki farklı tipe karşılık gelmemelidir (bütün kayıtları gezen kod — örn. künyedeki
+  "girdiği seçimler" — aksi halde referandumda çöker).
 
 ### 5.5 Cumhurbaşkanlığı — halk oylaması
 
 ```js
 { id:"2023-05-cb-halk", tur:"cb-halk", tarih:"2023-05-14",
   turlar:[
-    {tarih:"2023-05-14", katilim:null,
+    {tarih:"2023-05-14", kayitli:null, kullanilan:null, gecerli:null,
      adaylar:[ {ad:"…", parti:"akp", oy:null}, {ad:"…", destek:"Millet İttifakı", oy:null} ]},
-    {tarih:"2023-05-28", katilim:null, adaylar:[ ] }
+    {tarih:"2023-05-28", kayitli:null, kullanilan:null, gecerli:null, adaylar:[ ] }
   ],
   secilen:"…", not:"…" }
 ```
@@ -404,6 +424,10 @@ açılıp kapanma. Çubuklar tam genişlik olur, ilk üç parti alt alta dizilir
 - Vikipedi yalnızca karşılaştırma ve kaynak bulma aracıdır. Tek başına kaynak sayılmaz,
   ikinci kaynak da sayılmaz.
 - Eşleşmeyen ve üçüncü bir kaynakla da çözülemeyen sayı `null` olur (§5.1).
+- **Hesaplanmış toplamlar:** resmî bir kaynak yalnızca il il sayı verip ulusal toplamı
+  vermiyorsa, toplam il satırlarından **elle değil betikle** hesaplanır ve ikinci bir
+  kaynağın ulusal rakamıyla eşleşmelidir; eşleşmezse `null` olur. Kaynak defterinde
+  "resmî il tablosundan hesaplandı" diye işaretlenir.
 - Nitel bilgiler (hükümetin bitiş nedeni, referandumdaki parti tutumu) için de aynı kural
   geçerlidir: doğrulanamayan tutum yazılmaz, doğrulanamayan bitiş nedeni `null` olur.
 
@@ -434,16 +458,20 @@ Hata bulursa sıfırdan farklı bir kodla çıkar.
 **Hatalar:**
 - yinelenen kimlik; kimlik `YYYY-AA-tür` biçiminde değil ya da `tarih` ile uyuşmuyor
 - `secimler` ya da `hukumetler` tarih sırasında değil
-- bilinmeyen `tur`, `tip`, `bitisNedeni`, `tutum` ya da `sonuc` değeri
+- bilinmeyen `tur`, `tip`, `bitisNedeni`, `tutum` ya da `karar` değeri
 - soyağacında olmayan bir `parti` id'si
 - aynı satırda hem `parti` hem `ad`
 - genel seçimde bilinen sandalyelerin toplamı `meclis`'i aşıyor; hepsi biliniyorsa eşit değil
-- referandumda `evet + hayir` (ikisi de biliniyorsa) %99,5–100,5 aralığının dışında
+- referandumda `evet + hayir` ≠ `gecerli` (üçü de biliniyorsa)
+- oy toplamı `gecerli`'yi aşıyor; bütün satırlar biliniyorsa `gecerli`'ye eşit değil
+- `gecerli` > `kullanilan` ya da `kullanilan` > `kayitli`
+- aynı satırda hem `oy` hem `oyYuzde`; aynı kayıtta hem seçmen sayıları hem `katilimYuzde`
 - hükümetlerde çakışan tarih aralıkları
 - hiçbir dönem bandına ya da `yonetim` kabına düşmeyen kayıt
 
 **Uyarılar:**
-- bilinen oyların toplamı %98–102 aralığının dışında (yuvarlama payı)
+- `oyYuzde` kullanan bir kayıtta yüzdelerin toplamı %98–102 aralığının dışında
+  (yayımlanmış yüzdelerin yuvarlama payı)
 - iki hükümet arasında 1 günden uzun boşluk
 - `—` sayısı: tür ve dönem başına rapor
 - `ittifak.icinden` toplamı `liste` partisinin sandalyesini aşıyor
