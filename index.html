@@ -67,39 +67,12 @@
   #chart{position:relative;min-width:1360px;max-width:1500px;margin:0 auto}
   #edges{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:visible}
 
-  .banner{
-    position:relative;z-index:1;
-    background:var(--murekkep);color:var(--kagit);
-    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
-    padding:7px 14px;margin:0 0 14px;
-  }
-  .banner .yil{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:12px;letter-spacing:.1em}
-  .banner .ad{font-family:"Fraunces",serif;font-size:14px;font-style:italic;opacity:.85}
-  .banner:not(.kesinti){cursor:pointer}
-  .banner:not(.kesinti):focus-visible{outline:2px solid var(--kagit);outline-offset:-3px}
-  .banner .ok{
-    display:inline-block;margin-left:auto;font-family:"IBM Plex Mono",monospace;
-    font-size:14px;line-height:1;
-  }
-  .banner.kesinti .ok{display:none}
-  .banner.kesinti{background:#7A1509}
-  .banner.kesinti .ad{opacity:1;font-style:normal;font-weight:600;font-family:"IBM Plex Sans",sans-serif;font-size:12.5px}
-
   .satir{
     display:grid;grid-template-columns:repeat(7,1fr);gap:0 12px;
     margin-bottom:26px;position:relative;z-index:1;
   }
-  .satir.kapali{display:none}
   .hucre{display:flex;flex-direction:column;gap:12px}
 
-  .kart{
-    background:var(--kart);
-    border:1px solid var(--cizgi);
-    border-left:4px solid var(--aile);
-    padding:9px 11px 10px;
-    position:relative;
-    transition:box-shadow .18s, transform .18s, opacity .18s;
-  }
   .kart .kisa{
     font-family:"Fraunces",serif;font-weight:700;font-size:16px;line-height:1.1;
     color:var(--aile);margin-bottom:2px;letter-spacing:-.01em;
@@ -116,15 +89,6 @@
   .kart .sembol b{font-family:"IBM Plex Mono",monospace;font-weight:600;color:#2A2E22}
   .kart .not{font-size:10.5px;color:var(--soluk);margin-top:5px;font-style:italic}
 
-  .rozet{
-    font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;
-    letter-spacing:.07em;text-transform:uppercase;
-    padding:1px 5px;border:1px solid currentColor;white-space:nowrap;
-  }
-  .r-kapatildi{color:#7A1509}
-  .r-faal{color:#25795A}
-  .r-katildi{color:#5C5F52}
-
   .kart.kapatildi{
     background:
       repeating-linear-gradient(-45deg,
@@ -134,9 +98,6 @@
     border-style:dashed;
   }
 
-  .kart{cursor:pointer}
-  .kart:hover{transform:translateY(-2px);box-shadow:0 4px 0 rgba(21,24,16,.18)}
-  .kart:focus-visible{outline:2px solid var(--murekkep);outline-offset:2px}
   #chart.odak .kart{opacity:.28}
   #chart.odak .kart.aktif{opacity:1}
   #chart.odak .kart.komsu{opacity:1}
@@ -150,73 +111,7 @@
   #chart.odak path.kenar{opacity:.07}
   #chart.odak path.kenar.aktif{opacity:1;stroke-width:2.6}
 
-  /* ---------- açıklama paneli ---------- */
-  #perde{
-    position:fixed;inset:0;background:rgba(21,24,16,.35);
-    opacity:0;pointer-events:none;transition:opacity .22s;z-index:40;
-  }
-  #perde.acik{opacity:1;pointer-events:auto}
-
-  #panel{
-    position:fixed;top:0;right:0;bottom:0;width:min(420px,100%);
-    background:var(--kart);border-left:6px solid var(--aile,#151810);
-    z-index:50;overflow-y:auto;padding:26px 24px 40px;
-    transform:translateX(102%);transition:transform .26s cubic-bezier(.4,0,.2,1);
-    box-shadow:-6px 0 0 rgba(21,24,16,.12);
-  }
-  #panel.acik{transform:translateX(0)}
-
-  #kapat{
-    position:absolute;top:16px;right:18px;background:none;border:1px solid var(--cizgi);
-    color:var(--soluk);font-family:"IBM Plex Mono",monospace;font-size:13px;
-    width:30px;height:30px;cursor:pointer;line-height:1;
-  }
-  #kapat:hover{background:var(--murekkep);color:var(--kagit);border-color:var(--murekkep)}
-
-  #panel .p-kisa{
-    font-family:"Fraunces",serif;font-weight:700;font-size:30px;line-height:1;
-    color:var(--aile);margin:0 0 6px;letter-spacing:-.02em;
-  }
-  #panel .p-ad{font-size:14px;color:#2A2E22;margin-bottom:14px;padding-right:30px}
-  #panel .p-meta{
-    font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--soluk);
-    display:flex;align-items:center;gap:8px;flex-wrap:wrap;
-    padding-bottom:14px;border-bottom:1px solid var(--cizgi);margin-bottom:16px;
-  }
-  #panel .p-etiket{
-    font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--soluk);margin:20px 0 7px;
-  }
-  #panel .p-kurucu{font-size:13px;color:#2A2E22;line-height:1.5}
-  #panel .p-ozet{font-size:13.5px;color:#2A2E22;line-height:1.6}
-  #panel .p-sembol{
-    font-size:12.5px;color:#2A2E22;
-    border:1px dashed var(--cizgi);padding:8px 10px;margin-top:6px;
-  }
-  #panel ul{list-style:none;margin:0;padding:0}
-  #panel li{
-    font-size:12.5px;padding:7px 0;border-bottom:1px dotted var(--cizgi);
-    display:flex;gap:9px;align-items:baseline;
-  }
-  #panel li b{color:#2A2E22;font-weight:600;flex:none}
-  #panel li span{color:var(--soluk);font-size:11.5px}
-  #panel li i{width:8px;height:8px;border-radius:50%;flex:none;align-self:center}
-  .p-git{
-    background:none;border:none;padding:0;cursor:pointer;text-align:left;
-    font:inherit;color:#2A2E22;font-weight:600;text-decoration:underline;
-    text-decoration-color:var(--cizgi);text-underline-offset:3px;
-  }
-  .p-git:hover{text-decoration-color:currentColor}
-
   @media (max-width:760px){
-    #panel{
-      top:auto;left:0;right:0;bottom:0;width:100%;max-height:78vh;
-      border-left:none;border-top:6px solid var(--aile,#151810);
-      transform:translateY(102%);box-shadow:0 -6px 0 rgba(21,24,16,.12);
-      padding:22px 18px 34px;
-    }
-    #panel.acik{transform:translateY(0)}
-
     .masaustu-ipucu{display:none}
     .mobil-ipucu{display:block}
 
@@ -292,6 +187,7 @@
 </div>
 
 <script src="veri/partiler.js"></script>
+<script src="ortak.js"></script>
 <script>
 (function(){
   const {AILE, BILGI, DONEMLER, N, E, ROZET} = window.PARTILER;
@@ -329,21 +225,7 @@
     }
     rows.appendChild(s);
 
-    b.tabIndex=0;
-    b.setAttribute("role","button");
-    b.setAttribute("aria-expanded","true");
-    b.setAttribute("aria-controls",s.id);
-    function ackapa(){
-      const kapali=s.classList.toggle("kapali");
-      b.classList.toggle("kapali",kapali);
-      b.setAttribute("aria-expanded",String(!kapali));
-      b.querySelector(".ok").textContent=kapali?"+":"−";
-      ciz();
-    }
-    b.addEventListener("click",ackapa);
-    b.addEventListener("keydown",e=>{
-      if(e.key==="Enter"||e.key===" "){ e.preventDefault(); ackapa(); }
-    });
+    Ortak.bantKur(b, s, ciz);
 
     if(d.kesinti){
       const k=document.createElement("div"); k.className="banner kesinti";
@@ -449,10 +331,9 @@
     if(filtreAktif){
       document.querySelectorAll(".satir.kapali").forEach(s=>{
         if(!s.querySelector(".kart.sonuc")) return;
-        s.classList.remove("kapali");
         duzenDegisti=true;
         const b=document.querySelector('.banner[aria-controls="'+s.id+'"]');
-        if(b){ b.classList.remove("kapali"); b.setAttribute("aria-expanded","true"); b.querySelector(".ok").textContent="−"; }
+        if(b) Ortak.bantDurum(b, s, false); else s.classList.remove("kapali");
       });
     }
     document.getElementById("filtreTemizle").classList.toggle("aktif",filtreAktif);
@@ -495,7 +376,11 @@
   const perde=document.getElementById("perde");
   const govde=document.getElementById("p-govde");
   const ETIKET={devam:"doğrudan devam",bolunme:"bölünme",katilma:"katılma"};
-  let sonOdak=null;   // panel kapanınca odağın geri döneceği kart
+  const Panel = Ortak.panelKur({
+    panel, perde, govde,
+    kapatDugmesi: document.getElementById("kapat"),
+    odakSecici: ".kart"
+  });
 
   function bul(id){ return N.find(n=>n.id===id); }
 
@@ -513,12 +398,9 @@
     const b=BILGI[id]||{};
     const renk=AILE[n.aile].ham;
     const r=ROZET[n.durum];
-
     const oncul=E.filter(e=>e[1]===id).map(e=>({id:e[0],tur:ETIKET[e[2]]}));
     const ardil=E.filter(e=>e[0]===id).map(e=>({id:e[1],tur:ETIKET[e[2]]}));
-
-    panel.style.setProperty("--aile",renk);
-    govde.innerHTML =
+    const html =
       '<div class="p-kisa" id="p-kisa" style="color:'+renk+'">'+n.kisa+'</div>'+
       '<div class="p-ad">'+n.ad+'</div>'+
       '<div class="p-meta">'+n.yil+' <span class="rozet '+r[1]+'">'+r[0]+'</span>'+
@@ -528,36 +410,8 @@
       (n.sembol?'<div class="p-etiket">Sembol</div><div class="p-sembol">'+n.sembol+'</div>':'')+
       (oncul.length?'<div class="p-etiket">Nereden geldi</div><ul>'+satirlar(oncul)+'</ul>':'')+
       (ardil.length?'<div class="p-etiket">Nereye gitti</div><ul>'+satirlar(ardil)+'</ul>':'');
-
-    // paneli açan kartı hatırla; panel içindeki bağlantılardan gelindiyse ilkini koru
-    const o=document.activeElement&&document.activeElement.closest?document.activeElement.closest(".kart"):null;
-    if(o) sonOdak=o;
-
-    panel.removeAttribute("inert");
-    panel.removeAttribute("aria-hidden");
-    panel.classList.add("acik"); perde.classList.add("acik");
-    panel.scrollTop=0;
-    document.getElementById("kapat").focus();
+    Panel.ac(html, renk);
   }
-
-  function kapat(){
-    if(!panel.classList.contains("acik")) return;
-    panel.classList.remove("acik"); perde.classList.remove("acik");
-    panel.setAttribute("inert","");
-    panel.setAttribute("aria-hidden","true");
-    if(sonOdak&&document.body.contains(sonOdak)) sonOdak.focus();
-    sonOdak=null;
-  }
-
-  // açıkken odak panelin dışına kaçmasın (aria-modal'ın davranışsal karşılığı)
-  panel.addEventListener("keydown",e=>{
-    if(e.key!=="Tab") return;
-    const o=panel.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
-    if(!o.length) return;
-    const ilk=o[0], son=o[o.length-1];
-    if(e.shiftKey&&document.activeElement===ilk){ e.preventDefault(); son.focus(); }
-    else if(!e.shiftKey&&document.activeElement===son){ e.preventDefault(); ilk.focus(); }
-  });
 
   chart.addEventListener("click",ev=>{
     const k=ev.target.closest(".kart"); if(!k) return;
@@ -567,11 +421,8 @@
     const g=ev.target.closest("[data-git]"); if(!g) return;
     ac(g.dataset.git);
     const hedef=chart.querySelector('[data-id="'+g.dataset.git+'"]');
-    if(hedef){ sonOdak=hedef; hedef.scrollIntoView({block:"center",inline:"center",behavior:"smooth"}); }
+    if(hedef){ Panel.odakHedefi(hedef); hedef.scrollIntoView({block:"center",inline:"center",behavior:"smooth"}); }
   });
-  document.getElementById("kapat").addEventListener("click",kapat);
-  perde.addEventListener("click",kapat);
-  document.addEventListener("keydown",e=>{ if(e.key==="Escape") kapat(); });
 
   /* ---- araç çubuğu: arama + yıl kaydırıcı + temizle ---- */
   let YMIN=9999, YMAX=0;
