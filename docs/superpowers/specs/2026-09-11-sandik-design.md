@@ -76,6 +76,7 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Ulusal toplamlar | Resmî il tablosundan betikle hesaplanabilir; ikinci kaynağın ulusal rakamıyla eşleşmeli |
 | Yerel seçim başlangıcı | Bulunabilen en eski belediye seçimi; 1963 öncesi kayıtlarda bulunamayan her alan `—` |
 | Yürütme | Görev başına alt ajan (kullanıcı kararı, 2026-09-11) |
+| Askerî yönetim kabının bitişi | Geçiş genel seçiminden bir gün önce; 1961 ve 1983 seçimleri sıradaki bandı açar |
 
 ## 4. Mimari
 
@@ -293,6 +294,9 @@ Kesinti bugün düz bir metin. Kronolojik yerleşim için bir tarih alanı gerek
 - Askerî yönetim dönemleri isteğe bağlı bir `yonetim:{bas, bit}` aralığı taşır
   (27 Mayıs 1960 ve 12 Eylül 1980 kesintileri). Sandık sayfası bu aralıktaki kayıtları
   kesinti bandının içinde gösterir (§6.3).
+- `bit`, askerî yönetimden çıkışı sağlayan genel seçimin tarihinden **bir gün öncedir**. Geçiş
+  seçimi böylece kabın içinde değil, sıradaki dönem bandının ilk kaydı olarak görünür
+  (kullanıcı kararı, 2026-09-11).
 - `index.html` yalnızca `kesinti.metin` alanını kullanır. Soyağacının görünümü değişmez,
   sadece 28 Şubat metni düzelir.
 - **28 Şubat düzeltmesindeki tarih ve `yonetim` aralıkları hafızadan yazıldı.**
