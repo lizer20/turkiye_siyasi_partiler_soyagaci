@@ -44,6 +44,7 @@
       return {
         girenler: sirali.filter(s => s.sandalye > 0),
         giremeyenler: sirali.filter(s => s.sandalye === 0),
+        bilinmeyen: sirali.filter(s => s.sandalye == null),
         bagimsiz: k.sonuc.find(s => s.ad === BAGIMSIZ) || null,
         diger: k.sonuc.find(s => s.ad === DIGER) || null
       };

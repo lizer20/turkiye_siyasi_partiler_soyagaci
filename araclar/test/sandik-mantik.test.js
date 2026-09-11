@@ -84,3 +84,34 @@ test("partininSecimleri ittifak listesinden seçilmeyi de bulur", () => {
   assert.deepEqual(s.genel[1].ittifak, { ad: "Sahte İttifak", liste: "chp92", sandalye: 2 });
   assert.deepEqual(s.yerel.map(x => x.kayit.id), ["2004-03-yerel"]);
 });
+
+test("meclisDurumu sandalyesi bilinmeyen partileri ayrı listeler", () => {
+  const k = structuredClone(kayit("1999-04-genel"));
+  k.sonuc.find(s => s.parti === "fp").sandalye = null;
+  const d = M.meclisDurumu(k);
+  assert.deepEqual(d.bilinmeyen.map(s => s.parti), ["fp"]);
+  assert.deepEqual(d.giremeyenler, []);
+  assert.deepEqual(d.girenler.map(s => s.parti), ["dsp", "mhp93"]);
+});
+
+test("kronoloji askerî yönetim aralığındaki kayıtları kaba koyar, bantlara koymaz", () => {
+  const i = P.DONEMLER.findIndex(d => d.kesinti && d.kesinti.tarih === "1980-09-12");
+  const y = P.DONEMLER[i].kesinti.yonetim;
+  assert.ok(y, "1980 kesintisinde yonetim aralığı yok");
+  const S = { secimler: [{ id: y.bas.slice(0, 7) + "-referandum", tur: "referandum", tarih: y.bas }],
+              hukumetler: [{ no: 1, basbakan: "X", partiler: [], baslangic: y.bit, bitis: null,
+                             tip: "partiluestu", bitisNedeni: null }] };
+  const kr = M.kronoloji(S);
+  assert.deepEqual((kr.kaplar[i] || []).map(o => o.tarih), [y.bas, y.bit]);
+  assert.equal(kr.bantlar.reduce((n, b) => n + b.ogeler.length, 0), 0);
+  assert.equal(kr.yersiz.length, 0);
+});
+
+test("kronoloji aynı tarihte seçimi hükümetten önce koyar", () => {
+  // Bugün hem ekleme sırası (seçimler önce) hem karşılaştırıcının eşitlik kuralı bunu garanti ediyor;
+  // test, ikisinden biri değişirse davranışın korunduğunu denetler.
+  const S = { secimler: [{ id: "2002-11-genel", tur: "genel", tarih: "2002-11-18", sonuc: [] }],
+              hukumetler: [{ no: 58, basbakan: "B", partiler: ["akp"], baslangic: "2002-11-18",
+                             bitis: null, tip: "tek-parti", bitisNedeni: null }] };
+  assert.deepEqual(M.kronoloji(S).bantlar[6].ogeler.map(x => x.tur), ["secim", "hukumet"]);
+});
