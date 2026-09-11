@@ -495,10 +495,10 @@ Tasarım sırasında hafızadan kullanılan şu bilgiler, uygulamanın ilk işi 
 kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 
 - ~~Refah Partisi'nin kapatılma kararının tarihi (§5.9'daki metin).~~
-  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 1 — 2026-09-11):** 16 Ocak
-  1998 (Esas 1997/1, Karar 1998/1; RG yayım tarihi 22 Şubat 1998). Resmi AYM/Resmi Gazete
-  kaynağına bu ortamdan doğrudan erişilemedi (bkz. defter); birden çok bağımsız ikincil kaynakla
-  doğrulandı, sonraki bir görevde resmi kaynağa erişim tekrar denenmeli.
+  **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 1 — 2026-09-11, düzeltme
+  turu 1):** 16 Ocak 1998 (Cuma). [B] TBMM Tutanak Dergisi, Cilt 43, 44. Birleşim, 20.1.1998
+  (Abdullah Gül'ün genel kuruldaki konuşması bu tarihi doğruluyor) + ikincil kaynaklara göre
+  Esas 1997/1, Karar 1998/1, RG yayım tarihi 22 Şubat 1998.
 - ~~1960 ve 1980 `yonetim` aralıklarının başlangıç ve bitiş tarihleri (§5.9).~~
   **Doğrulandı (kaynak: `araclar/kaynak-defteri.md`, Adım 2 madde 2 — 2026-09-11):** geçiş genel
   seçimleri TÜİK Ek-1 (s. 259) ile doğrulandı — 27 Mayıs 1960 kabı `bit: "1961-10-14"` (geçiş

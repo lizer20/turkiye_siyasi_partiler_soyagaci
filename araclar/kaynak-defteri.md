@@ -21,8 +21,9 @@ Birincil kaynak **[B]** ile işaretlenir. "hesaplandı" = resmî il tablosundan 
 Bunlar spesifikasyon §8.5'te "hafızadan" olarak işaretlenmiş, Görev 1'de doğrulanan iddialardır.
 Ayrıntılı kaynaklar için `## Kayıtlar` altındaki ilgili başlığa bakın.
 
-1. **Refah Partisi'nin AYM kapatma kararının tarihi: 16 Ocak 1998** (Esas 1997/1, Karar 1998/1;
-   RG yayım tarihi 22 Şubat 1998) — DOĞRULANDI (erişim sınırlı; ayrıntı: Kayıtlar).
+1. **Refah Partisi'nin AYM kapatma kararının tarihi: 16 Ocak 1998** (ikincil kaynaklara göre Esas
+   1997/1, Karar 1998/1; RG yayım tarihi 22 Şubat 1998) — DOĞRULANDI ([B] TBMM Tutanak Dergisi,
+   Cilt 43, 44. Birleşim, 20.1.1998 + ikincil kaynaklar; ayrıntı: Kayıtlar).
 2. **1960 ve 1980 `yonetim` aralıklarının bitiş tarihleri** (geçiş genel seçiminden bir gün önce):
    - 27 Mayıs 1960 kabı: geçiş seçimi 15 Ekim 1961 → `bit: "1961-10-14"` — DOĞRULANDI.
    - 12 Eylül 1980 kabı: geçiş seçimi 6 Kasım 1983 → `bit: "1983-11-05"` — DOĞRULANDI.
@@ -41,21 +42,29 @@ Ayrıntılı kaynaklar için `## Kayıtlar` altındaki ilgili başlığa bakın.
 -->
 
 ### Adım 2, madde 1 — Refah Partisi kapatma tarihi
-- Sonuç: 16 Ocak 1998 (Esas 1997/1, Karar 1998/1); Resmî Gazete 22 Şubat 1998.
-- Kaynaklar denendi: `anayasa.gov.tr` (sertifika hatası), `kararlaryeni.anayasa.gov.tr` (DNS
-  çözümlenmedi), `kararlarbilgibankasi.anayasa.gov.tr` (yüklendi ama JS kabuğu, içerik alınamadı),
-  `resmigazete.gov.tr/arsiv/23266.pdf` ve `.../eskiler/1998/02/19980222.htm` (WebFetch sertifika
-  hatası; `curl -sk -4` üç kez zaman aşımına uğradı).
-- Kullanılan kaynaklar: hukukansiklopedisi.com/refah-partisi-kapatma-karari/ (esas/karar no. ve
-  RG tarihini açıkça veriyor, karar tarihini başlıkta "16 Ocak 1998" olarak yazıyor) + WebSearch
-  ile toplanan 5 bağımsız haber kaynağı (yenisafak.com, milliyet.com.tr, hicrethaber.com,
-  refahmedya.com, memurlar.net'in AYM'den doğrudan alıntısı: "[AYM, E.1997/1, K.1998/1, 16/1/1998]").
+- Sonuç: **16 Ocak 1998 (Cuma)**.
+- **[B] T.B.M.M. Tutanak Dergisi, Cilt 43, 44. Birleşim, 20.1.1998 Salı** (Dönem 20, Yasama Yılı 3)
+  — `https://cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/20/3/44/6ac1c7c2-378e-4cdc-b9f2-03b26ca674ef.html`.
+  Bu resmî TBMM tutanağında, kapatma kararından 4 gün sonraki genel kurul oturumunda Kayseri
+  Milletvekili Abdullah Gül'ün konuşmasında geçen ifade: "Refah Partisinin, Anayasa Mahkemesi
+  tarafından 16 Ocak 1998 Cuma günü kapatılmasıyla ilgili söz almış bulunuyorum." Tutanak resmî
+  karar/esas numarasını içermiyor, yalnızca tarihi doğruluyor (iç tutarlılık kontrolü: 16 Ocak
+  1998 gerçekten Cuma gününe denk geliyor).
+- İkinci kaynak (tarih + esas/karar no. + RG tarihi için): hukukansiklopedisi.com/refah-partisi-kapatma-karari/
+  (esas 1997/1, karar 1998/1, RG 22 Şubat 1998) + WebSearch ile toplanan 5 bağımsız haber kaynağı
+  (yenisafak.com, milliyet.com.tr, hicrethaber.com, refahmedya.com, memurlar.net'in AYM'den
+  doğrudan alıntısı: "[AYM, E.1997/1, K.1998/1, 16/1/1998]") — hepsi 16 Ocak 1998 tarihinde ve
+  esas/karar numaralarında birleşiyor.
 - Uyuşmazlık: hukukansiklopedisi.com sayfasının gövde metninde bir cümle "Karar, 9 Ocak 1998
-  tarihinde verilmiş" diyor — aynı sayfanın başlığıyla ve bütün diğer kaynaklarla çelişiyor;
-  tek ve iç tutarsız olduğu için 16 Ocak 1998 esas alındı.
-- Not: Resmi birincil kaynağa (AYM/Resmi Gazete) bu ortamdan erişilemedi — erişim tekrar
-  denenmeli (Görev 2 veya sonraki bir veri görevinde, RP kesintisi kaydı yazılırken).
-- Erişim: 2026-09-11.
+  tarihinde verilmiş" diyor — aynı sayfanın başlığıyla, TBMM tutanağıyla ve bütün diğer
+  kaynaklarla çelişiyor; tek ve iç tutarsız olduğu için dikkate alınmadı, 16 Ocak 1998 esas alındı.
+- **Düzeltme turu 1 notu (2026-09-11):** İlk yoklamada AYM/Resmî Gazete'nin kendi sitelerine
+  (`anayasa.gov.tr`, `kararlaryeni.anayasa.gov.tr`, `kararlarbilgibankasi.anayasa.gov.tr`,
+  `resmigazete.gov.tr`) doğrudan erişilemediği için bu iddia yalnızca ikincil kaynaklarla işaretlenmişti.
+  İkinci yoklamada TBMM'nin kendi tutanak arşivi (`cdn.tbmm.gov.tr`) üzerinden resmî bir kaynağa
+  ulaşıldı; ayrıntılı deneme kaydı için `.superpowers/sdd/2026-09-11-sandik/task-1-report.md`
+  içindeki "Düzeltme turu 1" bölümüne bakın.
+- Erişim: 2026-09-11 (ilk yoklama); 2026-09-11 (düzeltme turu 1, TBMM tutanağı).
 
 ### Adım 2, madde 2 — 1960 ve 1980 `yonetim` aralıklarının geçiş seçimi tarihleri
 - Sonuç: 27 Mayıs 1960 kabı → geçiş seçimi 15 Ekim 1961 → `bit = 1961-10-14`.
