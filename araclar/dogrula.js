@@ -96,6 +96,11 @@ function dogrulaSandik(P, S) {
     });
     if (k.tur === "ara") for (const s of k.sonuc || []) partiDenetle(s.parti, k.id);
 
+    if (k.tur === "genel" || k.tur === "ara")
+      for (const s of k.sonuc || [])
+        if (s.ad && s.ad !== "Bağımsız" && s.ad !== "Diğer" && s.sandalye > 0)
+          uyarilar.push("soyağacında olmayan ama sandalye kazanan: " + s.ad + " (" + k.id + ")");
+
     // — sayısı (bilinmeyen sayısal alanlar)
     const y = M.donemBul(k.tarih);
     const anahtar = k.tur + " " + (y ? (y.tur === "yonetim" ? "kap " : "bant ") + y.i : "yersiz");

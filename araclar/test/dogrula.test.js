@@ -99,3 +99,14 @@ test("ittifak listesinden seçilenler liste partisini aşarsa uyarı, — sayıs
   assert.match(u, /2002-11-genel: ittifak Sahte İttifak içinden 6 > liste partisi 5/);
   assert.match(uyarilar(kopya()), /— sayısı: genel/);
 });
+
+test("soyağacında olmayan ama sandalye kazanan parti uyarılır", () => {
+  const S = kopya();
+  const k = bul(S, "1999-04-genel");
+  k.sonuc.push({ ad: "Sahte Parti", oy: 0, sandalye: 0 });   // sandalyesiz: uyarı yok
+  assert.doesNotMatch(uyarilar(S), /Sahte Parti/);
+  k.sonuc[k.sonuc.length - 1].sandalye = 1;
+  k.meclis = 11;                                               // toplam tutsun, yalnızca uyarı sınansın
+  assert.match(uyarilar(S), /soyağacında olmayan ama sandalye kazanan: Sahte Parti \(1999-04-genel\)/);
+  assert.doesNotMatch(uyarilar(S), /sandalye kazanan: Bağımsız/);
+});
