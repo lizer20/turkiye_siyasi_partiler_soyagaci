@@ -77,6 +77,7 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Yerel seçim başlangıcı | Bulunabilen en eski belediye seçimi; 1963 öncesi kayıtlarda bulunamayan her alan `—` |
 | Yürütme | Görev başına alt ajan (kullanıcı kararı, 2026-09-11) |
 | Askerî yönetim kabının bitişi | Geçiş genel seçiminden bir gün önce; 1961 ve 1983 seçimleri sıradaki bandı açar |
+| Haber veritabanları | Tam tablo yayımlayan ulusal gazete seçim veritabanları yalnızca ikinci kaynak olabilir |
 
 ## 4. Mimari
 
@@ -431,6 +432,9 @@ açılıp kapanma. Çubuklar tam genişlik olur, ilk üç parti alt alta dizilir
 - Her sayı **en az bir resmî kaynakta** görülmelidir: YSK kararları ve ilanları, TÜİK
   seçim yayınları, TBMM kayıtları, Resmî Gazete.
 - Ve **ikinci bir kaynakla eşleşmelidir** (resmî ya da akademik/kurumsal bir derleme).
+  Tam tablo yayımlayan ulusal gazete seçim veritabanları da **yalnızca ikinci kaynak** olarak
+  kabul edilir (kullanıcı kararı, 2026-09-11). Tek ya da birincil kaynak olarak asla
+  kullanılmazlar ve kaynak defterinde "haber veritabanı" diye işaretlenirler.
 - Vikipedi yalnızca karşılaştırma ve kaynak bulma aracıdır. Tek başına kaynak sayılmaz,
   ikinci kaynak da sayılmaz.
 - Eşleşmeyen ve üçüncü bir kaynakla da çözülemeyen sayı `null` olur (§5.1).
