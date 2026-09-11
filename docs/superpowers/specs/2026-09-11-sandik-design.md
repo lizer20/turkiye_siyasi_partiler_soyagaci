@@ -42,6 +42,8 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 - Hükümetlerin güven oylaması sayıları.
 - Parti arama kutusu. Partiden seçimlere erişimi soyağacı künyesi sağlar.
 - Hükümet şeridine tıklanınca açılan bir ayrıntı paneli.
+- Yerel ara seçimler (yeni kurulan beldelerde ya da boşalan belediye başkanlıkları için
+  yapılanlar). Tek istisna, ayrı kayıt olarak yer alan 2019 İstanbul yenileme seçimidir (§5.3).
 
 ## 3. Alınan kararlar
 
@@ -69,6 +71,7 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Künye | Girdiği genel **ve** yerel seçimler listelenir |
 | Kaynak defteri | Projede tutulur, sitede gösterilmez |
 | Soyağacı eksikleri | Toplanır, kullanıcı onayıyla soyağacına eklenir |
+| Yerel ara seçimler | Kapsam dışı (2019 İstanbul yenilemesi hariç); metodoloji sayfasında belirtilir |
 
 ## 4. Mimari
 
@@ -456,8 +459,11 @@ kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 - Refah Partisi'nin kapatılma kararının tarihi (§5.9'daki metin).
 - 1960 ve 1980 `yonetim` aralıklarının başlangıç ve bitiş tarihleri (§5.9).
 - MDP'nin 1983'te meclise girmiş olması (§7, madde 5).
-- 2024 yerel seçimlerinden sonra yapılmış bir seçim ya da referandum olup olmadığı
-  (bilgi Mayıs 2026'ya kadar uzanıyor; bugün Eylül 2026).
+- ~~2024 yerel seçimlerinden sonra yapılmış bir seçim ya da referandum olup olmadığı.~~
+  **Web aramasıyla kontrol edildi (2026-09-11):** 7 Haziran 2026'da 6 beldede ara yerel
+  seçim yapıldı; bu seçim kapsam dışıdır (§2). Erken genel seçim ya da referandum yapılmadı;
+  olağan takvim 14 Mayıs 2028. Bir anayasa referandumu kamuoyunda tartışıldığı için, iş
+  tamamlanmadan önce son bir güncellik kontrolü yapılır.
 
 ## 9. Kaynakça sayfası güncellemesi
 
@@ -472,6 +478,7 @@ kuralıyla doğrulanır. Doğrulanamazlarsa kullanılmazlar:
 - 1946 seçiminin "açık oy, gizli tasnif" ile yapılmış olması.
 - Tek parti dönemi seçimlerinin iki dereceli olması.
 - Referandum tutumlarının neyi ifade ettiği (`serbest` dahil).
+- Yerel ara seçimlerin kapsam dışında olduğu (2019 İstanbul yenilemesi hariç).
 
 "Bu tür bilgiler nereden doğrulanabilir" listesine TÜİK seçim yayınları eklenir.
 
