@@ -113,6 +113,7 @@
 <nav class="ustmenu">
   <div class="ustmenu-ic">
     <a href="index.html" class="ustmenu-link aktif">Ana sayfa</a>
+    <a href="sandik.html" class="ustmenu-link">Sandık</a>
     <a href="kaynakca.html" class="ustmenu-link">Kaynakça &amp; metodoloji</a>
   </div>
 </nav>
@@ -168,10 +169,14 @@
 </div>
 
 <script src="veri/partiler.js"></script>
+<script src="veri/sandik.js"></script>
 <script src="ortak.js"></script>
+<script src="sandik-mantik.js"></script>
 <script>
 (function(){
   const {AILE, BILGI, DONEMLER, N, E, ROZET} = window.PARTILER;
+  const SANDIK = window.SANDIK;
+  const SM = SandikMantik.olustur(window.PARTILER, Ortak);
 
   const GUNCEL_YIL=2026;
   let arama="", aileFiltre=null, yilFiltre=null, filtreAktif=false;
@@ -360,7 +365,8 @@
   const Panel = Ortak.panelKur({
     panel, perde, govde,
     kapatDugmesi: document.getElementById("kapat"),
-    odakSecici: ".kart"
+    odakSecici: ".kart",
+    kapaninca: () => history.replaceState(null, "", location.pathname + location.search)
   });
 
   function bul(id){ return N.find(n=>n.id===id); }
@@ -391,7 +397,9 @@
       (n.sembol?'<div class="p-etiket">Sembol</div><div class="p-sembol">'+n.sembol+'</div>':'')+
       (oncul.length?'<div class="p-etiket">Nereden geldi</div><ul>'+satirlar(oncul)+'</ul>':'')+
       (ardil.length?'<div class="p-etiket">Nereye gitti</div><ul>'+satirlar(ardil)+'</ul>':'');
-    Panel.ac(html, renk);
+    const secimler = SM.kunyeSecimleriHTML(id, SANDIK);
+    Panel.ac(html + secimler, renk);
+    history.replaceState(null, "", "#" + id);
   }
 
   chart.addEventListener("click",ev=>{
@@ -432,6 +440,23 @@
     yilKaydirici.value=YMAX; yilDeger.textContent=YMAX;
     filtreUygula();
   });
+
+  /* ---- doğrudan bağlantı: index.html#<parti> ---- */
+  function hashAc(){
+    const id = Ortak.hashOku(location.hash);
+    if(!id || !bul(id)) return;
+    const el = chart.querySelector('[data-id="'+id+'"]');
+    const s = el.closest(".satir");
+    if(s.classList.contains("kapali")){
+      const b = document.querySelector('.banner[aria-controls="'+s.id+'"]');
+      Ortak.bantDurum(b, s, false); ciz();
+    }
+    el.scrollIntoView({block:"center", inline:"center"});
+    el.focus();
+    ac(id);
+  }
+  window.addEventListener("hashchange", hashAc);
+  hashAc();
 
   ciz();
   window.addEventListener("resize",()=>{clearTimeout(window.__t);window.__t=setTimeout(ciz,120)});

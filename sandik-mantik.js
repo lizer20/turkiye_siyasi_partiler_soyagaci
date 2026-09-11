@@ -282,10 +282,26 @@
       return { html: h, renk: kartRengi(k) };
     }
 
+    /* ---- soyağacı künyesi: partinin girdiği seçimler ---- */
+    function kunyeSecimleriHTML(id, S) {
+      const s = partininSecimleri(id, S);
+      const etiket = k => {
+        const ayniYil = S.secimler.filter(x => x.tur === k.tur && x.tarih.slice(0, 4) === k.tarih.slice(0, 4));
+        return ayniYil.length > 1 ? O.tarihYaz(k.tarih, true).replace(/^\d+ /, "") : k.tarih.slice(0, 4);
+      };
+      const bag = k => '<a class="p-git" href="sandik.html#' + k.id + '">' + etiket(k) + "</a>";
+      const genel = s.genel.map(x => "<li>" + bag(x.kayit) + "<span>" + (x.satir
+        ? O.yuzdeYaz(oyDegeri(x.satir, x.kayit)) + " · " + O.sayiYaz(x.satir.sandalye) + " sandalye"
+        : kacis(partiAdi({ parti: x.ittifak.liste }).kisa) + " listesinden " + O.sayiYaz(x.ittifak.sandalye) + " vekil") +
+        "</span></li>");
+      const yerel = s.yerel.map(x => "<li>" + bag(x.kayit) + "<span>" + O.yuzdeYaz(oyDegeri(x.satir, x.kayit)) + "</span></li>");
+      return liste("Girdiği genel seçimler", genel) + liste("Girdiği yerel seçimler", yerel);
+    }
+
     return { BAGIMSIZ, DIGER, NOTR, KESINTI, TUR_ETIKET, TUR_AD, BITIS_ETIKET,
              partiAdi, oyDegeri, katilimDegeri, siralaGenel, baslikGenel, meclisDurumu,
              donemBul, kronoloji, sonrakiHukumetler, partininSecimleri,
-             kacis, rozetHTML, cubukHTML, kartHTML, seritHTML, panelHTML };
+             kacis, rozetHTML, cubukHTML, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML };
   }
   return { olustur };
 });

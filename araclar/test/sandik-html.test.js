@@ -99,3 +99,29 @@ test("not alanı kaçırılır", () => {
   k.not = "<x>";
   assert.ok(M.panelHTML(k, F).html.includes("&lt;x&gt;"));
 });
+
+test("künye: girdiği genel seçimler (kendi listesi ve ittifak listesi) ve yerel seçimler", () => {
+  const h = M.kunyeSecimleriHTML("dsp", F);
+  assert.match(h, /Girdiği genel seçimler/);
+  assert.match(h, /href="sandik\.html#1999-04-genel">1999</);
+  assert.ok(h.includes("%42,9 · 6 sandalye"));
+  assert.match(h, /href="sandik\.html#2002-11-genel">2002</);
+  assert.ok(h.includes(M.kacis(kisa("chp92")) + " listesinden 2 vekil"));
+  assert.match(h, /Girdiği yerel seçimler/);
+  assert.match(h, /href="sandik\.html#2004-03-yerel">2004</);
+  assert.ok(h.includes("%13,0"));
+});
+
+test("künye: aynı yıl aynı türde iki seçim ay adıyla ayrışır", () => {
+  const S = structuredClone(F);
+  const ikinci = structuredClone(S.secimler.find(k => k.id === "1999-04-genel"));
+  ikinci.id = "1999-11-genel"; ikinci.tarih = "1999-11-07";
+  S.secimler.splice(2, 0, ikinci);
+  const h = M.kunyeSecimleriHTML("dsp", S);
+  assert.match(h, />Nis 1999</);
+  assert.match(h, />Kas 1999</);
+});
+
+test("künye: seçim kaydı olmayan partide boş", () => {
+  assert.equal(M.kunyeSecimleriHTML("tcf", F), "");
+});
