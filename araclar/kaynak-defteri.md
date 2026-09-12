@@ -402,22 +402,40 @@ ayrıntı bu blokta, her kayıt için ayrı kısa başlık aşağıda.
 - Uyuşmazlık: yok.
 - Erişim: 2026-09-11.
 
-### 1934, 1938, 1942 belediye seçimleri — envanterde bulundu, kayıt EKLENMEDİ
-- Bulgu: birden çok bağımsız kaynak (Burdur akademik makalesi + Üste 2006 tez başlığı +
-  WebSearch'te tekrarlayan "1934/1938/1942 tek parti dönemi 2., 3. ve 4. yerel seçimler"
-  ifadeleri) bu üç seçimin var olduğunu tutarlı biçimde doğruluyor: 1934 (CHF tek başına,
-  "ikinci yerel seçim"), 1938 (Ekim, "üçüncü"), 1942 (Ekim, "dördüncü", II. Dünya Savaşı
-  gölgesinde).
-- **Sorun:** bu görevde her üçü için de gün/ay düzeyinde kesin tarih, Vikipedi dışı **iki**
-  bağımsız kaynakla doğrulanamadı (yalnızca "1934 yılı" gibi yıl düzeyinde bilgiye ulaşıldı;
-  Ekim ayı iddiaları büyük ölçüde arama sentezlerinde Vikipedi'ye dayanıyordu, kural gereği
-  kullanılmadı). 1580 sayılı Belediye Kanunu'nun metni (Madde 20) yalnızca "dört sene"lik
-  seçim devresini belirtiyor, belirli bir ay şartı koymuyor.
-- Sonuç: `id`/`tarih` alanları için gerekli asgari doğrulama sağlanamadığından bu üç kayıt
-  **`veri/sandik.js`'e eklenmedi**. Kullanıcıya sunulacaklar bölümünde ayrıca belirtildi —
-  ileride ayrı bir araştırma turuyla (TBMM ZC veya dönemin Resmî Gazete/gazete arşivi taraması)
-  tamamlanabilir.
-- Erişim: 2026-09-11.
+### 1934-10-yerel, 1938-10-yerel, 1942-10-yerel
+**Düzeltme turu 1 (2026-09-12) — odaklı arama turu sonucu BULUNDU ve eklendi.** Önceki turda
+(2026-09-11) bu üç seçimin varlığı doğrulanmış ama gün/ay düzeyinde kesin tarih Vikipedi dışı
+iki kaynakla doğrulanamamıştı; kullanıcı kararıyla artık `tarih` alanı `"YYYY-AA"` (ay
+hassasiyetli) yazılabildiğinden bu engel kalktı ve aşağıdaki kaynakla ay düzeyinde tarih
+bulundu.
+
+- **[B] Ayşe (Rabia) Bahar ÜSTE, "Yerel Seçimlerin Cinsiyeti: Seçimler ve Kadın Temsili",
+  *Dokuz Eylül Üniversitesi İşletme Fakültesi Dergisi***
+  (`https://dergipark.org.tr/tr/download/article-file/312360`, `pdftotext -layout -enc UTF-8`
+  ile okundu) — dönemin gazetelerine dayanarak (Cumhuriyet, Ulus, Anadolu, Halkın Sesi,
+  Hakimiyet-i Milliye, Son Posta, Yeni Sabah, Tan; her alıntının gazete adı ve tarihi
+  dipnotlarda) üç seçimin de ülke geneli zaman aralığını veriyor:
+  - **1934:** "Tüm yurtta 2 Ekim 1934 günü başlayan seçimler, çeşitli tarihlerde
+    sonuçlanmış, İzmir seçimleri 10 Ekim 1934 günü bitmiştir." → `tarih:"1934-10"`.
+  - **1938:** "1938 yerel seçimleri tüm yurtta Ekim ayının ilk haftası başlamıştır. Ankara'da
+    29 Eylül 1938 günü başlayan seçimler, 8 Ekim 1938 tarihinde tamamlanmıştır... İstanbul'da
+    seçimler 1 Ekim tarihinde başlamış ve 10 Ekim 1938 tarihinde tamamlanmıştır." →
+    `tarih:"1938-10"` (Ankara'nın 29 Eylül'de başlaması `not` alanında belirtildi).
+  - **1942:** "İstanbul'da seçimler 1 Ekim'de başlamış ve 11 Ekim 1942 tarihinde
+    sonuçlanmıştır." (Ankara ve İzmir için de Eylül sonu-Ekim ortası benzer takvim) →
+    `tarih:"1942-10"`.
+- **İkinci kaynak/çapraz doğrulama (1934 için):** "1934 Yılı Amasya Vilayeti Belediye Meclisi
+  Seçimleri" (dergipark, `egitimvetoplum`, `article/1814471`) — "18 Ekim 1934 tarihli
+  belediye meclisi toplantısında Amasya Belediye Başkanlığına seçildi" ifadesi, meclis
+  üyelerinin bu tarihte zaten göreve başlamış olduğunu, dolayısıyla seçimin Ekim 1934 içinde
+  tamamlandığını doğruluyor.
+- **Ülke geneli oy sayısı hiçbirinde bulunamadı** → `sonuc: []`, `kayitli`/`kullanilan`/
+  `gecerli`: `null` (1930 kaydıyla aynı kural, spesifikasyon §5.3). `buyuksehir` yazılmadı
+  (1963 öncesi kuralı, Görev 1'de doğrulandı).
+- Uyuşmazlık: yok (üç seçim de aynı kaynakta tutarlı; İstanbul'un her yıl 1 Ekim'de
+  başlaması ve 10-11 Ekim'de bitmesi düzenli bir örüntü oluşturuyor, 1930'un 5-18 Ekim'i ile
+  de uyumlu).
+- Erişim: 2026-09-12.
 
 ### hukumet-1
 Bkz. yukarıdaki ortak blok. I. İnönü Hükümeti, 30.10.1923-06.03.1924, tip: tek-parti.

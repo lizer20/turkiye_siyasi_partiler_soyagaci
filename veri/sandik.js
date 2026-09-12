@@ -45,6 +45,13 @@ window.SANDIK = {
       secilen: "Mustafa Kemal Atatürk", turSayisi: 1,
       not: "Atatürk 3. kez, tek aday, oybirliğiyle seçildi (289 oy)." },
 
+    // kaynak: araclar/kaynak-defteri.md#1934-10-yerel
+    { id: "1934-10-yerel", tur: "yerel", tarih: "1934-10",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      not: "Tek parti döneminin ikinci ülke geneli belediye seçimiydi; ülke geneli oy sayısı bulunamadı." },
+
     // kaynak: araclar/kaynak-defteri.md#1935-02-genel
     { id: "1935-02-genel", tur: "genel", tarih: "1935-02-08", tekParti: true,
       meclis: 399, kayitli: null, kullanilan: null, gecerli: null, baraj: null,
@@ -55,6 +62,13 @@ window.SANDIK = {
     { id: "1935-03-cb-tbmm", tur: "cb-tbmm", tarih: "1935-03-01",
       secilen: "Mustafa Kemal Atatürk", turSayisi: 1,
       not: "Atatürk 4. ve son kez, tek aday, oybirliğiyle seçildi (386 oy)." },
+
+    // kaynak: araclar/kaynak-defteri.md#1938-10-yerel
+    { id: "1938-10-yerel", tur: "yerel", tarih: "1938-10",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      not: "Tek parti döneminin üçüncü ülke geneli belediye seçimiydi (Ankara 29 Eylül–8 Ekim, İstanbul 1–10 Ekim 1938); ülke geneli oy sayısı bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1938-11-cb-tbmm
     { id: "1938-11-cb-tbmm", tur: "cb-tbmm", tarih: "1938-11-11",
@@ -71,6 +85,13 @@ window.SANDIK = {
     { id: "1939-04-cb-tbmm", tur: "cb-tbmm", tarih: "1939-04-03",
       secilen: "İsmet İnönü", turSayisi: 1,
       not: "İnönü 2. kez, tek aday, oybirliğiyle seçildi (413 oy)." },
+
+    // kaynak: araclar/kaynak-defteri.md#1942-10-yerel
+    { id: "1942-10-yerel", tur: "yerel", tarih: "1942-10",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      not: "Tek parti döneminin dördüncü ve son ülke geneli belediye seçimiydi (İstanbul 1–11 Ekim 1942); ülke geneli oy sayısı bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1943-02-genel
     { id: "1943-02-genel", tur: "genel", tarih: "1943-02-28", tekParti: true,
