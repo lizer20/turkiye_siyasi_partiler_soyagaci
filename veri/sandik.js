@@ -127,7 +127,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1950-05-genel
     { id: "1950-05-genel", tur: "genel", tarih: "1950-05-14", tekParti: false,
       meclis: 487, kayitli: 8905743, kullanilan: 7953085, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: 4241393, sandalye: 408 }, { parti: "chp23", oy: 3176561, sandalye: 69 }, { parti: "mp48", oy: 250414, sandalye: 1 }, { ad: "Bağımsız", oy: 383282, sandalye: 9 } ],
+      sonuc: [ { parti: "dp46", oy: 4241393, sandalye: 408 }, { parti: "chp23", oy: 3176561, sandalye: 69 }, { parti: "mp48", oy: null, sandalye: 1 }, { ad: "Bağımsız", oy: null, sandalye: 9 } ],
       not: "İktidar ilk kez seçim yoluyla el değiştirdi: CHP'den DP'ye." },
 
     // kaynak: araclar/kaynak-defteri.md#1950-05-cb-tbmm

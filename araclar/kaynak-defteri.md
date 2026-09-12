@@ -593,9 +593,10 @@ arasındaki fark %0,5'i (aslında %1-10 aralığında, çok daha büyük) aştı
 - Erişim: 2026-09-12.
 
 ### 1950-05-genel
+**Düzeltme turu 2 (2026-09-12) — MP ve Bağımsız `oy` değerleri `null` yapıldı (tek kaynaklı).**
 - Sonuç: 14 Mayıs 1950; DP 4.241.393 oy (%52,68) / 408 sandalye, CHP 3.176.561 oy (%39,45) / 69
-  sandalye, MP 250.414 oy (%3,11) / 1 sandalye, Bağımsız 383.282 oy (%4,76) / 9 sandalye (toplam
-  408+69+1+9=487=meclis ✓).
+  sandalye, MP 1 sandalye (oy sayısı `null`), Bağımsız 9 sandalye (oy sayısı `null`) — toplam
+  408+69+1+9=487=meclis ✓ (sandalyeler değişmedi).
 - **[B, düzeltme turu 1'de kod TEKRAR TBMM'nin sayılarına döndürüldü — ilk turda kaynak
   defterindeki karar doğruydu ama `veri/sandik.js`'e yanlışlıkla TÜİK'in "ortalama oy" satırı
   (DP 4.391.694 / CHP 3.148.626 / MP 368.537) yazılmıştı; bu turda TBMM seçim sorgusu sayfası
@@ -616,12 +617,21 @@ arasındaki fark %0,5'i (aslında %1-10 aralığında, çok daha büyük) aştı
     için verdiği "416" sandalye rakamının (69+1+9+416=495>487 olduğu için imkânsız olduğu
     anlaşılan, çok satırlı hücre hizalama hatasından kaynaklandığı değerlendirilen)
     kullanılmadığını doğruluyor.
-- **MP ve Bağımsız oy sayıları — tek kaynak (TBMM), ikinci kaynak bulunamadı:** Olgun (2010) MP ve
-  Bağımsız için yalnızca sandalye sayısını (1 ve 9) veriyor, oy sayısı vermiyor; bu görevde başka
-  bir bağımsız kaynak aranmış ama bulunamamıştır. Spesifikasyon §8.1'in "en az bir resmî kaynak +
-  ikinci bir kaynakla eşleşme" kuralına göre bu iki sayı katı biçimde tek kaynaklı kalıyor; yine de
-  kullanıcının bu turda "TBMM sayfasından yeniden yaz" talimatı gereği yazıldı — sonraki bir turda
-  ikinci kaynak aranabilir, bulunamazsa `null`'a çevrilmesi gerekir.
+- **MP ve Bağımsız oy sayıları — `oy: null` (düzeltme turu 2).** TBMM seçim sorgusu MP için
+  250.414 (%3,11), Bağımsız için 383.282 (%4,76) veriyor, ama bu turda da ikinci bir kaynak
+  bulunamadı:
+  - Kenan OLGUN (2010) MP ve Bağımsız için yalnızca sandalye sayısını (1 ve 9) veriyor, oy sayısı
+    vermiyor (yukarıda zaten not edilmişti).
+  - Bu turda ayrıca denendi: WebSearch ile "1950 seçimi Millet Partisi oy sayısı 250.414" ve
+    "1950 milletvekili seçimi bağımsızlar oy sayısı 383.282" sorguları — ilkinde alakasız bir
+    rakam (TÜİK Tablo 23'ün 1965 satırındaki 582.704, Bölükbaşı'nın MP'yle özdeşleştiği farklı
+    bir yıla ait) çıktı, gerçek bir ikinci kaynak yok; ikincisinde yalnızca Ekşi Sözlük (forum,
+    kaynak sayılmaz) ve İngilizce Vikipedi (kaynak sayılmaz, üstelik 44.537 gibi TÜİK'in
+    "BÖMZ" satırıyla örtüşen farklı bir rakam veriyor — üç kaynak üç farklı sayı, hiçbiri
+    doğrulanmış değil) çıktı.
+  - **Sonuç: spesifikasyon §8.1'in "en az bir resmî kaynak + eşleşen ikinci kaynak" kuralına göre
+    bu iki sayı tek kaynaklı (yalnızca TBMM) kaldığı için `oy: null` yapıldı.** Sandalye sayıları
+    (MP 1, Bağımsız 9) değişmedi — bunlar Olgun (2010) ile bağımsız olarak doğrulanmış durumda.
 - **`kayitli`/`kullanilan`/`katılım`: [B] TÜİK Tablo 2** (PDF s. 23, ham akış) — kayıtlı 8.905.743,
   kullanılan 7.953.085, katılım %89,3 (7.953.085/8.905.743=%89,30 iç tutarlı).
   - Uyuşmazlık: **kayıtlı 8.905.743 (TÜİK) vs 8.905.576 (Olgun) — %0,0019** → eşleşti.
