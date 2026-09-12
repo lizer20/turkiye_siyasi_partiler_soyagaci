@@ -79,6 +79,7 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Askerî yönetim kabının bitişi | Geçiş genel seçiminden bir gün önce; 1961 ve 1983 seçimleri sıradaki bandı açar |
 | Haber veritabanları | Tam tablo yayımlayan ulusal gazete seçim veritabanları yalnızca ikinci kaynak olabilir |
 | Sandalyesi bilinmeyen parti | Panelde girenler/giremeyenler dışında ayrı "Sandalye bilgisi yok" listesinde; hiçbir satır kaybolmaz |
+| Günü bilinmeyen tarih | `YYYY-AA` yazılır, ekranda "Haziran 1923"; gün tahmin edilmez. Hükümet tarihleri gün dahil |
 
 ## 4. Mimari
 
@@ -121,6 +122,10 @@ siyasi parti/
 ### 5.1 Ortak kurallar
 
 - **Tarih:** ISO biçiminde, `"1950-05-14"`. Ekranda Türkçe biçimlenir ("14 Mayıs 1950").
+- **Günü bilinmeyen tarih:** kaynaklar yalnızca ay ve yıl veriyorsa `tarih` `"1923-06"` biçiminde
+  yazılır; ekranda "Haziran 1923" (kısa biçimde "Haz 1923") görünür. Gün asla tahmin edilmez
+  (kullanıcı kararı, 2026-09-11). Hükümetlerin `baslangic` ve `bitis` tarihleri gün dahil olmak
+  zorundadır; bilinmiyorsa hükümet kaydı eklenmez.
 - **Kimlik:** `YYYY-AA-tür`, örn. `"1950-05-genel"`, `"2015-06-genel"`, `"2015-11-genel"`,
   `"2019-06-yerel"`. Doğrudan bağlantılarda kullanılır; bu yüzden benzersiz ve kalıcı olmalıdır.
 - **Tür:** `genel` · `yerel` · `referandum` · `cb-halk` · `cb-tbmm` · `ara`.
@@ -474,6 +479,8 @@ Hata bulursa sıfırdan farklı bir kodla çıkar.
 - yinelenen kimlik; kimlik `YYYY-AA-tür` biçiminde değil ya da `tarih` ile uyuşmuyor
 - `secimler` ya da `hukumetler` tarih sırasında değil
 - bilinmeyen `tur`, `tip`, `bitisNedeni`, `tutum` ya da `karar` değeri
+- `tarih` biçimi `YYYY-AA-GG` ya da `YYYY-AA` değil
+- hükümetin `baslangic` ya da `bitis` tarihi gün içermiyor
 - soyağacında olmayan bir `parti` id'si
 - aynı satırda hem `parti` hem `ad`
 - genel seçimde bilinen sandalyelerin toplamı `meclis`'i aşıyor; hepsi biliniyorsa eşit değil
