@@ -127,7 +127,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1950-05-genel
     { id: "1950-05-genel", tur: "genel", tarih: "1950-05-14", tekParti: false,
       meclis: 487, kayitli: 8905743, kullanilan: 7953085, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: 4391694, sandalye: 408 }, { parti: "chp23", oy: 3148626, sandalye: 69 }, { parti: "mp48", oy: 368537, sandalye: 1 }, { ad: "Bağımsız", oy: null, sandalye: 9 } ],
+      sonuc: [ { parti: "dp46", oy: 4241393, sandalye: 408 }, { parti: "chp23", oy: 3176561, sandalye: 69 }, { parti: "mp48", oy: 250414, sandalye: 1 }, { ad: "Bağımsız", oy: 383282, sandalye: 9 } ],
       not: "İktidar ilk kez seçim yoluyla el değiştirdi: CHP'den DP'ye." },
 
     // kaynak: araclar/kaynak-defteri.md#1950-05-cb-tbmm
@@ -144,15 +144,15 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#1951-09-ara
     { id: "1951-09-ara", tur: "ara", tarih: "1951-09-16",
-      bolge: "17 il", sandalyeSayisi: 20,
+      bolge: "17 il", sandalyeSayisi: null,
       sonuc: [],
-      not: "1950 seçiminde birden fazla yerden seçilen ya da vefat eden milletvekillerinin yerine yapıldı; Bilecik'te DP kazandı. İl bazında kazananların tam listesi bu turda iki kaynakla doğrulanamadı." },
+      not: "1950 seçiminde birden fazla yerden seçilen ya da vefat eden milletvekillerinin yerine yapıldı; Bilecik'te DP kazandı. Dönemin basınında sandalye sayısı için üç farklı rivayet var (17 il/20 sandalye, 19 il/21 sandalye, 22 il/22 sandalye); resmî bir kaynakla (TBMM tutanağı ya da Resmî Gazete) kesinleştirilemediği için sandalye sayısı ve il bazında dağılım yazılmadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1954-05-genel
     { id: "1954-05-genel", tur: "genel", tarih: "1954-05-02", tekParti: false,
       meclis: 541, kayitli: 10262063, kullanilan: 9095617, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: 5313659, sandalye: 504 }, { parti: "chp23", oy: 3193471, sandalye: 31 }, { parti: "mp48", oy: 480249, sandalye: 5 }, { ad: "Bağımsız", oy: null, sandalye: 1 } ],
-      not: "DP ikinci seçimini de kazanarak iktidarını pekiştirdi." },
+      sonuc: [ { parti: "dp46", oy: null, sandalye: 503 }, { parti: "chp23", oy: null, sandalye: 31 }, { ad: "Cumhuriyetçi Millet Partisi", oy: null, sandalye: 5 }, { ad: "Bağımsız", oy: null, sandalye: null } ],
+      not: "DP ikinci seçimini de kazanarak iktidarını pekiştirdi. Bağımsızların kazandığı sandalye sayısı (TÜİK'e göre 503+31+5'ten geriye kalan 2, Yılmaz 2010'a göre 1) kaynaklar arasındaki DP sandalyesi uyuşmazlığı nedeniyle kesinleştirilemedi." },
 
     // kaynak: araclar/kaynak-defteri.md#1954-05-cb-tbmm
     { id: "1954-05-cb-tbmm", tur: "cb-tbmm", tarih: "1954-05-14",
@@ -162,7 +162,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1957-10-genel
     { id: "1957-10-genel", tur: "genel", tarih: "1957-10-27", tekParti: false,
       meclis: 610, kayitli: 12078623, kullanilan: 9250949, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: 4497811, sandalye: 424 }, { parti: "chp23", oy: 3825267, sandalye: 178 }, { parti: "mp48", oy: 604087, sandalye: 4 }, { ad: "Hürriyet Partisi", oy: 321471, sandalye: 4 } ],
+      sonuc: [ { parti: "dp46", oy: null, sandalye: 424 }, { parti: "chp23", oy: null, sandalye: 178 }, { ad: "Cumhuriyetçi Millet Partisi", oy: null, sandalye: 4 }, { ad: "Hürriyet Partisi", oy: null, sandalye: 4 } ],
       not: "DP oy kaybetmesine rağmen çoğunluk sistemi sayesinde sandalyelerin çoğunu korudu." },
 
     // kaynak: araclar/kaynak-defteri.md#1957-11-cb-tbmm
