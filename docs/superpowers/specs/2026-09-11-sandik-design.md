@@ -80,6 +80,8 @@ yerel olarak gömülü SVG. Aşama 1'in veri modeli bu genişlemeyi engellemeyec
 | Haber veritabanları | Tam tablo yayımlayan ulusal gazete seçim veritabanları yalnızca ikinci kaynak olabilir |
 | Sandalyesi bilinmeyen parti | Panelde girenler/giremeyenler dışında ayrı "Sandalye bilgisi yok" listesinde; hiçbir satır kaybolmaz |
 | Günü bilinmeyen tarih | `YYYY-AA` yazılır, ekranda "Haziran 1923"; gün tahmin edilmez. Hükümet tarihleri gün dahil |
+| Kaynaklar arası fark | ≤ %0,5 ise resmî kaynağın sayısı yazılır, fark deftere işlenir; üzerindeyse `—` |
+| Soyağacında olmayan partiler | Veri boyunca biriktirilir, veri bitince topluca kullanıcıya önerilir |
 
 ## 4. Mimari
 
@@ -444,6 +446,12 @@ açılıp kapanma. Çubuklar tam genişlik olur, ilk üç parti alt alta dizilir
 - Vikipedi yalnızca karşılaştırma ve kaynak bulma aracıdır. Tek başına kaynak sayılmaz,
   ikinci kaynak da sayılmaz.
 - Eşleşmeyen ve üçüncü bir kaynakla da çözülemeyen sayı `null` olur (§5.1).
+- **Eşleşme toleransı (kullanıcı kararı, 2026-09-12):** eski seçimlerde derlemeler aynı olayı
+  küçük farklarla verir. İki kaynak arasındaki fark **%0,5'e kadarsa** "eşleşti" sayılır;
+  veriye **birincil resmî kaynağın** sayısı yazılır ve fark kaynak defterine
+  "Uyuşmazlık: X vs Y (%Z)" satırıyla işlenir. Fark %0,5'i aşıyorsa sayı `null` olur.
+  Sandalye gibi tam sayıların birbirini tutmadığı durumlarda toplamın meclis büyüklüğüne
+  eşitliği belirleyicidir.
 - **Hesaplanmış toplamlar:** resmî bir kaynak yalnızca il il sayı verip ulusal toplamı
   vermiyorsa, toplam il satırlarından **elle değil betikle** hesaplanır ve ikinci bir
   kaynağın ulusal rakamıyla eşleşmelidir; eşleşmezse `null` olur. Kaynak defterinde
