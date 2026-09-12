@@ -110,3 +110,14 @@ test("soyağacında olmayan ama sandalye kazanan parti uyarılır", () => {
   assert.match(uyarilar(S), /soyağacında olmayan ama sandalye kazanan: Sahte Parti \(1999-04-genel\)/);
   assert.doesNotMatch(uyarilar(S), /sandalye kazanan: Bağımsız/);
 });
+
+test("tarih biçimi: ay hassasiyeti kabul, bozuk biçim hata", () => {
+  const S = kopya();
+  bul(S, "1927-09-genel").tarih = "1927-09";          // günü bilinmeyen kayıt
+  assert.doesNotMatch(hatalar(S), /geçersiz tarih biçimi/);
+  bul(S, "1999-04-genel").tarih = "1999-4-18";
+  assert.match(hatalar(S), /geçersiz tarih biçimi: 1999-04-genel/);
+  const T = kopya();
+  T.hukumetler[0].baslangic = "1999-05";
+  assert.match(hatalar(T), /hükümet tarihi gün dahil olmalı: 57/);
+});

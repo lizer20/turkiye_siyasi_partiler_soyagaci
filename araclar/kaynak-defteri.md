@@ -192,10 +192,24 @@ kayıt için ayrı kısa başlık aşağıda.
 - Erişim: 2026-09-11.
 
 ### 1923-06-genel
-- Bkz. yukarıdaki ortak blok. `tarih:"1923-06-01"` — TÜİK Ek-1 ve Olgun/ATAM Dergisi yalnızca
-  "Haziran–Temmuz 1923" aralığını veriyor, tek gün Vikipedi-dışı kaynakla doğrulanamadı; ilk
-  ay/gün yer tutucu olarak kullanıldı, `not` alanında belirtildi. `meclis:287` (TÜİK Tablo 5 +
-  Lüleci 2023 çapraz doğrulaması).
+- Bkz. yukarıdaki ortak blok. **Düzeltme turu 1 (2026-09-12):** `tarih` alanı `"1923-06"` olarak
+  düzeltildi (önceki tur `"1923-06-01"` yazmıştı — kaynakta olmayan, inşa edilmiş bir gündü;
+  kullanıcı kararıyla artık ay hassasiyetli tarih `"YYYY-AA"` biçiminde yazılabiliyor, bkz.
+  `ortak.js#tarihYaz`). TÜİK Ek-1 ve Olgun/ATAM Dergisi yalnızca "Haziran–Temmuz 1923"
+  aralığını veriyor, tek gün Vikipedi-dışı kaynakla doğrulanamadı.
+- **`meclis:287` — ikinci kaynak (Düzeltme turu 1'de bizzat açılıp doğrulandı):**
+  **[İkinci kaynak] TESAV (Toplumsal Ekonomik Siyasal Araştırmalar Vakfı), "TBMM ve
+  Cumhuriyet Dönemlerinde Milletvekili ve Senatör Sayıları"**
+  (`https://www.tesav.org.tr/wp-content/uploads/2020/02/tbmmvecumhuriyetdonemlerindemv.vesenatorsayilari.pdf`,
+  indirilip `pdftotext -layout -enc UTF-8` ile okundu) — tablo satırı: "2. (1923 – 1927) 287"
+  (TBMM'nin 2. Dönemi, 1923 seçimiyle kurulan meclis, 287 milletvekili). TÜİK Tablo 5'teki
+  287 rakamıyla birebir eşleşiyor.
+  Aynı tablo, dönem 0'daki diğer beş tek parti seçiminin `meclis` değerlerini de bağımsız
+  olarak doğruluyor: "3. (1927–1931) 316", "4. (1931–1935) 317", "5. (1935–1939) 399",
+  "6. (1939–1943) 424 + 5(*)" (toplam 429; sayfada (*) dipnotu açıklaması yok ama toplam
+  TÜİK'in 429'uyla eşleşiyor), "7. (1943–1946) 455" — hepsi TÜİK Tablo 5 ve Lüleci (2023) ile
+  üçüncü kez çapraz doğrulanmış oldu.
+- Erişim (düzeltme turu 1): 2026-09-12.
 
 ### 1927-09-genel
 - Bkz. yukarıdaki ortak blok. `tarih:"1927-09-02"` (TÜİK Ek-1; Olgun/ATAM: "milletvekilliği

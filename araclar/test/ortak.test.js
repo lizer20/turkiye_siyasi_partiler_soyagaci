@@ -27,3 +27,8 @@ test("hashOku yalnızca güvenli kimlikleri kabul eder", () => {
   assert.equal(O.hashOku("#<img>"), null);
   assert.equal(O.hashOku(""), null);
 });
+
+test("tarihYaz günü bilinmeyen tarihi ay ve yılla yazar", () => {
+  assert.equal(O.tarihYaz("1923-06"), "Haziran 1923");
+  assert.equal(O.tarihYaz("1923-06", true), "Haz 1923");
+});

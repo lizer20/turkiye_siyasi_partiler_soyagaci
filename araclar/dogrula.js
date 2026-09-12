@@ -29,6 +29,7 @@ function dogrulaSandik(P, S) {
     if (!TURLER.includes(k.tur)) hatalar.push("bilinmeyen tür: " + k.id + " → " + k.tur);
     if (!/^\d{4}-\d{2}-[a-z-]+$/.test(k.id) || k.id.slice(0, 7) !== k.tarih.slice(0, 7) ||
         k.id.slice(8) !== k.tur) hatalar.push("kimlik tarihle uyuşmuyor: " + k.id);
+    if (!/^\d{4}-\d{2}(-\d{2})?$/.test(k.tarih)) hatalar.push("geçersiz tarih biçimi: " + k.id + " → " + k.tarih);
     if (i > 0 && S.secimler[i - 1].tarih > k.tarih) hatalar.push("secimler tarih sırasında değil: " + k.id);
   });
 
@@ -116,6 +117,8 @@ function dogrulaSandik(P, S) {
     if (!TIPLER.includes(h.tip)) hatalar.push("bilinmeyen hükümet tipi: " + h.no + " → " + h.tip);
     if (h.bitisNedeni != null && !BITIS.includes(h.bitisNedeni)) hatalar.push("bilinmeyen bitiş nedeni: " + h.no + " → " + h.bitisNedeni);
     (h.partiler || []).forEach(p => partiDenetle(p, "hükümet " + h.no));
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(h.baslangic) || (h.bitis != null && !/^\d{4}-\d{2}-\d{2}$/.test(h.bitis)))
+      hatalar.push("hükümet tarihi gün dahil olmalı: " + h.no);
     const s = S.hukumetler[i + 1];
     if (!s) return;
     if (h.baslangic > s.baslangic) hatalar.push("hukumetler tarih sırasında değil: " + h.no + " / " + s.no);

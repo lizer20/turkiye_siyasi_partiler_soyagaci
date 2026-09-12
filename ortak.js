@@ -10,9 +10,9 @@
 
   function tarihYaz(iso, kisa) {
     if (!iso) return "—";
-    const [y, a, g] = iso.split("-").map(Number);
-    const ay = kisa ? AYLAR[a - 1].slice(0, 3) : AYLAR[a - 1];
-    return g + " " + ay + " " + y;
+    const p = iso.split("-").map(Number);
+    const ay = kisa ? AYLAR[p[1] - 1].slice(0, 3) : AYLAR[p[1] - 1];
+    return (p.length > 2 ? p[2] + " " : "") + ay + " " + p[0];
   }
   function yuzde(pay, payda) {
     if (pay == null || payda == null || payda === 0) return null;

@@ -6,10 +6,10 @@ window.SANDIK = {
     // --- dönem 0 (1923 – 1945) ---
 
     // kaynak: araclar/kaynak-defteri.md#1923-06-genel
-    { id: "1923-06-genel", tur: "genel", tarih: "1923-06-01", tekParti: true,
+    { id: "1923-06-genel", tur: "genel", tarih: "1923-06", tekParti: true,
       meclis: 287, kayitli: null, kullanilan: null, gecerli: null, baraj: null,
       sonuc: [ { parti: "chp23", oy: null, sandalye: 287 } ],
-      not: "Seçim tarihi kaynaklarda yalnızca \"Haziran–Temmuz 1923\" olarak veriliyor (il il farklı günlerde, iki dereceli); gösterilen gün yaklaşıktır." },
+      not: "Seçim il il farklı günlerde ve iki dereceli yapıldı; kaynaklar yalnızca Haziran–Temmuz 1923 aralığını veriyor, tek bir gün yok." },
 
     // kaynak: araclar/kaynak-defteri.md#1923-10-cb-tbmm
     { id: "1923-10-cb-tbmm", tur: "cb-tbmm", tarih: "1923-10-29",
