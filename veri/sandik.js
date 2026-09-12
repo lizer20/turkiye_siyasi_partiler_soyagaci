@@ -106,6 +106,13 @@ window.SANDIK = {
 
     // --- dönem 1 (1946 – 1960) ---
 
+    // kaynak: araclar/kaynak-defteri.md#1946-05-yerel
+    { id: "1946-05-yerel", tur: "yerel", tarih: "1946-05-26",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      not: "Çok partili hayatın ilk yerel seçimiydi; DP örgütlenme yetersizliğini gerekçe göstererek katılmadı, Milli Kalkınma Partisi de seçim günü yarıştan çekilince seçim fiilen tek partili geçti." },
+
     // kaynak: araclar/kaynak-defteri.md#1946-07-genel
     { id: "1946-07-genel", tur: "genel", tarih: "1946-07-21", tekParti: false,
       meclis: 465, kayitli: null, kullanilan: null, gecerli: null, baraj: null,
@@ -127,6 +134,19 @@ window.SANDIK = {
     { id: "1950-05-cb-tbmm", tur: "cb-tbmm", tarih: "1950-05-22",
       secilen: "Celâl Bayar", turSayisi: 1,
       not: "DP'nin genel başkanı, yeni meclisçe 1. turda seçildi (387/453 oy)." },
+
+    // kaynak: araclar/kaynak-defteri.md#1950-09-yerel
+    { id: "1950-09-yerel", tur: "yerel", tarih: "1950-09-03",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "dp46", oyYuzde: 57.6 }, { parti: "chp23", oyYuzde: 37.5 } ],
+      not: "DP ülke genelinde 600'den fazla belediyeden 560'ından fazlasını kazandı; ülke geneli oy sayısı yayımlanmadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1951-09-ara
+    { id: "1951-09-ara", tur: "ara", tarih: "1951-09-16",
+      bolge: "17 il", sandalyeSayisi: 20,
+      sonuc: [],
+      not: "1950 seçiminde birden fazla yerden seçilen ya da vefat eden milletvekillerinin yerine yapıldı; Bilecik'te DP kazandı. İl bazında kazananların tam listesi bu turda iki kaynakla doğrulanamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1954-05-genel
     { id: "1954-05-genel", tur: "genel", tarih: "1954-05-02", tekParti: false,
@@ -151,7 +171,14 @@ window.SANDIK = {
       not: "Bayar 3. ve son kez seçildi (413/602 oy); muhalefet milletvekilleri oylama sırasında Meclis'i terk etti." },
 
     // --- 27 Mayıs 1960 kabı (bkz. veri/partiler.js DONEMLER[1].kesinti.yonetim) ---
-    // (kap kaydı — 1961-07-referandum — bir sonraki commit'te eklenecek)
+
+    // kaynak: araclar/kaynak-defteri.md#1961-07-referandum
+    { id: "1961-07-referandum", tur: "referandum", tarih: "1961-07-09",
+      konu: "1961 Anayasası'nın kabulü",
+      kayitli: null, kullanilan: null, gecerli: null,
+      evet: null, hayir: null, karar: "kabul",
+      tutumlar: [ { parti: "chp23", tutum: "evet" }, { parti: "ap", tutum: "evet" } ],
+      not: "Milli Birlik Komitesi döneminde yapıldı; ülke geneli katılım yaklaşık %88, kabul oranı %61,7 oldu (TÜİK, 2008). 11 il 'hayır' oyu verdi; kesin sayılar bu turda bulunamadı." }
   ],
 
   hukumetler: [
