@@ -1282,3 +1282,77 @@ Bkz. yukarıdaki ortak blok.
   §8.1 kuralını ihlal edeceğinden, **`veri/sandik.js`'e dönem 2 için ara seçim kaydı eklenmedi**
   (dönem 1'deki 1947-49 ara seçimleriyle aynı muamele).
 - Erişim: 2026-09-16.
+
+### Düzeltme turu 1 (2026-09-16) — inceleme sonrası
+
+**Bağlam:** Görevin ilk turunda iki hata bulundu (bkz. `.superpowers/sdd/2026-09-11-sandik/
+review-task-9-d2-verdict.md`): (1) 1961 TBMM CB seçiminin varlığı yanlış reddedilmişti — "Gürsel
+geçici maddeyle otomatik cumhurbaşkanı sayıldı" iddiası kaynaksız ve yanlıştı; (2) 1963/1968
+yerel kayıtlarının büyükşehir sonuçlarının çoğunda resmî [B] kaynak yoktu (yalnızca haber
+veritabanı/akademik tez özeti gibi ikincil kaynaklar). Bu bölüm ikisinin düzeltmesini kaydeder.
+
+#### 1961-10-cb-tbmm (yeni eklendi)
+- Sonuç: 26 Ekim 1961, Cemal Gürsel, 1961 Anayasası'nın kabulünün ardından oluşan yeni TBMM'nin
+  ortak/birleşik toplantısında **tek aday olarak** (rakip aday Ali Fuat Başgil, Millî Birlik
+  Komitesi baskısıyla adaylıktan çekilmişti) 1. turda Türkiye'nin 4. Cumhurbaşkanı seçildi.
+- **[B] T.C. Cumhurbaşkanlığı resmî sitesi, "Cemal Gürsel" biyografisi**
+  (`tccb.gov.tr/cumhurbaskanlarimiz/cemal_gursel/`, WebFetch ile doğrudan açıldı — önceki turda
+  bağlantı zaman aşımına uğramıştı, bu turda başarılı oldu) — "Halkoyuna sunulan ve kabul edilen
+  bu Anayasa gereğince ... yapılan seçimlerden sonra oluşturulan Türkiye Büyük Millet Meclisi
+  tarafından Türkiye'nin dördüncü cumhurbaşkanı seçildi." Sayfa kesin gün vermiyor.
+- **İkinci kaynak: TDV İslam Ansiklopedisi, "GÜRSEL, Cemal" maddesi**
+  (`islamansiklopedisi.org.tr/gursel-cemal`) — "anayasaya göre Cumhuriyet Senatosu'nun tabii üyesi
+  olan Gürsel tek aday olarak **26 Ekim 1961**'de Türkiye Büyük Millet Meclisi'nin ortak
+  toplantısında Türkiye Cumhuriyeti'nin dördüncü cumhurbaşkanı seçildi" — gün, "tek aday" ve
+  "ortak toplantı" bilgilerini veriyor; tccb.gov.tr'nin "TBMM tarafından seçildi" ifadesiyle
+  tutarlı.
+- **Üçüncü çapraz doğrulama:** WebSearch ile toplanan çok sayıda bağımsız kaynak (haber ve
+  ansiklopedi siteleri) aynı 26 Ekim 1961 tarihini ve Başgil'in MBK baskısıyla çekildiği bilgisini
+  tekrarlıyor; oy sayısı (434/607) yalnızca Vikipedi'de bulundu, kural gereği kullanılmadı ve
+  zaten veri modelinde (§5.6) `cb-tbmm` için oy sayısı alanı yok.
+- **Önceki turun hatası:** rapor, "Cemal Gürsel'in 1961 Anayasası'nın geçici maddeleriyle otomatik
+  cumhurbaşkanı sayıldığı, TBMM'de ayrı bir seçim yapılmadığı" iddiasını kaynak göstermeden ileri
+  sürmüş ve bu nedenle kaydı eklememişti — bu turda **yanlış olduğu doğrulandı**, iki bağımsız
+  kaynak (biri resmî) gerçek bir seçim/oylama yapıldığını gösteriyor. Kayıt eklendi.
+- Uyuşmazlık: yok (tarih iki kaynakta da aynı).
+- Erişim: 2026-09-16.
+
+#### 1963-11-yerel ve 1968-06-yerel — büyükşehir sonuçlarının resmî kaynak eksiği
+- **Sorun:** İlk turda Ankara/İzmir (1963) ve İstanbul/Ankara/İzmir (1968) için yalnızca ikincil
+  kaynaklar (Biyografya.com, yeniankara.com.tr, sonsoz.com.tr, SETA, Ege Üniversitesi Açık Erişim
+  tez özeti, haber veritabanları) kullanılmıştı — hiçbirinde resmî bir kaynak (YSK kararı, TÜİK/
+  DİE yayını, Resmî Gazete) yoktu. Bu, §8.1'in "her nitel bilgi bir resmî [B] kaynak + ikinci
+  kaynak" kuralını ihlal ediyordu (yalnızca 1963 İstanbul, YSK kararı + Resmî Gazete ile doğru
+  kaynaklanmıştı).
+- **Bu turda aranan resmî kaynaklar ve sonucu:**
+  - YSK Mahalli İdareler Arşivi sayfaları (`ysk.gov.tr/tr/17-kasim-1963-...`,
+    `ysk.gov.tr/tr/2-haziran-1968-...`) — WebFetch ile açıldı, ikisi de yalnızca genel YSK ana
+    sayfa kabuğunu döndürdü (JS kabuğu / zaman zaman ECONNRESET), il/şehir bazlı bir PDF
+    bağlantısı içermiyordu.
+  - Resmî istatistik kaynağı **Devlet İstatistik Enstitüsü (DİE), *Mahalli Seçimler Sonuçları,
+    17 Kasım 1963* (Ankara: DİE, 1965) ve *Mahalli Seçimler Sonuçları, 2 Haziran 1968* (Ankara:
+    DİE, 1969)** — bu iki kitabın varlığı ve tam künyesi, Tayfun ÇINAR'ın "Yerel Seçimlerde Kent
+    Büyüklüğü ile Oy Vermenin Yönü Arasındaki İlişki: Türkiye Örneği 1963-1999" (*Ankara
+    Üniversitesi SBF Dergisi*, C. 62, S. 3, 2007, s. 141-165,
+    `dspace.ankara.edu.tr/server/api/core/bitstreams/bb0cfa85-8e57-4845-9944-f43b349df363/content`)
+    makalesinin kaynakçasında doğrulandı (DİE'nin bu iki kitabı gerçekten bu isimle, bu yılda
+    basılmış) — **ama kitapların kendisi dijitalleşmemiş/çevrimiçi bulunamadı**, yalnızca künyesi
+    doğrulanabildi. Makalenin kendi metni de şehir/aday bazlı değil, toplu istatistiksel bir
+    analiz (kent büyüklüğü ~ oy yönü), Ankara/İzmir/İstanbul'un kazananlarının adını vermiyor.
+  - Resmî Gazete'nin ilgili tarihli sayıları (1963 İstanbul'daki gibi bir mazbata ilanı olabilir)
+    bu ortamdan doğrudan taranamadı (bilinen erişim kısıtı); bu üç şehir için ilan tarih/sayısını
+    veren ikincil bir kaynak da bulunamadı.
+  - Dergipark'ta Ankara/İzmir/İstanbul(1968) belediye başkanlığı seçimlerine özgü, Istanbul 1963
+    örneğindeki gibi (Erdem, 2021) YSK kararını ya da Resmî Gazete'yi doğrudan alıntılayan bir
+    akademik makale bu turda da bulunamadı.
+- **Sonuç (kullanıcı talimatı gereği — "bulamazsan o sayılar null"):**
+  - **1963-11-yerel:** yalnızca İstanbul (`chp23`, Haşim İşcan — YSK kararı + Resmî Gazete [B])
+    `buyuksehir` alanında kaldı; **Ankara ve İzmir kayıttan çıkarıldı** (resmî kaynak bulunamadı).
+  - **1968-06-yerel:** üç şehrin hiçbiri için resmî kaynak bulunamadığından **`buyuksehir` alanı
+    tamamen kaldırıldı**; ikincil kaynaklarda geçen isimler (Fahri Atabey/AP İstanbul, Ekrem
+    Barlas/AP Ankara, Osman Kibar/AP İzmir) yalnızca `not` alanında bilgi olarak, "resmî kaynak
+    bulunamadı" kaydıyla bırakıldı.
+  - Kayıtların kendisi (tarih, ölçü, envanter) silinmedi — yalnızca resmî kaynaksız nitel bilgi
+    (`buyuksehir`) çıkarıldı, bu da görevin "kayıt varlığı/tarihi kaynaklıysa kayıt kalır" ilkesiyle
+    tutarlı.
+- Erişim: 2026-09-16 (düzeltme turu 1).
