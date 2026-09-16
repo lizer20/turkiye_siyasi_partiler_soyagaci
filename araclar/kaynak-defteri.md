@@ -1178,3 +1178,107 @@ bölümlerde ele alıp aynı parti–oy–sandalye üçlülerini tekrarlıyor (b
 
 ### hukumet-26 — hukumet-34
 Bkz. yukarıdaki ortak blok.
+
+### 1963-11-yerel
+- Sonuç: 17 Kasım 1963, 1961 Anayasası sonrası ilk yerel seçim ve belediye başkanlarının 307
+  sayılı Kanun uyarınca ilk kez tek dereceli doğrudan halk oyuyla seçildiği seçim (Görev 1'de
+  doğrulanan iddia, bkz. yukarıdaki "Doğrulanan iddialar" listesi, madde 4).
+- **İstanbul — [B] Yüksek Seçim Kurulu kararı + Resmî Gazete, 13 Aralık 1963:** en çok oyu alan
+  AP adayı Nuri Eroğan (128.785 oy, %40,29), Denizcilik Bankası'ndaki hukuk müşavirliği görevinden
+  22 Eylül 1963'e kadar (kanunun öngördüğü süre içinde) istifa etmediği gerekçesiyle önce İl Seçim
+  Kurulu (2 Aralık 1963), itirazı üzerine YSK tarafından da diskalifiye edildi; ikinci sıradaki CHP
+  adayı Haşim İşcan (111.686 oy, %34,91) belediye başkanı sayıldı ve 10 Aralık 1963'te mazbatasını
+  aldı.
+  **[B] Meltem ERDEM, "Sandıkta Bitmeyen Seçim: 17 Kasım 1963 İstanbul Belediye Başkanlığı
+  Seçimi", *Uluslararası Anadolu Sosyal Bilimler Dergisi*, C. 5, S. 4 (2021), s. 1521-1540**
+  (`dergipark.org.tr/tr/download/article-file/2087799`, `pdftotext -layout -enc UTF-8` ile
+  okundu) — YSK kararının doğrudan alıntısı: "...22 Eylül 1963 gününe kadar hizmetli bulunduğu
+  görevden çekilmemiş bulunmasına binaen SEÇİLME YETERLİLİĞİ mevcut olmadığından adaylığının
+  iptaline... kendisinden sonra en yüksek oyu alan Haşim İşcan'ın belediye başkanı sayılmasına
+  karar vermiştir" (Erdem, 2009'dan alıntı; makale ayrıca Resmî Gazete 13.12.1963 tarihli kararı
+  ve "İşcan 10 Aralık sabahı mazbatasını alarak göreve başlamıştır (Tercüman, 11 Aralık 1963:1-7)"
+  bilgisini veriyor) — hem birincil (YSK kararı/Resmî Gazete) hem akademik kaynak olarak kullanıldı.
+  Aynı makalenin Tablo 1'i (kaynağı D.İ.E., 1965:34/2,3,4,5,6 — Devlet İstatistik Enstitüsü'nün
+  1965 tarihli resmî yayını) İstanbul'a özgü belediye başkanlığı/belediye meclisi/il genel meclisi
+  oy dağılımını da veriyor.
+- **Ankara — Halil Sezai Erkut (CHP):** Biyografya.com biyografik sözlüğü
+  (`biyografya.com/tr/biographies/halil-sezai-erkut-b5422745`) — "1963 yerel seçimlerinde Ankara
+  Belediye Başkanı seçildi" (CHP). İkinci kaynak: yeniankara.com.tr, "Ankara'nın başkanları!
+  Siyasetçi ve hukukçu Halil Sezai Erkut" — 17 Kasım 1963 seçimini kazanarak Ankara'nın tek
+  dereceli seçimle belirlenen ilk belediye başkanı olduğunu doğruluyor (haber veritabanı,
+  yalnızca ikinci kaynak olarak kullanıldı).
+- **İzmir — Osman Kibar (AP):** Ege Üniversitesi Açık Erişim, "Osman Kibar ve belediye
+  başkanlığı dönemi" (`acikerisim.ege.edu.tr/items/567e6194-aa27-4962-a98c-0961660ce664`,
+  akademik tez özeti) — Kibar'ın 1963-1973 arası İzmir belediye başkanlığı yaptığını ve Adalet
+  Partili olduğunu doğruluyor. İkinci kaynak: WebSearch ile toplanan haber kaynakları (Kibar'ın
+  1963 seçiminde CHP'li Rebii Başol'u yendiği bilgisi).
+- **Ülke geneli belediye meclisi oy sayısı bulunamadı** → `sonuc: []`, `kayitli`/`kullanilan`/
+  `gecerli`: `null`. Bulunabilen tek ülke geneli rakam **il genel meclisi** ölçüsünde (belediye
+  meclisi değil, spesifikasyonun ölçüsüyle uyuşmuyor, kayda yazılmadı) ve "kaç il belediyesi
+  kazanıldı" biçiminde: **Ayşenur ÖZTÜRK, "Türkiye'de Belediye Başkanlığı Seçimlerinde Yenilenme
+  (1963-2014)", *Manisa Celal Bayar Üniversitesi Sosyal Bilimler Dergisi*, C. 15, S. 4 (2017),
+  s. 329-352** (`dergipark.org.tr/tr/download/article-file/395864`) Tablo 1-2 — belediye
+  başkanlığı seçimlerinde ülke geneli katılım **%69,31** (kaynağı: *Yerel Seçimler Panoraması*,
+  Ed. Oya Çitçi) ve 67 il belediyesinden AP 40, CHP 24, YTP 1, Bağımsız 2 kazandığı bilgisi
+  `not` alanına bilgi olarak aktarıldı (`Tablo 2`'nin kaynağı: A. E. Turan, *Türkiye'de Yerel
+  Seçimler*).
+- `buyuksehir` alanı bu seçimden itibaren yazılabiliyor (Görev 1'de doğrulandı, 307 sayılı Kanun).
+- Uyuşmazlık: yok.
+- Erişim: 2026-09-16.
+
+### 1968-06-yerel
+- Sonuç: 2 Haziran 1968. AP İstanbul (Fahri Atabey), Ankara (Ekrem Barlas) ve İzmir'i (Osman
+  Kibar, 1963'te seçildiği görevi koruyarak) kazandı.
+- **İstanbul — Fahri Atabey (AP):** SETA, "Geçmiş Seçimlerde İstanbul'a Kim Ne Vadetti?"
+  (`setav.org/gecmis-secimlerde-istanbula-kim-ne-vadetti/`, düşünce kuruluşu yayını) — Atabey'in
+  1968 İstanbul seçiminde AP adayı olduğunu ve seçim vaatlerini (su, kanalizasyon, çöp,
+  Alibeyköy'den boru döşenmesi) doğruluyor. İkinci kaynak (haber veritabanı): secim.milliyet.com.tr
+  / secim.hurriyet.com.tr üzerinden derlenen "İstanbul Belediye Başkanlığı'na AP'li Fahri Atabey...
+  seçildi" bilgisi + haberler.com'un İstanbul belediye başkanları listesi (8 Haziran 1968 –
+  9 Aralık 1973 arası görev süresi, %48,8 oy).
+- **Ankara — Ekrem Barlas (AP):** sonsoz.com.tr, "Ankara Belediye Başkanları -1963-2024-
+  (Bölüm-1)" — Barlas'ın (AP) 1973'te Vedat Dalokay'a (CHP) kaybetmeden önce belediye başkanı
+  olduğunu doğruluyor. İkinci kaynak (haber veritabanı): secim.milliyet.com.tr /
+  secim.hurriyet.com.tr üzerinden derlenen "Ankara Belediye Başkanlığına Adalet Partili Ekrem
+  Barlas... seçildi" bilgisi.
+- **İzmir — Osman Kibar (AP):** yukarıdaki 1963-11-yerel kaydındaki Ege Üniversitesi tez özeti
+  (1963-1973 aralıksız görev) + secim.milliyet.com.tr/secim.hurriyet.com.tr'nin "İzmir Belediye
+  Başkanlığına... Osman Kibar... seçildi" bilgisi.
+- **Aynı gün milletvekili ara seçimi de yapıldı** (Adana, Urfa, Çorum, Diyarbakır, İstanbul —
+  bkz. aşağıdaki "Ara seçimler" bölümü); bu, kaydın `not` alanında belirtildi.
+- **Ülke geneli belediye meclisi oy sayısı bulunamadı** → `sonuc: []`, seçmen sayıları `null`.
+  Yukarıdaki ÖZTÜRK (2017) makalesinin Tablo 1-2'si 1968 için de ülke geneli katılım **%59,47**
+  (belediye başkanlığı) ve 67 il belediyesinden AP 33, CHP 20, GP (Güven Partisi) 3, Bağımsız 11
+  kazandığı bilgisini veriyor; bu görevde `sonuc` alanına değil yalnızca 1968 kaydının araştırma
+  notuna (bu başlığa) düşüldü, `veri/sandik.js`'e yazılmadı (spesifikasyon ölçüsü belediye
+  meclisi, il belediyesi sayısı değil).
+- Uyuşmazlık: yok.
+- Erişim: 2026-09-16.
+
+### Ara seçimler (1961–1971) — envanter bulundu, sonuç doğrulanamadı
+- WebSearch ile: TESAV'ın "Milletvekili Ara Seçim Sonuçları (1947, 1948, 1949, 1951, 1966, 1968,
+  1975, 1979, 1986, 2003)" başlıklı yayınının dönem 2'de **1966 ve 1968** ara seçimlerinin
+  yapıldığını gösterdiği görüldü — ama dönem 1'de de karşılaşılan sorun tekrarladı: yayının
+  kendi PDF adresi (`tesav.org.tr/wp-content/uploads/2017/03/17.-Milletvekili-Ara-Seçim-
+  Sonuçları.pdf`, Türkçe karakterler yüzde kodlamasıyla da denendi) 404 veriyor; TESAV'ın
+  "Yayınlarımız" sayfası da bu dosyaya güncel bir bağlantı sunmuyor.
+- **1966 ara seçimi:** 5 Haziran 1966, Hatay ilinde, Budak Mursaloğlu'nun 12 Ekim 1965'teki
+  ölümüyle boşalan tek milletvekilliği için yapıldı; kazananın adı (Şemsettin Mursaloğlu) birden
+  fazla WebSearch sonucunda geçiyor ama **kaynakların hiçbiri Vikipedi-dışı, açıp okunabilir bir
+  belge değildi** (arama motoru özetleri); hangi partiden seçildiği hiçbir turda doğrulanamadı.
+- **1968 ara seçimi:** 2 Haziran 1968, yerel seçimle aynı gün, 5 ilde (Adana, Urfa, Çorum,
+  Diyarbakır, İstanbul) boşalan 5 milletvekilliği için yapıldı (millî bakiye sisteminin
+  kaldırılmasının ardından); il/parti/sandalye dağılımı bu turda da doğrulanamadı.
+- TBMM'nin resmi *Cumhuriyet Dönemi Partiler-Seçimler-Beyannameler (1923-1980)* kitabının tam
+  metninde ("ara seçim" araması) dönem 2'ye özgü bir ayrıntı bulunamadı (kitap ara seçimleri
+  ayrıntılı işlemiyor). TBMM'nin Cumhuriyet Senatosu tutanak dizini (cs__05031fih.pdf) ve genel
+  arama denemeleri de tarihli, iki kaynakla doğrulanabilir bir il/parti/sandalye dağılımına
+  ulaşamadı.
+- Sonuç: dönem 2 için kaynaktan **tarihi ve kapsamı** (hangi iller, kaç sandalye) doğrulanabilen
+  ama **il/parti/sandalye dağılımı** iki kaynakla doğrulanamayan iki ara seçim envanteri var
+  (1966 Hatay, 1968 Adana/Urfa/Çorum/Diyarbakır/İstanbul). Spesifikasyonun ara seçim veri modeli
+  (`bolge`, `sandalyeSayisi`, `sonuc`) bu ayrıntı olmadan anlamlı doldurulamayacağından ve tek
+  kaynaklı (yalnızca WebSearch özeti, açılıp okunmuş bir belge değil) bilgiyle kayıt eklemek
+  §8.1 kuralını ihlal edeceğinden, **`veri/sandik.js`'e dönem 2 için ara seçim kaydı eklenmedi**
+  (dönem 1'deki 1947-49 ara seçimleriyle aynı muamele).
+- Erişim: 2026-09-16.

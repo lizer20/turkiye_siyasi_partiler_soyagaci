@@ -188,6 +188,18 @@ window.SANDIK = {
       sonuc: [ { parti: "chp23", oy: 3724752, sandalye: 173 }, { parti: "ap", oy: 3527435, sandalye: 158 }, { parti: "ytp", oy: 1391934, sandalye: 65 }, { parti: "ckmp", oy: 1415390, sandalye: 54 }, { ad: "Bağımsız", oy: 81732, sandalye: 0 } ],
       not: "27 Mayıs sonrası ilk genel seçim; ilk kez nispi temsil (çevre barajlı d'Hondt) uygulandı. Hiçbir parti tek başına çoğunluk sağlayamadı, Cumhuriyet tarihinin ilk koalisyon dönemi bu seçimle başladı." },
 
+    // kaynak: araclar/kaynak-defteri.md#1963-11-yerel
+    { id: "1963-11-yerel", tur: "yerel", tarih: "1963-11-17",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      buyuksehir: {
+        istanbul: { parti: "chp23", aday: "Haşim İşcan" },
+        ankara: { parti: "chp23", aday: "Halil Sezai Erkut" },
+        izmir: { parti: "ap", aday: "Osman Kibar" }
+      },
+      not: "1961 Anayasası sonrası belediye başkanlarının ilk doğrudan halk oyuyla seçildiği yerel seçim. İstanbul'da en çok oyu alan AP adayı Nuri Eroğan, adaylık için öngörülen sürede kamu görevinden istifa etmediği gerekçesiyle YSK kararıyla diskalifiye edildi; ikinci sıradaki CHP adayı Haşim İşcan belediye başkanı sayıldı (Resmî Gazete, 13.12.1963). Ülke geneli belediye meclisi oy sayısı bulunamadı." },
+
     // kaynak: araclar/kaynak-defteri.md#1965-10-genel
     { id: "1965-10-genel", tur: "genel", tarih: "1965-10-10", tekParti: false,
       meclis: 450, kayitli: 13679753, kullanilan: 9748678, gecerli: 9307563, baraj: null,
@@ -198,6 +210,18 @@ window.SANDIK = {
     { id: "1966-03-cb-tbmm", tur: "cb-tbmm", tarih: "1966-03-28",
       secilen: "Cevdet Sunay", turSayisi: 1,
       not: "Cemal Gürsel'in sağlık nedeniyle görevi bırakmasının ardından, AP ve CHP'nin ortak desteğiyle 1. turda seçildi; CKMP lideri Alparslan Türkeş de aday oldu." },
+
+    // kaynak: araclar/kaynak-defteri.md#1968-06-yerel
+    { id: "1968-06-yerel", tur: "yerel", tarih: "1968-06-02",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      buyuksehir: {
+        istanbul: { parti: "ap", aday: "Fahri Atabey" },
+        ankara: { parti: "ap", aday: "Ekrem Barlas" },
+        izmir: { parti: "ap", aday: "Osman Kibar" }
+      },
+      not: "AP İstanbul, Ankara ve İzmir dahil çoğu ilde kazandı; İzmir'de Osman Kibar 1963'te seçildiği görevi korudu. Aynı gün 5 ilde milletvekili ara seçimi de yapıldı. Ülke geneli belediye meclisi oy sayısı bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1969-10-genel
     { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
