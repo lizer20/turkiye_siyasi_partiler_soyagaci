@@ -973,3 +973,208 @@ Bkz. yukarıdaki ortak blok.
   sayılmadığından tarih doğrulanamadı ve kayıt eklenmedi.
 - Sonraki bir turda bu üç kayıt için ek kaynak taraması yapılabilir.
 - Erişim: 2026-09-12.
+
+## Görev 9 — Dönem 2 (1961–1971)
+
+**Kaynak notu:** Bu dönemden itibaren TÜİK Tablo 23'ün (PDF s. 43, basılı s. 25) `-table` bayrağı
+(`pdftotext -table`, "-layout"ten farklı, tablo hizalamasına özel bir mod) ile okunması dönem 1'de
+yaşanan çok satırlı hücre kayması sorununu tamamen çözdü — sütunlar (yıl başına A/B/C: oy sayısı/
+oy oranı/milletvekili sayısı) tam hizalı çıktı. Her yıl için parti–sayı eşleşmesi, sandalyelerin
+toplamının `meclis`e (450) tam eşit çıkmasıyla ayrıca doğrulandı (1961: 173+158+65+54+0=450;
+1965: 240+134+31+19+14+11+1=450; 1969: 256+143+15+13+8+6+6+2+1=450).
+İkinci kaynak olarak hem TBMM seçim sorgusu (`secim_sorgu.secimdeki_partiler`) hem de TBMM'nin
+kendi resmî yayını **T.B.M.M. Cumhuriyet Dönemi Partiler-Seçimler-Beyannameler (1923-1980)**
+(`cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/ed1d2982-f225-4467-a4ab-707f4cc471dc.pdf`, tam metin
+`pdftotext -layout` ile çıkarıldı) kullanıldı — bu kitap 1961/1965/1969 seçimlerini ayrı ayrı
+bölümlerde ele alıp aynı parti–oy–sandalye üçlülerini tekrarlıyor (bölüm 4.3.1–4.3.3, s. 61-69),
+üstelik resmî sonuç ilanının Resmî Gazete tarih/sayısını da veriyor (1961: 17.11.1961/10960;
+1965: 19.10.1965/12130; 1969: 20.10.1969/13331) — bu, TÜİK'in tek kaynak olmadığını doğruluyor.
+
+### 1961-10-genel
+- Sonuç: 15 Ekim 1961, meclis 450, kayıtlı 12.925.395, kullanılan 10.522.716 (katılım %81,4).
+  CHP 3.724.752 oy/173 sandalye, AP 3.527.435/158, YTP 1.391.934/65, CKMP 1.415.390/54,
+  Bağımsız 81.732/0.
+- **[B] TÜİK *Milletvekili Genel Seçimleri 1923–2011*, Tablo 23, "TÜRKİYE" (PDF s. 43, `pdftotext
+  -table -enc UTF-8`)** — kayıtlı/kullanılan/katılım/geçerli/meclis satırları ve parti satırları
+  (AP, CHP, CKMP, YTP, BÖMZ — bu son satır "Bağımsız/diğer" toplamını temsil ediyor, tablo
+  başlığı "Siyasi parti ve bağımsızlar").
+- **İkinci kaynak (WebFetch ile doğrudan açıldı):**
+  `https://www5.tbmm.gov.tr/develop/owa/secim_sorgu.secimdeki_partiler?p_secim_yili=1961` —
+  CHP 3.724.752 (%36,74), AP 3.527.435 (%34,79), CKMP 1.415.390 (%13,96), YTP 1.391.934 (%13,73),
+  Bağımsız 81.732 (%0,81) — TÜİK ile **birebir aynı** (fark yok, tek kaynağın iki farklı yayını
+  olabileceği ama sayıların bağımsız olarak yeniden derlendiği görülüyor).
+- **Üçüncü çapraz doğrulama:** TBMM *Cumhuriyet Dönemi Partiler-Seçimler-Beyannameler* kitabı
+  (yukarıda künyesi verildi), s. 61-63 (bölüm 4.3.1, "17 Ekim 1961 Milletvekili Genel Seçimleri" —
+  başlıktaki "17" bir yazım hatası, metnin kendisi "15.10.1961 tarihinde" diyor, TÜİK Ek-1'le
+  tutarlı) — aynı dört parti + bağımsız rakamlarını birebir veriyor, ayrıca Resmî Gazete
+  17.11.1961/10960 sayılı ilanı kaynak gösteriyor.
+- **`gecerli` alanı `null` yapıldı:** TÜİK'in bastığı "Geçerli oy sayısı" rakamı (10.138.035),
+  yine TÜİK'in aynı tablosundaki beş parti/bağımsız satırının toplamıyla (10.141.243) tam
+  örtüşmüyor — fark 3.208 (%0,03), kaynağın kendi iç tutarsızlığı (muhtemelen tabloya
+  girmeyen çok küçük bir kalem). `araclar/dogrula.js` bütün satırlar bilinen bir kayıtta oy
+  toplamının `gecerli`ye tam eşit olmasını zorunlu kılıyor; iki resmî rakam kendi içinde
+  uyuşmadığından `gecerli: null` bırakıldı (§8.1 "hafızadan sayı yazılmaz" ilkesiyle tutarlı —
+  hangi rakamın "doğru" olduğuna karar verecek üçüncü bir kaynak bulunamadı).
+- `baraj: null` — 1961'de ulusal bir yüzde barajı yoktu, "çevre barajlı d'Hondt" yapısal bir
+  bölge barajıydı, tek bir yüzde ile ifade edilebilir bir rakam değil.
+- Uyuşmazlık: yok (TÜİK ve TBMM sorgusu birebir eşleşti); `gecerli` uyuşmazlığı yukarıda ayrı
+  ele alındı.
+- Erişim: 2026-09-12.
+
+### 1965-10-genel
+- Sonuç: 10 Ekim 1965, meclis 450, kayıtlı 13.679.753, kullanılan 9.748.678 (katılım %71,3),
+  geçerli 9.307.563. AP 4.921.235/240, CHP 2.675.785/134, Millet Partisi 582.704/31,
+  YTP 346.514/19, TİP 276.101/14, CKMP 208.696/11, Bağımsız 296.528/1.
+- **[B] TÜİK Tablo 23** (yukarıdaki künye) — bütün rakamlar buradan.
+- **İkinci kaynak:** `secim_sorgu.secimdeki_partiler?p_secim_yili=1965` — AP 4.921.235 (%52,87),
+  CHP 2.675.785 (%28,75), Millet Partisi 582.704 (%6,26), YTP 346.514 (%3,72),
+  Bağımsız 296.528 (%3,19), TİP 276.101 (%2,97), CKMP 208.696 (%2,24) — **birebir aynı**,
+  fark yok.
+- **Üçüncü çapraz doğrulama:** TBMM kitabı, s. 64 (bölüm 4.3.2) — aynı yedi rakamı birebir
+  veriyor; ayrıca "geçerli oy sayısı" olarak TÜİK'in 9.307.563 rakamını dolaylı doğruluyor
+  (kendi toplamları TÜİK'inkiyle örtüşüyor: 4.921.235+2.675.785+582.704+346.514+276.101+
+  208.696+296.528=9.307.563 — **tam eşit**, bu seçimde iç tutarsızlık yok).
+- **TİP'in soyağacındaki BILGI metniyle küçük bir fark:** `veri/partiler.js`teki `tip61` notu
+  "1965'te 15 milletvekili kazandı" diyor; TÜİK/TBMM'nin resmî Millet Meclisi sandalye sayısı
+  ise **14**. TBMM kitabı (s. 65) bu farkı açıklıyor: "Türkiye İşçi Partisi, 1965 tarihinde
+  yapılan milletvekili genel seçimlerinde **15 (14 MV +1 Senatör)** milletvekili kazanarak
+  parlamentoda bir grup kurmuştur" — yani 15 rakamı Millet Meclisi + Cumhuriyet Senatosu
+  toplamı, 14'ü ise yalnızca Millet Meclisi (bu görevin kapsadığı `genel` türü, senato seçimleri
+  kapsam dışı). `veri/sandik.js`'e TÜİK/TBMM'nin Millet Meclisi rakamı olan **14** yazıldı;
+  `veri/partiler.js`teki metin bu görevin dosya listesinde değil, değiştirilmedi — kullanıcıya
+  bilgi olarak sunuluyor (Adım 6).
+- **"Millet Partisi" ayrımı (CMP emsaliyle aynı mantık):** Bu satır `parti:"mp48"` değil
+  `ad:"Millet Partisi"` ile yazıldı. Osman Bölükbaşı'nın 1948-1958 Millet Partisi'si (mp48)
+  1958'de CKMP'ye dönüşerek soyağacındaki kaydına göre sona ermişti; 1965/1969 tablosundaki
+  "Millet Partisi" ise Bölükbaşı'nın 1962'de CKMP'den ayrılıp aynı adla yeniden kurduğu **ayrı,
+  hukuken farksız bir parti** (TÜİK'in kendi parti listesi CKMP ve "Millet Partisi"ni ayrı
+  satırlar olarak veriyor, yukarıdaki tabloya bakınız). Soyağacına eklenmedi; Görev 10 listesine
+  yazıldı — bu dönemde **31 sandalyeyle** (1965) önemli bir eksik.
+- Uyuşmazlık: yok.
+- Erişim: 2026-09-12.
+
+### 1966-03-cb-tbmm
+- Sonuç: 28 Mart 1966, Cevdet Sunay TBMM birleşik toplantısında 1. turda Cumhurbaşkanı seçildi;
+  CKMP Genel Başkanı Alparslan Türkeş de aday oldu. Cemal Gürsel'in sağlık sorunları nedeniyle
+  görevi bırakmasının ardından yapıldı; hem AP hem CHP resmen destek verdi.
+- **Tarih ve tur sayısı için üç kaynak birleşiyor:** AA, "1923'ten günümüze Cumhurbaşkanı
+  seçimleri" (`aa.com.tr/tr/turkiye/1923-ten-gunumuze-cumhurbaskani-secimleri/134629`);
+  TDV İslam Ansiklopedisi, "SUNAY, Cevdet" maddesi (`islamansiklopedisi.org.tr/sunay-cevdet`);
+  T.C. Cumhurbaşkanlığı resmî sitesi biyografi sayfası (başlıkta anıldı, sertifika hatası
+  nedeniyle bu turda doğrudan açılamadı) — üçü de tarih ve "1. turda seçildi" bilgisinde
+  birleşiyor.
+- **Oy sayısı yazılmadı — kaynaklar arasında büyük fark var, veri modelinde de bu alan yok:**
+  AA'nın kendi sayfası "650 üyeli TBMM'de 477 üyenin oyu" derken, TDV İslam Ansiklopedisi "532
+  oydan 461'ini alarak" diyor — iki rakam da toplam katılımcı sayısında (650 vs 532) ve Sunay'ın
+  aldığı oyda (477 vs 461) birbirinden **%3-4** oranında farklı, %0,5 eşiğini açıkça aşıyor.
+  TBMM'nin kendi tutanak arşivinde (28.3.1966 tarihli TBMM Birleşik Toplantısı) bu turda ayrı bir
+  seri olarak bulunamadı (Cumhuriyet Senatosu'nun kendi tutanak dizini — cs__05031fih.pdf —
+  incelendi, o tarihe ait bir "Cumhurbaşkanlığı seçimi" kaydı yoktu; büyük ihtimalle birleşik
+  toplantı ayrı bir "TBMM Birleşik Toplantısı Tutanak Dergisi" serisinde, bu turda adresi
+  bulunamadı). **Spesifikasyon §5.6'da `cb-tbmm` alanları yalnızca `secilen`/`turSayisi`/`not`;
+  oy sayısı için bir alan zaten yok** — bu yüzden uyuşan bir sayı bulunamadığından `not`'a da
+  belirli bir oy rakamı yazılmadı, yalnızca 1. tur ve destek veren partiler belirtildi.
+- Uyuşmazlık: oy sayısı (477/650 vs 461/532) — veri modelinde karşılığı olmadığı için kayda
+  yansımadı, yalnızca burada not edildi.
+- Erişim: 2026-09-12.
+
+### 1969-10-genel
+- Sonuç: 12 Ekim 1969, meclis 450, kayıtlı 14.788.552, kullanılan 9.516.035 (katılım %64,3,
+  Cumhuriyet tarihinin en düşük katılımlı genel seçimi). AP 4.229.712/256, CHP 2.487.006/143,
+  Güven Partisi 597.818/15, Bağımsız 511.023/13, Türkiye Birlik Partisi 254.695/8,
+  Millet Partisi 292.961/6, YTP 197.929/6, TİP 243.631/2, MHP 275.091/1.
+- **[B] TÜİK Tablo 23** (yukarıdaki künye).
+- **İkinci kaynak:** `secim_sorgu.secimdeki_partiler?p_secim_yili=1969` — AP 4.229.945 (%46,55),
+  CHP 2.487.163 (%27,37), GP 598.013 (%6,58), Bağımsız 511.097 (%5,62), Millet Partisi 293.849
+  (%3,23), MHP 274.225 (%3,02), Türkiye Birlik Partisi 254.708 (%2,80), TİP 243.797 (%2,68),
+  YTP 197.912 (%2,18).
+  - Uyuşmazlık: AP %0,0055, CHP %0,0063, GP %0,033, Bağımsız %0,014, Millet Partisi %0,30,
+    MHP %0,31, Türkiye Birlik Partisi %0,005, TİP %0,068, YTP %0,009 — **hepsi %0,5 eşiğinin
+    altında**, eşleşti sayıldı; TÜİK'in (birincil) sayıları yazıldı.
+- **Üçüncü çapraz doğrulama:** TBMM kitabı, s. 68-69 (bölüm 4.3.3) — dokuz partinin oy/oran/
+  sandalye üçlüsünü birebir TÜİK'le aynı veriyor; ayrıca "Güven Partisi"nin CGP satırında
+  gösterildiğini (dipnot 2), Türkiye Birlik Partisi'nin ayrı bir parti olduğunu (17.10.1966
+  kuruldu, 27.11.1971'de adı "Türkiye Birlik Partisi" oldu) ve "Millet Partisi"nin CKMP'den 1962
+  ayrılan Bölükbaşı kanadı olduğunu doğruluyor.
+- **`gecerli` alanı `null` yapıldı** — aynı 1961 gerekçesiyle: TÜİK'in geçerli oy rakamı
+  (9.086.296) dokuz satırın toplamıyla (9.089.866) tam örtüşmüyor (fark 3.570, %0,04);
+  `dogrula.js`nin katı eşitlik kuralı nedeniyle `null` bırakıldı.
+- **Güven Partisi → `parti:"gp"`:** soyağacında zaten var (donem 2, 1967-1973). TBMM kitabının
+  dipnot 2'si ("1969 yılında Güven Partisi (GP) tarafından alınan oy miktarı CGP satırında
+  gösterilmiştir") bu eşleşmeyi doğruluyor.
+- **Türkiye Birlik Partisi ve (yeniden) Millet Partisi soyağacında yok** — Görev 10 listesine
+  eklendi (TBP 8 sandalye, MP 6 sandalye — MP zaten 1965 kaydında da listelenmişti).
+- Uyuşmazlık: yukarıda satır satır listelendi, hepsi eşik altında.
+- Erişim: 2026-09-12.
+
+### Ortak blok — Hükümetler 26–34 (dönem 2 bandına düşenler)
+- **[B] TBMM Başkanlığı Yayınları, *Hükümetler, Programları ve Genel Kurul Görüşmeleri*,
+  Cilt 3 (20 Kasım 1961 – 27 Ekim 1965), Cilt 4 (27 Ekim 1965 – 26 Mart 1971) ve Cilt 5
+  (26 Mart 1971 – 17 Kasım 1974)** — bitstream adresleri kaynak haritasındaki listeden
+  (Görev 9 Dönem 1'de bulundu): c3 `cdfb671f-f82b-4373-8db9-fad3ee50ed12`, c4
+  `2a72b8f8-b477-4c0b-ba7d-7ec0b448147c`, c5 `232d9a87-53f4-449c-8e38-82828ab35cf8`
+  (`.../server/api/core/bitstreams/<uuid>/content`), `pdftotext -layout -enc UTF-8` ile tam
+  metne çevrildi. İçindekiler bölümlerinden hükümet no./ad/tarih:
+  26 VIII. İnönü Hükümeti (20.11.1961-25.06.1962)
+  27 IX. İnönü Hükümeti (25.06.1962-25.12.1963)
+  28 X. İnönü Hükümeti (25.12.1963-20.02.1965)
+  29 Ürgüplü Hükümeti (20.02.1965-27.10.1965)
+  30 I. Demirel Hükümeti (27.10.1965-03.11.1969)
+  31 II. Demirel Hükümeti (03.11.1969-06.03.1970)
+  32 III. Demirel Hükümeti (06.03.1970-26.03.1971)
+  33 I. Erim Hükümeti (26.03.1971-11.12.1971)
+  34 II. Erim Hükümeti (11.12.1971-22.05.1972)
+  Tarihler zincirleme sürekli (bir hükümetin bitişi bir sonrakinin başlangıcı) ve dönem 1'in son
+  kaydı olan hukumet-25'in bitişiyle (1961-11-20) tam örtüşüyor.
+- **Koalisyon/parti bileşimi — her hükümetin "Koalisyon Protokolü" ya da "Bakanlar Kurulu"
+  bölümünden bizzat okunarak doğrulandı** (parti etiketleri bakan isimlerinin yanında
+  parantez içinde veriliyor):
+  - **26 (VIII. İnönü):** "Koalisyon Protokolü (CHP-AP)" başlığı ve metni birebir — "C.H.P. ile
+    A.P. ... bir karma hükümet kurmaya müştereken karar vermişlerdir." `partiler:["chp23","ap"]`.
+  - **27 (IX. İnönü):** "Koalisyon Protokolü (CHP-CKMP-YTP-Bağımsızlar)" — "CHP ve CKMP, YTP
+    temsilcileri ile TBMM Bağımsız üyelerinin bir temsilcisinden meydana gelen heyetimiz..."
+    `partiler:["chp23","ckmp","ytp"]`; bağımsızlar da katıldı ama soyağacı id'si olmadığından
+    diziye yazılmadı, `not`a değil ayrıca not düşülmedi (kısa tutuldu).
+  - **28 (X. İnönü):** Bakanlar Kurulu bölümünde koalisyon protokolü yok; hükümet programı
+    görüşmelerinde muhalefet defalarca "C.H.P. azınlık Hükümeti" ifadesini kullanıyor (bizzat
+    tutanakta 10'dan fazla geçiş, örn. "Halk çoğunluğunun desteğinden mahrum C.H.P. azınlık
+    Hükümetinin..."). `tip:"azinlik"`, `partiler:["chp23"]`.
+  - **29 (Ürgüplü):** Bakanlar Kurulu listesinde bakanların yanında parti etiketleri (AP, CKMP,
+    YTP, MP, Bağımsız) açıkça yazılı; başbakan Suat Hayri Ürgüplü "(C.S. Kayseri Üyesi,
+    Bağımsız)" — partisiz bir senatör. `partiler:["ap","ckmp","ytp"]` (MP soyağacında yok,
+    bağımsız bakanlar da var — `not`ta belirtildi); `tip:"koalisyon"`.
+  - **30-32 (I-III. Demirel):** Bakanlar Kurulu listelerinde parti etiketi hiç yok (tek parti
+    olduğunda TBMM cildi etiketi atlıyor, dönem 1'deki Menderes hükümetleriyle aynı biçim) ve
+    metinde "Koalisyon Protokolü" başlığı da yok (yalnızca geçmiş koalisyonlara atıf var) —
+    AP tek başına iktidar, meclis çoğunluğu 1965 seçiminden geliyor. `tip:"tek-parti"`,
+    `partiler:["ap"]`.
+  - **33-34 (I-II. Erim):** Bakanlar Kurulu listesinde hiçbir bakanın yanında parti etiketi yok,
+    çoğu "TBMM dışından" ya da bağımsız senatör/milletvekili; 12 Mart Muhtırası sonrası
+    partilerüstü/teknokrat formülüyle kuruldu (TBMM kitabının kendi başlığı da bu dönemi
+    "partiler üstü hükümet modeli" diye tanımlıyor — Karataş, 2022, *ABAD* 5(10), s. 387-422,
+    `dergipark.org.tr/en/download/article-file/2522863`). `tip:"partiluestu"`,
+    `partiler:[]`.
+- **`bitisNedeni`:**
+  - **29 → "secim"**: Ürgüplü hükümeti, TBMM kitabının kendi tarihlemesiyle 10 Ekim 1965
+    seçiminin hemen ardından (27 Ekim 1965) sona erdi ve yerini seçim sonucuna göre kurulan
+    I. Demirel Hükümeti'ne bıraktı.
+  - **30 → "secim"**: I. Demirel Hükümeti, 12 Ekim 1969 seçiminin 3 hafta sonrasında
+    (3 Kasım 1969) yenilendi.
+  - **32 → "muhtira"**: III. Demirel Hükümeti, TBMM kitabının kendi bölüm başlığında da
+    ("12 Mart Muhtırası ile 12 Eylül Darbesi Arası Dönem") doğrulandığı gibi 12 Mart 1971
+    muhtırasının ardından 26 Mart 1971'de görevi bıraktı; bu tarih aynı zamanda
+    `DONEMLER[2].kesinti.tarih` (12 Mart 1971) ile tutarlı.
+  - **26, 27, 28, 31, 33, 34 → `null`**: bu turda ikinci kaynakla (TBMM tutanağı ya da akademik
+    makale) doğrulanabilir, tek cümleyle ifade edilebilir bir bitiş nedeni bulunamadı. 31
+    (II. Demirel) için web taramasında "14 Şubat 1970'te 1970 bütçesinin 41 AP'li milletvekilinin
+    ret oyuyla reddedilmesi üzerine istifa etti" bilgisi birden fazla haber kaynağında ve bir
+    dergipark makalesinin (Karataş, 2022, yukarıda) arama özetinde geçiyor, ama makalenin
+    kendisi (tam metin okundu) bu olayı ayrıntılı anlatmıyor ve TBMM cildinde de bu turda
+    doğrudan bir "istifa" ifadesi bulunamadı; tek doğrulanabilir kaynak resmî/birincil olmadığı
+    için `bitisNedeni: null` bırakıldı, olay `not` alanına da yazılmadı.
+- Uyuşmazlık: yok (hükümet tarihleri tek kaynaktan, TBMM cildinden; parti bileşimi de aynı
+  ciltten okundu, ikinci kaynak gerektirmiyor — nitel/yapısal bilgi, "sayı" değil).
+- Erişim: 2026-09-12.
+
+### hukumet-26 — hukumet-34
+Bkz. yukarıdaki ortak blok.

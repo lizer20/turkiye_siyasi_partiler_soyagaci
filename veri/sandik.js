@@ -178,7 +178,32 @@ window.SANDIK = {
       kayitli: null, kullanilan: null, gecerli: null,
       evet: null, hayir: null, karar: "kabul",
       tutumlar: [ { parti: "chp23", tutum: "evet" }, { parti: "ap", tutum: "evet" } ],
-      not: "Milli Birlik Komitesi döneminde yapıldı; ülke geneli katılım yaklaşık %88, kabul oranı %61,7 oldu (TÜİK, 2008). 11 il 'hayır' oyu verdi; kesin sayılar bu turda bulunamadı." }
+      not: "Milli Birlik Komitesi döneminde yapıldı; ülke geneli katılım yaklaşık %88, kabul oranı %61,7 oldu (TÜİK, 2008). 11 il 'hayır' oyu verdi; kesin sayılar bu turda bulunamadı." },
+
+    // --- dönem 2 (1961 – 1971) ---
+
+    // kaynak: araclar/kaynak-defteri.md#1961-10-genel
+    { id: "1961-10-genel", tur: "genel", tarih: "1961-10-15", tekParti: false,
+      meclis: 450, kayitli: 12925395, kullanilan: 10522716, gecerli: null, baraj: null,
+      sonuc: [ { parti: "chp23", oy: 3724752, sandalye: 173 }, { parti: "ap", oy: 3527435, sandalye: 158 }, { parti: "ytp", oy: 1391934, sandalye: 65 }, { parti: "ckmp", oy: 1415390, sandalye: 54 }, { ad: "Bağımsız", oy: 81732, sandalye: 0 } ],
+      not: "27 Mayıs sonrası ilk genel seçim; ilk kez nispi temsil (çevre barajlı d'Hondt) uygulandı. Hiçbir parti tek başına çoğunluk sağlayamadı, Cumhuriyet tarihinin ilk koalisyon dönemi bu seçimle başladı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1965-10-genel
+    { id: "1965-10-genel", tur: "genel", tarih: "1965-10-10", tekParti: false,
+      meclis: 450, kayitli: 13679753, kullanilan: 9748678, gecerli: 9307563, baraj: null,
+      sonuc: [ { parti: "ap", oy: 4921235, sandalye: 240 }, { parti: "chp23", oy: 2675785, sandalye: 134 }, { ad: "Millet Partisi", oy: 582704, sandalye: 31 }, { parti: "ytp", oy: 346514, sandalye: 19 }, { parti: "tip61", oy: 276101, sandalye: 14 }, { parti: "ckmp", oy: 208696, sandalye: 11 }, { ad: "Bağımsız", oy: 296528, sandalye: 1 } ],
+      not: "Millî bakiye (ulusal artık) sistemiyle yapılan tek seçim. AP tek başına iktidara geldi; TİP ilk kez meclise girdi (14 sandalye + 1 senatörlük)." },
+
+    // kaynak: araclar/kaynak-defteri.md#1966-03-cb-tbmm
+    { id: "1966-03-cb-tbmm", tur: "cb-tbmm", tarih: "1966-03-28",
+      secilen: "Cevdet Sunay", turSayisi: 1,
+      not: "Cemal Gürsel'in sağlık nedeniyle görevi bırakmasının ardından, AP ve CHP'nin ortak desteğiyle 1. turda seçildi; CKMP lideri Alparslan Türkeş de aday oldu." },
+
+    // kaynak: araclar/kaynak-defteri.md#1969-10-genel
+    { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
+      meclis: 450, kayitli: 14788552, kullanilan: 9516035, gecerli: null, baraj: null,
+      sonuc: [ { parti: "ap", oy: 4229712, sandalye: 256 }, { parti: "chp23", oy: 2487006, sandalye: 143 }, { parti: "gp", oy: 597818, sandalye: 15 }, { ad: "Bağımsız", oy: 511023, sandalye: 13 }, { ad: "Türkiye Birlik Partisi", oy: 254695, sandalye: 8 }, { ad: "Millet Partisi", oy: 292961, sandalye: 6 }, { parti: "ytp", oy: 197929, sandalye: 6 }, { parti: "tip61", oy: 243631, sandalye: 2 }, { parti: "mhp69", oy: 275091, sandalye: 1 } ],
+      not: "Cumhuriyet tarihinin en düşük katılımlı genel seçimi (%64,3). MHP ve Türkiye Birlik Partisi ilk kez meclise girdi; MHP'nin tek sandalyesi Alparslan Türkeş'e ait." }
   ],
 
   hukumetler: [
@@ -309,6 +334,53 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hukumet-25 (27 Mayıs 1960 kabı)
     { no: 25, basbakan: "Cemal Gürsel", partiler: [],
       baslangic: "1961-01-05", bitis: "1961-11-20", tip: "mbk", bitisNedeni: null,
-      not: "Millî Birlik Komitesi döneminin ikinci ve son hükümeti; 15 Ekim 1961 seçiminden sonra da bir süre görevde kaldı." }
+      not: "Millî Birlik Komitesi döneminin ikinci ve son hükümeti; 15 Ekim 1961 seçiminden sonra da bir süre görevde kaldı." },
+
+    // --- dönem 2 (1961 – 1971) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-26
+    { no: 26, basbakan: "İsmet İnönü", partiler: ["chp23", "ap"],
+      baslangic: "1961-11-20", bitis: "1962-06-25", tip: "koalisyon", bitisNedeni: null,
+      not: "Cumhuriyet tarihinin ilk koalisyon hükümeti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-27
+    { no: 27, basbakan: "İsmet İnönü", partiler: ["chp23", "ckmp", "ytp"],
+      baslangic: "1962-06-25", bitis: "1963-12-25", tip: "koalisyon", bitisNedeni: null,
+      not: "İkinci İnönü koalisyonu; bağımsız milletvekillerinin de desteğiyle kuruldu." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-28
+    { no: 28, basbakan: "İsmet İnönü", partiler: ["chp23"],
+      baslangic: "1963-12-25", bitis: "1965-02-20", tip: "azinlik", bitisNedeni: null,
+      not: "CHP azınlık hükümeti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-29
+    { no: 29, basbakan: "Suat Hayri Ürgüplü", partiler: ["ap", "ckmp", "ytp"],
+      baslangic: "1965-02-20", bitis: "1965-10-27", tip: "koalisyon", bitisNedeni: "secim",
+      not: "Partisiz senatör Ürgüplü başkanlığında AP, CKMP, YTP, Millet Partisi (soyağacında yok) ve bağımsızların katılımıyla kuruldu; 10 Ekim 1965 seçiminin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-30
+    { no: 30, basbakan: "Süleyman Demirel", partiler: ["ap"],
+      baslangic: "1965-10-27", bitis: "1969-11-03", tip: "tek-parti", bitisNedeni: "secim",
+      not: "12 Ekim 1969 seçiminin ardından kabine yenilendi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-31
+    { no: 31, basbakan: "Süleyman Demirel", partiler: ["ap"],
+      baslangic: "1969-11-03", bitis: "1970-03-06", tip: "tek-parti", bitisNedeni: null,
+      not: null },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-32
+    { no: 32, basbakan: "Süleyman Demirel", partiler: ["ap"],
+      baslangic: "1970-03-06", bitis: "1971-03-26", tip: "tek-parti", bitisNedeni: "muhtira",
+      not: "12 Mart 1971 muhtırasının ardından görevden ayrıldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-33
+    { no: 33, basbakan: "Nihat Erim", partiler: [],
+      baslangic: "1971-03-26", bitis: "1971-12-11", tip: "partiluestu", bitisNedeni: null,
+      not: "12 Mart muhtırası sonrası kurulan ilk partilerüstü (teknokrat ağırlıklı) hükümet." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-34
+    { no: 34, basbakan: "Nihat Erim", partiler: [],
+      baslangic: "1971-12-11", bitis: "1972-05-22", tip: "partiluestu", bitisNedeni: null,
+      not: "Aynı başbakanla, daha teknokrat ağırlıklı kadroyla yeniden kuruldu." }
   ]
 };
