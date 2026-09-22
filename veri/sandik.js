@@ -324,7 +324,37 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1989-10-cb-tbmm
     { id: "1989-10-cb-tbmm", tur: "cb-tbmm", tarih: "1989-10-31",
       secilen: "Turgut Özal", turSayisi: 3,
-      not: "1. tur (20 Ekim, 247 oy) ve 2. tur (24 Ekim, 256 oy) 2/3 çoğunluğu (300) sağlayamadı; 3. turda (31 Ekim) salt çoğunlukla (263 oy) seçildi. SHP ve DYP oylamalara katılmadı." }
+      not: "1. tur (20 Ekim, 247 oy) ve 2. tur (24 Ekim, 256 oy) 2/3 çoğunluğu (300) sağlayamadı; 3. turda (31 Ekim) salt çoğunlukla (263 oy) seçildi. SHP ve DYP oylamalara katılmadı." },
+
+    // --- dönem 5 (1991 – 2000) ---
+
+    // kaynak: araclar/kaynak-defteri.md#1991-10-genel
+    { id: "1991-10-genel", tur: "genel", tarih: "1991-10-20", tekParti: false,
+      meclis: 450, kayitli: 29979123, kullanilan: 25157089, gecerli: 24416666, baraj: 10,
+      sonuc: [ { parti: "dyp", oy: 6600726, sandalye: 178 }, { parti: "anap", oy: 5862623, sandalye: 115 }, { parti: "shp", oy: 5066571, sandalye: 88 }, { parti: "rp", oy: 4121355, sandalye: 62 }, { parti: "dsp", oy: 2624301, sandalye: 7 }, { ad: "Diğer", partiSayisi: 1, oy: 108369, sandalye: 0 }, { ad: "Bağımsız", oy: 32721, sandalye: 0 } ],
+      not: "Hiçbir parti tek başına hükümet kuracak çoğunluğu sağlayamadı; seçimden sonra DYP–SHP koalisyonu kuruldu. Sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#1993-05-cb-tbmm
+    { id: "1993-05-cb-tbmm", tur: "cb-tbmm", tarih: "1993-05-16",
+      secilen: "Süleyman Demirel", turSayisi: 3,
+      not: "İlk iki turda Anayasa'nın 102. maddesindeki 2/3 çoğunluk sağlanamadı; 431 üyenin katıldığı üçüncü turda Demirel 244 oyla 9. Cumhurbaşkanı seçildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#1995-12-genel
+    { id: "1995-12-genel", tur: "genel", tarih: "1995-12-24", tekParti: false,
+      meclis: 550, kayitli: 34155981, kullanilan: 29101469, gecerli: 28126993, baraj: 10,
+      sonuc: [ { parti: "rp", oy: 6012450, sandalye: 158 }, { parti: "dyp", oy: 5396009, sandalye: 135 }, { parti: "anap", oy: 5527288, sandalye: 132 }, { parti: "dsp", oy: 4118025, sandalye: 76 }, { parti: "chp92", oy: 3011076, sandalye: 49 }, { parti: "mhp93", oy: 2301343, sandalye: 0 }, { parti: "hadep", oy: 1171623, sandalye: 0 }, { parti: "ydh", oy: 133889, sandalye: 0 }, { parti: "ip92", oy: 61428, sandalye: 0 }, { ad: "Diğer", partiSayisi: 3, oy: 259967, sandalye: 0 }, { ad: "Bağımsız", oy: 133895, sandalye: 0 } ],
+      not: "Bu seçimden önce kontenjan usulü ve seçim çevresi barajı kaldırılıp %10 ülke barajlı d'Hondt sistemine geçildi, milletvekili sayısı 450'den 550'ye çıkarıldı ve seçmen yaşı 18'e indirildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#1999-04-genel
+    { id: "1999-04-genel", tur: "genel", tarih: "1999-04-18", tekParti: false,
+      meclis: 550, kayitli: 37495217, kullanilan: 32656070, gecerli: 31184496, baraj: 10,
+      sonuc: [ { parti: "dsp", oy: 6919670, sandalye: 136 }, { parti: "mhp93", oy: 5606583, sandalye: 129 }, { parti: "fp", oy: 4805381, sandalye: 111 }, { parti: "anap", oy: 4122929, sandalye: 86 }, { parti: "dyp", oy: 3745417, sandalye: 85 }, { parti: "chp92", oy: 2716094, sandalye: 0 }, { parti: "hadep", oy: 1482196, sandalye: 0 }, { parti: "bbp", oy: 456353, sandalye: 0 }, { parti: "odp", oy: 248553, sandalye: 0 }, { parti: "dtp97", oy: 179871, sandalye: 0 }, { parti: "ldp", oy: 127174, sandalye: 0 }, { parti: "dp92", oy: 92093, sandalye: 0 }, { parti: "ip92", oy: 57607, sandalye: 0 }, { parti: "emep", oy: 51756, sandalye: 0 }, { ad: "Diğer", partiSayisi: 6, oy: 302554, sandalye: 0 }, { ad: "Bağımsız", oy: 270265, sandalye: 3 } ],
+      not: "Genel seçim ile mahalli idareler seçimi aynı gün yapıldı; CHP %10'luk ülke barajını aşamayarak meclis dışında kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#2000-05-cb-tbmm
+    { id: "2000-05-cb-tbmm", tur: "cb-tbmm", tarih: "2000-05-05",
+      secilen: "Ahmet Necdet Sezer", turSayisi: 3,
+      not: "Anayasa Mahkemesi Başkanı olan Sezer, 533 üyenin katıldığı üçüncü turda 330 oyla 10. Cumhurbaşkanı seçildi; andiçme töreni 16 Mayıs 2000'de yapıldı." }
   ],
 
   hukumetler: [
@@ -572,7 +602,59 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-45-47
     { no: 47, basbakan: "Yıldırım Akbulut", partiler: ["anap"],
-      baslangic: "1989-11-09", bitis: "1991-06-23", tip: "tek-parti", bitisNedeni: null,
-      not: "Özal'ın cumhurbaşkanı seçilmesinin ardından ANAP grubu içinden kuruldu." }
+      baslangic: "1989-11-09", bitis: "1991-06-23", tip: "tek-parti", bitisNedeni: "istifa",
+      not: "Özal'ın cumhurbaşkanı seçilmesinin ardından ANAP grubu içinden kuruldu; Akbulut'un başbakanlıktan istifasının kabulüyle sona erdi." },
+
+    // --- dönem 5 (1991 – 2000) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 48, basbakan: "Mesut Yılmaz", partiler: ["anap"],
+      baslangic: "1991-06-23", bitis: "1991-11-20", tip: "tek-parti", bitisNedeni: "secim",
+      not: "Akbulut'un istifası üzerine ANAP Genel Başkanı sıfatıyla görevlendirilen Yılmaz'ın kurduğu hükümet, 20 Ekim 1991 genel seçiminin ardından yerini koalisyona bıraktı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 49, basbakan: "Süleyman Demirel", partiler: ["dyp", "shp"],
+      baslangic: "1991-11-20", bitis: "1993-06-25", tip: "koalisyon", bitisNedeni: "cumhurbaskani-secimi",
+      not: "19 Kasım 1991 tarihli DYP–SHP koalisyon protokolüyle kuruldu; Demirel'in 16 Mayıs 1993'te cumhurbaşkanı seçilmesinin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 50, basbakan: "Tansu Çiller", partiler: ["dyp", "shp"],
+      baslangic: "1993-06-25", bitis: "1995-10-05", tip: "koalisyon", bitisNedeni: "istifa",
+      not: "Yeni bir DYP–SHP koalisyon protokolüyle kuruldu; SHP'nin CHP'ye katılmasından sonra aynı Bakanlar Kurulu listesinde bakanlar CHP etiketiyle sürdü ve hükümet 20 Eylül 1995'te istifa etti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 51, basbakan: "Tansu Çiller", partiler: ["dyp"],
+      baslangic: "1995-10-05", bitis: "1995-10-30", tip: "azinlik", bitisNedeni: "guvensizlik",
+      not: "DYP azınlık hükümeti; TBMM'den güvenoyu alamadığı için 25 gün sonra sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 52, basbakan: "Tansu Çiller", partiler: ["dyp", "chp92"],
+      baslangic: "1995-10-30", bitis: "1996-03-06", tip: "koalisyon", bitisNedeni: "erken-secim",
+      not: "Yazılı metni olmayan bir DYP–CHP koalisyonu; esas görevi 24 Aralık 1995 yenileme seçimini yaptırmak olan bir seçim hükümetiydi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 53, basbakan: "Mesut Yılmaz", partiler: ["anap", "dyp"],
+      baslangic: "1996-03-06", bitis: "1996-06-28", tip: "koalisyon", bitisNedeni: "istifa",
+      not: "ANAP–DYP (ANAYOL) koalisyonu; güvenoylamasına ilişkin yargı kararının ardından istifa etmek zorunda kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 54, basbakan: "Necmettin Erbakan", partiler: ["rp", "dyp"],
+      baslangic: "1996-06-28", bitis: "1997-06-30", tip: "koalisyon", bitisNedeni: "istifa",
+      not: "RP–DYP (REFAHYOL) koalisyonu; bir yılın sonunda olağandışı koşullarda istifa ederek görevi bıraktı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 55, basbakan: "Mesut Yılmaz", partiler: ["anap", "dsp", "dtp97"],
+      baslangic: "1997-06-30", bitis: "1999-01-11", tip: "koalisyon", bitisNedeni: "guvensizlik",
+      not: "ANAP–DSP–DTP koalisyon protokolüyle kurulan üç partili azınlık hükümeti; güvenoylamasıyla düşürüldü." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 56, basbakan: "Bülent Ecevit", partiler: ["dsp"],
+      baslangic: "1999-01-11", bitis: "1999-05-28", tip: "azinlik", bitisNedeni: "erken-secim",
+      not: "ANAP ile DYP'nin dışarıdan destek verdiği DSP azınlık hükümeti; öne alınan 18 Nisan 1999 genel ve yerel seçimlerini yaptırmak üzere kuruldu." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
+    { no: 57, basbakan: "Bülent Ecevit", partiler: ["dsp", "mhp93", "anap"],
+      baslangic: "1999-05-28", bitis: "2002-11-18", tip: "koalisyon", bitisNedeni: "erken-secim",
+      not: "DSP–MHP–ANAP koalisyonu; 21. Dönem Meclisi'nin erken seçim kararıyla 3 Kasım 2002'de yapılan genel seçimin ardından sona erdi." }
   ]
 };

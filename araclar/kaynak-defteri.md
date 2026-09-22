@@ -2116,3 +2116,267 @@ uyarı: — sayısı: referandum bant 4: 0
 hata yok
 ```
 (Tam çıktı rapor dosyasında.)
+
+## Görev 9 — Dönem 5 (1991–2000)
+
+### 1991-10-genel
+
+- **[B] TÜİK, *Milletvekili Genel Seçimleri 1923–2011*, Tablo 24 "TÜRKİYE"** (PDF s. 111–112,
+  basılı s. 93–94, yerel kopya, `pdftotext -table -enc UTF-8`) — kayıtlı 29.979.123, kullanılan
+  25.157.089 (katılım %83,9), geçerli oy (gümrük kapıları hariç) 24.371.474, gümrük kapıları
+  geçerli oyu 45.192, **toplam geçerli oy 24.416.666** (veriye bu yazıldı — 1987 kaydındaki
+  emsalle aynı; TBMM'nin yayımladığı oy oranları da bu paydayı kullanıyor: 6.600.726/24.416.666 =
+  %27,03 = TBMM'nin verdiği oran), milletvekili sayısı 450.
+  DYP 6.600.726 (%27,0) 178 sandalye, ANAP 5.862.623 (%24,0) 115, SHP 5.066.571 (%20,8) 88,
+  RP 4.121.355 (%16,9) 62, DSP 2.624.301 (%10,8) 7, SP (Sosyalist Parti) 108.369 (%0,4) 0,
+  Bağımsız 32.721 (%0,1) 0.
+  **İç tutarlılık (hesaplandı):** parti+bağımsız oy toplamı = 24.416.666, toplam geçerliye tam
+  eşit; sandalye toplamı 178+115+88+62+7 = 450, meclise tam eşit.
+- **İkinci kaynak: TBMM seçim sorgusu** (`www5.tbmm.gov.tr/develop/owa/secim_sorgu.secimdeki_partiler?p_secim_yili=1991`,
+  `curl -k`) — DYP 6.600.726 (%27,03), ANAP 5.862.623 (%24,01), SHP 5.066.571 (%20,75),
+  RP 4.121.355 (%16,88), DSP 2.624.301 (%10,75), SP 108.369 (%0,44), BAĞIMSIZ 32.721 (%0,13).
+  Yedi satırın tamamı TÜİK ile **birebir** eşleşti. Uyuşmazlık: yok.
+- **`baraj: 10`** — [B] TÜİK Açıklama (PDF s. 13, basılı XIII): 2839 sayılı Kanun'la 1983'ten
+  itibaren "ülke barajlı (%10) ve seçim çevresi barajlı nispi temsil (d'Hondt)"; aynı sayfa:
+  "1987 ve 1991 milletvekili seçimlerinde… çifte barajlı d'Hondt seçim sisteminin yanısıra
+  kontenjan uygulaması getirilmiş, 1991 seçimlerinde de seçmen yaşı 20, milletvekili sayısı 450
+  olarak kabul edilmiştir."
+- **`tarih`: 20 Ekim 1991** — [B] TÜİK Ek-1 "Milletvekili Genel Seçimlerinin Yapıldığı Tarihler"
+  (PDF s. 277, basılı s. 259): "18.Dönem 20 Ekim 1991".
+- **SP = Sosyalist Parti** — [B] TÜİK "Simge ve Kısaltmalar" (PDF s. 7, basılı VII). Soyağacında
+  yok (`veri/partiler.js`'teki `sp` id'si **Saadet Partisi**'nindir, 2001) ve oyu %1'in altında
+  (%0,44) → spesifikasyon §5.2 "Diğer" kuralı gereği `{ad:"Diğer", partiSayisi:1, oy:108369}`.
+- **`not` cümlesi:** "hiçbir parti tek başına hükümet kuracak çoğunluğu sağlayamadı" ifadesi
+  [B] TBMM Cilt 8, VII. Demirel Hükümeti'nin DYP–SHP koalisyon protokolü girişinden (basılı
+  s. 6532–6533): "20 Ekim 1991 Genel seçimleri, DYP'yi birinci parti olarak çıkarmış, fakat
+  hiçbir siyasi gruba tek başına hükümet kurma olanağı vermemiştir."
+- Erişim: 2026-09-22/23.
+
+### 1995-12-genel
+
+- **[B] TÜİK Tablo 24 "TÜRKİYE"** (aynı sayfalar) — kayıtlı 34.155.981, kullanılan 29.101.469
+  (katılım %85,2), geçerli oy 28.040.392, gümrük kapıları 86.601, **toplam geçerli oy
+  28.126.993**, milletvekili sayısı 550.
+  RP 6.012.450 (%21,4) 158 sandalye, ANAP 5.527.288 (%19,6) 132, DYP 5.396.009 (%19,2) 135,
+  DSP 4.118.025 (%14,6) 76, CHP 3.011.076 (%10,7) 49, MHP 2.301.343 (%8,2) 0, HADEP 1.171.623
+  (%4,2) 0, YDH 133.889 (%0,5) 0, MİLLET PARTİSİ 127.630 (%0,5) 0, YDP 95.484 (%0,3) 0,
+  İP 61.428 (%0,2) 0, YENİ PARTİ 36.853 (%0,1) 0, Bağımsız 133.895 (%0,5) 0.
+  **İç tutarlılık (hesaplandı):** oy toplamı = 28.126.993 (toplam geçerliye tam eşit);
+  sandalye toplamı 158+132+135+76+49 = 550 (meclise tam eşit).
+- **İkinci kaynak: TBMM seçim sorgusu** (`p_secim_yili=1995`) — 13 satırın tamamı (RP, ANAP, DYP,
+  DSP, CHP, MHP, HADEP, BAĞIMSIZ, YDH, MP, YDP, İP, YP) TÜİK ile **birebir** eşleşti.
+  Uyuşmazlık: yok.
+- **`baraj: 10` ve `meclis: 550`** — [B] TÜİK Açıklama (PDF s. 14, basılı XIV): "Kontenjan aday
+  uygulaması ve seçim çevresi barajı, 1995 milletvekili seçimleri öncesi yapılan yasal değişikle
+  kaldırılmıştır. Bunun yerine, ülke barajlı (%10) d'Hondt seçim sistemi getirilmiştir. Bunun
+  yanısıra, 1987 yılında 450 olarak belirlenen milletvekili sayısı 550'ye çıkarılmış, seçmen yaşı
+  18'e indirilmiş…" (kaydın `not` cümlesi birebir bu paragrafa dayanır). Tablo 24'ün
+  "Milletvekili sayısı" satırı da 550 veriyor.
+- **`tarih`: 24 Aralık 1995** — [B] TÜİK Ek-1: "19.Dönem 24 Aralık 1995".
+- **"Diğer" (partiSayisi 3, oy 259.967):** MİLLET PARTİSİ 127.630 + YDP (Yeniden Doğuş Partisi)
+  95.484 + YENİ PARTİ 36.853 — üçü de soyağacında yok ve üçünün de oyu %1'in altında.
+  Kısaltmaların açılımı [B] TÜİK "Simge ve Kısaltmalar" (PDF s. 7). YDH ve İP soyağacında var
+  (`ydh`, `ip92`) → %1'in altında olsalar da ayrı satırda tutuldular (spesifikasyon §5.2 "Diğer"
+  yalnızca **soyağacında olmayan** küçük partiler için).
+- Erişim: 2026-09-22/23.
+
+### 1999-04-genel
+
+- **[B] TÜİK Tablo 24 "TÜRKİYE"** (aynı sayfalar) — kayıtlı 37.495.217, kullanılan 32.656.070
+  (katılım %87,1), geçerli oy 31.119.242, gümrük kapıları 65.254, **toplam geçerli oy
+  31.184.496**, milletvekili sayısı 550.
+  DSP 6.919.670 (%22,2) 136 sandalye, MHP 5.606.583 (%18,0) 129, FP 4.805.381 (%15,4) 111,
+  ANAP 4.122.929 (%13,2) 86, DYP 3.745.417 (%12,0) 85, CHP 2.716.094 (%8,7) 0, HADEP 1.482.196
+  (%4,7) 0, BBP 456.353 (%1,5) 0, ÖDP 248.553 (%0,8) 0, DTP 179.871 (%0,6) 0, LDP 127.174 (%0,4) 0,
+  DP 92.093 (%0,3) 0, MİLLET PARTİSİ 79.370 (%0,3) 0, BP 78.922 (%0,2) 0, İP 57.607 (%0,2) 0,
+  EMEP 51.756 (%0,2) 0, YDP 44.787 (%0,1) 0, SİP 37.680 (%0,1) 0, DEPAR 37.175 (%0,1) 0,
+  DBP 24.620 (%0,1) 0, Bağımsız 270.265 (%0,9) **3 sandalye**.
+  **İç tutarlılık (hesaplandı):** oy toplamı = 31.184.496 (toplam geçerliye tam eşit);
+  sandalye toplamı 136+129+111+86+85+3 = 550 (meclise tam eşit).
+- **İkinci kaynak: TBMM seçim sorgusu** (`p_secim_yili=1999`) — 21 satırın tamamı TÜİK ile
+  **birebir** eşleşti. Uyuşmazlık: yok.
+- **`baraj: 10`** — [B] TÜİK Açıklama (PDF s. 14): "1999, 2002, 2007 ve 2011 yıllarında yapılan
+  milletvekili seçimlerinde de 1995 yılı seçimindeki uygulamalar aynen devam etmiştir."
+- **`tarih`: 18 Nisan 1999** — [B] TÜİK Ek-1: "20.Dönem 18 Nisan 1999".
+- **Soyağacı eşlemesi:** MHP→`mhp93`, CHP→`chp92`, DTP (Demokrat Türkiye Partisi)→`dtp97`,
+  DP (Demokrat Parti, 1992)→`dp92`, İP→`ip92`, diğerleri doğrudan. Kısaltma açılımları [B] TÜİK
+  "Simge ve Kısaltmalar" (PDF s. 7): DTP = Demokrat Türkiye Partisi, DP = Demokrat Parti,
+  BP = Barış Partisi, DBP = Demokrasi ve Barış Partisi, DEPAR = Değişen Türkiye Partisi,
+  SİP = Sosyalist İktidar Partisi, YDP = Yeniden Doğuş Partisi.
+- **"Diğer" (partiSayisi 6, oy 302.554):** MİLLET PARTİSİ 79.370 + BP 78.922 + YDP 44.787 +
+  SİP 37.680 + DEPAR 37.175 + DBP 24.620 — altısı da soyağacında yok ve altısının da oyu %1'in
+  altında. ÖDP (`odp`), LDP (`ldp`), EMEP (`emep`), DP (`dp92`), İP (`ip92`), DTP (`dtp97`)
+  soyağacında olduğu için %1'in altında olsalar da ayrı satırda.
+- **`not` cümlesi:** "genel seçim ile mahalli idareler seçimi aynı gün yapıldı" — [B] TBMM Cilt 10,
+  IV. Ecevit Hükümeti program metni: "18 Nisanda yapılacak milletvekili genel seçimlerine ve
+  yerel yönetim seçimlerine…", "birlikte yapılacak olan genel ve yerel seçimler". CHP'nin baraj
+  altında kalması kaydın kendi sayılarından görülüyor (%8,7 < %10, 0 sandalye).
+- Erişim: 2026-09-22/23.
+
+### 1993-05-cb-tbmm
+
+- **[B] TBMM Tutanak Dergisi, Dönem 19, Cilt 35, 103. Birleşim (16.5.1993 Pazar)**
+  (`www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d19/c035/tbmm19035103.pdf`, basılı s. 507–508):
+  Tasnif Komisyonu tutanağı — "Cumhurbaşkanı Seçimi için yapılan **üçüncü tur** oylamaya
+  **431 üye** katılmış…" Süleyman Demirel **244**, Kâmran İnan 94, Lütfi Doğan 47, İsmail Cem 27,
+  Boş 19. Başkan: "…Süleyman Demirel, Anayasanın 102 nci maddesinde üçüncü oylama için öngörülen
+  salt çoğunluğu sağlamış, 244 oyla Türkiye Cumhuriyetinin 9 uncu Cumhurbaşkanı seçilmiş
+  bulunmaktadır."
+  Aynı birleşimin "Geçen Tutanak Özeti"nde (s. 504): "Cumhurbaşkanı seçimi için yapılan **ikinci
+  tur** oylamada, gösterilen adaylardan hiçbiri, Anayasanın 102 nci maddesinde öngörülen üçte iki
+  çoğunluğu sağlayamadığından…" → ilk iki tur başarısız, `turSayisi: 3`.
+  (İlgili birleşimler: 101. Birleşim 8.5.1993 ve 102. Birleşim 12.5.1993 — ikisinin de gündeminde
+  "Cumhurbaşkanı Seçimi" var; kayda yalnızca tur sayısı yazıldı, tur tarihleri yazılmadı.)
+- **İkinci kaynak: Cumhurbaşkanlığı (tccb.gov.tr), Süleyman Demirel sayfası** — "Demirel was
+  elected as the ninth President of Turkey by the TBMM on 16 May 1993 and left the Office after
+  his seven year term on 16 May 2000." Tarih, seçen merci (TBMM) ve sıra (9.) birebir eşleşti.
+  Uyuşmazlık: yok.
+- Erişim: 2026-09-22/23.
+
+### 2000-05-cb-tbmm
+
+- **[B] TBMM Tutanak Dergisi, Dönem 21, Cilt 32, 90. Birleşim (5.5.2000)**
+  (`www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d21/c032/tbmm21032090.pdf`): Başkan "Şimdi,
+  **üçüncü tur** oylamayı yapacağız" dedikten sonra Tasnif Komisyonu tutanağı —
+  "Cumhurbaşkanlığı için yapılan üçüncü oylamaya **533 üye** katılmış…": Ahmet Necdet Sezer
+  **330**, Nevzat Yalçıntaş 113, Sadi Somuncuoğlu 43, Rasim Zaimoğlu 24. Başkan: "…Anayasa
+  Mahkemesi Başkanı Sayın Ahmet Necdet Sezer, Anayasanın 102 nci maddesine göre üçüncü oylama
+  için öngörülen salt çoğunluğu sağlamış ve 330 oyla, Türkiye Cumhuriyetinin 10 uncu
+  Cumhurbaşkanı seçilmiş bulunmaktadır." Ayrıca: "Sayın Cumhurbaşkanının andiçme töreni, Genel
+  Kurulun **16 Mayıs 2000** tarihli birleşiminde yapılacaktır." Aynı birleşimin geçen tutanak
+  özeti ikinci turun 2/3 çoğunluğu sağlayamadığını yazıyor → `turSayisi: 3`.
+- **İkinci kaynak: TBMM Kararı No. 695, Kabul tarihi 5.5.2000, Resmî Gazete 6.5.2000 / 24041**
+  (`www5.tbmm.gov.tr/tutanaklar/KANUNLAR_KARARLAR/kanuntbmmc084/karartbmmc084/karartbmmc08400695.pdf`)
+  — "Türkiye Büyük Millet Meclisi Genel Kurulunun 5.5.2000 tarihli 90 inci Birleşiminde, Anayasa
+  Mahkemesi Başkam Necdet Sezer (330) oy ile Türkiye Cumhurbaşkanı seçilmiştir." Tutanaklar
+  dipnotu: Cilt 32, Birleşim **88, 89, 90** (üç tur). Tarih ve oy sayısı birebir eşleşti.
+  Uyuşmazlık: yok.
+- **Dönem kararı:** 2000 CB seçimi 5 Mayıs 2000'de yapıldığı (andiçme 16 Mayıs 2000) için
+  1991–2000 aralığına düşüyor → dönem 5'e eklendi.
+- Erişim: 2026-09-23.
+
+### Hükümetler 48-57
+
+Ölçüt (dönem 3'te seçilip bütün dönemlerde uygulanan): `baslangic`/`bitis` = TBMM
+*Hükümetler, Programları ve Genel Kurul Görüşmeleri* cildinin içindekiler/başlık satırındaki
+kuruluş–bitiş tarihleri; `partiler` ve `tip` = aynı cildin **Bakanlar Kurulu listesindeki parti
+etiketleri** ve varsa **koalisyon protokolü** başlığı; `bitisNedeni` = aynı cildin program
+görüşmeleri / Cumhurbaşkanlığı tezkereleri.
+
+**Kaynak ciltler:**
+- **[B] Cilt 8** (9 Kasım 1989 – 30 Ekim 1995) — `acikerisim.tbmm.gov.tr/server/api/core/bitstreams/bfe1edae-c4f8-4520-801f-92cefd45e253/content`
+  (dönem 4'ün indirdiği kopya).
+- **[B] Cilt 9** (30 Ekim 1995 – 11 Ocak 1999) — bitstream
+  `ed9cef72-34f2-44bc-9a66-e77e6c0aab99` (dosya adı `201400891-c9.pdf`). **Görev 1'in "cilt 9
+  adresi yok" notu düzeltildi:** cilt 9 ve 10, `hukumetler_cilt_9.pdf` gibi doğrudan bir adresle
+  değil, koleksiyon öğesinin (`/items/2305701f-7bde-4344-bfbe-4166743fe1e2`) ORIGINAL
+  paketindeki bitstream listesinden
+  (`/core/bundles/88774567-0d57-4e64-8a8e-bf03cfb196f7/bitstreams?size=50`) bulunuyor.
+- **[B] Cilt 10** (11 Ocak 1999 – ) — bitstream `1bb4bf9a-a93e-40ff-852c-8d5d07c890b7`
+  (`201400892-c10.pdf`).
+
+**İçindekiler satırları (başlangıç/bitiş tarihleri, basılı sayfa):**
+- Cilt 8: "48 I. Yılmaz Hükümeti (23.06.1991-20.11.1991) … 6407"; "49 VII. Demirel Hükümeti
+  (20.11.1991-25.06.1993) … 6529"; "50 I. Çiller Hükümeti (25.06.1993-05.10.1995) … 6717";
+  "51 II. Çiller Hükümeti (05.10.1995-30.10.1995) … 6919".
+- Cilt 9: "52 III. Çiller Hükümeti (30.10.1995-06.03.1996) … 7063"; "53 II. Yılmaz Hükümeti
+  (06.03.1996-28.06.1996) … 7205"; "54 Erbakan Hükümeti (28.06.1996-30.06.1997) … 7395";
+  "55 III. Yılmaz Hükümeti (30.06.1997-11.01.1999) … 7567".
+- Cilt 10: "56 IV. Ecevit Hükümeti (11.01.1999-28.05.1999) … 7767"; "57 V. Ecevit Hükümeti
+  (28.05.1999-18.11.2002) … 7875".
+- **Zincirleme:** 47 (bitiş 23.06.1991) → 48 → 49 → 50 → 51 → 52 → 53 → 54 → 55 → 56 → 57,
+  her birinin bitişi bir sonrakinin başlangıcına tam eşit; `dogrula.js` boşluk uyarısı vermiyor.
+
+**Parti bileşimi ve `tip` (kabine bileşimi ölçütü):**
+- **48 (Mesut Yılmaz):** Cilt 8 s. 6408–6409 Bakanlar Kurulu listesinde hiçbir bakan parti
+  etiketi taşımıyor (tek parti kabinesi; birkaç bakan "TBMM dışından"), koalisyon protokolü yok →
+  `partiler: ["anap"]`. 1987 seçiminde ANAP 292/450 (meclis çoğunluğu) → `tip: "tek-parti"`.
+- **49 (Demirel):** Cilt 8 s. 6530–6531'de her bakanın yanında parti etiketi var (DYP/SHP),
+  ardından "Koalisyon Protokolü (DYP - SHP)" → `partiler: ["dyp","shp"]`, `tip: "koalisyon"`.
+  `not`taki "19 Kasım 1991 tarihli protokol" ifadesi, 50'nin protokol girişinde geçen "önceki
+  DYP-SHP Ortak Hükümetinin oluşumunu düzenleyen 19 Kasım 1991 tarihli Protokolü" ibaresinden.
+- **50 (Çiller):** Cilt 8 s. 6718–6721 listesinde DYP ve SHP etiketleri; s. 6721'de "Koalisyon
+  Protokolü (DYP - SHP)" → `partiler: ["dyp","shp"]`, `tip: "koalisyon"`. Aynı listede 1994 sonu
+  ve 1995 tarihli değişikliklerde SHP'li bakanların yerine geçenler **CHP** etiketli (ör. "Hikmet
+  ÇETİN (Gaziantep, CHP) 27.12.1994-27.03.1995") — kaydın `not` cümlesi buna dayanıyor.
+  Kuruluş bileşimi DYP+SHP olduğu için `partiler` iki partiyle yazıldı.
+- **51 (Çiller):** Cilt 8 s. 6920–6921 listesinde **hiç parti etiketi yok** (tek parti kabinesi).
+  Partisi ve azınlık niteliği [B] olarak Cilt 9'daki III. Çiller program görüşmesinden (basılı
+  s. 7113): "Doğru Yol Partisi, Hükümetin istifasından sonra, Sayın Başbakana Cumhurbaşkanımız
+  tarafından görev verilmesi üzerine, haliyle, bir azınlık hükümeti kurma çabası içerisine
+  girecekti… bu hükümet kurulmuştur; ancak, Türkiye Büyük Millet Meclisinde güvenoyu
+  alamamıştır." → `partiler: ["dyp"]`, `tip: "azinlik"` (DYP 1991'de 178/450).
+- **52 (Çiller):** Cilt 9 s. 7064–7065 listesinde DYP ve CHP etiketleri; s. 7066'da "Koalisyon
+  Protokolü (DYP - CHP) — Yazılı protokol metni yoktur…" → `partiler: ["dyp","chp92"]`,
+  `tip: "koalisyon"`; `not`taki "yazılı metni olmayan" ifadesi buradan.
+- **53 (Yılmaz):** Cilt 9 s. 7208'de "Koalisyon Protokolü (ANAP-DYP)"; Bakanlar Kurulu listesinde
+  ANAP ve DYP etiketleri → `partiler: ["anap","dyp"]`, `tip: "koalisyon"`.
+- **54 (Erbakan):** Cilt 9 s. 7398'de "Koalisyon Protokolü (RP-DYP)"; listede RP ve DYP
+  etiketleri → `partiler: ["rp","dyp"]`, `tip: "koalisyon"`.
+- **55 (Yılmaz):** Cilt 9 s. 7571'de "Koalisyon Protokolü (ANAP-DSP-DTP)" ve girişi: "Anavatan
+  Partisi, Demokratik Sol Parti ve Demokrat Türkiye Partisi…"; Bakanlar Kurulu listesinde 21 ANAP,
+  11 DSP, 6 DTP etiketi (bir bakan "Bağımsız") → `partiler: ["anap","dsp","dtp97"]`,
+  `tip: "koalisyon"`. Kaydın `not`undaki "üç partili azınlık hükümeti" ifadesi [B] Cilt 10'daki
+  Ecevit'in program konuşmasından: "Üç partili bir azınlık hükümeti olmasına karşın, 55'inci
+  hükümet…". (Kullanıcı kararı gereği `tip` ölçütü kabine bileşimi olduğundan `koalisyon` yazıldı.)
+- **56 (Ecevit):** Cilt 10 s. 7768–7769 listesinde hiç parti etiketi yok. Partisi ve niteliği
+  [B] olarak Ecevit'in kendi program konuşmasından: "Anavatan Partisi ile Doğru Yol Partisinin
+  dışarıdan destek sözü verdikleri **Demokratik Sol Parti azınlık hükümeti kurulmuştur.**" →
+  `partiler: ["dsp"]`, `tip: "azinlik"` (DSP 1995'te 76/550).
+- **57 (Ecevit):** Cilt 10 s. 7875'te bölüm başlığı "V. Ecevit Hükümeti (**DSP-MHP-ANAP
+  Koalisyonu**)"; Bakanlar Kurulu listesinde 14 ANAP, 11 DSP, 11 MHP etiketi →
+  `partiler: ["dsp","mhp93","anap"]`, `tip: "koalisyon"`.
+
+**Bitiş nedenleri:**
+- **47 → `istifa` (dönem 4'ten devralınan boşluk dolduruldu):** [B] Cilt 8 s. 6410–6411,
+  TBMM Tutanak Dergisi Dönem 18 Cilt 61 Birleşim 129 (Olağanüstü, 30.06.1991) — Cumhurbaşkanlığı
+  tezkeresi: "Başbakan Erzincan Milletvekili Sayın Yıldırım Akbulut Başbakanlık görevinden
+  **istifa etmiş ve istifası kabul olunmuştur.**" (Turgut Özal). Ertesi tezkere (17 Haziran 1991):
+  "İlgi yazı ile istifası bildirilmiş olan Bakanlar Kurulunun yeniden teşkili için… Rize
+  Milletvekili ve **Anavatan Partisi Genel Başkanı** A. Mesut Yılmaz'ı görevlendirdim." — 48'in
+  `not` cümlesi de buna dayanır. (ANAP kurultayı tarihi/ayrıntısı yalnızca haber ve ansiklopedi
+  kaynaklarında bulunabildiği için veriye **yazılmadı**; yalnızca "istifa" olgusu [B] kaynaklıdır.)
+- **48 → `secim`:** Cilt 8'deki DYP–SHP koalisyon protokolü girişi (s. 6532): "20 Ekim 1991
+  Millet Meclisi Genel seçimlerinin kesin sonuçları ilan edilmiş… Sayın Cumhurbaşkanı… DYP Genel
+  Başkanı Sayın Demirel'i hükümet kurmakla görevlendirmiştir." **Sınırlılık:** 1991 seçiminin
+  "yenileme/erken seçim" olduğunu söyleyen bir [B] ifade bu turda bulunamadı (Meclis'in yenileme
+  kararına dair Resmî Gazete metnine erişilemedi; resmigazete.gov.tr arşivi `curl` ile yanıt
+  vermedi) → daha güçlü olan `erken-secim` yerine `secim` yazıldı.
+- **49 → `cumhurbaskani-secimi`:** [B] Cilt 8 s. 6733, Çiller'in program konuşması: "Yedi kez
+  Başbakan olarak ülkemize büyük hizmetler vermiş bulunan Sayın Süleyman Demirel'in ülkemizin
+  **Cumhurbaşkanlığına seçilişi ertesinde** DYP Genel Başkanlığı'nı üstlenerek, yeni Hükümeti
+  kurmakla görevlendirildim."
+- **50 → `istifa`:** [B] Cilt 9, III. Çiller program görüşmesi (basılı s. 7067 ve 7113):
+  "**20 Eylül 1995 tarihinde 50'nci Hükümetin istifasıyla** ve 51'inci Hükümetin Türkiye Büyük
+  Millet Meclisinden güvenoyu alamaması nedeniyle…"
+- **51 → `guvensizlik`:** aynı cümle — "51'inci Hükümetin Türkiye Büyük Millet Meclisinden
+  **güvenoyu alamaması**".
+- **52 → `erken-secim`:** [B] Cilt 9 s. 7114: "**24 Aralıkta seçimlerin yenilenmesine karar alan
+  bir meclis** ve siyasî partilerin durumu nedeniyle…"; aynı görüşmede: "27.10.1995 tarih ve 2125
+  sayılı Yasayla, 24 Aralık 1995 tarihinde seçimlere karar verdik. Ayrıca, aynı gün, seçimlerin
+  yenilenmesine karar aldık." 52'nin kendisi de aynı görüşmede "esas itibariyle bir seçim
+  hükümeti" olarak tanımlanıyor (s. 7113).
+- **53 → `istifa`:** [B] Cilt 9 s. 7452, 54. Hükümet'in program görüşmesi: "Türk siyasî tarihinde
+  ilk defa bir hükümet, **yargı kararıyla, güvenoyu almadığı için istifa etmek zorunda
+  kalmıştır.** İstifa eden bir hükümetin yerine bugün, çoğunluğa dayanan bir Hükümet kurulmuştur.
+  Elbette, burada Anayasa Mahkemesinin tarafsız ve adil tutumunu da zikretmek istiyorum."
+- **54 → `istifa`:** [B] Cilt 9, 55. Hükümet'in program görüşmesi — "bu Hükümet, bir süre önce
+  işbaşında bulunan **Refahyol Hükümetinin, çok özel koşullarda istifa ederek**, Hükümeti
+  boşaltmak zorunda kalması sonucunda ortaya çıkmıştır" ve ayrı bir konuşmacı: "bugünkü Hükümet,
+  **Refah Partisi ve Doğru Yol Partisi Hükümetinin istifasından sonra** kurulmuştur." (Kaydın
+  `not` cümlesi "olağandışı koşullarda istifa" ifadesiyle sınırlı tutuldu; 28 Şubat süreciyle
+  nedensel bağ kurmak yorum olacağından yazılmadı.)
+- **55 → `guvensizlik`:** [B] Cilt 10, Ecevit'in 56. Hükümet program konuşması: "**55'inci
+  cumhuriyet hükümetinin güven oylaması ile düşürülmesi** üzerine ortaya çıkan hükümet sorunu…"
+- **56 → `erken-secim`:** [B] Cilt 10, Ecevit'in kendi konuşması: "Büyük Millet Meclisimiz…
+  nisan ayında seçimlerin yapılmasını kararlaştırmıştı… Tabiî, **18 Nisanda - yani, bir erkene
+  alınmış - seçim** yapılmalı mıydı…" Aynı konuşma 56'nın "yaklaşan seçimlerle sınırlı bir ömrü
+  olacağı"nı söylüyor; bir başka konuşmacı: "56'ncı hükümet, **18 Nisan seçimlerine kadar** görev
+  yapacaktır."
+- **57 → `erken-secim`:** [B] Cilt 10, 58. Hükümet (Gül) program görüşmesi: "**21'inci Dönem
+  Meclisi erken seçim kararı aldıktan sonra**, erken seçimin ertelenmesinde…"; seçim tarihi
+  (3 Kasım 2002) [B] TÜİK Ek-1 listesinde. 57'nin `baslangic`'ı 1991–2000 aralığında olduğu için
+  kayıt dönem 5'te yazıldı; `bitis` tarihi (18.11.2002) dönem 6'ya taşar.
+- Erişim: 2026-09-22/23.
+
+---
