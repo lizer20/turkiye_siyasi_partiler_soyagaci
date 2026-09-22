@@ -273,7 +273,58 @@ window.SANDIK = {
       kayitli: 20690914, kullanilan: 18885488, gecerli: 18841990,
       evet: 17215559, hayir: 1626431, karar: "kabul",
       tutumlar: [],
-      not: "Anayasanın geçici 1. maddesi gereği, referandumun kabulüyle tek aday Kenan Evren de cumhurbaşkanı seçilmiş sayıldı; bütün partiler zaten 16 Ekim 1981'de kapatıldığından resmî parti tutumu yoktu." }
+      not: "Anayasanın geçici 1. maddesi gereği, referandumun kabulüyle tek aday Kenan Evren de cumhurbaşkanı seçilmiş sayıldı; bütün partiler zaten 16 Ekim 1981'de kapatıldığından resmî parti tutumu yoktu." },
+
+    // --- dönem 4 (1983 – 1990) ---
+
+    // kaynak: araclar/kaynak-defteri.md#1983-11-genel
+    { id: "1983-11-genel", tur: "genel", tarih: "1983-11-06", tekParti: false,
+      meclis: 399, kayitli: 19767366, kullanilan: 18238362, gecerli: 17351510, baraj: 10,
+      sonuc: [ { parti: "anap", oy: 7833148, sandalye: 211 }, { parti: "hp83", oy: 5285804, sandalye: 117 }, { ad: "Milliyetçi Demokrasi Partisi", oy: 4036970, sandalye: 71 }, { ad: "Bağımsız", oy: 195588, sandalye: 0 } ],
+      not: "12 Eylül sonrası ilk genel seçim; yalnızca askeri yönetimin izin verdiği 3 parti (ANAP, HP, MDP) katılabildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#1984-03-yerel
+    { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25",
+      olcu: "belediye-meclisi",
+      kayitli: 11981906, kullanilan: 10499457, gecerli: 9923877,
+      sonuc: [ { parti: "anap", oy: 4219115 }, { parti: "sodep", oy: 2314738 }, { parti: "dyp", oy: 1163110 }, { parti: "hp83", oy: 778033 }, { ad: "Milliyetçi Demokrasi Partisi", oy: 544385 }, { parti: "rp", oy: 479977 }, { ad: "Diğer", partiSayisi: null, oy: 314045 }, { ad: "Bağımsız", oy: 110474 } ],
+      buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
+      not: "12 Eylül sonrası ilk yerel seçim; Adana ilinin parti kırılımı kaynak YSK tablosunda iç tutarsız olduğundan 'Diğer' satırına dahil edildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#1987-09-referandum
+    { id: "1987-09-referandum", tur: "referandum", tarih: "1987-09-06",
+      konu: "1982 Anayasası'nın geçici 4. maddesiyle getirilen, eski parti liderlerine yönelik 5-10 yıllık siyasi yasakların kaldırılması",
+      kayitli: null, kullanilan: 24436821, gecerli: 23347856,
+      evet: 11711461, hayir: 11636395, karar: "kabul",
+      tutumlar: [ { parti: "dyp", tutum: "evet" }, { parti: "dsp", tutum: "evet" }, { parti: "mcp", tutum: "evet" }, { parti: "rp", tutum: "evet" }, { parti: "shp", tutum: "evet" }, { parti: "anap", tutum: "hayir" } ],
+      not: "Sonuç yalnızca 75.066 oy farkla 'evet' çıktı; yasaklı eski liderlerin (Demirel, Ecevit, Türkeş, Erbakan) partileri 'evet', iktidardaki ANAP 'turuncu-hayır' kampanyası yürüttü." },
+
+    // kaynak: araclar/kaynak-defteri.md#1987-11-genel
+    { id: "1987-11-genel", tur: "genel", tarih: "1987-11-29", tekParti: false,
+      meclis: 450, kayitli: 26376926, kullanilan: 24603541, gecerli: 23971629, baraj: 10,
+      sonuc: [ { parti: "anap", oy: 8704335, sandalye: 292 }, { parti: "shp", oy: 5931000, sandalye: 99 }, { parti: "dyp", oy: 4587062, sandalye: 59 }, { parti: "dsp", oy: 2044576, sandalye: 0 }, { parti: "rp", oy: 1717425, sandalye: 0 }, { parti: "mcp", oy: 701538, sandalye: 0 }, { ad: "Diğer", partiSayisi: 1, oy: 196272, sandalye: 0 }, { ad: "Bağımsız", oy: 89421, sandalye: 0 } ],
+      not: "6 Eylül 1987 referandumunun akşamı Özal'ın açıkladığı erken seçim kararıyla yapıldı; ANAP çoğunluğunu korudu." },
+
+    // kaynak: araclar/kaynak-defteri.md#1988-09-referandum
+    { id: "1988-09-referandum", tur: "referandum", tarih: "1988-09-25",
+      konu: "Yerel seçim tarihinin bir yıl öne alınması (Anayasa'nın 127. maddesinde değişiklik)",
+      kayitli: null, kullanilan: null, gecerli: null,
+      evet: null, hayir: null, karar: "ret",
+      tutumlar: [ { parti: "anap", tutum: "evet" }, { parti: "dyp", tutum: "hayir" }, { parti: "shp", tutum: "hayir" } ],
+      not: "Katılım %88,82, evet %35, hayır %65 — Türkiye'de sonucu 'hayır' çıkan tek referandum; ham seçmen/oy sayıları iki kaynakla doğrulanamadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1989-03-yerel
+    { id: "1989-03-yerel", tur: "yerel", tarih: "1989-03-26",
+      olcu: "belediye-meclisi",
+      kayitli: 18091625, kullanilan: 14067380, gecerli: 13241347,
+      sonuc: [ { parti: "shp", oy: 4368018 }, { parti: "dyp", oy: 3138260 }, { parti: "anap", oy: 3112613 }, { parti: "rp", oy: 1196876 }, { parti: "dsp", oy: 890507 }, { parti: "mcp", oy: 445065 }, { ad: "Diğer", partiSayisi: 1, oy: 69465 }, { ad: "Bağımsız", oy: 20543 } ],
+      buyuksehir: { istanbul: { parti: "shp" }, ankara: { parti: "shp" }, izmir: { parti: "shp" } },
+      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin üç büyükşehiri de kazandığı seçim." },
+
+    // kaynak: araclar/kaynak-defteri.md#1989-10-cb-tbmm
+    { id: "1989-10-cb-tbmm", tur: "cb-tbmm", tarih: "1989-10-31",
+      secilen: "Turgut Özal", turSayisi: 3,
+      not: "1. tur (20 Ekim, 247 oy) ve 2. tur (24 Ekim, 256 oy) 2/3 çoğunluğu (300) sağlayamadı; 3. turda (31 Ekim) salt çoğunlukla (263 oy) seçildi. SHP ve DYP oylamalara katılmadı." }
   ],
 
   hukumetler: [
@@ -505,6 +556,23 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hukumet-44
     { no: 44, basbakan: "Bülend Ulusu", partiler: [],
       baslangic: "1980-09-20", bitis: "1983-12-13", tip: "mgk", bitisNedeni: null,
-      not: "Millî Güvenlik Konseyi döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi." }
+      not: "Millî Güvenlik Konseyi döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi." },
+
+    // --- dönem 4 (1983 – 1990) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-45-47
+    { no: 45, basbakan: "Turgut Özal", partiler: ["anap"],
+      baslangic: "1983-12-13", bitis: "1987-12-21", tip: "tek-parti", bitisNedeni: "erken-secim",
+      not: "6 Eylül 1987 referandumu akşamı Özal'ın erken seçim kararını açıklamasının ardından 29 Kasım 1987'de yapılan seçimle sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-45-47
+    { no: 46, basbakan: "Turgut Özal", partiler: ["anap"],
+      baslangic: "1987-12-21", bitis: "1989-11-09", tip: "tek-parti", bitisNedeni: "cumhurbaskani-secimi",
+      not: "Özal'ın 31 Ekim 1989'da TBMM'de cumhurbaşkanı seçilmesinin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumetler-45-47
+    { no: 47, basbakan: "Yıldırım Akbulut", partiler: ["anap"],
+      baslangic: "1989-11-09", bitis: "1991-06-23", tip: "tek-parti", bitisNedeni: null,
+      not: "Özal'ın cumhurbaşkanı seçilmesinin ardından ANAP grubu içinden kuruldu." }
   ]
 };
