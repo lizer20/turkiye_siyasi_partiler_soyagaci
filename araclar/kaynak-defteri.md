@@ -1356,3 +1356,146 @@ veritabanı/akademik tez özeti gibi ikincil kaynaklar). Bu bölüm ikisinin dü
     (`buyuksehir`) çıkarıldı, bu da görevin "kayıt varlığı/tarihi kaynaklıysa kayıt kalır" ilkesiyle
     tutarlı.
 - Erişim: 2026-09-16 (düzeltme turu 1).
+
+## Görev 9 — Dönem 3 (1972–1980, 12 Eylül kabı dahil)
+
+### 1973-10-genel, 1977-06-genel
+- Tarihler: **[B] TÜİK *Milletvekili Genel Seçimleri 1923–2011*, Ek-1 "Milletvekili Genel
+  Seçimlerinin Yapıldığı Tarihler" (PDF s. 277, basılı s. 259)** — "13.Dönem 14 Ekim 1973",
+  "15.Dönem 5 Haziran 1977" (dönem numaralandırmasında 14. satır boş görünüyor — muhtemelen
+  tablo hizalama sorunu, dönem 2'de de karşılaşılan bir durum; yalnızca tarihler bu kayıtta
+  kullanıldığından sorun teşkil etmedi).
+- Meclis büyüklüğü, seçmen/oy sayıları, parti oy/sandalye dağılımı: **[B] TÜİK, aynı kaynak,
+  Tablo 1 "Milletvekili genel seçimlerinde uygulanan seçim sistemleri..." (PDF s. 22, basılı s. 4,
+  `pdftotext -table`)** ve **Tablo 23 "1950, 1954, 1957, 1961, 1965, 1969, 1973 ve 1977
+  milletvekili genel seçimi sonuçları — TÜRKİYE" (PDF s. 43, basılı s. 25, `pdftotext -table`)**
+  — bu sayfa il tablosu değil, doğrudan ülke geneli toplamı veriyor (topla.js gerekmedi).
+  - 1973: kayıtlı 16.798.164, kullanılan 11.223.843, katılım %66,8, geçerli 10.723.658,
+    meclis 450, baraj yok ("Barajsız d'Hondt Sistemi").
+    Sonuçlar (parti — oy — sandalye): CHP 3.570.583 / 185, AP 3.197.897 / 149,
+    MSP 1.265.771 / 48, Demokratik Parti 1.275.502 / 45, CGP 564.343 / 13,
+    Bağımsız 303.218 / 6, MHP 362.208 / 3, TBP (Türkiye Birlik Partisi) 121.759 / 1,
+    Millet Partisi (1962 kurulan, soyağacında yok) 62.377 / 0.
+    Oy toplamı geçerli oya (10.723.658) **tam eşit**; sandalye toplamı meclise (450) tam eşit.
+  - 1977: kayıtlı 21.207.303, kullanılan 15.358.210, katılım %72,4, geçerli 14.827.172,
+    meclis 450, baraj yok.
+    Sonuçlar: CHP 6.136.171 / 213, AP 5.468.202 / 189, MSP 1.269.918 / 24, MHP 951.544 / 16,
+    Bağımsız 370.035 / 4, CGP 277.713 / 3, Demokratik Parti 274.484 / 1,
+    TBP 58.540 / 0, TİP (1975 yeniden kurulan) 20.565 / 0.
+    Oy toplamı geçerli oya (14.827.172) **tam eşit**; sandalye toplamı meclise (450) tam eşit.
+  - Tablo 1'in "Meclis'e giren siyasi partiler" satırı her iki yıl için de yukarıdaki sıfır
+    sandalyeli partileri (1973'te Millet Partisi, 1977'de TBP ve TİP) dışarıda bırakarak
+    doğrulama sağladı (1973: "AP, CHP, CGP, DEMOKRATİK PARTİ, MHP, MSP, TBP" = 7 parti;
+    1977: "AP, CHP, CGP, DEMOKRATİK PARTİ, MHP, MSP" = 6 parti).
+- İkinci kaynak: **TBMM seçim sorgusu**
+  `https://www5.tbmm.gov.tr/develop/owa/secim_sorgu.secimdeki_partiler?p_secim_yili=1973` ve
+  `…p_secim_yili=1977` — her iki yılda da bütün parti oy sayıları TÜİK ile **birebir** eşleşti
+  (CHP 3.570.583/6.136.171, AP 3.197.897/5.468.202, MSP 1.265.771/1.269.918,
+  CGP 564.343/277.713, MHP 362.208/951.544, DP 1.275.502/274.484, TBP 121.759/58.540,
+  MP 62.377, TİP(1977) 20.565, Bağımsız 303.218/370.035 — tamamı eşleşti).
+- Uyuşmazlık: yok (iki kaynak birebir eşleşti, üstelik parti oylarının toplamı TÜİK'in kendi
+  "geçerli oy" rakamıyla da tam örtüşüyor — dönem 2'de görülen iç tutarsızlık burada yok).
+- `tekParti:false`, `baraj:null` ("Barajsız d'Hondt Sistemi", Tablo 1).
+- Erişim: 2026-09-16.
+
+
+### 1973-04-cb-tbmm, 1980-03-cb-tbmm
+- **1973 (Fahri Korutürk):** 13 Mart – 6 Nisan 1973 arası 15 turda tamamlanan seçim süreci;
+  Korutürk (bağımsız/kontenjan senatörü) 15. turda DP adayı Ferruh Bozbeyli'ye karşı 365 oyla
+  seçildi. Bu turda doğrudan bir TBMM tutanak sayfasına ulaşılamadı (arama denemeleri sonuçsuz);
+  bunun yerine **Anadolu Ajansı, "1923'ten günümüze Cumhurbaşkanı seçimleri"**
+  (aa.com.tr/tr/turkiye/1923-ten-gunumuze-cumhurbaskani-secimleri/134629, resmî haber ajansı,
+  dönem 0'da da kullanıldı) — "Korutürk, 6 Nisan 1973'teki oturumda yapılan 15. tur oylamada
+  gerekli olan oy çoğunluğunu sağlayarak, 365 oyla Cumhurbaşkanı seçildi" — ile **Muhammet YILDIZ
+  ve Ahmet EDİ, "1980 Cumhurbaşkanlığı Seçim Süreci", Uluslararası Türkçe Edebiyat Kültür Eğitim
+  Dergisi, 10(4), 2021, s. 1651-1658** (dergipark.org.tr/en/pub/teke/article/1049650, tam metin
+  PDF üzerinden okundu) — "13 Mart-6 Nisan 1973 tarihleri arasında... Toplam 15 tur olan oylamada
+  Demokrat Parti'nin adayı Ferruh Bozbeyli ile bağımsız aday Fahri Korutürk yarışmışlardır. Fahri
+  Korutürk 15. Tur oylamada seçimi kazanmıştır" — birebir eşleşti. tccb.gov.tr'nin Korutürk
+  biyografisi yalnızca "6. Cumhurbaşkanı" olduğunu doğruluyor, tarih/tur ayrıntısı vermiyor.
+  Uyuşmazlık: yok.
+- **1980 (sonuçsuz süreç):** 22 Mart 1980'de başlaması planlanan ama adaysızlık nedeniyle 25 Mart
+  1980'e ertelenen seçim süreci, 12 Eylül 1980 darbesiyle TBMM'nin kapatılmasına kadar sonuçsuz
+  sürdü; Cumhuriyet Senatosu Başkanı İhsan Sabri Çağlayangil darbeye kadar cumhurbaşkanlığına
+  vekalet etti. Kaynaklar tur/oturum sayısında birbirini tam tutmuyor: AA "5,5 ay süren 118
+  birleşimde... 115 turda sonuç alınamadı" derken Yıldız ve Edi (2021, TBMM Zabıt Ceridesi B.57'yi
+  doğrudan kaynak göstererek) yalnızca "100'den fazla tur" diyor ve makale içinde tek tek anılan
+  turlar (41., 93., 98., 99.) bu belirsiz üst sınırla tutarlı ama AA'nın kesin "115" rakamıyla
+  doğrudan eşleşmiyor. Eşleşme toleransı (%0,5) bu iki ifadeyi karşılaştıramayacak kadar farklı
+  kesinlikte olduğundan **turSayisi null bırakıldı**. Başlangıç tarihi (25 Mart 1980) iki kaynakta
+  da aynı. Uyuşmazlık: tur/birleşim sayısında (bkz. yukarı), sayı yazılmadı.
+- Erişim: 2026-09-16 / 2026-09-22.
+
+### Hükümetler 35-44 (dönem 3 + 12 Eylül kabı)
+
+**Baslangic ölçütü** dönem 0'da belirlenen kuralla aynı: TBMM'nin/ikinci kaynakların verdiği
+"hükümetin kurulduğu tarih". 36-39, 41-42 numaralı hükümetlerin başlangıç/bitiş tarihleri
+**[B] TBMM Başkanlığı Yayınları, Koalisyon Hükümetleri, Koalisyon Protokolleri, Hükümet
+Programları ve Genel Kurul Görüşmeleri** (cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/1d05b3b9-5c7e-45f1-b184-01866e87ca56.pdf,
+TBMM Basımevi, Haziran 2015, İçindekiler bölümünden okundu) ile **doğrudan doğrulandı** — bu
+kitap 1961-2002 arası koalisyon hükümetlerinin Bakanlar Kurulu listesi, koalisyon protokolü ve
+Genel Kurul görüşmelerini bir araya getiriyor:
+  - "3. Talu Hükümeti (15.04.1973-26.01.1974)"
+  - "4. I. Ecevit Hükümeti (26.01.1974-17.11.1974)"
+  - "5. IV. Demirel Hükümeti (31.03.1975-21.06.1977)" [1. Milliyetçi Cephe]
+  - "6. V. Demirel Hükümeti (21.07.1977-05.01.1978)" [2. Milliyetçi Cephe]
+  (Kitabın gövde metni ağırlıklı olarak taranmış görüntülerden oluştuğu için tam metin araması
+  yalnızca İçindekiler'de sonuç verdi; parti bileşimleri aşağıda ayrı kaynaklarla doğrulandı.)
+- **35. Ferit Melen Hükümeti (22.05.1972-15.04.1973):** partilerüstü/teknokrat hükümet (12 Mart
+  sonrası Erim I/II'nin devamı). Başlangıç: WebSearch ile toplanan ikinci kaynaklar — Marmara
+  Üniversitesi (avesis.marmara.edu.tr) tez kaydı "12 Mart sonrası geçiş dönemi Ferit Melen ve
+  Naim Talu hükümetleri (22 Mayıs 1972-26 Ocak 1974)" ve Yüzüncü Yıl Üniversitesi SBE Dergisi
+  makalesi (dergipark.org.tr/tr/pub/yyusbed/article/1674254, Resmî Gazete Sayı 14201/31.5.1972
+  ve Sayı 14257/26.7.1972 atıflarıyla) — ikisi de 22 Mayıs 1972 tarihinde birleşiyor. Bitiş
+  tarihi, Talu Hükümeti'nin TBMM kitabındaki başlangıcıyla (15.04.1973) birebir aynı (34->35->36
+  geçişi kesintisiz). Parti bileşimi ikinci kaynaklarda net değil (AP ve CHP desteği anılıyor ama
+  kabine üyeliği parti bazında iki kaynakla doğrulanamadı) -> partiler:[].
+- **36. Naim Talu Hükümeti (15.04.1973-26.01.1974):** tarihler [B] TBMM kitabı. Parti bileşimi:
+  WebSearch ile toplanan ikincil kaynaklar (Bianet "1973-1977: İki Seçim ve 'Milliyetçi Cephe'ler"
+  ve ilgili akademik özetler) — "CGP, AP ve bağımsız milletvekilleri"nden oluşan geçici hükümet;
+  başbakan yardımcılığı ve devlet bakanlıkları AP ve CGP arasında paylaşıldı -> partiler:["ap","cgp"].
+- **37. I. Ecevit Hükümeti (26.01.1974-17.11.1974):** tarihler [B] TBMM kitabı. CHP-MSP koalisyonu
+  (partiler:["chp23","msp"]) — birden fazla akademik kaynakta (dergipark, "1974 CHP-MSP
+  Koalisyonu" makaleleri) tutarlı. Ecevit, Kıbrıs Barış Harekâtı'nın (20 Temmuz 1974) ardından
+  erken seçim umuduyla 18 Eylül 1974'te istifa etti (bitisNedeni:"istifa"); ancak yerine yeni
+  hükümet kurulamadığından TBMM'nin resmî kaydında hükümetin bitiş tarihi (17.11.1974), istifa
+  tarihi değil Irmak Hükümeti'nin kurulduğu tarihtir (çekilme/vekalet dönemi TBMM'nin kendi
+  kayıt geleneğinde önceki hükümetin süresine dahil ediliyor — dönem 0-2'de de aynı yaklaşım
+  kullanıldı).
+- **38. Sadi Irmak Hükümeti (17.11.1974-31.03.1975):** partilerüstü hükümet; 29 Kasım 1974'te
+  TBMM'de güvenoyu alamadığı halde (bitisNedeni bu yüzden belirsiz, null bırakıldı) yeni bir
+  hükümet kurulamadığından 31 Mart 1975'e (1. Milliyetçi Cephe'nin kuruluşuna) kadar görevde
+  kaldı. Tarihler iki bağımsız WebSearch kaynağıyla (biri Marmara Üniversitesi açık erişim tez
+  kaydı, biri genel arama özeti) ve TBMM kitabındaki IV. Demirel başlangıcıyla (31.03.1975 →
+  aynı gün) çapraz doğrulandı. partiler:[].
+- **39. IV. Demirel Hükümeti — 1. Milliyetçi Cephe (31.03.1975-21.06.1977):** tarihler [B] TBMM
+  kitabı. Parti bileşimi: WebSearch ile toplanan akademik kaynaklar (dergipark, "I. Milliyetçi
+  Cephe Hükümeti: Siyasal Şiddet ve Devlet") — "AP, MSP, CGP ve MHP" dört ortaklı koalisyon; 30
+  bakanın 16'sı AP, 8'i MSP, 4'ü CGP, 2'si MHP'den -> partiler:["ap","msp","cgp","mhp69"].
+- **40. II. Ecevit Hükümeti (21.06.1977-21.07.1977):** CHP azınlık hükümeti (partiler:["chp23"],
+  tip:"azinlik"). Başlangıç [B] TBMM kitabındaki 1. MC bitişiyle (21.06.1977) aynı gün; 3
+  Temmuz 1977'de güven oylamasını kaybetti (217 kabul/229 ret, WebSearch ile toplanan ikincil
+  kaynaklar) ve Ecevit 21 Temmuz 1977'de istifa etti -> bitisNedeni:"guvensizlik".
+- **41. V. Demirel Hükümeti — 2. Milliyetçi Cephe (21.07.1977-05.01.1978):** tarihler [B] TBMM
+  kitabı. AP-MSP-MHP koalisyonu (bu kez CGP yok) -> partiler:["ap","msp","mhp69"]. "Güneş Motel
+  Hadisesi" ile AP'den istifa eden milletvekillerinin desteğiyle verilen bir gensoruyla düştü
+  -> bitisNedeni:"guvensizlik".
+- **42. III. Ecevit Hükümeti (05.01.1978-12.11.1979):** tarihler [B] TBMM kitabı ve ikincil
+  kaynaklarla (WebSearch özeti) birebir eşleşti. CHP azınlık hükümeti (partiler:["chp23"],
+  tip:"azinlik"; CGP ve Demokratik Parti'nin dışarıdan desteği bir kaynakta geçiyor ama ikinci
+  kaynakla doğrulanamadığı için kabine ortağı olarak yazılmadı). 14 Ekim 1979 ara seçim/senato
+  yenileme seçimlerindeki kayıplar üzerine, meclis güvenini korumasına rağmen Ecevit istifa etti
+  -> bitisNedeni:"istifa".
+- **43. VI. Demirel Hükümeti (12.11.1979-12.09.1980):** AP azınlık hükümeti, MSP ve MHP dışarıdan
+  destek verdi (partiler:["ap"], tip:"azinlik"). 12 Eylül 1980 askerî darbesiyle görevden
+  uzaklaştırıldı -> bitisNedeni:"darbe" (dönem 1'deki hükümet 23 ile aynı örüntü).
+- **44. Bülend Ulusu Hükümeti (21.09.1980-13.12.1983, 12 Eylül kabı):** Millî Güvenlik Konseyi
+  döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi. Tarihler iki
+  bağımsız WebSearch taramasıyla (biri dergipark "Bülent Ulusu Hükümeti Döneminde Türk Dış
+  Politikası (1980-1983)" makalesinin özeti, biri CNN Türk/Milliyet haber arşivi taraması) tutarlı
+  şekilde 21 Eylül 1980 – 13 Aralık 1983 olarak doğrulandı. tip:"mbk" (spesifikasyonun tek askerî
+  hükümet kodu; bu dönemde MBK değil MGK yönetimdeydi, ama veri modelinde ayrı bir kod yok — bu
+  fark not alanında belirtildi). partiler:[]. 43->44 arası 9 günlük boşluk (12-21 Eylül 1980)
+  MGK'nın doğrudan yönetimde olduğu geçiş dönemidir; dönem 1'deki 23->24 boşluğuyla aynı örüntü,
+  dogrula.js uyarısı beklenir.
+- Erişim: 2026-09-16 / 2026-09-22.

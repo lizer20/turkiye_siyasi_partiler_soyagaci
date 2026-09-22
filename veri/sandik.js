@@ -225,7 +225,31 @@ window.SANDIK = {
     { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
       meclis: 450, kayitli: 14788552, kullanilan: 9516035, gecerli: null, baraj: null,
       sonuc: [ { parti: "ap", oy: 4229712, sandalye: 256 }, { parti: "chp23", oy: 2487006, sandalye: 143 }, { parti: "gp", oy: 597818, sandalye: 15 }, { ad: "Bağımsız", oy: 511023, sandalye: 13 }, { ad: "Türkiye Birlik Partisi", oy: 254695, sandalye: 8 }, { ad: "Millet Partisi", oy: 292961, sandalye: 6 }, { parti: "ytp", oy: 197929, sandalye: 6 }, { parti: "tip61", oy: 243631, sandalye: 2 }, { parti: "mhp69", oy: 275091, sandalye: 1 } ],
-      not: "Cumhuriyet tarihinin en düşük katılımlı genel seçimi (%64,3). MHP ve Türkiye Birlik Partisi ilk kez meclise girdi; MHP'nin tek sandalyesi Alparslan Türkeş'e ait." }
+      not: "Cumhuriyet tarihinin en düşük katılımlı genel seçimi (%64,3). MHP ve Türkiye Birlik Partisi ilk kez meclise girdi; MHP'nin tek sandalyesi Alparslan Türkeş'e ait." },
+
+    // --- dönem 3 (1972 – 1980) ---
+
+    // kaynak: araclar/kaynak-defteri.md#1973-04-cb-tbmm
+    { id: "1973-04-cb-tbmm", tur: "cb-tbmm", tarih: "1973-04-06",
+      secilen: "Fahri Korutürk", turSayisi: 15,
+      not: "13 Mart – 6 Nisan 1973 arası 15 turda tamamlanan maraton seçimde, bağımsız/kontenjan senatörü Korutürk, DP'nin adayı Ferruh Bozbeyli'ye karşı 365 oyla seçildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#1973-10-genel
+    { id: "1973-10-genel", tur: "genel", tarih: "1973-10-14", tekParti: false,
+      meclis: 450, kayitli: 16798164, kullanilan: 11223843, gecerli: 10723658, baraj: null,
+      sonuc: [ { parti: "chp23", oy: 3570583, sandalye: 185 }, { parti: "ap", oy: 3197897, sandalye: 149 }, { parti: "msp", oy: 1265771, sandalye: 48 }, { parti: "demp70", oy: 1275502, sandalye: 45 }, { parti: "cgp", oy: 564343, sandalye: 13 }, { ad: "Bağımsız", oy: 303218, sandalye: 6 }, { parti: "mhp69", oy: 362208, sandalye: 3 }, { ad: "Türkiye Birlik Partisi", oy: 121759, sandalye: 1 }, { ad: "Millet Partisi", oy: 62377, sandalye: 0 } ],
+      not: "12 Mart sonrası ilk genel seçim; CHP birinci parti oldu ama tek başına iktidar için gereken çoğunluğu sağlayamadı, uzun bir hükümet krizi başladı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1977-06-genel
+    { id: "1977-06-genel", tur: "genel", tarih: "1977-06-05", tekParti: false,
+      meclis: 450, kayitli: 21207303, kullanilan: 15358210, gecerli: 14827172, baraj: null,
+      sonuc: [ { parti: "chp23", oy: 6136171, sandalye: 213 }, { parti: "ap", oy: 5468202, sandalye: 189 }, { parti: "msp", oy: 1269918, sandalye: 24 }, { parti: "mhp69", oy: 951544, sandalye: 16 }, { ad: "Bağımsız", oy: 370035, sandalye: 4 }, { parti: "cgp", oy: 277713, sandalye: 3 }, { parti: "demp70", oy: 274484, sandalye: 1 }, { ad: "Türkiye Birlik Partisi", oy: 58540, sandalye: 0 }, { parti: "tip75", oy: 20565, sandalye: 0 } ],
+      not: "CHP oyunu artırarak yine birinci parti oldu ama yine tek başına iktidar için gereken çoğunluğu sağlayamadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1980-03-cb-tbmm
+    { id: "1980-03-cb-tbmm", tur: "cb-tbmm", tarih: "1980-03-25",
+      secilen: null, turSayisi: null,
+      not: "Adaysızlık nedeniyle 25 Mart 1980'e ertelenen seçim süreci 100'den fazla turda sonuçsuz sürdü; 12 Eylül 1980 darbesiyle TBMM'nin kapatılmasıyla kendiliğinden sona erdi; Cumhuriyet Senatosu Başkanı İhsan Sabri Çağlayangil darbeye kadar cumhurbaşkanlığına vekalet etti." }
   ],
 
   hukumetler: [
@@ -403,6 +427,60 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hukumet-34
     { no: 34, basbakan: "Nihat Erim", partiler: [],
       baslangic: "1971-12-11", bitis: "1972-05-22", tip: "partiluestu", bitisNedeni: null,
-      not: "Aynı başbakanla, daha teknokrat ağırlıklı kadroyla yeniden kuruldu." }
+      not: "Aynı başbakanla, daha teknokrat ağırlıklı kadroyla yeniden kuruldu." },
+
+    // --- dönem 3 (1972 – 1980) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-35
+    { no: 35, basbakan: "Ferit Melen", partiler: [],
+      baslangic: "1972-05-22", bitis: "1973-04-15", tip: "partiluestu", bitisNedeni: null,
+      not: "12 Mart sonrası partilerüstü çizginin devamı; AP ve CHP desteğiyle kuruldu." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-36
+    { no: 36, basbakan: "Naim Talu", partiler: ["ap", "cgp"],
+      baslangic: "1973-04-15", bitis: "1974-01-26", tip: "koalisyon", bitisNedeni: null,
+      not: "1973 seçiminden sonra yeni hükümet kurulana kadar görevde kalan geçici koalisyon." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-37
+    { no: 37, basbakan: "Bülent Ecevit", partiler: ["chp23", "msp"],
+      baslangic: "1974-01-26", bitis: "1974-11-17", tip: "koalisyon", bitisNedeni: "istifa",
+      not: "Kıbrıs Barış Harekâtı'nın ardından erken seçim umuduyla 18 Eylül 1974'te istifa etti; yerine yeni hükümet kurulamayınca 17 Kasım 1974'e kadar çekilme statüsünde görevde kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-38
+    { no: 38, basbakan: "Sadi Irmak", partiler: [],
+      baslangic: "1974-11-17", bitis: "1975-03-31", tip: "partiluestu", bitisNedeni: null,
+      not: "29 Kasım 1974'te TBMM'de güvenoyu alamadığı halde, yeni hükümet kurulamadığından görevde kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-39
+    { no: 39, basbakan: "Süleyman Demirel", partiler: ["ap", "msp", "cgp", "mhp69"],
+      baslangic: "1975-03-31", bitis: "1977-06-21", tip: "koalisyon", bitisNedeni: "secim",
+      not: "1. Milliyetçi Cephe hükümeti; 5 Haziran 1977 seçiminin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-40
+    { no: 40, basbakan: "Bülent Ecevit", partiler: ["chp23"],
+      baslangic: "1977-06-21", bitis: "1977-07-21", tip: "azinlik", bitisNedeni: "guvensizlik",
+      not: "CHP azınlık hükümeti; 3 Temmuz 1977'de güven oylamasını kaybetti, 21 Temmuz'da istifa etti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-41
+    { no: 41, basbakan: "Süleyman Demirel", partiler: ["ap", "msp", "mhp69"],
+      baslangic: "1977-07-21", bitis: "1978-01-05", tip: "koalisyon", bitisNedeni: "guvensizlik",
+      not: "2. Milliyetçi Cephe hükümeti; Güneş Motel Hadisesi'nde AP'den istifa eden milletvekillerinin desteğiyle verilen bir gensoruyla düştü." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-42
+    { no: 42, basbakan: "Bülent Ecevit", partiler: ["chp23"],
+      baslangic: "1978-01-05", bitis: "1979-11-12", tip: "azinlik", bitisNedeni: "istifa",
+      not: "14 Ekim 1979 ara seçimlerindeki kayıpların ardından, meclis güvenini korumasına rağmen istifa etti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-43
+    { no: 43, basbakan: "Süleyman Demirel", partiler: ["ap"],
+      baslangic: "1979-11-12", bitis: "1980-09-12", tip: "azinlik", bitisNedeni: "darbe",
+      not: "AP azınlık hükümeti, MSP ve MHP dışarıdan destek verdi; 12 Eylül 1980 askerî darbesiyle görevden uzaklaştırıldı." },
+
+    // --- 12 Eylül 1980 kabı (bkz. veri/partiler.js DONEMLER[3].kesinti.yonetim) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-44
+    { no: 44, basbakan: "Bülend Ulusu", partiler: [],
+      baslangic: "1980-09-21", bitis: "1983-12-13", tip: "mbk", bitisNedeni: null,
+      not: "Millî Güvenlik Konseyi döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi (spesifikasyonun tek askerî hükümet kodu kullanıldı, dönem 1960'taki MBK'dan farklı olarak burada yönetim organı MGK'ydı)." }
   ]
 };
