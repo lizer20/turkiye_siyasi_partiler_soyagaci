@@ -491,9 +491,9 @@ window.SANDIK = {
       not: "2. Milliyetçi Cephe hükümeti; Güneş Motel Hadisesi'nde AP'den istifa eden milletvekillerinin desteğiyle verilen bir gensoruyla düştü." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-42
-    { no: 42, basbakan: "Bülent Ecevit", partiler: ["chp23"],
+    { no: 42, basbakan: "Bülent Ecevit", partiler: ["chp23", "cgp", "demp70"],
       baslangic: "1978-01-05", bitis: "1979-11-12", tip: "azinlik", bitisNedeni: "istifa",
-      not: "14 Ekim 1979 ara seçimlerindeki kayıpların ardından, meclis güvenini korumasına rağmen istifa etti." },
+      not: "CHP'nin öncülüğünde CGP ve Demokratik Parti'den de bakanların katıldığı azınlık hükümeti; 14 Ekim 1979 ara seçimlerindeki kayıpların ardından, meclis güvenini korumasına rağmen 16 Ekim 1979'da istifa etti." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-43
     { no: 43, basbakan: "Süleyman Demirel", partiler: ["ap"],
