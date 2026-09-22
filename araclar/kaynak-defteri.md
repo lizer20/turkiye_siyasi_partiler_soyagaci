@@ -2093,6 +2093,13 @@ hesaplanıyor (%88,82).
   `istanbul` ve `izmir` kaldı; `not` alanında Ankara'nın da SHP'de kaldığı [B] kaynağa dayanarak
   (ama sayısız) belirtildi.
 - Erişim: 2026-09-22.
+- **Controller düzeltmesi (dönem 4 yeniden incelemesi sonrası):** `buyuksehir` alanı yalnızca kazanan
+  partiyi tutar, oy sayısı tutmaz. Kazanan için [B] YSK + ikinci kaynak: Hürriyet, Sedat Ergin,
+  "Sosyal demokratlar Ankara'yı çok sever" (`hurriyet.com.tr/sosyal-demokratlar-ankarayi-cok-sever-204386`)
+  — 1989'da SHP'nin Ankara Büyükşehir Belediyesi'ni sosyal demokratlara geri kazandırdığını yazıyor.
+  → `ankara: { parti: "shp" }` geri eklendi. Aynı turda `sonuc`a YSK kaynağındaki "IDP" satırı `oy:null`
+  ile geri eklendi (diğer partiler gibi); 1987/1988 referandum `not`larına sayıların kapsamı
+  (gümrük dahil / il toplamı) yazıldı. Erişim: 2026-09-22.
 
 ### Testler ve denetim (düzeltme turu 1)
 

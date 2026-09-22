@@ -297,7 +297,7 @@ window.SANDIK = {
       kayitli: 26095630, kullanilan: 24436821, gecerli: 23347856,
       evet: 11711461, hayir: 11636395, karar: "kabul",
       tutumlar: [ { parti: "dyp", tutum: "evet" }, { parti: "dsp", tutum: "evet" }, { parti: "mcp", tutum: "evet" }, { parti: "rp", tutum: "evet" }, { parti: "shp", tutum: "evet" }, { parti: "anap", tutum: "hayir" } ],
-      not: "Sonuç yalnızca 75.066 oy farkla 'evet' çıktı; yasaklı eski liderlerin (Demirel, Ecevit, Türkeş, Erbakan) partileri 'evet', iktidardaki ANAP 'turuncu-hayır' kampanyası yürüttü." },
+      not: "Sonuç yalnızca 75.066 oy farkla 'evet' çıktı; yasaklı eski liderlerin (Demirel, Ecevit, Türkeş, Erbakan) partileri 'evet', iktidardaki ANAP 'turuncu-hayır' kampanyası yürüttü. Sayılar il ve gümrük kapısı oylarının toplamıdır." },
 
     // kaynak: araclar/kaynak-defteri.md#1987-11-genel
     { id: "1987-11-genel", tur: "genel", tarih: "1987-11-29", tekParti: false,
@@ -311,15 +311,15 @@ window.SANDIK = {
       kayitli: 26739227, kullanilan: 23750873, gecerli: 22956878,
       evet: 8034933, hayir: 14921945, karar: "ret",
       tutumlar: [ { parti: "anap", tutum: "evet" }, { parti: "dyp", tutum: "hayir" }, { parti: "shp", tutum: "hayir" } ],
-      not: "Katılım %88,8 — Türkiye'de sonucu 'hayır' çıkan tek referandum." },
+      not: "Katılım %88,8 — Türkiye'de sonucu 'hayır' çıkan tek referandum. Sayılar yalnızca il toplamlarıdır; gümrük kapısı oyları dahil değildir." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-03-yerel
     { id: "1989-03-yerel", tur: "yerel", tarih: "1989-03-26",
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "shp", oy: null }, { parti: "dyp", oy: null }, { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dsp", oy: null }, { parti: "mcp", oy: null }, { ad: "Bağımsız", oy: null } ],
-      buyuksehir: { istanbul: { parti: "shp" }, izmir: { parti: "shp" } },
-      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul ve İzmir'i kazandığı seçim (Ankara da SHP'nin oldu, ama Ankara büyükşehir sonucu için bağımsız ikinci kaynak bulunamadığından alan yazılmadı). Ülke geneli belediye meclisi oy toplamı için bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
+      sonuc: [ { parti: "shp", oy: null }, { parti: "dyp", oy: null }, { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dsp", oy: null }, { parti: "mcp", oy: null }, { ad: "IDP", oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { istanbul: { parti: "shp" }, ankara: { parti: "shp" }, izmir: { parti: "shp" } },
+      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul, Ankara ve İzmir'i kazandığı seçim. Ülke geneli belediye meclisi oy toplamı için bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-10-cb-tbmm
     { id: "1989-10-cb-tbmm", tur: "cb-tbmm", tarih: "1989-10-31",
