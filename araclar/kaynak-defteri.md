@@ -1428,77 +1428,87 @@ veritabanı/akademik tez özeti gibi ikincil kaynaklar). Bu bölüm ikisinin dü
 
 ### Hükümetler 35-44 (dönem 3 + 12 Eylül kabı)
 
-**Baslangic ölçütü** dönem 0'da belirlenen kuralla aynı: TBMM'nin/ikinci kaynakların verdiği
-"hükümetin kurulduğu tarih". 36-39, 41-42 numaralı hükümetlerin başlangıç/bitiş tarihleri
-**[B] TBMM Başkanlığı Yayınları, Koalisyon Hükümetleri, Koalisyon Protokolleri, Hükümet
-Programları ve Genel Kurul Görüşmeleri** (cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/1d05b3b9-5c7e-45f1-b184-01866e87ca56.pdf,
-TBMM Basımevi, Haziran 2015, İçindekiler bölümünden okundu) ile **doğrudan doğrulandı** — bu
-kitap 1961-2002 arası koalisyon hükümetlerinin Bakanlar Kurulu listesi, koalisyon protokolü ve
-Genel Kurul görüşmelerini bir araya getiriyor:
-  - "3. Talu Hükümeti (15.04.1973-26.01.1974)"
-  - "4. I. Ecevit Hükümeti (26.01.1974-17.11.1974)"
-  - "5. IV. Demirel Hükümeti (31.03.1975-21.06.1977)" [1. Milliyetçi Cephe]
-  - "6. V. Demirel Hükümeti (21.07.1977-05.01.1978)" [2. Milliyetçi Cephe]
-  (Kitabın gövde metni ağırlıklı olarak taranmış görüntülerden oluştuğu için tam metin araması
-  yalnızca İçindekiler'de sonuç verdi; parti bileşimleri aşağıda ayrı kaynaklarla doğrulandı.)
-- **35. Ferit Melen Hükümeti (22.05.1972-15.04.1973):** partilerüstü/teknokrat hükümet (12 Mart
-  sonrası Erim I/II'nin devamı). Başlangıç: WebSearch ile toplanan ikinci kaynaklar — Marmara
-  Üniversitesi (avesis.marmara.edu.tr) tez kaydı "12 Mart sonrası geçiş dönemi Ferit Melen ve
-  Naim Talu hükümetleri (22 Mayıs 1972-26 Ocak 1974)" ve Yüzüncü Yıl Üniversitesi SBE Dergisi
-  makalesi (dergipark.org.tr/tr/pub/yyusbed/article/1674254, Resmî Gazete Sayı 14201/31.5.1972
-  ve Sayı 14257/26.7.1972 atıflarıyla) — ikisi de 22 Mayıs 1972 tarihinde birleşiyor. Bitiş
-  tarihi, Talu Hükümeti'nin TBMM kitabındaki başlangıcıyla (15.04.1973) birebir aynı (34->35->36
-  geçişi kesintisiz). Parti bileşimi ikinci kaynaklarda net değil (AP ve CHP desteği anılıyor ama
-  kabine üyeliği parti bazında iki kaynakla doğrulanamadı) -> partiler:[].
-- **36. Naim Talu Hükümeti (15.04.1973-26.01.1974):** tarihler [B] TBMM kitabı. Parti bileşimi:
-  WebSearch ile toplanan ikincil kaynaklar (Bianet "1973-1977: İki Seçim ve 'Milliyetçi Cephe'ler"
-  ve ilgili akademik özetler) — "CGP, AP ve bağımsız milletvekilleri"nden oluşan geçici hükümet;
-  başbakan yardımcılığı ve devlet bakanlıkları AP ve CGP arasında paylaşıldı -> partiler:["ap","cgp"].
-- **37. I. Ecevit Hükümeti (26.01.1974-17.11.1974):** tarihler [B] TBMM kitabı. CHP-MSP koalisyonu
-  (partiler:["chp23","msp"]) — birden fazla akademik kaynakta (dergipark, "1974 CHP-MSP
-  Koalisyonu" makaleleri) tutarlı. Ecevit, Kıbrıs Barış Harekâtı'nın (20 Temmuz 1974) ardından
-  erken seçim umuduyla 18 Eylül 1974'te istifa etti (bitisNedeni:"istifa"); ancak yerine yeni
-  hükümet kurulamadığından TBMM'nin resmî kaydında hükümetin bitiş tarihi (17.11.1974), istifa
-  tarihi değil Irmak Hükümeti'nin kurulduğu tarihtir (çekilme/vekalet dönemi TBMM'nin kendi
-  kayıt geleneğinde önceki hükümetin süresine dahil ediliyor — dönem 0-2'de de aynı yaklaşım
-  kullanıldı).
-- **38. Sadi Irmak Hükümeti (17.11.1974-31.03.1975):** partilerüstü hükümet; 29 Kasım 1974'te
-  TBMM'de güvenoyu alamadığı halde (bitisNedeni bu yüzden belirsiz, null bırakıldı) yeni bir
-  hükümet kurulamadığından 31 Mart 1975'e (1. Milliyetçi Cephe'nin kuruluşuna) kadar görevde
-  kaldı. Tarihler iki bağımsız WebSearch kaynağıyla (biri Marmara Üniversitesi açık erişim tez
-  kaydı, biri genel arama özeti) ve TBMM kitabındaki IV. Demirel başlangıcıyla (31.03.1975 →
-  aynı gün) çapraz doğrulandı. partiler:[].
-- **39. IV. Demirel Hükümeti — 1. Milliyetçi Cephe (31.03.1975-21.06.1977):** tarihler [B] TBMM
-  kitabı. Parti bileşimi: WebSearch ile toplanan akademik kaynaklar (dergipark, "I. Milliyetçi
-  Cephe Hükümeti: Siyasal Şiddet ve Devlet") — "AP, MSP, CGP ve MHP" dört ortaklı koalisyon; 30
-  bakanın 16'sı AP, 8'i MSP, 4'ü CGP, 2'si MHP'den -> partiler:["ap","msp","cgp","mhp69"].
-- **40. II. Ecevit Hükümeti (21.06.1977-21.07.1977):** CHP azınlık hükümeti (partiler:["chp23"],
-  tip:"azinlik"). Başlangıç [B] TBMM kitabındaki 1. MC bitişiyle (21.06.1977) aynı gün; 3
-  Temmuz 1977'de güven oylamasını kaybetti (217 kabul/229 ret, WebSearch ile toplanan ikincil
-  kaynaklar) ve Ecevit 21 Temmuz 1977'de istifa etti -> bitisNedeni:"guvensizlik".
-- **41. V. Demirel Hükümeti — 2. Milliyetçi Cephe (21.07.1977-05.01.1978):** tarihler [B] TBMM
-  kitabı. AP-MSP-MHP koalisyonu (bu kez CGP yok) -> partiler:["ap","msp","mhp69"]. "Güneş Motel
-  Hadisesi" ile AP'den istifa eden milletvekillerinin desteğiyle verilen bir gensoruyla düştü
-  -> bitisNedeni:"guvensizlik".
-- **42. III. Ecevit Hükümeti (05.01.1978-12.11.1979):** tarihler [B] TBMM kitabı ve ikincil
-  kaynaklarla (WebSearch özeti) birebir eşleşti. CHP azınlık hükümeti (partiler:["chp23"],
-  tip:"azinlik"; CGP ve Demokratik Parti'nin dışarıdan desteği bir kaynakta geçiyor ama ikinci
-  kaynakla doğrulanamadığı için kabine ortağı olarak yazılmadı). 14 Ekim 1979 ara seçim/senato
-  yenileme seçimlerindeki kayıplar üzerine, meclis güvenini korumasına rağmen Ecevit istifa etti
-  -> bitisNedeni:"istifa".
-- **43. VI. Demirel Hükümeti (12.11.1979-12.09.1980):** AP azınlık hükümeti, MSP ve MHP dışarıdan
-  destek verdi (partiler:["ap"], tip:"azinlik"). 12 Eylül 1980 askerî darbesiyle görevden
-  uzaklaştırıldı -> bitisNedeni:"darbe" (dönem 1'deki hükümet 23 ile aynı örüntü).
-- **44. Bülend Ulusu Hükümeti (21.09.1980-13.12.1983, 12 Eylül kabı):** Millî Güvenlik Konseyi
-  döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi. Tarihler iki
-  bağımsız WebSearch taramasıyla (biri dergipark "Bülent Ulusu Hükümeti Döneminde Türk Dış
-  Politikası (1980-1983)" makalesinin özeti, biri CNN Türk/Milliyet haber arşivi taraması) tutarlı
-  şekilde 21 Eylül 1980 – 13 Aralık 1983 olarak doğrulandı. tip:"mbk" (spesifikasyonun tek askerî
-  hükümet kodu; bu dönemde MBK değil MGK yönetimdeydi, ama veri modelinde ayrı bir kod yok — bu
-  fark not alanında belirtildi). partiler:[]. 43->44 arası 9 günlük boşluk (12-21 Eylül 1980)
-  MGK'nın doğrudan yönetimde olduğu geçiş dönemidir; dönem 1'deki 23->24 boşluğuyla aynı örüntü,
-  dogrula.js uyarısı beklenir.
-- Erişim: 2026-09-16 / 2026-09-22.
+**Düzeltme turu (2026-09-22):** İlk turda 35-44 numaralı hükümetlerin bir kısmının tarihi yalnızca
+ikincil/akademik WebSearch kaynaklarıyla doğrulanmıştı (controller incelemesi bu turu istedi:
+"hükümet başlangıcı ölçütü TBMM cildi, ikincil kaynak birincil sayılmaz"). Bu turda TBMM'nin
+kendi "Hükümetler, Programları ve Genel Kurul Görüşmeleri" serisinin **Cilt 5, 6 ve 7** ciltleri
+bulunup indirildi ve `pdftotext -layout` ile tam metne çevrildi; her ciltteki İçindekiler
+bölümünden 35-44 arası **bütün** hükümetlerin resmî başlangıç/bitiş tarihi **birebir** okundu.
+Bu, önceki turdaki ikincil kaynaklı tarihleri tamamen doğruladı — **tek istisna 44. hükümetin
+başlangıç tarihiydi, düzeltildi** (aşağıya bakın).
+
+- **[B] Cilt 5 (26 Mart 1971 – 17 Kasım 1974)**,
+  `https://acikerisim.tbmm.gov.tr/server/api/core/bitstreams/232d9a87-53f4-449c-8e38-82828ab35cf8/content`
+  (bu bitstream adresi Görev 9 Dönem 2'de zaten bulunup kullanılmıştı, kaynak defterinde
+  "Ortak blok — Hükümetler 26–34" başlığında kayıtlı; bu turda tekrar indirildi). İçindekiler
+  (PDF içi satır 148, 157, 168) ve ilgili "Hükümetin Programı" bölüm başlıkları (ör. satır 18345
+  "Melen Hükümeti"):
+  - "35 Melen Hükümeti (22.05.1972-15.04.1973)"
+  - "36 Talu Hükümeti (15.04.1973-26.01.1974)"
+  - "37 I. Ecevit Hükümeti (26.01.1974-17.11.1974)"
+- **[B] Cilt 6 (17 Kasım 1974 – 12 Kasım 1979)**,
+  `https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/2e8d2a98-bb2e-4584-80cf-01866e8f1b8f.pdf`.
+  İçindekiler (satır 129, 139, 150, 159, 170):
+  - "38 Irmak Hükümeti (17.11.1974-31.03.1975)"
+  - "39 IV. Demirel Hükümeti (31.03.1975-21.06.1977)"
+  - "40 II. Ecevit Hükümeti (21.06.1977-21.07.1977)"
+  - "41 V. Demirel Hükümeti (21.07.1977-05.01.1978)"
+  - "42 III. Ecevit Hükümeti (05.01.1978-12.11.1979)"
+- **[B] Cilt 7 (12 Kasım 1979 – 9 Kasım 1989)**,
+  `https://cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/a0f3523f-1bb9-4a2e-bb3e-01866e8f1b9d.pdf`.
+  İçindekiler (satır 129, 139):
+  - "43 VI. Demirel Hükümeti (12.11.1979-12.09.1980)"
+  - "44 Ulusu Hükümeti (20.09.1980-13.12.1983)"
+- **Düzeltme — 44. hükümetin başlangıcı:** ilk turda ikincil kaynaklarla (dergipark özeti,
+  CNN Türk/Milliyet haber arşivi) "21 Eylül 1980" olarak girilmişti. Cilt 7'nin İçindekiler'i
+  açıkça **"20.09.1980"** veriyor; TBMM'nin kendi cildi birincil kaynak olduğundan
+  `veri/sandik.js`'teki `baslangic` "1980-09-20" olarak düzeltildi. 43→44 arası boşluk artık
+  8 gün (12-20 Eylül 1980, MGK'nın doğrudan yönetimde olduğu geçiş dönemi).
+  (İkincil kaynaklardaki "21 Eylül" muhtemelen ilk Bakanlar Kurulu toplantısı ya da yemin
+  törenine ait bir tarihle karışmış olabilir — bu turda ayrıca araştırılmadı, yalnızca TBMM
+  cildindeki resmî tarih esas alındı.)
+- **Parti bileşimleri** (cilt 5/6/7'nin gövde metni ağırlıklı olarak "Koalisyon Protokolü"/
+  "Bakanlar Kurulu" bölüm başlıklarıyla verilse de, bu bölümlerin tam listesi bu turda satır
+  satır okunmadı — zaman kısıtı; aşağıdaki ikincil kaynaklarla belirlendi, yalnızca **tarihler**
+  birincil kaynakla doğrulandı):
+  - **35. Melen:** partilerüstü/teknokrat (12 Mart sonrası Erim I/II'nin devamı) — WebSearch
+    ile toplanan ikincil kaynaklar (avesis.marmara.edu.tr tez kaydı, Yüzüncü Yıl Üniversitesi
+    SBE Dergisi makalesi). Parti bileşimi net değil (AP/CHP desteği anılıyor, kabine üyeliği
+    parti bazında doğrulanamadı) -> `partiler:[]`.
+  - **36. Talu:** "CGP, AP ve bağımsız milletvekilleri"nden oluşan geçici hükümet (Bianet ve
+    ilgili akademik özetler) -> `partiler:["ap","cgp"]`.
+  - **37. I. Ecevit:** CHP-MSP koalisyonu (birden fazla akademik kaynak, "1974 CHP-MSP
+    Koalisyonu" makaleleri) -> `partiler:["chp23","msp"]`. Kıbrıs Barış Harekâtı'nın ardından
+    18 Eylül 1974'te istifa etti -> `bitisNedeni:"istifa"`; TBMM cildinin resmî bitiş tarihi
+    (17.11.1974) istifa tarihi değil, Irmak Hükümeti'nin kurulduğu tarih (çekilme/vekalet
+    dönemi TBMM'nin kayıt geleneğinde önceki hükümetin süresine dahil ediliyor).
+  - **38. Irmak:** partilerüstü; 29 Kasım 1974'te güvenoyu alamadı (`bitisNedeni` bu yüzden
+    belirsiz, `null`) ama yeni hükümet kurulamadığından 31 Mart 1975'e kadar görevde kaldı ->
+    `partiler:[]`.
+  - **39. IV. Demirel (1. MC):** AP-MSP-CGP-MHP dört ortaklı koalisyon (dergipark, "I.
+    Milliyetçi Cephe Hükümeti: Siyasal Şiddet ve Devlet" — 30 bakanın 16'sı AP, 8'i MSP, 4'ü
+    CGP, 2'si MHP) -> `partiler:["ap","msp","cgp","mhp69"]`.
+  - **40. II. Ecevit:** CHP azınlık hükümeti -> `partiler:["chp23"]`, `tip:"azinlik"`. 3 Temmuz
+    1977'de güven oylamasını kaybetti (217 kabul/229 ret, WebSearch ile toplanan ikincil
+    kaynaklar) -> `bitisNedeni:"guvensizlik"`.
+  - **41. V. Demirel (2. MC):** AP-MSP-MHP koalisyonu (bu kez CGP yok) ->
+    `partiler:["ap","msp","mhp69"]`. "Güneş Motel Hadisesi" ile AP'den istifa eden
+    milletvekillerinin desteğiyle verilen bir gensoruyla düştü -> `bitisNedeni:"guvensizlik"`.
+  - **42. III. Ecevit:** CHP azınlık hükümeti -> `partiler:["chp23"]`, `tip:"azinlik"` (CGP ve
+    Demokratik Parti'nin dışarıdan desteği bir kaynakta geçiyor ama ikinci kaynakla
+    doğrulanamadığı için kabine ortağı olarak yazılmadı). 14 Ekim 1979 ara seçim/senato
+    yenileme seçimlerindeki kayıplar üzerine, meclis güvenini korumasına rağmen istifa etti ->
+    `bitisNedeni:"istifa"`.
+  - **43. VI. Demirel:** AP azınlık hükümeti, MSP ve MHP dışarıdan destek verdi ->
+    `partiler:["ap"]`, `tip:"azinlik"`. 12 Eylül 1980 askerî darbesiyle görevden uzaklaştırıldı
+    -> `bitisNedeni:"darbe"` (dönem 1'deki hükümet 23 ile aynı örüntü).
+  - **44. Ulusu (12 Eylül kabı):** Millî Güvenlik Konseyi döneminin hükümeti; Kenan Evren
+    başkanlığındaki MGK tarafından görevlendirildi -> `partiler:[]`, `tip:"mbk"`
+    (spesifikasyonun tek askerî hükümet kodu; bu dönemde yönetim organı MBK değil MGK'ydı, veri
+    modelinde ayrı bir kod yok — bu fark `not` alanında belirtildi, arayüz etiketi de
+    kozmetik olarak yanlış gösteriyor, bkz. rapor "Endişeler").
+- Erişim: 2026-09-16 / 2026-09-22 (ilk tur); 2026-09-22 (düzeltme turu, Cilt 5/6/7).
+
 
 ### 1973-12-yerel, 1977-12-yerel
 

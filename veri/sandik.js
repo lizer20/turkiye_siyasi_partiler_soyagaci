@@ -504,7 +504,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-44
     { no: 44, basbakan: "Bülend Ulusu", partiler: [],
-      baslangic: "1980-09-21", bitis: "1983-12-13", tip: "mbk", bitisNedeni: null,
+      baslangic: "1980-09-20", bitis: "1983-12-13", tip: "mbk", bitisNedeni: null,
       not: "Millî Güvenlik Konseyi döneminin hükümeti; Kenan Evren başkanlığındaki MGK tarafından görevlendirildi (spesifikasyonun tek askerî hükümet kodu kullanıldı, dönem 1960'taki MBK'dan farklı olarak burada yönetim organı MGK'ydı)." }
   ]
 };
