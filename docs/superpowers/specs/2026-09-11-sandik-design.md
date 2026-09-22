@@ -280,7 +280,9 @@ değerler §8'deki kuralla doldurulur.)
 kuralla doldurulur.)
 
 - `tip`: `"tek-parti"` · `"koalisyon"` · `"azinlik"` · `"partiluestu"` · `"mbk"` (27 Mayıs, Millî Birlik Komitesi) · `"mgk"` (12 Eylül, Millî Güvenlik Konseyi) ·
-  `"cumhurbaskanligi"`.
+  `"cumhurbaskanligi"`. Ölçüt kabinenin parti bileşimidir: kabinede birden fazla parti
+  varsa `koalisyon`, tek parti varsa meclis çoğunluğuna göre `tek-parti` ya da `azinlik`
+  (kullanıcı kararı, 2026-09-22).
 - `bitisNedeni`: `"secim"` (olağan takvim) · `"erken-secim"` · `"guvensizlik"` ·
   `"istifa"` · `"darbe"` · `"muhtira"` · `"cumhurbaskani-secimi"` · `"olum"` ·
   `"sistem-degisikligi"` · `"diger"` (+ `not`). Doğrulanamayan neden `null` olur ve
