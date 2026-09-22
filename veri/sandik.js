@@ -339,6 +339,14 @@ window.SANDIK = {
       secilen: "Süleyman Demirel", turSayisi: 3,
       not: "İlk iki turda Anayasa'nın 102. maddesindeki 2/3 çoğunluk sağlanamadı; 431 üyenin katıldığı üçüncü turda Demirel 244 oyla 9. Cumhurbaşkanı seçildi." },
 
+    // kaynak: araclar/kaynak-defteri.md#1994-03-yerel
+    { id: "1994-03-yerel", tur: "yerel", tarih: "1994-03-27",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dyp", oy: null }, { parti: "shp", oy: null }, { parti: "dsp", oy: null }, { parti: "mhp93", oy: null }, { parti: "chp92", oy: null }, { parti: "bbp", oy: null }, { parti: "dp92", oy: null }, { ad: "Yeniden Doğuş Partisi", oy: null }, { ad: "Millet Partisi", oy: null }, { parti: "ip92", oy: null }, { ad: "SBP", oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { istanbul: { parti: "rp" }, ankara: { parti: "rp" }, izmir: { parti: "dyp" } },
+      not: "Refah Partisi'nin İstanbul ve Ankara büyükşehir belediyelerini kazandığı seçim; ülke geneli belediye meclisi toplamı YSK'nın il tablosundan hesaplanabildi ama aynı ölçüyü veren bağımsız ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı." },
+
     // kaynak: araclar/kaynak-defteri.md#1995-12-genel
     { id: "1995-12-genel", tur: "genel", tarih: "1995-12-24", tekParti: false,
       meclis: 550, kayitli: 34155981, kullanilan: 29101469, gecerli: 28126993, baraj: 10,
@@ -350,6 +358,14 @@ window.SANDIK = {
       meclis: 550, kayitli: 37495217, kullanilan: 32656070, gecerli: 31184496, baraj: 10,
       sonuc: [ { parti: "dsp", oy: 6919670, sandalye: 136 }, { parti: "mhp93", oy: 5606583, sandalye: 129 }, { parti: "fp", oy: 4805381, sandalye: 111 }, { parti: "anap", oy: 4122929, sandalye: 86 }, { parti: "dyp", oy: 3745417, sandalye: 85 }, { parti: "chp92", oy: 2716094, sandalye: 0 }, { parti: "hadep", oy: 1482196, sandalye: 0 }, { parti: "bbp", oy: 456353, sandalye: 0 }, { parti: "odp", oy: 248553, sandalye: 0 }, { parti: "dtp97", oy: 179871, sandalye: 0 }, { parti: "ldp", oy: 127174, sandalye: 0 }, { parti: "dp92", oy: 92093, sandalye: 0 }, { parti: "ip92", oy: 57607, sandalye: 0 }, { parti: "emep", oy: 51756, sandalye: 0 }, { ad: "Diğer", partiSayisi: 6, oy: 302554, sandalye: 0 }, { ad: "Bağımsız", oy: 270265, sandalye: 3 } ],
       not: "Genel seçim ile mahalli idareler seçimi aynı gün yapıldı; CHP %10'luk ülke barajını aşamayarak meclis dışında kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1999-04-yerel
+    { id: "1999-04-yerel", tur: "yerel", tarih: "1999-04-18",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "fp", oy: null }, { parti: "anap", oy: null }, { parti: "dsp", oy: null }, { parti: "mhp93", oy: null }, { parti: "chp92", oy: null }, { parti: "dyp", oy: null }, { parti: "hadep", oy: null }, { parti: "bbp", oy: null }, { parti: "dtp97", oy: null }, { parti: "odp", oy: null }, { ad: "Millet Partisi", oy: null }, { ad: "Barış Partisi", oy: null }, { parti: "dp92", oy: null }, { parti: "emep", oy: null }, { parti: "ldp", oy: null }, { parti: "ip92", oy: null }, { ad: "Yeniden Doğuş Partisi", oy: null }, { ad: "Demokrasi ve Barış Partisi", oy: null }, { ad: "Değişen Türkiye Partisi", oy: null }, { ad: "Sosyalist İktidar Partisi", oy: null }, { parti: "dehap", oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { istanbul: { parti: "fp" }, ankara: { parti: "fp" }, izmir: { parti: "dsp" } },
+      not: "Genel seçimle aynı gün yapıldı; YSK'nın belediye meclisi tablosunda dört il (Hatay, Hakkâri, Trabzon, Tunceli) hiç yer almadığı için ülke geneli sayılar hesaplanamadı ve null bırakıldı." },
 
     // kaynak: araclar/kaynak-defteri.md#2000-05-cb-tbmm
     { id: "2000-05-cb-tbmm", tur: "cb-tbmm", tarih: "2000-05-05",

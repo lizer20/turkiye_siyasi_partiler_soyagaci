@@ -2380,3 +2380,135 @@ görüşmeleri / Cumhurbaşkanlığı tezkereleri.
 - Erişim: 2026-09-22/23.
 
 ---
+
+### 1994-03-yerel
+
+- **Envanter [B]:** YSK Mahalli İdareler Genel Seçimleri Arşivi (`ysk.gov.tr/tr/mahalli-idareler-genel-secimleri-arsivi/2650`,
+  tarayıcıyla açılıp DOM'dan okundu — sayfa JS kabuğu olduğu için `curl` yalnızca boş kabuk
+  döndürüyor): "**27 Mart 1994** Mahalli İdareler Genel Seçimleri". Seçim sayfası
+  (`/tr/27-mart-1994-mahalli-idareler-genel-secimi/2804`) dört PDF veriyor: İl Genel Meclisi
+  Üyeliği, Büyükşehir Belediye Başkanlığı, Belediye Başkanlığı, Belediye Meclis Üyeliği.
+- **[B] YSK, "27 MART 1994 BELEDİYE MECLİS ÜYELİĞİ SEÇİMİ SONUÇLARI"**
+  (`ysk.gov.tr/doc/dosyalar/docs/Mahalli/1994/KesinSecimSonuclari/1994-Belediye-Meclis-Uyeligi-Secimleri-Sonucu.pdf`,
+  `pdftotext -table`, 3 sayfa, **76 ilin tamamı** — 1994'te Türkiye'de 76 il vardı). Türkiye
+  toplamı satırı **yok**; `araclar/topla.js` ile hesaplandı ("hesaplandı"):
+  kayıtlı 23.305.825, kullanılan 21.099.154, geçerli 19.730.006;
+  ANAP 4.512.609, RP 3.783.195, DYP 3.718.962, SHP 3.302.166, DSP 1.642.727, MHP 1.501.038,
+  CHP 847.672, BBP 211.021, DP 65.062, YDP 34.664, MİLLET PARTİSİ 34.217, İP 33.056,
+  SBP 21.866, Bağımsız 21.037. (Parti oyları toplamı 19.729.292 — kaynağın kendi "geçerli oy
+  toplamı" sütun toplamından **714 oy** eksik; fark tek bir ilden, ANTALYA'dan geliyor: o ilin
+  satırında bağımsızlar hücresi boş ve parti toplamı ilin geçerli oyundan 714 eksik. Oran
+  %0,004 — tolerans içinde, kaynağın kendi iç tutarsızlığı.)
+- **Ulusal toplam veriye YAZILMADI (null).** Spesifikasyon §8.1: il tablosundan hesaplanan ulusal
+  toplam **aynı ölçüyü veren bağımsız bir ikinci ulusal kaynakla** eşleşmek zorunda. Aranan ve
+  bulunamayan kaynaklar: TÜİK'in `1994Mahalli-Tuik.pdf` benzeri yayını (1989 için var, 1994/1999
+  için yok — YSK sunucusu SPA kabuğu döndürüyor); TÜİK 2009 mahalli idareler CD'si
+  (`tuik.gov.tr/indir/secim_2009/aklama.pdf`) — açıklamasında "tablolarında yer alan Türkiye
+  toplam sonuçları… YSK tarafından Resmi Gazete'de ilan edilen sonuçlardan" alındığı yazıyor ama
+  **çok yıllı karşılaştırma tablosu yalnızca İl Genel Meclisi için** (Tablo 1.1: 1984, 1989, 1994,
+  1999, 2004, 2009); Belediye Meclisi tablosu (4.1) yalnızca 2009'u kapsıyor. Resmî Gazete arşivi
+  (`resmigazete.gov.tr/arsiv/…`) `curl` ile yanıt vermedi. Dönem 4'ün 1984/1989 kayıtlarında
+  uygulanan (ve controller incelemesiyle onaylanan) emsale uyularak `kayitli`/`kullanilan`/
+  `gecerli` ve bütün `sonuc[].oy` alanları **null** yapıldı; hangi partilerin seçime katıldığı
+  (YSK tablosunun sütun başlıkları) korundu, satır sırası yukarıdaki hesaplanmış toplamlara göre.
+- **Kısaltmalar:** MİLLET PARTİSİ = Millet Partisi, YDP = Yeniden Doğuş Partisi (ikisi de [B]
+  TÜİK "Simge ve Kısaltmalar", PDF s. 7); **SBP** TÜİK'in kısaltma listesinde yok, açılımı için
+  [B] kaynak bulunamadı → veriye `ad:"SBP"` olarak, kaynaktaki haliyle yazıldı.
+  Soyağacında olmayanlar: Millet Partisi, Yeniden Doğuş Partisi, SBP.
+- Erişim: 2026-09-23.
+
+### 1994-03-yerel — büyükşehir (İstanbul, Ankara, İzmir)
+
+- **[B] YSK, "27 MART 1994 BÜYÜKŞEHİR BELEDİYE BAŞKANLIĞI SEÇİMİ SONUÇLARI"**
+  (`…/1994/KesinSecimSonuclari/1994-Buyuksehir-Belediye-Baskanligi-Secimleri-Sonucu.pdf`,
+  `pdftotext -table`, 16 büyükşehir). Sütun başlıkları alfabetik: ANAP, BBP, CHP, DP, DSP, DYP,
+  İP, MİLLET PARTİSİ, MHP, RP, SBP, SHP, YDP, BAĞIMSIZLAR. Üç şehrin satır toplamı, kaynağın
+  kendi "GEÇERLİ OY TOPLAMI" sütunuyla **tam eşit** çıktı (sütun eşlemesinin doğruluk denetimi):
+  - **İSTANBUL** (geçerli 3.865.126): **RP 973.704**, ANAP 855.897, SHP 784.693, DSP 597.461,
+    DYP 478.612, MHP 72.121, CHP 54.028, … → kazanan **RP**.
+  - **ANKARA** (geçerli 1.439.838): **RP 393.623**, SHP 387.152, ANAP 268.519, DYP 119.824,
+    DSP 111.740, MHP 104.304, … → kazanan **RP**.
+  - **İZMİR** (geçerli 1.061.184): **DYP 294.647**, SHP 281.721, ANAP 208.607, DSP 159.394,
+    RP 74.120, CHP 26.909, … → kazanan **DYP**.
+- **İkinci kaynaklar (haber arşivi):**
+  - İstanbul + Ankara: Medyascope, "Gomaşinen (25): 27 Mart 1994 yerel seçimleri: Refah ve
+    Erdoğan'ın zaferi" — "6 Büyükşehir kazanmış: **İstanbul, Ankara**, Diyarbakır, Erzurum,
+    Konya, Kayseri" (Refah Partisi). TRT Haber, "Geçmişten günümüze İstanbul seçimleri" —
+    "Refah Partisi'nin adayı Recep Tayyip Erdoğan… seçimi kazanmayı başardı."
+  - İzmir: Karar, "Eski İzmir Büyükşehir Belediye Başkanı Burhan Özfatura vefat etti" —
+    "**1994'te Doğru Yol Partisi'nden (DYP)** yeniden aday oldu ve İzmir Büyükşehir Belediye
+    Başkanlığı görevine ikinci kez seçildi." YSK'nın DYP sütunundaki birincilikle eşleşti.
+  - Uyuşmazlık: yok. (`buyuksehir` yalnızca kazanan partiyi tutar; oy sayısı yazılmaz.)
+- Erişim: 2026-09-23.
+
+### 1999-04-yerel
+
+- **Envanter [B]:** YSK Mahalli İdareler arşivi: "**18 Nisan 1999** Mahalli İdareler Genel
+  Seçimleri" (`/tr/18-nisan-1999-mahalli-idareler-genel-secimi/2805`). Genel seçimle aynı gün
+  yapıldığı ayrıca [B] TBMM Cilt 10'da (IV. Ecevit Hükümeti program metni): "18 Nisanda yapılacak
+  milletvekili genel seçimlerine ve yerel yönetim seçimlerine…".
+- **[B] YSK, "18 NİSAN 1999 BELEDİYE MECLİS ÜYELİĞİ SEÇİMİ SONUCU"**
+  (`ysk.gov.tr/doc/dosyalar/docs/Mahalli/1999/KesinSecimsonuclar/Belediye-Meclis-Uyeligi-Secimleri-Sonucu.pdf`)
+  — **kaynak eksik:** PDF yalnızca **76 il** içeriyor; 1999'da Türkiye'de 80 il vardı ve
+  **HATAY, HAKKÂRİ, TRABZON, TUNCELİ** satırları belgede hiç yok (`-table`, `-layout` ve `-raw`
+  modlarının üçünde de yok; aynı seçimin İl Genel Meclisi PDF'inde 79 il var). Brief'in kuralı
+  gereği ("bir ilin kırılımı okunamıyorsa onu 'Diğer'e gömme — etkilenen değerler null olur")
+  ülke geneli sayıların tamamı **null** yapıldı.
+- Yine de kayıt altına alınması için, **76 ilden** hesaplanan (eksik, veriye yazılmamış) toplamlar:
+  kayıtlı 27.833.812, kullanılan 23.735.076, geçerli 22.435.196; FP 4.109.576, ANAP 3.774.759,
+  DSP 3.696.999, MHP 3.540.964, CHP 2.942.754, DYP 2.802.292, HADEP 771.173, BBP 297.388,
+  DTP 149.417, ÖDP 148.176, MİLLET PARTİSİ 35.631, BP 34.888, DP 32.783, EMEP 20.500,
+  LDP 20.230, İP 20.024, Bağımsız 16.369, YDP 13.270, DBP 3.267, DEPAR 3.221, SİP 1.046,
+  DEHAP 115. (Bu eksik toplamlar yalnızca `sonuc` satırlarının **sıralaması** için kullanıldı;
+  hiçbiri veriye yazılmadı. 76 ilin 4'ünde kaynağın kendi geçerli-oy sütunu parti toplamından
+  27–227 oy farklı — kaynağın iç tutarsızlığı, oran %0,001–%0,1.)
+- **Kısaltmalar** [B] TÜİK "Simge ve Kısaltmalar" (PDF s. 7): BP = Barış Partisi, DBP = Demokrasi
+  ve Barış Partisi, DEPAR = Değişen Türkiye Partisi, SİP = Sosyalist İktidar Partisi,
+  YDP = Yeniden Doğuş Partisi, MİLLET PARTİSİ = Millet Partisi. Soyağacında olmayanlar: Millet
+  Partisi, Barış Partisi, Demokrasi ve Barış Partisi, Değişen Türkiye Partisi, Sosyalist İktidar
+  Partisi, Yeniden Doğuş Partisi.
+- Erişim: 2026-09-23.
+
+### 1999-04-yerel — büyükşehir (İstanbul, Ankara, İzmir)
+
+- **[B] YSK, "18 NİSAN 1999 BÜYÜKŞEHİR BELEDİYE BAŞKANLIĞI SEÇİMİ SONUÇLARI"**
+  (`…/1999/KesinSecimsonuclar/Buyuksehir-Belediye-Baskanligi-Secimleri-Sonucu.pdf`,
+  `pdftotext -table`). Üç şehrin satır toplamı kaynağın kendi geçerli oy sütunuyla **tam eşit**:
+  - **İSTANBUL** (geçerli 4.368.656): **FP 1.202.050**, ANAP 977.920, DYP 882.923, CHP 607.895,
+    MHP 320.734, DSP 165.114, … → kazanan **FP**.
+  - **ANKARA** (geçerli 1.602.528): **FP 541.515**, CHP 512.083, MHP 189.400, DSP 169.490,
+    ANAP 106.540, DYP 42.128, … → kazanan **FP**.
+  - **İZMİR** (geçerli 1.206.091): **DSP 367.553**, ANAP 230.673, CHP 217.337, DYP 197.169,
+    MHP 82.140, HADEP 45.559, FP 41.200, … → kazanan **DSP**.
+- **İkinci kaynaklar:**
+  - Ankara: Sputnik Türkiye / anlatilaninotesi.com.tr, "Ankara'da belediye başkanlığı yarışında
+    önceki 5 seçimin karnesi" — 1999 için kayıtlı 1.924.115, oy kullanan 1.690.527, geçerli
+    1.602.528, **Fazilet Partisi'nden Melih Gökçek 541.515**, CHP (Murat Karayalçın) 512.083,
+    MHP 189.400, DSP 169.490. YSK ile **yedi sayının tamamında birebir** eşleşti — bu aynı zamanda
+    `-table` sütun eşlemesinin bağımsız doğrulaması oldu. Uyuşmazlık: yok.
+  - İstanbul: TRT Haber, "Geçmişten günümüze İstanbul seçimleri" — "**Fazilet Partisi'nin adayı
+    Ali Müfit Gürtuna** yüzde 27,52 oy ile büyükşehir belediyesinin dördüncü başkanı oldu."
+    (YSK: 1.202.050/4.368.656 = %27,52 — birebir.)
+  - İzmir: Hürriyet, "Ahmet Piriştina vefat etti" — "1999 seçimlerinde **DSP'den İzmir Büyükşehir
+    Belediye Başkanı seçilmiş**".
+- Erişim: 2026-09-23.
+
+### Ara seçimler (1991–2000) — envanter sonucu: dönem 5'te ara seçim YOK
+
+- **[B] TBMM Cilt 8** (18. Dönem genel kurul görüşmeleri, basılı s. ~6500 ve 6690 civarı) — bir
+  milletvekilinin konuşması: "…1991'e çok yaklaştık; kasıma kadar milletvekili ara seçimi
+  yapılmazsa… Bugüne kadar, milletvekili ara seçimi için Meclis kararı [alınmadı]… milletvekili
+  ara seçimi çoktan yapılmış olmalıydı; ama, yapılmamasının kusuru…"; başka bir birleşimde:
+  "Gelin ara seçim yapın… Anayasaya göre, yapmak zorundasınız." Aynı cildin ilerleyen
+  bölümlerinde: "ara seçim bir anayasal zorunluluk olduğu halde… anayasa ihlali yaparak ara
+  seçimlere gitmeyen…". → 18. Dönem'de ara seçim yapılmadığı [B] kaynaktan.
+- **Cilt 9 ve Cilt 10'da** (19., 20. ve 21. dönemler) yapılmış bir milletvekili ara seçimine dair
+  tek bir kayıt yok (yalnızca 1979 Senato ara seçimlerine geçmişe dönük bir atıf var).
+- **İkinci kaynak (derleme):** TESAV'ın "Milletvekili Ara Seçim Sonuçları" başlıklı derlemesi
+  yıl listesini **1947, 1948, 1949, 1951, 1966, 1968, 1975, 1979, 1986, 2003** olarak veriyor —
+  1986 ile 2003 arasında ara seçim yok.
+- **Sonuç:** dönem 5'e (1991–2000) hiçbir `ara` kaydı eklenmedi; Görev 12'ye devredilecek
+  doğrulanamamış ara seçim de yok.
+- Erişim: 2026-09-23.
+
+---
