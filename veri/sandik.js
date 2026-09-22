@@ -332,7 +332,7 @@ window.SANDIK = {
     { id: "1991-10-genel", tur: "genel", tarih: "1991-10-20", tekParti: false,
       meclis: 450, kayitli: 29979123, kullanilan: 25157089, gecerli: 24416666, baraj: 10,
       sonuc: [ { parti: "dyp", oy: 6600726, sandalye: 178 }, { parti: "anap", oy: 5862623, sandalye: 115 }, { parti: "shp", oy: 5066571, sandalye: 88 }, { parti: "rp", oy: 4121355, sandalye: 62 }, { parti: "dsp", oy: 2624301, sandalye: 7 }, { ad: "Diğer", partiSayisi: 1, oy: 108369, sandalye: 0 }, { ad: "Bağımsız", oy: 32721, sandalye: 0 } ],
-      not: "Hiçbir parti tek başına hükümet kuracak çoğunluğu sağlayamadı; seçimden sonra DYP–SHP koalisyonu kuruldu. Sayılar il ve gümrük kapısı oylarının toplamıdır." },
+      not: "RP listesinde MÇP ve IDP adaylarının da yer aldığı bu seçimde hiçbir parti tek başına hükümet kuracak çoğunluğu sağlayamadı; sayılar il ve gümrük kapısı oylarının toplamıdır." },
 
     // kaynak: araclar/kaynak-defteri.md#1993-05-cb-tbmm
     { id: "1993-05-cb-tbmm", tur: "cb-tbmm", tarih: "1993-05-16",
@@ -625,8 +625,8 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 48, basbakan: "Mesut Yılmaz", partiler: ["anap"],
-      baslangic: "1991-06-23", bitis: "1991-11-20", tip: "tek-parti", bitisNedeni: "secim",
-      not: "Akbulut'un istifası üzerine ANAP Genel Başkanı sıfatıyla görevlendirilen Yılmaz'ın kurduğu hükümet, 20 Ekim 1991 genel seçiminin ardından yerini koalisyona bıraktı." },
+      baslangic: "1991-06-23", bitis: "1991-11-20", tip: "tek-parti", bitisNedeni: "erken-secim",
+      not: "Akbulut'un istifası üzerine ANAP Genel Başkanı sıfatıyla görevlendirilen Yılmaz'ın kurduğu hükümet, 3757 sayılı Kanunla 20 Ekim 1991'e alınan erken genel seçimin ardından yerini koalisyona bıraktı." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 49, basbakan: "Süleyman Demirel", partiler: ["dyp", "shp"],
