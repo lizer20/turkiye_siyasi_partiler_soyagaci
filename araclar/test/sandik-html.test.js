@@ -61,6 +61,16 @@ test("partilerüstü hükümet kesinti rengini alır", () => {
   assert.match(h, /partilerüstü/);
 });
 
+test("askerî yönetim hükümetleri kendi organının adıyla gösterilir", () => {
+  const mgk = M.seritHTML({ no: 1, basbakan: "C", partiler: [], baslangic: "1980-09-20",
+    bitis: "1983-12-13", tip: "mgk", bitisNedeni: null });
+  assert.match(mgk, /Millî Güvenlik Konseyi/);
+  assert.ok(mgk.includes("--aile:" + M.KESINTI));
+  const mbk = M.seritHTML({ no: 1, basbakan: "C", partiler: [], baslangic: "1960-05-30",
+    bitis: "1961-01-05", tip: "mbk", bitisNedeni: null });
+  assert.match(mbk, /Millî Birlik Komitesi/);
+});
+
 test("genel seçim paneli bölümleri ve sonraki hükümetler", () => {
   const { html, renk } = M.panelHTML(kayit("1999-04-genel"), F);
   assert.match(html, /id="p-kisa"/);

@@ -6,7 +6,7 @@ const SandikMantik = require("../sandik-mantik");
 
 const BAG_TURLERI = ["devam", "bolunme", "katilma"];
 const TURLER = ["genel", "yerel", "referandum", "cb-halk", "cb-tbmm", "ara"];
-const TIPLER = ["tek-parti", "koalisyon", "azinlik", "partiluestu", "mbk", "cumhurbaskanligi"];
+const TIPLER = ["tek-parti", "koalisyon", "azinlik", "partiluestu", "mbk", "mgk", "cumhurbaskanligi"];
 const BITIS = ["secim", "erken-secim", "guvensizlik", "istifa", "darbe", "muhtira",
                "cumhurbaskani-secimi", "olum", "sistem-degisikligi", "diger"];
 const TUTUMLAR = ["evet", "hayir", "boykot", "serbest"];

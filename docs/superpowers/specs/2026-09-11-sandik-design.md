@@ -279,7 +279,7 @@ değerler §8'deki kuralla doldurulur.)
 (Örnekteki numara, tarih ve bitiş nedeni yalnızca yapıyı gösterir; gerçek değerler §8'deki
 kuralla doldurulur.)
 
-- `tip`: `"tek-parti"` · `"koalisyon"` · `"azinlik"` · `"partiluestu"` · `"mbk"` ·
+- `tip`: `"tek-parti"` · `"koalisyon"` · `"azinlik"` · `"partiluestu"` · `"mbk"` (27 Mayıs, Millî Birlik Komitesi) · `"mgk"` (12 Eylül, Millî Güvenlik Konseyi) ·
   `"cumhurbaskanligi"`.
 - `bitisNedeni`: `"secim"` (olağan takvim) · `"erken-secim"` · `"guvensizlik"` ·
   `"istifa"` · `"darbe"` · `"muhtira"` · `"cumhurbaskani-secimi"` · `"olum"` ·

@@ -114,7 +114,7 @@
       "cumhurbaskani-secimi": "başbakanın cumhurbaşkanı seçilmesi", olum: "başbakanın ölümü",
       "sistem-degisikligi": "hükümet sisteminin değişmesi", diger: "diğer" };
     const TIP_ETIKET = { "tek-parti": "tek parti", koalisyon: "koalisyon", azinlik: "azınlık",
-      partiluestu: "partilerüstü", mbk: "Millî Birlik Komitesi", cumhurbaskanligi: "cumhurbaşkanlığı" };
+      partiluestu: "partilerüstü", mbk: "Millî Birlik Komitesi", mgk: "Millî Güvenlik Konseyi", cumhurbaskanligi: "cumhurbaşkanlığı" };
     const SEHIRLER = [["istanbul", "İstanbul"], ["ankara", "Ankara"], ["izmir", "İzmir"]];
 
     function kacis(s) {
@@ -207,7 +207,7 @@
     }
 
     function seritHTML(h) {
-      const renk = h.partiler && h.partiler.length && (h.tip !== "partiluestu" && h.tip !== "mbk")
+      const renk = h.partiler && h.partiler.length && (h.tip !== "partiluestu" && h.tip !== "mbk" && h.tip !== "mgk")
         ? partiAdi({ parti: h.partiler[0] }).renk : KESINTI;
       const bas = h.no != null ? h.no + ". Hükümet" : "Hükümet";
       const kisi = h.basbakan || h.baskan;
