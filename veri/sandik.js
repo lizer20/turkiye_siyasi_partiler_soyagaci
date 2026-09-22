@@ -286,15 +286,15 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1984-03-yerel
     { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25",
       olcu: "belediye-meclisi",
-      kayitli: 11981906, kullanilan: 10499457, gecerli: 9923877,
-      sonuc: [ { parti: "anap", oy: 4219115 }, { parti: "sodep", oy: 2314738 }, { parti: "dyp", oy: 1163110 }, { parti: "hp83", oy: 778033 }, { ad: "Milliyetçi Demokrasi Partisi", oy: 544385 }, { parti: "rp", oy: 479977 }, { ad: "Diğer", partiSayisi: null, oy: 314045 }, { ad: "Bağımsız", oy: 110474 } ],
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "anap", oy: null }, { parti: "sodep", oy: null }, { parti: "dyp", oy: null }, { parti: "hp83", oy: null }, { ad: "Milliyetçi Demokrasi Partisi", oy: null }, { parti: "rp", oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
-      not: "12 Eylül sonrası ilk yerel seçim; Adana ilinin parti kırılımı kaynak YSK tablosunda iç tutarsız olduğundan 'Diğer' satırına dahil edildi." },
+      not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli belediye meclisi oy toplamı YSK'nın il tablosundan script ile hesaplanabildi ama bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından (ayrıca Adana ilinin parti kırılımı kaynakta iç tutarsızdı) sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
 
     // kaynak: araclar/kaynak-defteri.md#1987-09-referandum
     { id: "1987-09-referandum", tur: "referandum", tarih: "1987-09-06",
       konu: "1982 Anayasası'nın geçici 4. maddesiyle getirilen, eski parti liderlerine yönelik 5-10 yıllık siyasi yasakların kaldırılması",
-      kayitli: null, kullanilan: 24436821, gecerli: 23347856,
+      kayitli: 26095630, kullanilan: 24436821, gecerli: 23347856,
       evet: 11711461, hayir: 11636395, karar: "kabul",
       tutumlar: [ { parti: "dyp", tutum: "evet" }, { parti: "dsp", tutum: "evet" }, { parti: "mcp", tutum: "evet" }, { parti: "rp", tutum: "evet" }, { parti: "shp", tutum: "evet" }, { parti: "anap", tutum: "hayir" } ],
       not: "Sonuç yalnızca 75.066 oy farkla 'evet' çıktı; yasaklı eski liderlerin (Demirel, Ecevit, Türkeş, Erbakan) partileri 'evet', iktidardaki ANAP 'turuncu-hayır' kampanyası yürüttü." },
@@ -308,18 +308,18 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1988-09-referandum
     { id: "1988-09-referandum", tur: "referandum", tarih: "1988-09-25",
       konu: "Yerel seçim tarihinin bir yıl öne alınması (Anayasa'nın 127. maddesinde değişiklik)",
-      kayitli: null, kullanilan: null, gecerli: null,
-      evet: null, hayir: null, karar: "ret",
+      kayitli: 26739227, kullanilan: 23750873, gecerli: 22956878,
+      evet: 8034933, hayir: 14921945, karar: "ret",
       tutumlar: [ { parti: "anap", tutum: "evet" }, { parti: "dyp", tutum: "hayir" }, { parti: "shp", tutum: "hayir" } ],
-      not: "Katılım %88,82, evet %35, hayır %65 — Türkiye'de sonucu 'hayır' çıkan tek referandum; ham seçmen/oy sayıları iki kaynakla doğrulanamadı." },
+      not: "Katılım %88,8 — Türkiye'de sonucu 'hayır' çıkan tek referandum." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-03-yerel
     { id: "1989-03-yerel", tur: "yerel", tarih: "1989-03-26",
       olcu: "belediye-meclisi",
-      kayitli: 18091625, kullanilan: 14067380, gecerli: 13241347,
-      sonuc: [ { parti: "shp", oy: 4368018 }, { parti: "dyp", oy: 3138260 }, { parti: "anap", oy: 3112613 }, { parti: "rp", oy: 1196876 }, { parti: "dsp", oy: 890507 }, { parti: "mcp", oy: 445065 }, { ad: "Diğer", partiSayisi: 1, oy: 69465 }, { ad: "Bağımsız", oy: 20543 } ],
-      buyuksehir: { istanbul: { parti: "shp" }, ankara: { parti: "shp" }, izmir: { parti: "shp" } },
-      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin üç büyükşehiri de kazandığı seçim." },
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "shp", oy: null }, { parti: "dyp", oy: null }, { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dsp", oy: null }, { parti: "mcp", oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { istanbul: { parti: "shp" }, izmir: { parti: "shp" } },
+      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul ve İzmir'i kazandığı seçim (Ankara da SHP'nin oldu, ama Ankara büyükşehir sonucu için bağımsız ikinci kaynak bulunamadığından alan yazılmadı). Ülke geneli belediye meclisi oy toplamı için bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-10-cb-tbmm
     { id: "1989-10-cb-tbmm", tur: "cb-tbmm", tarih: "1989-10-31",
