@@ -158,6 +158,10 @@
       return EVET;
     }
     function ilkUcHTML(k, satirlar, sandalyeli) {
+      // Sıralama oya (gerekirse sandalyeye) dayanır; ikisi de bilinmiyorsa liste sırası
+      // sıralama sanılmasın diye ilk üç hiç gösterilmez.
+      const olculebilir = satirlar.some(s => oyDegeri(s, k) != null || (sandalyeli && s.sandalye != null));
+      if (!olculebilir) return '<div class="s-not">sıralama bilinmiyor</div>';
       return '<ol class="s-ilk3">' + satirlar.slice(0, 3).map(s =>
         "<li><b>" + kacis(partiAdi(s).kisa) + "</b> " + O.yuzdeYaz(oyDegeri(s, k)) +
         (sandalyeli ? " · " + O.sayiYaz(s.sandalye) : "") + "</li>").join("") + "</ol>";

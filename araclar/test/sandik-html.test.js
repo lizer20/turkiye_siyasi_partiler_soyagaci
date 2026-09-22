@@ -135,3 +135,12 @@ test("künye: aynı yıl aynı türde iki seçim ay adıyla ayrışır", () => {
 test("künye: seçim kaydı olmayan partide boş", () => {
   assert.equal(M.kunyeSecimleriHTML("tcf", F), "");
 });
+
+test("oy ve sandalye bilinmiyorsa ilk üç yerine 'sıralama bilinmiyor'", () => {
+  const bos = { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25", olcu: "belediye-meclisi",
+    kayitli: null, kullanilan: null, gecerli: null,
+    sonuc: [{ parti: "dsp", oy: null }, { parti: "dsp", oy: null }] };
+  const h = M.kartHTML(bos);
+  assert.match(h, /sıralama bilinmiyor/);
+  assert.doesNotMatch(h, /s-ilk3/);
+});
