@@ -240,16 +240,40 @@ window.SANDIK = {
       sonuc: [ { parti: "chp23", oy: 3570583, sandalye: 185 }, { parti: "ap", oy: 3197897, sandalye: 149 }, { parti: "msp", oy: 1265771, sandalye: 48 }, { parti: "demp70", oy: 1275502, sandalye: 45 }, { parti: "cgp", oy: 564343, sandalye: 13 }, { ad: "Bağımsız", oy: 303218, sandalye: 6 }, { parti: "mhp69", oy: 362208, sandalye: 3 }, { ad: "Türkiye Birlik Partisi", oy: 121759, sandalye: 1 }, { ad: "Millet Partisi", oy: 62377, sandalye: 0 } ],
       not: "12 Mart sonrası ilk genel seçim; CHP birinci parti oldu ama tek başına iktidar için gereken çoğunluğu sağlayamadı, uzun bir hükümet krizi başladı." },
 
+    // kaynak: araclar/kaynak-defteri.md#1973-12-yerel
+    { id: "1973-12-yerel", tur: "yerel", tarih: "1973-12-09",
+      olcu: "belediye-meclisi",
+      kayitli: 8607082, kullanilan: 4706719, gecerli: 3914801,
+      sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { ad: "Türkiye Birlik Partisi", oy: 19860 }, { ad: "Millet Partisi", oy: 8384 } ],
+      not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
+
     // kaynak: araclar/kaynak-defteri.md#1977-06-genel
     { id: "1977-06-genel", tur: "genel", tarih: "1977-06-05", tekParti: false,
       meclis: 450, kayitli: 21207303, kullanilan: 15358210, gecerli: 14827172, baraj: null,
       sonuc: [ { parti: "chp23", oy: 6136171, sandalye: 213 }, { parti: "ap", oy: 5468202, sandalye: 189 }, { parti: "msp", oy: 1269918, sandalye: 24 }, { parti: "mhp69", oy: 951544, sandalye: 16 }, { ad: "Bağımsız", oy: 370035, sandalye: 4 }, { parti: "cgp", oy: 277713, sandalye: 3 }, { parti: "demp70", oy: 274484, sandalye: 1 }, { ad: "Türkiye Birlik Partisi", oy: 58540, sandalye: 0 }, { parti: "tip75", oy: 20565, sandalye: 0 } ],
       not: "CHP oyunu artırarak yine birinci parti oldu ama yine tek başına iktidar için gereken çoğunluğu sağlayamadı." },
 
+    // kaynak: araclar/kaynak-defteri.md#1977-12-yerel
+    { id: "1977-12-yerel", tur: "yerel", tarih: "1977-12-11",
+      olcu: "belediye-meclisi",
+      kayitli: 12067618, kullanilan: 6197718, gecerli: 5680318,
+      sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { ad: "Türkiye Birlik Partisi", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
+      not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde yine kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
+
     // kaynak: araclar/kaynak-defteri.md#1980-03-cb-tbmm
     { id: "1980-03-cb-tbmm", tur: "cb-tbmm", tarih: "1980-03-25",
       secilen: null, turSayisi: null,
-      not: "Adaysızlık nedeniyle 25 Mart 1980'e ertelenen seçim süreci 100'den fazla turda sonuçsuz sürdü; 12 Eylül 1980 darbesiyle TBMM'nin kapatılmasıyla kendiliğinden sona erdi; Cumhuriyet Senatosu Başkanı İhsan Sabri Çağlayangil darbeye kadar cumhurbaşkanlığına vekalet etti." }
+      not: "Adaysızlık nedeniyle 25 Mart 1980'e ertelenen seçim süreci 100'den fazla turda sonuçsuz sürdü; 12 Eylül 1980 darbesiyle TBMM'nin kapatılmasıyla kendiliğinden sona erdi; Cumhuriyet Senatosu Başkanı İhsan Sabri Çağlayangil darbeye kadar cumhurbaşkanlığına vekalet etti." },
+
+    // --- 12 Eylül 1980 kabı (bkz. veri/partiler.js DONEMLER[3].kesinti.yonetim) ---
+
+    // kaynak: araclar/kaynak-defteri.md#1982-11-referandum
+    { id: "1982-11-referandum", tur: "referandum", tarih: "1982-11-07",
+      konu: "1982 Anayasası'nın kabulü (cumhurbaşkanlığı seçimiyle birleştirildi)",
+      kayitli: 20690914, kullanilan: 18885488, gecerli: 18841990,
+      evet: 17215559, hayir: 1626431, karar: "kabul",
+      tutumlar: [],
+      not: "Anayasanın geçici 1. maddesi gereği, referandumun kabulüyle tek aday Kenan Evren de cumhurbaşkanı seçilmiş sayıldı; bütün partiler zaten 16 Ekim 1981'de kapatıldığından resmî parti tutumu yoktu." }
   ],
 
   hukumetler: [

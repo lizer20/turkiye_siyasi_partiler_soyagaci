@@ -1499,3 +1499,85 @@ Genel Kurul görüşmelerini bir araya getiriyor:
   MGK'nın doğrudan yönetimde olduğu geçiş dönemidir; dönem 1'deki 23->24 boşluğuyla aynı örüntü,
   dogrula.js uyarısı beklenir.
 - Erişim: 2026-09-16 / 2026-09-22.
+
+### 1973-12-yerel, 1977-12-yerel
+
+- **[B] YSK, "9 Aralık 1973 Belediye Meclis Üyeliği Seçim Sonuçları"**
+  (ysk.gov.tr/doc/dosyalar/docs/Mahalli/1973/KesinSecimSonuclari/1973_Belediye_Meclis_Uyeligi_Secimleri_Sonucu.pdf,
+  `pdftotext -table`) — kayıtlı 8.607.082, kullanılan 4.706.719, geçerli 3.914.801, seçimi
+  yapılan belediye meclis üyeliği 24.873. Parti oyları toplamı geçerli oya **tam eşit**
+  (1.382.150+1.624.490+102.908+351.746+8.384+212.477+62.165+19.860+150.621=3.914.801); kazanılan
+  üyelik toplamı da 24.873'e **tam eşit**.
+- **[B] YSK, "11 Aralık 1977 Belediye Meclis Üyeliği Seçim Sonuçları"**
+  (aynı klasör, 1977_Belediye_Meclis_Uyeligi_Secimleri_Sonucu.pdf) — kayıtlı 12.067.618,
+  kullanılan 6.197.718, geçerli 5.680.318, seçimi yapılan üyelik 27.031. Parti oyları toplamı
+  geçerli oya **tam eşit** (2.148.885+2.663.642+40.587+51.411+302.831+315.733+23.506+15.992+
+  6.417+3.280+81+107.953=5.680.318); kazanılan üyelik toplamı 27.031'e **tam eşit**.
+- Bu iki dosya, YSK'nın 1973/1977 arşivindeki dört ayrı belge kümesinden ("İl Genel Meclisi
+  Üyeliği", "Belediye Meclis Üyeliği" — bu ikisi indirilebildi; "Belediye Başkanlığı" 1977 için
+  yalnızca ülke geneli toplamıyla indirilebildi, 1973 için hiçbir dosya adı varyasyonu (10'dan
+  fazla deneme: Türkçe karakterli/karaktersiz, "Meclis"/"Meclisi", "Baskanlik"/"Baskanligi"...)
+  çalışmadı) bulundu. `olcu:"belediye-meclisi"` kuralına uygun olan "Belediye Meclis Üyeliği"
+  dosyaları kullanıldı.
+- **İkinci kaynak:** her iki yılın "yüzde 91,27 katılım" gibi genel istatistikleri ve "CHP,
+  İstanbul, Ankara, İzmir dahil çoğu büyükşehirde kazandı" bilgisi WebSearch ile toplanan çok
+  sayıda bağımsız kaynakta (haber arşivleri, TESAV'ın kendi sayfası, akademik özetler) tutarlı;
+  ama şehir bazlı belediye başkanı adları yalnızca Vikipedi kaynaklı olduğu için ne `buyuksehir`
+  alanına ne de `not`a kişi ismi olarak yazılmadı (kullanıcı kararı: Vikipedi hiçbir zaman kaynak
+  sayılmaz).
+- **`buyuksehir` alanı hiç yazılmadı** (iki yıl için de): YSK'nın şehir bazlı "Belediye
+  Başkanlığı" sonuç dosyalarına (il il ya da büyükşehir bazlı) bu turda ulaşılamadı — 1977'nin
+  ülke geneli toplam dosyası bulundu ama şehir kırılımı yok; 1973'ün dosyası hiç bulunamadı.
+  Dönem 2'de belirlenen kural burada da uygulandı: resmî kaynak yoksa `buyuksehir` yazılmaz.
+- Erişim: 2026-09-22.
+
+### 1973 ve 1975/1979 ara seçimleri — envanter sonucu: eklenmedi
+
+- **1973:** genel seçimden (14 Ekim 1973) sonra ara seçime ihtiyaç duyulacak bir sandalye boşalması
+  bu turda bulunamadı; aday listede zaten yoktu.
+- **12 Ekim 1975** (6 il: Amasya, Bursa, Eskişehir, Niğde, Urfa, Zonguldak, 6 sandalye) ve
+  **14 Ekim 1979** (5 il: Edirne, Konya, Aydın, Manisa, Muğla, 5 sandalye — tamamını AP kazandı,
+  bu sonuç III. Ecevit Hükümeti'nin düşmesine yol açtı) ara seçimlerinin **varlığı ve tarihi**
+  WebSearch ile toplanan birden fazla bağımsız kaynakla (TESAV'ın kendi sayfası — PDF'i yine bu
+  turda da 404 verdi, dönem 1-2'deki sorunun devamı; dergipark akademik makalesi "İktidar
+  Değiştiren 14 Ekim 1979 Milletvekili Ara Seçimi Manisa Örneği", Belgi Dergisi; genel haber
+  özetleri) doğrulandı ama:
+  - YSK'nın "Ara Seçim Arşivi" (ysk.gov.tr/tr/ara-secim-arsivi/2624) JS kabuğu döndürdü, altındaki
+    dosya adına (Mahalli/Milletvekili arşivlerindeki gibi `docs/AraSecim/...` deseniyle) onlarca
+    varyasyon denendi, hiçbiri çalışmadı.
+  - www5.tbmm.gov.tr'nin tutanak/kanun arşivinde bulunan bir sonuç ("kanuntbmmc069...") incelendiğinde
+    1986 dönemine ait çıktı, 1975/1979 ile ilgisiz olduğu görüldü.
+  - 1975 ara seçiminin il bazında hangi partinin kazandığı (yalnızca "6 il, 6 sandalye" bilgisi
+    var) ve 1979'un tam il/parti eşleşmesi (yalnızca "AP 5/5" özeti var, hangi ilin hangi turda
+    olduğuna dair il-parti tablosu yok) iki kaynakla, satır satır doğrulanabilir biçimde
+    bulunamadı.
+- Kullanıcı kararı (brief) gereği: **iki kaynakla (ve mümkünse resmî bir kaynakla) tam
+  doğrulanamayan ara seçimler eklenmez.** Dönem 3 için de böyle: `veri/sandik.js`'e ara seçim
+  kaydı eklenmedi. **Görev 12'ye not:** 12 Ekim 1975 (6 il/6 sandalye) ve 14 Ekim 1979 (5 il/5
+  sandalye, tamamı AP) ara seçimlerinin resmî YSK kaynağı aranmalı.
+- Erişim: 2026-09-22.
+
+### 1982-11-referandum (12 Eylül kabı)
+
+- **[B] YSK, "7 Kasım 1982 Anayasa Değişikliği Halk Oylaması Sonucu"**
+  (ysk.gov.tr/doc/dosyalar/docs/1982Referandum/7-Kasım-1982-Halk-Oylaması.pdf) — 67 ilin tam
+  tablosu (sandık seçmen listesindeki kayıtlı sayı, katılan, geçerli oy, geçersiz oy, evet,
+  hayır); Türkiye toplamı yayımlanmamış, `araclar/topla.js` ile hesaplandı:
+  `node araclar/topla.js` çıktısı: kayıtlı 20.690.914, katılan 18.885.488, geçerli 18.841.990,
+  geçersiz 43.498, evet 17.215.559, hayır 1.626.431. evet+hayır=geçerli oya **tam eşit**.
+  Katılım oranı: %91,27; kabul oranı: %91,37.
+- **İkinci kaynak:** Murat SOYSAL, "Plebisit mi, Referandum mu?", *Journal of Modern Turkish
+  History Studies*, kabul tarihi 02.12.2022
+  (`ataturkilkeleri.deu.edu.tr/wp-content/uploads/2023/01/14.-Murat-SOYSAL.pdf`, tam metin
+  `pdftotext` ile okundu) — "Katılımın yüzde 91.27 olduğu halkoylamasında vatandaşlar, Anayasa'ya
+  yüzde 91.37 oranında kabul oyu vermiştir" — hesaplanan katılım (%91,27) ve kabul oranı (%91,37)
+  ile **birebir** eşleşti.
+- Uyuşmazlık: yok — "hesaplandı" (spesifikasyon §8.1).
+- **Cumhurbaşkanlığı ile birleşme notu (brief'in istediği tek cümle):** aynı akademik kaynak —
+  "Anayasa'da yer alan geçici maddeyle de Kenan Evren, Cumhurbaşkanı seçilmiştir" — referandumun
+  1982 Anayasası'nın geçici 1. maddesi gereği, tek aday olan Kenan Evren'in cumhurbaşkanlığını da
+  onayladığını doğruluyor; bu bilgi kayıttaki `not` alanına tek cümleyle yazıldı.
+- `tutumlar` alanı yazılmadı: 12 Eylül 1980 sonrası bütün siyasi partiler zaten kapatılmıştı
+  (16 Ekim 1981, 1533 sayılı kanun — `veri/partiler.js`'teki kesinti metniyle tutarlı), bu yüzden
+  referandum sırasında resmî tutum alabilecek hiçbir parti yoktu.
+- Erişim: 2026-09-22.
