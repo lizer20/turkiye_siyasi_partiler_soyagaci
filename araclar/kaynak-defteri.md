@@ -1564,7 +1564,9 @@ başlangıç tarihiydi, düzeltildi** (aşağıya bakın).
     Orhan ALP, Ahmet KARAASLAN). **Bu, ilk turdaki "CGP ve Demokratik Parti'nin dışarıdan
     desteği ikinci kaynakla doğrulanamadı" notunu düzeltiyor: CGP ve DP'den bakanlar bizzat
     kabinede görev aldı, dışarıdan destek değil.** -> `partiler` **["chp23","cgp","demp70"]**
-    olarak düzeltildi (`veri/sandik.js`'te güncellendi). **`bitisNedeni:"istifa"`** [B] tam
+    olarak düzeltildi (`veri/sandik.js`'te güncellendi). **`tip`: kullanıcı kararı (dönem 3 durağı, 2026-09-22) — ölçüt kabinenin
+    parti bileşimidir; kabinede birden fazla parti varsa `koalisyon`. Bu yüzden `"azinlik"` →
+    `"koalisyon"`.** `not`taki "meclis güvenini korumasına rağmen" ifadesi [B] kaynaksız olduğu için çıkarıldı. **`bitisNedeni:"istifa"`** [B] tam
     doğrulandı: Cilt 7'nin VI. Demirel Hükümeti bölümü açılışında (s. 5583 civarı) "...
     yorumlanmış ve Hükümet **16 Ekim 1979** günü istifa etmiştir." ifadesi hem nedeni hem tam
     tarihi veriyor (ikincil kaynaklardaki "14 Ekim ara seçimi sonrası istifa" genel çerçevesiyle

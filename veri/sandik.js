@@ -492,8 +492,8 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-42
     { no: 42, basbakan: "Bülent Ecevit", partiler: ["chp23", "cgp", "demp70"],
-      baslangic: "1978-01-05", bitis: "1979-11-12", tip: "azinlik", bitisNedeni: "istifa",
-      not: "CHP'nin öncülüğünde CGP ve Demokratik Parti'den de bakanların katıldığı azınlık hükümeti; 14 Ekim 1979 ara seçimlerindeki kayıpların ardından, meclis güvenini korumasına rağmen 16 Ekim 1979'da istifa etti." },
+      baslangic: "1978-01-05", bitis: "1979-11-12", tip: "koalisyon", bitisNedeni: "istifa",
+      not: "CHP öncülüğünde, CGP ve Demokratik Parti'den bakanlarla bağımsız bakanların da yer aldığı hükümet; 14 Ekim 1979 ara seçimlerinin ardından 16 Ekim 1979'da istifa etti." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-43
     { no: 43, basbakan: "Süleyman Demirel", partiler: ["ap"],
