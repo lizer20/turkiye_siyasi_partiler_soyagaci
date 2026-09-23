@@ -3075,3 +3075,216 @@ ve bu defter değiştirilebildiğinden, üç adayın tamamı `destek:` ile yazı
 Demirtaş satırlarında soyağacı bağı (ve `cb-halk` kartının parti rengi) oluşmuyor. Çözüm
 `dogrula.js`'te tek satırlık bir düzeltmedir (aday satırlarını bu denetimden muaf tutmak) ve
 ayrı bir göreve bırakıldı.
+
+### 2004-03-yerel
+
+- **[B] YSK, "C-) Belediye Başkanlığı ve Belediye Meclisi Üyeliği Seçimleri"**
+  (`ysk.gov.tr/doc/dosyalar/docs/2004MahalliIdareler/belediyebsk/Belediyebsk.pdf`), künyesi:
+  "**Kaynak: 11 Mayıs 2004 tarih ve 2002 sayılı YSK Kararı / 12 Mayıs 2004 tarih ve 25460 sayılı
+  Resmi Gazete**". Belediye **meclis üyeliği** bölümü: kayıtlı seçmen **34.213.138**,
+  üyelik için oy kullanan **25.067.950** (katılma %73,270), **üyelik seçiminde geçerli oy
+  23.893.656**, seçimi yapılan üyelik 34.477.
+  AK PARTİ 9.635.145 (%40,325), CHP 4.912.313 (%20,559), MHP 2.500.601 (%10,466),
+  DYP 2.286.020 (%9,567), SOSYALDEMOKRAT HALK PARTİSİ 1.204.431 (%5,041),
+  SAADET PARTİSİ 1.111.017 (%4,650), ANAVATAN PARTİSİ 682.264 (%2,855),
+  GENÇ PARTİ 607.847 (%2,544), DEMOKRATİK SOL PARTİ 484.555 (%2,028),
+  BÜYÜK BİRLİK PARTİSİ 179.090 (%0,750), BAĞIMSIZ TÜRKİYE PARTİSİ 66.582 (%0,279),
+  YENİ TÜRKİYE PARTİSİ 56.912 (%0,238), BAĞIMSIZLAR 39.968 (%0,167),
+  İŞÇİ PARTİSİ 33.770 (%0,141), ÖZGÜRLÜK VE DAYANIŞMA PARTİSİ 29.269 (%0,122),
+  EMEĞİN PARTİSİ 28.011 (%0,117), MİLLET PARTİSİ 12.223 (%0,051),
+  TÜRKİYE KOMÜNİST PARTİSİ 12.139 (%0,051), AYDINLIK TÜRKİYE PARTİSİ 7.366 (%0,031),
+  DEMOKRAT PARTİ 3.742 (%0,016), LİBERAL DEMOKRAT PARTİ 391 (%0,002);
+  **T O P L A M 23.893.656**.
+- **İç tutarlılık (hesaplandı):** 20 parti + bağımsız oy toplamı = **23.893.656**, belgenin kendi
+  toplamına tam eşit.
+- **`ad:` ile yazılanlar:** *Sosyaldemokrat Halk Partisi* (2002'de kurulan SHP; soyağacındaki
+  `shp` kaydı 1985–1995 arası **Sosyaldemokrat Halkçı Parti**'nindir, ayrı tüzel kişilik) ve
+  *Genç Parti* — ikisinin de oyu %1'in üstünde olduğu için ayrı satırda.
+  **"Diğer" (partiSayisi 4, oy 98.310):** BTP 66.582 + Millet Partisi 12.223 + TKP 12.139 +
+  Aydınlık Türkiye Partisi 7.366.
+- **Büyükşehir — [B] TÜİK Mahalli İdareler Seçim Sonuçları Veri Tabanı**
+  (`biruni.tuik.gov.tr/secimdagitimapp/yerel.zul` → "Büyükşehir belediye başkanlığı / Belediye
+  sonucu / 2004 / Tüm iller"; üretilen rapor `rapory.tuik.gov.tr/...html`),
+  "Belediyelere göre 28 Mart 2004 Büyükşehir Belediye Başkanlığı Seçimi sonucu":
+  - **İstanbul** (geçerli 4.231.487): **AK PARTİ 1.917.577**, CHP 1.223.856, SAADET 228.615,
+    DYP 206.410, MHP 173.274, SHP 153.840, GENÇ P. 145.120 → AK Parti kazandı.
+  - **Ankara** (geçerli 1.636.633): **AK PARTİ 901.001**, SHP 341.231, CHP 206.630,
+    MHP 74.815, DYP 32.376 → AK Parti kazandı.
+  - **İzmir** (geçerli 1.192.541): **CHP 562.561**, AK PARTİ 388.336, GENÇ P. 71.671,
+    MHP 48.535, SHP 49.382 → CHP kazandı.
+  - **Çapraz doğrulama:** aynı raporun "Türkiye" satırı (kayıtlı 15.426.031, kullanan 10.891.703,
+    geçerli 10.468.870; AK PARTİ 4.822.636, CHP 2.560.382, SHP 769.187, DYP 565.626,
+    MHP 535.426, SAADET 423.014, GENÇ P. 317.128, DSP 237.509, ANAP 81.141, BBP 45.815,
+    BTP 28.487, İP 18.802, TKP 17.965, ATP 11.189, YTP 10.667, MP 6.512, BAĞIMSIZ 16.244,
+    EMEP 1.140) **[B] YSK "B-) Büyükşehir Belediyesi Başkanlığı Seçimi Sonucu"**
+    (`…/2004MahalliIdareler/buyuksehir/Buyuksehir.pdf`, aynı YSK kararı/RG künyesi) ile
+    **22 satırın tamamında birebir** aynıdır. YSK bu ölçüyü yalnızca ülke toplamı olarak,
+    TÜİK ise şehir şehir yayımlıyor.
+  - **Sınırlılık:** üç şehrin **şehir bazındaki** rakamlarını yayımlayan ikinci bir kurum
+    bulunamadı (YSK 2004 sayfasında sadece 8 dosya var, il kırılımı yok); yukarıdaki birebir
+    örtüşme aynı resmî veri kümesinin iki kurumca yayımlandığını gösteriyor.
+- **`tarih`: 28 Mart 2004** — [B] YSK belgesinin başlığı ve "1- Bu tesbitler, **28 Mart 2004
+  günü** sandık kurullarınca düzenlenip…" açıklaması.
+- Erişim: 2026-09-23.
+
+### 2009-03-yerel
+
+- **[B] YSK, "LİSTE - 4 / 29.03.2009 Genel Mahalli İdareler Seçim Sonucu — Belediye Meclisi
+  Üyeliği Seçimleri Sonucu"**
+  (`…/docs/2009MahalliIdareler/ResmiGazete/BelediyeMeclisUyeligi.pdf`):
+  kayıtlı seçmen (cezaevi seçmenleri dahil) **39.787.986**, oy kullanan **33.447.257**
+  (katılma %84,06), **geçerli oy 32.072.363**, seçimi yapılan üyelik 32.392.
+  AK PARTİ 12.237.325 (%38,16), CHP 7.966.710 (%24,84), MHP 5.336.695 (%16,64),
+  SAADET PARTİSİ 1.807.745 (%5,64), DEMOKRATİK TOPLUM PARTİSİ 1.687.733 (%5,26),
+  DEMOKRAT PARTİ 1.181.074 (%3,68), DEMOKRATİK SOL PARTİ 945.722 (%2,95),
+  BÜYÜK BİRLİK PARTİSİ 508.055 (%1,58), ANAVATAN PARTİSİ 202.976 (%0,63),
+  BAĞIMSIZ TÜRKİYE PARTİSİ 82.848 (%0,26), BAĞIMSIZ 43.633 (%0,14),
+  ÖZGÜRLÜK VE DAYANIŞMA PARTİSİ 25.557 (%0,08), EMEK PARTİSİ 21.100 (%0,07),
+  MİLLET PARTİSİ 6.685 (%0,02), HALKIN YÜKSELİŞİ PARTİSİ 5.566 (%0,02),
+  HAK VE ÖZGÜRLÜKLER PARTİSİ 4.618 (%0,01), TÜRKİYE KOMÜNİST PARTİSİ 3.409 (%0,01),
+  LİBERAL DEMOKRAT PARTİ 2.451 (%0,01), İŞÇİ PARTİSİ 2.258 (%0,01),
+  BARIŞ VE DEMOKRASİ PARTİSİ 203 (%0,00); **TOPLAM 32.072.363**.
+- **İç tutarlılık (hesaplandı):** oy toplamı = **32.072.363**, belgenin kendi toplamına tam eşit.
+- **"Diğer" (partiSayisi 5, oy 103.126):** BTP 82.848 + Millet Partisi 6.685 + HYP 5.566 +
+  Hak ve Özgürlükler Partisi 4.618 + TKP 3.409.
+- **Büyükşehir — iki kaynak:**
+  - **[B] YSK, "Büyükşehir Belediye Başkanlıklarının Siyasi Partilere Dağılımı (29 Mart 2009)"**
+    (`…/2009MahalliIdareler/SecimSonuclari/Buyuksehir.pdf`): İSTANBUL **AK PARTİ**,
+    ANKARA **AK PARTİ**, İZMİR **CHP** (tablo her il için tek bir "1" işareti koyuyor).
+  - **[B] TÜİK Mahalli İdareler Seçim Sonuçları Veri Tabanı**, "Belediyelere göre 29 Mart 2009
+    Büyükşehir Belediye Başkanlığı Seçimi sonucu": İstanbul (geçerli 6.946.435)
+    **AK PARTİ 3.105.555** > CHP 2.568.710; Ankara (geçerli 2.440.455) **AK PARTİ 940.230** >
+    CHP 763.879 > MHP 667.871; İzmir (geçerli 1.972.359) **CHP 1.107.562** > AK PARTİ 599.395.
+    Uyuşmazlık: yok.
+- Erişim: 2026-09-23.
+
+### 2014-03-yerel
+
+- **[B] YSK, "LİSTE-4 / 30 Mart 2014 Mahalli İdareler Genel Seçimi — Belediye Meclisi Üyeliği
+  Seçimleri Sonucu"** (`…/docs/2014MahalliIdareler/BelediyeMeclisUyeligi2014.pdf`):
+  kayıtlı seçmen (cezaevi seçmenleri dahil) **48.843.157**, oy kullanan **43.543.717**
+  (katılma %89,15), **geçerli oy 41.527.387**, seçimi yapılan üyelik 20.500.
+  AK PARTİ 17.802.976 (%42,87), CHP 10.938.262 (%26,34), MHP 7.399.119 (%17,82),
+  BARIŞ VE DEMOKRASİ PARTİSİ 1.729.297 (%4,16), SAADET PARTİSİ 1.180.322 (%2,84),
+  HALKLARIN DEMOKRATİK PARTİSİ 881.830 (%2,12), BÜYÜK BİRLİK PARTİSİ 628.729 (%1,51),
+  DEMOKRAT PARTİ 287.209 (%0,69), DEMOKRATİK SOL PARTİ 144.337 (%0,35),
+  İŞÇİ PARTİSİ 100.021 (%0,24), HÜR DAVA PARTİSİ 87.726 (%0,21),
+  BAĞIMSIZ TÜRKİYE PARTİSİ 82.768 (%0,20), TÜRKİYE KOMÜNİST PARTİSİ 60.298 (%0,15),
+  BAĞIMSIZ 49.594 (%0,12), ÖZGÜRLÜK VE DAYANIŞMA PARTİSİ 45.204 (%0,11),
+  HAK VE ÖZGÜRLÜKLER PARTİSİ 35.256 (%0,08), HAK VE EŞİTLİK PARTİSİ 34.125 (%0,08),
+  MİLLET PARTİSİ 15.068 (%0,04), DOĞRU YOL PARTİSİ 11.029 (%0,03),
+  LİBERAL DEMOKRAT PARTİ 9.122 (%0,02), YURT PARTİSİ 3.364 (%0,01),
+  TOPLUMSAL UZLAŞMA REFORM VE KALKINMA PARTİSİ 1.242 (%0,00), EMEK PARTİSİ 489 (%0,00);
+  ayrıca oy alamayan (0) beş parti (Alternatif Parti, Halkın Kurtuluş Partisi, Genç Parti,
+  Muhafazakâr Yükseliş Partisi). **TOPLAM 41.527.387**.
+- **İç tutarlılık (hesaplandı):** oy toplamı = **41.527.387**, belgenin kendi toplamına tam eşit.
+- **"Diğer" (partiSayisi 9, oy 330.876):** Hür Dava Partisi 87.726 + BTP 82.768 + TKP 60.298 +
+  Hak ve Özgürlükler Partisi 35.256 + Hak ve Eşitlik Partisi 34.125 + Millet Partisi 15.068 +
+  DYP 11.029 + Yurt Partisi 3.364 + Toplumsal Uzlaşma Reform ve Kalkınma Partisi 1.242
+  (oy almayan beş parti "Diğer"e sayılmadı, çünkü oyları sıfır).
+- **Büyükşehir — iki kaynak:**
+  - **[B] YSK, "30 Mart 2014 Mahalli İdareler Genel Seçimleri — Büyükşehir Belediye Başkanlığını
+    Kazanan Adaylar"** (`…/2014MahalliIdareler/Buyuksehir-KazananAdaylar.xlsx`):
+    "İSTANBUL | ADALET VE KALKINMA PARTİSİ | KADİR TOPBAŞ", "ANKARA | ADALET VE KALKINMA
+    PARTİSİ | İBRAHİM MELİH GÖKÇEK", "İZMİR | CUMHURİYET HALK PARTİSİ | AZİZ KOCAOĞLU".
+  - **[B] TÜİK Mahalli İdareler Seçim Sonuçları Veri Tabanı**, "Belediyelere göre 30 Mart 2014
+    Büyükşehir Belediye Başkanlığı Seçimi sonucu": İstanbul (geçerli 8.553.814)
+    **AK PARTİ 4.101.906** > CHP 3.428.454; Ankara (geçerli 3.162.112) **AK PARTİ 1.417.212** >
+    CHP 1.385.576 (fark 31.636); İzmir (geçerli 2.637.550) **CHP 1.308.134** > AK PARTİ 947.516.
+    Aynı raporun "Türkiye" satırı (kayıtlı 40.727.194, kullanan 36.440.968, geçerli 34.913.716;
+    AK PARTİ 15.898.025, CHP 10.835.876, MHP 4.764.833, BDP 1.079.026, HDP 817.494,
+    SAADET 579.231, BBP 248.169 …) **[B] YSK "LİSTE-2 Büyükşehir Belediye Başkanlığı Seçimleri
+    Sonucu"** ile birebir aynıdır. Uyuşmazlık: yok.
+  - **Ankara itirazı:** kayıttaki değer YSK'nın **kesinleşmiş** sonucudur (yukarıdaki "Kazanan
+    Adaylar" listesi); itiraz süreci kaynak belgelere yansımadığı için `not` alanına yazılmadı.
+- Erişim: 2026-09-23.
+
+**Yerel seçimlerde ikinci kaynak sorunu (2004, 2009, 2014) — açık uyarı:** ülke geneli
+**belediye meclisi** rakamlarının birincil kaynağı YSK'nın kesin sonuç ilanıdır (2004'te
+belgenin künyesinde YSK Kararı 2002 ve Resmî Gazete 12.5.2004/25460 yazılı; 2009 ve 2014
+belgeleri YSK'nın "ResmiGazete" klasöründen alınmıştır). Bu ölçüyü (belediye meclisi) ülke
+geneli olarak yayımlayan **YSK dışında bir kurum bulunamadı**: TÜİK'in Veri Portalı yalnızca
+İl Genel Meclisi tablolarını indirilebilir yapıyor, TÜİK'in Mahalli İdareler Veri Tabanı'nda
+belediye meclisi için ülke toplamı üreten bir rapor seçeneği yok (yalnızca il/ilçe ve belediye
+kırılımı; "Bölge sonucu" yalnızca 2014–2024). Yapılan doğrulama, her üç belgenin **kendi parti
+satırlarının toplamının belgenin kendi "TOPLAM" satırına tam eşit** olmasıdır (üçünde de fark
+sıfır). Büyükşehir ölçüsünde ise TÜİK ile YSK'nın ülke toplamları **birebir** örtüşüyor
+(2004 ve 2014 için satır satır doğrulandı), yani iki kurum aynı resmî veriyi yayımlıyor.
+
+### 2007-10-referandum
+
+- **[B] YSK, "Anayasa Değişikliği Halkoylaması Sonuç Tutanağı", 30/10/2007**
+  (`…/docs/2007Referandum/Sonuc/sonuc.pdf`): ülke geneli sandık seçmen listesine kayıtlı
+  (gümrük dahil) **42.690.252**, halkoylamasına katılanlar **28.819.319** (katılma **%67,51**),
+  geçerli oyların toplamı **28.167.661**, **evet 19.422.714** (%68,95),
+  **hayır 8.744.947** (%31,05). Metin: "21/10/2007 Pazar günü **5678 sayılı kanunla yapılan
+  Anayasa Değişikliğinin** halkoylamasına sunulması sonucu ülke genelinde geçerli oyların
+  yarısından çoğunun (%68.95) **EVET** olduğu tespit edilmiş…" → `karar: "kabul"`.
+- **İkinci kaynak — [B] YSK il tablosu + gümrük tablosu, toplamı hesaplandı:**
+  `…/2007Referandum/iller/turkiye.pdf` (81 ilin satırı; belgenin kendi TOPLAM satırı: kayıtlı
+  42.665.149, katılan 28.794.216, geçerli 28.142.781, evet 19.403.987, hayır 8.738.794 — 81 il
+  satırının betikle toplamı bu satıra **tam eşit**) ve `…/2007Referandum/Gumruk/gumruk.pdf`
+  (9 gümrük kapısı, TOPLAM: 25.103 / 25.103 / 24.880 / evet 18.727 / hayır 6.153).
+  **İl + gümrük toplamları ulusal tutanağın beş rakamını da tam veriyor:**
+  42.665.149+25.103 = 42.690.252; 28.794.216+25.103 = 28.819.319;
+  28.142.781+24.880 = 28.167.661; 19.403.987+18.727 = 19.422.714;
+  8.738.794+6.153 = 8.744.947. Uyuşmazlık: yok.
+- **`konu` alanı — [B] 5678 sayılı Kanun** (RG 16.6.2007): "Türkiye Cumhuriyeti Anayasasının
+  Bazı Maddelerinde Değişiklik Yapılması Hakkında Kanun"; MADDE 1 Anayasa'nın 77. maddesindeki
+  "beş" ibaresini "dört" yapıyor, değişik MADDE 101 "Cumhurbaşkanı … **halk tarafından
+  seçilir**" diyor.
+- **`not` — sayıların kapsamı:** ulusal tutanağın "kayıtlı" satırı **gümrük kapıları dahildir**
+  (tutanakta açıkça "(Gümrük Dahil)" yazıyor) ve yukarıdaki toplama bunu doğruluyor.
+- **`tutumlar` yazılmadı:** partilerin evet/hayır tutumlarını iki kaynakla doğrulayacak bir
+  tarama bu turda yapılamadı; spesifikasyon §5.4 "tutumu kaynaklarla doğrulanamayan parti
+  listeye hiç yazılmaz" gereği alan boş bırakıldı (Görev 12'ye devredildi).
+- Erişim: 2026-09-23.
+
+### 2010-09-referandum
+
+- **[B] YSK, "Anayasa Değişikliklerinin Halkoylaması Sonuç Tutanağı", 22.09.2010**
+  (`…/docs/2010Referandum/KesinSonuc/Sonuc.pdf`): ülke geneli sandık seçmen listesine kayıtlı
+  **52.051.828**, halkoylamasına katılanlar **38.369.099** (katılma **%73,71**), geçerli oyların
+  toplamı **37.644.037**, **evet 21.787.244** (%57,88), **hayır 15.856.793** (%42,12).
+  Metin: "**07.05.2010 tarih ve 5982 sayılı Kanun** ile Türkiye Cumhuriyeti Anayasasının bazı
+  maddelerinde yapılan değişikliklerin … 12/09/2010 Pazar günü yapılan halkoylaması sonucu,
+  Ülke geneli geçerli oyların yarısından çoğunun 21.787.244 EVET oyu (%57,88) olarak
+  gerçekleştiği, **Anayasa Değişikliklerinin Türk Milleti adına kabul edilmiş** olduğu…"
+  → `karar: "kabul"`. Tutanağın notu: "**Gümrük Kapıları ve Ceza İnfaz Kurumlarında kullanılan
+  oylar dahil edilmiştir.**"
+- **İkinci kaynak — [B] YSK il tablosu + gümrük tablosu, toplamı hesaplandı:**
+  `…/2010Referandum/KesinSonuc/ilSonuclari.pdf` (81 il; belgenin TOPLAM satırı kayıtlı
+  49.495.493, katılan 38.172.800, geçerli 37.449.300, evet 21.667.427, hayır 15.781.873 — 81 il
+  satırının betikle toplamı bu satıra **tam eşit**) ve `…/KesinSonuc/Gumruk.pdf`
+  (39 gümrük kapısı; TOPLAM katılan 196.299, geçerli 194.737, geçersiz 1.562, evet 119.817,
+  hayır 74.920; **NOT: "YURTDIŞI SEÇMEN KÜTÜĞÜNE KAYITLI SEÇMEN SAYISI 2.556.335'DİR."**).
+  **Toplamlar ulusal tutanağı tam veriyor:** 49.495.493 + 2.556.335 = **52.051.828**;
+  38.172.800 + 196.299 = **38.369.099**; 37.449.300 + 194.737 = **37.644.037**;
+  21.667.427 + 119.817 = **21.787.244**; 15.781.873 + 74.920 = **15.856.793**.
+  Uyuşmazlık: yok.
+- **`not` — sayıların kapsamı:** `kayitli` yurt dışı seçmen kütüğündeki 2.556.335 seçmeni de
+  içeriyor; bu seçmenler yalnızca gümrük kapılarında oy kullanabildiği için katılım oranı
+  buna göre okunmalıdır.
+- **`konu`:** [B] tutanaktaki ifade (5982 sayılı Kanun'la Anayasa'nın bazı maddelerinde yapılan
+  değişiklikler).
+- **`tutumlar` yazılmadı** (2007 kaydındaki gerekçeyle aynı).
+- Erişim: 2026-09-23.
+
+### 2003 Siirt seçimi — eklenmedi (Görev 12'ye devredildi)
+
+- **Bulunanlar:** [B] Resmî Gazete 12.3.2003, Cumhurbaşkanlığı tezkeresi: "Bakanlar Kurulu'nun
+  yeniden kurulması için … **Siirt Milletvekili** ve Adalet ve Kalkınma Partisi Genel Başkanı
+  Sayın **Recep Tayyip ERDOĞAN** görevlendirilmiştir." → Erdoğan'ın Siirt milletvekilliği
+  resmî olarak doğrulandı. [B] Resmî Gazete 12.3.2003 künye satırı: "**11/3/2003 Tarihli ve
+  25045 Mükerrer sayılı Resmî Gazete'de, 212 sayılı Yüksek Seçim Kurulu Kararı
+  yayımlanmıştır.**"
+- **Bulunamayanlar:** seçimin **günü/ayı**, **seçim çevresi başına sandalye sayısı** ve
+  **sonucu** hiçbir okunabilir resmî belgede bulunamadı. 11.3.2003 mükerrer Resmî Gazete
+  (`resmigazete.gov.tr/eskiler/2003/03/20030311M1.htm`) yalnızca **taranmış görüntülerden**
+  (`20030311M1-1.gif`, `20030311M1-2.gif`) oluşuyor, metin katmanı yok; YSK'nın karar arşivinde
+  `Kararlar/2003Pdf/2003-212.pdf` adresi PDF döndürmüyor; YSK'nın "Ara Seçim Arşivi" sayfası
+  yalnızca 2009 ve sonrasındaki **mahalli idareler** ara seçimlerini listeliyor.
+- Bu yüzden `2003-03-ara` kaydı **eklenmedi**. Bir sonraki turda denenecekler: 11.3.2003
+  mükerrer RG görüntülerinin OCR'ı; TBMM 22. Dönem tutanaklarında yeni Siirt milletvekillerinin
+  andiçme birleşimi; YSK'nın karar arama motoru (`ysk.gov.tr/tr/ysk-kararlari/1524`).
+- Erişim: 2026-09-23.

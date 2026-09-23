@@ -380,6 +380,14 @@ window.SANDIK = {
       sonuc: [ { parti: "akp", oy: 10808229, sandalye: 363 }, { parti: "chp92", oy: 6113352, sandalye: 178 }, { parti: "dyp", oy: 3008942, sandalye: 0 }, { parti: "mhp93", oy: 2635787, sandalye: 0 }, { ad: "Genç Parti", oy: 2285598, sandalye: 0 }, { parti: "dehap", oy: 1960660, sandalye: 0 }, { parti: "anap", oy: 1618465, sandalye: 0 }, { parti: "sp", oy: 785489, sandalye: 0 }, { parti: "dsp", oy: 384009, sandalye: 0 }, { parti: "ytp02", oy: 363869, sandalye: 0 }, { parti: "bbp", oy: 322093, sandalye: 0 }, { parti: "ip92", oy: 159843, sandalye: 0 }, { parti: "odp", oy: 106023, sandalye: 0 }, { parti: "ldp", oy: 89331, sandalye: 0 }, { ad: "Diğer", partiSayisi: 4, oy: 572842, sandalye: 0 }, { ad: "Bağımsız", oy: 314251, sandalye: 9 } ],
       not: "Seçime katılan 18 partiden yalnızca ikisi %10'luk ülke barajını aşabildi ve AK Parti ilk seçiminde tek başına iktidar oldu; sayılar il ve gümrük kapısı oylarının toplamıdır." },
 
+    // kaynak: araclar/kaynak-defteri.md#2004-03-yerel
+    { id: "2004-03-yerel", tur: "yerel", tarih: "2004-03-28",
+      olcu: "belediye-meclisi",
+      kayitli: 34213138, kullanilan: 25067950, gecerli: 23893656,
+      sonuc: [ { parti: "akp", oy: 9635145 }, { parti: "chp92", oy: 4912313 }, { parti: "mhp93", oy: 2500601 }, { parti: "dyp", oy: 2286020 }, { ad: "Sosyaldemokrat Halk Partisi", oy: 1204431 }, { parti: "sp", oy: 1111017 }, { parti: "anap", oy: 682264 }, { ad: "Genç Parti", oy: 607847 }, { parti: "dsp", oy: 484555 }, { parti: "bbp", oy: 179090 }, { parti: "ytp02", oy: 56912 }, { parti: "ip92", oy: 33770 }, { parti: "odp", oy: 29269 }, { parti: "emep", oy: 28011 }, { parti: "dp92", oy: 3742 }, { parti: "ldp", oy: 391 }, { ad: "Diğer", partiSayisi: 4, oy: 98310 }, { ad: "Bağımsız", oy: 39968 } ],
+      buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
+      not: "AK Parti'nin ilk yerel seçiminde belediye meclisi oylarının %40'ını aldığı bu seçimde 3.193 belediye başkanlığı ve 34.477 meclis üyeliği için oy verildi." },
+
     // kaynak: araclar/kaynak-defteri.md#2007-04-cb-tbmm
     { id: "2007-04-cb-tbmm", tur: "cb-tbmm", tarih: "2007-04-27",
       secilen: null, turSayisi: 1,
@@ -396,11 +404,41 @@ window.SANDIK = {
       secilen: "Abdullah Gül", turSayisi: 3,
       not: "Yeni seçilen 23. Dönem Meclisi'nde 448 üyenin katıldığı üçüncü turda Gül 339 oyla 11. Cumhurbaşkanı seçildi." },
 
+    // kaynak: araclar/kaynak-defteri.md#2007-10-referandum
+    { id: "2007-10-referandum", tur: "referandum", tarih: "2007-10-21",
+      konu: "5678 sayılı Kanunla Anayasa'da yapılan ve cumhurbaşkanının halk tarafından seçilmesini, milletvekili seçim döneminin beş yıldan dört yıla inmesini öngören değişiklikler.",
+      kayitli: 42690252, kullanilan: 28819319, gecerli: 28167661,
+      evet: 19422714, hayir: 8744947, karar: "kabul",
+      not: "Kayıtlı seçmen ve oy sayıları gümrük kapılarında kullanılan oyları da içeriyor." },
+
+    // kaynak: araclar/kaynak-defteri.md#2009-03-yerel
+    { id: "2009-03-yerel", tur: "yerel", tarih: "2009-03-29",
+      olcu: "belediye-meclisi",
+      kayitli: 39787986, kullanilan: 33447257, gecerli: 32072363,
+      sonuc: [ { parti: "akp", oy: 12237325 }, { parti: "chp92", oy: 7966710 }, { parti: "mhp93", oy: 5336695 }, { parti: "sp", oy: 1807745 }, { parti: "dtp", oy: 1687733 }, { parti: "dp07", oy: 1181074 }, { parti: "dsp", oy: 945722 }, { parti: "bbp", oy: 508055 }, { parti: "anap", oy: 202976 }, { parti: "odp", oy: 25557 }, { parti: "emep", oy: 21100 }, { parti: "ldp", oy: 2451 }, { parti: "ip92", oy: 2258 }, { parti: "bdp", oy: 203 }, { ad: "Diğer", partiSayisi: 5, oy: 103126 }, { ad: "Bağımsız", oy: 43633 } ],
+      buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
+      not: "Kayıtlı seçmen sayısı cezaevi seçmenlerini de içeriyor; 32.392 belediye meclisi üyeliği için oy verildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#2010-09-referandum
+    { id: "2010-09-referandum", tur: "referandum", tarih: "2010-09-12",
+      konu: "7 Mayıs 2010 tarihli 5982 sayılı Kanunla Türkiye Cumhuriyeti Anayasası'nın bazı maddelerinde yapılan değişiklikler.",
+      kayitli: 52051828, kullanilan: 38369099, gecerli: 37644037,
+      evet: 21787244, hayir: 15856793, karar: "kabul",
+      not: "Sayılara gümrük kapıları ve ceza infaz kurumlarında kullanılan oylar dahildir; kayıtlı seçmen sayısı yalnızca gümrük kapılarında oy kullanabilen 2.556.335 yurt dışı seçmeni de içeriyor." },
+
     // kaynak: araclar/kaynak-defteri.md#2011-06-genel
     { id: "2011-06-genel", tur: "genel", tarih: "2011-06-12", tekParti: false,
       meclis: 550, kayitli: 52806322, kullanilan: 43914948, gecerli: 42941763, baraj: 10,
       sonuc: [ { parti: "akp", oy: 21399082, sandalye: 327 }, { parti: "chp92", oy: 11155972, sandalye: 135 }, { parti: "mhp93", oy: 5585513, sandalye: 53 }, { parti: "sp", oy: 543454, sandalye: 0 }, { parti: "has", oy: 329723, sandalye: 0 }, { parti: "bbp", oy: 323251, sandalye: 0 }, { parti: "dp07", oy: 279480, sandalye: 0 }, { parti: "dsp", oy: 108089, sandalye: 0 }, { parti: "emep", oy: 32128, sandalye: 0 }, { parti: "ldp", oy: 15222, sandalye: 0 }, { ad: "Diğer", partiSayisi: 5, oy: 349932, sandalye: 0 }, { ad: "Bağımsız", oy: 2819917, sandalye: 35 } ],
       not: "Parti olarak seçime girmeyen BDP'nin desteklediği bağımsız adaylar meclise girdi ve AK Parti üst üste üçüncü kez tek başına iktidar oldu; sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2014-03-yerel
+    { id: "2014-03-yerel", tur: "yerel", tarih: "2014-03-30",
+      olcu: "belediye-meclisi",
+      kayitli: 48843157, kullanilan: 43543717, gecerli: 41527387,
+      sonuc: [ { parti: "akp", oy: 17802976 }, { parti: "chp92", oy: 10938262 }, { parti: "mhp93", oy: 7399119 }, { parti: "bdp", oy: 1729297 }, { parti: "sp", oy: 1180322 }, { parti: "hdp", oy: 881830 }, { parti: "bbp", oy: 628729 }, { parti: "dp07", oy: 287209 }, { parti: "dsp", oy: 144337 }, { parti: "ip92", oy: 100021 }, { parti: "odp", oy: 45204 }, { parti: "ldp", oy: 9122 }, { parti: "emep", oy: 489 }, { ad: "Diğer", partiSayisi: 9, oy: 330876 }, { ad: "Bağımsız", oy: 49594 } ],
+      buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
+      not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi; kayıtlı seçmen sayısı cezaevi seçmenlerini de içeriyor." },
 
     // kaynak: araclar/kaynak-defteri.md#2014-08-cb-halk
     { id: "2014-08-cb-halk", tur: "cb-halk", tarih: "2014-08-10",
