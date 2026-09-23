@@ -34,10 +34,14 @@ function dogrulaSandik(P, S) {
   });
 
   // satır düzeyi denetimler
-  function satirlariDenetle(k, satirlar, gecerli, yer) {
+  function satirlariDenetle(k, satirlar, gecerli, yer, aday) {
     let toplam = 0, hepsi = true, yuzdeler = [];
     for (const s of satirlar) {
-      if (s.parti && s.ad) hatalar.push(k.id + ": satırda hem parti hem ad (" + s.parti + ")");
+      // Cumhurbaşkanı adaylarında `ad` kişinin adıdır; partisi `parti`, ittifakı `destek` ile yazılır.
+      if (aday) {
+        if (!s.ad) hatalar.push(k.id + ": adayın adı yok" + (yer ? " (" + yer + ")" : ""));
+        if (s.parti && s.destek) hatalar.push(k.id + ": adayda hem parti hem destek (" + s.ad + ")");
+      } else if (s.parti && s.ad) hatalar.push(k.id + ": satırda hem parti hem ad (" + s.parti + ")");
       partiDenetle(s.parti, k.id);
       if (s.oy != null && s.oyYuzde != null) hatalar.push(k.id + ": aynı satırda oy ve oyYuzde");
       if (s.oy == null) hepsi = false; else toplam += s.oy;
@@ -93,7 +97,7 @@ function dogrulaSandik(P, S) {
     }
     if (k.tur === "cb-halk") (k.turlar || []).forEach((t, i) => {
       secmenDenetle(k, t, (i + 1) + ". tur");
-      satirlariDenetle(k, t.adaylar || [], t.gecerli, (i + 1) + ". tur");
+      satirlariDenetle(k, t.adaylar || [], t.gecerli, (i + 1) + ". tur", true);
     });
     if (k.tur === "ara") for (const s of k.sonuc || []) partiDenetle(s.parti, k.id);
 

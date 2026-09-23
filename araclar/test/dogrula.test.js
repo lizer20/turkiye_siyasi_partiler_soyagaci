@@ -121,3 +121,13 @@ test("tarih biçimi: ay hassasiyeti kabul, bozuk biçim hata", () => {
   T.hukumetler[0].baslangic = "1999-05";
   assert.match(hatalar(T), /hükümet tarihi gün dahil olmalı: 57/);
 });
+
+test("cb-halk adayında ad kişinin adıdır; parti ile birlikte yazılabilir", () => {
+  const S = { secimler: [{ id: "2014-08-cb-halk", tur: "cb-halk", tarih: "2014-08-10",
+    turlar: [{ tarih: "2014-08-10", kayitli: null, kullanilan: null, gecerli: 100,
+      adaylar: [{ ad: "A", parti: "akp", oy: 60 }, { ad: "B", destek: "Çatı", oy: 40 }] }],
+    secilen: "A", not: null }], hukumetler: [] };
+  assert.deepEqual(dogrulaSandik(P, S).hatalar, []);
+  S.secimler[0].turlar[0].adaylar[1] = { ad: "B", parti: "chp92", destek: "Çatı", oy: 40 };
+  assert.match(dogrulaSandik(P, S).hatalar.join("|"), /hem parti hem destek/);
+});
