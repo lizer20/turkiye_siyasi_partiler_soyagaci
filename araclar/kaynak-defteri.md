@@ -2663,3 +2663,415 @@ iki cümleydi), **Minor/kanıt #4** (1991 RP-MÇP-IDP ortak listesi hiç araşt�
 - Erişim: 2026-09-23.
 
 ---
+
+## Görev 9 — Dönem 6 (2001–2015)
+
+**Kaynak ailesi notu:** 2002–2011 genel seçimlerinde birincil kaynak TÜİK, ikinci kaynak YSK'nın
+kendi kesin sonuç yayınlarıdır (iki ayrı kurumun ayrı yayınları). 2015'in iki seçiminde birincil
+kaynak YSK'nın Örnek 96/D–E duyuruları, ikinci kaynak TÜİK Veri Portalı'nın
+*Milletvekili Genel Seçimi Sonuçları (1983-2018)* tablosudur. Hükümetlerde birincil kaynak
+**Resmî Gazete**'dir: TBMM'nin *Hükümetler, Programları ve Genel Kurul Görüşmeleri* dizisi
+**Cilt 10 ile (57. Hükümet, 2002) bitiyor** — koleksiyon öğesinin ORIGINAL paketinde
+(`/core/bundles/88774567-0d57-4e64-8a8e-bf03cfb196f7/bitstreams?size=50`) yalnızca 10 cilt var
+(`201400883-c1.pdf` … `201400892-c10.pdf`), 11. cilt yok. Bu yüzden 58–64 için ölçüt,
+plandaki ölçütün ikinci seçeneği olan **"Bakanlar Kurulu'nun Resmî Gazete'de yayımlanan atanma
+işlemi (Cumhurbaşkanlığı tezkeresi) tarihi"**dir; bu tarih 57. hükümete kadar ciltlerdeki
+kuruluş tarihiyle aynı ölçüdür (57: 28.05.1999).
+
+### 2002-11-genel
+
+- **[B] TÜİK, *Milletvekili Genel Seçimleri 1923–2011*, Tablo 24 "TÜRKİYE"** (PDF s. 111–112,
+  basılı s. 93–94, `pdftotext -table`): kayıtlı 41.407.027, kullanılan 32.768.161 (katılım %79,1),
+  geçerli oy 31.414.748, gümrük kapıları 114.035, **toplam geçerli oy 31.528.783**,
+  milletvekili sayısı 550.
+  AK PARTİ 10.808.229 (%34,3) **363**, CHP 6.113.352 (%19,4) **178**, DYP 3.008.942 (%9,5),
+  MHP 2.635.787 (%8,4), GENÇ PARTİ 2.285.598 (%7,2), DEHAP 1.960.660 (%6,2),
+  ANAP 1.618.465 (%5,1), SAADET PARTİSİ 785.489 (%2,5), DSP 384.009 (%1,2), YTP 363.869 (%1,2),
+  BBP 322.093 (%1,0), İP 159.843 (%0,5), ÖDP 106.023 (%0,3), LDP 89.331 (%0,3),
+  YP 294.909 (%0,9), BTP 150.482 (%0,5), MİLLET PARTİSİ 68.271 (%0,2), TKP 59.180 (%0,2),
+  BAĞIMSIZ 314.251 (%1,0) **9**.
+- **İkinci kaynak [B]: YSK**, `…/docs/2002MilletvekiliSecimi/gumrukdahil/gumrukdahil.pdf` ve
+  `…/turkiye/milletvekilisayisi.pdf` — her ikisi de künyesinde
+  "**09 Kasım 2002 tarih ve 883 sayılı YSK Kararı / 10 Kasım 2002 tarih ve 24932 sayılı Resmi
+  Gazete**" diyor: kayıtlı 41.407.027, kullanan 32.768.161, geçerli 31.528.783, katılma %79,14;
+  18 partinin ve bağımsızların oy sayıları **birebir** TÜİK ile aynı; sandalye: CHP 178,
+  AK PARTİ 363, BAĞIMSIZLAR 9, TÜRKİYE TOPLAMI 550. Uyuşmazlık: yok.
+- **İç tutarlılık (hesaplandı):** 18 parti + bağımsız oy toplamı = 31.528.783 (toplam geçerliye
+  tam eşit); sandalye toplamı 363+178+9 = 550 (`meclis`e tam eşit).
+- **`baraj: 10` ve `meclis: 550`** — [B] TÜİK Açıklama (PDF s. 14): "**1999, 2002, 2007 ve 2011**
+  yıllarında yapılan milletvekili seçimlerinde de 1995 yılı seçimindeki uygulamalar aynen devam
+  etmiştir." (1995 uygulaması: ülke barajlı (%10) d'Hondt, 550 milletvekili.)
+- **`tarih`: 3 Kasım 2002** — [B] TÜİK Ek-1 (PDF s. 277): "3 Kasım 2002".
+- **"Diğer" (partiSayisi 4, oy 572.842):** YP (Yurt Partisi) 294.909 + BTP (Bağımsız Türkiye
+  Partisi) 150.482 + MİLLET PARTİSİ 68.271 + TKP 59.180. Dördü de soyağacında yok ve dördünün de
+  oyu %1'in altında. Kısaltmaların açılımı [B] TÜİK "Simge ve Kısaltmalar" (PDF s. 7).
+  **GENÇ PARTİ** soyağacında yok ama oyu %7,25 olduğu için `ad:` ile ayrı satırda tutuldu.
+  **TKP** için soyağacındaki `tkp20` kullanılmadı: o kayıt 1920–1988 arası Türkiye Komünist
+  Partisi'nindir, 2002'de yarışan TKP ayrı bir tüzel kişiliktir.
+- **`not` cümlesi:** "seçime katılan 18 partiden yalnızca ikisi barajı aştı" — [B] TÜİK Tablo 1
+  (PDF s. 22): 2002 satırı "Ülke Barajlı d'Hondt Sistemi, **18** seçime katılan parti, **2**
+  Meclis'e giren parti (AK PARTİ, CHP)". "Tek başına iktidar": 363 > 550/2.
+- Erişim: 2026-09-23.
+
+### 2007-04-cb-tbmm (sonuçsuz süreç)
+
+- **[B] TBMM Tutanak Dergisi, Dönem 22, Cilt 155, 96. Birleşim (27.4.2007)**
+  (`www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d22/c155/tbmm22155096.pdf`): Tasnif Komisyonu
+  tutanağı — "Cumhurbaşkanlığı seçimi için yapılan **birinci oylamada 361 milletvekili oy
+  kullanmış**…"; **Abdullah Gül: 357**, İptal 3, Boş 1, Toplam 361. Başkan: "Bu sonuca göre,
+  Cumhurbaşkanı seçimi için Anayasa'nın 102'nci maddesinde öngörülen **üçte 2 çoğunluğu
+  sağlanamamıştır**."
+- **[B] Anayasa Mahkemesi, E. 2007/45, K. 2007/54, Karar Günü 1/5/2007**
+  (Resmî Gazete 27.6.2007, `resmigazete.gov.tr/eskiler/2007/06/20070627-17.htm`): "SONUÇ —
+  Türkiye Büyük Millet Meclisi'nin eylemli içtüzük değişikliği niteliğinde olan **27.4.2007
+  günlü, 96. birleşiminde** alınan 11. Cumhurbaşkanı'nın seçiminde gözetilmesi gereken **toplantı
+  yeter sayısı** ile ilgili kararının Anayasa'ya aykırı olduğuna ve **İPTALİNE** … 1.5.2007
+  gününde karar verildi." (Ayrıca yürürlüğü durdurma kararı: E. 2007/45, K. 2007/21,
+  RG 3.5.2007.)
+- **[B] TBMM Tutanak Dergisi, Dönem 22, Cilt 156, 101. Birleşim (6.5.2007)**
+  (`…/d22/c156/tbmm22156101.pdf`): "Anayasa Mahkemesi, … 96'ncı Birleşiminde alınan 11'inci
+  Cumhurbaşkanı seçiminde gözetilmesi gereken toplantı yeter sayısıyla ilgili kararını, eylemli
+  İç Tüzük değişikliği niteliğinde görmüş ve Anayasaya aykırı bularak iptal etmiştir."; sonra
+  "birinci yoklamada **356**, ikinci yoklamada **358** sayın milletvekili bulunmaktadır. Bu
+  yoklamada da Cumhurbaşkanı seçimi için Anayasa Mahkemesi kararında öngörülen toplantı yeter
+  sayısı, yani, **367** bulunamadığından, … Cumhurbaşkanı seçimini yapamayacağız."
+- **[B] TBMM Kararı No. 891, 3/5/2007** (RG 3.5.2007 / 26511 mükerrer): "Türkiye Büyük Millet
+  Meclisi genel seçimlerinin yenilenmesine ve seçimin **22 Temmuz 2007 Pazar** günü yapılmasına,
+  … 98 inci Birleşiminde (458) kabul oyuyla karar verilmiştir." → süreç sonuçsuz kaldı, seçim
+  yenilendi.
+- **`turSayisi: 1`** — fiilen yalnızca **bir** oylama yapıldı (27 Nisan); 6 Mayıs'taki ikinci
+  oylama toplantı yeter sayısı sağlanamadığı için hiç yapılamadı. `secilen: null`.
+- Erişim: 2026-09-23.
+
+### 2007-07-genel
+
+- **[B] TÜİK Tablo 24 "TÜRKİYE"** (aynı sayfalar): kayıtlı 42.799.303, kullanılan 36.056.293
+  (katılım %84,2), geçerli oy 34.822.907, gümrük kapıları 226.784, **toplam geçerli oy
+  35.049.691**, milletvekili sayısı 550.
+  AK PARTİ 16.327.291 (%46,6) **341**, CHP 7.317.808 (%20,9) **112**, MHP 5.001.869 (%14,3)
+  **71**, DP 1.898.873 (%5,4), GENÇ PARTİ 1.064.871 (%3,0), SAADET PARTİSİ 820.289 (%2,3),
+  BTP 182.095 (%0,5), HYP 179.010 (%0,5), İP 128.148 (%0,4), ATP 100.982 (%0,3),
+  TKP 79.258 (%0,2), ÖDP 52.055 (%0,2), LDP 35.364 (%0,1), EMEP 26.292 (%0,1),
+  BAĞIMSIZ 1.835.486 (%5,2) **26**.
+- **İkinci kaynak [B]: YSK**, `…/docs/2007MilletvekiliSecimi/gumrukdahil/gumrukdahil.pdf`
+  (30/07/2007): kayıtlı 42.799.303, kullanan 36.056.293, geçerli 35.049.691, katılma %84,25;
+  14 partinin ve bağımsızların oy sayıları **birebir** TÜİK ile aynı.
+- **Uyuşmazlık — MHP'nin sandalye sayısı (çözüldü, TÜİK yazıldı):** YSK'nın
+  `…/turkiye/milletvekilisayisi.pdf` ve `…/turkiye/cevremilletvekilisayisi.pdf` belgeleri
+  (30/07/2007) CHP 112, **MHP 70**, AK PARTİ 341, BAĞIMSIZLAR 26, **TOPLAM 549** veriyor.
+  TÜİK Tablo 21 (PDF s. 41) ise Toplam 550 / MHP 71 veriyor ve **dipnotunda nedenini yazıyor**:
+  "2007 milletvekili genel seçiminde **550 milletvekili seçilmiştir**. Ancak **İstanbul'dan
+  seçilen MHP milletvekillerinden bir milletvekilinin ölümü nedeniyle** Meclis'te bulunan
+  milletvekili sayısı 549 olmuştur." TÜİK Tablo 21'de İstanbul MHP 7, YSK'nın çevre tablosunda
+  İstanbul (01)+(02)+(03) MHP 2+2+2 = 6 — fark tam olarak o bir sandalye. Spesifikasyon §8.1
+  "sandalyelerde toplamın meclis büyüklüğüne eşitliği belirleyicidir" kuralı gereği **TÜİK'in
+  550'ye tamamlanan dağılımı** yazıldı; iki kaynak çelişmiyor, farklı anları ölçüyor.
+- **İç tutarlılık (hesaplandı):** oy toplamı = 35.049.691 (toplam geçerliye tam eşit);
+  sandalye toplamı 341+112+71+26 = 550.
+- **`baraj: 10`, `meclis: 550`** — [B] TÜİK Açıklama s. 14 (yukarıda).
+- **`tarih`: 22 Temmuz 2007** — [B] TÜİK Ek-1 + [B] TBMM Kararı 891 (RG 3.5.2007/26511 mükerrer).
+- **"Diğer" (partiSayisi 4, oy 541.345):** BTP 182.095 + HYP (Halkın Yükselişi Partisi) 179.010 +
+  ATP (Aydınlık Türkiye Partisi) 100.982 + TKP 79.258 — dördü de soyağacında yok, dördü de %1'in
+  altında. GENÇ PARTİ (%3,0) soyağacında yok ama %1'in üstünde olduğu için ayrı satırda.
+  **DP → `dp07`**: soyağacındaki kayıt "Demokrat Parti, 2007 –, DYP'nin ad değişikliği".
+- **`not` cümlesi (DTP ve BBP'nin bağımsız aday yolu):**
+  - [B] TÜİK Tablo 1 (PDF s. 22): 2007'de seçime katılan **14** parti sayılıyor — DTP ve BBP bu
+    listede **yok**; Tablo 24'ün 2007 sütununda da bu iki partinin satırları boş.
+  - [B] TBMM Tutanak Dergisi D23 C1 B4 (20.8.2007) ve B6 (28.8.2007): 23. Dönem'de
+    "**DTP Grubu**" ve "DTP Grubu Başkanvekili" var, "(AK Parti ve **DTP sıralarından** alkışlar)".
+  - İkinci kaynak: **Erol TUNCER (TESAV Başkanı), "22 Temmuz 2007 Seçimleri: Genel Bir
+    Değerlendirme"** (`dergipark.org.tr/en/download/article-file/211086`): "BBP ve DTP ise
+    **bağımsız adaylar yoluyla TBMM'ye girmeyi** amaçladıkları için, seçime girmemiştir.";
+    "DTP'nin desteklediği bağımsız adaylardan **22'si milletvekili seçildi**… Diğer 21 milletvekili
+    ise yeniden DTP'ye katılarak partinin Meclis Grubunu oluşturdu."; "Seçime katılmayan BBP'nin
+    Genel Başkanı Muhsin Yazıcıoğlu Sivas'tan, 16 BBP'li aday ise değişik illerden bağımsız aday
+    oldular."
+  - Veriye yalnızca resmî bağımsız toplamı (1.835.486 oy, 26 sandalye) yazıldı; 26 sandalyenin
+    partilere dağılımı veriye **yazılmadı**. `ittifak` alanı spesifikasyon §5.2 gereği yalnızca
+    2018+ için olduğundan kullanılmadı.
+- Erişim: 2026-09-23.
+
+### 2007-08-cb-tbmm
+
+- **[B] TBMM Tutanak Dergisi, Dönem 23, Cilt 1, 6. Birleşim (28.8.2007)**
+  (`www5.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d23/c001/tbmm23001006.pdf`): "Bir önceki birleşimde
+  yapılan ikinci oylamada sonuç alınamamıştı. Şimdi **üçüncü oylamayı** yapacağız."; Tasnif
+  Komisyonu tutanağı — "Cumhurbaşkanı seçimi için yapılan üçüncü oylamaya **448 üye** katılmış…":
+  Sabahattin Çakmakoğlu 70, **Abdullah Gül 339**, Hüseyin Tayfun İçli 13, Boş 24. Başkan:
+  "…Kayseri Milletvekili Sayın Abdullah Gül, Anayasa'nın 102'nci maddesinde üçüncü tur oylama
+  için öngörülen üye tam sayısının salt çoğunluğunu sağlamış ve **339 oyla Türkiye
+  Cumhuriyetinin 11'inci Cumhurbaşkanı seçilmiş** bulunmaktadır." Aynı birleşimin Danışma Kurulu
+  önerisi turların 20 / 24 / 28 Ağustos 2007 tarihlerini veriyor → `turSayisi: 3`.
+- **İkinci kaynak [B]: TBMM Kararı No. 898, Karar Tarihi 28/8/2007, Resmî Gazete 28.8.2007 /
+  26627 mükerrer** (`resmigazete.gov.tr/eskiler/2007/08/20070828M1-1.htm`): "Türkiye Büyük Millet
+  Meclisi Genel Kurulunun **28/8/2007 tarihli 6 ncı Birleşiminde**, Kayseri Milletvekili
+  Abdullah GÜL (**339**) oy ile Türkiye Cumhurbaşkanı seçilmiştir." Tarih, birleşim ve oy sayısı
+  birebir eşleşti. Uyuşmazlık: yok.
+- Erişim: 2026-09-23.
+
+### 2011-06-genel
+
+- **[B] TÜİK Tablo 24 "TÜRKİYE"** (aynı sayfalar): kayıtlı 52.806.322, kullanılan 43.914.948
+  (katılım %83,2), geçerli oy 42.813.896, gümrük kapıları 127.867, **toplam geçerli oy
+  42.941.763**, milletvekili sayısı 550.
+  AK PARTİ 21.399.082 (%49,8) **327**, CHP 11.155.972 (%26,0) **135**, MHP 5.585.513 (%13,0)
+  **53**, SAADET PARTİSİ 543.454 (%1,3), HAS PARTİ 329.723 (%0,8), BBP 323.251 (%0,8),
+  DP 279.480 (%0,7), HEPAR 124.415 (%0,3), DSP 108.089 (%0,3), DYP 64.607 (%0,2),
+  TKP 64.006 (%0,1), MİLLET PARTİSİ 60.716 (%0,1), MMP 36.188 (%0,1), EMEP 32.128 (%0,1),
+  LDP 15.222 (%0,0), BAĞIMSIZ 2.819.917 (%6,6) **35**.
+- **İkinci kaynak [B]: YSK**, `…/docs/2011MilletvekiliSecimi/gumrukdahil/gumrukdahil.pdf` ve
+  `…/turkiye/milletvekilisayisi.pdf` — künyeleri "**22 Haziran 2011 tarih ve 1070 sayılı YSK
+  Kararı / 23 Haziran 2011 tarih ve 27973 sayılı Resmi Gazete**": kayıtlı 52.806.322,
+  kullanan 43.914.948, geçerli 42.941.763, katılma %83,16; 15 partinin ve bağımsızların oyları
+  **birebir** TÜİK ile aynı; sandalye AK PARTİ 327, CHP 135, MHP 53, BAĞIMSIZLAR 35,
+  TÜRKİYE TOPLAMI 550. Uyuşmazlık: yok.
+- **İç tutarlılık (hesaplandı):** oy toplamı = 42.941.763; sandalye toplamı 327+135+53+35 = 550.
+- **"Diğer" (partiSayisi 5, oy 349.932):** HEPAR (Hak ve Eşitlik Partisi) 124.415 + TKP 64.006 +
+  DYP 64.607 + MİLLET PARTİSİ 60.716 + MMP (Milliyetçi ve Muhafazakâr Parti) 36.188.
+  **DYP neden "Diğer"de:** soyağacındaki `dyp` kaydı 1983–2007 arasını kapsıyor ve 2007'de
+  Demokrat Parti'ye (`dp07`) dönüştü; 2011 pusulasındaki Doğru Yol Partisi soyağacında yoktur ve
+  oyu %0,15'tir.
+- **`not` cümlesi (BDP'nin bağımsız aday yolu):** [B] TÜİK Tablo 1: 2011'de seçime katılan **15**
+  parti sayılıyor, BDP listede **yok**; [B] TÜİK/YSK: bağımsızlar 35 sandalye. İkinci kaynak —
+  **TEPAV Politika Notu N201143 (Haziran 2011), Türkmen Göksel & Yetkin Çınar, "12 Haziran 2011
+  Seçiminde Seçim Sisteminin Parlamento Yapısına Etkileri"**: "iki muhalefet partisi, CHP ile MHP
+  ve **BDP'nin desteklediği bağımsızların** yer bulabildiği mecliste, seçime katılan diğer
+  partiler … temsil olanağı bulamadılar." 35 sandalyenin partilere dağılımı veriye yazılmadı.
+- Erişim: 2026-09-23.
+
+### 2014-08-cb-halk
+
+- **[B] YSK Örnek: 416/D "Yurt içi, yurt dışı ve gümrük sandıkları dahil Cumhurbaşkanı seçim
+  sonucu"** (`…/docs/2014CB/2014CB-Kesin-416_d_Genel.xlsx`, `openpyxl` ile okundu):
+  kayıtlı seçmen **55.692.841**, oy kullanan **41.283.627**, geçerli oy **40.545.911**,
+  geçersiz 737.716, katılma oranı **%74,13**.
+  Recep Tayyip ERDOĞAN 21.000.143 (%51,79), Ekmeleddin Mehmet İHSANOĞLU 15.587.720 (%38,44),
+  Selahattin DEMİRTAŞ 3.958.048 (%9,76); GENEL TOPLAM 40.545.911.
+  **İç tutarlılık (hesaplandı):** 21.000.143 + 15.587.720 + 3.958.048 = 40.545.911, tam eşit.
+- **İkinci kaynak [B]: YSK Kararı 2014/3719, 15/08/2014**
+  (`…/docs/Kararlar/2014Pdf/2014-3719.pdf`): "10 Ağustos 2014 Pazar günü yapılan Cumhurbaşkanı
+  Seçimi kesin sonuçlarının tespitine … **geçerli oyların salt çoğunluğunu alan Recep Tayyip
+  ERDOĞAN'ın 12. Türkiye Cumhurbaşkanı seçildiğinin tespitine**"; aynı karar 416/A-B-C-D
+  cetvellerinin içeriğini madde madde tarif ediyor. Ayrıca **YSK Kararı 2014/3227 (10/7/2014,
+  RG 11.7.2014/29054)**: kesin aday listesi — İhsanoğlu, Erdoğan, Demirtaş (üç aday).
+- **Tek tur:** ikinci oylama 24 Ağustos 2014'e hazırlanmıştı ([B] YSK 2014/3227: "ilk oylamada
+  geçerli oyların salt çoğunluğu sağlanamadığı takdirde ikinci oylaması 24 Ağustos 2014") ama
+  salt çoğunluk ilk turda sağlandığı için yapılmadı → `turlar` dizisinde tek öğe.
+- **Adayların parti/destek bilgisi (iki kaynak):**
+  - [B] **YSK Kararı 2014/3579 (7/8/2014)**: AK Parti Genel Başkan Yardımcısı'nın dilekçesinde
+    "partilerinin pankartın sahibi adayı desteklemediği, **Cumhurbaşkanı adayı Başbakan Recep
+    Tayyip ERDOĞAN'ı desteklediğinin** her türlü izahtan vareste olduğu"; İhsanoğlu "**rakip
+    partilerin adayı**" olarak anılıyor. → Erdoğan = AK Parti adayı.
+  - İkinci kaynak (akademik): **Selçuk İletişim**, "2014 Cumhurbaşkanlığı Seçimindeki
+    Cumhurbaşkanı Adaylarının Karikatürlere Yansıması"
+    (`dergipark.org.tr/tr/download/article-file/178268`): "…tin Demirtaş, **MHP ve CHP'nin ortak
+    adayları ise, Ekmeleddin İhsanoğlu** olmuştur"; İngilizce özet: "…Erdoğan **for the Ak Party**,
+    Selahattin Demirtaş **for the HDP**, Ekmeleddin İhsanoğlu…"
+  - Üçüncü kaynak (akademik): **Bekir Berat Özipek, "Türkiye Siyasetinde 2014 Cumhurbaşkanlığı
+    Seçimi"** (`dergipark.org.tr/en/download/article-file/790586`): "…İhsanoğlu ve üçüncüsü de
+    **HDP adayı Selahattin Demirtaş**'tı."
+  - Veriye: Erdoğan `parti:"akp"`, Demirtaş `parti:"hdp"`, İhsanoğlu
+    `destek:"CHP ve MHP'nin ortak adayı"`.
+- Erişim: 2026-09-23.
+
+### 2015-06-genel
+
+- **[B] YSK, "Örnek: 96/D — Yurt içi, yurt dışı ve gümrük sandıkları dahil milletvekili genel
+  seçimi sonucu"** (`…/docs/Milletvekili/7Haziran2015/KesinSecimSonuclari/ResmiGazete/D.pdf`,
+  18/06/2015): kayıtlı **56.608.817**, oy kullanan **47.507.467**, geçerli **46.163.243**,
+  geçersiz 1.344.224, katılma **%83,92**.
+  AK PARTİ 18.867.411 (%40,87), CHP 11.518.139 (%24,95), MHP 7.520.006 (%16,29),
+  HDP 6.058.489 (%13,12), SAADET PARTİSİ 949.178 (%2,06), BAĞIMSIZLAR 488.226 (%1,06),
+  VATAN PARTİSİ 161.674 (%0,35), BTP 96.475 (%0,21), DSP 85.810 (%0,19), DP 75.784 (%0,16),
+  TOPLUMSAL UZLAŞMA REFORM VE KALKINMA PARTİSİ 72.701 (%0,16), HALKIN KURTULUŞ PARTİSİ
+  60.396 (%0,13), HAK VE ÖZGÜRLÜKLER PARTİSİ 58.716 (%0,13), DYP 28.852 (%0,06),
+  ANADOLU PARTİSİ 27.688 (%0,06), LDP 26.500 (%0,06), MERKEZ PARTİ 20.945 (%0,05),
+  MİLLET PARTİSİ 17.473 (%0,04), KOMÜNİST PARTİ 13.780 (%0,03), YURT PARTİSİ 9.289 (%0,02),
+  HAK VE ADALET PARTİSİ 5.711 (%0,01); GENEL TOPLAM 46.163.243.
+- **[B] YSK "Örnek: 96/E"** (`…/ResmiGazete/E.pdf`): MHP **80**, HDP **80**, CHP **132**,
+  AK PARTİ **258**, BAĞIMSIZLAR **0**, TÜRKİYE TOPLAMI **550**.
+- **İkinci kaynak: TÜİK Veri Portalı, "Milletvekili Genel Seçimi Sonuçları (1983-2018)"**
+  (`veriportali.tuik.gov.tr/api/tr/data/downloads?t=i&p=B%2B7BcTpVqmcAfR87BdvmFXicKhEH5TYNgOO…`,
+  sayfa `42_t4`, `xlrd` ile okundu; tablonun kaynağı "Yüksek Seçim Kurulu"):
+  7.6.2015 sütunu — kayıtlı 56.608.817, oy kullanan 47.507.467, katılım %83,9, geçerli
+  (yurt içi) 45.121.773, yurt dışı/gümrük 1.041.470, **toplam geçerli 46.163.243**,
+  milletvekili 550; AK PARTİ 18.867.411 / C 258, CHP 11.518.139 / C 132, MHP 7.520.006 / C 80,
+  HDP 6.058.489 / C 80, SAADET 949.178, VATAN 161.674, BTP 96.475, DSP 85.810, DP 75.784,
+  TURK Parti 72.701, HKP 60.396, HAK-PAR 58.716, DYP 28.852, ANADOLU 27.688, LDP 26.500,
+  MERKEZ 20.945, MİLLET P. 17.473, KOMÜNİST P. 13.780, YURT P. 9.289, HAK VE ADALET P. 5.711,
+  BAĞIMSIZLAR 488.226. **21 satırın tamamı birebir** eşleşti. Uyuşmazlık: yok.
+- **İç tutarlılık (hesaplandı):** oy toplamı = 46.163.243; sandalye toplamı 258+132+80+80 = 550.
+- **"Diğer" (partiSayisi 10, oy 384.338):** DYP 28.852 + BTP 96.475 + Hak ve Özgürlükler P.
+  58.716 + Komünist Parti 13.780 + Millet Partisi 17.473 + Hak ve Adalet Partisi 5.711 +
+  Merkez Parti 20.945 + Toplumsal Uzlaşma Reform ve Kalkınma Partisi 72.701 + Halkın Kurtuluş
+  Partisi 60.396 + Yurt Partisi 9.289 — onu da soyağacında yok ve onunun da oyu %1'in altında.
+- **`not` cümlesi:** HDP'nin **parti olarak** girip barajı aşması [B] YSK 96/D–E ile
+  (parti satırı + 80 sandalye) doğrudan kanıtlı; "hiçbir parti tek başına hükümet kuracak
+  çoğunluğu sağlayamadı" — AK PARTİ 258 < 276 ([B] YSK 96/E) ve ikinci kaynak Demirkol (2023),
+  s. 374: "1961-65, 1973-80, 1991-2002 ve **2015 Haziran-2015 Kasım genel seçimleri arası
+  dönemde hiçbir parti tek başına mecliste hükümet** [kuracak çoğunluğu elde edememiştir]".
+- **`baraj: 10`, `meclis: 550`** — [B] YSK 96/E (TÜRKİYE TOPLAMI 550) + [B] TÜİK xls
+  ("Milletvekili sayısı 550"); %10'luk ülke barajı 2839 sayılı Kanun'la 1983'ten beri
+  yürürlüktedir ([B] TÜİK Açıklama s. 13–14) ve 2015'te de uygulanmıştır — [B] YSK 96/D–E'de
+  %10'un altında kalan bütün partiler sandalyesizdir.
+- Erişim: 2026-09-23.
+
+### 2015-11-genel
+
+- **[B] YSK, "Örnek: 96/D"** (`…/docs/Milletvekili/1Kasim2015/KesinSecimSonuclari/96-D.pdf`,
+  11/11/2015): kayıtlı **56.949.009**, oy kullanan **48.537.695**, geçerli **47.840.231**,
+  geçersiz 697.464, katılma **%85,23**.
+  AK PARTİ 23.681.926 (%49,50), CHP 12.111.812 (%25,32), MHP 5.694.136 (%11,90),
+  HDP 5.148.085 (%10,76), SAADET PARTİSİ 325.978 (%0,68), BBP 253.204 (%0,53),
+  VATAN PARTİSİ 118.803 (%0,25), HAK VE ÖZGÜRLÜKLER PARTİSİ 108.583 (%0,23),
+  HALKIN KURTULUŞ PARTİSİ 83.057 (%0,17), DEMOKRAT PARTİ 69.319 (%0,14),
+  KOMÜNİST PARTİ 52.527 (%0,11), BAĞIMSIZLAR 51.038 (%0,11), BTP 49.297 (%0,10),
+  DSP 31.805 (%0,07), LDP 26.816 (%0,06), MİLLET PARTİSİ 19.714 (%0,04), DYP 14.131 (%0,03);
+  GENEL TOPLAM 47.840.231.
+- **[B] YSK "Örnek: 96/E"** (`…/96-E.pdf`): CHP **134**, MHP **40**, HDP **59**,
+  AK PARTİ **317**, BAĞIMSIZLAR **0**, TÜRKİYE TOPLAMI **550**.
+- **İkinci kaynak: TÜİK Veri Portalı "Milletvekili Genel Seçimi Sonuçları (1983-2018)"**,
+  1.11.2015 sütunu: kayıtlı 56.949.009, oy kullanan 48.537.695, katılım %85,2, geçerli
+  (yurt içi) 46.555.267, yurt dışı/gümrük 1.284.964, **toplam geçerli 47.840.231**,
+  milletvekili 550; AK PARTİ 23.681.926 / C 317, CHP 12.111.812 / C 134, HDP 5.148.085 / C 59,
+  MHP 5.694.136 / C 40, SAADET 325.978, BBP 253.204, VATAN 118.803, HAK-PAR 108.583,
+  HKP 83.057, DP 69.319, KOMÜNİST P. 52.527, BTP 49.297, DSP 31.805, LDP 26.816,
+  MİLLET P. 19.714, DYP 14.131, BAĞIMSIZLAR 51.038. **17 satırın tamamı birebir** eşleşti.
+  Uyuşmazlık: yok.
+- **İç tutarlılık (hesaplandı):** oy toplamı = 47.840.231; sandalye toplamı 317+134+59+40 = 550.
+- **"Diğer" (partiSayisi 6, oy 327.309):** Millet Partisi 19.714 + Hak ve Özgürlükler Partisi
+  108.583 + BTP 49.297 + Halkın Kurtuluş Partisi 83.057 + Komünist Parti 52.527 + DYP 14.131.
+- **`not` cümlesi (yenileme seçimi):** [B] Resmî Gazete 28.8.2015 / 29459 4. mükerrer, Başbakanlık
+  tezkeresi: "Türkiye Cumhuriyeti **Anayasasının 116 ncı maddesi uyarınca seçimlerin
+  yenilenmesine** dair ilgi (a) kararınızdan sonra, … **geçici Bakanlar Kurulunu** kurmak üzere
+  Başbakan olarak atanmış bulunmaktayım." + [B] YSK 96/E (AK PARTİ 317 > 276 → tek başına
+  iktidar).
+- Erişim: 2026-09-23.
+
+### Hükümetler 58-64
+
+**Ölçüt (dönem 6):** `baslangic` = Bakanlar Kurulu'nun atanmasına dair **Cumhurbaşkanlığı
+tezkeresinin tarihi** (Resmî Gazete'de yayımlanan "Bakanlar Kurulunun Atanmasına Dair İşlem");
+`bitis` = bir sonraki hükümetin aynı ölçüyle bulunan başlangıcı; `partiler` ve `tip` = aynı
+Resmî Gazete metnindeki Bakanlar Kurulu listesi ve tezkere başlıkları; `bitisNedeni` = Resmî
+Gazete'deki tezkere/TBMM kararı metinleri. 57. Hükümet'in bitişi (18.11.2002) ile 58'in
+başlangıcı **tam çakışıyor**, zincir boşluksuz.
+
+| No | Başbakan | RG tarihi/sayısı | Kaynak adresi |
+|---|---|---|---|
+| 58 | Abdullah Gül | 19.11.2002 / 24941 | `resmigazete.gov.tr/eskiler/2002/11/20021119.htm` |
+| 59 | R. Tayyip Erdoğan | 14.3.2003 / 25048 mükerrer | `…/2003/03/20030314M1.htm` |
+| 60 | R. Tayyip Erdoğan | 29.8.2007 / 26628 mükerrer | `…/2007/08/20070829M1-1.htm` |
+| 61 | R. Tayyip Erdoğan | 6.7.2011 / 27986 mükerrer | `…/2011/07/20110706M1-1.htm` |
+| 62 | Ahmet Davutoğlu | 29.8.2014 mükerrer | `…/2014/08/20140829M1-1.htm` |
+| 63 | Ahmet Davutoğlu | 28.8.2015 / 29459 4. mükerrer | `…/2015/08/20150828M4-1.htm` |
+| 64 | Ahmet Davutoğlu | 24.11.2015 mükerrer | `…/2015/11/20151124M1-1.htm` |
+| (65) | Binali Yıldırım | 24.5.2016 / 29721 mükerrer | `…/2016/05/20160524M1-1.pdf` (64'ün bitişi) |
+
+**[B] alıntılar (Resmî Gazete):**
+- **58 — başlangıç 18.11.2002:** Cumhurbaşkanlığı tezkeresi "**18 Kasım 2002**
+  B.01.0.KKB.01-08-3-2002-779 … Bakanlar Kurulu'nun **Kayseri Milletvekili Abdullah GÜL**
+  tarafından kurulması ilgi (a) yazımızla uygun görülmüştü. İlgi (b) yazınızla yapmış olduğunuz
+  öneri uygun bulunarak … onaylanmıştır." Bakanlar Kurulu listesinde başka parti etiketi yok.
+- **58 — bitiş nedeni `istifa`:** RG 12.3.2003, Başbakanlık tezkeresi (11 Mart 2003): "Yeni bir
+  hükümet kurulmasına imkan sağlamak için, başkanlığımda kurulmuş bulunan **58. Hükümetin
+  istifasının kabulünü** saygılarımla arz ederim. Abdullah GÜL"; Cumhurbaşkanlığı: "Bakanlar
+  Kurulu'nun **istifası kabul edilmiştir**… yeni Hükümet kuruluncaya kadar, göreve devam
+  edilmesini rica ederim." Aynı gün: "Bakanlar Kurulu'nun yeniden kurulması için … **Siirt
+  Milletvekili ve Adalet ve Kalkınma Partisi Genel Başkanı Sayın Recep Tayyip ERDOĞAN
+  görevlendirilmiştir**." (Erdoğan'ın Siirt milletvekilliği 9 Mart 2003 ara seçimindendir.)
+- **59 — başlangıç 14.3.2003:** "T.C. BAŞBAKANLIK … **14 Mart 2003** … Recep Tayyip ERDOĞAN
+  Başbakan — BAKANLAR KURULU LİSTESİ"; Cumhurbaşkanlığı tezkeresi aynı gün.
+- **59 — bitiş nedeni `erken-secim`:** [B] **TBMM Kararı 891 (3/5/2007, RG 3.5.2007/26511
+  mükerrer)**: "Türkiye Büyük Millet Meclisi genel seçimlerinin **yenilenmesine** ve seçimin
+  22 Temmuz 2007 Pazar günü yapılmasına … karar verilmiştir."
+- **60 — başlangıç 29.8.2007:** "29 Ağustos 2007 … İlgi yazınızla **yeniden kurulması** için
+  görevlendirildiğim Bakanlar Kurulunda… Recep Tayyip ERDOĞAN Başbakan"; Cumhurbaşkanlığı:
+  "Bakanlar Kurulu'nun **İstanbul Milletvekili ve Adalet ve Kalkınma Partisi Genel Başkanı**
+  Recep Tayyip ERDOĞAN tarafından kurulması…" Liste tek parti (AK Parti).
+- **60 — bitiş nedeni `secim`:** 61'in başlangıcı 6.7.2011, 12 Haziran 2011 genel seçiminin
+  ardından. 2011 seçimi için TBMM'nin bir **yenileme kararı yoktur**: Resmî Gazete'de 2010–2011
+  taramasında 891 sayılı karara benzer bir "seçimlerin yenilenmesine dair karar" bulunmadı ve
+  2007-10-referandumuyla milletvekili seçimleri dört yılda bire indirilmişti (22.7.2007 → yaklaşık
+  dört yıl sonra 12.6.2011) → olağan takvim, `secim`.
+- **61 — başlangıç 6.7.2011:** "B.02.0.PPG.0.12-300-01-7009 **6 Temmuz 2011** … Recep Tayyip
+  ERDOĞAN Başbakan — BAKANLAR KURULU LİSTESİ" (26 üyenin tamamı milletvekili); mükerrer RG'nin
+  kapağı: "**İstanbul Milletvekili ve Adalet ve Kalkınma Partisi Genel Başkanı** Recep Tayyip
+  ERDOĞAN Başkanlığında Kurulan Bakanlar Kurulunun Atanmasına Dair Tezkere".
+- **61 — bitiş nedeni `cumhurbaskani-secimi`:** [B] YSK Kararı 2014/3719: Erdoğan 10 Ağustos
+  2014'te 12. Cumhurbaşkanı seçildi; 62. Hükümet 29 Ağustos 2014'te kuruldu. İkinci kaynak:
+  Demirkol (2023), s. 374: "**Erdoğan'ın Cumhurbaşkanı seçilmesi ile AK Parti liderliğine geçen
+  Ahmet Davutoğlu 62. Hükümeti kurmuştur**."
+- **62 — başlangıç 29.8.2014:** "T.C. BAŞBAKANLIK **29 Ağustos 2014** … Ahmet DAVUTOĞLU
+  Başbakan — BAKANLAR KURULU LİSTESİ" (26 üye; mükerrer RG kapağı "…Adalet ve Kalkınma Partisi
+  Genel Başkanı Ahmet DAVUTOĞLU Başkanlığında Kurulan Bakanlar Kurulu").
+- **62 — bitiş nedeni `erken-secim`:** [B] RG 28.8.2015/29459 4. mükerrer, Başbakanlık tezkeresi:
+  "Türkiye Cumhuriyeti **Anayasasının 116 ncı maddesi uyarınca seçimlerin yenilenmesine** dair
+  ilgi (a) kararınızdan sonra, ilgi (b) yazınız ile **geçici Bakanlar Kurulunu** kurmak üzere
+  Başbakan olarak atanmış bulunmaktayım." İkinci kaynak: Demirkol (2023), s. 374: "**2015
+  Haziran-2015 Kasım genel seçimleri arası dönemde hiçbir parti tek başına mecliste hükümet**
+  [kuracak çoğunluğu elde edememiştir]". (62. Hükümet'in istifasına dair ayrı bir tezkere Resmî
+  Gazete'de yayımlanmamıştır — Temmuz–Ağustos 2015 tarandı.)
+- **63 — başlangıç 28.8.2015, `tip: koalisyon`, `partiler: [akp, hdp]`:**
+  [B] RG 28.8.2015/29459 4. mükerrer, **"GEÇİCİ BAKANLAR KURULUNUN ATANMASINA DAİR İŞLEM"**:
+  "Anayasanın **114 üncü maddesi** uyarınca; **Adalet, İçişleri ve Ulaştırma, Denizcilik ve
+  Haberleşme Bakanları bağımsızlardan** olmak üzere, geçici Bakanlar Kuruluna **siyasi parti
+  gruplarından oranlarına göre alınacak üye sayıları**, Türkiye Büyük Millet Meclisi Başkanı
+  tarafından tespit edilerek şahsıma bildirilmiştir. Bu çerçevede, geçici Bakanlar Kurulu üyeliği
+  için **partililere Bakanlık teklif edilmiş**; bu teklifi **kabul eden partililerden** ve teklif
+  edilen Bakanlığı **kabul etmeyen partililer yerine bağımsızlardan** olmak üzere … üyeler
+  belirlenmiştir." → kabinede birden fazla parti var (spesifikasyon §5.8 ölçütü: `koalisyon`).
+  Kabine başkanı [B] RG kapağına göre "Konya Milletvekili ve **Adalet ve Kalkınma Partisi Genel
+  Başkanı** Ahmet DAVUTOĞLU" → AK Parti.
+  **Hangi partiler bakan verdi:** ikinci kaynak **Demirkol (2023), s. 381**: "2015 yılında
+  kurulan seçim hükümetinde de **muhalefetteki CHP ve MHP 63. Hükümete bakan vermeyi reddettiği**
+  için atanmış bakan oranı %53,6 olmuştur." 25. Dönem TBMM'sinde grubu olan partiler [B] YSK
+  96/E'ye göre AK PARTİ, CHP, MHP ve HDP'dir; CHP ile MHP bakan vermediğine göre AK Parti dışında
+  bakan veren tek grup **HDP**'dir. Listede AK Parti dışından iki milletvekili bakan vardır:
+  **Kocaeli Milletvekili Ali Haydar KONCA** (Avrupa Birliği Bakanı) ve **İzmir Milletvekili
+  Müslüm DOĞAN** (Kalkınma Bakanı); [B] YSK "25. Dönem Milletvekili Genel Seçimi — Partilerin
+  Kazandığı Milletvekili Sayıları" (`…/7Haziran2015/2015-MV_dagilimlari.pdf`) Kocaeli'de HDP 1,
+  İzmir-1 ve İzmir-2'de HDP 1'er milletvekili gösteriyor.
+  **Sınırlılık:** bu iki bakanın HDP'li olduğunu *adıyla* söyleyen bir [B] belge bulunamadı;
+  `partiler: ["akp","hdp"]` yukarıdaki iki bağımsız kaynağın (RG metni + Demirkol) kapsayıcı
+  çıkarımına dayanıyor. Haber kaynakları kullanılmadı.
+- **63 — bitiş nedeni `erken-secim`:** 1 Kasım 2015 yenileme seçimi yapıldı ([B] YSK 96/D–E) ve
+  64. Hükümet 24 Kasım 2015'te kuruldu. Demirkol (2023) 63'ü "**2015 yılında kurulan seçim
+  hükümeti**" diye anıyor (s. 375, 381).
+- **64 — başlangıç 24.11.2015:** [B] RG 24.11.2015 mükerrer: "T.C. BAŞBAKANLIK **24 Kasım
+  2015** … Ahmet DAVUTOĞLU Başbakan — BAKANLAR KURULU LİSTESİ" (27 üyenin tamamı milletvekili,
+  mükerrer kapağı "…Adalet ve Kalkınma Partisi Genel Başkanı Ahmet DAVUTOĞLU"). `tip: tek-parti`
+  ([B] YSK 96/E: AK Parti 317/550 çoğunluk).
+- **64 — bitiş 24.5.2016, `bitisNedeni: null`:** [B] RG 24.5.2016/29721 mükerrer, "**İzmir
+  Milletvekili ve Adalet ve Kalkınma Partisi Genel Başkanı Binali YILDIRIM** Başkanlığında
+  Kurulan Bakanlar Kurulunun Atanmasına Dair Tezkere" → 65. hükümetin kuruluşu. 64. Hükümet'in
+  **istifasına dair bir tezkere Resmî Gazete'de yayımlanmamıştır** (Mayıs 2016'nın tamamı
+  tarandı) → bitiş nedeni doğrulanamadı, `null` bırakıldı (dönem 7'ye devredildi).
+
+**`tip` gerekçeleri (kabine bileşimi + meclis çoğunluğu):** 58–62 ve 64'te Bakanlar Kurulu
+listelerinde tek parti (AK Parti) var ve AK Parti'nin meclis çoğunluğu [B] seçim kayıtlarından
+geliyor (2002: 363/550, 2007: 341/550, 2011: 327/550, 2015 Kasım: 317/550) → `tek-parti`.
+63'te kabine çok partili → `koalisyon`.
+
+**İkinci kaynak (nitel alanlar, akademik):** Özhan DEMİRKOL, "1923'ten 2018'e Türkiye'de Hükümet
+ve Bakanlıklar", *Fiscaoeconomia* 7(1), 2023, s. 365-390
+(`dergipark.org.tr/en/download/article-file/2660114`): "**2002 yılında Abdullah Gül tarafından
+kurulan 58. Hükümet**, Adalet ve Kalkınma Partisi (AK Parti) lideri Recep Tayyip Erdoğan'ın
+**milletvekili olarak seçilmesi sonrası yerini Erdoğan liderliğindeki 59. Hükümete bırakmıştır**.
+Erdoğan'ın Cumhurbaşkanı seçilmesi ile AK Parti liderliğine geçen **Ahmet Davutoğlu 62. Hükümeti
+kurmuştur**." (s. 374); "En uzun süre görev yapan hükümet **1.629 gün ile 1. Erdoğan hükümeti
+(59. hükümet)**" (s. 375 — 14.3.2003'ten 29.8.2007'ye tam 1.629 gün vardır; hesaplandı,
+tarihlerin bağımsız doğrulaması); "2015 yılında kurulan **seçim hükümetinin (63. Hükümet)**"
+(s. 375).
+- Erişim: 2026-09-23.
+
+**Araç uyarısı — `cb-halk` adaylarında `parti` alanı kullanılamadı:** spesifikasyon §5.5 aday
+satırını `{ad:"…", parti:"akp", oy:…}` diye tanımlıyor ve `sandik-mantik.js` de `a.parti`
+varsa soyağacı bağı, yoksa `a.destek` metnini çiziyor. Ama `araclar/dogrula.js` (satır 40) aday
+satırlarını genel seçim `sonuc` satırlarıyla aynı işlevde denetlediği için `parti` ile `ad`ı aynı
+satırda görünce **hata** veriyor ("satırda hem parti hem ad"). Bu görevde yalnızca `veri/sandik.js`
+ve bu defter değiştirilebildiğinden, üç adayın tamamı `destek:` ile yazıldı ("AK Parti",
+"CHP ve MHP'nin ortak adayı", "HDP"); böylece `dogrula.js` "hata yok" diyor ama Erdoğan ve
+Demirtaş satırlarında soyağacı bağı (ve `cb-halk` kartının parti rengi) oluşmuyor. Çözüm
+`dogrula.js`'te tek satırlık bir düzeltmedir (aday satırlarını bu denetimden muaf tutmak) ve
+ayrı bir göreve bırakıldı.

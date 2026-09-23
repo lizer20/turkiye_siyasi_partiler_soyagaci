@@ -370,7 +370,56 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2000-05-cb-tbmm
     { id: "2000-05-cb-tbmm", tur: "cb-tbmm", tarih: "2000-05-05",
       secilen: "Ahmet Necdet Sezer", turSayisi: 3,
-      not: "Anayasa Mahkemesi Başkanı olan Sezer, 533 üyenin katıldığı üçüncü turda 330 oyla 10. Cumhurbaşkanı seçildi; andiçme töreni 16 Mayıs 2000'de yapıldı." }
+      not: "Anayasa Mahkemesi Başkanı olan Sezer, 533 üyenin katıldığı üçüncü turda 330 oyla 10. Cumhurbaşkanı seçildi; andiçme töreni 16 Mayıs 2000'de yapıldı." },
+
+    // --- dönem 6 (2001 – 2015) ---
+
+    // kaynak: araclar/kaynak-defteri.md#2002-11-genel
+    { id: "2002-11-genel", tur: "genel", tarih: "2002-11-03", tekParti: false,
+      meclis: 550, kayitli: 41407027, kullanilan: 32768161, gecerli: 31528783, baraj: 10,
+      sonuc: [ { parti: "akp", oy: 10808229, sandalye: 363 }, { parti: "chp92", oy: 6113352, sandalye: 178 }, { parti: "dyp", oy: 3008942, sandalye: 0 }, { parti: "mhp93", oy: 2635787, sandalye: 0 }, { ad: "Genç Parti", oy: 2285598, sandalye: 0 }, { parti: "dehap", oy: 1960660, sandalye: 0 }, { parti: "anap", oy: 1618465, sandalye: 0 }, { parti: "sp", oy: 785489, sandalye: 0 }, { parti: "dsp", oy: 384009, sandalye: 0 }, { parti: "ytp02", oy: 363869, sandalye: 0 }, { parti: "bbp", oy: 322093, sandalye: 0 }, { parti: "ip92", oy: 159843, sandalye: 0 }, { parti: "odp", oy: 106023, sandalye: 0 }, { parti: "ldp", oy: 89331, sandalye: 0 }, { ad: "Diğer", partiSayisi: 4, oy: 572842, sandalye: 0 }, { ad: "Bağımsız", oy: 314251, sandalye: 9 } ],
+      not: "Seçime katılan 18 partiden yalnızca ikisi %10'luk ülke barajını aşabildi ve AK Parti ilk seçiminde tek başına iktidar oldu; sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2007-04-cb-tbmm
+    { id: "2007-04-cb-tbmm", tur: "cb-tbmm", tarih: "2007-04-27",
+      secilen: null, turSayisi: 1,
+      not: "361 üyenin katıldığı ilk turda Abdullah Gül 357 oy aldı ama Anayasa Mahkemesi 1 Mayıs 2007'de bu birleşimin toplantı yeter sayısı kararını iptal edince 6 Mayıs'ta 367 nisabı sağlanamadı ve süreç sonuçsuz kaldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#2007-07-genel
+    { id: "2007-07-genel", tur: "genel", tarih: "2007-07-22", tekParti: false,
+      meclis: 550, kayitli: 42799303, kullanilan: 36056293, gecerli: 35049691, baraj: 10,
+      sonuc: [ { parti: "akp", oy: 16327291, sandalye: 341 }, { parti: "chp92", oy: 7317808, sandalye: 112 }, { parti: "mhp93", oy: 5001869, sandalye: 71 }, { parti: "dp07", oy: 1898873, sandalye: 0 }, { ad: "Genç Parti", oy: 1064871, sandalye: 0 }, { parti: "sp", oy: 820289, sandalye: 0 }, { parti: "ip92", oy: 128148, sandalye: 0 }, { parti: "odp", oy: 52055, sandalye: 0 }, { parti: "ldp", oy: 35364, sandalye: 0 }, { parti: "emep", oy: 26292, sandalye: 0 }, { ad: "Diğer", partiSayisi: 4, oy: 541345, sandalye: 0 }, { ad: "Bağımsız", oy: 1835486, sandalye: 26 } ],
+      not: "891 sayılı TBMM kararıyla 22 Temmuz 2007'ye alınan bu yenileme seçimine DTP ile BBP parti olarak girmeyip destekledikleri bağımsız adaylarla meclise girdi; sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2007-08-cb-tbmm
+    { id: "2007-08-cb-tbmm", tur: "cb-tbmm", tarih: "2007-08-28",
+      secilen: "Abdullah Gül", turSayisi: 3,
+      not: "Yeni seçilen 23. Dönem Meclisi'nde 448 üyenin katıldığı üçüncü turda Gül 339 oyla 11. Cumhurbaşkanı seçildi." },
+
+    // kaynak: araclar/kaynak-defteri.md#2011-06-genel
+    { id: "2011-06-genel", tur: "genel", tarih: "2011-06-12", tekParti: false,
+      meclis: 550, kayitli: 52806322, kullanilan: 43914948, gecerli: 42941763, baraj: 10,
+      sonuc: [ { parti: "akp", oy: 21399082, sandalye: 327 }, { parti: "chp92", oy: 11155972, sandalye: 135 }, { parti: "mhp93", oy: 5585513, sandalye: 53 }, { parti: "sp", oy: 543454, sandalye: 0 }, { parti: "has", oy: 329723, sandalye: 0 }, { parti: "bbp", oy: 323251, sandalye: 0 }, { parti: "dp07", oy: 279480, sandalye: 0 }, { parti: "dsp", oy: 108089, sandalye: 0 }, { parti: "emep", oy: 32128, sandalye: 0 }, { parti: "ldp", oy: 15222, sandalye: 0 }, { ad: "Diğer", partiSayisi: 5, oy: 349932, sandalye: 0 }, { ad: "Bağımsız", oy: 2819917, sandalye: 35 } ],
+      not: "Parti olarak seçime girmeyen BDP'nin desteklediği bağımsız adaylar meclise girdi ve AK Parti üst üste üçüncü kez tek başına iktidar oldu; sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2014-08-cb-halk
+    { id: "2014-08-cb-halk", tur: "cb-halk", tarih: "2014-08-10",
+      turlar: [ { tarih: "2014-08-10", kayitli: 55692841, kullanilan: 41283627, gecerli: 40545911,
+        adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti", oy: 21000143 }, { ad: "Ekmeleddin Mehmet İhsanoğlu", destek: "CHP ve MHP'nin ortak adayı", oy: 15587720 }, { ad: "Selahattin Demirtaş", destek: "HDP", oy: 3958048 } ] } ],
+      secilen: "Recep Tayyip Erdoğan",
+      not: "Cumhurbaşkanının ilk kez halk tarafından seçildiği bu seçimde Erdoğan geçerli oyların salt çoğunluğunu ilk turda aldığı için 24 Ağustos'a hazırlanan ikinci tura gerek kalmadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#2015-06-genel
+    { id: "2015-06-genel", tur: "genel", tarih: "2015-06-07", tekParti: false,
+      meclis: 550, kayitli: 56608817, kullanilan: 47507467, gecerli: 46163243, baraj: 10,
+      sonuc: [ { parti: "akp", oy: 18867411, sandalye: 258 }, { parti: "chp92", oy: 11518139, sandalye: 132 }, { parti: "mhp93", oy: 7520006, sandalye: 80 }, { parti: "hdp", oy: 6058489, sandalye: 80 }, { parti: "sp", oy: 949178, sandalye: 0 }, { parti: "vatan", oy: 161674, sandalye: 0 }, { parti: "dsp", oy: 85810, sandalye: 0 }, { parti: "dp07", oy: 75784, sandalye: 0 }, { parti: "anadolu", oy: 27688, sandalye: 0 }, { parti: "ldp", oy: 26500, sandalye: 0 }, { ad: "Diğer", partiSayisi: 10, oy: 384338, sandalye: 0 }, { ad: "Bağımsız", oy: 488226, sandalye: 0 } ],
+      not: "HDP'nin ilk kez parti olarak girip barajı aştığı bu seçimde hiçbir parti tek başına hükümet kuracak çoğunluğu sağlayamadı; sayılar yurt içi, yurt dışı ve gümrük sandıklarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2015-11-genel
+    { id: "2015-11-genel", tur: "genel", tarih: "2015-11-01", tekParti: false,
+      meclis: 550, kayitli: 56949009, kullanilan: 48537695, gecerli: 47840231, baraj: 10,
+      sonuc: [ { parti: "akp", oy: 23681926, sandalye: 317 }, { parti: "chp92", oy: 12111812, sandalye: 134 }, { parti: "hdp", oy: 5148085, sandalye: 59 }, { parti: "mhp93", oy: 5694136, sandalye: 40 }, { parti: "sp", oy: 325978, sandalye: 0 }, { parti: "bbp", oy: 253204, sandalye: 0 }, { parti: "vatan", oy: 118803, sandalye: 0 }, { parti: "dp07", oy: 69319, sandalye: 0 }, { parti: "dsp", oy: 31805, sandalye: 0 }, { parti: "ldp", oy: 26816, sandalye: 0 }, { ad: "Diğer", partiSayisi: 6, oy: 327309, sandalye: 0 }, { ad: "Bağımsız", oy: 51038, sandalye: 0 } ],
+      not: "Anayasa'nın 116. maddesi uyarınca alınan yenileme kararıyla yapılan bu seçimde AK Parti yeniden tek başına iktidar oldu; sayılar yurt içi, yurt dışı ve gümrük sandıklarının toplamıdır." }
   ],
 
   hukumetler: [
@@ -671,6 +720,44 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 57, basbakan: "Bülent Ecevit", partiler: ["dsp", "mhp93", "anap"],
       baslangic: "1999-05-28", bitis: "2002-11-18", tip: "koalisyon", bitisNedeni: "erken-secim",
-      not: "DSP–MHP–ANAP koalisyonu; 21. Dönem Meclisi'nin erken seçim kararıyla 3 Kasım 2002'de yapılan genel seçimin ardından sona erdi." }
+      not: "DSP–MHP–ANAP koalisyonu; 21. Dönem Meclisi'nin erken seçim kararıyla 3 Kasım 2002'de yapılan genel seçimin ardından sona erdi." },
+
+
+    // --- dönem 6 (2001 – 2015) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 58, basbakan: "Abdullah Gül", partiler: ["akp"],
+      baslangic: "2002-11-18", bitis: "2003-03-14", tip: "tek-parti", bitisNedeni: "istifa",
+      not: "3 Kasım 2002 seçiminden sonra AK Parti'nin kurduğu ilk hükümet; Recep Tayyip Erdoğan'ın milletvekili seçilmesiyle yeni bir hükümete imkân sağlamak için 11 Mart 2003'te istifa etti." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 59, basbakan: "Recep Tayyip Erdoğan", partiler: ["akp"],
+      baslangic: "2003-03-14", bitis: "2007-08-29", tip: "tek-parti", bitisNedeni: "erken-secim",
+      not: "Siirt ara seçimiyle milletvekili olan Erdoğan'ın kurduğu hükümet, 891 sayılı TBMM kararıyla 22 Temmuz 2007'ye alınan yenileme seçiminin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 60, basbakan: "Recep Tayyip Erdoğan", partiler: ["akp"],
+      baslangic: "2007-08-29", bitis: "2011-07-06", tip: "tek-parti", bitisNedeni: "secim",
+      not: "22 Temmuz 2007 seçiminin ardından kurulan ikinci Erdoğan hükümeti, 12 Haziran 2011 genel seçimiyle sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 61, basbakan: "Recep Tayyip Erdoğan", partiler: ["akp"],
+      baslangic: "2011-07-06", bitis: "2014-08-29", tip: "tek-parti", bitisNedeni: "cumhurbaskani-secimi",
+      not: "Erdoğan'ın 10 Ağustos 2014'te halk tarafından cumhurbaşkanı seçilmesinin ardından sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 62, basbakan: "Ahmet Davutoğlu", partiler: ["akp"],
+      baslangic: "2014-08-29", bitis: "2015-08-28", tip: "tek-parti", bitisNedeni: "erken-secim",
+      not: "Erdoğan'ın cumhurbaşkanı seçilmesiyle AK Parti genel başkanlığına gelen Davutoğlu'nun kurduğu hükümet, 7 Haziran 2015 seçiminden sonra hükümet kurulamayınca alınan seçim yenileme kararının ardından yerini geçici seçim hükümetine bıraktı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 63, basbakan: "Ahmet Davutoğlu", partiler: ["akp", "hdp"],
+      baslangic: "2015-08-28", bitis: "2015-11-24", tip: "koalisyon", bitisNedeni: "erken-secim",
+      not: "Anayasa'nın 114. maddesine göre kurulan ve Adalet, İçişleri ile Ulaştırma bakanlıkları bağımsızlara verilen geçici seçim hükümeti, 1 Kasım 2015 yenileme seçiminin ardından görevi bıraktı." },
+
+    // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
+    { no: 64, basbakan: "Ahmet Davutoğlu", partiler: ["akp"],
+      baslangic: "2015-11-24", bitis: "2016-05-24", tip: "tek-parti", bitisNedeni: null,
+      not: "1 Kasım 2015 seçiminden sonra kurulan hükümet; görevi 24 Mayıs 2016'da kurulan 65. hükümete devretti." }
   ]
 };
