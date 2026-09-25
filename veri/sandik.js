@@ -461,47 +461,65 @@ window.SANDIK = {
       not: "Anayasa'nın 116. maddesi uyarınca alınan yenileme kararıyla yapılan bu seçimde AK Parti yeniden tek başına iktidar oldu; sayılar yurt içi, yurt dışı ve gümrük sandıklarının toplamıdır." },
 
     // --- dönem 7 (2016 – 2026) ---
-    //
-    // ⚠️ DOĞRULANMADI — aşağıdaki beş kayıt (2017 referandumu, 2018 genel + CB, 2023 genel + CB)
-    // yarım kalmış bir veri turundan geldi ve `araclar/kaynak-defteri.md`'ye HENÜZ İŞLENMEDİ.
-    // Aşağıdaki "kaynak:" satırlarının gösterdiği defter başlıkları da henüz yok. Yani bu
-    // sayılar projenin iki kaynak kuralını karşıladığını KANITLAMIYOR. Kaynakları bulunup
-    // deftere işlenene kadar bu blok doğrulanmamış sayılır; ayrıntı: docs/DEVIR-NOTU.md §9.1.
 
-    // kaynak: araclar/kaynak-defteri.md#2017-04-referandum  (⚠️ defterde henüz yok)
+    // kaynak: araclar/kaynak-defteri.md#2017-04-referandum
     { id: "2017-04-referandum", tur: "referandum", tarih: "2017-04-16",
-      konu: "21 Ocak 2017 tarihli ve 6771 sayılı Kanunla Türkiye Cumhuriyeti Anayasası'nın bazı maddelerinde yapılan ve cumhurbaşkanlığı hükümet sistemine geçişi öngören değişiklikler.",
+      konu: "TBMM'nin 21 Ocak 2017'de kabul ettiği 6771 sayılı Kanunla yapılan, yürütme yetkisini Cumhurbaşkanına veren ve Başbakanlık ile Bakanlar Kurulunun yetkilerini Cumhurbaşkanına devreden Anayasa değişiklikleri.",
       kayitli: 58291898, kullanilan: 49798855, gecerli: 48936604,
       evet: 25157463, hayir: 23779141, karar: "kabul",
-      not: "Sayılara yurt içi sandıkların yanında yurt dışı temsilcilik ve gümrük kapısı sandıkları da dahildir; kabul edilen değişiklikler, birlikte yapılan ilk TBMM ve cumhurbaşkanlığı seçimlerinin ardından cumhurbaşkanının göreve başladığı tarihte yürürlüğe girmiştir." },
+      tutumlar: [ { parti: "akp", tutum: "evet" }, { parti: "mhp93", tutum: "evet" }, { parti: "chp92", tutum: "hayir" }, { parti: "hdp", tutum: "hayir" }, { parti: "sp", tutum: "hayir" }, { parti: "vatan", tutum: "hayir" } ],
+      not: "Sayılar yurt içi, yurt dışı temsilcilik ve gümrük kapısı sandıklarının toplamıdır." },
 
-    // kaynak: araclar/kaynak-defteri.md#2018-06-genel  (⚠️ defterde henüz yok)
+    // kaynak: araclar/kaynak-defteri.md#2018-06-genel
     { id: "2018-06-genel", tur: "genel", tarih: "2018-06-24", tekParti: false,
       meclis: 600, kayitli: 59367469, kullanilan: 51189444, gecerli: 50137175, baraj: 10,
-      sonuc: [ { parti: "akp", oy: 21338693, sandalye: 295 }, { parti: "chp92", oy: 11354190, sandalye: 146 }, { parti: "hdp", oy: 5867302, sandalye: 67 }, { parti: "mhp93", oy: 5565331, sandalye: 49 }, { parti: "iyi", oy: 4993479, sandalye: 43 }, { parti: "sp", oy: 672139, sandalye: 0 }, { ad: "Hür Dava Partisi", oy: 155539, sandalye: 0 }, { parti: "vatan", oy: 114872, sandalye: 0 }, { ad: "Bağımsız", oy: 75630, sandalye: 0 } ],
-      not: "Cumhurbaşkanı seçimiyle birlikte yapılan bu seçimde milletvekili sayısı 600'e çıktı ve partiler ilk kez ittifakla girdi: AK Parti ile MHP Cumhur İttifakı'nı, CHP–İYİ Parti–Saadet Partisi Millet İttifakı'nı kurdu." },
+      sonuc: [ { parti: "akp", oy: 21338693, sandalye: 295 }, { parti: "chp92", oy: 11354190, sandalye: 146 }, { parti: "hdp", oy: 5867302, sandalye: 67 }, { parti: "mhp93", oy: 5565331, sandalye: 49 }, { parti: "iyi", oy: 4993479, sandalye: 43 }, { parti: "sp", oy: 672139, sandalye: 0 }, { parti: "vatan", oy: 114872, sandalye: 0 }, { ad: "Diğer", partiSayisi: 1, oy: 155539, sandalye: 0 }, { ad: "Bağımsız", oy: 75630, sandalye: 0 } ],
+      ittifak: [ { ad: "Millet İttifakı", liste: "iyi", icinden: [ { parti: "dp07", sandalye: null } ] } ],
+      not: "Cumhurbaşkanı seçimiyle birlikte yapılan ve milletvekili sayısının 600'e çıktığı bu seçimde AK Parti ile MHP Cumhur İttifakı, CHP, İYİ Parti ve Saadet Partisi Millet İttifakı olarak oy pusulasında yer aldı." },
 
-    // kaynak: araclar/kaynak-defteri.md#2018-06-cb-halk  (⚠️ defterde henüz yok)
+    // kaynak: araclar/kaynak-defteri.md#2018-06-cb-halk
     { id: "2018-06-cb-halk", tur: "cb-halk", tarih: "2018-06-24",
       turlar: [ { tarih: "2018-06-24", kayitli: 59367469, kullanilan: 51197959, gecerli: 50068627,
-        adaylar: [ { ad: "Recep Tayyip Erdoğan", oy: 26330823 }, { ad: "Muharrem İnce", oy: 15340321 }, { ad: "Selahattin Demirtaş", oy: 4205794 }, { ad: "Meral Akşener", oy: 3649030 }, { ad: "Temel Karamollaoğlu", oy: 443704 }, { ad: "Doğu Perinçek", oy: 98955 } ] } ],
+        adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti ve MHP gruplarının adayı", oy: 26330823 }, { ad: "Muharrem İnce", parti: "chp92", oy: 15340321 }, { ad: "Selahattin Demirtaş", parti: "hdp", oy: 4205794 }, { ad: "Meral Akşener", destek: "seçmenlerin yazılı teklifiyle aday", oy: 3649030 }, { ad: "Temel Karamollaoğlu", destek: "seçmenlerin yazılı teklifiyle aday", oy: 443704 }, { ad: "Doğu Perinçek", destek: "seçmenlerin yazılı teklifiyle aday", oy: 98955 } ] } ],
       secilen: "Recep Tayyip Erdoğan",
-      not: "Geçerli oyların salt çoğunluğunu ilk turda alan Erdoğan'ın 9 Temmuz 2018'de göreve başlamasıyla Anayasa'nın Bakanlar Kurulu ve Başbakanlık hükümlerini değiştiren 6771 sayılı Kanun yürürlüğe girdi." },
+      not: "Erdoğan geçerli oyların salt çoğunluğunu ilk oylamada aldığı için ikinci oylamaya gerek kalmadı." },
 
-    // kaynak: araclar/kaynak-defteri.md#2023-05-genel  (⚠️ defterde henüz yok)
+    // kaynak: araclar/kaynak-defteri.md#2019-03-yerel
+    { id: "2019-03-yerel", tur: "yerel", tarih: "2019-03-31",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "iyi", oy: null }, { parti: "hdp", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "dsp", oy: null }, { parti: "dp07", oy: null }, { parti: "vatan", oy: null }, { ad: "Diğer", partiSayisi: 2, oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
+      not: "İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#2019-06-yerel
+    { id: "2019-06-yerel", tur: "yerel", tarih: "2019-06-23", kapsam: "İstanbul",
+      buyuksehir: { istanbul: { parti: "chp92" } },
+      not: "YSK'nın 31 Mart seçimini iptal etmesi üzerine yalnızca İstanbul Büyükşehir Belediye Başkanlığı için yapılan yenileme seçimidir." },
+
+    // kaynak: araclar/kaynak-defteri.md#2023-05-genel
     { id: "2023-05-genel", tur: "genel", tarih: "2023-05-14", tekParti: false,
       meclis: 600, kayitli: 64145504, kullanilan: 55835895, gecerli: 54442588, baraj: 7,
-      sonuc: [ { parti: "akp", oy: 19392462, sandalye: 268 }, { parti: "chp92", oy: 13802183, sandalye: 169 }, { parti: "mhp93", oy: 5484820, sandalye: 50 }, { parti: "yesilsol", oy: 4803922, sandalye: 61 }, { parti: "iyi", oy: 5275981, sandalye: 43 }, { parti: "yrp", oy: 1527048, sandalye: 5 }, { parti: "tip17", oy: 956057, sandalye: 4 }, { parti: "zafer", oy: 1216399, sandalye: 0 }, { parti: "bbp", oy: 530770, sandalye: 0 }, { parti: "memleket", oy: 502669, sandalye: 0 }, { parti: "vatan", oy: 52720, sandalye: 0 }, { ad: "Diğer", partiSayisi: 13, oy: 670726, sandalye: 0 }, { ad: "Bağımsız", oy: 226831, sandalye: 0 } ],
-      not: "Genel barajın 7393 sayılı Kanunla %10'dan %7'ye indirildiği bu seçimde AK Parti, MHP, Yeniden Refah ve BBP Cumhur İttifakı'nda, CHP ile İYİ Parti Millet İttifakı'nda, Yeşiller ve Sol Gelecek Partisi ile TİP Emek ve Özgürlük İttifakı'nda yer aldı." },
+      sonuc: [ { parti: "akp", oy: 19392462, sandalye: 268 }, { parti: "chp92", oy: 13802183, sandalye: 169 }, { parti: "yesilsol", oy: 4803922, sandalye: 61 }, { parti: "mhp93", oy: 5484820, sandalye: 50 }, { parti: "iyi", oy: 5275981, sandalye: 43 }, { parti: "yrp", oy: 1527048, sandalye: 5 }, { parti: "tip17", oy: 956057, sandalye: 4 }, { parti: "zafer", oy: 1216399, sandalye: 0 }, { parti: "bbp", oy: 530770, sandalye: 0 }, { parti: "memleket", oy: 502669, sandalye: 0 }, { parti: "vatan", oy: 52720, sandalye: 0 }, { ad: "Diğer", partiSayisi: 13, oy: 670726, sandalye: 0 }, { ad: "Bağımsız", oy: 226831, sandalye: 0 } ],
+      ittifak: [ { ad: "Millet İttifakı", liste: "chp92", icinden: [ { parti: "deva", sandalye: null }, { parti: "gelecek", sandalye: null }, { parti: "sp", sandalye: null }, { parti: "dp07", sandalye: null } ] } ],
+      not: "Genel barajın 7393 sayılı Kanunla %10'dan %7'ye indirildiği bu seçimde AK Parti, MHP, Yeniden Refah ve BBP Cumhur İttifakı'nda; CHP, İYİ Parti, DEVA, Gelecek, Saadet ve Demokrat Parti Millet İttifakı'nda; Yeşiller ve Sol Gelecek Partisi ile TİP Emek ve Özgürlük İttifakı'nda yer aldı." },
 
-    // kaynak: araclar/kaynak-defteri.md#2023-05-cb-halk  (⚠️ defterde henüz yok)
+    // kaynak: araclar/kaynak-defteri.md#2023-05-cb-halk
     { id: "2023-05-cb-halk", tur: "cb-halk", tarih: "2023-05-14",
       turlar: [ { tarih: "2023-05-14", kayitli: 64145504, kullanilan: 55833153, gecerli: 54796049,
-        adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti ve MHP gruplarının adayı", oy: 27133849 }, { ad: "Kemal Kılıçdaroğlu", destek: "CHP ve İYİ Parti gruplarının adayı", oy: 24595178 }, { ad: "Sinan Oğan", oy: 2831239 }, { ad: "Muharrem İnce", oy: 235783 } ] },
+        adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti ve MHP gruplarının adayı", oy: 27133849 }, { ad: "Kemal Kılıçdaroğlu", destek: "CHP ve İYİ Parti gruplarının adayı", oy: 24595178 }, { ad: "Sinan Oğan", destek: "seçmenlerin yazılı teklifiyle aday", oy: 2831239 }, { ad: "Muharrem İnce", destek: "seçmenlerin yazılı teklifiyle aday", oy: 235783 } ] },
         { tarih: "2023-05-28", kayitli: 64197454, kullanilan: 54023601, gecerli: 53339313,
         adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti ve MHP gruplarının adayı", oy: 27834589 }, { ad: "Kemal Kılıçdaroğlu", destek: "CHP ve İYİ Parti gruplarının adayı", oy: 25504724 } ] } ],
       secilen: "Recep Tayyip Erdoğan",
-      not: "Hiçbir aday ilk oylamada geçerli oyların salt çoğunluğunu sağlayamadığı için 28 Mayıs 2023'te ikinci oylama yapıldı ve Erdoğan'ın yeniden seçilmesinin ardından yeni kabine 3 Haziran 2023'te atandı." }
+      not: "Hiçbir aday ilk oylamada geçerli oyların salt çoğunluğunu sağlayamadığı için 28 Mayıs 2023'te ikinci oylama yapıldı." },
+
+    // kaynak: araclar/kaynak-defteri.md#2024-03-yerel
+    { id: "2024-03-yerel", tur: "yerel", tarih: "2024-03-31",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "chp92", oy: null }, { parti: "akp", oy: null }, { parti: "yrp", oy: null }, { parti: "mhp93", oy: null }, { parti: "dem", oy: null }, { parti: "iyi", oy: null }, { parti: "zafer", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "tip17", oy: null }, { parti: "deva", oy: null }, { parti: "dp07", oy: null }, { parti: "memleket", oy: null }, { parti: "dsp", oy: null }, { parti: "gelecek", oy: null }, { parti: "vatan", oy: null }, { parti: "emep", oy: null }, { ad: "Diğer", partiSayisi: 16, oy: null }, { ad: "Bağımsız", oy: null } ],
+      buyuksehir: { istanbul: { parti: "chp92" }, ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
+      not: "Ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." }
   ],
 
   hukumetler: [
@@ -840,6 +858,23 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
     { no: 64, basbakan: "Ahmet Davutoğlu", partiler: ["akp"],
       baslangic: "2015-11-24", bitis: "2016-05-24", tip: "tek-parti", bitisNedeni: null,
-      not: "1 Kasım 2015 seçiminden sonra kurulan hükümet; görevi 24 Mayıs 2016'da kurulan 65. hükümete devretti." }
+      not: "1 Kasım 2015 seçiminden sonra kurulan hükümet; görevi 24 Mayıs 2016'da kurulan 65. hükümete devretti." },
+
+    // --- dönem 7 (2016 – 2026) ---
+
+    // kaynak: araclar/kaynak-defteri.md#hukumet-65
+    { no: 65, basbakan: "Binali Yıldırım", partiler: ["akp"],
+      baslangic: "2016-05-24", bitis: "2018-07-09", tip: "tek-parti", bitisNedeni: "sistem-degisikligi",
+      not: "Bakanlar Kurulu olarak kurulan son hükümet; 6771 sayılı Kanunla yapılan Anayasa değişikliklerinin Cumhurbaşkanının 9 Temmuz 2018'de göreve başlamasıyla yürürlüğe girmesiyle sona erdi." },
+
+    // kaynak: araclar/kaynak-defteri.md#cb-kabine-2018
+    { no: null, baskan: "Recep Tayyip Erdoğan", partiler: [],
+      baslangic: "2018-07-09", bitis: "2023-06-03", tip: "cumhurbaskanligi", bitisNedeni: "erken-secim",
+      not: "Cumhurbaşkanı yardımcısı ve bakanların Anayasanın 104 ve 106. maddeleri uyarınca Cumhurbaşkanınca atandığı ilk cumhurbaşkanlığı kabinesi." },
+
+    // kaynak: araclar/kaynak-defteri.md#cb-kabine-2023
+    { no: null, baskan: "Recep Tayyip Erdoğan", partiler: [],
+      baslangic: "2023-06-03", bitis: null, tip: "cumhurbaskanligi", bitisNedeni: null,
+      not: "28 Mayıs 2023 ikinci oylamasının ardından yeniden göreve başlayan Cumhurbaşkanının atadığı kabine." }
   ]
 };

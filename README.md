@@ -62,7 +62,9 @@ Tırnaklar Node 24'te zorunludur.
 
 ## Durum
 
-Sandık bölümünün verisi 1923–2015 arasında tamamlandı ve bağımsız incelemelerden geçti.
-2016–2026 dönemi eksiktir; `veri/sandik.js`'te bu döneme ait beş kayıt **doğrulanmamış** olarak
-duruyor ve kaynakları henüz deftere işlenmedi. Kalan işlerin tamamı `docs/DEVIR-NOTU.md`
-dosyasının 9. ve 12. bölümlerinde listelidir.
+Sandık bölümünün verisi 1923–2026 arasında girildi. 2016–2026 dönemi 25 Eylül 2026'da
+kaynaklarıyla tamamlandı (2017 referandumu; 2018 ve 2023 genel ve cumhurbaşkanlığı seçimleri;
+2019 ve 2024 yerel seçimleri ile 2019 İstanbul yenilemesi; 65. Hükümet ve cumhurbaşkanlığı
+kabineleri). Kalan işler — soyağacına eklenecek partilerin onayı, son kontroller ve eksik kayıt
+aramaları — `docs/DEVIR-NOTU.md` dosyasının 9. ve 12. bölümlerinde ve
+`.superpowers/sdd/2026-09-11-sandik/progress.md` defterinde listelidir.

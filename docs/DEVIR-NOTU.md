@@ -11,6 +11,12 @@ Bu dosya, projenin bir sohbetten başka bir sohbete aktarılması için yazıld�
 - Testler: `node --test "araclar/test/*.test.js"` → **57/57 geçiyor**
 - Veri denetimi: `node araclar/dogrula.js` → **hata yok** (yalnızca beklenen uyarılar)
 
+> **Güncelleme (25 Eylül 2026, bulut oturumu):** Proje GitHub'a taşındı; çalışma dalı artık
+> `claude/elegant-tesla-uaepdv` (`main` ile birleştirilmiş durumdan devam). **§9.1 kapandı:** dönem 7
+> kaynaklarıyla yeniden üretildi (ayrıntı: `araclar/kaynak-defteri.md` → "Görev 9 — Dönem 7",
+> `.superpowers/sdd/2026-09-11-sandik/task-9-d7-report.md`). **Görev 11 yapıldı** (`kaynakca.html#sandik`).
+> Açık kalanlar: §9.2, §9.3 (+ HÜDA PAR, MDP), §9.4, §9.5 ve Görev 12.
+
 ---
 
 ## 1. Projenin ne olduğu

@@ -3572,14 +3572,350 @@ alanı ise brief'in "[B] + ikinci kaynak" kuralını harfiyen karşıladığı i
   Doğruluk Payı bülteni, dergipark ("üç şehir üç başkan" makalesi 1989–1994 dönemini
   kapsıyor). Kazanan parti değerleri değiştirilmedi; sınır burada açıkça kayda geçirildi.
 
-## ⚠️ Dönem 7 (2016–2026) — DOĞRULANMAMIŞ KAYITLAR
+## Görev 9 — Dönem 7 (2016–2026)
 
-`veri/sandik.js`'teki dönem 7 bloğundaki beş kayıt (`2017-04-referandum`, `2018-06-genel`,
-`2018-06-cb-halk`, `2023-05-genel`, `2023-05-cb-halk`) yarım kalmış bir veri turundan geldi ve
-**bu deftere hiç işlenmedi**. Kaynakları bilinmiyor; projenin "bir resmî [B] kaynak + uyuşan
-ikinci kaynak" kuralını karşıladıklarına dair kanıt yok. Kullanıcı kararı (25 Eylül 2026): kayıtlar
-silinmek yerine bu uyarıyla birlikte depoda tutulacak, kaynakları sonradan tamamlanacak.
-O tamamlanana kadar bu beş kaydın hiçbir sayısı doğrulanmış sayılmaz.
+Erişim: 2026-09-25 (bulut oturumu). Resmî Gazete sayfaları tarayıcı kimliğiyle (`User-Agent`)
+`curl` ile açıldı; YSK dosyaları `ysk.gov.tr/doc/...` yollarından, sayfa içerikleri
+`ysk.gov.tr/doc/sayfa/<başlık>/<id>.html` parçalarından okundu. PDF'ler `pdftotext -layout` ile,
+taranmış (metin katmanı olmayan) sayfalar `tesseract -l tur` ile okundu; OCR ile okunan her sayı
+aynı belgenin alt toplamlarıyla (yurt içi + yurt dışı + gümrük = genel toplam) sağlandı ve
+tablolarda görüntüye bakılarak doğrulandı.
 
-Yedek: `.superpowers/sdd/2026-09-11-sandik/donem7-yarim-is.patch`
-Ayrıntı: `docs/DEVIR-NOTU.md` §9.1
+Bu dönemin önceki (yarım kalmış, kaynaksız) turundan gelen beş kaydın bütün değerleri aşağıdaki
+kaynaklarla **yeniden** doğrulandı; değişen alanlar ilgili başlıkta "Önceki turdan fark" diye
+belirtildi. Yarım tur yedeği: `.superpowers/sdd/2026-09-11-sandik/donem7-yarim-is.patch`.
+
+### Envanter (Adım 1)
+
+- **[B] YSK Seçim Arşivi** (`ysk.gov.tr/doc/sayfa/{cumhurbaskani-secim-arsivi/2647,
+  milletvekili-genel-secim-arsivi/2644, mahalli-idareler-genel-secimleri-arsivi/2650,
+  halkoylamasi-arsivi/2648, ara-secim-arsivi/2624}.html`): 2016–2026 arasında **16 Nisan 2017
+  halkoylaması**, **24 Haziran 2018** CB + 27. dönem MV, **31 Mart 2019** mahalli idareler (ve
+  23 Haziran 2019 İstanbul BŞB yenilemesi), **14 Mayıs 2023** CB + 28. dönem MV (28 Mayıs ikinci
+  oylama), **31 Mart 2024** mahalli idareler. Ara seçim arşivindeki 2016, 2017 ve 2026 kayıtları
+  **mahalli idareler ara seçimleridir** (sayfa: "Mahalli idareler ara seçimleri her yıl haziran…")
+  → kapsam dışı (spesifikasyon §2). Milletvekili ara seçimi yok.
+- **[B] YSK seçim takvimi** (`ysk.gov.tr/doc/secim/secimTarihleri.txt`, 2026-09-25): Kasım
+  2026'ya kadar yalnızca köy halkoylamaları ve muhtarlık/ihtiyar heyeti ara seçimleri var;
+  ulusal seçim, referandum ya da milletvekili ara seçimi yok (güncellik kontrolü, Görev 12 Adım 1).
+- Aday listeyle fark: yok. 2019 İstanbul yenilemesi ayrı kayıt (`2019-06-yerel`, spesifikasyon §5.3).
+
+### 2017-04-referandum
+
+- **[B] YSK Kararı 663 (27.04.2017)**, RG 27.04.2017/30050 mükerrer
+  (`resmigazete.gov.tr/eskiler/2017/04/20170427M1.pdf`, taranmış; OCR): "Yurt İçi ve Yurt Dışı
+  Seçmen Kütüğü dahil Ülke Geneli; **58.291.898** kayıtlı seçmenden **49.798.855**'inin oy
+  kullandığı … kullanılan oylardan **48.936.604** oyun geçerli, 862.251 oyun geçersiz sayıldığı,
+  geçerli oylardan **25.157.463** oyun "EVET" oyu, **23.779.141** oyun "HAYIR" oyu olduğu".
+  Karardaki alt kırılım (OCR, hesaplandı): kayıtlı yurt içi 55.319.222 + yurt dışı 2.972.676 =
+  58.291.898; oy kullanan 48.374.576 + 1.325.682 + 98.597 (gümrük) = 49.798.855; geçerli
+  47.528.949 + 1.309.821 + 97.834 = 48.936.604; evet 24.325.633 + 778.833 + 52.997 = 25.157.463.
+  Hepsi tutuyor → OCR okuması doğrulandı. Evet + hayır = geçerli.
+- **İkinci kaynak:** Sputnik Türkiye, "YSK kesin sonuçları açıkladı: 'Evet' yüzde 51.41…"
+  (`anlatilaninotesi.com.tr/20170427/ysk-baskani-guven-ret-gerekcesi-1028258134.html`, 27.04.2017):
+  "toplam 58 milyon 291 bin 898 kayıtlı seçmenden 49 milyon 798 bin 855'inin oy kullandığı …
+  48 milyon 936 bin 604'ü geçerli … 25 milyon 157 bin 463 oyun "evet" oyu, 23 milyon 779 bin
+  141 oyun "hayır" oyu". Uyuşmazlık: yok.
+- **`konu`:** [B] 6771 sayılı Kanun, RG 11.02.2017/29976 (`…/2017/02/20170211-1.htm`): "Kabul
+  Tarihi: 21/01/2017"; 8. madde "Yürütme yetkisi Cumhurbaşkanına aittir"; geçici 21. madde (G)
+  "Kanunlar ve diğer mevzuat ile Başbakanlık ve Bakanlar Kuruluna verilen yetkiler … Cumhurbaşkanı
+  tarafından kullanılır". Kabul tarihi YSK 663'te de "21/01/2017". İkinci kaynak: Demirkol (2023,
+  bkz. Hükümetler 58-64), s. 365: "2017 Anayasa referandumu ile kabul edilen Cumhurbaşkanlığı
+  hükümet sistemi sonrasında Başbakanlık ve Bakanlar Kurulu kaldırılarak yetkileri
+  Cumhurbaşkanlığına devredilmiştir."
+- **`not`:** yurt içi + yurt dışı + gümrük toplamı: YSK 663 (yukarıdaki kırılım) + Sputnik
+  ("Yurt içinde, yurt dışında ve gümrük kapılarında toplam…").
+- **Önceki turdan fark:** `konu` yeniden yazıldı; `not`taki "kabul edilen değişiklikler …
+  cumhurbaşkanının göreve başladığı tarihte yürürlüğe girmiştir" cümlesi **çıkarıldı**, çünkü
+  6771'in 18. maddesi değişiklikleri üç ayrı tarihte (yayım tarihi, seçim takviminin başlangıcı,
+  Cumhurbaşkanının göreve başlaması) yürürlüğe koyuyor — cümle eksik/yanıltıcıydı.
+- **`tutumlar`** (yalnızca soyağacındaki partiler, iki kaynak):
+  - Kaynak 1: Hürriyet, "Referandumda hangi parti ne oy kullanacak" (15.02.2017, Habertürk'ün
+    Ahmet Küçük haberine dayanarak; `hurriyet.com.tr/gundem/referandumda-hangi-parti-ne-oy-kullanacak-40366885`):
+    "AK Parti - EVET", "Milliyetçi Hareket Partisi - EVET", "Cumhuriyet Halk Partisi (CHP) …
+    "hayır" kampanyası yapacak", "HDP de "hayır" için kampanya düzenleyecek", "Saadet Partisi …
+    "Hayır" oyu vereceklerini açıklayan", "Vatan Partisi'nden … "Referandumda kesinlikle 'hayır'
+    denilecek"", "Büyük Birlik Partisi - KARARSIZ".
+  - Kaynak 2: Sözcü (İhlas Haber Ajansı), "Hangi parti referandumda ne oy kullanacak"
+    (`sozcu.com.tr/2017/gundem/son-dakika-haberi-hangi-parti-referandumda-ne-oy-kullanacak-1661303`):
+    "AK Parti ile … MHP, referandumda 'evet' oyu kullanacaklarını açıkladı. Buna karşılık … CHP
+    ile … HDP ise 'hayır'"; "Saadet Partisi ile … Vatan Partisi referandumda 'hayır' diyecek";
+    BBP için "istişareler devam ediyor".
+  - Sonuç: akp evet, mhp93 evet, chp92 hayir, hdp hayir, sp hayir, vatan hayir. **BBP yazılmadı**
+    (iki kaynakta da karar yok). HÜDA PAR (evet) ve BTP (serbest) soyağacında olmadığı için yazılmadı.
+
+### 2018-06-genel
+
+- **[B] YSK Örnek 96/C** "Yurt İçi, Yurt Dışı ve Gümrük Sandıkları Dahil Milletvekili Genel
+  Seçimi Sonucu" (`ysk.gov.tr/doc/dosyalar/docs/24Haziran2018/KesinSecimSonuclari/2018MV-96C.pdf`):
+  kayıtlı **59.367.469**, oy kullanan **51.189.444**, geçerli **50.137.175** (geçersiz 1.052.269).
+  AK Parti 21.338.693, CHP 11.354.190, HDP 5.867.302, MHP 5.565.331, İYİ Parti 4.993.479,
+  Saadet 672.139, Hür Dava Partisi 155.539, Vatan 114.872, Bağımsızlar 75.630; toplam 50.137.175
+  (hesaplandı, tutuyor).
+- **[B] YSK Örnek 96/D** (`…/2018MV-96D.pdf`): AK Parti 295, CHP 146, HDP 67, MHP 49, İYİ Parti 43,
+  Bağımsızlar 0, "TÜRKİYE TOPLAMI : 600". YSK Kararı 953 (4.7.2018) kesin sonucun ilanı.
+- **İkinci kaynak:** Hürriyet, "Son dakika: YSK, 2018 kesin seçim sonuçlarını açıkladı" (4.7.2018,
+  `hurriyet.com.tr/gundem/son-dakika-ysk-2018-kesin-secim-sonuclarini-acikladi-40886560`): kayıtlı
+  59.367.469, oy kullanan 51.189.444, geçerli 50.137.175; dokuz satırın "Türkiye geneli toplam"ı
+  YSK ile birebir; sandalyeler "İYİ Parti: 43, Bağımsız: 0, Türkiye toplamı: 600". TRT Haber,
+  "24 Haziran kesin seçim sonuçları Resmi Gazete'de"
+  (`trthaber.com/haber/gundem/24-haziran-kesin-secim-sonuclari-resmi-gazetede-373622.html`):
+  aynı toplamlar ve beş partinin oy/sandalyesi. Uyuşmazlık: yok. (Hürriyet'in yurt dışı alt
+  satırlarında iki yazım hatası var — AK Parti 776.961, İYİ 60.696 — ama toplam sütunu YSK'yla
+  aynı; veride yalnızca toplam tutulur.)
+- **`meclis: 600`:** [B] 6771 md. 2: 75. maddedeki "beşyüzelli" ibaresi "altıyüz" + YSK 96/D.
+- **`baraj: 10`:** [B] 7393 sayılı Kanun md. 1 (RG 6.4.2022/31801; bkz. 2023-05-genel):
+  2839/33'teki "oyların %10'unu" ibaresini değiştiriyor → 2018'de yürürlükteki baraj %10.
+  İkinci kaynak: TRT Haber (bkz. 2023-05-genel): "yüzde 10 olarak uygulanan ülke seçim barajı".
+- **"Diğer" (partiSayisi 1, oy 155.539):** Hür Dava Partisi — %0,31, soyağacında yok, daha önce
+  meclise girmemiş → "Diğer" (spesifikasyon §5.1). **Önceki turdan fark:** `{ad:"Hür Dava Partisi"}`
+  satırı "Diğer"e alındı.
+- **İttifak — oy pusulası:** [B] YSK "İttifakların ve Siyasi Partilerin Birleşik Oy Pusulasındaki
+  Yerlerinin … Belirlenmesine İlişkin Tutanak" (20.5.2018,
+  `…/24Haziran2018/2018CBMV-BirlesikOyPusulasi-KuraTutanagi.pdf`): "Cumhur İttifakı için Adalet ve
+  Kalkınma Partisi, Milliyetçi Hareket Partisi, Millet İttifakı için Cumhuriyet Halk Partisi, İyi
+  Parti ve Saadet Partisi". İkinci kaynak: TRT Haber, "Millet İttifakı protokolü YSK'ya sunuldu"
+  (`trthaber.com/haber/gundem/millet-ittifaki-protokolu-yskya-sunuldu-364059.html`): "CHP, İYİ Parti
+  ve Saadet Partisi; Millet İttifakı adı altında kendi amblemleriyle seçime girecek, Demokrat Parti
+  de adaylarını İYİ Parti'nin listelerinden göstererek Millet İttifakı'nın parçası olacaktır";
+  Habertürk aynı protokol metni; Hürriyet, "Millet ittifakı resmen kuruldu" (protokol, dört parti).
+- **`ittifak` alanı:** `{ad:"Millet İttifakı", liste:"iyi", icinden:[{parti:"dp07", sandalye:null}]}`.
+  DP'nin ayrı listesi yok ([B] YSK 96/C'de DP satırı yok; kura tutanağında pusulada yok); adaylarını
+  İYİ Parti listesinden gösterdiği protokol metninden (TRT Haber, Habertürk, Hürriyet). DP'den kaç
+  kişinin seçildiğine dair [B] kaynak yok → `sandalye: null`.
+- **`not`:** CB seçimiyle birlikte (YSK 96/C başlığı "…Cumhurbaşkanı ve 27. Dönem Milletvekili Genel
+  Seçimi"; TRT Haber), 600 (yukarıda), pusuladaki ittifaklar (yukarıda). **Önceki turdan fark:**
+  "partiler ilk kez ittifakla girdi" ifadesi kaynaklanmadığı için çıkarıldı; Millet İttifakı'nın
+  pusuladaki bileşimi YSK tutanağına göre yazıldı.
+
+### 2018-06-cb-halk
+
+- **[B] YSK Örnek 416/D** (`…/24Haziran2018/KesinSecimSonuclari/2018CB-416D.pdf`): kayıtlı
+  **59.367.469**, oy kullanan **51.197.959**, geçerli **50.068.627**; Erdoğan 26.330.823 (%52,59),
+  İnce 15.340.321, Demirtaş 4.205.794, Akşener 3.649.030, Karamollaoğlu 443.704, Perinçek 98.955;
+  toplam 50.068.627. YSK Kararı 952 (4.7.2018).
+- **İkinci kaynak (adaylar):** TRT Haber (yukarıdaki haber): altı adayın toplamları YSK ile birebir
+  (Erdoğan 26 milyon 330 bin 823 … Perinçek 98 bin 955). Hürriyet 4.7.2018 geçerli oy "50 milyon
+  068 bin 627" (Demirtaş'ı "4 milyon 205 bin 974" diye yazmış — rakam yer değiştirmesi; TRT Haber
+  4.205.794 ile YSK'yı doğruluyor).
+- **İkinci kaynak (seçmen sayıları):** VOA Türkçe, "YSK: 'Erdoğan Seçimde Yüzde 52,59 Oy Aldı'"
+  (`voaturkce.com/a/ysk-erdoğan-seçimde-yüzde-52-59-oy-aldı-/4455271.html`): "kayıtlı 59 milyon 367
+  bin 469 seçmenden 51 milyon 197 bin 832'si oy kullandı … 50 milyon 68 bin 418'i geçerli".
+  **Uyuşmazlık: 51.197.959 vs 51.197.832 (%0,0002); 50.068.627 vs 50.068.418 (%0,0004)** — tolerans
+  içinde, YSK'nın sayısı yazıldı (VOA'nınki kesinleşmemiş sonuçlar). Kayıtlı: uyuşmazlık yok.
+- **Aday gösterme (`parti`/`destek`):** [B] YSK Kararı 426 (9.5.2018, geçici aday listesi,
+  `ysk.gov.tr/doc/karar/dosya/77641/2018-426.pdf`): "Adalet ve Kalkınma Partisi Grubu ile Milliyetçi
+  Hareket Partisi Grubu tarafından aday gösterilen Recep Tayyip ERDOĞAN", "Cumhuriyet Halk Partisi
+  Grubu tarafından aday gösterilen Muharrem İNCE", "Halkların Demokratik Partisi Grubu tarafından aday
+  gösterilen Selahattin DEMİRTAŞ"; "en az yüzbin seçmenin yazılı teklifiyle aday gösterilen
+  Cumhurbaşkanı adaylarının Doğu PERİNÇEK, Meral AKŞENER ve Temel [KARAMOLLAOĞLU]". Kesin liste:
+  Karar 472. İkinci kaynak: Habertürk, "100 bin imzada dikkat çeken detaylar"
+  (`haberturk.com/son-dakika-100-bin-imzada-dikkat-ceken-detaylar-1958037`): "Cumhur İttifakı'nın
+  adayı Erdoğan, CHP'nin adayı İnce, HDP'nin adayı Demirtaş ile 100 bin imzayı aşan Akşener,
+  Karamollaoğlu ve Perinçek". → İnce `parti:"chp92"`, Demirtaş `parti:"hdp"`, Erdoğan
+  `destek:"AK Parti ve MHP gruplarının adayı"`, diğer üçü `destek:"seçmenlerin yazılı teklifiyle aday"`.
+  **Önceki turdan fark:** adaylarda `parti`/`destek` yoktu, eklendi.
+- **`not`:** salt çoğunluk ilk oylamada (%52,59 > %50; [B] 416/D) — ikinci oylama yapılmadığı YSK
+  arşivinde 2018 için ikinci oylama belgesi olmamasından ve TRT Haber'in "yüzde 52,59 alarak
+  Cumhurbaşkanı seçildi" ifadesinden. **Önceki turdan fark:** 6771'in yürürlüğüne dair cümle
+  hükümet kaydına taşındı.
+
+### 2019-03-yerel
+
+- **[B] YSK LİSTE-4** "Belediye Meclisi Üyeliği Seçimleri Sonucu"
+  (`…/2019MahalliIdareler/KesinSecimSonuclari/2019Mahalli-Liste-4.pdf`; YSK Kararı 4577, 20.5.2019):
+  kayıtlı 53.203.842, oy kullanan 44.881.860, geçerli 42.998.754; AK Parti 18.299.576, CHP
+  12.625.346, MHP 3.209.416, İYİ Parti 3.142.757, HDP 2.409.485, Saadet 1.291.757, BBP 818.872,
+  DSP 379.689, DP 378.093, TKP 125.109, BTP 115.466, Vatan 83.091, Hür Dava 0, Bağımsız 120.097.
+- **Neden `null`:** dönem 6 kuralı (bkz. 2014-03-yerel ve "Büyükşehir kayıtlarında TÜİK–YSK
+  bağımsızlığı"): ülke geneli belediye meclisi sayılarını yalnızca YSK yayımlıyor; TÜİK aynı veriyi
+  YSK'dan alıyor. Bu turda aranan bağımsız yayınlar: TRT Haber, Yeni Şafak, Anka, Capital'in
+  "kesin sonuçlar Resmî Gazete'de" haberleri (sayı vermiyor); Hürriyet, Milliyet, CNN Türk, Akşam,
+  Sabah, memurlar.net seçim sayfaları (belediye başkanlığı ve il genel meclisi veriyor, belediye
+  meclisi vermiyor). → `kayitli/kullanilan/gecerli` ve bütün `oy` değerleri `null`; parti listesi ve
+  sıra YSK LİSTE-4'ten.
+- **"Diğer" (partiSayisi 2):** TKP (%0,29) ve BTP (%0,27) — soyağacında yok, %1'in altında. Hür Dava
+  Partisi 0 oy → sayılmadı (2014 emsali). DP ile DSP soyağacında olduğu için ayrı satırda.
+- **Büyükşehir — [B] YSK "2009-2019 Seçim İstatistikleri"** (`…/docs/2009_2019_İSTATİSTİK_KİTABI.pdf`,
+  s. 235, 4.2.7 "Nüfus Bakımından Üç Büyük İlde…"; pasta grafiklerin işaret renkleri görüntüden
+  okundu): Ankara **CHP %50,9** – AK Parti %47,1; İzmir **CHP %58,1** – AK Parti %38,7; İstanbul
+  (31 Mart) CHP %48,8 – AK Parti %48,6, dipnot "İstanbul'da yenileme seçimleri yapılmıştır".
+- **Büyükşehir — ikinci kaynak:** Ankara: VOA Türkçe, "CHP'li Mansur Yavaş Resmen Ankara Belediye
+  Başkanı" (`voaturkce.com/a/baskentte-chpli-mansur-yavas-liderler-istanbul-mesaisinde/4866178.html`):
+  "Mansur Yavaş … mazbatasını aldı. Yavaş, Ankara Büyükşehir Belediye Başkanlığı'nı AKP'li Mustafa
+  Tuna'dan devraldı." İzmir: Hürriyet/DHA, "İzmir Büyükşehir Belediye Başkanı Soyer, mazbatasını
+  aldı" (`hurriyet.com.tr/gundem/izmir-buyuksehir-belediye-baskani-soyer-mazbatasini-aldi-41175972`):
+  "İZMİR Büyükşehir Belediye Başkanı seçilen CHP'li Tunç Soyer … mazbatasını aldı".
+- **İstanbul yazılmadı:** [B] YSK LİSTE-2 notu: "İstanbul Büyükşehir Belediye Başkanlığı seçiminin
+  iptaline karar verildiğinden sonuçlara dahil edilmemiştir"; YSK Kararı 2019/4219 (6.5.2019).
+  İkinci kaynak: Habertürk (bkz. 2019-06-yerel): "Yüksek Seçim Kurulunun (YSK) 6 Mayıs'ta verdiği,
+  "İstanbul Büyükşehir Belediye Başkanlığı seçiminin yenilenmesi …" kararı".
+
+### 2019-06-yerel
+
+- **[B] YSK EK-1** "23 Haziran 2019 İstanbul Büyükşehir Belediye Başkanı Yenileme Seçimi"
+  (`…/2019MahalliIdareler/KesinSecimSonuclari/2019Mahalli-IBB.pdf`): kayıtlı 10.560.963, oy kullanan
+  8.925.166, geçerli 8.746.566; **CHP 4.742.082 (%54,22)**, AK Parti 3.936.068 (%45,00), Saadet
+  47.832, Vatan 13.962, Bağımsız 6.622. Aynı sayılar YSK istatistik kitabı 6.2.1'de.
+- **İkinci kaynak:** Habertürk, "İstanbul seçim sonuçları 2019 Ekrem İmamoğlu Binali Yıldırım…"
+  (`haberturk.com/istanbul-kim-kazandi-…-2497921`): "Ekrem İmamoğlu İstanbul Büyükşehir Belediye
+  Başkanı oldu"; "Millet İttifakı ve CHP adayı Ekrem İmamoğlu … 4 milyon 741 bin 868'e (% 54.0)"
+  (sandıkların %99,9'u; kesin sonuçla fark %0,005).
+- Spesifikasyon §5.3: `kapsam:"İstanbul"`, yalnızca `buyuksehir.istanbul`, `sonuc` yazılmaz.
+
+### 2023-05-genel
+
+- **[B] YSK MM/24** "Yurt İçi, Yurt Dışı ve Gümrük Sandıkları Dahil Milletvekili Genel Seçimi
+  Sonucu" (`…/14Mayis2023/KesinSecimSonuclari/ULKE_GENELI_TOPLAMI_MM24.pdf`): oy kullanan
+  **55.835.895**, geçerli **54.442.588** (geçersiz 1.393.307, katılma %87,05); 24 parti + bağımsızlar
+  (AK Parti 19.392.462, CHP 13.802.183, MHP 5.484.820, İYİ 5.275.981, YSGP 4.803.922, YRP 1.527.048,
+  Zafer 1.216.399, TİP 956.057, BBP 530.770, Memleket 502.669, Vatan 52.720, Bağımsızlar 226.831 …);
+  toplam 54.442.588 (hesaplandı, tutuyor).
+- **`kayitli` (hesaplandı):** MM/24 tablosunda kayıtlı seçmen satırı yok. [B] YSK MM/21 (yurt içi)
+  kayıtlı **60.721.745** + [B] MM/22 (yurt dışı ve gümrük) kayıtlı **3.423.759** = **64.145.504**;
+  MM/24'ün katılma oranıyla sağlama: 55.835.895 / 64.145.504 = %87,05 (tutuyor). Aynı sayı [B] YSK
+  CM/5 (CB 1. oylama) kayıtlı seçmeninde de 64.145.504.
+- **[B] YSK MM/25** (sandalyeler): AK Parti 268, YRP 5, MHP 50, YSGP 61, TİP 4, CHP 169, İYİ 43,
+  Bağımsızlar 0; "TÜRKİYE TOPLAMI : 600".
+- **İkinci kaynak:** memurlar.net, "YSK Milletvekili Seçimleri Kesin Sonuçlarını Açıkladı"
+  (30.05.2023, `memurlar.net/haber/1066618/…`): "kayıtlı 64 milyon 145 bin 504 seçmenden 55 milyon
+  835 bin 895'i oy kullandı. Oyların 54 milyon 442 bin 588'i geçerli"; yedi partinin oy ve sandalyesi
+  (AK Parti 19.392.462/268, CHP 13.802.183/169, MHP 5.484.820/50, İYİ 5.275.981/43, YSGP
+  4.803.922/61, YRP 1.527.048/5, TİP 956.057/4) ve meclis dışı 17 partinin oyları (Memleket 502.669,
+  BBP 530.770, Vatan 52.720, Zafer 1.216.399 ve "Diğer"deki 13 partinin her biri) YSK ile birebir.
+  Bağımsızlar (226.831) haberde yok → hesaplandı: 54.442.588 − parti oyları toplamı = 226.831.
+  Uyuşmazlık: yok.
+- **"Diğer" (partiSayisi 13, oy 670.726, hesaplandı):** Millet 52.315 + HAK-PAR 42.509 + TKP 63.809 +
+  TKH 17.476 + Sol Parti 77.992 + Genç Parti 112.972 + Adalet Birlik 41.196 + Anavatan Partisi
+  (2011–; soyağacındaki `anap` 1983–2009'dur) 66.102 + Yenilik 11.171 + HKP 31.831 + Milli Yol 17.758
+  + Güç Birliği 26.359 + Adalet Partisi (soyağacındaki `ap` 1961–1981'dir) 109.236 = 670.726.
+- **İttifaklar:** [B] YSK kura tutanağı (8.4.2023, `ysk.gov.tr/doc/karar/dosya/658968/2023-KuraTutanagi.pdf`):
+  "Cumhur İttifakı için Adalet ve Kalkınma Partisi, Büyük Birlik Partisi, Milliyetçi Hareket
+  Partisi, Yeniden Refah Partisi; Emek ve Özgürlük İttifakı için Türkiye İşçi Partisi, Yeşiller ve
+  Sol Gelecek Partisi; Millet İttifakı için Cumhuriyet Halk Partisi, Demokrasi ve Atılım Partisi,
+  Demokrat Parti, Gelecek Partisi, İyi Parti, Saadet Partisi" (Ata ve Sosyalist Güç Birliği
+  ittifakları da var). İkinci kaynak: Yeni Şafak, "Hangi parti hangi ittifakta yer alıyor?"
+  (`yenisafak.com/…-h-4520330`): aynı dört ve altı parti; "DEVA, Gelecek, Saadet ve Demokrat
+  Parti seçime CHP listesinden girecek".
+- **`ittifak` alanı:** `{ad:"Millet İttifakı", liste:"chp92", icinden:[deva, gelecek, sp, dp07]}`,
+  hepsi `sandalye:null`. Dört partinin ayrı listesi yok ([B] MM/24'te satırları yok); CHP
+  listesinden girdikleri Yeni Şafak ve AA'nın (NTV ve Yeni Şafak'ta yayımlanan) "Millet İttifakı
+  partilerinden 39 aday, CHP listesinden Meclis'e girdi" haberinde. Sandalye sayıları (AA: DEVA 14,
+  Gelecek 10, Saadet 10, DP 3, İYİ 1, TDP 1) **tek bir ajans haberine** dayanıyor, "kesin olmayan
+  sandık sonuçlarına göre" ve resmî [B] karşılığı yok (YSK parti üyeliğini değil listeyi kaydeder);
+  başka bir kaynakta DEVA 15 geçiyor → `null`. HÜDA PAR adaylarının AK Parti listesinden girdiği
+  (Yeni Şafak) soyağacında olmadığı için yazılmadı (Görev 10 listesine).
+- **`baraj: 7`:** [B] 7393 sayılı Kanun (kabul 31.3.2022, RG 6.4.2022,
+  `resmigazete.gov.tr/eskiler/2022/04/20220406-1.htm`) md. 1: "2839 sayılı Milletvekili Seçimi
+  Kanununun 33 üncü maddesinin birinci fıkrasında yer alan "oyların %10'unu" ibaresi "oyların yüzde
+  yedisini" şeklinde". İkinci kaynak: TRT Haber, "Seçim kanununda değişiklik Resmi Gazete'de: Seçim
+  barajı yüzde 7'ye indi" (`trthaber.com/…-670068.html`): "yüzde 10 olarak uygulanan ülke seçim
+  barajı yüzde 7'ye indirildi".
+- **Önceki turdan fark:** `not`taki Millet İttifakı "CHP ile İYİ Parti" diye eksikti — dört parti
+  eklendi; `ittifak` alanı eklendi; sonuç satırları sandalyeye göre yeniden sıralandı (YSGP 61 > MHP 50).
+
+### 2023-05-cb-halk
+
+- **[B] YSK CM/5, birinci oylama** (`…/2023CB-TumSecimSonucu.pdf`): kayıtlı **64.145.504**, oy
+  kullanan **55.833.153**, geçerli **54.796.049**; Erdoğan 27.133.849 (%49,52), Kılıçdaroğlu
+  24.595.178, Oğan 2.831.239, İnce 235.783 (İnce adaylıktan çekildi ama pusulada kaldı; toplam tutuyor).
+- **[B] YSK CM/5, ikinci oylama** (`…/2023CB-TumSecimSonucuIkinciTur.pdf`): kayıtlı **64.197.454**,
+  oy kullanan **54.023.601**, geçerli **53.339.313**; Erdoğan 27.834.589 (%52,18), Kılıçdaroğlu 25.504.724.
+- **İkinci kaynak (birinci oylama):** TRT Haber, "YSK kesin seçim sonuçlarını açıkladı"
+  (`trthaber.com/haber/gundem/ysk-kesin-secim-sonuclarini-acikladi-768663.html`): "64 milyon 145 bin
+  504 kayıtlı seçmenin 55 milyon 833 bin 153'ü oy kullandı. 54 milyon 796 bin 49'u geçerli";
+  Erdoğan 27.133.849, Kılıçdaroğlu 24.595.178, Oğan 2.831.239 (yurt içi/dışı/gümrük kırılımıyla).
+  İnce haberde yok → hesaplandı: 54.796.049 − 27.133.849 − 24.595.178 − 2.831.239 = **235.783**
+  (YSK ile aynı). memurlar.net (`…/haber/1065475/…`) aynı metni veriyor.
+- **İkinci kaynak (ikinci oylama):** Hürriyet, "Cumhurbaşkanlığı ikinci tur kesin seçim sonuçları
+  Resmi Gazete'de yayımlandı" (`hurriyet.com.tr/gundem/…-42276898`): "Yurt içi ve yurt dışında
+  toplam 54 milyon 23 bin 601 seçmenimizin oy"; Erdoğan "27 milyon 834 bin 589", Kılıçdaroğlu
+  "25 milyon 504 bin 724". Geçerli oy hesaplandı: 27.834.589 + 25.504.724 = **53.339.313** (YSK ile
+  aynı). Kayıtlı: SETA, "Cumhurbaşkanlığı Seçimleri: İki Tur, Adaylar ve Farklar"
+  (`setav.org/cumhurbaskanligi-secimleri-iki-tur-adaylar-ve-farklar`): "birinci tur seçimlerinde 64
+  milyon 145 bin 504 olan kayıtlı seçmen sayısı, ikinci turda 64 milyon 197 bin 454'e yükseldi".
+  Uyuşmazlık: yok. (SETA'nın birinci tur aday sayıları — Erdoğan 27.133.837, Kılıçdaroğlu
+  24.594.932 — kesinleşmemiş sonuçlardır; fark %0,001'in altında.)
+- **Aday gösterme:** [B] YSK Kararı 2023/254 (24.3.2023): "Adalet ve Kalkınma Partisi Grubu ve
+  Milliyetçi Hareket Partisi Grubu tarafından aday gösterilen Recep Tayyip ERDOĞAN'ın", "Cumhuriyet
+  Halk Partisi Grubu ve İyi Parti Grubu tarafından aday gösterilen Kemal KILIÇDAROĞLU'nun"; [B] Karar
+  2023/280: "en az yüzbin seçmenin yazılı teklifiyle aday gösterilen Cumhurbaşkanı adaylarının …
+  Muharrem İNCE ve Sinan OĞAN". İkinci kaynak: Yeni Şafak (`…-h-4517313`): "Memleket Partisi Genel
+  Başkanı Muharrem İnce ile ATA İttifakı'nın Cumhurbaşkanı adayı Sinan Oğan, YSK'nın verilerine göre
+  100 bin imzaya ulaştı … Cumhur İttifakı adayı Cumhurbaşkanı Erdoğan ile Millet İttifakı adayı Kemal
+  Kılıçdaroğlu". **Önceki turdan fark:** Oğan ve İnce'ye `destek` eklendi.
+- **`not`:** ikinci oylama [B] YSK arşivi + Bloomberg HT (bkz. cb-kabine-2023): "28 Mayıs'ta
+  düzenlenen Cumhurbaşkanlığı 2. tur seçimleri". **Önceki turdan fark:** kabineyle ilgili cümle
+  hükümet kaydına taşındı.
+
+### 2024-03-yerel
+
+- **[B] YSK LİSTE-4** (`…/2024MahalliIdareler/2024KesinSecimSonucları/BELEDIYEMECLISUYELIGI.pdf`;
+  YSK Kararı 2024/2367, 6.5.2024, RG 7.5.2024): kayıtlı 57.716.975, oy kullanan 45.079.928, geçerli
+  42.848.693; CHP 15.200.699 (%35,48), AK Parti 13.874.511, YRP 2.991.882, MHP 2.508.414, DEM
+  2.409.155, İYİ 1.967.898, Zafer 1.102.172, Saadet 561.064, BBP 525.400, Hür Dava 274.486, TİP
+  261.656, DEVA 186.090, BTP 154.741, DP 145.134, TKP 126.166, Memleket 115.553, Sol Parti 54.930,
+  DSP 50.925, Gelecek 47.867, Vatan 37.350, Emek 36.506, … Bağımsız 122.219.
+- **Neden `null`:** 2019-03-yerel ile aynı (ikinci bağımsız kaynak yok; aranan yerler aynı).
+- **"Diğer" (partiSayisi 16):** Hür Dava, BTP, TKP, Sol Parti, Anavatan (2011–), Millet, TKH,
+  Milli Yol, Yeni Türkiye, HKP, Adalet Partisi, Anadolu Birliği, Adalet Birlik, Ocak, HAK-PAR,
+  Aydınlık Demokrasi. Güç Birliği Partisi 0 oy → sayılmadı.
+- **Büyükşehir — [B] YSK "2020-2024 Seçim İstatistikleri"** (`…/docs/YENİ-KAPAKLI-SEÇİM-İSTATİSTİK-2020_2024-TR-11-11-2025.pdf`,
+  s. 126, 4.1.8; grafik görüntüden okundu): Ankara **CHP %60,5** – AK Parti %31,7; İstanbul
+  **CHP %51,2** – AK Parti %39,6; İzmir **CHP %49** – AK Parti %37,1.
+- **Büyükşehir — ikinci kaynak:** Habertürk, "31 Mart Yerel Seçim Sonuçları 2024 – … hangi ilde hangi
+  aday kazandı" (`haberturk.com/…-scm04-3673566`): "Sandıktan çıkan oyların yüzde 51,09'unu alan CHP
+  adayı Ekrem İmamoğlu İstanbul Büyükşehir Belediye Başkanı oldu"; "yüzde 60,35'ini alan CHP adayı
+  Mansur Yavaş Ankara"; "yüzde 48,90'ını alan CHP adayı Cemil Tugay İzmir" (kesin olmayan sonuçlar;
+  yalnızca kazanan parti tutuluyor).
+
+### hukumet-65
+
+- **Başlangıç 24.5.2016:** [B] RG 24.5.2016/29721 mükerrer, "İzmir Milletvekili ve Adalet ve Kalkınma
+  Partisi Genel Başkanı Binali YILDIRIM Başkanlığında Kurulan Bakanlar Kurulunun Atanmasına Dair
+  Tezkere" (`…/2016/05/20160524M1.htm`; bkz. Hükümetler 58-64). İkinci kaynak: NTV, "Yeni kabine
+  belli oldu (65. Hükümet Bakanlar Kurulu listesi)" (24.05.2016): "AK Parti Genel Başkanı Binali
+  Yıldırım, Cumhurbaşkanı Erdoğan'ın onayladığı yeni kabineyi Beştepe'de açıkladı … 65. Hükümet kuruldu."
+- **`tip: tek-parti`, `partiler: [akp]`:** kabine tek parti (RG tezkere başlığı; NTV) ve AK Parti'nin
+  meclis çoğunluğu [B] 2015-11-genel: 317/550.
+- **Bitiş 9.7.2018, `bitisNedeni: sistem-degisikligi`:** [B] 6771 md. 18/a: Bakanlar Kuruluna ilişkin
+  değişiklikler "birlikte yapılan Türkiye Büyük Millet Meclisi ve Cumhurbaşkanlığı seçimleri sonucunda
+  Cumhurbaşkanının göreve başladığı tarihte" yürürlüğe girer; [B] Cumhurbaşkanlığı Kararı 2018/1
+  (9 Temmuz 2018, RG 10.7.2018/30474, `…/2018/07/20180710-4.pdf`, görüntüden okundu): Cumhurbaşkanı
+  yardımcısı ve bakanlar "Anayasasının 104 ve 106 ncı maddeleri gereğince atanmıştır". İkinci kaynak:
+  Demirkol (2023), s. 365–366: "Bakanlar Kurulunun kaldırıldığı 2018 yılına dek kurulan 65 hükümet";
+  s. 373: "Cumhurbaşkanlığı sistemine geçişin yaşandığı 10.07.2018 tarihine dek" (Demirkol RG yayım
+  gününü kullanıyor; bu projenin ölçütü tezkere/karar tarihi → 9.7.2018, 58–64 ile aynı ölçüt).
+- **64'ün bitiş nedeni** bu turda da doğrulanamadı → `null` kaldı (RG'de istifa tezkeresi yok).
+
+### cb-kabine-2018
+
+- **`no: null`, `baskan`:** spesifikasyon §5.8 — 2018 sonrası yapı için resmî bir numara yok; [B]
+  kararların adı "Cumhurbaşkanı Yardımcılığına ve Bakanlıklara Yapılan Atamalar Hakkında Karar".
+- **Başlangıç 9.7.2018:** [B] Karar 2018/1 (yukarıda). İkinci kaynak: Hürriyet, "Son dakika...
+  Cumhurbaşkanı Erdoğan yeni kabineyi açıkladı" (oluşturulma 9 Temmuz 2018 22:33).
+- **`partiler: []`:** Cumhurbaşkanlığı kabinesi partilerin kurduğu bir Bakanlar Kurulu değil; Hürriyet
+  aynı haberde "“Partili bakan olmayacak”" ve milletvekili seçilen dört bakanın istifa edeceğini yazıyor.
+  `tip: cumhurbaskanligi` (şerit "cumhurbaşkanlığı" etiketini gösterir).
+- **Bitiş 3.6.2023, `bitisNedeni: erken-secim`:** [B] Cumhurbaşkanı Kararı 2023/121 (10 Mart 2023, RG
+  10.3.2023/32128 mükerrer, `…/2023/03/20230310M1-1.pdf`, OCR): "Anayasasının 116 ncı maddesi uyarınca
+  Türkiye Büyük Millet Meclisi genel seçimi ve Cumhurbaşkanlığı seçiminin **yenilenmesine** karar
+  verilmiştir." (59 ve 62 emsali: "yenilenmesine" kararı → `erken-secim`.) İkinci kaynak: Bloomberg HT
+  (aşağıda) seçim ve yeni kabine.
+
+### cb-kabine-2023
+
+- **Başlangıç 3.6.2023:** [B] Cumhurbaşkanlığı Kararı 2023/284 (3 Haziran 2023, RG 4.6.2023/32211,
+  `…/2023/06/20230604-1.pdf`, görüntüden okundu): "3/6/2023 TARİHLİ VE 2023/284 SAYILI KARARIN EKİ
+  LİSTE" (Cevdet Yılmaz Cumhurbaşkanı Yardımcısı ve 17 bakan). İkinci kaynak: Bloomberg HT, "Yeni
+  dönem, yeni kabine" (giriş 03 Haziran 2023): "3 Haziran 2023 Cumartesi günü Meclis'te yemin ederek
+  görevine resmen başlamasının ardından … yeni kabineyi açıkladı".
+- **Bitiş:** görevde (`bitis: null`).
+
+### Görev 10'a eklenecekler (dönem 7)
+
+- **Hür Dava Partisi (HÜDA PAR):** 2018'de ayrı liste (%0,31, 0 sandalye → "Diğer"); 2023'te
+  adayları AK Parti listesinden girdi (Yeni Şafak); 2024 yerelde 274.486 belediye meclisi oyu, 23
+  üyelik ([B] YSK LİSTE-4). Sandalye sayısı [B] kaynakla doğrulanamadı.
+- Dönem 7'de sandalye kazanıp soyağacında olmayan başka parti yok (2018: 5 parti, 2023: 7 parti; hepsi
+  soyağacında).
