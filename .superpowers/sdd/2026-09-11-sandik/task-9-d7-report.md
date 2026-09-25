@@ -1,6 +1,8 @@
 # Görev 9 — Dönem 7 (2016–2026) raporu
 
-Durum: **devam ediyor**
+Durum: **BLOCKED — ağ erişimi yok (2026-09-25, bulut oturumu)**
+
+Bulut ortamının ağ politikası resmî ve ikincil kaynakların tamamını engelliyor (ysk.gov.tr, resmigazete.gov.tr, tbmm.gov.tr, tuik.gov.tr, tccb.gov.tr, aa.com.tr, trthaber.com, bianet.org → curl 403 / WebFetch EGRESS_BLOCKED). Yalnızca arama motoru özetleri erişilebilir; bunlar kaynak sayılmadığı için veriye dokunulmadı. Mevcut beş kayıt "DOĞRULANMADI" işaretiyle duruyor.
 
 ## 1. Yapılanlar (adım adım)
 
