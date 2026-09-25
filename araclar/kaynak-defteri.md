@@ -3974,3 +3974,160 @@ belirtildi. Yarım tur yedeği: `.superpowers/sdd/2026-09-11-sandik/donem7-yarim
   üyelik ([B] YSK LİSTE-4). Sandalye sayısı [B] kaynakla doğrulanamadı.
 - Dönem 7'de sandalye kazanıp soyağacında olmayan başka parti yok (2018: 5 parti, 2023: 7 parti; hepsi
   soyağacında).
+
+## Soyağacı eklemeleri (Görev 10, 2026-09-25)
+
+**Kullanıcı kararı (2026-09-25):** önerilen altı partinin hepsi eklensin (CMP, Hürriyet Partisi,
+Millet Partisi 1962, Türkiye Birlik Partisi, Milliyetçi Demokrasi Partisi, Hür Dava Partisi); TİP
+notu "14 + 1" diye açık yazılsın. Kaynak kısaltmaları:
+
+- **[B] TBMM-P** — Mete Kaan Kaynar, Nurettin Kalkan, *Cumhuriyet Dönemi Partiler, Seçimler,
+  Beyannameler (1923-1980)*, TBMM Yayınları (`cdn.tbmm.gov.tr/TbmmWeb/Yayinlar/Dosya/ed1d2982-f225-4467-a4ab-707f4cc471dc.pdf`).
+- **[B] YCB** — Yargıtay Cumhuriyet Başsavcılığı siyasi parti sicili (`yargitaycb.gov.tr/sipar/158`).
+- **[B] RG-2533** — 2533 sayılı Siyasi Partilerin Feshine Dair Kanun, RG 16.10.1981/17486 mükerrer
+  (`resmigazete.gov.tr/arsiv/17486_1.pdf`): "Kanun No. 2533 — Kabul Tarihi: 16.10.1981 — MADDE 1. —
+  12 Eylül 1980 tarihine kadar kurulmuş olan ve faaliyetleri Milli Güvenlik Konseyinin 7 Numaralı
+  Bildirisi ile yasaklanmış bulunan bütün Siyasi Partiler … feshedilmişlerdir."
+- **İ&İ** — "27 Mayıs ile 12 Mart Arası Dönemde Muhalefetin Sembol İsmi: Osman Bölükbaşı",
+  *İnsan & İnsan* 8(29), 2021 (`dergipark.org.tr/tr/download/article-file/1724591`).
+- **TD** — Gül Tuba Taşpınar Dağcı, "Türk Siyasi Tarihinde Hürriyet Partisi'nin Yeri"
+  (`dergipark.org.tr/tr/download/article-file/9887`); **AB** — Mustafa Albayrak, "Hürriyet Partisi'nin
+  Türk Siyasî Tarihindeki Yeri ve Önemi", *AAMD* (`…/article-file/676953`); **KU** — Kadri Unat,
+  "Seçim Afişleri Işığında Hürriyet Partisi'nin 1957 Genel Seçimi Kampanyası", *HÜTAD* (`…/article-file/3732278`).
+- **ÇAB** — Çiçek, Aydın, Baran, "Gelenekle Sol Arasında Sıkışmış Bir Siyasal Hareket: (Türkiye)
+  Birlik Partisi", *SİYASAL* 26(2), 2017 (`…/article-file/409411`); **TKHBVA** — "Türk Siyasetinde
+  Alevi Kimliğinin Politik Temsil Deneyimi: (Türkiye) Birlik Partisi", *Türk Kültürü ve Hacı Bektaş
+  Velî Araştırma Dergisi* 112, 2024 (`dergipark.org.tr/tr/pub/tkhcbva/article/1533742`).
+- **JEBPIR** — "1983 Genel Seçimleri ve Anavatan Partisi", *JEBPIR* 8(1), 2022 (`…/article-file/1865436`);
+  **RY** — Rezzan Yücer, "Siyasi Kimliği ile Necdet Calp ve Halkçı Parti (1983-1985)" (`…/article-file/4244382`);
+  **KO** — Kutlu & Oğuz, "Otoriter Rejimlerin Konsolidasyonunda Cunta Partilerinin Rolü: DRP, Golkar
+  ve MDP Örnekleri", *Akademik Hassasiyetler* 9(20), 2022 (`…/article-file/2667827`); **MA** — Fatma
+  Okur Çakıcı, "Siyasi Parti Bölünmeleri…", *Mavi Atlas* 8(2), 2020 (`…/article-file/1157799`).
+- **MI** — Muhittin Işık, "Kürt Muhalefet Partisi Olarak Hür Dava Partisi'nin (HÜDA PAR) Kürt
+  Meselesine Yaklaşımı", *DÜİİBFD* 14(28), 2024 (`…/article-file/3976680`); **CUM** — Cumhuriyet,
+  "HÜDA PAR'ın açılımı nedir? …" (`cumhuriyet.com.tr/turkiye/…-2060080`).
+
+### cmp — Cumhuriyetçi Millet Partisi (1954 – 1958, devredildi, Milliyetçi, dönem 1)
+- **Kuruluş 9.2.1954:** TBMM-P s. 52: "Cumhuriyetçi Millet Partisi, 09.02.1954 tarihinde Ahmet
+  Tahtakılıç'ın genel başkanlığında kurulur" (dipnot: EGM'nin 1983 listesi 12.09.1954 diyor, "tüm diğer
+  kaynaklarda … 09.02.1954"); İ&İ: "9 Şubat 1954'te CMP kurulmuştur".
+- **1958 — CKMP'ye dönüşme (`durum: katildi`, bağ `cmp → ckmp` devam):** TBMM-P s. 53: "Cumhuriyetçi Millet
+  Partisi, Türkiye Köylü Partisi ile birleşme kararı alır … 19.11.1958 … Bu birleşme ardından Cumhuriyetçi
+  Millet Partisi adını Cumhuriyetçi Köylü Millet Partisi olarak değiştirecektir"; s. 54: "Milliyetçi Hareket
+  Partisi, Cumhuriyetçi Millet Partisi'nin kurumsal kimliğindeki dönüşümden ortaya çıkmıştır"; İ&İ: "CMP,
+  1958 yılında Cumhuriyetçi Köylü Partisi ile birleşerek iki parti CKMP … adıyla".
+- **Bağ `mp48 → cmp` (devam):** TBMM-P s. 53: "kapatılan Millet Partisi'nin siyasî mirası üzerine teşkil
+  edilmiştir"; İ&İ: "MP … 1954 yılında kapatılmış ve yerine … CMP … kurulmuştur".
+- **`k`:** TBMM-P kurucular arasında "Osman Bölükbaşı" (s. 52) ve 1955'ten 1962'ye genel başkan; İ&İ:
+  "Bölükbaşı başkanlığında CMP … kurulmuştur".
+- **`o`:** "aynı yıl meclise girdi" — 1954-05-genel [B] (5 sandalye) + TBMM-P ("Cumhuriyetçi Millet Partisi
+  (408.249 - % 5,3 - 5 MV)").
+- **`aile: 3` gerekçesi:** CKMP (aile 3) ile aynı tüzel kişiliğin önceki adı (TBMM-P s. 53–54); mp48 (aile 3)
+  kadrosu. Sütun ayrı bir ideoloji iddiası değil, aynı kurumsal hattın devamı.
+
+### hurriyet — Hürriyet Partisi (1955 – 1958, devredildi, Liberal, dönem 1)
+- **Kuruluş 20.12.1955:** TBMM-P s. 59: "Hürriyet Partisi, 20.12.1955 tarihinde kurulmuştu"; TD: "20 Aralık
+  1955 günü HP resmen kurulmuştur"; AB: "20 Aralık 1955 tarihinde kurul[du]".
+- **Fesih ve CHP'ye katılma 24.11.1958 (`durum: katildi`, bağ `hurriyet → chp23` katılma):** TBMM-P: "24.11.1958
+  tarihinde toplanan Olağanüstü Kongrede … Hürriyet Partisi'nin feshine ve mallarının Cumhuriyet Halk
+  Partisi'ne devrine karar verildi … büyük çoğunluk Cumhuriyet Halk Partisi'ne katıldı"; TD: "24 Kasım 1958
+  tarihinde aldığı kararla kendisini fesh ederek CHP'ye katılmıştır"; AB ve KU aynı tarih.
+- **Bağ `dp46 → hurriyet` (bölünme) ve `o`nun ilk cümlesi:** TBMM-P: "gazetecileri ispat hakkından yoksun
+  bırakan düzenlemeye itiraz eden 19 milletvekilinin … Partilerinden ayrılan milletvekilleri ve partililer
+  Hürriyet Partisi'ni kurdular"; KU: "Hürriyet Partisi, Demokrat Parti'den ihraç edilen ve istifa eden …".
+- **"1957 seçiminde dört milletvekili":** 1957-10-genel [B] (4 sandalye) + TBMM-P ("Hürriyet Partisi
+  (321.471 - % 3,5 - 4 MV)").
+- **`k`:** TD kurucu listesi ("Ekrem Alican (Kocaeli), Turan Güneş (Kocaeli) … Fevzi Lütfi Karaosmanoğlu
+  (Manisa)"; "Kuruculardan 28'i milletvekili"); TBMM-P: "Parti kapandığında genel başkanlık koltuğunda Fevzi
+  Lütfi Karaosmanoğlu'nun oturduğu görülmektedir".
+- **`aile: 6` (Liberal) gerekçesi:** TD: "HP, ekonomide nispeten liberal bir politikaya sahip iken, rejim
+  bakımından … hürriyetleri genişleten bir politikaya sahiptir"; KU: DP'nin "liberal-demokrat vaatlerini
+  ciddiye alan … liberal bir muhalefetin" 1955-1958'de faaliyet gösteren partisi; AB: "aydın ve liberal kanat".
+
+### mp62 — Millet Partisi (1962 – 1981, kapatıldı, Milliyetçi, dönem 2)
+- **Kuruluş 13.6.1962, bağ `ckmp → mp62` (bölünme):** TBMM-P s. 50–51: "Hacı Osman Bölükbaşı bir grup
+  milletvekili ile partiden ayrılarak 13.06.1962 tarihinde Millet Partisi'ni tekrar kuracaktır. Bu kurulan
+  Millet Partisi'nin, Ankara 4. Sulh Hukuk Mahkemesi tarafından kapatılan Millet Partisi'nin hukuki
+  kurumsal değil sadece siyasî devamı olduğunu da hatırlatmak gerekiyor"; İ&İ: "CKMP içinde çıkan
+  anlaşmazlıklar sonucunda Bölükbaşı bu partiden ayrılarak 1962 yılında tekrar MP'yi kurmuş".
+  → 1948 MP'ye "devam" bağı çizilmedi (hukuki devam yok); CKMP'den bölünme olarak bağlandı.
+- **Kapatma 16.10.1981:** TBMM-P s. 51: "10.10.1981 Tarih, 2533 sayılı Kanun ile 16.10.1981 tarihinde parti
+  kapatılmıştır" + RG-2533 madde 1 (bütün partiler).
+- **`k`:** TBMM-P (resmî ilk genel başkan Enis Akaygen, "05.07.1962 tarihinde görevini Hacı Osman Bölükbaşı'na
+  devredecektir") + İ&İ ("Bölükbaşı … 1962 yılında tekrar MP'yi kurmuş").
+- **`o`:** koalisyon gerekçesi TBMM-P ("İnönü'nün kurduğu ikinci koalisyon hükûmetine altı bakanla katılmıştır.
+  Bu, parti yönetiminde anlaşmazlıklara yol açacak") + İ&İ ("CKMP içinde çıkan anlaşmazlıklar"); 1965'te
+  31 milletvekili — 1965-10-genel [B].
+- **`aile: 3`:** 1948 Millet Partisi'nin (aile 3) siyasî devamı (TBMM-P) ve aynı kurucu kadro (İ&İ).
+- **Veri:** `1965-10-genel`, `1969-10-genel`, `1973-10-genel`, `1973-12-yerel` satırları `parti:"mp62"` oldu.
+  **1994 ve 1999 yerel satırlarındaki "Millet Partisi" başka bir partidir** (TBMM-P s. 49: 1984'te kurulan
+  Islahatçı Demokrasi Partisi'nin 1992'de aldığı ad; "hiçbirisinin bir diğeriyle hukuki, kurumsal ilişkisi
+  mevcut değildir") → `ad:` olarak kaldı.
+
+### tbp — Türkiye Birlik Partisi (1966 – 1981, kapatıldı, Cumhuriyetçi / sosyal demokrat, dönem 2)
+- **Kuruluş 17.10.1966 ve ad değişikliği 27.11.1971:** TBMM-P s. 69: "Parti, 17.10.1966, tarihinde Hasan Tahsin
+  Berkman liderliğinde kurulmuştur. Partinin ismi 27.11.1971 tarihinde … Türkiye Birlik Partisi olarak tadil
+  edilmiştir"; ÇAB: "17 Ekim 1966'da bir grup Alevi kökenli siyaset adamının bir araya gelerek oluşturdukları
+  BP … İlk genel başkan Hasan Tahsin Berkman"; TKHBVA: "17 Ekim 1966 tarihinde politik faaliyetlerine başlamış".
+- **Kapatma 16.10.1981:** TBMM-P s. 70 + RG-2533.
+- **`o`:** "Alevi kökenli" TBMM-P (dipnot 214) + ÇAB; "Atatürkçülük ve laiklik vurgusuyla başladı, zamanla sola
+  kaydı" ÇAB ("BP'nin ilk programının Kemalist düşünce tarzının ürünü"; "bir sol parti hüviyeti kazanmıştır")
+  + TKHBVA (bölüm başlığı "İdeolojik Paradigma Değişimi: Seküler Milliyetçilikten Demokratik Sola"); 1969'da
+  8 milletvekili — 1969-10-genel [B] + ÇAB ("TBP 1969 seçimlerinde … parlamentoya 8 vekil göndererek").
+- **`aile: 0` gerekçesi:** Atatürkçü program (ÇAB, TKHBVA) + tüzük çalışmalarında "İngiliz İşçi Partisi ile
+  İsveç Sosyal Demokrat" örnekleri (ÇAB) ve "demokratik sol"a geçiş (TKHBVA) → Cumhuriyetçi / sosyal demokrat.
+  Kimliğe göre değil ideolojiye göre sınıflandırıldı (kaynakca.html "Sınıflandırma ilkesi").
+- Bağ yok: TBP bir partiden bölünmedi, bir partiye katılmadı (TBMM-P: 1970'te "partili bazı milletvekilleri
+  Adalet Partisi'ne katılır" — örgütsel birleşme değil).
+
+### mdp — Milliyetçi Demokrasi Partisi (1983 – 1986, feshedildi, Merkez sağ, dönem 4)
+- **Kuruluş 16.5.1983:** JEBPIR: "ilk olarak 16 Mayıs 1983 günü Turgut Sunalp liderliğinde, askerin desteklediği
+  parti olarak bilinen Milliyetçi Demokrasi Partisi (MDP) kuruldu"; KO: "Milliyetçi Demokrasi Partisi (MDP),
+  16 Mayıs 1983'te kuruldu"; RY: "Siyasal Partiler Yasası'nın kabul edilmesinden sonra kurulan ilk parti".
+- **Fesih 4.5.1986 (`durum: kapandi`):** KO: "parti 4 Mayıs 1986'daki olağanüstü kongreyle kendini feshetmiştir";
+  MA: "MDP, 4 Mayıs 1986'da Olağanüstü Büyük Kongresi'ni toplamış … partinin kapatılması kararı alınmıştır".
+  YCB sicili yalnızca faal partileri listeliyor; resmî [B] fesih kaydına erişilemedi (iki akademik kaynak).
+- **Bağ yok:** MA: fesihten sonra "22 MDP'li vekil" Hür Demokrat Parti'ye, "20 MDP'li vekil DYP'ye", "23 vekil
+  de Anavatan Partisi'ne" geçti — parti bir partiye katılmadı; Hür Demokrat Parti soyağacında yok.
+- **`k`:** JEBPIR, RY ("Kurucusu Orgeneral Turgut Sunalp'dır"), KO.
+- **`o`:** askerî destek JEBPIR + MA ("askerî kanadın desteği ile kurulan"); 71 sandalye üçüncü parti 1983-11-genel
+  [B] + MA ("üçüncü parti").
+- **`aile: 1` gerekçesi:** KO ("tabanda ise merkez sağ kitleyi bütünleştirecek bir parti"); RY ("üyeleri emekli
+  askerler ve sağ görüşlü partilerin yasaklı olmayan politikacılarıdır"; "Süleyman Demirel'e muhalif olan
+  Adalet Partililer").
+
+### hudapar — Hür Dava Partisi (2012 –, faal, Milli Görüş / muhafazakâr, dönem 6)
+- **Kuruluş 19.12.2012, kısa ad, genel başkan:** [B] YCB: "HÜDA PAR — Kuruluş Tarihi: 19.12.2012 — Başkan:
+  ZEKERİYA YAPICIOĞLU"; MI: "Hür Dava Partisi, kısa adıyla HÜDA PAR, 19 Aralık 2012'de kurulmuştur … kurucu
+  genel başkanı Mehmet Hüseyin Yılmaz"; CUM: "Hür Dava Partisi, 19 Aralık 2012 tarihinde kuruldu … Mustazaf-Der'in
+  Genel Başkanı Mehmet Hüseyin Yılmaz tarafından kuruldu". Yapıcıoğlu ikinci kaynak: Hürriyet 15.02.2017 ("Hür
+  Dava Partisi (HÜDA PAR) Genel Başkanı Zekeriya Yapıcıoğlu").
+- **`o` — 2023 AK Parti listeleri:** Yeni Şafak ("HÜDA PAR, seçime AK Parti listelerinden gireceğini açıkladı");
+  TGRT Haber, "3 HÜDA-PAR'lı isim AK Parti listelerinden Meclis'e girdi". Seçilen sayısı kaynaklarda 3 ile 4
+  arasında değişiyor ve resmî kaynak yok → sayı yazılmadı; veride `2023-05-genel.ittifak`a
+  `{ad:"AK Parti listesi", liste:"akp", icinden:[{parti:"hudapar", sandalye:null}]}` eklendi.
+- **`aile: 2` gerekçesi (sınırlı):** MI: "Kürt kimliğiyle bütünleşmiş, muhafazakâr bir parti", parti programının
+  "İslâmî referanslarla" çözüm önerdiği; aynı yazarın ikinci makalesi (İnsan ve Toplum): "İslâm ve Kürt
+  kimliğini benimseyen bir muhalefet partisi"; MI'nın kaynakçasındaki Koç & Palabıyık (2016), "Türk siyasal
+  yaşamında İslami Kürt bir muhalefet partisi: Hür Dava Partisi örneği" (metnine erişilemedi, başlık üzerinden).
+  ⚠️ İkinci **bağımsız** tam metin kaynak bu turda açılamadı; `o`da ifade "akademik çalışmalarda … olarak
+  tanımlanır" diye kaynağa atfen yazıldı.
+- **Veri:** 2018-06-genel satırı `parti:"hudapar"` (önceden "Diğer"); 2014-03-yerel ve 2024-03-yerel'de
+  "Diğer"den çıkarılıp ayrı satır oldu (partiSayisi 9→8, 16→15). 2019-03-yerel'de 0 oy → yazılmadı.
+
+### Düzeltmeler (mevcut soyağacı metinleri)
+- **mp48:** `yil` "1948 – 1958" → **"1948 – 1954"**; özetin son cümlesi "1958'de Köylü Partisi ile birleşerek
+  CKMP'ye dönüştü" → "1954'te mahkeme kararıyla kapatıldı; kadrosu aynı yıl Cumhuriyetçi Millet Partisi'ni
+  kurdu." Kaynak: TBMM-P s. 50 ("27.01.1954 tarihinde … Ankara 4. Sulh Hukuk Mahkemesinin (Esas: 1222, Karar:
+  30 …) kararı ile kapatılmıştır") + İ&İ ("MP … 1954 yılında kapatılmış"). Bağ `mp48 → ckmp` kaldırıldı,
+  yerine `mp48 → cmp → ckmp`.
+- **ckmp:** özetin ilk cümlesi "Millet Partisi ile Türkiye Köylü Partisi'nin birleşmesiyle kuruldu" →
+  "Cumhuriyetçi Millet Partisi'nin 1958'de Türkiye Köylü Partisi ile birleşmesiyle bu adı aldı." (TBMM-P + İ&İ).
+- **tip61:** "1965'te 15 milletvekili kazandı" → **"1965'te Millet Meclisi'ne 14 milletvekili soktu."**
+  Kullanıcı "14 + 1 (senatör)" yazılmasını seçmişti, ancak 15. üyenin kim olduğu kaynaklarda çelişiyor:
+  TBMM-P s. 65 "15 (14 MV +1 Senatör)"; NTV, "Sosyalistler TBMM'ye nasıl girdi?": "TİP 14 milletvekilliği kazandı
+  ve bu partinin listesinden bağımsız aday olup seçilen Çetin Altan'ın mecliste TİP grubuna katılmasıyla sayı
+  15'e çıktı"; Milliyet: "TBMM'ye 15 milletvekili" (senatör Niyazi Ağırnaslı'nın TİP'e 1963'te katıldığını
+  ayrıca yazıyor). İki kaynağın uyuştuğu **14** yazıldı; "+1" kullanıcıya bildirildi.
+- **12 Eylül kesintisi ve kaynakca.html:** "1533 sayılı kanun" → **"2533 sayılı kanun"** (RG-2533; TBMM-P
+  "10.10.1981 Tarih, 2533 sayılı Kanun ile 16.10.1981 tarihinde"). Önceki metin yazım hatasıydı.

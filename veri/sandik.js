@@ -151,7 +151,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1954-05-genel
     { id: "1954-05-genel", tur: "genel", tarih: "1954-05-02", tekParti: false,
       meclis: 541, kayitli: 10262063, kullanilan: 9095617, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: null, sandalye: 503 }, { parti: "chp23", oy: null, sandalye: 31 }, { ad: "Cumhuriyetçi Millet Partisi", oy: null, sandalye: 5 }, { ad: "Bağımsız", oy: null, sandalye: null } ],
+      sonuc: [ { parti: "dp46", oy: null, sandalye: 503 }, { parti: "chp23", oy: null, sandalye: 31 }, { parti: "cmp", oy: null, sandalye: 5 }, { ad: "Bağımsız", oy: null, sandalye: null } ],
       not: "DP ikinci seçimini de kazanarak iktidarını pekiştirdi. Bağımsızların kazandığı sandalye sayısı (TÜİK'e göre 503+31+5'ten geriye kalan 2, Yılmaz 2010'a göre 1) kaynaklar arasındaki DP sandalyesi uyuşmazlığı nedeniyle kesinleştirilemedi." },
 
     // kaynak: araclar/kaynak-defteri.md#1954-05-cb-tbmm
@@ -162,7 +162,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1957-10-genel
     { id: "1957-10-genel", tur: "genel", tarih: "1957-10-27", tekParti: false,
       meclis: 610, kayitli: 12078623, kullanilan: 9250949, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: null, sandalye: 424 }, { parti: "chp23", oy: null, sandalye: 178 }, { ad: "Cumhuriyetçi Millet Partisi", oy: null, sandalye: 4 }, { ad: "Hürriyet Partisi", oy: null, sandalye: 4 } ],
+      sonuc: [ { parti: "dp46", oy: null, sandalye: 424 }, { parti: "chp23", oy: null, sandalye: 178 }, { parti: "cmp", oy: null, sandalye: 4 }, { parti: "hurriyet", oy: null, sandalye: 4 } ],
       not: "DP oy kaybetmesine rağmen çoğunluk sistemi sayesinde sandalyelerin çoğunu korudu." },
 
     // kaynak: araclar/kaynak-defteri.md#1957-11-cb-tbmm
@@ -206,7 +206,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1965-10-genel
     { id: "1965-10-genel", tur: "genel", tarih: "1965-10-10", tekParti: false,
       meclis: 450, kayitli: 13679753, kullanilan: 9748678, gecerli: 9307563, baraj: null,
-      sonuc: [ { parti: "ap", oy: 4921235, sandalye: 240 }, { parti: "chp23", oy: 2675785, sandalye: 134 }, { ad: "Millet Partisi", oy: 582704, sandalye: 31 }, { parti: "ytp", oy: 346514, sandalye: 19 }, { parti: "tip61", oy: 276101, sandalye: 14 }, { parti: "ckmp", oy: 208696, sandalye: 11 }, { ad: "Bağımsız", oy: 296528, sandalye: 1 } ],
+      sonuc: [ { parti: "ap", oy: 4921235, sandalye: 240 }, { parti: "chp23", oy: 2675785, sandalye: 134 }, { parti: "mp62", oy: 582704, sandalye: 31 }, { parti: "ytp", oy: 346514, sandalye: 19 }, { parti: "tip61", oy: 276101, sandalye: 14 }, { parti: "ckmp", oy: 208696, sandalye: 11 }, { ad: "Bağımsız", oy: 296528, sandalye: 1 } ],
       not: "Millî bakiye (ulusal artık) sistemiyle yapılan tek seçim. AP tek başına iktidara geldi; TİP ilk kez meclise girdi (14 sandalye + 1 senatörlük)." },
 
     // kaynak: araclar/kaynak-defteri.md#1966-03-cb-tbmm
@@ -224,7 +224,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1969-10-genel
     { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
       meclis: 450, kayitli: 14788552, kullanilan: 9516035, gecerli: null, baraj: null,
-      sonuc: [ { parti: "ap", oy: 4229712, sandalye: 256 }, { parti: "chp23", oy: 2487006, sandalye: 143 }, { parti: "gp", oy: 597818, sandalye: 15 }, { ad: "Bağımsız", oy: 511023, sandalye: 13 }, { ad: "Türkiye Birlik Partisi", oy: 254695, sandalye: 8 }, { ad: "Millet Partisi", oy: 292961, sandalye: 6 }, { parti: "ytp", oy: 197929, sandalye: 6 }, { parti: "tip61", oy: 243631, sandalye: 2 }, { parti: "mhp69", oy: 275091, sandalye: 1 } ],
+      sonuc: [ { parti: "ap", oy: 4229712, sandalye: 256 }, { parti: "chp23", oy: 2487006, sandalye: 143 }, { parti: "gp", oy: 597818, sandalye: 15 }, { ad: "Bağımsız", oy: 511023, sandalye: 13 }, { parti: "tbp", oy: 254695, sandalye: 8 }, { parti: "mp62", oy: 292961, sandalye: 6 }, { parti: "ytp", oy: 197929, sandalye: 6 }, { parti: "tip61", oy: 243631, sandalye: 2 }, { parti: "mhp69", oy: 275091, sandalye: 1 } ],
       not: "Cumhuriyet tarihinin en düşük katılımlı genel seçimi (%64,3). MHP ve Türkiye Birlik Partisi ilk kez meclise girdi; MHP'nin tek sandalyesi Alparslan Türkeş'e ait." },
 
     // --- dönem 3 (1972 – 1980) ---
@@ -237,27 +237,27 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1973-10-genel
     { id: "1973-10-genel", tur: "genel", tarih: "1973-10-14", tekParti: false,
       meclis: 450, kayitli: 16798164, kullanilan: 11223843, gecerli: 10723658, baraj: null,
-      sonuc: [ { parti: "chp23", oy: 3570583, sandalye: 185 }, { parti: "ap", oy: 3197897, sandalye: 149 }, { parti: "msp", oy: 1265771, sandalye: 48 }, { parti: "demp70", oy: 1275502, sandalye: 45 }, { parti: "cgp", oy: 564343, sandalye: 13 }, { ad: "Bağımsız", oy: 303218, sandalye: 6 }, { parti: "mhp69", oy: 362208, sandalye: 3 }, { ad: "Türkiye Birlik Partisi", oy: 121759, sandalye: 1 }, { ad: "Millet Partisi", oy: 62377, sandalye: 0 } ],
+      sonuc: [ { parti: "chp23", oy: 3570583, sandalye: 185 }, { parti: "ap", oy: 3197897, sandalye: 149 }, { parti: "msp", oy: 1265771, sandalye: 48 }, { parti: "demp70", oy: 1275502, sandalye: 45 }, { parti: "cgp", oy: 564343, sandalye: 13 }, { ad: "Bağımsız", oy: 303218, sandalye: 6 }, { parti: "mhp69", oy: 362208, sandalye: 3 }, { parti: "tbp", oy: 121759, sandalye: 1 }, { parti: "mp62", oy: 62377, sandalye: 0 } ],
       not: "12 Mart sonrası ilk genel seçim; CHP birinci parti oldu ama tek başına iktidar için gereken çoğunluğu sağlayamadı, uzun bir hükümet krizi başladı." },
 
     // kaynak: araclar/kaynak-defteri.md#1973-12-yerel
     { id: "1973-12-yerel", tur: "yerel", tarih: "1973-12-09",
       olcu: "belediye-meclisi",
       kayitli: 8607082, kullanilan: 4706719, gecerli: 3914801,
-      sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { ad: "Türkiye Birlik Partisi", oy: 19860 }, { ad: "Millet Partisi", oy: 8384 } ],
+      sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { parti: "tbp", oy: 19860 }, { parti: "mp62", oy: 8384 } ],
       not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1977-06-genel
     { id: "1977-06-genel", tur: "genel", tarih: "1977-06-05", tekParti: false,
       meclis: 450, kayitli: 21207303, kullanilan: 15358210, gecerli: 14827172, baraj: null,
-      sonuc: [ { parti: "chp23", oy: 6136171, sandalye: 213 }, { parti: "ap", oy: 5468202, sandalye: 189 }, { parti: "msp", oy: 1269918, sandalye: 24 }, { parti: "mhp69", oy: 951544, sandalye: 16 }, { ad: "Bağımsız", oy: 370035, sandalye: 4 }, { parti: "cgp", oy: 277713, sandalye: 3 }, { parti: "demp70", oy: 274484, sandalye: 1 }, { ad: "Türkiye Birlik Partisi", oy: 58540, sandalye: 0 }, { parti: "tip75", oy: 20565, sandalye: 0 } ],
+      sonuc: [ { parti: "chp23", oy: 6136171, sandalye: 213 }, { parti: "ap", oy: 5468202, sandalye: 189 }, { parti: "msp", oy: 1269918, sandalye: 24 }, { parti: "mhp69", oy: 951544, sandalye: 16 }, { ad: "Bağımsız", oy: 370035, sandalye: 4 }, { parti: "cgp", oy: 277713, sandalye: 3 }, { parti: "demp70", oy: 274484, sandalye: 1 }, { parti: "tbp", oy: 58540, sandalye: 0 }, { parti: "tip75", oy: 20565, sandalye: 0 } ],
       not: "CHP oyunu artırarak yine birinci parti oldu ama yine tek başına iktidar için gereken çoğunluğu sağlayamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1977-12-yerel
     { id: "1977-12-yerel", tur: "yerel", tarih: "1977-12-11",
       olcu: "belediye-meclisi",
       kayitli: 12067618, kullanilan: 6197718, gecerli: 5680318,
-      sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { ad: "Türkiye Birlik Partisi", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
+      sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { parti: "tbp", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
       not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde yine kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1980-03-cb-tbmm
@@ -280,14 +280,14 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1983-11-genel
     { id: "1983-11-genel", tur: "genel", tarih: "1983-11-06", tekParti: false,
       meclis: 399, kayitli: 19767366, kullanilan: 18238362, gecerli: 17351510, baraj: 10,
-      sonuc: [ { parti: "anap", oy: 7833148, sandalye: 211 }, { parti: "hp83", oy: 5285804, sandalye: 117 }, { ad: "Milliyetçi Demokrasi Partisi", oy: 4036970, sandalye: 71 }, { ad: "Bağımsız", oy: 195588, sandalye: 0 } ],
+      sonuc: [ { parti: "anap", oy: 7833148, sandalye: 211 }, { parti: "hp83", oy: 5285804, sandalye: 117 }, { parti: "mdp", oy: 4036970, sandalye: 71 }, { ad: "Bağımsız", oy: 195588, sandalye: 0 } ],
       not: "12 Eylül sonrası ilk genel seçim; yalnızca askeri yönetimin izin verdiği 3 parti (ANAP, HP, MDP) katılabildi." },
 
     // kaynak: araclar/kaynak-defteri.md#1984-03-yerel
     { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25",
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "anap", oy: null }, { parti: "sodep", oy: null }, { parti: "dyp", oy: null }, { parti: "hp83", oy: null }, { ad: "Milliyetçi Demokrasi Partisi", oy: null }, { parti: "rp", oy: null }, { ad: "Bağımsız", oy: null } ],
+      sonuc: [ { parti: "anap", oy: null }, { parti: "sodep", oy: null }, { parti: "dyp", oy: null }, { parti: "hp83", oy: null }, { parti: "mdp", oy: null }, { parti: "rp", oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
       not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli belediye meclisi oy toplamı YSK'nın il tablosundan script ile hesaplanabildi ama bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından (ayrıca Adana ilinin parti kırılımı kaynakta iç tutarsızdı) sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
 
@@ -437,7 +437,7 @@ window.SANDIK = {
     { id: "2014-03-yerel", tur: "yerel", tarih: "2014-03-30",
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "bdp", oy: null }, { parti: "sp", oy: null }, { parti: "hdp", oy: null }, { parti: "bbp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "ldp", oy: null }, { parti: "emep", oy: null }, { ad: "Diğer", partiSayisi: 9, oy: null }, { ad: "Bağımsız", oy: null } ],
+      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "bdp", oy: null }, { parti: "sp", oy: null }, { parti: "hdp", oy: null }, { parti: "bbp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "ldp", oy: null }, { parti: "emep", oy: null }, { parti: "hudapar", oy: null }, { ad: "Diğer", partiSayisi: 8, oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
       not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
 
@@ -473,7 +473,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2018-06-genel
     { id: "2018-06-genel", tur: "genel", tarih: "2018-06-24", tekParti: false,
       meclis: 600, kayitli: 59367469, kullanilan: 51189444, gecerli: 50137175, baraj: 10,
-      sonuc: [ { parti: "akp", oy: 21338693, sandalye: 295 }, { parti: "chp92", oy: 11354190, sandalye: 146 }, { parti: "hdp", oy: 5867302, sandalye: 67 }, { parti: "mhp93", oy: 5565331, sandalye: 49 }, { parti: "iyi", oy: 4993479, sandalye: 43 }, { parti: "sp", oy: 672139, sandalye: 0 }, { parti: "vatan", oy: 114872, sandalye: 0 }, { ad: "Diğer", partiSayisi: 1, oy: 155539, sandalye: 0 }, { ad: "Bağımsız", oy: 75630, sandalye: 0 } ],
+      sonuc: [ { parti: "akp", oy: 21338693, sandalye: 295 }, { parti: "chp92", oy: 11354190, sandalye: 146 }, { parti: "hdp", oy: 5867302, sandalye: 67 }, { parti: "mhp93", oy: 5565331, sandalye: 49 }, { parti: "iyi", oy: 4993479, sandalye: 43 }, { parti: "sp", oy: 672139, sandalye: 0 }, { parti: "vatan", oy: 114872, sandalye: 0 }, { parti: "hudapar", oy: 155539, sandalye: 0 }, { ad: "Bağımsız", oy: 75630, sandalye: 0 } ],
       ittifak: [ { ad: "Millet İttifakı", liste: "iyi", icinden: [ { parti: "dp07", sandalye: null } ] } ],
       not: "Cumhurbaşkanı seçimiyle birlikte yapılan ve milletvekili sayısının 600'e çıktığı bu seçimde AK Parti ile MHP Cumhur İttifakı, CHP, İYİ Parti ve Saadet Partisi Millet İttifakı olarak oy pusulasında yer aldı." },
 
@@ -501,7 +501,7 @@ window.SANDIK = {
     { id: "2023-05-genel", tur: "genel", tarih: "2023-05-14", tekParti: false,
       meclis: 600, kayitli: 64145504, kullanilan: 55835895, gecerli: 54442588, baraj: 7,
       sonuc: [ { parti: "akp", oy: 19392462, sandalye: 268 }, { parti: "chp92", oy: 13802183, sandalye: 169 }, { parti: "yesilsol", oy: 4803922, sandalye: 61 }, { parti: "mhp93", oy: 5484820, sandalye: 50 }, { parti: "iyi", oy: 5275981, sandalye: 43 }, { parti: "yrp", oy: 1527048, sandalye: 5 }, { parti: "tip17", oy: 956057, sandalye: 4 }, { parti: "zafer", oy: 1216399, sandalye: 0 }, { parti: "bbp", oy: 530770, sandalye: 0 }, { parti: "memleket", oy: 502669, sandalye: 0 }, { parti: "vatan", oy: 52720, sandalye: 0 }, { ad: "Diğer", partiSayisi: 13, oy: 670726, sandalye: 0 }, { ad: "Bağımsız", oy: 226831, sandalye: 0 } ],
-      ittifak: [ { ad: "Millet İttifakı", liste: "chp92", icinden: [ { parti: "deva", sandalye: null }, { parti: "gelecek", sandalye: null }, { parti: "sp", sandalye: null }, { parti: "dp07", sandalye: null } ] } ],
+      ittifak: [ { ad: "Millet İttifakı", liste: "chp92", icinden: [ { parti: "deva", sandalye: null }, { parti: "gelecek", sandalye: null }, { parti: "sp", sandalye: null }, { parti: "dp07", sandalye: null } ] }, { ad: "AK Parti listesi", liste: "akp", icinden: [ { parti: "hudapar", sandalye: null } ] } ],
       not: "Genel barajın 7393 sayılı Kanunla %10'dan %7'ye indirildiği bu seçimde AK Parti, MHP, Yeniden Refah ve BBP Cumhur İttifakı'nda; CHP, İYİ Parti, DEVA, Gelecek, Saadet ve Demokrat Parti Millet İttifakı'nda; Yeşiller ve Sol Gelecek Partisi ile TİP Emek ve Özgürlük İttifakı'nda yer aldı." },
 
     // kaynak: araclar/kaynak-defteri.md#2023-05-cb-halk
@@ -517,7 +517,7 @@ window.SANDIK = {
     { id: "2024-03-yerel", tur: "yerel", tarih: "2024-03-31",
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "chp92", oy: null }, { parti: "akp", oy: null }, { parti: "yrp", oy: null }, { parti: "mhp93", oy: null }, { parti: "dem", oy: null }, { parti: "iyi", oy: null }, { parti: "zafer", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "tip17", oy: null }, { parti: "deva", oy: null }, { parti: "dp07", oy: null }, { parti: "memleket", oy: null }, { parti: "dsp", oy: null }, { parti: "gelecek", oy: null }, { parti: "vatan", oy: null }, { parti: "emep", oy: null }, { ad: "Diğer", partiSayisi: 16, oy: null }, { ad: "Bağımsız", oy: null } ],
+      sonuc: [ { parti: "chp92", oy: null }, { parti: "akp", oy: null }, { parti: "yrp", oy: null }, { parti: "mhp93", oy: null }, { parti: "dem", oy: null }, { parti: "iyi", oy: null }, { parti: "zafer", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "tip17", oy: null }, { parti: "deva", oy: null }, { parti: "dp07", oy: null }, { parti: "memleket", oy: null }, { parti: "dsp", oy: null }, { parti: "gelecek", oy: null }, { parti: "vatan", oy: null }, { parti: "emep", oy: null }, { parti: "hudapar", oy: null }, { ad: "Diğer", partiSayisi: 15, oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "chp92" }, ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
       not: "Ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." }
   ],

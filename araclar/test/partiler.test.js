@@ -7,8 +7,8 @@ const P = yukle(["veri/partiler.js"]).PARTILER;
 
 test("PARTILER yüklenir ve soyağacının sayıları korunur", () => {
   assert.ok(P, "window.PARTILER tanımlı değil");
-  assert.equal(P.N.length, 66);
-  assert.equal(P.E.length, 73);
+  assert.equal(P.N.length, 72);
+  assert.equal(P.E.length, 77);
   assert.equal(P.AILE.length, 7);
   assert.equal(P.DONEMLER.length, 8);
   assert.deepEqual(Object.keys(P.ROZET).sort(), ["faal", "kapandi", "kapatildi", "katildi"]);
