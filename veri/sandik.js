@@ -857,7 +857,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
     { no: 64, basbakan: "Ahmet Davutoğlu", partiler: ["akp"],
-      baslangic: "2015-11-24", bitis: "2016-05-24", tip: "tek-parti", bitisNedeni: null,
+      baslangic: "2015-11-24", bitis: "2016-05-24", tip: "tek-parti", bitisNedeni: "istifa",
       not: "1 Kasım 2015 seçiminden sonra kurulan hükümet; görevi 24 Mayıs 2016'da kurulan 65. hükümete devretti." },
 
     // --- dönem 7 (2016 – 2026) ---

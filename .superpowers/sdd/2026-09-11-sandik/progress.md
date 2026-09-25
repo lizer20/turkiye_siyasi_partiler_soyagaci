@@ -169,3 +169,4 @@ Görev 12 triyajına: (a) 2019-06-yerel panelinde "katılım — · belediye mec
 Görev 10 hâlâ kullanıcı onayı bekliyor; Görev 12 kaldı.
 Dönem 6 §9.2 kapandı: 2009/2014 Ankara+İzmir büyükşehir için bağımsız ikinci kaynaklar (Akşam veritabanı, CNN Türk, Ege'de Son Söz, Hürriyet, memurlar.net, haberler.com) bulundu; alanlar korundu. Dönem 6 complete.
 Görev 12 (kısmi): güncellik + kabul ölçütlerinin hepsi kanıtlı geçti (task-12-report.md); index 'son güncelleme Eylül 2026'; defter ortak başlıklarına yönlendirme başlıkları. Kalan: §9.4 aramaları, §9.5 triyajı, Görev 10 onayı, son inceleme.
+§9.4: 64. Hükümet bitisNedeni istifa ([B] TBMM tutanağı 26/1/92, CB tezkeresi 22.5.2016 + Hürriyet). 2007 referandum tutumları: kaynaklar 2007/2010'u karıştırıyor → açık kaldı.

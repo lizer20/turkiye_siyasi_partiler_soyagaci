@@ -3933,7 +3933,15 @@ belirtildi. Yarım tur yedeği: `.superpowers/sdd/2026-09-11-sandik/donem7-yarim
   Demirkol (2023), s. 365–366: "Bakanlar Kurulunun kaldırıldığı 2018 yılına dek kurulan 65 hükümet";
   s. 373: "Cumhurbaşkanlığı sistemine geçişin yaşandığı 10.07.2018 tarihine dek" (Demirkol RG yayım
   gününü kullanıyor; bu projenin ölçütü tezkere/karar tarihi → 9.7.2018, 58–64 ile aynı ölçüt).
-- **64'ün bitiş nedeni** bu turda da doğrulanamadı → `null` kaldı (RG'de istifa tezkeresi yok).
+- **64'ün bitiş nedeni — `istifa` (bu turda bulundu):** RG'de istifa tezkeresi yok, ama tezkere TBMM
+  Genel Kurulunda okunmuş: [B] TBMM Tutanak Dergisi, 26. Dönem 1. Yasama Yılı 92. Birleşim
+  (`cdn.tbmm.gov.tr/TbmmWeb/Tutanak20230120/26/1/92/e06649f3-70a0-470b-b38f-cff5363b0e8e.html`),
+  Cumhurbaşkanlığı tezkeresi (3/789), "Sayı: 68244839-150.01-1-347 — 22/05/2016 … Türkiye
+  Cumhuriyeti Anayasası'nın 104'üncü maddesi uyarınca, Bakanlar Kurulunun istifası kabul
+  edilmiştir"; aynı birleşimde 109. madde uyarınca "İzmir Milletvekili ve Adalet ve Kalkınma …"
+  Binali Yıldırım'ın görevlendirilmesi. İkinci kaynak: Hürriyet, "Başbakan Ahmet Davutoğlu istifasını
+  sundu, Binali Yıldırım görevi aldı" (22.5.2016): "Cumhurbaşkanımız, Başbakan Davutoğlu tarafından
+  sunulan Bakanlar Kurulu'nun istifasını kabul etmiştir". → `bitisNedeni: "istifa"` (DEVİR §9.4 kalemi kapandı).
 
 ### cb-kabine-2018
 
