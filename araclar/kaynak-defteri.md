@@ -3571,3 +3571,15 @@ alanı ise brief'in "[B] + ikinci kaynak" kuralını harfiyen karşıladığı i
   aranan yerler: TRT Haber'in Ankara/İzmir dosyaları, bianet "Yerel Seçimlerde İzmir",
   Doğruluk Payı bülteni, dergipark ("üç şehir üç başkan" makalesi 1989–1994 dönemini
   kapsıyor). Kazanan parti değerleri değiştirilmedi; sınır burada açıkça kayda geçirildi.
+
+## ⚠️ Dönem 7 (2016–2026) — DOĞRULANMAMIŞ KAYITLAR
+
+`veri/sandik.js`'teki dönem 7 bloğundaki beş kayıt (`2017-04-referandum`, `2018-06-genel`,
+`2018-06-cb-halk`, `2023-05-genel`, `2023-05-cb-halk`) yarım kalmış bir veri turundan geldi ve
+**bu deftere hiç işlenmedi**. Kaynakları bilinmiyor; projenin "bir resmî [B] kaynak + uyuşan
+ikinci kaynak" kuralını karşıladıklarına dair kanıt yok. Kullanıcı kararı (25 Eylül 2026): kayıtlar
+silinmek yerine bu uyarıyla birlikte depoda tutulacak, kaynakları sonradan tamamlanacak.
+O tamamlanana kadar bu beş kaydın hiçbir sayısı doğrulanmış sayılmaz.
+
+Yedek: `.superpowers/sdd/2026-09-11-sandik/donem7-yarim-is.patch`
+Ayrıntı: `docs/DEVIR-NOTU.md` §9.1
