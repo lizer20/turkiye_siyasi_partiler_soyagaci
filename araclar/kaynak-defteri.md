@@ -3572,6 +3572,33 @@ alanı ise brief'in "[B] + ikinci kaynak" kuralını harfiyen karşıladığı i
   Doğruluk Payı bülteni, dergipark ("üç şehir üç başkan" makalesi 1989–1994 dönemini
   kapsıyor). Kazanan parti değerleri değiştirilmedi; sınır burada açıkça kayda geçirildi.
 
+### Dönem 6 açık kalemi kapandı — 2009/2014 Ankara ve İzmir büyükşehir (2026-09-25)
+
+Devir notu §9.2 / dönem 6 fix2 re-review'daki tek Important bulgu: `2009-03-yerel` ve
+`2014-03-yerel` `buyuksehir.ankara` ile `buyuksehir.izmir` yalnızca YSK + TÜİK'e dayanıyordu.
+Bu turda YSK/TÜİK dışı ikinci kaynaklar bulundu (yalnızca kazanan parti tutulduğu için oranlar
+karşılaştırılmadı, ancak not edildi):
+
+- **2009 Ankara — AK Parti:** Akşam seçim veritabanı ("haber veritabanı"; `secim.aksam.com.tr/secim/29-mart-2009-yerel-secimleri`):
+  "Ankara — Adalet ve Kalkınma Partisi %38.50 — Cumhuriyet Halk Partisi %31.50" (YSK büyükşehir
+  %38,53; fark 0,03 puan). Destekleyen: CNN Türk, "Ankara yönetimine 3 güçlü aday" (14.2.2009):
+  "3 dönemdir Ankara'yı yöneten Melih Gökçek (AKP) … Murat Karayalçın (CHP) … Mansur Yavaş (MHP)";
+  Yeni Asır (6.4.2014): "5'inci kez üst üste Büyükşehir Belediye Başkanlığı'na seçilen Melih Gökçek".
+- **2009 İzmir — CHP:** Ege'de Son Söz, "2009'da İzmir'de neler oldu?" (`egedesonsoz.com/2009da-izmirde-neler-oldu63`):
+  "29 Mart — İzmir'de CHP'nin zaferi … Büyükşehir dahil 31 belediyeden 29'unu kazandı. Büyükşehir
+  Belediye Başkanı Aziz Kocaoğlu % 57 oyla yeniden başkan seçildi." Destekleyen: Hürriyet, "Aziz
+  Kocaoğlu kimdir?" ("28 Mart 2004 seçiminde CHP'den … 29 Mart 2009 tarihinde yapılan yerel
+  seçimlerde ikinci … dönem"). (Akşam veritabanı İzmir'de CHP %55.20 veriyor; YSK %56,15 — ölçü
+  farkı olabilir, kazanan aynı.)
+- **2014 Ankara — AK Parti:** memurlar.net seçim sayfası (`memurlar.net/secim/30-mart-2014-yerel-secim-sonuclari/default.html`):
+  "Ankara | İBRAHİM MELİH GÖKÇEK | AK Parti | %44,61"; haberler.com, "2014 Yerel Seçim Sonuçları"
+  (`haberler.com/2014-yerel-secim-sonuclari-6109703-haberi/`): "Ankara: AK Parti - Melih Gökçek".
+- **2014 İzmir — CHP:** memurlar.net: "İzmir | AZİZ KOCAOĞLU | CHP | %49,64"; haberler.com:
+  "İzmir: CHP - Aziz Kocaoğlu".
+
+→ Dört değer [B] YSK + bağımsız ikinci kaynakla karşılanıyor; alanlar **korundu**. Dönem 6
+tamamlandı.
+
 ## Görev 9 — Dönem 7 (2016–2026)
 
 Erişim: 2026-09-25 (bulut oturumu). Resmî Gazete sayfaları tarayıcı kimliğiyle (`User-Agent`)
