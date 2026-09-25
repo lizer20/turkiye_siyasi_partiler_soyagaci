@@ -383,10 +383,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2004-03-yerel
     { id: "2004-03-yerel", tur: "yerel", tarih: "2004-03-28",
       olcu: "belediye-meclisi",
-      kayitli: 34213138, kullanilan: 25067950, gecerli: 23893656,
-      sonuc: [ { parti: "akp", oy: 9635145 }, { parti: "chp92", oy: 4912313 }, { parti: "mhp93", oy: 2500601 }, { parti: "dyp", oy: 2286020 }, { ad: "Sosyaldemokrat Halk Partisi", oy: 1204431 }, { parti: "sp", oy: 1111017 }, { parti: "anap", oy: 682264 }, { ad: "Genç Parti", oy: 607847 }, { parti: "dsp", oy: 484555 }, { parti: "bbp", oy: 179090 }, { parti: "ytp02", oy: 56912 }, { parti: "ip92", oy: 33770 }, { parti: "odp", oy: 29269 }, { parti: "emep", oy: 28011 }, { parti: "dp92", oy: 3742 }, { parti: "ldp", oy: 391 }, { ad: "Diğer", partiSayisi: 4, oy: 98310 }, { ad: "Bağımsız", oy: 39968 } ],
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "dyp", oy: null }, { ad: "Sosyaldemokrat Halk Partisi", oy: null }, { parti: "sp", oy: null }, { parti: "anap", oy: null }, { ad: "Genç Parti", oy: null }, { parti: "dsp", oy: null }, { parti: "bbp", oy: null }, { parti: "ytp02", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "emep", oy: null }, { parti: "dp92", oy: null }, { parti: "ldp", oy: null }, { ad: "Diğer", partiSayisi: 4, oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "AK Parti'nin ilk yerel seçiminde belediye meclisi oylarının %40'ını aldığı bu seçimde 3.193 belediye başkanlığı ve 34.477 meclis üyeliği için oy verildi." },
+      not: "AK Parti'nin ilk yerel seçiminde 3.193 belediye başkanlığı ve 34.477 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
 
     // kaynak: araclar/kaynak-defteri.md#2007-04-cb-tbmm
     { id: "2007-04-cb-tbmm", tur: "cb-tbmm", tarih: "2007-04-27",
@@ -414,16 +414,17 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2009-03-yerel
     { id: "2009-03-yerel", tur: "yerel", tarih: "2009-03-29",
       olcu: "belediye-meclisi",
-      kayitli: 39787986, kullanilan: 33447257, gecerli: 32072363,
-      sonuc: [ { parti: "akp", oy: 12237325 }, { parti: "chp92", oy: 7966710 }, { parti: "mhp93", oy: 5336695 }, { parti: "sp", oy: 1807745 }, { parti: "dtp", oy: 1687733 }, { parti: "dp07", oy: 1181074 }, { parti: "dsp", oy: 945722 }, { parti: "bbp", oy: 508055 }, { parti: "anap", oy: 202976 }, { parti: "odp", oy: 25557 }, { parti: "emep", oy: 21100 }, { parti: "ldp", oy: 2451 }, { parti: "ip92", oy: 2258 }, { parti: "bdp", oy: 203 }, { ad: "Diğer", partiSayisi: 5, oy: 103126 }, { ad: "Bağımsız", oy: 43633 } ],
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "sp", oy: null }, { parti: "dtp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "bbp", oy: null }, { parti: "anap", oy: null }, { parti: "odp", oy: null }, { parti: "emep", oy: null }, { parti: "ldp", oy: null }, { parti: "ip92", oy: null }, { parti: "bdp", oy: null }, { ad: "Diğer", partiSayisi: 5, oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "Kayıtlı seçmen sayısı cezaevi seçmenlerini de içeriyor; 32.392 belediye meclisi üyeliği için oy verildi." },
+      not: "32.392 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
 
     // kaynak: araclar/kaynak-defteri.md#2010-09-referandum
     { id: "2010-09-referandum", tur: "referandum", tarih: "2010-09-12",
       konu: "7 Mayıs 2010 tarihli 5982 sayılı Kanunla Türkiye Cumhuriyeti Anayasası'nın bazı maddelerinde yapılan değişiklikler.",
       kayitli: 52051828, kullanilan: 38369099, gecerli: 37644037,
       evet: 21787244, hayir: 15856793, karar: "kabul",
+      tutumlar: [ { parti: "akp", tutum: "evet" }, { parti: "chp92", tutum: "hayir" }, { parti: "mhp93", tutum: "hayir" }, { parti: "bdp", tutum: "boykot" } ],
       not: "Sayılara gümrük kapıları ve ceza infaz kurumlarında kullanılan oylar dahildir; kayıtlı seçmen sayısı yalnızca gümrük kapılarında oy kullanabilen 2.556.335 yurt dışı seçmeni de içeriyor." },
 
     // kaynak: araclar/kaynak-defteri.md#2011-06-genel
@@ -435,15 +436,15 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2014-03-yerel
     { id: "2014-03-yerel", tur: "yerel", tarih: "2014-03-30",
       olcu: "belediye-meclisi",
-      kayitli: 48843157, kullanilan: 43543717, gecerli: 41527387,
-      sonuc: [ { parti: "akp", oy: 17802976 }, { parti: "chp92", oy: 10938262 }, { parti: "mhp93", oy: 7399119 }, { parti: "bdp", oy: 1729297 }, { parti: "sp", oy: 1180322 }, { parti: "hdp", oy: 881830 }, { parti: "bbp", oy: 628729 }, { parti: "dp07", oy: 287209 }, { parti: "dsp", oy: 144337 }, { parti: "ip92", oy: 100021 }, { parti: "odp", oy: 45204 }, { parti: "ldp", oy: 9122 }, { parti: "emep", oy: 489 }, { ad: "Diğer", partiSayisi: 9, oy: 330876 }, { ad: "Bağımsız", oy: 49594 } ],
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "bdp", oy: null }, { parti: "sp", oy: null }, { parti: "hdp", oy: null }, { parti: "bbp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "ldp", oy: null }, { parti: "emep", oy: null }, { ad: "Diğer", partiSayisi: 9, oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi; kayıtlı seçmen sayısı cezaevi seçmenlerini de içeriyor." },
+      not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
 
     // kaynak: araclar/kaynak-defteri.md#2014-08-cb-halk
     { id: "2014-08-cb-halk", tur: "cb-halk", tarih: "2014-08-10",
       turlar: [ { tarih: "2014-08-10", kayitli: 55692841, kullanilan: 41283627, gecerli: 40545911,
-        adaylar: [ { ad: "Recep Tayyip Erdoğan", destek: "AK Parti", oy: 21000143 }, { ad: "Ekmeleddin Mehmet İhsanoğlu", destek: "CHP ve MHP'nin ortak adayı", oy: 15587720 }, { ad: "Selahattin Demirtaş", destek: "HDP", oy: 3958048 } ] } ],
+        adaylar: [ { ad: "Recep Tayyip Erdoğan", parti: "akp", oy: 21000143 }, { ad: "Ekmeleddin Mehmet İhsanoğlu", destek: "CHP ve MHP'nin ortak adayı", oy: 15587720 }, { ad: "Selahattin Demirtaş", parti: "hdp", oy: 3958048 } ] } ],
       secilen: "Recep Tayyip Erdoğan",
       not: "Cumhurbaşkanının ilk kez halk tarafından seçildiği bu seçimde Erdoğan geçerli oyların salt çoğunluğunu ilk turda aldığı için 24 Ağustos'a hazırlanan ikinci tura gerek kalmadı." },
 
@@ -791,7 +792,7 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
     { no: 63, basbakan: "Ahmet Davutoğlu", partiler: ["akp", "hdp"],
       baslangic: "2015-08-28", bitis: "2015-11-24", tip: "koalisyon", bitisNedeni: "erken-secim",
-      not: "Anayasa'nın 114. maddesine göre kurulan ve Adalet, İçişleri ile Ulaştırma bakanlıkları bağımsızlara verilen geçici seçim hükümeti, 1 Kasım 2015 yenileme seçiminin ardından görevi bıraktı." },
+      not: "Anayasa'nın 114. maddesine göre kurulan geçici seçim hükümetinde AK Parti'nin yanında iki HDP milletvekili bakan oldu, Adalet, İçişleri ve Ulaştırma bakanlıkları ise bağımsızlara verildi." },
 
     // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
     { no: 64, basbakan: "Ahmet Davutoğlu", partiler: ["akp"],

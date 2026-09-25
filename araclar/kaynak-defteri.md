@@ -3032,9 +3032,9 @@ başlangıcı **tam çakışıyor**, zincir boşluksuz.
   Müslüm DOĞAN** (Kalkınma Bakanı); [B] YSK "25. Dönem Milletvekili Genel Seçimi — Partilerin
   Kazandığı Milletvekili Sayıları" (`…/7Haziran2015/2015-MV_dagilimlari.pdf`) Kocaeli'de HDP 1,
   İzmir-1 ve İzmir-2'de HDP 1'er milletvekili gösteriyor.
-  **Sınırlılık:** bu iki bakanın HDP'li olduğunu *adıyla* söyleyen bir [B] belge bulunamadı;
-  `partiler: ["akp","hdp"]` yukarıdaki iki bağımsız kaynağın (RG metni + Demirkol) kapsayıcı
-  çıkarımına dayanıyor. Haber kaynakları kullanılmadı.
+  ~~**Sınırlılık:** bu iki bakanın HDP'li olduğunu adıyla söyleyen bir [B] belge bulunamadı.~~
+  **→ Düzeltme turu 1 (2026-09-25) madde 4: YSK'nın 7 Haziran 2015 Kesin Aday Listesi ve
+  milletvekili dağılımı tablosuyla iki bakanın HDP milletvekili olduğu [B] kanıtlandı.**
 - **63 — bitiş nedeni `erken-secim`:** 1 Kasım 2015 yenileme seçimi yapıldı ([B] YSK 96/D–E) ve
   64. Hükümet 24 Kasım 2015'te kuruldu. Demirkol (2023) 63'ü "**2015 yılında kurulan seçim
   hükümeti**" diye anıyor (s. 375, 381).
@@ -3120,9 +3120,9 @@ ayrı bir göreve bırakıldı.
     (`…/2004MahalliIdareler/buyuksehir/Buyuksehir.pdf`, aynı YSK kararı/RG künyesi) ile
     **22 satırın tamamında birebir** aynıdır. YSK bu ölçüyü yalnızca ülke toplamı olarak,
     TÜİK ise şehir şehir yayımlıyor.
-  - **Sınırlılık:** üç şehrin **şehir bazındaki** rakamlarını yayımlayan ikinci bir kurum
-    bulunamadı (YSK 2004 sayfasında sadece 8 dosya var, il kırılımı yok); yukarıdaki birebir
-    örtüşme aynı resmî veri kümesinin iki kurumca yayımlandığını gösteriyor.
+  - ~~**Sınırlılık:** üç şehrin şehir bazındaki rakamlarını yayımlayan ikinci bir kurum
+    bulunamadı.~~ **→ Düzeltme turu 1 (2026-09-25) madde 3: YSK'nın kendi şehir bazlı 2004
+    büyükşehir dosyaları bulundu, alan artık iki [B] kaynaklı.**
 - **`tarih`: 28 Mart 2004** — [B] YSK belgesinin başlığı ve "1- Bu tesbitler, **28 Mart 2004
   günü** sandık kurullarınca düzenlenip…" açıklaması.
 - Erişim: 2026-09-23.
@@ -3199,7 +3199,7 @@ ayrı bir göreve bırakıldı.
     Adaylar" listesi); itiraz süreci kaynak belgelere yansımadığı için `not` alanına yazılmadı.
 - Erişim: 2026-09-23.
 
-**Yerel seçimlerde ikinci kaynak sorunu (2004, 2009, 2014) — açık uyarı:** ülke geneli
+**Yerel seçimlerde ikinci kaynak sorunu (2004, 2009, 2014) — açık uyarı** (→ **Düzeltme turu 1 madde 2: ikinci kaynak bulunamadı, ulusal sayılar `null` yapıldı**)**:** ülke geneli
 **belediye meclisi** rakamlarının birincil kaynağı YSK'nın kesin sonuç ilanıdır (2004'te
 belgenin künyesinde YSK Kararı 2002 ve Resmî Gazete 12.5.2004/25460 yazılı; 2009 ve 2014
 belgeleri YSK'nın "ResmiGazete" klasöründen alınmıştır). Bu ölçüyü (belediye meclisi) ülke
@@ -3288,3 +3288,183 @@ sıfır). Büyükşehir ölçüsünde ise TÜİK ile YSK'nın ülke toplamları 
   mükerrer RG görüntülerinin OCR'ı; TBMM 22. Dönem tutanaklarında yeni Siirt milletvekillerinin
   andiçme birleşimi; YSK'nın karar arama motoru (`ysk.gov.tr/tr/ysk-kararlari/1524`).
 - Erişim: 2026-09-23.
+
+## Düzeltme turu 1 (2026-09-25) — dönem 6 controller incelemesi sonrası (SPEC ❌ → düzeltildi)
+
+İnceleme hükmü: `.superpowers/sdd/2026-09-11-sandik/review-task-9-d6-verdict.md`.
+Bulgular: **Important #1** (2014 CB adayları `destek:` ile yazılmış), **#2** (yerel ulusal
+belediye meclisi sayıları tek kaynaklı), **#3** (2004 büyükşehir tek kaynaklı),
+**#4** (hükümet 63'ün `partiler` alanı çıkarım), **#5** (referandum `tutumlar` boş),
+ayrıca ham kaynak kanıtı ve 2003 Siirt iddiasının kanıtlanması.
+
+### 1. `2014-08-cb-halk` adayları — `parti:` ile bağlandı (çözüldü)
+
+`araclar/dogrula.js` commit `00573ad` ile düzeltildiği için aday satırında `ad:` (kişi adı) ve
+`parti:` birlikte kullanılabiliyor. Veri güncellendi:
+- **Recep Tayyip Erdoğan → `parti: "akp"`.** [B] YSK Kararı 2014/3579 (7/8/2014): AK Parti Genel
+  Başkan Yardımcısı'nın dilekçesinde "…partilerinin pankartın sahibi adayı desteklemediği,
+  **Cumhurbaşkanı adayı Başbakan Recep Tayyip ERDOĞAN'ı desteklediğinin** her türlü izahtan
+  vareste olduğu…". İkinci kaynak: Selçuk İletişim (karikatür makalesi) İngilizce özeti —
+  "…Erdoğan **for the Ak Party**…".
+- **Selahattin Demirtaş → `parti: "hdp"`** (çatı aday değil, HDP adayı). İki bağımsız akademik
+  kaynak: (a) **Bekir Berat Özipek, "Türkiye Siyasetinde 2014 Cumhurbaşkanlığı Seçimi"**
+  (`dergipark.org.tr/en/download/article-file/790586`): "…İhsanoğlu ve üçüncüsü de **HDP adayı
+  Selahattin Demirtaş**'tı."; (b) **Selçuk İletişim**, "2014 Cumhurbaşkanlığı Seçimindeki
+  Cumhurbaşkanı Adaylarının Karikatürlere Yansıması"
+  (`dergipark.org.tr/tr/download/article-file/178268`), İngilizce özet: "…**Selahattin Demirtaş
+  for the HDP**…" ve Türkçe metin: "…tin Demirtaş, **MHP ve CHP'nin ortak adayları ise,
+  Ekmeleddin İhsanoğlu** olmuştur." (aynı cümle Demirtaş'ı İhsanoğlu'ndan ayırıyor: ortak aday
+  yalnızca İhsanoğlu'dur).
+- **Ekmeleddin Mehmet İhsanoğlu → `destek: "CHP ve MHP'nin ortak adayı"`** (tek bir partinin
+  adayı olmadığı için `parti:` yazılmadı; yukarıdaki iki akademik kaynak + [B] YSK 2014/3579'un
+  "rakip partilerin adayı" ifadesi).
+
+### 2. Yerel seçimlerin ülke geneli belediye meclisi sayıları — `null`'a çekildi (çözüldü)
+
+**Aranan yerler ve bulunan:**
+- **TÜİK Veri Portalı** (`veriportali.tuik.gov.tr`, "belediye meclisi" ve "halkoylaması"
+  aramaları): indirilebilir tablolar yalnızca **İl Genel Meclisi Üyeleri Seçimi Sonuçları
+  (1963-1977 / 1984-2009 / 2014)** — belediye meclisi için ulusal tablo yok.
+- **TÜİK Mahalli İdareler Seçim Sonuçları Veri Tabanı**
+  (`biruni.tuik.gov.tr/secimdagitimapp/yerel.zul`): "Belediye meclisi üyeliği" seçildiğinde
+  "Belediye sonucu / Bölge sonucu / Sandık sonucu / Kazanan adayların listesi" alt seçenekleri
+  çıkıyor ama **"İl seçimi" listesi doğrudan "Adana" ile başlıyor; "<< Tüm iller >>" seçeneği
+  YOK** (aynı liste "Büyükşehir belediye başkanlığı"nda "<< Tüm iller >>" ile başlıyor ve
+  "Türkiye" satırlı rapor üretiyor). "Bölge sonucu" yalnızca 2024/2019/2014 sunuyor ve bölge
+  seçimi istiyor. Dolayısıyla TÜİK bu ölçü için **ülke toplamı üretmiyor**.
+- **TÜİK yayını No. 3584, *Mahalli İdareler Seçimi 29.03.2009*** (`tuik.gov.tr/indir/secim_2009/aklama.pdf`,
+  11 s., `pdftotext -layout`): İÇİNDEKİLER'de belediye meclisi için üç tablo var
+  ("4.1 Belediyelere göre…", "4.2 Sandık kurullarına göre…", "4.3 …kazanan belediye meclisi
+  üyeleri") — **Türkiye toplamı tablosu yok**. Aynı yayının "3.1 Veri derleme tekniği" bölümü
+  ayrıca şunu söylüyor: "2009 seçimlerine kadar, tablolarında yer alan **Türkiye toplam
+  sonuçları**, il seçim kurulları tarafından YSK'ya gönderilen ve **YSK tarafından Resmi
+  Gazete'de ilan edilen sonuçlardan** … üzerinde hiçbir değişiklik yapılmaksızın … aynen
+  yayımlanmıştır." — yani TÜİK'in ulusal rakamları zaten YSK'nın rakamlarının aynen
+  tekrarıdır, bağımsız bir ikinci kaynak değildir.
+- **Resmî Gazete:** 2004 için YSK belgesinin künyesindeki 12.5.2004/25460 sayısı açıldı;
+  ilgili "Yüksek Seçim Kurulunun No: 2002 Sayılı Kararı" sayfa içi bir bağlantı (`#23`) ve
+  metin katmanı vermiyor.
+- **Sonuç:** bağımsız ikinci kaynak bulunamadı. Spesifikasyon §8.1 ve dönem 4/5 emsali gereği
+  `2004-03-yerel`, `2009-03-yerel` ve `2014-03-yerel` kayıtlarının `kayitli`, `kullanilan`,
+  `gecerli` alanları ve bütün `sonuc` satırlarının `oy` değerleri **`null`** yapıldı; parti
+  listesi (ve "Diğer"in `partiSayisi` değeri) korundu. Hesaplanan ham sayılar bu defterin
+  yukarıdaki dönem 6 bölümünde kayıtlıdır ve kaynak bulunduğunda doğrudan geri yazılabilir.
+- **1984/1989/1994/1999 boşluğu:** aynı arama bu yıllar için de sonuç vermedi (TÜİK'in ulusal
+  belediye meclisi tablosu hiçbir yıl için yok). Buna karşılık YSK'nın
+  `doc/dosyalar/docs/Mahalli/<yıl>/BelediyeMeclis/Pdf/<yıl>Mahalli-BelediyeMeclis-<İl>.pdf`
+  ağacının **1994 ve 1999 için de** var olduğu bu turda tespit edildi (arama motoru üzerinden:
+  `…/Mahalli/1994/BelediyeMeclis/Pdf/1994Mahalli-BelediyeMeclis-istanbul.pdf`,
+  `…/Mahalli/1999/BelediyeMeclis/Pdf/1999Mahalli-BelediyeMeclis-Adana.pdf`). Bu il dosyaları
+  dönem 5'in "1999'da dört il eksik" sorununu çözebilir ama **yine YSK kaynağıdır**, ikinci
+  kaynak sorununu çözmez; bu yüzden dönem 4/5 kayıtlarına dokunulmadı ve bulgu Görev 12'ye not
+  edildi.
+
+### 3. `2004-03-yerel.buyuksehir` — ikinci kaynak bulundu (çözüldü, alan korundu)
+
+YSK'nın 2004 arşiv sayfasında görünmeyen ama sunucuda duran bir dosya ağacı bulundu:
+`https://www.ysk.gov.tr/doc/dosyalar/docs/Mahalli/2004/Buyuksehir/Pdf/2004Mahalli-Buyuksehir-<İl>.pdf`
+(dosya adlarında il adı; `istanbul`, `izmir` küçük harfle, `Ankara` büyük harfle). Üç şehrin
+"Belediyelere göre Büyükşehir Belediye Başkanlığı Seçimi sonucu" tablosunun toplam satırı
+(`pdftotext -table`):
+
+| | Geçerli oy | AK PARTİ | CHP | SHP | MHP | DYP | GENÇ P. |
+|---|---|---|---|---|---|---|---|
+| **İstanbul** | 4.231.487 | **1.917.577** | 1.223.856 | 153.840 | 173.274 | 206.410 | 145.120 |
+| **Ankara** | 1.636.633 | **901.001** | 206.630 | 341.231 | 74.815 | 32.376 | 26.477 |
+| **İzmir** | 1.192.541 | 388.336 | **562.561** | 49.382 | 48.535 | 32.708 | 71.671 |
+
+Bu üç tablo, daha önce ikinci kaynak olarak kullanılan **TÜİK Mahalli İdareler Seçim Sonuçları
+Veri Tabanı**'nın "Belediyelere göre 28 Mart 2004 Büyükşehir Belediye Başkanlığı Seçimi sonucu"
+raporundaki İstanbul/Ankara/İzmir satırlarıyla **bütün sütunlarda birebir** aynıdır.
+→ `buyuksehir` alanı artık **[B] YSK + [B] TÜİK** (iki ayrı kurum, iki ayrı yayın) ile
+karşılanıyor; İstanbul AK Parti, Ankara AK Parti, İzmir CHP. Alan kaldırılmadı.
+
+### 4. Hükümet 63'ün `partiler` alanı — [B] kanıt bulundu (çıkarım kaldırıldı)
+
+Artık üç [B] belgeye dayanıyor:
+1. **[B] Resmî Gazete 28.8.2015 / 29459 4. mükerrer**, "GEÇİCİ BAKANLAR KURULU LİSTESİ":
+   "8 **Kocaeli Milletvekili Ali Haydar KONCA** Avrupa Birliği Bakanı", "19 **İzmir Milletvekili
+   Müslüm DOĞAN** Kalkınma Bakanı"; kabine başkanı "Konya Milletvekili ve **Adalet ve Kalkınma
+   Partisi Genel Başkanı** Ahmet DAVUTOĞLU"; ayrıca "Adalet, İçişleri ve Ulaştırma, Denizcilik
+   ve Haberleşme Bakanları **bağımsızlardan**".
+2. **[B] YSK, 7 Haziran 2015 Milletvekili Seçimleri Kesin Aday Listesi (Örnek: 41)**
+   (`…/Milletvekili/7Haziran2015/2015MV-KesinAdayListesi.pdf`, `pdftotext -table`):
+   - "KOCAELİ İLİ SEÇİM ÇEVRESİ … **HALKLARIN DEMOKRATİK PARTİSİ** … 1 **ALİ HAYDAR KONCA**
+     YÜKSEK HUKUKÇU" (PDF s. 240–245).
+   - "İZMİR-2 NOLU SEÇİM ÇEVRESİ … **HALKLARIN DEMOKRATİK PARTİSİ** … 1 **MÜSLÜM DOĞAN**
+     YÜKSEK MÜHENDİS" (PDF s. 200–206).
+3. **[B] YSK, "25. Dönem Milletvekili Genel Seçimi (7 Haziran 2015) — Partilerin Kazandığı
+   Milletvekili Sayıları"** (`…/7Haziran2015/2015-MV_dagilimlari.pdf`): "56 KOCAELİ … HDP **1**
+   … TOPLAM 11"; "45 İZMİR-2 … HDP **1** … TOPLAM 13". Her iki çevrede HDP listesinden yalnızca
+   **birinci sıradaki** aday seçilebildiğine göre, RG'de adı geçen iki bakan HDP
+   milletvekilidir.
+
+→ `partiler: ["akp","hdp"]` artık çıkarım değil, [B] belgelerle kurulmuş bir zincirdir.
+İkinci kaynak (akademik) olarak Demirkol (2023), s. 381 aynı yönde: "2015 yılında kurulan seçim
+hükümetinde de **muhalefetteki CHP ve MHP 63. Hükümete bakan vermeyi reddettiği** için atanmış
+bakan oranı %53,6 olmuştur." Kaydın `not` cümlesi de güncellendi: "…geçici seçim hükümetinde
+AK Parti'nin yanında **iki HDP milletvekili bakan oldu**, Adalet, İçişleri ve Ulaştırma
+bakanlıkları ise bağımsızlara verildi."
+
+### 5. Referandum `tutumlar`
+
+**2010-09-referandum — dört parti yazıldı** (her biri en az iki bağımsız akademik kaynakla):
+- **AK Parti → `evet`:** (a) Neslihan YOLÇU, "12 Eylül Anayasa Referandumunda Siyasal Partilerin
+  İnternet Kullanımı ve Kampanya Söylemleri", *AJIT-e*
+  (`dergipark.org.tr/tr/download/article-file/1114492`): "…yer verilmiştir. **Ak Parti
+  seçmenlerden referandumda evet oyu**, CHP ile MHP ise hayır oyları [istemiştir]";
+  (b) Yönetim Bilimleri Dergisi 9(2) 2011 (`…/article-file/705499`): "araştırmada '**evet**'
+  oylarının büyük oranda '**AKP iktidarının**' …".
+- **CHP → `hayir`:** (a) YOLÇU, aynı cümle ("**CHP ile MHP ise hayır oyları**");
+  (b) Yönetim Bilimleri 9(2): "Referandum, **CHP ve MHP'nin 'hayır' kampanyası**" çerçevesinde…".
+- **MHP → `hayir`:** (a) YOLÇU, aynı cümle; (b) Yönetim Bilimleri 9(2), aynı cümle; ayrıca
+  (c) Levent YAYLAGÜL & Cengiz ÇİÇEK, "12 Eylül 2010 Referandum Sürecinin Türkiye'deki Yazılı
+  Basında Sunumu", *folklor/edebiyat* 17(68), 2011 (`…/article-file/255368`): "Cumhuriyet
+  **MHP**, DP, İP, TKP gibi siyasi partilerin savunduğu '**Hayır**'cı …".
+- **BDP → `boykot`:** (a) YOLÇU: "**Barış ve Demokrasi Partisi (BDP) ise boykot etme kararı
+  alarak**, [seçmenlerinden] sandığa gitmeyerek boykot etmelerini [istemiştir]";
+  (b) YAYLAGÜL & ÇİÇEK: "**Söylem III- (Boykotçu Kamp): Siyasal yaşamda BDP**";
+  (c) Yönetim Bilimleri 9(2): "…referandumu **boykot çağrısıyla** karşılayan **BDP** gibi
+  muhalefet partileri…".
+- **Yazılmayanlar:** DP, İP, TKP, BBP, Saadet Partisi, ÖDP, EMEP. Bunlar tek bir kaynakta
+  (YAYLAGÜL & ÇİÇEK'te bir cümlede) anılıyor; ikinci kaynakla doğrulanamadıkları için
+  spesifikasyon §5.4 gereği listeye **hiç yazılmadı**.
+
+**2007-10-referandum — `tutumlar` yazılmadı (bulunamadı).** Yapılan tarama:
+- `dergipark.org.tr` üzerinde "21 Ekim 2007 halkoylaması / anayasa değişikliği / partilerin
+  tutumu" aramaları; indirilip `pdftotext` ile taranan makaleler: Cem EROĞUL, "2007
+  Cumhurbaşkanı Seçimi Bunalımından Çıkarılabilecek Dersler" (*AÜ SBF*), "Türkiye Cumhuriyeti
+  Anayasalarında Cumhurbaşkanlığı Makamının Önemi ve 2007 Yılı Anayasa Değişiklikleri…"
+  (`…/article-file/288967`), TUNÇ & ÇELİK, "Türkiye'de Yapılan Halkoylamaları ve Bunların
+  Ağrı'daki Yansımaları" (*Karadeniz Araştırmaları* XVIII/71, `…/article-file/2277549`),
+  Abdullah MENEK, "367 Garabeti ve 2007 Referandumu" (`…/article-file/1871993`).
+- Bunlardan **yalnızca MENEK** bir parti tutumu veriyor: "**CHP bu referandumda da hayır oyu
+  kullandı**, fakat akıntıya karşı kürek sallamanın da anlamsızlığının farkındaydı." Tek kaynak
+  olduğu için yazılmadı.
+- **2007'de TBMM oylaması kaynak olarak kullanılamaz:** 5678 sayılı Kanun TBMM'de MHP'nin de
+  oylarıyla kabul edilmişti, oysa MHP referandum kampanyasında farklı bir tutum açıkladı;
+  yani TBMM tutanağı bu referandumdaki `tutum` için geçerli bir kanıt değildir. Bu yüzden
+  2007'nin `tutumlar` alanı boş bırakıldı ve Görev 12'ye devredildi.
+
+### 6. 2003 Siirt seçimi — "taranmış GIF" iddiasının kanıtı
+
+- **[B] Resmî Gazete 12.3.2003 künye satırı:** "**11/3/2003 Tarihli ve 25045 Mükerrer sayılı
+  Resmî Gazete'de, 212 sayılı Yüksek Seçim Kurulu Kararı yayımlanmıştır.**"
+- **O mükerrer sayının tamamı** (`https://www.resmigazete.gov.tr/eskiler/2003/03/20030311M1.htm`,
+  **3.023 bayt**) yalnızca üç `<img>` etiketi içeriyor, metin yok:
+  ```html
+  <img border="0" src="T.C.-resmi-gazete.gif" width="357" height="110">
+  <img border="0" src="20030311M1-1.gif" width="630" height="640">
+  <img border="0" src="20030311M1-2.gif" width="630" height="766">
+  ```
+  İki görüntü indirilip türü doğrulandı:
+  `20030311M1-1.gif -> GIF image data, version 89a, 630 x 640`,
+  `20030311M1-2.gif -> GIF image data, version 89a, 630 x 766`. Ortamda OCR aracı yok.
+- **YSK karar arşivi:** `https://www.ysk.gov.tr/doc/dosyalar/docs/Kararlar/2003Pdf/2003-212.pdf`
+  → HTTP 200 ama içerik **PDF değil**, YSK portalının 123.497 baytlık HTML hata sayfası
+  (`<!DOCTYPE html> <html data-ng-app="yskWeb" …`). Aynı adres deseni 2002, 2007, 2010, 2011,
+  2014 ve 2015 kararları için çalışıyor; 2003 klasörü yok.
+- **YSK "Ara Seçim Arşivi"** (`ysk.gov.tr/tr/ara-secim-arsivi/2624`, tarayıcıyla DOM'dan
+  okundu) yalnızca 2009, 2010, 2012, 2014, 2016, 2017 ve 2026 **mahalli idareler** ara
+  seçimlerini listeliyor; milletvekili ara/yenileme seçimi yok.
+→ `2003-03-ara` kaydı eklenmedi; Görev 12'ye devredildi.
