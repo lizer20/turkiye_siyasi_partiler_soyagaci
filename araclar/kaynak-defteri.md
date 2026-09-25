@@ -437,6 +437,14 @@ bulundu.
   de uyumlu).
 - Erişim: 2026-09-12.
 
+### 1938-10-yerel
+
+Kaynaklar yukarıdaki ortak başlıkta: "1934-10-yerel, 1938-10-yerel, 1942-10-yerel".
+
+### 1942-10-yerel
+
+Kaynaklar yukarıdaki ortak başlıkta: "1934-10-yerel, 1938-10-yerel, 1942-10-yerel".
+
 ### hukumet-1
 Bkz. yukarıdaki ortak blok. I. İnönü Hükümeti, 30.10.1923-06.03.1924, tip: tek-parti.
 
@@ -1399,6 +1407,10 @@ veritabanı/akademik tez özeti gibi ikincil kaynaklar). Bu bölüm ikisinin dü
 - Erişim: 2026-09-16.
 
 
+### 1977-06-genel
+
+Kaynaklar yukarıdaki ortak başlıkta: "1973-10-genel, 1977-06-genel".
+
 ### 1973-04-cb-tbmm, 1980-03-cb-tbmm
 - **1973 (Fahri Korutürk):** 13 Mart – 6 Nisan 1973 arası 15 turda tamamlanan seçim süreci;
   Korutürk (bağımsız/kontenjan senatörü) 15. turda DP adayı Ferruh Bozbeyli'ye karşı 365 oyla
@@ -1425,6 +1437,10 @@ veritabanı/akademik tez özeti gibi ikincil kaynaklar). Bu bölüm ikisinin dü
   kesinlikte olduğundan **turSayisi null bırakıldı**. Başlangıç tarihi (25 Mart 1980) iki kaynakta
   da aynı. Uyuşmazlık: tur/birleşim sayısında (bkz. yukarı), sayı yazılmadı.
 - Erişim: 2026-09-16 / 2026-09-22.
+
+### 1980-03-cb-tbmm
+
+Kaynaklar yukarıdaki ortak başlıkta: "1973-04-cb-tbmm, 1980-03-cb-tbmm".
 
 ### Hükümetler 35-44 (dönem 3 + 12 Eylül kabı)
 
@@ -1625,6 +1641,10 @@ başlangıç tarihiydi, düzeltildi** (aşağıya bakın).
   ülke geneli toplam dosyası bulundu ama şehir kırılımı yok; 1973'ün dosyası hiç bulunamadı.
   Dönem 2'de belirlenen kural burada da uygulandı: resmî kaynak yoksa `buyuksehir` yazılmaz.
 - Erişim: 2026-09-22.
+
+### 1977-12-yerel
+
+Kaynaklar yukarıdaki ortak başlıkta: "1973-12-yerel, 1977-12-yerel".
 
 ### 1973 ve 1975/1979 ara seçimleri — envanter sonucu: eklenmedi
 
