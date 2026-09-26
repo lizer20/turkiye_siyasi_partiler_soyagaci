@@ -144,9 +144,9 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#1951-09-ara
     { id: "1951-09-ara", tur: "ara", tarih: "1951-09-16",
-      bolge: "17 il", sandalyeSayisi: null,
+      bolge: "17 il", sandalyeSayisi: 20,
       sonuc: [],
-      not: "1950 seçiminde birden fazla yerden seçilen ya da vefat eden milletvekillerinin yerine yapıldı; Bilecik'te DP kazandı. Dönemin basınında sandalye sayısı için üç farklı rivayet var (17 il/20 sandalye, 19 il/21 sandalye, 22 il/22 sandalye); resmî bir kaynakla (TBMM tutanağı ya da Resmî Gazete) kesinleştirilemediği için sandalye sayısı ve il bazında dağılım yazılmadı." },
+      not: "1950 seçiminde birden fazla yerden seçilen ya da vefat eden milletvekillerinin yerine yapıldı; Bilecik'te DP kazandı. 17 il ve 20 sandalye, yeni milletvekillerinin TBMM'deki andiçme tutanaklarıyla doğrulandı. Partilere göre sandalye dağılımı resmî bir belgede bulunamadığı için yazılmadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1954-05-genel
     { id: "1954-05-genel", tur: "genel", tarih: "1954-05-02", tekParti: false,
@@ -214,12 +214,24 @@ window.SANDIK = {
       secilen: "Cevdet Sunay", turSayisi: 1,
       not: "Cemal Gürsel'in sağlık nedeniyle görevi bırakmasının ardından, AP ve CHP'nin ortak desteğiyle 1. turda seçildi; CKMP lideri Alparslan Türkeş de aday oldu." },
 
+    // kaynak: araclar/kaynak-defteri.md#1966-06-ara
+    { id: "1966-06-ara", tur: "ara", tarih: "1966-06-05",
+      bolge: "Hatay", sandalyeSayisi: 1,
+      sonuc: [ { parti: "ap", sandalye: 1 } ],
+      not: "Hatay milletvekilliğinin boşalması üzerine yapıldı; seçilen: Şemsettin Mursaloğlu (AP)." },
+
     // kaynak: araclar/kaynak-defteri.md#1968-06-yerel
     { id: "1968-06-yerel", tur: "yerel", tarih: "1968-06-02",
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
       sonuc: [],
       not: "AP çoğu ilde kazandı. Basında ve akademik kaynaklarda İstanbul'da Fahri Atabey, Ankara'da Ekrem Barlas, İzmir'de (1963'teki görevini koruyarak) Osman Kibar'ın kazandığı geçiyor, ama bu turda resmî bir kaynak (YSK kararı/Resmî Gazete ilanı) bulunamadığı için büyükşehir alanı hiç yazılmadı. Aynı gün 5 ilde milletvekili ara seçimi de yapıldı. Ülke geneli belediye meclisi oy sayısı bulunamadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1968-06-ara
+    { id: "1968-06-ara", tur: "ara", tarih: "1968-06-02",
+      bolge: "5 il", sandalyeSayisi: 5,
+      sonuc: [ { parti: "ap", sandalye: 5 } ],
+      not: "Yerel seçimle aynı gün Adana, Çorum, Diyarbakır, İstanbul ve Urfa'da birer milletvekilliği için yapıldı; beşini de AP kazandı." },
 
     // kaynak: araclar/kaynak-defteri.md#1969-10-genel
     { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
@@ -247,6 +259,12 @@ window.SANDIK = {
       sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { parti: "tbp", oy: 19860 }, { parti: "mp62", oy: 8384 } ],
       not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
 
+    // kaynak: araclar/kaynak-defteri.md#1975-10-ara
+    { id: "1975-10-ara", tur: "ara", tarih: "1975-10-12",
+      bolge: "6 il", sandalyeSayisi: 6,
+      sonuc: [ { parti: "ap", sandalye: 5 }, { parti: "chp23", sandalye: 1 } ],
+      not: "Cumhuriyet Senatosu üye seçimiyle aynı gün Amasya, Bursa, Eskişehir, Niğde, Urfa ve Zonguldak'ta birer milletvekilliği için yapıldı; Amasya'yı CHP, diğer beşini AP kazandı." },
+
     // kaynak: araclar/kaynak-defteri.md#1977-06-genel
     { id: "1977-06-genel", tur: "genel", tarih: "1977-06-05", tekParti: false,
       meclis: 450, kayitli: 21207303, kullanilan: 15358210, gecerli: 14827172, baraj: null,
@@ -259,6 +277,12 @@ window.SANDIK = {
       kayitli: 12067618, kullanilan: 6197718, gecerli: 5680318,
       sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { parti: "tbp", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
       not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde yine kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
+
+    // kaynak: araclar/kaynak-defteri.md#1979-10-ara
+    { id: "1979-10-ara", tur: "ara", tarih: "1979-10-14",
+      bolge: "5 il", sandalyeSayisi: 5,
+      sonuc: [ { parti: "ap", sandalye: 5 } ],
+      not: "Cumhuriyet Senatosu üye seçimiyle aynı gün Aydın, Edirne, Konya, Manisa ve Muğla'da birer milletvekilliği için yapıldı; beşini de AP kazandı." },
 
     // kaynak: araclar/kaynak-defteri.md#1980-03-cb-tbmm
     { id: "1980-03-cb-tbmm", tur: "cb-tbmm", tarih: "1980-03-25",
@@ -290,6 +314,12 @@ window.SANDIK = {
       sonuc: [ { parti: "anap", oy: null }, { parti: "sodep", oy: null }, { parti: "dyp", oy: null }, { parti: "hp83", oy: null }, { parti: "mdp", oy: null }, { parti: "rp", oy: null }, { ad: "Bağımsız", oy: null } ],
       buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
       not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli belediye meclisi oy toplamı YSK'nın il tablosundan script ile hesaplanabildi ama bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından (ayrıca Adana ilinin parti kırılımı kaynakta iç tutarsızdı) sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
+
+    // kaynak: araclar/kaynak-defteri.md#1986-09-ara
+    { id: "1986-09-ara", tur: "ara", tarih: "1986-09-28",
+      bolge: "10 il", sandalyeSayisi: 11,
+      sonuc: [ { parti: "anap", sandalye: 6 }, { parti: "dyp", sandalye: 4 }, { parti: "shp", sandalye: 1 } ],
+      not: "10 ilde 11 seçim çevresinde yapıldı (Manisa'da iki çevre); SHP'nin tek sandalyesini İzmir'de Erdal İnönü kazandı." },
 
     // kaynak: araclar/kaynak-defteri.md#1987-09-referandum
     { id: "1987-09-referandum", tur: "referandum", tarih: "1987-09-06",
@@ -379,6 +409,12 @@ window.SANDIK = {
       meclis: 550, kayitli: 41407027, kullanilan: 32768161, gecerli: 31528783, baraj: 10,
       sonuc: [ { parti: "akp", oy: 10808229, sandalye: 363 }, { parti: "chp92", oy: 6113352, sandalye: 178 }, { parti: "dyp", oy: 3008942, sandalye: 0 }, { parti: "mhp93", oy: 2635787, sandalye: 0 }, { ad: "Genç Parti", oy: 2285598, sandalye: 0 }, { parti: "dehap", oy: 1960660, sandalye: 0 }, { parti: "anap", oy: 1618465, sandalye: 0 }, { parti: "sp", oy: 785489, sandalye: 0 }, { parti: "dsp", oy: 384009, sandalye: 0 }, { parti: "ytp02", oy: 363869, sandalye: 0 }, { parti: "bbp", oy: 322093, sandalye: 0 }, { parti: "ip92", oy: 159843, sandalye: 0 }, { parti: "odp", oy: 106023, sandalye: 0 }, { parti: "ldp", oy: 89331, sandalye: 0 }, { ad: "Diğer", partiSayisi: 4, oy: 572842, sandalye: 0 }, { ad: "Bağımsız", oy: 314251, sandalye: 9 } ],
       not: "Seçime katılan 18 partiden yalnızca ikisi %10'luk ülke barajını aşabildi ve AK Parti ilk seçiminde tek başına iktidar oldu; sayılar il ve gümrük kapısı oylarının toplamıdır." },
+
+    // kaynak: araclar/kaynak-defteri.md#2003-03-ara
+    { id: "2003-03-ara", tur: "ara", tarih: "2003-03-09",
+      bolge: "Siirt", sandalyeSayisi: 3,
+      sonuc: [ { parti: "akp", sandalye: 3 } ],
+      not: "2002 Siirt seçiminin YSK tarafından iptali üzerine yapılan yenileme seçimidir; seçilenler arasında Recep Tayyip Erdoğan da vardı." },
 
     // kaynak: araclar/kaynak-defteri.md#2004-03-yerel
     { id: "2004-03-yerel", tur: "yerel", tarih: "2004-03-28",

@@ -1264,6 +1264,8 @@ Bkz. yukarıdaki ortak blok.
 - Erişim: 2026-09-16.
 
 ### Ara seçimler (1961–1971) — envanter bulundu, sonuç doğrulanamadı
+
+> **Görev 12'de (2026-09-26) 1966 ve 1968 eklendi** — bkz. "Görev 12 — Ara seçimler".
 - WebSearch ile: TESAV'ın "Milletvekili Ara Seçim Sonuçları (1947, 1948, 1949, 1951, 1966, 1968,
   1975, 1979, 1986, 2003)" başlıklı yayınının dönem 2'de **1966 ve 1968** ara seçimlerinin
   yapıldığını gösterdiği görüldü — ama dönem 1'de de karşılaşılan sorun tekrarladı: yayının
@@ -1648,6 +1650,8 @@ Kaynaklar yukarıdaki ortak başlıkta: "1973-12-yerel, 1977-12-yerel".
 
 ### 1973 ve 1975/1979 ara seçimleri — envanter sonucu: eklenmedi
 
+> **Görev 12'de (2026-09-26) 1975 ve 1979 eklendi** — bkz. "Görev 12 — Ara seçimler".
+
 - **1973:** genel seçimden (14 Ekim 1973) sonra ara seçime ihtiyaç duyulacak bir sandalye boşalması
   bu turda bulunamadı; aday listede zaten yoktu.
 - **12 Ekim 1975** (6 il: Amasya, Bursa, Eskişehir, Niğde, Urfa, Zonguldak, 6 sandalye) ve
@@ -1918,6 +1922,8 @@ Kaynaklar yukarıdaki ortak başlıkta: "1973-12-yerel, 1977-12-yerel".
 - Erişim: 2026-09-22.
 
 ### 1986 ara seçimi (28 Eylül 1986) — eklenmedi
+
+> **Görev 12'de (2026-09-26) eklendi** — bkz. "Görev 12 — Ara seçimler".
 
 - **[B] Resmî Gazete, 12.7.1986 tarih 19162 sayı, Kanun No 3309** ("Türkiye Büyük Millet Meclisi
   XVII nci Dönem Milletvekili Ara Seçimi Hakkında Kanun",
@@ -4155,3 +4161,87 @@ notu "14 + 1" diye açık yazılsın. Kaynak kısaltmaları:
   ayrıca yazıyor). İki kaynağın uyuştuğu **14** yazıldı; "+1" kullanıcıya bildirildi.
 - **12 Eylül kesintisi ve kaynakca.html:** "1533 sayılı kanun" → **"2533 sayılı kanun"** (RG-2533; TBMM-P
   "10.10.1981 Tarih, 2533 sayılı Kanun ile 16.10.1981 tarihinde"). Önceki metin yazım hatasıydı.
+
+## Görev 12 — Ara seçimler (2026-09-26)
+
+**Ortak ikinci kaynak (T):** TESAV, "Çok Partili Dönemde Yapılan Milletvekili Ara Seçimi Sonuçları"
+(*Osmanlı'dan Günümüze Seçimler 1877–2002*'den). Dönem 1–4'te 404 veren adresin **Internet Archive
+kopyası** bulundu: `https://web.archive.org/web/20241117093349/https://www.tesav.org.tr/wp-content/
+uploads/2017/03/17.-Milletvekili-Ara-Se%C3%A7im-Sonu%C3%A7lar%C4%B1.pdf` (8 s., `pdftotext -layout`).
+TESAV bir vakıf yayını, resmî kaynak değil; her kayıtta **[B]** olarak aşağıdaki Resmî Gazete'de
+yayımlanan YSK bildirisi kullanıldı (taranmış sayfalar `pdftoppm -r 300` + `tesseract -l tur` ile
+okundu; iki sütunlu sayfalarda il–aday eşleşmesi parti oylarının il geçerli oyuna eşitlenmesiyle
+denetlendi). Senato seçimiyle aynı gün yapılanlarda yalnız "Milletvekili Seçimi" bölümleri sayıldı.
+Oy sayıları kayda yazılmadı (spesifikasyon §5.7: ara seçimde yalnız sandalye); aşağıdaki oy
+toplamları yalnızca iki kaynağın aynı seçimi anlattığını göstermek içindir.
+
+### 1966-06-ara
+- **[B] RG 9.6.1966, sayı 12318, s. 6** (`https://www.resmigazete.gov.tr/arsiv/12318.pdf`), YSK
+  kararı 8.6.1966: Hatay, seçilen Şemsettin Mursaloğlu, "Adalet Partisi". Kayıtlı 199.170, oy
+  kullanan 105.530, geçerli 100.584; AP 44.598, CHP 36.096.
+- **[T]** aynı rakamlar, AP 1 sandalye. Uyuşmazlık yok.
+
+### 1968-06-ara
+- **[B] RG 12.6.1968, sayı 12922, s. 15–16** (`…/arsiv/12922.pdf`): Adana (M. Kemâl Çetinsoy),
+  Çorum (İhsan Tombuş), Diyarbakır (Abdüllâtif Ensarioğlu), İstanbul (Mehmet Mustafa Gürpınar),
+  Urfa (Hüsamettin Koran) — hepsi Adalet Partisi. Toplam kayıtlı 2.131.869, oy kullanan
+  1.139.945, geçerli 1.048.582; AP 507.241. (Urfa'da parti oyları toplamı basılı geçerli oydan 1
+  fazla: 105.922 / 105.921 — kayda yazılan bir değeri etkilemiyor.)
+- **[T]** 5 il, AP 5, aynı toplamlar. Uyuşmazlık yok. Aynı gün yapılan yerel seçim ayrı kayıt.
+
+### 1975-10-ara
+- **[B] RG 25.10.1975, sayı 15394, s. 11–15** (`…/arsiv/15394.pdf`): Amasya (Orhan Kayıhan, CHP),
+  Bursa (Ali Elverdi, AP), Eskişehir (M. İsmet Angı, AP), Niğde (Hüseyin Avni Kavurmacıoğlu, AP),
+  Urfa (Halil Millî, AP), Zonguldak (Sabati Ataman, AP). Toplam kayıtlı 1.743.152, oy kullanan
+  1.120.415, geçerli 1.077.821; AP 524.001, CHP 409.387. Bildiri Cumhuriyet Senatosu üye
+  seçimleriyle birlikte yayımlanmış.
+- **[T]** 6 il, AP 5, CHP 1, aynı toplamlar. Uyuşmazlık yok. (Önceki "eklenmedi" kaydının yerini alır.)
+
+### 1979-10-ara
+- **[B] RG 8.11.1979, sayı 16803, s. 11, 14, 18, 19, 20; toplamlar s. 25** (`…/arsiv/16803.pdf`):
+  Aydın (Selahittin Acar), Edirne (Ahmet İnceoğlu), Konya (Şaban Karataş), Manisa (Süleyman
+  Çağlar), Muğla (Ünal Demir) — hepsi Adalet Partisi. Kayıtlı 1.727.069, oy kullanan 1.289.141,
+  geçerli 1.252.427; parti oyları toplamı 1.252.210 (217 fark RG'nin kendisinde).
+- **[T]** 5 il, AP 5; aynı 217 farkını not ediyor. TESAV'da TSİP 8.735 yazıyor, RG'de 6.735 —
+  TESAV'ın kendi toplamı ancak 6.735 ile tutuyor (TESAV dizgi hatası; kayda oy yazılmadığı için
+  etkisiz). RG'de Edirne geçerli oyu Erzincan'ınki (82.440) olarak basılmış — yine etkisiz.
+
+### 1986-09-ara
+- **[B] RG 10.10.1986, sayı 19247, s. 20–21** (`…/arsiv/19247.pdf`), YSK Duyuru 1986/15 (YSK karar
+  400, 7.10.1986): Anavatan Partisi 6 (Ankara 2. bölge, Bingöl, Burdur, Gaziantep, İstanbul 6.
+  bölge, Niğde); Doğru Yol Partisi 4 (Manisa 1. ve 2. bölge, Samsun 2. bölge, Zonguldak 2.
+  bölge); Sosyal Demokrat Halkçı Parti 1 (İzmir 2. bölge, Erdal İnönü). Kayıtlı 2.950.154, oy
+  kullanan 2.592.752, geçerli 2.507.212.
+- **[T]** 10 il, 11 sandalye, ANAP 6, DYP 4, SHP 1, aynı toplamlar. Uyuşmazlık yok. Tarih ayrıca
+  3309 sayılı Kanun'la (yukarıdaki "1986 ara seçimi" bölümü) doğrulanmıştı.
+
+### 2003-03-ara
+- **[B] RG 25045 mükerrer** (`https://www.resmigazete.gov.tr/eskiler/2003/03/20030311M1.htm`,
+  sayfa görüntüleri `20030311M1-1.gif`, `-2.gif`, OCR ile okundu), YSK Karar No 212 (11.03.2003):
+  "ADALET VE KALKINMA PARTİSİ – 3" (Recep Tayyip Erdoğan, Öner Gülyeşil, Öner Ergenç). Kayıtlı
+  119.198, oy kullanan 73.624, geçerli 65.079; AKP 55.203, CHP 8.972. Sayfa başlığında "12 Mart
+  2003 Salı" yazıyor, karar tarihi 11.03.2003 — tarih alanı seçim günü (9 Mart) olduğundan etkisiz.
+- **[T]** aynı rakamlar, AK Parti 3; "2002 Siirt ili seçimlerinin itiraz üzerine iptal edilmesi
+  nedeniyle yapılan yenileme seçimi". Uyuşmazlık yok. (§9.4'teki "yalnız taranmış GIF, OCR yok"
+  engeli bu ortamda tesseract ile aşıldı.)
+
+### 1951-09-ara — `sandalyeSayisi` 20 yapıldı
+- **[B] TBMM Tutanak Dergisi, 9. dönem, cilt 10, birleşim 1 (1.XI.1951) ve 2 (9.XI.1951)**
+  (`https://www.tbmm.gov.tr/tutanaklar/TUTANAK/TBMM/d09/c010/tbmm09010001.pdf`, `…/tbmm09010002.pdf`):
+  andiçme listelerinde 17 ilden 20 yeni milletvekili — Aydın 3 (Nail Geveci, Lûtfi Ülkümen, Cevat
+  Ülkü), İstanbul 2 (Hadi Hüsman, Seyfi Oran), Balıkesir, Bilecik, Bitlis, Bursa, Çanakkale,
+  Denizli, Eskişehir, Gümüşane, İzmir, Kastamonu, Kırşehir, Muğla, Sinop, Sivas, Zonguldak 1'er.
+- **[T]** 17 il, 20 milletvekili, aynı il listesi. Önceki turdaki üç rivayetten 17 il/20 sandalye
+  resmî kayıtla doğrulandı; `sandalyeSayisi: 20`.
+- Parti dağılımı (TESAV: DP 18, CHP 2) **yazılmadı**: tutanaklar parti belirtmiyor; RG 7906–7930
+  sayıları (10.9–12.10.1951) tarandı, seçimle ilgili bildiri yok. TESAV'ın kaynağı olan "9. Dönem
+  TBMM Ad Defteri" bu turda bulunamadı.
+
+### 1947, 1948, 1949 ara seçimleri — yine eklenmedi
+- **[T]** 6 Nisan 1947 (4 il, 9), 17 Ekim 1948 (13 il, 13), 16 Ekim 1949 (12 il, 14); hepsi CHP,
+  DP katılmadı.
+- TBMM Tutanak Dergisi andiçme kayıtları il ve sandalye sayılarını doğruluyor (8. dönem cilt 5,
+  birleşim 49 ve 51; cilt 13, birleşim 2–3; cilt 21, birleşim 1), ancak **seçim günleri** ve
+  **partiler** hiçbir resmî belgede bulunamadı (cilt 13'te yalnız "13 ilde yapılan Milletvekili
+  ara seçimi" ifadesi var). Tarih kaydın kimliği olduğundan tek kaynakla kayıt açılmadı.
+- Erişim (bu bölümün tamamı): 2026-09-26.
