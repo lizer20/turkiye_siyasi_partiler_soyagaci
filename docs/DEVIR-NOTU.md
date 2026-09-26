@@ -16,6 +16,14 @@ Bu dosya, projenin bir sohbetten başka bir sohbete aktarılması için yazıld�
 > kaynaklarıyla yeniden üretildi (ayrıntı: `araclar/kaynak-defteri.md` → "Görev 9 — Dönem 7",
 > `.superpowers/sdd/2026-09-11-sandik/task-9-d7-report.md`). **Görev 11 yapıldı** (`kaynakca.html#sandik`).
 > Açık kalanlar: §9.2, §9.3 (+ HÜDA PAR, MDP), §9.4, §9.5 ve Görev 12.
+>
+> **Güncelleme (26 Eylül 2026):** §9.2 ve §9.3 (Görev 10) kapandı. Sandık sayfası yeniden
+> tasarlandı: genel seçim kartlarında ve panelde **temsilî meclis yarım dairesi** (her nokta bir
+> sandalye; partiler bitişik dilimler; salt çoğunluk çizgisi; bilinmeyen sandalye boş halka),
+> panelde parti/oy/sandalye tablosu, daha derli toplu kartlar. §9.5'in çoğu yapıldı (aşağıda ✅).
+> §9.4'ten: 1966, 1968, 1975, 1979, 1986 ve 2003 Siirt ara seçimleri eklendi (RG YSK bildirisi +
+> TESAV'ın Internet Archive kopyası); 1951'in sandalye sayısı 20 olarak kesinleşti; 2007
+> referandumuna CHP "hayır" eklendi; 64. Hükümet bitiş nedeni "istifa". Testler 64/64.
 
 ---
 
@@ -348,33 +356,33 @@ diyor; bu 15, Millet Meclisi (14) + Cumhuriyet Senatosu (1) toplamı. Sandık ve
 ### 9.4 Görev 12'ye bırakılan aramalar (eksik kayıtlar)
 
 - Dönem 0 milletvekili ara seçimleri (doğrulanamadı)
-- 1955 yerel seçimi; 1947–1949 ara seçimleri
-- Dönem 2 ara seçimleri: 1966 Hatay, 1968 beş il
-- 1975 ve 1979 ara seçimleri
-- 1986 ara seçimi
-- **2003 Siirt ara seçimi** — YSK kararı Resmî Gazete'de yalnızca **taranmış GIF**; bu ortamda
+- 1955 yerel seçimi; 1947–1949 ara seçimleri (26.09.2026: il/sandalye TBMM tutanağıyla doğrulandı ama seçim günü ve partiler resmî belgede yok → yine eklenmedi)
+- ✅ Dönem 2 ara seçimleri: 1966 Hatay, 1968 beş il (26.09.2026 eklendi)
+- ✅ 1975 ve 1979 ara seçimleri (26.09.2026 eklendi)
+- ✅ 1986 ara seçimi (26.09.2026 eklendi)
+- ✅ **2003 Siirt ara seçimi** (26.09.2026 eklendi, OCR ile) — YSK kararı Resmî Gazete'de yalnızca **taranmış GIF**; bu ortamda
   OCR yok. (Denendi: RG mükerrer sayısının `<img>` etiketleri, `GIF image data` doğrulaması,
   YSK karar arama sayfası HTML hata döndürüyor.)
-- **2007 referandumunun `tutumlar` alanı** boş (2010 dolduruldu)
+- ◐ **2007 referandumunun `tutumlar` alanı**: CHP hayır eklendi; MHP (hayır) ve AK Parti (evet) tek kaynaklı kaldı
 - 1984/1989/1994/1999 **yerel seçimlerin ülke geneli belediye meclisi sayıları** `null` —
   TÜİK bu ölçüyü ulusal düzeyde yayımlamıyor, YSK'nın Resmî Gazete ilanı ise `curl` ile
   açılamadı, tarayıcı dosyayı indirmeye çalışıyor. **Bu yol bir daha denenebilir.**
 - 1931–1943 tek parti seçimlerinde bağımsız milletvekili olup olmadığı (TÜİK'e göre yok;
   bir kez daha bakılacak)
-- 64. Hükümet `bitisNedeni: null` (istifa tezkeresi RG'de yayımlanmamış)
+- ✅ 64. Hükümet `bitisNedeni: istifa`
 - 1973/1977 yerel `buyuksehir` yok (resmî şehir bazlı sonuç bulunamadı)
 
 ### 9.5 Ertelenmiş küçük işler (son incelemede toplu ele alınacak)
 
 - `cubukHTML`: bütün bölütler gerçek 0 ise "veri yok" yazıyor
-- `seritHTML`: `TIP_ETIKET`'te olmayan tip "undefined" yazdırabilir (dogrula bunu hata sayar)
-- `sandik.css` mobil: `.s-ilk3 li` `display:inline` kalıyor; spec "alt alta dizilir" diyor
+- ✅ `seritHTML`: `TIP_ETIKET`'te olmayan tip "undefined" yazdırabilir (dogrula bunu hata sayar)
+- ✅ `sandik.css` mobil: `.s-ilk3 li` `display:inline` kalıyor; spec "alt alta dizilir" diyor
 - `SAYISAL` sabiti ara seçimin `sandalyeSayisi` alanını "— sayısı" raporuna katmıyor
 - "hukumetler tarih sırasında değil" hata dalı hiçbir testte tetiklenmiyor
 - 1950-09-yerel yüzde toplamı %95,1
 - Hükümet **23 → 24** arası 3 günlük boşluk (27–30 Mayıs 1960) ve **43 → 44** boşluğu
   (dogrula bunları uyarı olarak basıyor; beklenen)
-- Panel satırı geçerli oy bilinmezken "— · N oy" diye başlıyor
+- ✅ Panel satırı geçerli oy bilinmezken "— · N oy" diye başlıyor
 - 1930 yerel ikinci kaynağı yalnızca seçimin varlığını doğruluyor
 
 ---
