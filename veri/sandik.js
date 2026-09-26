@@ -409,7 +409,8 @@ window.SANDIK = {
       konu: "5678 sayılı Kanunla Anayasa'da yapılan ve cumhurbaşkanının halk tarafından seçilmesini, milletvekili seçim döneminin beş yıldan dört yıla inmesini öngören değişiklikler.",
       kayitli: 42690252, kullanilan: 28819319, gecerli: 28167661,
       evet: 19422714, hayir: 8744947, karar: "kabul",
-      not: "Kayıtlı seçmen ve oy sayıları gümrük kapılarında kullanılan oyları da içeriyor." },
+      tutumlar: [ { parti: "chp92", tutum: "hayir" } ],
+      not: "Kayıtlı seçmen ve oy sayıları gümrük kapılarında kullanılan oyları da içeriyor. Partilerin tutumlarından yalnızca iki bağımsız kaynakla doğrulanabilen listelenmiştir." },
 
     // kaynak: araclar/kaynak-defteri.md#2009-03-yerel
     { id: "2009-03-yerel", tur: "yerel", tarih: "2009-03-29",

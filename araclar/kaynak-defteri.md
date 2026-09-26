@@ -3467,6 +3467,30 @@ bakanlıkları ise bağımsızlara verildi."
   yani TBMM tutanağı bu referandumdaki `tutum` için geçerli bir kanıt değildir. Bu yüzden
   2007'nin `tutumlar` alanı boş bırakıldı ve Görev 12'ye devredildi.
 
+**Görev 12 güncellemesi (2026-09-26) — 2007 `tutumlar`: yalnızca `chp92: hayir` yazıldı.**
+- **CHP → hayır**, iki bağımsız kaynak:
+  - [Parti belgesi] CHP, *Parti Meclisi Toplantısına Sunulan MYK Raporu, 5 Aralık 2007*
+    (`https://chp.org.tr/yayin/myk-raporu---5-aralik-2007/Open`, 285 s. PDF), PM bildirisi
+    madde 6: "21 Ekim 2007 Pazar günü yapılacak olan referandum oylamasına dileyenlerin
+    katılmamasını, oy vermeye gidenlerin HAYIR oyu vermesini istiyoruz." (Baykal'ın aynı
+    rapordaki konuşması da "gidenler de hayır" diyor.) Boykot yalnızca "dileyenlere" bırakılmış,
+    oy verenlere çağrı "hayır" olduğu için tutum `hayir` sayıldı.
+  - [Akademik] MENEK (yukarıda): "CHP bu referandumda da hayır oyu kullandı".
+  - [Haber, destekleyici] Medyascope, "3 Kasım 2002'den bugüne AKP ve Erdoğan'ın 20 yıllık
+    seçim tarihi" (3.11.2022): "referandum sürecinde aktif 'Hayır' kampanyası yürüten tek
+    parti, CHP oldu."
+- **MHP → hayır: yazılmadı (tek kaynak).** MHP'nin kendi sitesindeki Bahçeli'nin 23.10.2007
+  TBMM grup konuşması (`https://www.mhp.org.tr/htmldocs/genel_baskan/konusma/406/index.html`):
+  "partimiz … tercihini hayır yönünde kullanmıştır." Bağımsız ikinci kaynak bulunamadı:
+  Dünya Bülteni haberi (alan adı el değiştirmiş, sayfa yok), T24 derlemesi (Cloudflare, açılmadı),
+  Vikipedi (kural gereği sayılmaz). 4.10.2007 MHP yazılı açıklaması tutum bildirmiyor.
+- **AK Parti → evet: yazılmadı (tek kaynak).** Açıkça yazan yalnızca Medyascope ("AKP 'Evet'
+  oyunu savunurken"); ikinci bir metin bulunamadı.
+- DTP'nin "evet" dediği yalnızca arama motoru özetinde geçti; açılıp okunan bir kaynak yok.
+- Kayda `not` eklendi: "Partilerin tutumlarından yalnızca iki bağımsız kaynakla doğrulanabilen
+  listelenmiştir." — okuyucu listede olmayan partilerin tutumsuz olduğunu sanmasın diye.
+- Erişim: 2026-09-26.
+
 ### 6. 2003 Siirt seçimi — "taranmış GIF" iddiasının kanıtı
 
 - **[B] Resmî Gazete 12.3.2003 künye satırı:** "**11/3/2003 Tarihli ve 25045 Mükerrer sayılı
