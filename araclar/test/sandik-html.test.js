@@ -214,3 +214,23 @@ test("hükümet şeridi bilinmeyen tipte 'undefined' yazmaz", () => {
     bitis: null, tip: "yeni-tip", bitisNedeni: null });
   assert.doesNotMatch(h, /undefined/);
 });
+
+test("meclis çizimi: rastgele dağılımlarda her grubun nokta sayısı tam tutar", () => {
+  let tohum = 7;
+  const rast = () => (tohum = (tohum * 16807) % 2147483647) / 2147483647;
+  const ids = P.N.slice(0, 12).map(n => n.id);
+  for (let deneme = 0; deneme < 300; deneme++) {
+    const meclis = [5, 10, 12, 287, 399, 450, 541, 550, 600, 610][deneme % 10];
+    const grup = 1 + Math.floor(rast() * 9);
+    const pay = Array.from({ length: grup }, () => rast() ** 3 + 0.001);
+    const top = pay.reduce((a, b) => a + b, 0);
+    const sayi = pay.map(p => Math.floor(p / top * meclis));
+    sayi[0] += meclis - sayi.reduce((a, b) => a + b, 0);
+    const k = { id: "x", tur: "genel", tarih: "2000-01-01", meclis,
+      sonuc: sayi.map((s, i) => ({ parti: ids[i], oy: null, sandalye: s })) };
+    const g = M.meclisGruplari(k);
+    const parca = M.meclisSVG(k, false).split('<g class="m-grup').slice(1);
+    assert.equal(parca.length, g.length);
+    parca.forEach((t, i) => assert.equal(noktaSayisi(t), g[i].sandalye, meclis + " / " + sayi.join(",")));
+  }
+});

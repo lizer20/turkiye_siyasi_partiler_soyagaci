@@ -46,7 +46,7 @@
 /* genel seçim kartı: solda meclis yarım dairesi, sağda sandalye listesi */
 .s-meclis{display:flex;gap:14px;align-items:flex-start}
 .s-sol{flex:0 0 178px}
-.s-sag{flex:1;min-width:0}
+.s-sag{flex:1;min-width:0;max-width:340px}
 .meclis{display:block;width:100%;height:auto;overflow:visible}
 .meclis .m-grup path{fill:none;stroke-linecap:round}
 .meclis .m-bos circle{fill:none;stroke:var(--soluk);stroke-width:.9}

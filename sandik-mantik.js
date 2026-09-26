@@ -186,38 +186,66 @@
       let kalan = n - sira.reduce((a, b) => a + b, 0);
       yc.map((r, i) => [n * r / top - sira[i], i]).sort((a, b) => b[0] - a[0] || b[1] - a[1])
         .forEach(x => { if (kalan > 0) { sira[x[1]]++; kalan--; } });
-      const koltuk = [];
-      sira.forEach((s, i) => { for (let j = 0; j < s; j++) koltuk.push({ a: s === 1 ? Math.PI / 2 : Math.PI * j / (s - 1), r: yc[i] }); });
-      koltuk.sort((x, y) => x.a - y.a || y.r - x.r);
-      return { koltuk, adim: R === 1 ? Math.PI / Math.max(n, 2) : (1 - IC) / (R - 1) };
+      return { sira: sira.map((s, i) => ({ s, r: yc[i] })).filter(x => x.s > 0),
+               adim: R === 1 ? Math.PI / Math.max(n, 2) : (1 - IC) / (R - 1) };
+    }
+    function dilimler(sira, sayilar) {
+      // Her grup her sırada bitişik bir dilim alır; dilim sınırları sıranın koltuk sayısıyla orantılı
+      // olduğundan her parti bir kama gibi görünür. Toplamlar tam tutar: grubun sandalyesi eksiksiz dağıtılır.
+      const n = sayilar.reduce((a, b) => a + b, 0);
+      const dolu = sira.map(() => 0), sonuc = [];
+      let birikim = 0;
+      sayilar.forEach((adet, gi) => {
+        birikim += adet;
+        const x = sira.map((row, i) => gi === sayilar.length - 1 ? row.s - dolu[i]
+          : Math.max(0, Math.min(row.s, Math.floor(birikim / n * row.s)) - dolu[i]));
+        let fark = adet - x.reduce((a, b) => a + b, 0);
+        const artik = i => birikim / n * sira[i].s - dolu[i] - x[i];
+        const sirali = sira.map((_, i) => i).sort((a, b) => artik(b) - artik(a) || a - b);
+        for (const i of sirali) { if (fark <= 0) break; if (dolu[i] + x[i] < sira[i].s) { x[i]++; fark--; } }
+        for (const i of sirali.slice().reverse()) { if (fark >= 0) break; if (x[i] > 0) { x[i]--; fark++; } }
+        sonuc.push(x.map((v, i) => { const bas = dolu[i]; dolu[i] += v; return { bas, adet: v }; }));
+      });
+      return sonuc;
     }
     function meclisSVG(k, buyuk) {
       const g = meclisGruplari(k);
       const n = g.reduce((t, x) => t + x.sandalye, 0);
       if (!n) return "";
       const d = koltukDuzeni(n), m = g.length;
-      const bosluk = m > 1 ? Math.min(0.05, 0.4 / (m - 1)) : 0;   // gruplar arası açı (radyan)
-      const olcek = (Math.PI - bosluk * (m - 1)) / Math.PI;
+      const dilim = dilimler(d.sira, g.map(x => x.sandalye));
+      // gruplar arası boşluk; aynı renkteki komşu partiler arasında daha geniş (renk tek başına ayırmasın)
+      const agirlik = g.map((x, gi) => gi === 0 ? 0 : (x.renk && x.renk === g[gi - 1].renk ? 2.5 : 1));
+      const topAg = agirlik.reduce((a, b) => a + b, 0);
+      const birim = topAg ? Math.min(0.045, 0.45 / topAg) : 0;
+      const kayma = []; agirlik.reduce((t, w, gi) => (kayma[gi] = t + w * birim), 0);
+      const olcek = (Math.PI - birim * topAg) / Math.PI;
       const nokta = Math.min(d.adim * olcek * 100 * 0.78, 6);
       const yer = (a, r) => [(-Math.cos(a) * r * 100).toFixed(1), (-Math.sin(a) * r * 100).toFixed(1)];
-      const cogunluk = k.meclis ? Math.floor(k.meclis / 2) + 1 : null;
-      let sira = 0, cizgi = "";
+      const aci = (row, j, gi) => (row.s === 1 ? Math.PI / 2 : Math.PI * j / (row.s - 1)) * olcek + kayma[gi];
       const parcalar = g.map((x, gi) => {
         let yol = "";
-        for (let j = 0; j < x.sandalye; j++, sira++) {
-          const s = d.koltuk[sira], a = s.a * olcek + bosluk * gi, p = yer(a, s.r);
-          yol += x.renk ? "M" + p[0] + " " + p[1] + "h0"
-            : '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + (nokta * 0.4).toFixed(2) + '"/>';
-          if (cogunluk && sira === cogunluk - 1) {
-            const i1 = yer(a, 1 + nokta / 100 + 0.02), i2 = yer(a, 1 + nokta / 100 + 0.1);
-            cizgi = '<path class="m-cogunluk" d="M' + i1[0] + " " + i1[1] + "L" + i2[0] + " " + i2[1] + '"/>';
+        d.sira.forEach((row, i) => {
+          for (let j = dilim[gi][i].bas; j < dilim[gi][i].bas + dilim[gi][i].adet; j++) {
+            const p = yer(aci(row, j, gi), row.r);
+            yol += x.renk ? "M" + p[0] + " " + p[1] + "h0"
+              : '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + (nokta * 0.4).toFixed(2) + '"/>';
           }
-        }
+        });
         const baslik = x.kisa + ": " + O.sayiYaz(x.sandalye) + " sandalye (" + O.yuzdeYaz(x.sandalye / n * 100) + ")";
         // bilinmeyen sandalyeler içi boş halka olarak çizilir
         return '<g class="m-grup' + (x.renk ? "" : " m-bos") + '"><title>' + kacis(baslik) + "</title>" + (x.renk
           ? '<path d="' + yol + '" stroke="' + x.renk + '" stroke-width="' + nokta.toFixed(2) + '"/>' : yol) + "</g>";
       });
+      // salt çoğunluk çizgisi: soldan sayınca çoğunluğu tamamlayan sandalyenin açısı
+      const cogunluk = k.meclis ? Math.floor(k.meclis / 2) + 1 : null;
+      let cizgi = "";
+      if (cogunluk && cogunluk <= n) {
+        let t = 0, gi = 0; while (t + g[gi].sandalye < cogunluk) t += g[gi++].sandalye;
+        const a = Math.PI * (cogunluk - 0.5) / n * olcek + kayma[gi];
+        const i1 = yer(a, 1 + nokta / 100 + 0.02), i2 = yer(a, 1 + nokta / 100 + 0.1);
+        cizgi = '<path class="m-cogunluk" d="M' + i1[0] + " " + i1[1] + "L" + i2[0] + " " + i2[1] + '"/>';
+      }
       const aria = "Meclis dağılımı, " + O.sayiYaz(n) + " sandalye: " +
         g.map(x => x.kisa + " " + O.sayiYaz(x.sandalye)).join(", ");
       const ust = -100 - nokta - (cogunluk ? 12 : 2);
