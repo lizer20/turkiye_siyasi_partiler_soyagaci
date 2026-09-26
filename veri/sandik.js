@@ -159,6 +159,13 @@ window.SANDIK = {
       secilen: "Celâl Bayar", turSayisi: 1,
       not: "Bayar 2. kez seçildi (486/513 oy)." },
 
+    // kaynak: araclar/kaynak-defteri.md#1955-11-yerel
+    { id: "1955-11-yerel", tur: "yerel", tarih: "1955-11-13",
+      olcu: "belediye-meclisi",
+      kayitli: null, kullanilan: null, gecerli: null,
+      sonuc: [],
+      not: "CHP ve Cumhuriyetçi Millet Partisi seçime katılmadı; il genel meclisi seçimi ayrı olarak 25 Eylül 1955'te yapıldı. Ülke geneli oy sayısı bulunamadı." },
+
     // kaynak: araclar/kaynak-defteri.md#1957-10-genel
     { id: "1957-10-genel", tur: "genel", tarih: "1957-10-27", tekParti: false,
       meclis: 610, kayitli: 12078623, kullanilan: 9250949, gecerli: null, baraj: null,

@@ -974,7 +974,7 @@ Bkz. yukarıdaki ortak blok.
   veriyor; alternatif adres bu turda bulunamadı. Vikipedi'nin tek başına doğruladığı sayfalar
   (`1947/1948/1949 Türkiye milletvekili ara seçimleri`) kural gereği kaynak sayılmadı. Bu üç ara
   seçim `veri/sandik.js`'e eklenmedi.
-- **1955 yerel seçimi (il genel meclisi + belediye meclisi)**: CHP ve CMP'nin bu seçime
+- (**Görev 12'de 2026-09-26 eklendi** — bkz. "### 1955-11-yerel".) **1955 yerel seçimi (il genel meclisi + belediye meclisi)**: CHP ve CMP'nin bu seçime
   katılmadığı, katılım oranının %38,34'te kaldığı Bilal NERGİZ (yukarıdaki makale) ile doğrulandı
   ("BCA, Yer Kodu: 030.01, Fon Kodu: 51.309.8"), ama seçimin **tam tarihi** (gün/ay) bu turda
   yalnızca Vikipedi'de bulundu (25 Eylül / 13 Kasım 1955) — kural gereği Vikipedi tek kaynak
@@ -4245,3 +4245,49 @@ toplamları yalnızca iki kaynağın aynı seçimi anlattığını göstermek i�
   **partiler** hiçbir resmî belgede bulunamadı (cilt 13'te yalnız "13 ilde yapılan Milletvekili
   ara seçimi" ifadesi var). Tarih kaydın kimliği olduğundan tek kaynakla kayıt açılmadı.
 - Erişim (bu bölümün tamamı): 2026-09-26.
+
+## Görev 12 — 1955 yerel seçimi ve 1984–1999 yerel ülke geneli (2026-09-26)
+
+### 1955-11-yerel
+- **`tarih` 13 Kasım 1955 — [B] 6555 sayılı Kanun** (kabul 11.5.1955), RG 18.5.1955 sayı 9009, s. 2
+  (`https://www.resmigazete.gov.tr/arsiv/9009.pdf`): "Belediye meclislerinin seçimi her dört
+  senede bir Kasım ayının 2 nci Pazarına rastlayan günde yapılır" ve mevcut meclislerin süresi
+  "16 Kasım 1955 tarihine kadar devam eder" → Kasım 1955'in ikinci pazarı **13 Kasım**
+  (hesaplandı). **[İkinci] TESAV, "1943–1980 Yılları Kronolojisi"**
+  (`https://www.tesav.org.tr/wp-content/uploads/2018/02/1.-1943-1980yillarikronolojisi.pdf`):
+  "13 Kasım 1955 — Belediye Seçimlerinin yapılması". Eşleşiyor.
+- **İl genel meclisi 25 Eylül 1955** (`not`'ta) — [B] 6438 sayılı Kanun, RG 26.11.1954 sayı 8863,
+  s. 2 (`…/arsiv/8863.pdf`): "Eylül ayının son Pazarına rastlıyan günde" → 25 Eylül 1955
+  (hesaplandı); TESAV kronolojisi: "25 Eylül 1955 — İl Genel Meclisi Seçimlerinin yapılması".
+- **Boykot** — TESAV kronolojisi: "3 Ağustos 1955 CMP'nin … katılmama kararı", "5 Ağustos 1955
+  CHP'nin … katılmama kararı"; Bilal NERGİZ (dönem 1 bölümü): CHP ve CMP katılmadı.
+- Katılım (%38,34, NERGİZ) tek kaynaklı ve hangi ölçüye ait olduğu belirsiz → yazılmadı.
+  Oy sayıları aranmadı/bulunmadı → `sonuc: []`.
+
+### 1984–1999 yerel — ülke geneli belediye meclisi: resmî rakamlar bulundu, yine `null`
+YSK'nın ülke geneli kararları Resmî Gazete'de bulundu (taranmış sayfa görüntüsüyle okundu; her
+yılda parti oyları toplamı geçerli oya tam eşit). Tek ikinci kaynak DİE'nin *Mahalli İdareler
+Seçimi Sonuçları* kitapları — DİE/TÜİK ulusal rakamları YSK ilanından **aynen** aldığını kendisi
+yazıyor (yukarıdaki dönem 6 notu), yani bağımsız değil. Akademik/haber kaynağında bu sayılar
+bulunamadı (tam sayılarla arama da sonuçsuz). Dönem 6 emsali gereği alanlar `null` kaldı;
+bağımsız bir kaynak bulunursa aşağıdaki rakamlar doğrudan yazılabilir:
+- **1984** — YSK Karar 1623 (22.5.1984), RG 26.5.1984/18412 s. 13–14, Liste 3: seçmen 12.341.328,
+  oy kullanan 10.559.948 (PDF metin katmanında yanlışlıkla 10.659.948; görüntü ve %85,57 bunu
+  doğruluyor), geçerli 9.873.876; ANAP 4.295.246, SODEP 2.521.392, DYP 1.189.978, HP 803.795,
+  MDP 561.038, RP 384.201, Bağımsız 118.226. DİE kitabı (`ysk.gov.tr/doc/dosyalar/1984Mahalli-Tuik.pdf`
+  Tablo 4) birebir aynı. (Önceki turda il tablosundan hesaplanan toplam bundan farklıydı — Adana
+  hatası ve eksik satırlar yüzünden; resmî toplam budur.)
+- **1989** — YSK Karar 735 (16.5.1989), RG 28.5.1989/20178 s. 11–12: seçmen 18.090.657, oy kullanan
+  14.107.146, geçerli 13.237.086; SHP 4.389.132, DYP 3.137.522, ANAP 3.111.259, RP 1.181.950,
+  DSP 890.164, MÇP 436.951, IDP 69.195, Bağımsız 20.913. DİE kitabı Tablo 5 birebir aynı.
+- **1994** — YSK Karar 1369 (5.5.1994), RG 7.5.1994/21927 s. 17–18: seçmen 23.366.089, oy kullanan
+  21.102.428, geçerli 19.734.355; ANAP 4.482.333, RP 3.776.425, DYP 3.728.521, SHP 3.316.716,
+  DSP 1.649.104, MHP 1.508.713, CHP 851.232, BBP 211.136, DP 65.022, YDP 35.754, MP 34.197,
+  İP 32.559, SBP 21.011, Bağımsız 21.632.
+- **1999** — YSK Karar 1663 (25.5.1999), RG 26.5.1999/23706 s. 9–10: seçmen 28.889.819, oy kullanan
+  24.527.241, geçerli 23.164.822; FP 4.225.409, ANAP 3.956.557, DSP 3.755.293, MHP 3.636.853,
+  CHP 3.074.207, DYP 2.896.847, HADEP 800.599, BBP 302.651, Demokrat Türkiye P. 159.864, ÖDP
+  152.030, BP 38.467, MP 33.338, DP 32.781, EMEP 22.398, İP 20.597, LDP 20.203, YDP 13.523,
+  DBP 3.474, Değişen Türkiye P. 3.110, SİP 392, DHP 115, Bağımsız 16.114. (Önceki turdaki "dört
+  il tabloda yok" sorunu resmî ülke toplamıyla aşıldı; kalan engel yalnız bağımsız ikinci kaynak.)
+- Erişim: 2026-09-26. Dosyalar: oturum çalışma dizini `k/yerel/` (RG PDF'leri, OCR, alıntılar).
