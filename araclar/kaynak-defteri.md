@@ -1754,6 +1754,8 @@ Kaynaklar yukarıdaki ortak başlıkta: "1973-12-yerel, 1977-12-yerel".
 
 ### 1984-03-yerel
 
+> **2026-09-26:** ülke geneli sayılar YSK'nın Resmî Gazete ilanından yazıldı (kullanıcı kararı) — bkz. "Görev 12 — 1955 yerel seçimi ve 1984–1999 yerel ülke geneli".
+
 - **[B] YSK, "25 MART 1984 BELEDİYE MECLİS ÜYELİĞİ SEÇİMİ SONUÇLARI"**
   (`ysk.gov.tr/doc/dosyalar/docs/Mahalli/1984/KesinSecimSonuclari/1984-Belediye-Meclis-Uyeligi-
   Secimleri-Sonucu.pdf`, `pdftotext -raw`) — 67 ilin tam tablosu, ülke toplamı yok,
@@ -1801,6 +1803,8 @@ Kaynaklar yukarıdaki ortak başlıkta: "1973-12-yerel, 1977-12-yerel".
 - Erişim: 2026-09-22.
 
 ### 1989-03-yerel
+
+> **2026-09-26:** ülke geneli sayılar YSK'nın Resmî Gazete ilanından yazıldı (kullanıcı kararı) — bkz. "Görev 12 — 1955 yerel seçimi ve 1984–1999 yerel ülke geneli".
 
 - **[B] YSK, "26 MART 1989 BELEDİYE MECLİS ÜYELİĞİ SEÇİMİ SONUÇLARI"**
   (`ysk.gov.tr/doc/dosyalar/docs/Mahalli/1989/KesinSecimSonuclari/1989-Belediye-Meclis-Uyeligi-
@@ -2409,6 +2413,8 @@ görüşmeleri / Cumhurbaşkanlığı tezkereleri.
 
 ### 1994-03-yerel
 
+> **2026-09-26:** ülke geneli sayılar YSK'nın Resmî Gazete ilanından yazıldı (kullanıcı kararı) — bkz. "Görev 12 — 1955 yerel seçimi ve 1984–1999 yerel ülke geneli".
+
 - **Envanter [B]:** YSK Mahalli İdareler Genel Seçimleri Arşivi (`ysk.gov.tr/tr/mahalli-idareler-genel-secimleri-arsivi/2650`,
   tarayıcıyla açılıp DOM'dan okundu — sayfa JS kabuğu olduğu için `curl` yalnızca boş kabuk
   döndürüyor): "**27 Mart 1994** Mahalli İdareler Genel Seçimleri". Seçim sayfası
@@ -2468,6 +2474,8 @@ görüşmeleri / Cumhurbaşkanlığı tezkereleri.
 - Erişim: 2026-09-23.
 
 ### 1999-04-yerel
+
+> **2026-09-26:** ülke geneli sayılar YSK'nın Resmî Gazete ilanından yazıldı (kullanıcı kararı) — bkz. "Görev 12 — 1955 yerel seçimi ve 1984–1999 yerel ülke geneli".
 
 - **Envanter [B]:** YSK Mahalli İdareler arşivi: "**18 Nisan 1999** Mahalli İdareler Genel
   Seçimleri" (`/tr/18-nisan-1999-mahalli-idareler-genel-secimi/2805`). Genel seçimle aynı gün
@@ -4265,6 +4273,15 @@ toplamları yalnızca iki kaynağın aynı seçimi anlattığını göstermek i�
   Oy sayıları aranmadı/bulunmadı → `sonuc: []`.
 
 ### 1984–1999 yerel — ülke geneli belediye meclisi: resmî rakamlar bulundu, yine `null`
+
+> **Kullanıcı kararı (2026-09-26): "resmî ilanı yeterli say, 1984–1999 rakamlarını siteye işle."**
+> Aşağıdaki rakamlar `1984-03-yerel`, `1989-03-yerel`, `1994-03-yerel`, `1999-04-yerel`
+> kayıtlarına yazıldı (kayitli, kullanilan, gecerli ve bütün parti satırlarının `oy` değeri).
+> Yazmadan önce denetlendi: dört yılda da parti oyları toplamı geçerli oya **tam eşit**; satırlar
+> kayıtlardaki parti listesiyle birebir örtüşüyor; her sayı RG alıntı metninde (1994'te sayfa 18
+> "Asıl üyelik … siyasi partilere dağılımı" tablosu, 28.691 üyelik) bulundu. Kayıtların `not`
+> alanı sayıların yalnız YSK'nın RG ilanına dayandığını söylüyor. Bu karar yalnız bu dört kayıt
+> içindir; 2004–2024 kayıtları için ayrıca sorulacak.
 YSK'nın ülke geneli kararları Resmî Gazete'de bulundu (taranmış sayfa görüntüsüyle okundu; her
 yılda parti oyları toplamı geçerli oya tam eşit). Tek ikinci kaynak DİE'nin *Mahalli İdareler
 Seçimi Sonuçları* kitapları — DİE/TÜİK ulusal rakamları YSK ilanından **aynen** aldığını kendisi

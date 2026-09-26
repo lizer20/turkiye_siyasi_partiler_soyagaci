@@ -176,3 +176,4 @@ Yeniden tasarım: 31d3d70 (yarım daire + kart/panel), 719fddd (§9.5 küçük i
 §9.4: ff5b3ff (2007 CHP hayır; MHP/AKP tek kaynak), aca87ad (ara seçimler 1966/1968/1975/1979/1986/2003 — RG YSK bildirileri OCR + TESAV arşiv kopyası; 1951 sandalye 20 TBMM andiçme tutanağı; 1947–49 yine yok). Araştırma alt ajanı (Opus) kaynakları indirdi, controller örnek denetimle doğruladı.
 Devam: 1984–1999 yerel ülke geneli belediye meclisi + 1955 yerel tarihi araştırması (alt ajan).
 Yerel araştırması (Opus alt ajan): 1955-11-yerel eklendi (6555/6438 sayılı Kanunlar + TESAV kronolojisi). 1984–1999 ülke geneli belediye meclisi: YSK kararları RG'de bulundu, rakamlar deftere yazıldı; ikinci kaynak yalnız DİE (YSK'yı aynen aktarıyor) → dönem 6 emsaliyle null kaldı.
+Kullanıcı kararı (2026-09-26): 1984–1999 yerel ülke geneli için resmî YSK/RG ilanı yeterli → dört kayda yazıldı (toplamlar geçerli oya tam eşit; kaynakça notu eklendi). 2004–2024 aynı durumda, kullanıcıya sorulacak.

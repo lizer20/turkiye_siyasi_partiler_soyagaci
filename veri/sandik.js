@@ -317,10 +317,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1984-03-yerel
     { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "anap", oy: null }, { parti: "sodep", oy: null }, { parti: "dyp", oy: null }, { parti: "hp83", oy: null }, { parti: "mdp", oy: null }, { parti: "rp", oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 12341328, kullanilan: 10559948, gecerli: 9873876,
+      sonuc: [ { parti: "anap", oy: 4295246 }, { parti: "sodep", oy: 2521392 }, { parti: "dyp", oy: 1189978 }, { parti: "hp83", oy: 803795 }, { parti: "mdp", oy: 561038 }, { parti: "rp", oy: 384201 }, { ad: "Bağımsız", oy: 118226 } ],
       buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
-      not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli belediye meclisi oy toplamı YSK'nın il tablosundan script ile hesaplanabildi ama bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından (ayrıca Adana ilinin parti kırılımı kaynakta iç tutarsızdı) sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
+      not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1986-09-ara
     { id: "1986-09-ara", tur: "ara", tarih: "1986-09-28",
@@ -353,10 +353,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1989-03-yerel
     { id: "1989-03-yerel", tur: "yerel", tarih: "1989-03-26",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "shp", oy: null }, { parti: "dyp", oy: null }, { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dsp", oy: null }, { parti: "mcp", oy: null }, { ad: "IDP", oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 18090657, kullanilan: 14107146, gecerli: 13237086,
+      sonuc: [ { parti: "shp", oy: 4389132 }, { parti: "dyp", oy: 3137522 }, { parti: "anap", oy: 3111259 }, { parti: "rp", oy: 1181950 }, { parti: "dsp", oy: 890164 }, { parti: "mcp", oy: 436951 }, { ad: "IDP", oy: 69195 }, { ad: "Bağımsız", oy: 20913 } ],
       buyuksehir: { istanbul: { parti: "shp" }, ankara: { parti: "shp" }, izmir: { parti: "shp" } },
-      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul, Ankara ve İzmir'i kazandığı seçim. Ülke geneli belediye meclisi oy toplamı için bağımsız, aynı ölçüyü veren ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı; hangi partilerin katıldığı biliniyor." },
+      not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul, Ankara ve İzmir'i kazandığı seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-10-cb-tbmm
     { id: "1989-10-cb-tbmm", tur: "cb-tbmm", tarih: "1989-10-31",
@@ -379,10 +379,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1994-03-yerel
     { id: "1994-03-yerel", tur: "yerel", tarih: "1994-03-27",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "anap", oy: null }, { parti: "rp", oy: null }, { parti: "dyp", oy: null }, { parti: "shp", oy: null }, { parti: "dsp", oy: null }, { parti: "mhp93", oy: null }, { parti: "chp92", oy: null }, { parti: "bbp", oy: null }, { parti: "dp92", oy: null }, { ad: "Yeniden Doğuş Partisi", oy: null }, { ad: "Millet Partisi", oy: null }, { parti: "ip92", oy: null }, { ad: "SBP", oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 23366089, kullanilan: 21102428, gecerli: 19734355,
+      sonuc: [ { parti: "anap", oy: 4482333 }, { parti: "rp", oy: 3776425 }, { parti: "dyp", oy: 3728521 }, { parti: "shp", oy: 3316716 }, { parti: "dsp", oy: 1649104 }, { parti: "mhp93", oy: 1508713 }, { parti: "chp92", oy: 851232 }, { parti: "bbp", oy: 211136 }, { parti: "dp92", oy: 65022 }, { ad: "Yeniden Doğuş Partisi", oy: 35754 }, { ad: "Millet Partisi", oy: 34197 }, { parti: "ip92", oy: 32559 }, { ad: "SBP", oy: 21011 }, { ad: "Bağımsız", oy: 21632 } ],
       buyuksehir: { istanbul: { parti: "rp" }, ankara: { parti: "rp" }, izmir: { parti: "dyp" } },
-      not: "Refah Partisi'nin İstanbul ve Ankara büyükşehir belediyelerini kazandığı seçim; ülke geneli belediye meclisi toplamı YSK'nın il tablosundan hesaplanabildi ama aynı ölçüyü veren bağımsız ikinci bir ulusal kaynak bulunamadığından sayılar null bırakıldı." },
+      not: "Refah Partisi'nin İstanbul ve Ankara büyükşehir belediyelerini kazandığı seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır (seçim günü tutanaklarına göre; sonraki iptal ve yenilemeler dahil değil); bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#1995-12-genel
     { id: "1995-12-genel", tur: "genel", tarih: "1995-12-24", tekParti: false,
@@ -399,10 +399,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1999-04-yerel
     { id: "1999-04-yerel", tur: "yerel", tarih: "1999-04-18",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "fp", oy: null }, { parti: "anap", oy: null }, { parti: "dsp", oy: null }, { parti: "mhp93", oy: null }, { parti: "chp92", oy: null }, { parti: "dyp", oy: null }, { parti: "hadep", oy: null }, { parti: "bbp", oy: null }, { parti: "dtp97", oy: null }, { parti: "odp", oy: null }, { ad: "Millet Partisi", oy: null }, { ad: "Barış Partisi", oy: null }, { parti: "dp92", oy: null }, { parti: "emep", oy: null }, { parti: "ldp", oy: null }, { parti: "ip92", oy: null }, { ad: "Yeniden Doğuş Partisi", oy: null }, { ad: "Demokrasi ve Barış Partisi", oy: null }, { ad: "Değişen Türkiye Partisi", oy: null }, { ad: "Sosyalist İktidar Partisi", oy: null }, { parti: "dehap", oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 28889819, kullanilan: 24527241, gecerli: 23164822,
+      sonuc: [ { parti: "fp", oy: 4225409 }, { parti: "anap", oy: 3956557 }, { parti: "dsp", oy: 3755293 }, { parti: "mhp93", oy: 3636853 }, { parti: "chp92", oy: 3074207 }, { parti: "dyp", oy: 2896847 }, { parti: "hadep", oy: 800599 }, { parti: "bbp", oy: 302651 }, { parti: "dtp97", oy: 159864 }, { parti: "odp", oy: 152030 }, { ad: "Millet Partisi", oy: 33338 }, { ad: "Barış Partisi", oy: 38467 }, { parti: "dp92", oy: 32781 }, { parti: "emep", oy: 22398 }, { parti: "ldp", oy: 20203 }, { parti: "ip92", oy: 20597 }, { ad: "Yeniden Doğuş Partisi", oy: 13523 }, { ad: "Demokrasi ve Barış Partisi", oy: 3474 }, { ad: "Değişen Türkiye Partisi", oy: 3110 }, { ad: "Sosyalist İktidar Partisi", oy: 392 }, { parti: "dehap", oy: 115 }, { ad: "Bağımsız", oy: 16114 } ],
       buyuksehir: { istanbul: { parti: "fp" }, ankara: { parti: "fp" }, izmir: { parti: "dsp" } },
-      not: "Genel seçimle aynı gün yapıldı; YSK'nın belediye meclisi tablosunda dört il (Hatay, Hakkâri, Trabzon, Tunceli) hiç yer almadığı için ülke geneli sayılar hesaplanamadı ve null bırakıldı." },
+      not: "Genel seçimle aynı gün yapıldı. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2000-05-cb-tbmm
     { id: "2000-05-cb-tbmm", tur: "cb-tbmm", tarih: "2000-05-05",

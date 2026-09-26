@@ -364,7 +364,7 @@ diyor; bu 15, Millet Meclisi (14) + Cumhuriyet Senatosu (1) toplamı. Sandık ve
   OCR yok. (Denendi: RG mükerrer sayısının `<img>` etiketleri, `GIF image data` doğrulaması,
   YSK karar arama sayfası HTML hata döndürüyor.)
 - ◐ **2007 referandumunun `tutumlar` alanı**: CHP hayır eklendi; MHP (hayır) ve AK Parti (evet) tek kaynaklı kaldı
-- ◐ (26.09.2026: resmî YSK ülke toplamları RG'de bulundu ve deftere yazıldı; tek eksik bağımsız ikinci kaynak) 1984/1989/1994/1999 **yerel seçimlerin ülke geneli belediye meclisi sayıları** `null` —
+- ✅ (26.09.2026: resmî YSK ülke toplamları RG'den siteye yazıldı — kullanıcı kararı: resmî ilan yeterli; 2004–2024 için ayrıca sorulacak) 1984/1989/1994/1999 **yerel seçimlerin ülke geneli belediye meclisi sayıları** `null` —
   TÜİK bu ölçüyü ulusal düzeyde yayımlamıyor, YSK'nın Resmî Gazete ilanı ise `curl` ile
   açılamadı, tarayıcı dosyayı indirmeye çalışıyor. **Bu yol bir daha denenebilir.**
 - 1931–1943 tek parti seçimlerinde bağımsız milletvekili olup olmadığı (TÜİK'e göre yok;
