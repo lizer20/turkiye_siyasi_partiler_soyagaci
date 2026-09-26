@@ -9,12 +9,13 @@
 
 #rows{max-width:1100px;margin:24px auto 0}
 .s-donem.kapali{display:none}
-.s-satir{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:0 0 14px}
+.s-satir{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin:0 0 12px}
+.s-oge[data-tur="genel"]{grid-column:span 2}
 .s-oge-serit{grid-column:1/-1}
 .s-bos{font-size:12px;color:var(--soluk);font-style:italic;margin:0 0 14px}
 .s-kap{border:1px dashed #7A1509;padding:10px 10px 0;margin:-8px 0 14px}
 
-.s-kart{padding:9px 11px 10px}
+.s-kart{padding:8px 11px 9px}
 .s-ust{
   display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:5px;
   font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--soluk);
@@ -23,7 +24,10 @@
   font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;letter-spacing:.07em;
   padding:1px 5px;border:1px solid currentColor;white-space:nowrap;
 }
-.s-baslik{font-family:"Fraunces",serif;font-weight:700;font-size:15px;line-height:1.15;color:var(--aile);margin-bottom:6px}
+.s-baslik{font-family:"Fraunces",serif;font-weight:700;font-size:14.5px;line-height:1.2;color:var(--aile);margin-bottom:6px}
+/* referandum konusu uzun: üç satırda kesilir, tamamı panelde */
+.s-konu{font-size:13px;font-weight:600;color:var(--murekkep);
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .cubuk{display:flex;height:9px;margin:4px 0;background:var(--kagit)}
 .cubuk i{display:block;height:100%}
 .cubuk-yok{font-size:10.5px;color:var(--soluk);font-style:italic;margin:4px 0}
@@ -39,10 +43,60 @@
 .s-serit a{color:inherit;text-underline-offset:3px;text-decoration-color:var(--cizgi)}
 .s-bitis{font-size:11px;color:var(--soluk);margin-top:2px}
 
+/* genel seçim kartı: solda meclis yarım dairesi, sağda sandalye listesi */
+.s-meclis{display:flex;gap:14px;align-items:flex-start}
+.s-sol{flex:0 0 178px}
+.s-sag{flex:1;min-width:0}
+.meclis{display:block;width:100%;height:auto;overflow:visible}
+.meclis .m-grup path{fill:none;stroke-linecap:round}
+.meclis .m-bos circle{fill:none;stroke:var(--soluk);stroke-width:.9}
+.meclis .m-cogunluk{stroke:var(--murekkep);stroke-width:1.6;stroke-linecap:butt}
+.meclis .m-sayi{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:21px;fill:var(--murekkep)}
+.meclis .m-alt{font-family:"IBM Plex Mono",monospace;font-size:7.5px;letter-spacing:.08em;fill:var(--soluk)}
+.meclis .m-grup{transition:opacity .15s}
+.meclis:hover .m-grup{opacity:.3}
+.meclis:hover .m-grup:hover{opacity:1}
+.s-oycubuk{display:flex;align-items:center;gap:6px;margin-top:4px;
+  font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--soluk)}
+.s-oycubuk .cubuk{flex:1;height:6px;margin:0}
+.s-oycubuk .cubuk-yok{margin:0}
+.s-koltuk{list-style:none;margin:0;padding:0;font-size:12px;color:#2A2E22}
+.s-koltuk li{display:grid;grid-template-columns:1fr 3.2em 3.6em;gap:4px;align-items:baseline;
+  padding:2px 0;border-bottom:1px dotted rgba(169,173,158,.6)}
+.s-koltuk li:last-child{border-bottom:none}
+.s-koltuk b{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.s-koltuk b i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:0}
+.s-koltuk b i.bos{border:1px solid var(--cizgi);box-sizing:border-box}
+.s-koltuk span{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:11px}
+.s-koltuk span:nth-child(2){font-weight:600}
+.s-koltuk span:nth-child(3){color:var(--soluk)}
+.s-koltuk .s-kb span{font-size:8.5px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--soluk)}
+.s-koltuk .s-artan b{font-weight:400;color:var(--soluk)}
+.s-meclis .s-baraj{margin-top:6px}
+
+/* panel: meclis çizimi ve sonuç tablosu */
+#panel .p-meclis{margin:4px 0 6px}
+#panel .p-meclis .meclis{max-width:340px;margin:0 auto}
+#panel .p-meclis figcaption{font-size:11px;color:var(--soluk);line-height:1.45;margin-top:6px}
+#panel .p-tablo{width:100%;border-collapse:collapse;margin-top:12px;font-size:12.5px;color:#2A2E22}
+#panel .p-tablo thead th{font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--soluk);text-align:right;padding:0 0 4px;border-bottom:1px solid var(--cizgi)}
+#panel .p-tablo thead th:first-child{text-align:left}
+#panel .p-grup th{font-family:"IBM Plex Mono",monospace;font-size:9.5px;font-weight:500;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--soluk);text-align:left;padding:14px 0 4px}
+#panel .p-tablo td{padding:5px 0;border-bottom:1px dotted var(--cizgi);vertical-align:top}
+#panel .p-tablo td:first-child{padding-right:8px}
+#panel .p-tablo td:first-child i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px}
+#panel .p-tablo td+td{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:11.5px;white-space:nowrap;padding-left:10px}
+#panel .p-tablo td b{font-weight:600}
+#panel .p-tablo small{display:block;font-size:10px;color:var(--soluk)}
+
 #rows.filtreli .s-oge{opacity:.25}
 #rows.filtreli .s-oge.sonuc{opacity:1}
 
 @media (max-width:760px){
   .s-satir{grid-template-columns:1fr}
+  .s-oge[data-tur="genel"]{grid-column:auto}
+  .s-sol{flex-basis:44%}
   .turlar{width:100%}
 }

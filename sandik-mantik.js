@@ -142,11 +142,6 @@
       return satirlar.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0))
         .map(s => { const a = partiAdi(s); return { kisa: a.kisa, deger: oyDegeri(s, k), renk: a.renk }; });
     }
-    function sandalyeBolutleri(k) {
-      return siralaGenel(k).concat(k.sonuc.filter(s => s.ad === BAGIMSIZ))
-        .filter(s => s.sandalye > 0 && k.meclis)
-        .map(s => { const a = partiAdi(s); return { kisa: a.kisa, deger: s.sandalye / k.meclis * 100, renk: a.renk }; });
-    }
     function ustHTML(k) {
       return '<div class="s-ust"><span class="s-tarih">' + O.tarihYaz(k.tarih, true) + "</span>" + rozetHTML(k.tur) + "</div>";
     }
@@ -167,29 +162,106 @@
         (sandalyeli ? " · " + O.sayiYaz(s.sandalye) : "") + "</li>").join("") + "</ol>";
     }
 
+    /* ---- meclis yarım dairesi: her nokta bir sandalye. Yerleşim temsilîdir, gerçek oturma
+       düzeni değildir; yalnızca partilerin meclisin ne kadarını kapladığını gösterir. ---- */
+    function meclisGruplari(k) {
+      // sandalye sayısına göre çoktan aza partiler, ardından bağımsızlar; toplam meclise
+      // ulaşmıyorsa kalan sandalyeler "bilgi yok" diye boş nokta olarak gösterilir
+      const g = siralaGenel(k).concat(k.sonuc.filter(s => s.ad === BAGIMSIZ))
+        .filter(s => s.sandalye > 0)
+        .map(s => { const a = partiAdi(s); return { id: a.id, kisa: a.kisa, renk: a.renk, sandalye: s.sandalye, satir: s }; });
+      const bilinen = g.reduce((t, x) => t + x.sandalye, 0);
+      if (k.meclis != null && k.meclis > bilinen)
+        g.push({ id: null, kisa: "dağılımı bilinmeyen", renk: null, sandalye: k.meclis - bilinen, satir: null });
+      return g;
+    }
+    function koltukDuzeni(n) {
+      // sıra sayısı, yay boyunca ve sıralar arasındaki aralık yaklaşık eşit olacak biçimde seçilir
+      const IC = 0.4;
+      const c = 2 * n * (1 - IC) / (Math.PI * (1 + IC));
+      const R = Math.max(1, Math.round((1 + Math.sqrt(1 + 4 * c)) / 2));
+      const yc = []; for (let i = 0; i < R; i++) yc.push(R === 1 ? 1 : IC + (1 - IC) * i / (R - 1));
+      const top = yc.reduce((a, b) => a + b, 0);
+      const sira = yc.map(r => Math.floor(n * r / top));
+      let kalan = n - sira.reduce((a, b) => a + b, 0);
+      yc.map((r, i) => [n * r / top - sira[i], i]).sort((a, b) => b[0] - a[0] || b[1] - a[1])
+        .forEach(x => { if (kalan > 0) { sira[x[1]]++; kalan--; } });
+      const koltuk = [];
+      sira.forEach((s, i) => { for (let j = 0; j < s; j++) koltuk.push({ a: s === 1 ? Math.PI / 2 : Math.PI * j / (s - 1), r: yc[i] }); });
+      koltuk.sort((x, y) => x.a - y.a || y.r - x.r);
+      return { koltuk, adim: R === 1 ? Math.PI / Math.max(n, 2) : (1 - IC) / (R - 1) };
+    }
+    function meclisSVG(k, buyuk) {
+      const g = meclisGruplari(k);
+      const n = g.reduce((t, x) => t + x.sandalye, 0);
+      if (!n) return "";
+      const d = koltukDuzeni(n), m = g.length;
+      const bosluk = m > 1 ? Math.min(0.05, 0.4 / (m - 1)) : 0;   // gruplar arası açı (radyan)
+      const olcek = (Math.PI - bosluk * (m - 1)) / Math.PI;
+      const nokta = Math.min(d.adim * olcek * 100 * 0.78, 6);
+      const yer = (a, r) => [(-Math.cos(a) * r * 100).toFixed(1), (-Math.sin(a) * r * 100).toFixed(1)];
+      const cogunluk = k.meclis ? Math.floor(k.meclis / 2) + 1 : null;
+      let sira = 0, cizgi = "";
+      const parcalar = g.map((x, gi) => {
+        let yol = "";
+        for (let j = 0; j < x.sandalye; j++, sira++) {
+          const s = d.koltuk[sira], a = s.a * olcek + bosluk * gi, p = yer(a, s.r);
+          yol += x.renk ? "M" + p[0] + " " + p[1] + "h0"
+            : '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + (nokta * 0.4).toFixed(2) + '"/>';
+          if (cogunluk && sira === cogunluk - 1) {
+            const i1 = yer(a, 1 + nokta / 100 + 0.02), i2 = yer(a, 1 + nokta / 100 + 0.1);
+            cizgi = '<path class="m-cogunluk" d="M' + i1[0] + " " + i1[1] + "L" + i2[0] + " " + i2[1] + '"/>';
+          }
+        }
+        const baslik = x.kisa + ": " + O.sayiYaz(x.sandalye) + " sandalye (" + O.yuzdeYaz(x.sandalye / n * 100) + ")";
+        // bilinmeyen sandalyeler içi boş halka olarak çizilir
+        return '<g class="m-grup' + (x.renk ? "" : " m-bos") + '"><title>' + kacis(baslik) + "</title>" + (x.renk
+          ? '<path d="' + yol + '" stroke="' + x.renk + '" stroke-width="' + nokta.toFixed(2) + '"/>' : yol) + "</g>";
+      });
+      const aria = "Meclis dağılımı, " + O.sayiYaz(n) + " sandalye: " +
+        g.map(x => x.kisa + " " + O.sayiYaz(x.sandalye)).join(", ");
+      const ust = -100 - nokta - (cogunluk ? 12 : 2);
+      return '<svg class="meclis' + (buyuk ? " meclis-buyuk" : "") + '" viewBox="-' + (101 + nokta).toFixed(0) + " " +
+        ust.toFixed(0) + " " + (202 + 2 * nokta).toFixed(0) + " " + (-ust + nokta + 1).toFixed(0) +
+        '" role="img" aria-label="' + kacis(aria) + '">' + parcalar.join("") + cizgi +
+        '<text class="m-sayi" x="0" y="' + (buyuk ? -12 : -4) + '" text-anchor="middle">' + O.sayiYaz(n) + "</text>" +
+        (buyuk ? '<text class="m-alt" x="0" y="-1" text-anchor="middle">sandalye</text>' : "") + "</svg>";
+    }
+    function koltukListesiHTML(k) {
+      const g = meclisGruplari(k);
+      const goster = g.length > 4 ? g.slice(0, 3) : g, artan = g.slice(goster.length);
+      const oy = x => x.satir ? O.yuzdeYaz(oyDegeri(x.satir, k)) : "";
+      return '<ol class="s-koltuk"><li class="s-kb"><span></span><span>sandalye</span><span>oy</span></li>' +
+        goster.map(x => '<li><b><i style="' + (x.renk ? "background:" + x.renk : "") + '"' + (x.renk ? "" : ' class="bos"') + "></i>" +
+          kacis(x.kisa) + "</b><span>" + O.sayiYaz(x.sandalye) + "</span><span>" + oy(x) + "</span></li>").join("") +
+        (artan.length ? '<li class="s-artan"><b>+' + artan.length + " daha</b><span>" +
+          O.sayiYaz(artan.reduce((t, x) => t + x.sandalye, 0)) + "</span><span></span></li>" : "") + "</ol>";
+    }
+
     function kartHTML(k) {
       let govde = "";
       if (k.tur === "genel") {
         govde = '<div class="s-baslik">' + kacis(baslikGenel(k)) + "</div>";
-        if (!k.tekParti) {
-          govde += cubukHTML(oyBolutleri(k, k.sonuc), "oy") + cubukHTML(sandalyeBolutleri(k), "sandalye") +
-                   ilkUcHTML(k, siralaGenel(k), true);
-          const alt = meclisDurumu(k).giremeyenler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0))[0];
-          if (k.baraj != null && alt)
-            govde += '<div class="s-baraj">baraj altı: ' + kacis(partiAdi(alt).kisa) + " " + O.yuzdeYaz(oyDegeri(alt, k)) + "</div>";
-        } else {
-          const b = (k.sonuc || []).filter(s => s.sandalye != null);
-          if (b.length) govde += '<div class="s-not">' + b.map(s => kacis(partiAdi(s).kisa) + " " + s.sandalye).join(" · ") + "</div>";
-        }
+        const oyCubugu = k.tekParti ? "" : '<div class="s-oycubuk"><span>oy</span>' + cubukHTML(oyBolutleri(k, k.sonuc), "oy") + "</div>";
+        const alt = meclisDurumu(k).giremeyenler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0))[0];
+        const baraj = !k.tekParti && k.baraj != null && alt
+          ? '<div class="s-baraj">baraj altı: ' + kacis(partiAdi(alt).kisa) + " " + O.yuzdeYaz(oyDegeri(alt, k)) + "</div>" : "";
+        if (meclisGruplari(k).length)
+          govde += '<div class="s-meclis"><div class="s-sol">' + meclisSVG(k, false) + oyCubugu + '</div><div class="s-sag">' +
+            koltukListesiHTML(k) + baraj + "</div></div>";
+        else if (!k.tekParti)   // sandalye dağılımı bilinmiyor: yalnız oy
+          govde += oyCubugu + ilkUcHTML(k, siralaGenel(k), true) + baraj;
       } else if (k.tur === "yerel") {
         const partiler = (k.sonuc || []).filter(s => s.ad !== DIGER);
-        govde = cubukHTML(oyBolutleri(k, k.sonuc || []), "oy") +
-          ilkUcHTML(k, partiler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0)), false);
+        const olculebilir = partiler.some(s => oyDegeri(s, k) != null);
+        govde = olculebilir ? cubukHTML(oyBolutleri(k, k.sonuc || []), "oy") +
+          ilkUcHTML(k, partiler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0)), false)
+          : '<div class="s-not">oy dağılımı kayıtlı değil</div>';
         if (k.buyuksehir) govde += '<div class="s-sehirler">' + SEHIRLER.filter(x => k.buyuksehir[x[0]])
           .map(x => x[1] + " · <b>" + kacis(partiAdi(k.buyuksehir[x[0]]).kisa) + "</b>").join("<br>") + "</div>";
       } else if (k.tur === "referandum") {
         const e = O.yuzde(k.evet, k.gecerli), h = O.yuzde(k.hayir, k.gecerli);
-        govde = '<div class="s-baslik">' + kacis(k.konu) + "</div>" +
+        govde = '<div class="s-baslik s-konu" title="' + kacis(k.konu) + '">' + kacis(k.konu) + "</div>" +
           cubukHTML([{ kisa: "Evet", deger: e, renk: EVET }, { kisa: "Hayır", deger: h, renk: HAYIR }], "sonuç") +
           '<div class="s-not">' + (k.karar === "kabul" ? "kabul edildi" : "reddedildi") +
           " · katılım " + O.yuzdeYaz(katilimDegeri(k)) + "</div>";
@@ -232,6 +304,27 @@
         O.yuzdeYaz(oyDegeri(s, k)) + (s.oy != null ? " · " + O.sayiYaz(s.oy) + " oy" : "") +
         (sandalyeli ? " · " + O.sayiYaz(s.sandalye) + " sandalye" : "") + "</span></li>";
     }
+    function tabloGrubu(k, baslik, satirlar) {
+      if (!satirlar.length) return "";
+      return '<tbody><tr class="p-grup"><th colspan="3" scope="rowgroup">' + baslik + "</th></tr>" + satirlar.map(s => {
+        const a = partiAdi(s);
+        const sandalye = s.ad === DIGER ? "" : "<b>" + O.sayiYaz(s.sandalye) + "</b>" +
+          (s.sandalye > 0 && k.meclis ? "<small>" + O.yuzdeYaz(s.sandalye / k.meclis * 100) + "</small>" : "");
+        return '<tr><td><i style="background:' + a.renk + '"></i>' + satirAdi(s) + "</td><td>" +
+          O.yuzdeYaz(oyDegeri(s, k)) + (s.oy != null ? "<small>" + O.sayiYaz(s.oy) + "</small>" : "") +
+          "</td><td>" + sandalye + "</td></tr>";
+      }).join("") + "</tbody>";
+    }
+    function meclisFiguru(k) {
+      const svg = meclisSVG(k, true);
+      if (!svg) return "";
+      const bos = meclisGruplari(k).find(x => !x.renk);
+      return '<figure class="p-meclis">' + svg + "<figcaption>Her nokta bir sandalye; yerleşim temsilîdir, " +
+        "gerçek oturma düzeni değildir. Partiler soldan sağa, tablodaki sırayla dizilidir." + (k.meclis ? " Üstteki çizgi salt çoğunluğu (" +
+        O.sayiYaz(Math.floor(k.meclis / 2) + 1) + ") gösterir." : "") +
+        (bos ? " Boş noktalar: " + O.sayiYaz(bos.sandalye) + " sandalyenin dağılımı kaynaklarda bulunamadı." : "") +
+        "</figcaption></figure>";
+    }
     function meta(parcalar) {
       return '<div class="p-meta">' + parcalar.filter(Boolean).join(" · ") + "</div>";
     }
@@ -243,11 +336,15 @@
         const d = meclisDurumu(k);
         h += meta([k.meclis != null ? O.sayiYaz(k.meclis) + " sandalye" : null,
           "katılım " + O.yuzdeYaz(katilimDegeri(k)), k.baraj != null ? "baraj %" + k.baraj : null]);
-        h += liste("Meclise girenler", d.girenler.map(s => sonucSatiri(k, s, true)));
-        h += liste("Giremeyenler", d.giremeyenler.map(s => sonucSatiri(k, s, false)));
-        h += liste("Sandalye bilgisi yok", d.bilinmeyen.map(s => sonucSatiri(k, s, true)));
-        if (d.bagimsiz) h += liste("Bağımsızlar", [sonucSatiri(k, d.bagimsiz, true)]);
-        if (d.diger) h += liste("Diğer (" + O.sayiYaz(d.diger.partiSayisi) + " parti)", [sonucSatiri(k, d.diger, false)]);
+        h += meclisFiguru(k);
+        h += '<table class="p-tablo"><thead><tr><th scope="col">Parti</th><th scope="col">Oy</th>' +
+          '<th scope="col">Sandalye</th></tr></thead>' +
+          tabloGrubu(k, "Meclise girenler", d.girenler) +
+          tabloGrubu(k, "Giremeyenler", d.giremeyenler) +
+          tabloGrubu(k, "Sandalye bilgisi yok", d.bilinmeyen) +
+          tabloGrubu(k, "Bağımsızlar", d.bagimsiz ? [d.bagimsiz] : []) +
+          tabloGrubu(k, d.diger ? "Diğer (" + O.sayiYaz(d.diger.partiSayisi) + " parti)" : "", d.diger ? [d.diger] : []) +
+          "</table>";
         for (const it of k.ittifak || [])
           h += '<div class="p-etiket">' + kacis(it.ad) + "</div><div class=\"p-ozet\">" + partiBag(it.liste) +
             " listesinden: " + it.icinden.map(x => partiBag(x.parti) + " " + O.sayiYaz(x.sandalye)).join(", ") + "</div>";
@@ -305,7 +402,7 @@
     return { BAGIMSIZ, DIGER, NOTR, KESINTI, TUR_ETIKET, TUR_AD, BITIS_ETIKET,
              partiAdi, oyDegeri, katilimDegeri, siralaGenel, baslikGenel, meclisDurumu,
              donemBul, kronoloji, sonrakiHukumetler, partininSecimleri,
-             kacis, rozetHTML, cubukHTML, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML };
+             kacis, rozetHTML, cubukHTML, meclisGruplari, meclisSVG, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML };
   }
   return { olustur };
 });

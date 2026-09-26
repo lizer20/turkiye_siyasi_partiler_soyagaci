@@ -14,20 +14,63 @@ test("kacis HTML karakterlerini kaçırır", () => {
   assert.equal(M.kacis(null), "");
 });
 
-test("genel seçim kartı: kimlik, rozet, başlık, iki çubuk, ilk üç ve baraj altı", () => {
+test("genel seçim kartı: kimlik, rozet, başlık, meclis çizimi, oy çubuğu, sandalye listesi ve baraj altı", () => {
   const h = M.kartHTML(kayit("1999-04-genel"));
   assert.match(h, /data-id="1999-04-genel"/);
   assert.match(h, /t-rozet t-genel/);
   assert.ok(h.includes(M.kacis(kisa("dsp") + " kazandı · tek başına iktidar")));
-  assert.equal((h.match(/class="cubuk"/g) || []).length, 2);
+  assert.equal((h.match(/<svg class="meclis"/g) || []).length, 1);
+  assert.equal((h.match(/class="cubuk"/g) || []).length, 1);
+  assert.match(h, /class="s-koltuk"/);
   assert.ok(h.includes("%42,9"));
   assert.match(h, /baraj altı/);
 });
 
-test("tek parti kartı çubuk çizmez", () => {
-  const h = M.kartHTML(kayit("1927-09-genel"));
+test("tek parti kartı oy çubuğu çizmez; sandalye biliniyorsa meclisi çizer", () => {
+  const k = structuredClone(kayit("1927-09-genel"));
+  let h = M.kartHTML(k);
   assert.match(h, /tek parti seçimi/);
   assert.doesNotMatch(h, /class="cubuk"/);
+  assert.doesNotMatch(h, /<svg/);          // sandalye bilinmiyor: çizim yok
+  k.meclis = 12; k.sonuc[0].sandalye = 12;
+  h = M.kartHTML(k);
+  assert.doesNotMatch(h, /class="cubuk"/);
+  assert.match(h, /<svg class="meclis"/);
+});
+
+const noktaSayisi = svg => (svg.match(/h0/g) || []).length + (svg.match(/<circle/g) || []).length;
+
+test("meclis çizimi: her sandalye bir nokta, sıra sandalyeye göre, bağımsızlar sonda", () => {
+  const k = kayit("1999-04-genel");
+  const g = M.meclisGruplari(k);
+  assert.equal(g.reduce((t, x) => t + x.sandalye, 0), k.meclis);
+  for (let i = 1; i < g.length; i++)
+    if (g[i].id) assert.ok(g[i - 1].sandalye >= g[i].sandalye, "sıra bozuk");
+  const svg = M.meclisSVG(k, false);
+  assert.equal(noktaSayisi(svg), k.meclis);
+  assert.match(svg, /role="img"/);
+  assert.ok(svg.includes("aria-label=\"Meclis dağılımı, " + M.kacis(String(k.meclis)).replace(/\B(?=(\d{3})+(?!\d))/g, ".")));
+  assert.match(svg, /class="m-cogunluk"/);
+  assert.match(svg, /<title>/);
+});
+
+test("meclis çizimi: dağılımı bilinmeyen sandalyeler boş halka olur, uydurulmaz", () => {
+  const k = structuredClone(kayit("1999-04-genel"));
+  const eksik = k.sonuc.find(s => s.sandalye > 0);
+  eksik.sandalye -= 3;
+  const g = M.meclisGruplari(k);
+  const bos = g.find(x => !x.renk);
+  assert.equal(bos.sandalye, 3);
+  const svg = M.meclisSVG(k, true);
+  assert.equal(noktaSayisi(svg), k.meclis);
+  assert.equal((svg.match(/<circle/g) || []).length, 3);
+  assert.match(M.panelHTML(k, F).html, /3 sandalyenin dağılımı kaynaklarda bulunamadı/);
+});
+
+test("meclis bilgisi yoksa çizim boş", () => {
+  const k = structuredClone(kayit("1999-04-genel"));
+  k.meclis = null; k.sonuc.forEach(s => { s.sandalye = null; });
+  assert.equal(M.meclisSVG(k, false), "");
 });
 
 test("yerel kart büyükşehirleri gösterir", () => {
@@ -77,6 +120,9 @@ test("genel seçim paneli bölümleri ve sonraki hükümetler", () => {
   for (const b of ["Meclise girenler", "Giremeyenler", "Bağımsız", "Diğer (3 parti)", "57. Hükümet"])
     assert.ok(html.includes(b), b + " yok");
   assert.match(renk, /^#[0-9A-F]{6}$/i);
+  assert.match(html, /<figure class="p-meclis"><svg class="meclis meclis-buyuk"/);
+  assert.match(html, /salt çoğunluğu \(6\)/);
+  assert.match(html, /<table class="p-tablo">/);
 });
 
 test("sandalyesi bilinmeyen parti panelde ayrı listede görünür", () => {
@@ -84,7 +130,7 @@ test("sandalyesi bilinmeyen parti panelde ayrı listede görünür", () => {
   k.sonuc.find(s => s.parti === "fp").sandalye = null;
   const { html } = M.panelHTML(k, F);
   assert.ok(html.includes("Sandalye bilgisi yok"));
-  assert.ok(html.includes("— sandalye"));
+  assert.ok(html.includes("<td><b>—</b></td>"));
   assert.ok(!html.includes(">Giremeyenler<"));   // fp artık giremeyenlerde değil
 });
 
@@ -136,11 +182,12 @@ test("künye: seçim kaydı olmayan partide boş", () => {
   assert.equal(M.kunyeSecimleriHTML("tcf", F), "");
 });
 
-test("oy ve sandalye bilinmiyorsa ilk üç yerine 'sıralama bilinmiyor'", () => {
+test("yerel seçimde oy bilinmiyorsa ilk üç yerine tek satır uyarı", () => {
   const bos = { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25", olcu: "belediye-meclisi",
     kayitli: null, kullanilan: null, gecerli: null,
     sonuc: [{ parti: "dsp", oy: null }, { parti: "dsp", oy: null }] };
   const h = M.kartHTML(bos);
-  assert.match(h, /sıralama bilinmiyor/);
+  assert.match(h, /oy dağılımı kayıtlı değil/);
+  assert.doesNotMatch(h, /veri yok/);
   assert.doesNotMatch(h, /s-ilk3/);
 });
