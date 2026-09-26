@@ -256,7 +256,7 @@
         const olculebilir = partiler.some(s => oyDegeri(s, k) != null);
         govde = olculebilir ? cubukHTML(oyBolutleri(k, k.sonuc || []), "oy") +
           ilkUcHTML(k, partiler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0)), false)
-          : '<div class="s-not">oy dağılımı kayıtlı değil</div>';
+          : '<div class="s-not">' + (k.kapsam ? "yalnız " + kacis(k.kapsam) : "oy dağılımı kayıtlı değil") + "</div>";
         if (k.buyuksehir) govde += '<div class="s-sehirler">' + SEHIRLER.filter(x => k.buyuksehir[x[0]])
           .map(x => x[1] + " · <b>" + kacis(partiAdi(k.buyuksehir[x[0]]).kisa) + "</b>").join("<br>") + "</div>";
       } else if (k.tur === "referandum") {
@@ -287,7 +287,7 @@
         ? partiAdi({ parti: h.partiler[0] }).renk : KESINTI;
       const bas = h.no != null ? h.no + ". Hükümet" : "Hükümet";
       const kisi = h.basbakan || h.baskan;
-      const partiler = h.partiler && h.partiler.length ? h.partiler.map(p => partiBag(p)).join("–") : TIP_ETIKET[h.tip];
+      const partiler = h.partiler && h.partiler.length ? h.partiler.map(p => partiBag(p)).join("–") : (TIP_ETIKET[h.tip] || kacis(h.tip || "—"));
       const aralik = O.tarihYaz(h.baslangic, true) + " – " + (h.bitis ? O.tarihYaz(h.bitis, true) : "görevde");
       return '<div class="s-serit" style="--aile:' + renk + '"><b>' + bas + "</b> · " + kacis(kisi) + " · " +
         partiler + " · " + aralik +
@@ -300,9 +300,11 @@
     }
     function sonucSatiri(k, s, sandalyeli) {
       const a = partiAdi(s);
-      return '<li><i style="background:' + a.renk + '"></i>' + satirAdi(s) + "<span>" +
-        O.yuzdeYaz(oyDegeri(s, k)) + (s.oy != null ? " · " + O.sayiYaz(s.oy) + " oy" : "") +
-        (sandalyeli ? " · " + O.sayiYaz(s.sandalye) + " sandalye" : "") + "</span></li>";
+      // yüzde bilinmeyip oy sayısı biliniyorsa satır "— · N oy" diye başlamaz
+      const y = oyDegeri(s, k);
+      const parca = [y != null || s.oy == null ? O.yuzdeYaz(y) : null, s.oy != null ? O.sayiYaz(s.oy) + " oy" : null,
+        sandalyeli ? O.sayiYaz(s.sandalye) + " sandalye" : null].filter(Boolean);
+      return '<li><i style="background:' + a.renk + '"></i>' + satirAdi(s) + "<span>" + parca.join(" · ") + "</span></li>";
     }
     function tabloGrubu(k, baslik, satirlar) {
       if (!satirlar.length) return "";
@@ -350,7 +352,8 @@
             " listesinden: " + it.icinden.map(x => partiBag(x.parti) + " " + O.sayiYaz(x.sandalye)).join(", ") + "</div>";
         h += liste("Bu seçimden sonra kurulan hükümetler", sonrakiHukumetler(k, S).map(x => "<li>" + seritHTML(x) + "</li>"));
       } else if (k.tur === "yerel") {
-        h += meta(["katılım " + O.yuzdeYaz(katilimDegeri(k)), "belediye meclisi oyları"]);
+        h += meta([k.kapsam ? kacis(k.kapsam) : null, "katılım " + O.yuzdeYaz(katilimDegeri(k)),
+          k.olcu === "belediye-meclisi" ? "belediye meclisi oyları" : null]);
         const sirali = (k.sonuc || []).slice().sort((a, c) => (oyDegeri(c, k) || 0) - (oyDegeri(a, k) || 0));
         h += liste("Sonuç", sirali.map(s => sonucSatiri(k, s, false)));
         if (k.buyuksehir) h += liste("Büyükşehirler", SEHIRLER.filter(x => k.buyuksehir[x[0]]).map(x =>

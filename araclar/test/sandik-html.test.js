@@ -191,3 +191,26 @@ test("yerel seçimde oy bilinmiyorsa ilk üç yerine tek satır uyarı", () => {
   assert.doesNotMatch(h, /veri yok/);
   assert.doesNotMatch(h, /s-ilk3/);
 });
+
+test("tek şehirlik yenileme seçimi: kapsam yazılır, 'belediye meclisi oyları' yazılmaz", () => {
+  const k = { id: "2019-06-yerel", tur: "yerel", tarih: "2019-06-23", kapsam: "İstanbul",
+    buyuksehir: { istanbul: { parti: "chp92" } } };
+  assert.match(M.kartHTML(k), /yalnız İstanbul/);
+  const { html } = M.panelHTML(k, F);
+  assert.match(html, /İstanbul/);
+  assert.doesNotMatch(html, /belediye meclisi oyları/);
+});
+
+test("yerel panel satırı yüzde bilinmezken '— · N oy' diye başlamaz", () => {
+  const k = { id: "1984-03-yerel", tur: "yerel", tarih: "1984-03-25", olcu: "belediye-meclisi",
+    kayitli: null, kullanilan: null, gecerli: null, sonuc: [{ parti: "dsp", oy: 500 }] };
+  const { html } = M.panelHTML(k, F);
+  assert.match(html, /belediye meclisi oyları/);
+  assert.ok(html.includes("<span>500 oy</span>"));
+});
+
+test("hükümet şeridi bilinmeyen tipte 'undefined' yazmaz", () => {
+  const h = M.seritHTML({ no: 1, basbakan: "C", partiler: [], baslangic: "1960-05-30",
+    bitis: null, tip: "yeni-tip", bitisNedeni: null });
+  assert.doesNotMatch(h, /undefined/);
+});

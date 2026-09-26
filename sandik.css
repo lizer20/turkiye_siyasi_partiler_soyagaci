@@ -97,6 +97,7 @@
 @media (max-width:760px){
   .s-satir{grid-template-columns:1fr}
   .s-oge[data-tur="genel"]{grid-column:auto}
+  .s-ilk3 li{display:block}
   .s-sol{flex-basis:44%}
   .turlar{width:100%}
 }
