@@ -4568,3 +4568,28 @@ mutlak oy). Kitap kazananın adını vermez; her ilin "<İl> Şehir" satırı g�
 - **Bilinmiyor (2):** Kastamonu (bağımsızlar toplamı 2 731; AP 1 536, CHP 1 394) ve Kırşehir
   (bağımsızlar 2 647; MP 1 836).
 - Sonuç: 67 il; AP 40, CHP 24, YTP 1 (Adıyaman), bilinmiyor 2.
+
+## Harita — 1968 yerel haritası; 1963 Ankara ve 1968 İstanbul büyükşehir alanı (2026-09-27)
+
+Kaynak: DİE, *Mahallî Seçimler Sonuçları, 2 Haziran 1968* — her il bölümünün 2. sayfası "Belediye Başkanı
+Seçimi Sonuçları" (tek sayfa; AP, BP, CHP, CKMP, GP, MP, TİP, YTP, Bağımsızlar — mutlak oy). İl merkezi
+"00 <İl>" (bazı illerde "00 Merkez") satırı gözle okundu. Kitap kazananın adını vermez.
+Sayfalar metin katmanındaki başlıktan bulundu (Balıkesir s. 230, Erzincan 536, Eskişehir 596, Maraş 1036,
+Sivas 1272, Trabzon 1356 başlıkta "BAŞKAN" yazımı yüzünden elle).
+
+- **Büyük kentler:** Ankara kenti = 00 Ankara + 01 Altındağ + 02 Çankaya + 03 Yenimahalle: AP 70 913,
+  CHP 68 923 → AP (ülke geneli kaydıyla aynı). İstanbul kenti = 01 Adalar … 14 Zeytinburnu (14 ilçe
+  belediyesi): AP 134 730, CHP 99 313 → AP. İzmir: 00 İzmir satırı AP 46 942, CHP 17 697 → AP
+  (Karşıyaka ayrı belediye).
+- Bu resmî tablo, 1968-06-yerel kaydında resmî kaynak bulunamadığı için boş bırakılan İstanbul
+  büyükşehir alanını doldurdu (`istanbul: ap`). Aynı biçimde 1963 kitabındaki Ankara kent toplamı
+  (CHP 63 684, AP 57 527) 1963-11-yerel kaydına `ankara: chp23` olarak eklendi.
+- **Bilinmiyor (11), bağımsızlar toplamı önde:** Afyon, Balıkesir, Bitlis, Bursa, Çankırı, Elazığ,
+  Kırklareli, Kırşehir, Nevşehir, Niğde (bağımsızlar 2 076 – CHP 1 874), Sinop (1 138 – CHP 1 114).
+- **Kitaptaki toplam farkı birinci–ikinci farkından büyük (7 il; kitaptaki birinci gösterildi, il
+  notunda yazılı):** Adana (CHP 22 197 – AP 20 721; fark 1 903), Amasya (AP 3 093 – CHP 2 942; 295),
+  Artvin (CHP 1 135 – AP 1 099; 92), Bolu (AP 2 714 – CHP 2 699; 251), Çanakkale (CHP 1 863 –
+  AP 1 324; 1 918), Gaziantep (AP 12 666 – CHP 11 994; 2 435), Ordu (AP 2 082 – CHP 1 863; 237).
+- GP kazandığı iller: Hakkâri (GP 549 – AP 517, toplam tutuyor), Mardin (GP 3 298 – AP 2 376),
+  Van (GP 2 568 – AP 1 943).
+- Sonuç: 67 il; AP 33, CHP 20, GP 3, bilinmiyor 11.
