@@ -365,14 +365,15 @@
       return '<div class="p-meta">' + parcalar.filter(Boolean).join(" · ") + "</div>";
     }
 
-    function panelHTML(k, S) {
+    function panelHTML(k, S, ek) {
+      const harita = (ek && ek.harita) || "";   // il il harita (sayfa verirse)
       let h = '<div class="p-kisa" id="p-kisa">' + k.tarih.slice(0, 4) + " " + TUR_AD[k.tur] + "</div>";
       h += '<div class="p-ad">' + O.tarihYaz(k.tarih) + (k.tur === "ara" ? " · " + kacis(k.bolge) : "") + "</div>";
       if (k.tur === "genel") {
         const d = meclisDurumu(k);
         h += meta([k.meclis != null ? O.sayiYaz(k.meclis) + " sandalye" : null,
           "katılım " + O.yuzdeYaz(katilimDegeri(k)), k.baraj != null ? "baraj %" + k.baraj : null]);
-        h += meclisFiguru(k);
+        h += meclisFiguru(k) + harita;
         h += '<table class="p-tablo"><thead><tr><th scope="col">Parti</th><th scope="col">Oy</th>' +
           '<th scope="col">Sandalye</th></tr></thead>' +
           tabloGrubu(k, "Meclise girenler", d.girenler) +
@@ -391,6 +392,7 @@
         // partiler oya göre; "Diğer" ve "Bağımsız" genel seçim panelindeki gibi sonda
         const sirali = (k.sonuc || []).slice().sort((a, c) => (ozelSatir(a) - ozelSatir(c)) ||
           (oyDegeri(c, k) || 0) - (oyDegeri(a, k) || 0));
+        h += harita;
         h += liste("Sonuç", sirali.map(s => sonucSatiri(k, s, false)));
         if (k.buyuksehir) h += liste("Büyükşehirler", SEHIRLER.filter(x => k.buyuksehir[x[0]]).map(x =>
           "<li><b>" + x[1] + "</b>" + partiBag(k.buyuksehir[x[0]].parti) + "<span>" + kacis(k.buyuksehir[x[0]].aday) + "</span></li>"));

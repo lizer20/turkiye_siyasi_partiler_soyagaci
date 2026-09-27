@@ -252,3 +252,11 @@ test("bütün değerler 0 ise çubuk 'veri yok' demez", () => {
   assert.match(h, /class="cubuk"/);
   assert.match(h, /X %0,0/);
 });
+
+test("panel, sayfanın verdiği haritayı genel ve yerel seçimde gösterir", () => {
+  const g = M.panelHTML(kayit("1999-04-genel"), F, { harita: "<i>HARITA</i>" }).html;
+  assert.ok(g.includes("<i>HARITA</i>") && g.indexOf("<i>HARITA</i>") < g.indexOf('<table class="p-tablo">'));
+  const y = M.panelHTML(kayit("2004-03-yerel"), F, { harita: "<i>HARITA</i>" }).html;
+  assert.ok(y.includes("<i>HARITA</i>"));
+  assert.ok(!M.panelHTML(kayit("1999-04-genel"), F).html.includes("HARITA"));
+});

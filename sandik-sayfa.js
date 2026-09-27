@@ -101,9 +101,17 @@
     odakSecici: ".s-kart",
     kapaninca: () => history.replaceState(null, "", location.pathname + location.search)
   });
+  const V = window.IL_SONUCLARI || {};
+  const H = window.HaritaMantik && window.ILLER ? window.HaritaMantik.olustur(window.ILLER, M, O) : null;
+  function haritaHTML(k) {
+    if (!H || !V[k.id]) return "";
+    return '<div class="p-etiket">' + (k.tur === "genel" ? "İllere göre birinci parti" : "İl merkezi belediye başkanlıkları") +
+      '</div><div class="p-harita">' + H.haritaSVG(k, V[k.id]) + H.lejantHTML(k, V[k.id]) +
+      '<div class="p-harita-bag"><a href="harita.html#' + k.id + '">büyük haritada aç →</a></div></div>';
+  }
   function ac(id) {
     const k = S.secimler.find(x => x.id === id); if (!k) return;
-    const p = M.panelHTML(k, S);
+    const p = M.panelHTML(k, S, { harita: haritaHTML(k) });
     Panel.ac(p.html, p.renk);
     history.replaceState(null, "", "#" + id);
   }
