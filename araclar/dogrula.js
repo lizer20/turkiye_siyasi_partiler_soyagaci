@@ -11,7 +11,7 @@ const BITIS = ["secim", "erken-secim", "guvensizlik", "istifa", "darbe", "muhtir
                "cumhurbaskani-secimi", "olum", "sistem-degisikligi", "diger"];
 const TUTUMLAR = ["evet", "hayir", "boykot", "serbest"];
 const REF_SONUC = ["kabul", "ret"];
-const SAYISAL = ["kayitli", "kullanilan", "gecerli", "oy", "sandalye", "evet", "hayir"];
+const SAYISAL = ["kayitli", "kullanilan", "gecerli", "oy", "sandalye", "sandalyeSayisi", "evet", "hayir"];
 
 function gunFarki(a, b) { return (Date.parse(b) - Date.parse(a)) / 86400000; }
 

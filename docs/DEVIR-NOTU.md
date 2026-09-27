@@ -374,16 +374,16 @@ diyor; bu 15, Millet Meclisi (14) + Cumhuriyet Senatosu (1) toplamı. Sandık ve
 
 ### 9.5 Ertelenmiş küçük işler (son incelemede toplu ele alınacak)
 
-- `cubukHTML`: bütün bölütler gerçek 0 ise "veri yok" yazıyor
+- ✅ `cubukHTML`: bütün bölütler gerçek 0 ise "veri yok" yazıyor
 - ✅ `seritHTML`: `TIP_ETIKET`'te olmayan tip "undefined" yazdırabilir (dogrula bunu hata sayar)
 - ✅ `sandik.css` mobil: `.s-ilk3 li` `display:inline` kalıyor; spec "alt alta dizilir" diyor
-- `SAYISAL` sabiti ara seçimin `sandalyeSayisi` alanını "— sayısı" raporuna katmıyor
-- "hukumetler tarih sırasında değil" hata dalı hiçbir testte tetiklenmiyor
-- 1950-09-yerel yüzde toplamı %95,1
+- ✅ `SAYISAL` sabiti ara seçimin `sandalyeSayisi` alanını "— sayısı" raporuna katmıyor
+- ✅ "hukumetler tarih sırasında değil" hata dalı hiçbir testte tetiklenmiyor
+- ✅ 1950-09-yerel yüzde toplamı %95,1 (kalan %4,9 notta açıklandı)
 - Hükümet **23 → 24** arası 3 günlük boşluk (27–30 Mayıs 1960) ve **43 → 44** boşluğu
   (dogrula bunları uyarı olarak basıyor; beklenen)
 - ✅ Panel satırı geçerli oy bilinmezken "— · N oy" diye başlıyor
-- 1930 yerel ikinci kaynağı yalnızca seçimin varlığını doğruluyor
+- ✅ 1930 yerel ikinci kaynağı yalnızca seçimin varlığını doğruluyor (İstanbul sayılarına iki akademik kaynak eklendi)
 
 ---
 

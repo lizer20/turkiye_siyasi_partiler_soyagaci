@@ -371,6 +371,15 @@ ayrıntı bu blokta, her kayıt için ayrı kısa başlık aşağıda.
 - Erişim: 2026-09-11.
 
 ### 1930-10-yerel
+
+> **Görev 12 (2026-09-27) — İstanbul sayılarına iki bağımsız kaynak daha:** Mehmet Ali DURAN, "1930
+> İstanbul Belediye Seçimlerinde Serbest Cumhuriyet Fırkası'nın Yahudi Adayları ve Yahudi Seçmenler",
+> *Atatürk Yolu* 71 (2022), s. 124-145 (`dergipark.org.tr/en/download/article-file/2470500`):
+> "seçmenlerden 35.934'ü CHF'ye oy verdiğini, 12.813 kişinin ise SCF'ye" (dn. 80: *Vakit*, 20.10.1930);
+> "1930 İstanbul Belediye Seçimlerinde Gayrimüslimler", *YYÜ Sosyal Bilimler Enstitüsü Dergisi* 42
+> (2018), s. 321-344 (`dergipark.org.tr/en/download/article-file/657412`): "35.934 CHF'ye, 12.813'ü de
+> SCF'ye oy verdi (Vakit, …)". `not`'taki İstanbul rakamları artık üç kaynaklı; ülke geneli sayılar
+> hâlâ yok.
 - Tek parti dönemi ilk ülke geneli belediye meclisi seçimi.
 - Sonuç: 5 Ekim 1930 Pazar günü başladı (bazı bölgelerde 18 Ekim'e kadar sürdü); 1930 tarihli,
   3 Nisan 1930 kabul edilen 1580 sayılı Belediye Kanunu'nun getirdiği, Cumhuriyet tarihinin ilk
@@ -678,8 +687,9 @@ arasındaki fark %0,5'i (aslında %1-10 aralığında, çok daha büyük) aştı
   63-64'te alıntılanıyor) — "DP ülke çapında 600'den fazla belediyeden 560'ını almıştı" (s. 103).
 - Ülke geneli oy sayısı (ham): bulunamadı, yalnızca yüzde yayımlı → `oyYuzde` kullanıldı (kural:
   "Yüzde yalnızca kaynak sayı vermiyorsa yazılır").
-- Uyuşmazlık: yok (yüzdelerin toplamı %94,1 — yuvarlama ve küçük partilerin/bağımsızların payı
-  nedeniyle %100'e tamamlanmıyor, `dogrula.js` bunu uyarı olarak işaretliyor, hata değil).
+- Uyuşmazlık: yok (yüzdelerin toplamı **%95,1** — 2026-09-27 düzeltmesi: önceki metinde yanlışlıkla
+  %94,1 yazıyordu. Kalan %4,9'un dağılımını kaynaklar vermiyor; bu `not` alanında açıkça yazıldı.
+  `dogrula.js` bunu uyarı olarak işaretliyor, hata değil).
 - Erişim: 2026-09-12.
 
 ### 1951-09-ara

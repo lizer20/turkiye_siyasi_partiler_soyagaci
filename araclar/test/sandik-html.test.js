@@ -245,3 +245,10 @@ test("yerel panelde 'Diğer' ve 'Bağımsız' partilerden sonra gelir", () => {
   assert.ok(yer('href="index.html#akp"') < yer(">Diğer<"));
   assert.ok(yer('href="index.html#akp"') < yer(">Bağımsız<"));
 });
+
+test("bütün değerler 0 ise çubuk 'veri yok' demez", () => {
+  const h = M.cubukHTML([{ kisa: "X", deger: 0, renk: "#000000" }], "oy");
+  assert.doesNotMatch(h, /veri yok/);
+  assert.match(h, /class="cubuk"/);
+  assert.match(h, /X %0,0/);
+});

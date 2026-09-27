@@ -131,3 +131,16 @@ test("cb-halk adayında ad kişinin adıdır; parti ile birlikte yazılabilir", 
   S.secimler[0].turlar[0].adaylar[1] = { ad: "B", parti: "chp92", destek: "Çatı", oy: 40 };
   assert.match(dogrulaSandik(P, S).hatalar.join("|"), /hem parti hem destek/);
 });
+
+test("hükümetler tarih sırasında değilse hata", () => {
+  const S = kopya();
+  S.hukumetler.reverse();
+  assert.match(hatalar(S), /hukumetler tarih sırasında değil/);
+});
+
+test("ara seçimin bilinmeyen sandalye sayısı '— sayısı' raporuna girer", () => {
+  const S = kopya();
+  S.secimler.push({ id: "2003-03-ara", tur: "ara", tarih: "2003-03-09", bolge: "Siirt",
+    sandalyeSayisi: null, sonuc: [{ parti: "dsp", sandalye: null }] });
+  assert.match(uyarilar(S), /— sayısı: ara bant \d+: 2/);
+});

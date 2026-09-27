@@ -132,7 +132,13 @@
     }
     function cubukHTML(bolutler, etiket) {
       const b = bolutler.filter(x => x.deger != null && x.deger > 0);
-      if (!b.length) return '<div class="cubuk-yok">veri yok</div>';
+      if (!b.length) {
+        // değerler bilinip hepsi 0 ise "veri yok" demek yanlış olur: boş çubuk çizilir
+        const sifir = bolutler.filter(x => x.deger === 0);
+        return sifir.length ? '<div class="cubuk" role="img" aria-label="' + kacis(etiket + ": " +
+          sifir.map(x => x.kisa + " " + O.yuzdeYaz(0)).join(", ")) + '"></div>'
+          : '<div class="cubuk-yok">veri yok</div>';
+      }
       const aria = etiket + ": " + b.map(x => x.kisa + " " + O.yuzdeYaz(x.deger)).join(", ");
       return '<div class="cubuk" role="img" aria-label="' + kacis(aria) + '">' +
         b.map(x => '<i style="width:' + x.deger.toFixed(2) + "%;background:" + x.renk + '" title="' +

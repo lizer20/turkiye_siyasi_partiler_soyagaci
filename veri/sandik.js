@@ -140,7 +140,7 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: null, kullanilan: null, gecerli: null,
       sonuc: [ { parti: "dp46", oyYuzde: 57.6 }, { parti: "chp23", oyYuzde: 37.5 } ],
-      not: "DP ülke genelinde 600'den fazla belediyeden 560'ından fazlasını kazandı; ülke geneli oy sayısı yayımlanmadı." },
+      not: "DP ülke genelinde 600'den fazla belediyeden 560'ından fazlasını kazandı; ülke geneli oy sayısı yayımlanmadı. Kaynaklar yalnızca DP ve CHP'nin oy oranını veriyor; kalan %4,9'un dağılımı bilinmiyor." },
 
     // kaynak: araclar/kaynak-defteri.md#1951-09-ara
     { id: "1951-09-ara", tur: "ara", tarih: "1951-09-16",
