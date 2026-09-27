@@ -4593,3 +4593,24 @@ Sivas 1272, Trabzon 1356 başlıkta "BAŞKAN" yazımı yüzünden elle).
 - GP kazandığı iller: Hakkâri (GP 549 – AP 517, toplam tutuyor), Mardin (GP 3 298 – AP 2 376),
   Van (GP 2 568 – AP 1 943).
 - Sonuç: 67 il; AP 33, CHP 20, GP 3, bilinmiyor 11.
+
+## Harita — 1984 yerel haritası (2026-09-27)
+
+Kaynak: DİE, *25 Mart 1984 Mahallî İdareler Seçim Sonuçları* (TÜİK taraması `1984Mahalli-Tuik.pdf`),
+Tablo 3 "Belediye başkanlığı seçimi sonuçlarının belediyelere göre dağılımı" (s. 37–88; sol sayfa ANAP ve
+DYP oyu, sağ sayfa DYP %, HP, MDP, RP, SODEP, Bağımsız). Her ilin "MERKEZ-CENTRAL" satırı sol ve sağ
+sayfadan kırpılıp gözle okundu; her ilde sol ANAP % + sağ sayfadaki yüzdelerin toplamının 100 olduğu
+denetlendi. 57/58 ve 85/86 gibi bazı sayfa çiftlerinde sağ sayfa bir satır kayık basıldığından doğru satır
+bu toplam denetimiyle seçildi.
+
+- İstanbul ve Ankara: Tablo 2 büyükşehir toplamı (Ankara ANAP %53,2; İstanbul ANAP %49,7) — ülke geneli
+  kaydıyla aynı. İzmir: il merkezi satırı ANAP %50,6 (büyükşehir toplamı da ANAP %46,0).
+- ANAP dışındaki kazananlar: SODEP — Artvin (%39,0 – ANAP %36,5), Bitlis (%36,0 – %30,4), Burdur
+  (%34,4 – %32,5), Kars (%33,9 – %26,4), Kırklareli (%31,1 – DYP %21,2), Muğla (%42,8 – %39,7), Ordu
+  (6 615 – ANAP 6 300); MDP — Adıyaman (%26,3 – ANAP %21,2), Niğde (%26,4 – ANAP %24,4); RP — Urfa
+  (11 379, %34,7 – ANAP %21,9), Van (5 265, %23,1 – bağımsızlar toplamı %18,2).
+- Bağımsızlar toplamı ikinci olan ama birinciyi geçmeyen iller kesin sayıldı: Diyarbakır (ANAP 14 262 –
+  bağımsızlar 13 170), Muş (ANAP 2 129 – 1 970), Çanakkale (ANAP 5 126 – 4 249), Sinop, Mardin.
+- **Bilinmiyor (1):** Tunceli (bağımsızlar toplamı %39,4, SODEP %35,7).
+- Sonuç: 67 il; ANAP 55, SODEP 7, MDP 2, RP 2, bilinmiyor 1.
+- 1930–1955 yerel seçimleri için il il sonuç veren bir kaynak bulunamadığından bu yıllara harita eklenmedi.
