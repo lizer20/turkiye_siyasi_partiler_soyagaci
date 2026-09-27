@@ -4499,3 +4499,23 @@ toplamları için kullanıcı kararı ("resmî ilan yeterli") uygulandı.
   TÜİK 1989'da "Kastomonu" yazıyor → eşleme listesine eklendi.
 - **1984 ve öncesi:** DİE kitaplarında il merkezi satırları ("MERKEZ-CENTRAL") var ama OCR metni bozuk; henüz
   işlenmedi.
+
+## Harita — yalnızca seçim günü sonuçları; 1973 yerel haritası (2026-09-27)
+
+Kullanıcı isteği: "sadece seçimde olanları sonradan olan değişimleri ekleme".
+
+- **Yenilenen seçimler boşaltıldı.** TÜİK veri tabanı iptal edilip yenilenen il merkezlerinde yalnızca
+  yenileme sonucunu veriyor; ilk seçimin il merkezi sonucu elimizde yok. Bu yüzden 1994 Nevşehir,
+  2014 Ağrı, 2014 Yalova `kazanan:null` yapıldı, il notunda neden açıklandı. 2019 İstanbul zaten boştu.
+- **1973-12-yerel eklendi.** Kaynak: DİE, *1973 Mahallî Seçimler Sonuçları*, Tablo 4 (s. 46–133).
+  Bu tabloda her ilin "Merkez" satırında kazanan belediye başkanının adı ve partisi yazılıdır; kazanan bu
+  addan alındı. Metin katmanında satırlar kaydığı için sol/sağ sayfa görüntüleri yan yana kırpılıp
+  gözle okundu; Merkez satırında sol % + sağ % ≈ 100 denetimi yapıldı. Metin katmanıyla görüntünün
+  çeliştiği 4 ilde (Amasya, Gaziantep, Giresun, İçel) görüntü esas alındı.
+  - Dikkat: "Bağımsızlar" sütunu tek adayın değil, bütün bağımsız adayların toplamıdır (ör. Giresun'da
+    bağımsızlar toplam %39 ama kazanan CHP). Adı verilmeyen kitaplarda bu yüzden bağımsızlar toplamı
+    önde olan ve hiçbir partinin kesin önde olmadığı iller "bilinmiyor" bırakılır.
+  - Ağrı: 9 Aralık 1973 seçimi 2 Haziran 1974'te yenilendi; kaynak yalnızca yenilemeyi verdiği için boş.
+  - İstanbul, Ankara, İzmir: kentin belediye başkanlığı (üçü de CHP; ülke geneli kaydındaki büyükşehir
+    alanıyla aynı).
+  - Sonuç: 67 il; CHP 32, AP 22, Bağımsız 8, MSP 3, DP 1, bilinmiyor 1 (Ağrı).
