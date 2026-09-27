@@ -24,6 +24,15 @@ Bu dosya, projenin bir sohbetten başka bir sohbete aktarılması için yazıld�
 > §9.4'ten: 1966, 1968, 1975, 1979, 1986 ve 2003 Siirt ara seçimleri eklendi (RG YSK bildirisi +
 > TESAV'ın Internet Archive kopyası); 1951'in sandalye sayısı 20 olarak kesinleşti; 2007
 > referandumuna CHP "hayır" eklendi; 64. Hükümet bitiş nedeni "istifa". Testler 64/64.
+>
+> **Güncelleme (27 Eylül 2026) — Harita:** yeni sayfa `harita.html` (menüde "Harita") ve Sandık penceresinde küçük
+> harita. Dosyalar: `harita-mantik.js` (saf mantık, `araclar/test/harita.test.js`), `harita-sayfa.js`, `harita.css`,
+> `veri/iller.js` (81 il sınırı, Natural Earth, kamu malı), `veri/il-sonuclari.js` (20 genel seçim 1950–2023: il il
+> parti oyları, TÜİK/YSK; 8 yerel seçim 1989–2024: il merkezi / büyükşehir belediye başkanlığı kazananı, TÜİK veri
+> tabanı). Kaynak ve denetimler: `araclar/kaynak-defteri.md` → "Harita". Açık: 1963–1984 yerel il sonuçları (DİE
+> kitaplarının OCR metni bozuk; sayfa görüntüsünden yeniden okunmalı). Aynı gün: 1961/1969 geçerli oy, 1950 sandalye
+> çelişkisi, 1963/1968 yerel ülke geneli, 1963–1977 büyükşehirler, 1984–2024 yerel ülke geneli (kullanıcı kararı:
+> resmî YSK ilanı yeterli), 1961 referandumu ham sayıları. Testler 77/77.
 
 ---
 

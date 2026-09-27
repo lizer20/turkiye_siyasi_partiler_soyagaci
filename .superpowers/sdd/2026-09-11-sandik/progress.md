@@ -179,3 +179,7 @@ Yerel araştırması (Opus alt ajan): 1955-11-yerel eklendi (6555/6438 sayılı 
 Kullanıcı kararı (2026-09-26): 1984–1999 yerel ülke geneli için resmî YSK/RG ilanı yeterli → dört kayda yazıldı (toplamlar geçerli oya tam eşit; kaynakça notu eklendi). 2004–2024 aynı durumda, kullanıcıya sorulacak.
 1961 referandumu: YSK arşivindeki 67 illik tablo toplandı (evet 6.348.092 / hayır 3.933.944; Tuğluoğlu 2019 + Yeni Şafak ile eşleşti); nottaki yanlış %88 katılım kaldırıldı (dc1fd2d).
 Kullanıcı kararı (2026-09-27): 2004–2024 yerel ülke geneli için de resmî YSK ilanı yeterli → beş kayda yazıldı (toplamlar tam eşit; 2019/2024 LİSTE-4 yeniden indirildi).
+Kullanıcı isteği (2026-09-27): önerilen sırayla açık işler + genel/yerel seçimlerin Türkiye haritası (il il kazanan).
+- Araştırma alt ajanları (Opus): 1963/1968 yerel, 1950–69 genel eksikleri, il il genel (TÜİK Tablo 23/24 + YSK sonuç sistemi), il il yerel (TÜİK veri tabanı; ajan kullanım sınırında kesildi, controller indirilen raporlardan tamamladı); harita geometrisi (Sonnet, Natural Earth).
+- Commit'ler: 178a4f9 (küçük teknik işler), 8e88c3e (harita altyapısı), 557721a (1961/1969/1950), 43c09e7 (genel il verisi), b018467 (1963/1968 yerel, büyükşehirler), c3e0bca (yerel il verisi 1989–2024).
+- 1984 ve öncesi yerel il sonuçları eklenmedi (DİE OCR bozuk). Bütün dalın bağımsız incelemesi (Sonnet) başlatıldı.
