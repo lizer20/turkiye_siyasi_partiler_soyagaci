@@ -426,10 +426,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2004-03-yerel
     { id: "2004-03-yerel", tur: "yerel", tarih: "2004-03-28",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "dyp", oy: null }, { ad: "Sosyaldemokrat Halk Partisi", oy: null }, { parti: "sp", oy: null }, { parti: "anap", oy: null }, { ad: "Genç Parti", oy: null }, { parti: "dsp", oy: null }, { parti: "bbp", oy: null }, { parti: "ytp02", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "emep", oy: null }, { parti: "dp92", oy: null }, { parti: "ldp", oy: null }, { ad: "Diğer", partiSayisi: 4, oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 34213138, kullanilan: 25067950, gecerli: 23893656,
+      sonuc: [ { parti: "akp", oy: 9635145 }, { parti: "chp92", oy: 4912313 }, { parti: "mhp93", oy: 2500601 }, { parti: "dyp", oy: 2286020 }, { ad: "Sosyaldemokrat Halk Partisi", oy: 1204431 }, { parti: "sp", oy: 1111017 }, { parti: "anap", oy: 682264 }, { ad: "Genç Parti", oy: 607847 }, { parti: "dsp", oy: 484555 }, { parti: "bbp", oy: 179090 }, { parti: "ytp02", oy: 56912 }, { parti: "ip92", oy: 33770 }, { parti: "odp", oy: 29269 }, { parti: "emep", oy: 28011 }, { parti: "dp92", oy: 3742 }, { parti: "ldp", oy: 391 }, { ad: "Diğer", partiSayisi: 4, oy: 98310 }, { ad: "Bağımsız", oy: 39968 } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "AK Parti'nin ilk yerel seçiminde 3.193 belediye başkanlığı ve 34.477 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
+      not: "AK Parti'nin ilk yerel seçiminde 3.193 belediye başkanlığı ve 34.477 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2007-04-cb-tbmm
     { id: "2007-04-cb-tbmm", tur: "cb-tbmm", tarih: "2007-04-27",
@@ -458,10 +458,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2009-03-yerel
     { id: "2009-03-yerel", tur: "yerel", tarih: "2009-03-29",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "sp", oy: null }, { parti: "dtp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "bbp", oy: null }, { parti: "anap", oy: null }, { parti: "odp", oy: null }, { parti: "emep", oy: null }, { parti: "ldp", oy: null }, { parti: "ip92", oy: null }, { parti: "bdp", oy: null }, { ad: "Diğer", partiSayisi: 5, oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 39787986, kullanilan: 33447257, gecerli: 32072363,
+      sonuc: [ { parti: "akp", oy: 12237325 }, { parti: "chp92", oy: 7966710 }, { parti: "mhp93", oy: 5336695 }, { parti: "sp", oy: 1807745 }, { parti: "dtp", oy: 1687733 }, { parti: "dp07", oy: 1181074 }, { parti: "dsp", oy: 945722 }, { parti: "bbp", oy: 508055 }, { parti: "anap", oy: 202976 }, { parti: "odp", oy: 25557 }, { parti: "emep", oy: 21100 }, { parti: "ldp", oy: 2451 }, { parti: "ip92", oy: 2258 }, { parti: "bdp", oy: 203 }, { ad: "Diğer", partiSayisi: 5, oy: 103126 }, { ad: "Bağımsız", oy: 43633 } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "32.392 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
+      not: "32.392 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2010-09-referandum
     { id: "2010-09-referandum", tur: "referandum", tarih: "2010-09-12",
@@ -480,10 +480,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2014-03-yerel
     { id: "2014-03-yerel", tur: "yerel", tarih: "2014-03-30",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "bdp", oy: null }, { parti: "sp", oy: null }, { parti: "hdp", oy: null }, { parti: "bbp", oy: null }, { parti: "dp07", oy: null }, { parti: "dsp", oy: null }, { parti: "ip92", oy: null }, { parti: "odp", oy: null }, { parti: "ldp", oy: null }, { parti: "emep", oy: null }, { parti: "hudapar", oy: null }, { ad: "Diğer", partiSayisi: 8, oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 48843157, kullanilan: 43543717, gecerli: 41527387,
+      sonuc: [ { parti: "akp", oy: 17802976 }, { parti: "chp92", oy: 10938262 }, { parti: "mhp93", oy: 7399119 }, { parti: "bdp", oy: 1729297 }, { parti: "sp", oy: 1180322 }, { parti: "hdp", oy: 881830 }, { parti: "bbp", oy: 628729 }, { parti: "dp07", oy: 287209 }, { parti: "dsp", oy: 144337 }, { parti: "ip92", oy: 100021 }, { parti: "odp", oy: 45204 }, { parti: "ldp", oy: 9122 }, { parti: "emep", oy: 489 }, { parti: "hudapar", oy: 87726 }, { ad: "Diğer", partiSayisi: 8, oy: 243150 }, { ad: "Bağımsız", oy: 49594 } ],
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
-      not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kurumsal kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
+      not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2014-08-cb-halk
     { id: "2014-08-cb-halk", tur: "cb-halk", tarih: "2014-08-10",
@@ -531,10 +531,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2019-03-yerel
     { id: "2019-03-yerel", tur: "yerel", tarih: "2019-03-31",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "akp", oy: null }, { parti: "chp92", oy: null }, { parti: "mhp93", oy: null }, { parti: "iyi", oy: null }, { parti: "hdp", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "dsp", oy: null }, { parti: "dp07", oy: null }, { parti: "vatan", oy: null }, { ad: "Diğer", partiSayisi: 2, oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 53203842, kullanilan: 44881860, gecerli: 42998754,
+      sonuc: [ { parti: "akp", oy: 18299576 }, { parti: "chp92", oy: 12625346 }, { parti: "mhp93", oy: 3209416 }, { parti: "iyi", oy: 3142757 }, { parti: "hdp", oy: 2409485 }, { parti: "sp", oy: 1291757 }, { parti: "bbp", oy: 818872 }, { parti: "dsp", oy: 379689 }, { parti: "dp07", oy: 378093 }, { parti: "vatan", oy: 83091 }, { ad: "Diğer", partiSayisi: 2, oy: 240575 }, { ad: "Bağımsız", oy: 120097 } ],
       buyuksehir: { ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
-      not: "İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi; ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." },
+      not: "İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2019-06-yerel
     { id: "2019-06-yerel", tur: "yerel", tarih: "2019-06-23", kapsam: "İstanbul",
@@ -560,10 +560,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#2024-03-yerel
     { id: "2024-03-yerel", tur: "yerel", tarih: "2024-03-31",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [ { parti: "chp92", oy: null }, { parti: "akp", oy: null }, { parti: "yrp", oy: null }, { parti: "mhp93", oy: null }, { parti: "dem", oy: null }, { parti: "iyi", oy: null }, { parti: "zafer", oy: null }, { parti: "sp", oy: null }, { parti: "bbp", oy: null }, { parti: "tip17", oy: null }, { parti: "deva", oy: null }, { parti: "dp07", oy: null }, { parti: "memleket", oy: null }, { parti: "dsp", oy: null }, { parti: "gelecek", oy: null }, { parti: "vatan", oy: null }, { parti: "emep", oy: null }, { parti: "hudapar", oy: null }, { ad: "Diğer", partiSayisi: 15, oy: null }, { ad: "Bağımsız", oy: null } ],
+      kayitli: 57716975, kullanilan: 45079928, gecerli: 42848693,
+      sonuc: [ { parti: "chp92", oy: 15200699 }, { parti: "akp", oy: 13874511 }, { parti: "yrp", oy: 2991882 }, { parti: "mhp93", oy: 2508414 }, { parti: "dem", oy: 2409155 }, { parti: "iyi", oy: 1967898 }, { parti: "zafer", oy: 1102172 }, { parti: "sp", oy: 561064 }, { parti: "bbp", oy: 525400 }, { parti: "tip17", oy: 261656 }, { parti: "deva", oy: 186090 }, { parti: "dp07", oy: 145134 }, { parti: "memleket", oy: 115553 }, { parti: "dsp", oy: 50925 }, { parti: "gelecek", oy: 47867 }, { parti: "vatan", oy: 37350 }, { parti: "emep", oy: 36506 }, { parti: "hudapar", oy: 274486 }, { ad: "Diğer", partiSayisi: 15, oy: 429712 }, { ad: "Bağımsız", oy: 122219 } ],
       buyuksehir: { istanbul: { parti: "chp92" }, ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
-      not: "Ülke geneli belediye meclisi sayılarını yalnızca YSK yayımladığı ve bağımsız ikinci bir kaynakla eşleştirilemediği için bu sayılar boş bırakıldı." }
+      not: "Aksaray-Güzelyurt, Kayseri-Pınarbaşı, Şanlıurfa-Hilvan ve Sivas-Yıldızeli-Güneykaya belediye meclisi seçimleri iptal edildiği için bu sayılara dahil değildir. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." }
   ],
 
   hukumetler: [

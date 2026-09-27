@@ -4331,3 +4331,27 @@ bağımsız bir kaynak bulunursa aşağıdaki rakamlar doğrudan yazılabilir:
   DBP 3.474, Değişen Türkiye P. 3.110, SİP 392, DHP 115, Bağımsız 16.114. (Önceki turdaki "dört
   il tabloda yok" sorunu resmî ülke toplamıyla aşıldı; kalan engel yalnız bağımsız ikinci kaynak.)
 - Erişim: 2026-09-26. Dosyalar: oturum çalışma dizini `k/yerel/` (RG PDF'leri, OCR, alıntılar).
+
+## Görev 12 — 2004–2024 yerel ülke geneli belediye meclisi sayıları yazıldı (2026-09-27)
+
+**Kullanıcı kararı (2026-09-27): "evet, 2004–2024 için de resmî ilanı yeterli say."** Dönem 6 ve 7'de
+yalnız YSK yayımladığı için `null` bırakılan ülke geneli sayılar, aynı kayıtların bu defterdeki [B]
+YSK LİSTE-4 rakamlarından yazıldı: `2004-03-yerel`, `2009-03-yerel`, `2014-03-yerel`,
+`2019-03-yerel`, `2024-03-yerel` (kayitli, kullanilan, gecerli ve bütün `oy` değerleri).
+- **Denetim:** her yılda satırların toplamı (Diğer ve Bağımsız dahil) geçerli oya **tam eşit**;
+  satır listesi kayıtla birebir aynı; yazılan her sayı bu defterdeki ilgili bölümde geçiyor.
+- **2019 ve 2024 LİSTE-4 yeniden indirildi** (2026-09-27) ve tablolar tam okundu (defterdeki 2024
+  listesi "…" ile kısaltılmıştı):
+  - 2019 "Diğer" (2 parti) = TKP 125.109 + BTP 115.466 = **240.575**; Hür Dava 0 oy.
+  - 2024 "Diğer" (15 parti) = Sol Parti 54.930 + Anavatan 21.582 + TKP 126.166 + Anadolu Birliği
+    2.831 + HKP 3.240 + TKH 20.210 + BTP 154.741 + Yeni Türkiye 3.851 + HAK-PAR 1.366 + Ocak 1.698
+    + Adalet Birlik 2.228 + Millet 21.028 + Milli Yol 12.072 + Adalet Partisi 2.889 + Aydınlık
+    Demokrasi 880 = **429.712**; Güç Birliği Partisi 0 oy (sayılmadı). HÜDA PAR (274.486) Görev
+    10'dan beri ayrı satırda.
+  - 2024 LİSTE-4 notu: Aksaray-Güzelyurt, Kayseri-Pınarbaşı, Şanlıurfa-Hilvan, Sivas-Yıldızeli-
+    Güneykaya belediye meclisi seçimleri iptal edildiği için sonuçlara dahil değil → kaydın `not`'una
+    yazıldı.
+- **2014 "Diğer":** defterdeki 9 partilik 330.876'dan HÜDA PAR (87.726, Görev 10'da ayrı satıra
+  alındı) çıkarıldı → 8 parti, **243.150**.
+- Kayıtların `not` alanındaki "boş bırakıldı" cümlesi, sayıların yalnız YSK ilanına dayandığını
+  söyleyen cümleyle değiştirildi; `kaynakca.html` notu 1984–2024'ü kapsayacak biçimde genişletildi.

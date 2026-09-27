@@ -177,3 +177,5 @@ Yeniden tasarım: 31d3d70 (yarım daire + kart/panel), 719fddd (§9.5 küçük i
 Devam: 1984–1999 yerel ülke geneli belediye meclisi + 1955 yerel tarihi araştırması (alt ajan).
 Yerel araştırması (Opus alt ajan): 1955-11-yerel eklendi (6555/6438 sayılı Kanunlar + TESAV kronolojisi). 1984–1999 ülke geneli belediye meclisi: YSK kararları RG'de bulundu, rakamlar deftere yazıldı; ikinci kaynak yalnız DİE (YSK'yı aynen aktarıyor) → dönem 6 emsaliyle null kaldı.
 Kullanıcı kararı (2026-09-26): 1984–1999 yerel ülke geneli için resmî YSK/RG ilanı yeterli → dört kayda yazıldı (toplamlar geçerli oya tam eşit; kaynakça notu eklendi). 2004–2024 aynı durumda, kullanıcıya sorulacak.
+1961 referandumu: YSK arşivindeki 67 illik tablo toplandı (evet 6.348.092 / hayır 3.933.944; Tuğluoğlu 2019 + Yeni Şafak ile eşleşti); nottaki yanlış %88 katılım kaldırıldı (dc1fd2d).
+Kullanıcı kararı (2026-09-27): 2004–2024 yerel ülke geneli için de resmî YSK ilanı yeterli → beş kayda yazıldı (toplamlar tam eşit; 2019/2024 LİSTE-4 yeniden indirildi).

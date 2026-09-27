@@ -234,3 +234,14 @@ test("meclis çizimi: rastgele dağılımlarda her grubun nokta sayısı tam tut
     parca.forEach((t, i) => assert.equal(noktaSayisi(t), g[i].sandalye, meclis + " / " + sayi.join(",")));
   }
 });
+
+test("yerel panelde 'Diğer' ve 'Bağımsız' partilerden sonra gelir", () => {
+  const k = { id: "2024-03-yerel", tur: "yerel", tarih: "2024-03-31", olcu: "belediye-meclisi",
+    kayitli: 100, kullanilan: 90, gecerli: 80,
+    sonuc: [{ ad: "Diğer", partiSayisi: 3, oy: 30 }, { parti: "dsp", oy: 20 }, { ad: "Bağımsız", oy: 25 }, { parti: "akp", oy: 5 }] };
+  const h = M.panelHTML(k, F).html;
+  const yer = t => h.indexOf(t);
+  assert.ok(yer('href="index.html#dsp"') < yer('href="index.html#akp"'));
+  assert.ok(yer('href="index.html#akp"') < yer(">Diğer<"));
+  assert.ok(yer('href="index.html#akp"') < yer(">Bağımsız<"));
+});

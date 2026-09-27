@@ -382,7 +382,9 @@
       } else if (k.tur === "yerel") {
         h += meta([k.kapsam ? kacis(k.kapsam) : null, "katılım " + O.yuzdeYaz(katilimDegeri(k)),
           k.olcu === "belediye-meclisi" ? "belediye meclisi oyları" : null]);
-        const sirali = (k.sonuc || []).slice().sort((a, c) => (oyDegeri(c, k) || 0) - (oyDegeri(a, k) || 0));
+        // partiler oya göre; "Diğer" ve "Bağımsız" genel seçim panelindeki gibi sonda
+        const sirali = (k.sonuc || []).slice().sort((a, c) => (ozelSatir(a) - ozelSatir(c)) ||
+          (oyDegeri(c, k) || 0) - (oyDegeri(a, k) || 0));
         h += liste("Sonuç", sirali.map(s => sonucSatiri(k, s, false)));
         if (k.buyuksehir) h += liste("Büyükşehirler", SEHIRLER.filter(x => k.buyuksehir[x[0]]).map(x =>
           "<li><b>" + x[1] + "</b>" + partiBag(k.buyuksehir[x[0]].parti) + "<span>" + kacis(k.buyuksehir[x[0]].aday) + "</span></li>"));
