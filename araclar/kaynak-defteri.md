@@ -919,6 +919,29 @@ Bkz. yukarıdaki ortak blok.
 Bkz. yukarıdaki ortak blok.
 
 ### 1961-07-referandum
+
+> **Görev 12 düzeltmesi (2026-09-27) — ham sayılar eklendi, katılım düzeltildi.**
+> - **[B] YSK, "9 Temmuz 1961 Anayasa Değişikliği Halk Oylaması Sonucu"**
+>   (`https://www.ysk.gov.tr/doc/dosyalar/docs/1961Referandum/9-Temmuz-1961-Halk-Oylaması.pdf`,
+>   YSK Halkoylaması Arşivi, 2 s., `pdftotext -layout`): 67 ilin tablosu, Türkiye toplamı yok →
+>   il satırları toplandı ("hesaplandı"): kayıtlı **12.747.901**, katılan **10.321.111**, geçerli
+>   **10.282.036**, geçersiz 39.075, evet **6.348.092** (%61,74), hayır **3.933.944** (%38,26),
+>   katılım %80,96. Her ilde katılan = geçerli + geçersiz ve geçerli = evet + hayır (67/67).
+>   "Hayır" çoğunluklu iller (hesaplandı): Aydın, **Bolu**, Bursa, Çorum, Denizli, İzmir,
+>   Kütahya, Manisa, Sakarya, Samsun, Zonguldak — önceki turda eksik kalan 11. il Bolu.
+> - **İkinci kaynak (evet/hayır): Fatih TUĞLUOĞLU, "1961 Anayasa Referandumu ve DP Tabanı",
+>   *Gazi Akademik Bakış* 12/24 (2019), s. 149-150**
+>   (`https://www.gaziakademikbakis.com/dosyalar/210bdc57-6dd2-49b9-ae5d-b441212e4707.pdf`):
+>   "YSK 15 Temmuz günü halkoylamasının geçici sonuçlarını açıklamıştı … evet oylarının toplamı
+>   6.348.715, hayır oylarının toplamı ise 3.935.253" — fark %0,01 / %0,03, eşleşiyor (resmî
+>   kesin sayı yazıldı). "Evet çoğunluğuna sahip il sayısı 56, hayır … 11" — eşleşiyor.
+> - **İkinci kaynak (katılım): Yeni Şafak, "İlk halk oylaması: 1961 anayasa referandumu"**
+>   (`https://www.yenisafak.com/secim-referandum-1961`): "Sandığa gitmeyenlerin oranı ise yüzde
+>   19'du" → katılım ~%81; hesaplanan %80,96 ile eşleşiyor.
+> - **Düzeltme:** önceki `not`'taki "katılım yaklaşık %88" (Ağrı makalesinin TÜİK 2008'e atfen
+>   verdiği rakam) resmî tabloyla çelişiyor ve kaldırıldı; Tuğluoğlu'nun aktardığı Ulus
+>   haberindeki %89,21 de yalnızca 60 ilin ilk telgraf sonuçlarına ait. Kabul oranı artık
+>   ham sayılardan hesaplanarak gösteriliyor.
 - Sonuç: 9 Temmuz 1961 (Pazar), 1961 Anayasası'nın kabulü; ülke geneli katılım ~%88, kabul (evet)
   oranı %61,7, ret (hayır) oranı %38,3; en az 10 il (Aydın, Bursa, Çorum, Denizli, İzmir, Kütahya,
   Manisa, Sakarya, Samsun, Zonguldak) çoğunlukla "hayır" oyu verdi. Sonuç 20 Temmuz 1961 tarih ve

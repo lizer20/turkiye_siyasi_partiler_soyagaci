@@ -182,10 +182,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1961-07-referandum
     { id: "1961-07-referandum", tur: "referandum", tarih: "1961-07-09",
       konu: "1961 Anayasası'nın kabulü",
-      kayitli: null, kullanilan: null, gecerli: null,
-      evet: null, hayir: null, karar: "kabul",
+      kayitli: 12747901, kullanilan: 10321111, gecerli: 10282036,
+      evet: 6348092, hayir: 3933944, karar: "kabul",
       tutumlar: [ { parti: "chp23", tutum: "evet" }, { parti: "ap", tutum: "evet" } ],
-      not: "Milli Birlik Komitesi döneminde yapıldı; ülke geneli katılım yaklaşık %88, kabul oranı %61,7 oldu (TÜİK, 2008). 11 il 'hayır' oyu verdi; kesin sayılar bu turda bulunamadı." },
+      not: "Milli Birlik Komitesi döneminde yapıldı. 11 ilde (Aydın, Bolu, Bursa, Çorum, Denizli, İzmir, Kütahya, Manisa, Sakarya, Samsun, Zonguldak) 'hayır' oyu çoğunlukta çıktı." },
 
     // --- dönem 2 (1961 – 1971) ---
 
