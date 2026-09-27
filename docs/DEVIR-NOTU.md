@@ -371,7 +371,7 @@ diyor; bu 15, Millet Meclisi (14) + Cumhuriyet Senatosu (1) toplamı. Sandık ve
 - 1931–1943 tek parti seçimlerinde bağımsız milletvekili olup olmadığı (TÜİK'e göre yok;
   bir kez daha bakılacak)
 - ✅ 64. Hükümet `bitisNedeni: istifa`
-- 1973/1977 yerel `buyuksehir` yok (resmî şehir bazlı sonuç bulunamadı)
+- ✅ 1973/1977 yerel `buyuksehir` (27.09.2026: DİE kitaplarından, üçü de CHP); 1963 ve 1968 ülke geneli belediye meclisi eklendi
 
 ### 9.5 Ertelenmiş küçük işler (son incelemede toplu ele alınacak)
 

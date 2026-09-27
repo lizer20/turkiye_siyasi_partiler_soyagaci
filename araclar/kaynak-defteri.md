@@ -4438,3 +4438,42 @@ ek denetim olarak il toplamları sitedeki (iki kaynaklı) ülke geneli sayılarl
   Düzce 2002 — tabloda olmayan il haritada "o tarihte ayrı il değildi" (taralı).
 - Çalışma dosyaları ve yeniden üretim betikleri: oturum dizini `il-genel/` (`parse_tuik.py`, `build_tuik.js`,
   `build_ysk.js`, `check.js`, `kontrol.txt`) ve `il-genel-yaz.js`.
+
+## Görev 12 — 1963 ve 1968 yerel ülke geneli, 1963–1977 büyükşehirler (2026-09-27)
+
+Çalışma dosyaları: oturum dizini `k/y6368/` (`key_extracts.txt`, `19xx_bm.txt`, `rg/`, `tuik/`). Yerel ülke
+toplamları için kullanıcı kararı ("resmî ilan yeterli") uygulandı.
+
+### 1963-11-yerel — ülke geneli belediye meclisi
+- **[B] YSK** `…/docs/Mahalli/1963/KesinSecimSonuclari/1963_Belediye_Meclis_Uyeligi_Secimleri_Sonucu.pdf`
+  (arşiv sayfası 80092) = **RG 17.1.1964, sayı 11609, s. 3 (YSK Karar 1169)**: kayıtlı 5.861.239, oy kullanan
+  3.937.626, geçerli 2.901.695; AP 1.356.610, CHP 1.037.939, YTP 122.459, MP 79.174, CKMP 63.113, TİP 18.397,
+  Bağımsız 38.704.
+- **İlanın kendi farkı:** parti oyları toplamı 2.716.396 (RG de "TOPLAM 2.716.396" basıyor), geçerli oydan
+  **185.299 eksik**; RG yüzdeleri 2.901.695'e göre hesaplıyor. Fark uydurulmadı: kayda `kaynakFarki: 185299`
+  yazıldı (`dogrula.js` toplamı buna göre denetliyor), `not` alanında açıkça söyleniyor.
+- **İzmir → AP:** [B] DİE *1963 Mahalli İdareler Seçimi* (`kutuphane.tuik.gov.tr/pdf/0015160.pdf`, s. 35/2–3),
+  "İzmir Şehir" satırı: AP 48.429, CHP 29.230. İkinci kaynak: yukarıdaki Ege Üniversitesi (Osman Kibar, AP).
+- **Ankara yazılmadı:** DİE kitabında ancak dört ilçe satırı toplanarak CHP önde çıkıyor (63.684 / 57.527);
+  belge kazananı açıkça göstermiyor.
+
+### 1968-06-yerel — ülke geneli belediye meclisi
+- **[B] YSK** `…/Mahalli/1968/KesinSecimSonuclari/1968_Belediye_Meclis_Uyeligi_Secimleri_Sonucu.pdf` (80091)
+  = **RG sayı 13013 (Eylül 1968), s. 4 (YSK Karar 2046)**: kayıtlı 6.155.701, oy kullanan 3.498.737, geçerli
+  2.848.207; AP 1.412.044, CHP 991.161, GP 126.384, MP 98.619, TİP 55.610, CKMP 42.506, BP (Birlik Partisi →
+  `tbp`) 33.777, YTP 21.741, Bağımsız 66.365 — toplam geçerliye **tam eşit** (RG: geçerli = parti toplamı).
+  DİE kitabındaki farklı toplamlar (geçerli 3.099.446) kullanılmadı.
+- **Ankara → AP:** [B] RG 9.7.1968, sayı 12945, s. 6–8: YSK, CHP itirazını reddediyor; AP'li Ekrem Barlas
+  71.050 – 69.014. İkinci kaynak: yukarıdaki 1968 bölümündeki sonsoz.com.tr / Hürriyet derlemesi.
+- **İzmir → AP:** [B] DİE *1968* kitabı (`kutuphane.tuik.gov.tr/pdf/0015244.pdf`, PDF s. 757), İzmir satırı:
+  AP 46.942, CHP 17.697. İkinci kaynak: Ege Üniversitesi tez özeti (Osman Kibar).
+- **İstanbul yazılmadı:** DİE'de yalnız 14 ilçe toplanarak AP önde çıkıyor; açıkça gösteren belge yok.
+
+### 1973-12-yerel ve 1977-12-yerel — büyükşehirler: üçü de CHP
+- **1973: [B] DİE *1973 Mahalli İdareler Seçimi*** (`kutuphane.tuik.gov.tr/pdf/0015468.pdf`, s. 58–59, 90–91)
+  kazananları adıyla veriyor: Ahmet İsvan (CHP, İstanbul), Vedat Dalokay (CHP, Ankara), İhsan Alyanak (CHP, İzmir).
+- **1977: [B] DİE *1977*** (`kutuphane.tuik.gov.tr/pdf/0015740.pdf`, s. 50, 82, 84) şehir toplamı satırları:
+  Ankara CHP 195.327 (%58,1) – AP 72.372; İstanbul CHP 331.258 (%59,1) – AP 172.995; İzmir CHP %55,1 – AP %41,9
+  (kitap CHP'yi 140.209 basıyor, geçerliyi aştığı için dizgi hatası; ilçe satırları 104.209).
+- Resmî şehir sonucu bulunduğu için dönem 3'teki "büyükşehir yazılmadı" kararı değişti; kullanıcı kararıyla
+  resmî kaynak yeterli sayıldı (dönem 3'te CHP'nin üç şehri kazandığı çok sayıda haber kaynağında da geçiyordu).

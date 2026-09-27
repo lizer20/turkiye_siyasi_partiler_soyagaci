@@ -47,6 +47,8 @@ function dogrulaSandik(P, S) {
       if (s.oy == null) hepsi = false; else toplam += s.oy;
       if (s.oyYuzde != null) yuzdeler.push(s.oyYuzde);
     }
+    // kaynakFarki: resmî ilanın kendi parti toplamının geçerli oydan açıklanmamış eksiği (ilandaki gibi yazılır)
+    if (k.kaynakFarki != null && !yer) toplam += k.kaynakFarki;
     if (gecerli != null && satirlar.length) {
       if (toplam > gecerli || (hepsi && toplam !== gecerli)) {
         // Resmî tablonun kendi içindeki küçük farklar (≤ %0,5, kaynak eşleştirme kuralıyla aynı eşik) uyarıdır

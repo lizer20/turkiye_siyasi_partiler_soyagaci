@@ -203,12 +203,12 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1963-11-yerel
     { id: "1963-11-yerel", tur: "yerel", tarih: "1963-11-17",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [],
+      kayitli: 5861239, kullanilan: 3937626, gecerli: 2901695, kaynakFarki: 185299,
+      sonuc: [ { parti: "ap", oy: 1356610 }, { parti: "chp23", oy: 1037939 }, { parti: "ytp", oy: 122459 }, { parti: "mp62", oy: 79174 }, { parti: "ckmp", oy: 63113 }, { parti: "tip61", oy: 18397 }, { ad: "Bağımsız", oy: 38704 } ],
       buyuksehir: {
-        istanbul: { parti: "chp23", aday: "Haşim İşcan" }
+        istanbul: { parti: "chp23", aday: "Haşim İşcan" }, izmir: { parti: "ap" }
       },
-      not: "1961 Anayasası sonrası belediye başkanlarının ilk doğrudan halk oyuyla seçildiği yerel seçim. İstanbul'da en çok oyu alan AP adayı Nuri Eroğan, adaylık için öngörülen sürede kamu görevinden istifa etmediği gerekçesiyle YSK kararıyla diskalifiye edildi; ikinci sıradaki CHP adayı Haşim İşcan belediye başkanı sayıldı (Resmî Gazete, 13.12.1963). Ankara ve İzmir'in kazananı için resmî bir kaynak (YSK kararı/Resmî Gazete ilanı) bu turda bulunamadı, bu iki şehir kayda yazılmadı. Ülke geneli belediye meclisi oy sayısı bulunamadı." },
+      not: "1961 Anayasası sonrası belediye başkanlarının ilk doğrudan halk oyuyla seçildiği yerel seçim. İstanbul'da en çok oyu alan AP adayı Nuri Eroğan, adaylık için öngörülen sürede kamu görevinden istifa etmediği gerekçesiyle YSK kararıyla diskalifiye edildi; ikinci sıradaki CHP adayı Haşim İşcan belediye başkanı sayıldı (Resmî Gazete, 13.12.1963). İzmir'de AP kazandı; Ankara'nın kazananı resmî bir belgede açıkça bulunamadığı için yazılmadı. Resmî ilanda parti oylarının toplamı (2.716.396) geçerli oydan (2.901.695) 185.299 eksiktir; fark ilanda açıklanmamıştır, yüzdeler ilandaki gibi geçerli oya göre hesaplanır." },
 
     // kaynak: araclar/kaynak-defteri.md#1965-10-genel
     { id: "1965-10-genel", tur: "genel", tarih: "1965-10-10", tekParti: false,
@@ -230,9 +230,10 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1968-06-yerel
     { id: "1968-06-yerel", tur: "yerel", tarih: "1968-06-02",
       olcu: "belediye-meclisi",
-      kayitli: null, kullanilan: null, gecerli: null,
-      sonuc: [],
-      not: "AP çoğu ilde kazandı. Basında ve akademik kaynaklarda İstanbul'da Fahri Atabey, Ankara'da Ekrem Barlas, İzmir'de (1963'teki görevini koruyarak) Osman Kibar'ın kazandığı geçiyor, ama bu turda resmî bir kaynak (YSK kararı/Resmî Gazete ilanı) bulunamadığı için büyükşehir alanı hiç yazılmadı. Aynı gün 5 ilde milletvekili ara seçimi de yapıldı. Ülke geneli belediye meclisi oy sayısı bulunamadı." },
+      kayitli: 6155701, kullanilan: 3498737, gecerli: 2848207,
+      sonuc: [ { parti: "ap", oy: 1412044 }, { parti: "chp23", oy: 991161 }, { parti: "gp", oy: 126384 }, { parti: "mp62", oy: 98619 }, { parti: "tip61", oy: 55610 }, { parti: "ckmp", oy: 42506 }, { parti: "tbp", oy: 33777 }, { parti: "ytp", oy: 21741 }, { ad: "Bağımsız", oy: 66365 } ],
+      buyuksehir: { ankara: { parti: "ap" }, izmir: { parti: "ap" } },
+      not: "AP çoğu ilde kazandı; Ankara (Ekrem Barlas) ve İzmir'i de AP aldı. İstanbul'da basında ve akademik kaynaklarda AP'li Fahri Atabey'in kazandığı geçiyor, ama bunu açıkça gösteren resmî bir belge bulunamadığı için İstanbul yazılmadı. Aynı gün 5 ilde milletvekili ara seçimi de yapıldı." },
 
     // kaynak: araclar/kaynak-defteri.md#1968-06-ara
     { id: "1968-06-ara", tur: "ara", tarih: "1968-06-02",
@@ -264,7 +265,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 8607082, kullanilan: 4706719, gecerli: 3914801,
       sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { parti: "tbp", oy: 19860 }, { parti: "mp62", oy: 8384 } ],
-      not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
+      buyuksehir: { istanbul: { parti: "chp23" }, ankara: { parti: "chp23" }, izmir: { parti: "chp23" } },
+      not: "CHP, İstanbul (Ahmet İsvan), Ankara (Vedat Dalokay) ve İzmir (İhsan Alyanak) dahil büyük şehirlerde kazandı." },
 
     // kaynak: araclar/kaynak-defteri.md#1975-10-ara
     { id: "1975-10-ara", tur: "ara", tarih: "1975-10-12",
@@ -283,7 +285,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 12067618, kullanilan: 6197718, gecerli: 5680318,
       sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { parti: "tbp", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
-      not: "CHP, İstanbul, Ankara ve İzmir dahil çoğu büyükşehirde yine kazandı; şehir bazlı resmî sonuç bu turda bulunamadığından büyükşehir alanı yazılmadı." },
+      buyuksehir: { istanbul: { parti: "chp23" }, ankara: { parti: "chp23" }, izmir: { parti: "chp23" } },
+      not: "CHP, İstanbul, Ankara ve İzmir dahil büyük şehirlerde yine kazandı." },
 
     // kaynak: araclar/kaynak-defteri.md#1979-10-ara
     { id: "1979-10-ara", tur: "ara", tarih: "1979-10-14",

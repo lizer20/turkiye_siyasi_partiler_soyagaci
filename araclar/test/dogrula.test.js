@@ -151,3 +151,12 @@ test("ara seçimin bilinmeyen sandalye sayısı '— sayısı' raporuna girer", 
     sandalyeSayisi: null, sonuc: [{ parti: "dsp", sandalye: null }] });
   assert.match(uyarilar(S), /— sayısı: ara bant \d+: 2/);
 });
+
+test("kaynakFarki: ilandaki açıklanmamış eksik toplamda hesaba katılır", () => {
+  const S = kopya();
+  const k = bul(S, "2002-11-genel");
+  k.sonuc[0].oy -= 50;                                 // toplam 650, geçerli 700
+  assert.match(hatalar(S), /2002-11-genel: oy toplamı 650/);
+  k.kaynakFarki = 50;
+  assert.doesNotMatch(hatalar(S), /2002-11-genel: oy toplamı/);
+});
