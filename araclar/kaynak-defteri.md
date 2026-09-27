@@ -4477,3 +4477,25 @@ toplamları için kullanıcı kararı ("resmî ilan yeterli") uygulandı.
   (kitap CHP'yi 140.209 basıyor, geçerliyi aştığı için dizgi hatası; ilçe satırları 104.209).
 - Resmî şehir sonucu bulunduğu için dönem 3'teki "büyükşehir yazılmadı" kararı değişti; kullanıcı kararıyla
   resmî kaynak yeterli sayıldı (dönem 3'te CHP'nin üç şehri kazandığı çok sayıda haber kaynağında da geçiyordu).
+
+### Yerel seçimler — `veri/il-sonuclari.js` (8 seçim, 1989–2024)
+- **[B] TÜİK Mahalli İdareler Seçim Sonuçları Veri Tabanı** (`biruni.tuik.gov.tr/secimdagitimapp/yerel.zul`;
+  üretilen raporlar `rapory.tuik.gov.tr/…html`, erişim 2026-09-27): her yıl için "Belediyelere göre … Belediye
+  Başkanlığı Seçimi sonucu" (il/ilçe/belde satırları, parti oyları) ve "… Büyükşehir Belediye Başkanlığı Seçimi
+  sonucu". İndirme betiği ve ham raporlar oturum dizini `il-yerel/` (`harvest.py`, `t2/`); ayrıştırma `tp2.py`,
+  `cikar.py` → `yerel-ham.json`; siteye yazma `il-yerel-yaz.js`.
+- **Ölçü:** büyükşehir illerinde (1989: 8, 1994/1999: 15, 2004/2009: 16, 2014+: 30) büyükşehir belediye
+  başkanlığı; diğer illerde "Merkez" ilçe satırı (il merkezi belediyesi). Denetim: ilçe/belde satırlarının toplamı
+  il toplamına eşit (1989, 2004–2024 tamamında; 1994/1999'da birkaç ilde fark, merkez satırlarını etkilemiyor) →
+  ilçe satırları alt toplam değil, tek tek belediyeler. Aynı ilde iki "Merkez" satırı varsa (1994 Tokat, Nevşehir;
+  1999 Afyon, Erzincan) büyük olan alındı (küçükler 0–41 oyluk dipnotlu satırlar).
+- **Denetim:** İstanbul, Ankara, İzmir kazananları her yılda kayıtlardaki `buyuksehir` alanıyla birebir aynı;
+  2014 İstanbul/Ankara/İzmir oyları defterdeki YSK/TÜİK sayılarıyla birebir.
+- **Yenilenen seçimler (TÜİK yenileme sonucunu veriyor):** 1994 Nevşehir merkez (3.7.1994), 2014 Ağrı ve Yalova
+  merkez (1.6.2014) → ilde açıklama. **2019 İstanbul:** TÜİK büyükşehir raporunda yok (31 Mart iptal) → haritada
+  boş, açıklamalı.
+- **Etiket eşlemesi:** "DP" 2007 öncesi `dp92`, sonrası `dp07`; "DTP" 2005 öncesi `dtp97`, sonrası `dtp`; "SHP"
+  2000 öncesi `shp`, 2004'te Sosyaldemokrat Halk Partisi (ad); "MÇP" `mcp`; "BĞMZ"/"BAĞIMSIZLAR" Bağımsız.
+  TÜİK 1989'da "Kastomonu" yazıyor → eşleme listesine eklendi.
+- **1984 ve öncesi:** DİE kitaplarında il merkezi satırları ("MERKEZ-CENTRAL") var ama OCR metni bozuk; henüz
+  işlenmedi.

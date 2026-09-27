@@ -10,7 +10,7 @@
     // Kaynaklarda eski ya da kısa adla geçen iller → bugünkü il adı
     const ESKI_AD = { "İÇEL": "Mersin", "MARAŞ": "Kahramanmaraş", "URFA": "Şanlıurfa", "ANTEP": "Gaziantep",
       "AFYON": "Afyonkarahisar", "GÜMÜŞANE": "Gümüşhane", "HAKKÂRİ": "Hakkari", "İZMİT": "Kocaeli",
-      "K.MARAŞ": "Kahramanmaraş", "K. MARAŞ": "Kahramanmaraş" };
+      "K.MARAŞ": "Kahramanmaraş", "K. MARAŞ": "Kahramanmaraş", "KASTOMONU": "Kastamonu" };
     const buyuk = s => String(s).trim().toLocaleUpperCase("tr-TR").replace(/\s+/g, " ");
     const adla = new Map(IL.iller.map(i => [buyuk(i.ad), i]));
     function ilBul(ad) {
