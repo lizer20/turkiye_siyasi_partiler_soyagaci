@@ -40,6 +40,12 @@ test("yerel seçim: kazanan alanı; bilinmeyen il null ile işaretlenir", () => 
   assert.match(H.ipucu(w.ILLER.iller[34], iller.get("35")), /İzmir — CHP 5 oy/);
 });
 
+test("yerel seçim: kazananı olan ilin notu da ipucunda görünür", () => {
+  const { iller } = H.iller(k, { iller: { "Sinop": { kazanan: "ap", not: "kaynakta fark var" } } });
+  assert.equal(iller.get("57").durum, "var");
+  assert.match(H.ipucu(w.ILLER.iller[56], iller.get("57")), /Sinop — AP \(kaynakta fark var\)/);
+});
+
 test("aynı aileden iki parti farklı tonda boyanır, en çok il kazanan ailenin rengini alır", () => {
   const veri = { iller: { "Adana": { kazanan: "akp" }, "Ankara": { kazanan: "akp" }, "Yozgat": { kazanan: "yrp" } } };
   const r = H.renkler(H.iller(k, veri).iller);

@@ -4537,3 +4537,34 @@ TSİP, Bağımsızlar (oy ve %). Kitap kazananın adını vermez.
 - Sonuç: 67 il; CHP 41, AP 15, MHP 4 (Bingöl, Çankırı, Erzincan, Yozgat), MSP 3 (Adıyaman, Konya, Muş),
   bilinmiyor 4. Büyükşehirler ülke geneli kaydındaki alanla aynı (üçü de CHP).
 - Afyon başlığı metin katmanında "A . Karahisar" olarak üç parçaya bölündüğü için elle bulundu (s. 48).
+
+## Harita — 1963 yerel haritası (2026-09-27)
+
+Kaynak: DİE, *17 Kasım 1963 Mahallî Seçimler* (il bölümleri NN/2–NN/3: "Belediye Başkanlığı Seçimi
+Sonuçları"; sol sayfa belediye adları, sağ sayfa muteber oy, AP, CHP, CKMP, MP, TİP, YTP, Bağımsızlar —
+mutlak oy). Kitap kazananın adını vermez; her ilin "<İl> Şehir" satırı gözle okundu.
+
+- **Yanlış-doğru cetveli (kitap s. 5):** 09/3, 16/3, 19/3, 30/3, 31/3, 39/3, 42/3, 46/3, 47/3, 48/3,
+  62/3, 66/3 sayfalarında başlıktaki "CHP – AP" sırası yanlış, doğrusu "AP – CHP". Bu illerde ilk sütun
+  AP sayıldı (Aydın, Bursa, Çorum, Hakkâri, Hatay, Kırklareli, Konya, Maraş, Mardin, Muğla, Tunceli,
+  Yozgat). Başlığı kırpıntıda görünmeyen Nevşehir, Rize, Tekirdağ, Tokat, Urfa, Uşak sayfalarının
+  başlığı ayrıca açılıp AP–CHP sırası doğrulandı.
+- **Sayfa düzeltmeleri:** Bolu'nun 14/2–14/3 sayfaları İl Genel Meclisi tablosu; belediye başkanlığı
+  14/4–14/5 (s. 364–365). Bursa s. 410–411, Erzurum 656–657, Giresun 748–749, Gümüşhane 772–773,
+  İzmir 898–899, Kastamonu 974–975 metin katmanında numarası okunamadığı için başlıktan bulundu.
+- **Büyük kentler:** Ankara kenti = Ankara, Altındağ, Çankaya, Yenimahalle şehir satırlarının toplamı:
+  CHP 63 684, AP 57 527 → CHP (ülke geneli kaydındaki ikincil kaynaklarla aynı: Halil Sezai Erkut).
+  İstanbul kenti (Adalar, Beşiktaş, Beykoz, Beyoğlu, Eminönü, Eyüp, Fatih, Kadıköy, Sarıyer, Şişli,
+  Üsküdar, Zeytinburnu): AP 119 179, CHP 104 128 → seçim günü AP; YSK kararıyla CHP'li Haşim İşcan başkan
+  sayıldı. Kullanıcının "yalnızca seçim günü sonuçları" kuralı gereği haritada AP, karar il notunda.
+  İzmir Şehir: AP 48 429, CHP 29 230 → AP.
+- **Kitaptaki toplam farkları:** Kitap (Açıklama, madde 4) parti oyları toplamı ile muteber oy arasında
+  "cüz'i farklar" olduğunu, bunların sonucu etkilemediğini ve tutanakların aynen alındığını söyler.
+  Farkın birinci–ikinci arasındaki farktan büyük olduğu 10 ilde kitaptaki birinci gösterildi ve il
+  notuna yazıldı: Adıyaman (YTP 1 612 – CHP 1 564; fark 226), Afyon (AP 3 213 – CKMP 2 817; 2 140),
+  Amasya (CHP 2 724 – AP 2 718; 15), Çankırı (AP 1 825 – CHP 1 601; 269), Erzincan (AP 3 221 –
+  CHP 2 932; 1 127), Giresun (CHP 3 386 – AP 3 272; 121), Hakkâri (CHP 388 – YTP 346; 99), Hatay
+  (AP 6 672 – CHP 6 582; 487), Mardin (CHP 2 518 – YTP 2 341; 1 210), Sinop (AP 804 – CHP 767; 111).
+- **Bilinmiyor (2):** Kastamonu (bağımsızlar toplamı 2 731; AP 1 536, CHP 1 394) ve Kırşehir
+  (bağımsızlar 2 647; MP 1 836).
+- Sonuç: 67 il; AP 40, CHP 24, YTP 1 (Adıyaman), bilinmiyor 2.

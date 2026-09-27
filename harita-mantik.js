@@ -77,7 +77,8 @@
       if (r.durum === "yok") return il.ad + " — bu seçimde ayrı bir il değildi";
       if (r.durum === "bilinmiyor") return il.ad + " — " + (r.not || "sonuç bilinmiyor");
       return il.ad + " — " + r.sira.slice(0, 3).map(s => kisaAd(s.anahtar) +
-        (s.pay != null ? " " + O.yuzdeYaz(s.pay) : s.oy != null ? " " + O.sayiYaz(s.oy) + " oy" : "")).join(" · ");
+        (s.pay != null ? " " + O.yuzdeYaz(s.pay) : s.oy != null ? " " + O.sayiYaz(s.oy) + " oy" : "")).join(" · ") +
+        (r.not ? " (" + r.not + ")" : "");
     }
 
     function haritaSVG(k, veri, secenek) {
