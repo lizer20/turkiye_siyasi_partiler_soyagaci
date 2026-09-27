@@ -48,8 +48,12 @@ function dogrulaSandik(P, S) {
       if (s.oyYuzde != null) yuzdeler.push(s.oyYuzde);
     }
     if (gecerli != null && satirlar.length) {
-      if (toplam > gecerli || (hepsi && toplam !== gecerli))
-        hatalar.push(k.id + ": oy toplamı " + toplam + ", geçerli " + gecerli + (yer ? " (" + yer + ")" : ""));
+      if (toplam > gecerli || (hepsi && toplam !== gecerli)) {
+        // Resmî tablonun kendi içindeki küçük farklar (≤ %0,5, kaynak eşleştirme kuralıyla aynı eşik) uyarıdır
+        const metin = k.id + ": oy toplamı " + toplam + ", geçerli " + gecerli + (yer ? " (" + yer + ")" : "");
+        if (Math.abs(toplam - gecerli) <= gecerli * 0.005) uyarilar.push(metin + " — kaynağın kendi farkı");
+        else hatalar.push(metin);
+      }
     }
     if (yuzdeler.length && yuzdeler.length === satirlar.length) {
       const t = yuzdeler.reduce((a, b) => a + b, 0);

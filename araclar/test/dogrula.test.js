@@ -47,10 +47,17 @@ test("parti referansları", () => {
 test("sandalye ve oy toplamları", () => {
   const S = kopya();
   bul(S, "1999-04-genel").sonuc[0].sandalye = 5;     // toplam 11 > 10
-  bul(S, "2002-11-genel").sonuc[0].oy = 151;          // toplam 701 ≠ 700
+  bul(S, "2002-11-genel").sonuc[0].oy = 160;          // toplam 710 ≠ 700 (%1,4 fark)
   const h = hatalar(S);
   assert.match(h, /1999-04-genel: sandalye toplamı 11, meclis 10/);
-  assert.match(h, /2002-11-genel: oy toplamı 701, geçerli 700/);
+  assert.match(h, /2002-11-genel: oy toplamı 710, geçerli 700/);
+});
+
+test("kaynağın kendi içindeki %0,5'e kadar oy farkı hata değil uyarıdır", () => {
+  const S = kopya();
+  bul(S, "2002-11-genel").sonuc[0].oy = 153;          // toplam 703, geçerli 700 (%0,43)
+  assert.doesNotMatch(hatalar(S), /2002-11-genel: oy toplamı/);
+  assert.match(uyarilar(S), /2002-11-genel: oy toplamı 703, geçerli 700 — kaynağın kendi farkı/);
 });
 
 test("seçmen sayılarının tutarlılığı ve yedek alanların karışması", () => {

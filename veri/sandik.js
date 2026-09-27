@@ -127,8 +127,8 @@ window.SANDIK = {
     // kaynak: araclar/kaynak-defteri.md#1950-05-genel
     { id: "1950-05-genel", tur: "genel", tarih: "1950-05-14", tekParti: false,
       meclis: 487, kayitli: 8905743, kullanilan: 7953085, gecerli: null, baraj: null,
-      sonuc: [ { parti: "dp46", oy: 4241393, sandalye: 408 }, { parti: "chp23", oy: 3176561, sandalye: 69 }, { parti: "mp48", oy: null, sandalye: 1 }, { ad: "Bağımsız", oy: null, sandalye: 9 } ],
-      not: "İktidar ilk kez seçim yoluyla el değiştirdi: CHP'den DP'ye." },
+      sonuc: [ { parti: "dp46", oy: 4241393, sandalye: 408 }, { parti: "chp23", oy: 3176561, sandalye: 69 }, { parti: "mp48", oy: null, sandalye: 1 }, { ad: "Bağımsız", oy: null, sandalye: null } ],
+      not: "İktidar ilk kez seçim yoluyla el değiştirdi: CHP'den DP'ye. Resmî kaynaklar 8 sandalyeyi farklı sayıyor: TBMM kayıtlarına göre DP 408, bağımsızlar 9; YSK ve TÜİK tablolarına göre DP 416, bağımsızlar 1 sandalye kazandı. Bu yüzden bağımsızların sandalye sayısı yazılmadı; DP için iki sayımın ortak kısmı (408) yazıldı ve kalan 9 sandalye meclis çiziminde boş halka olarak gösterilir." },
 
     // kaynak: araclar/kaynak-defteri.md#1950-05-cb-tbmm
     { id: "1950-05-cb-tbmm", tur: "cb-tbmm", tarih: "1950-05-22",
@@ -191,7 +191,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#1961-10-genel
     { id: "1961-10-genel", tur: "genel", tarih: "1961-10-15", tekParti: false,
-      meclis: 450, kayitli: 12925395, kullanilan: 10522716, gecerli: null, baraj: null,
+      meclis: 450, kayitli: 12925395, kullanilan: 10522716, gecerli: 10138035, baraj: null,
       sonuc: [ { parti: "chp23", oy: 3724752, sandalye: 173 }, { parti: "ap", oy: 3527435, sandalye: 158 }, { parti: "ytp", oy: 1391934, sandalye: 65 }, { parti: "ckmp", oy: 1415390, sandalye: 54 }, { ad: "Bağımsız", oy: 81732, sandalye: 0 } ],
       not: "27 Mayıs sonrası ilk genel seçim; ilk kez nispi temsil (çevre barajlı d'Hondt) uygulandı. Hiçbir parti tek başına çoğunluk sağlayamadı, Cumhuriyet tarihinin ilk koalisyon dönemi bu seçimle başladı." },
 
@@ -242,7 +242,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#1969-10-genel
     { id: "1969-10-genel", tur: "genel", tarih: "1969-10-12", tekParti: false,
-      meclis: 450, kayitli: 14788552, kullanilan: 9516035, gecerli: null, baraj: null,
+      meclis: 450, kayitli: 14788552, kullanilan: 9516035, gecerli: 9086296, baraj: null,
       sonuc: [ { parti: "ap", oy: 4229712, sandalye: 256 }, { parti: "chp23", oy: 2487006, sandalye: 143 }, { parti: "gp", oy: 597818, sandalye: 15 }, { ad: "Bağımsız", oy: 511023, sandalye: 13 }, { parti: "tbp", oy: 254695, sandalye: 8 }, { parti: "mp62", oy: 292961, sandalye: 6 }, { parti: "ytp", oy: 197929, sandalye: 6 }, { parti: "tip61", oy: 243631, sandalye: 2 }, { parti: "mhp69", oy: 275091, sandalye: 1 } ],
       not: "Cumhuriyet tarihinin en düşük katılımlı genel seçimi (%64,3). MHP ve Türkiye Birlik Partisi ilk kez meclise girdi; MHP'nin tek sandalyesi Alparslan Türkeş'e ait." },
 

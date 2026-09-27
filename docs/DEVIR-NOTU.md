@@ -367,6 +367,7 @@ diyor; bu 15, Millet Meclisi (14) + Cumhuriyet Senatosu (1) toplamı. Sandık ve
 - ✅ (26.09.2026: resmî YSK ülke toplamları RG'den siteye yazıldı — kullanıcı kararı: resmî ilan yeterli; 27.09.2026'da 2004–2024 de yazıldı) 1984/1989/1994/1999 **yerel seçimlerin ülke geneli belediye meclisi sayıları** `null` —
   TÜİK bu ölçüyü ulusal düzeyde yayımlamıyor, YSK'nın Resmî Gazete ilanı ise `curl` ile
   açılamadı, tarayıcı dosyayı indirmeye çalışıyor. **Bu yol bir daha denenebilir.**
+- ◐ 27.09.2026: 1961 ve 1969 geçerli oy eklendi; 1950 sandalye çelişkisi (DP 408/416, bağımsız 9/1) bulundu → bağımsız `null`; 1950–57 geçerli oy resmî kaynakta yok.
 - 1931–1943 tek parti seçimlerinde bağımsız milletvekili olup olmadığı (TÜİK'e göre yok;
   bir kez daha bakılacak)
 - ✅ 64. Hükümet `bitisNedeni: istifa`

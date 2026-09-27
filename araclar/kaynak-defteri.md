@@ -4365,3 +4365,40 @@ YSK LİSTE-4 rakamlarından yazıldı: `2004-03-yerel`, `2009-03-yerel`, `2014-0
   alındı) çıkarıldı → 8 parti, **243.150**.
 - Kayıtların `not` alanındaki "boş bırakıldı" cümlesi, sayıların yalnız YSK ilanına dayandığını
   söyleyen cümleyle değiştirildi; `kaynakca.html` notu 1984–2024'ü kapsayacak biçimde genişletildi.
+
+## Görev 12 — 1950–1969 genel seçim eksikleri (2026-09-27)
+
+Araştırma dosyaları: oturum çalışma dizini `k/g5069/` (`extracts.txt` hepsini özetler).
+
+### 1969-10-genel — `gecerli` 9.086.296
+- **[B] RG 20.10.1969, sayı 13331, s. 13** (YSK Karar 1520 / Bildiri 37, "Geçerli oy puslası sayısı",
+  sayfa görüntüsüyle denetlendi). TÜİK Tablo 23 ve YSK "1950–1977 Türkiye" tablosu aynı; TBMM 9.086.381 (%0,001).
+- **İkinci kaynak:** Erkmen, *GAÜN Sosyal Bilimler Dergisi* (`dergipark.org.tr/.../article-file/504264`): 9.086.296.
+- Parti oylarının toplamı (kayıttaki TÜİK sayıları) 9.089.866 → geçerliden 3.570 fazla; aynı fark RG
+  ilanının kendi parti satırlarında da var. `dogrula.js` bu tür ≤ %0,5 farkı artık uyarı sayıyor.
+
+### 1961-10-genel — `gecerli` 10.138.035
+- **[B] TÜİK Tablo 23 (PDF s. 43)** = YSK "1950–1977 Türkiye" tablosu = TBMM özet sayfası ("DİE yayınlarından").
+  İl satırlarının toplamı 10.137.435 (%0,006). RG'de 10930–10975 (Ekim–Aralık 1961) arasında sonuç ilanı yok
+  (RG'de yayım 1968'de 1036 sayılı Kanun'la zorunlu oldu).
+- **İkinci kaynak:** Erkmen (yukarıda): 10.138.035; Ünlükaplan (`…/article-file/50132`) parti toplamı 10.141.243
+  (%0,03). Parti oyları toplamı geçerliden 3.208 fazla — kaynağın kendi farkı.
+
+### 1950-05-genel — sandalye çelişkisi: bağımsız `null`
+- **[B] YSK "1950–1977 Türkiye" tablosu = TÜİK Tablo 23:** DP **416**, CHP 69, MP 1, bağımsız **1** (toplam 487).
+- **[B] TBMM seçim sorgusu + Olgun (2010) + Güneş (1991):** DP **408**, CHP 69, MP 1, bağımsız **9** (toplam 487).
+- **Düzeltme:** bu bölümün yukarısındaki dönem 1 kaydında TÜİK'in 416'sı "69+1+9+416=495 > 487, imkânsız"
+  diye elenmişti; bu yanlış bir karşılaştırmaydı (TÜİK'in kendi dağılımı 416+69+1+1=487 tutarlı). İki resmî
+  seri 8 sandalyede ayrışıyor. Kural gereği (fark > %0,5) tartışmalı alan yazılmadı: bağımsız `sandalye: null`,
+  DP iki serinin ortak kısmı **408** (her iki seriye göre de en az 408). Meclis çiziminde 9 sandalye boş halka;
+  `not` iki sayımı açıkça veriyor. H. S. Türk (c.1970, `…/article-file/638270`) üçüncü bir sayı veriyor (3 bağımsız).
+
+### 1950/1954/1957 — `gecerli` ve eksik parti oyları: yine `null`
+- Resmî kaynakların hiçbiri bu üç seçim için geçerli oy pusulası sayısı vermiyor (TÜİK ve YSK tablosunda boş;
+  TBMM'de 0; RG 7505–7545, 8696–8740, 9741–9775'te ilan yok).
+- Parti oyları iki resmî seride de **aday oylarının ortalaması** (çok isimli liste sistemi; TÜİK Not 1):
+  TÜİK/YSK ulusal serisi ile TBMM serisi (il ortalamalarının toplamı) birbirinden farklı; akademik "ikinci
+  kaynaklar" TBMM serisini kopyalıyor (bağımsız değil). Bu yüzden eksik oylar (1950 MP ve bağımsız; 1954 DP,
+  CHP, CMP, bağımsız; 1957 DP, CHP, CMP, HP) eklenmedi.
+- **1954 bağımsız sandalyesi:** TÜİK 2 (Bingöl 1, Muş 1); Türk ve Yılmaz (2010) 1. Muş için ikinci kaynak var
+  (Anemon, MAÜ SBD 2020: Gıyasettin Emre), Bingöl için yok → `null` kaldı.
