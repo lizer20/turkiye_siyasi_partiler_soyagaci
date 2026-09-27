@@ -4402,3 +4402,39 @@ Araştırma dosyaları: oturum çalışma dizini `k/g5069/` (`extracts.txt` heps
   CHP, CMP, bağımsız; 1957 DP, CHP, CMP, HP) eklenmedi.
 - **1954 bağımsız sandalyesi:** TÜİK 2 (Bingöl 1, Muş 1); Türk ve Yılmaz (2010) 1. Muş için ikinci kaynak var
   (Anemon, MAÜ SBD 2020: Gıyasettin Emre), Bingöl için yok → `null` kaldı.
+
+## Harita — il il sonuçlar (2026-09-27)
+
+**Kullanıcı isteği (2026-09-27):** genel ve yerel seçimlerin Türkiye haritası üzerinde il il gösterimi. Yerel
+ülke toplamlarında verilen karar ("resmî ilan yeterli") il sonuçlarına da uygulandı: kaynak yalnız YSK/TÜİK;
+ek denetim olarak il toplamları sitedeki (iki kaynaklı) ülke geneli sayılarla karşılaştırıldı.
+
+### İl sınırları — `veri/iller.js`
+- Natural Earth 1:10m admin-1 states/provinces
+  (`raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson`,
+  `adm0_a3 = TUR`, 81 il). Lisans (naturalearthdata.com/about/terms-of-use): "All versions of Natural Earth
+  raster + vector map data … are in the public domain … No permission is needed". Plaka kodu `iso_3166_2`
+  alanından; 25 ilin NE adı ASCII/yazım farklıydı (ör. "Zinguldak", "Kinkkale", "K. Maras"), plakaya göre
+  resmî adla değiştirildi. Eşdikdörtgen izdüşüm (cos 39°), mapshaper visvalingam (komşu sınırlar ortak).
+
+### Genel seçimler — `veri/il-sonuclari.js` (20 seçim, 1950–2023)
+- **1950–2011: [B] TÜİK *Milletvekili Genel Seçimleri 1923–2011*** (`ysk.gov.tr/doc/dosyalar/1923-2011-MVSecimleri-Tuik.pdf`),
+  Tablo 23 (PDF s. 43–110) ve Tablo 24 (s. 111–274). Tablolar `pdftotext -bbox` kelime konumlarıyla okundu ve
+  ayrı bir `-layout` ayrıştırmasıyla 4.614 parti satırının tamamı çapraz denetlendi (fark yok).
+- **2015-06, 2015-11, 2018-06, 2023-05: [B] YSK sonuç sistemi** (`sonuc.ysk.gov.tr`, seçim çevresi başına
+  satır; çevreler il olarak toplandı). 2015-11 YSK `2015MVES-SecimCevreleriOyKullanma.xlsx` ile birebir.
+  Yalnız yurt içi sandıkları; 2018/2023'te "yalnız ittifak" oyları dağıtılmadan dışarıda bırakıldı
+  (il birincisi değişmiyor; yüzdeler resmî parti sonucundan ~%1 düşük — seçim `not`'unda yazıyor).
+- **Denetim (il toplamı ↔ ülke geneli kayıt):** 2015–2023 birebir; 1983–2011 birkaç oy (1983 HP +10,
+  1991 RP −1, 1999 her parti ≤ 9 oy); 1961–1977 TÜİK'in kendi il satırlarında basım farkları (ör. 1977 Ankara
+  +10.354, Kastamonu −5.248; görüntüden denetlendi) — basıldığı gibi bırakıldı, ulusal toplamlar yakın
+  (≤ %0,04). 1950–1957: il oyları TÜİK "ortalama oy"; il `gecerli` yok → yüzde gösterilmez.
+- **2002 Siirt:** TÜİK sütunu iptal edilen 3 Kasım 2002 sonucunu değil 9 Mart 2003 yenilemesini veriyor
+  (AK Parti 55.203 / 65.079; bkz. 2003-03-ara) → haritada Siirt "bilinmiyor", ilde açıklama.
+- **Sitede tutulan:** her ilde en çok oy alan ilk 5 parti (birinci ve ilk üç sıra etkilenmez) + il geçerli oyu.
+  Partiler sitedeki kimliklerle; soyağacında olmayanlar kaynaktaki adla ("KP", "YDP", "SOL PARTİ" …).
+- İl adları kaynaktaki gibi: 1950–1977 "Afyon" ve "İçel" → `harita-mantik.js` eski ad eşlemesi. İlk
+  görünüşler: Uşak 1954; Adıyaman, Nevşehir, Sakarya 1957; Batman ve 6 il 1991; 5 il 1995; Osmaniye 1999;
+  Düzce 2002 — tabloda olmayan il haritada "o tarihte ayrı il değildi" (taralı).
+- Çalışma dosyaları ve yeniden üretim betikleri: oturum dizini `il-genel/` (`parse_tuik.py`, `build_tuik.js`,
+  `build_ysk.js`, `check.js`, `kontrol.txt`) ve `il-genel-yaz.js`.

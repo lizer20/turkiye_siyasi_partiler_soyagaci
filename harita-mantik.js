@@ -42,6 +42,7 @@
               .concat(v.ikinci ? [{ anahtar: v.ikinci, oy: v.ikinciOy == null ? null : v.ikinciOy, pay: null }] : []) }
             : { durum: "bilinmiyor", kazanan: null, sira: [] };
         }
+        if (v.not) r.not = v.not;
         sonuc.set(il.plaka, r);
       }
       return { iller: sonuc, eslesmeyen };
@@ -73,7 +74,7 @@
     function kisaAd(a) { return M.partiAdi(satir(a)).kisa; }
     function ipucu(il, r) {
       if (r.durum === "yok") return il.ad + " — bu seçimde ayrı bir il değildi";
-      if (r.durum === "bilinmiyor") return il.ad + " — sonuç bilinmiyor";
+      if (r.durum === "bilinmiyor") return il.ad + " — " + (r.not || "sonuç bilinmiyor");
       return il.ad + " — " + r.sira.slice(0, 3).map(s => kisaAd(s.anahtar) +
         (s.pay != null ? " " + O.yuzdeYaz(s.pay) : s.oy != null ? " " + O.sayiYaz(s.oy) + " oy" : "")).join(" · ");
     }
