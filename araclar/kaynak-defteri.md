@@ -4519,3 +4519,21 @@ Kullanıcı isteği: "sadece seçimde olanları sonradan olan değişimleri ekle
   - İstanbul, Ankara, İzmir: kentin belediye başkanlığı (üçü de CHP; ülke geneli kaydındaki büyükşehir
     alanıyla aynı).
   - Sonuç: 67 il; CHP 32, AP 22, Bağımsız 8, MSP 3, DP 1, bilinmiyor 1 (Ağrı).
+
+## Harita — 1977 yerel haritası (2026-09-27)
+
+Kaynak: DİE, *11 Aralık 1977 Yerel Seçim Sonuçları*, Tablo 2 "Belediye Başkanlığı Seçimi sonuçlarının
+belediyelere göre dağılımı" (s. 40–118). Sol sayfa: AP, CHP, CGP; sağ sayfa: DP, MSP, MHP, SDP, TBP, TİP,
+TSİP, Bağımsızlar (oy ve %). Kitap kazananın adını vermez.
+
+- Yöntem: her ilin "Merkez" satırı (İstanbul, Ankara, İzmir'de "belediyesi toplamı" satırı) sol ve sağ
+  sayfadan yan yana kırpılıp gözle okundu; her ilde sol % + sağ % toplamının ≈100 olduğu denetlendi
+  (sağ sayfa taramasında soldaki CGP sütununun kenarı görünebiliyor; toplam denetimi bunu ayırdı).
+- Kazanan kuralı: bir parti, hem her partiden hem de bağımsızların **toplamından** fazla oy aldıysa
+  kesin kazanandır. Bağımsızlar toplamının önde olduğu 4 il boş bırakıldı: Diyarbakır (bağımsızlar %55,3),
+  Elazığ (%25,4; AP %23,7), Malatya (%60,4), Tunceli (%68,1).
+- Yakın sonuçlar (oy sayısıyla da denetlendi): Eskişehir AP 35 443 – CHP 35 320; Denizli CHP 18 240 –
+  AP 18 021; Bingöl MHP 1 810 – CHP 1 745; Çankırı MHP %34,9 – AP %33,1; Burdur AP %48,6 – CHP %46,6.
+- Sonuç: 67 il; CHP 41, AP 15, MHP 4 (Bingöl, Çankırı, Erzincan, Yozgat), MSP 3 (Adıyaman, Konya, Muş),
+  bilinmiyor 4. Büyükşehirler ülke geneli kaydındaki alanla aynı (üçü de CHP).
+- Afyon başlığı metin katmanında "A . Karahisar" olarak üç parçaya bölündüğü için elle bulundu (s. 48).
