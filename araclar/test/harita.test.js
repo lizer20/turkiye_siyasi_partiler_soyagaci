@@ -106,3 +106,13 @@ test("genel seçim lejantı: il kazananların Türkiye geneli oy oranı ve kalan
   kg.sonuc[2] = { parti: "mhp93", oy: null };
   assert.ok(!/Diğer/.test(H.lejantHTML(kg, veri)));
 });
+
+test("yerel seçim lejantı: belediye meclisi oyuna göre Türkiye geneli oran ve 'Diğer'", () => {
+  const ky = { id: "y", tur: "yerel", tarih: "2000-01-01", gecerli: 100,
+    sonuc: [{ parti: "akp", oy: 45 }, { parti: "chp92", oy: 35 }, { parti: "mhp93", oy: 12 }, { ad: "Bağımsız", oy: 8 }] };
+  const veri = { olcu: "yerel", iller: { "Adana": { kazanan: "chp92" }, "Konya": { kazanan: "akp" } } };
+  const l = H.lejantHTML(ky, veri);
+  assert.match(l, /belediye meclisi oyu/);
+  assert.match(l, /AK Parti<\/a><span>%45,0 oy · 1 il/);
+  assert.match(l, /Diğer<span>%20,0 oy/);
+});

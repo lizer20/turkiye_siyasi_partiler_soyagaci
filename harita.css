@@ -16,6 +16,7 @@
 .h-lejant .h-i-yok{background:repeating-linear-gradient(45deg,var(--h-yok) 0 3px,var(--h-cizgi) 3px 4.5px)}
 .h-lejant .h-taraf{border-bottom:none;padding-top:8px}
 .h-lejant .h-taraf b{font-weight:600}
+.h-lejant .h-not{font-size:11px;color:var(--soluk);border-bottom:none;padding-top:0}
 .h-lejant span{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--soluk)}
 .h-ozet{margin-bottom:14px}
 .h-ozet-cubuk{display:flex;height:12px;margin:6px 0 4px;background:var(--h-bos)}

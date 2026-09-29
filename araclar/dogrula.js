@@ -142,6 +142,9 @@ function dogrulaSandik(P, S) {
     if (!TIPLER.includes(h.tip)) hatalar.push("bilinmeyen hükümet tipi: " + h.no + " → " + h.tip);
     if (h.bitisNedeni != null && !BITIS.includes(h.bitisNedeni)) hatalar.push("bilinmeyen bitiş nedeni: " + h.no + " → " + h.bitisNedeni);
     (h.partiler || []).forEach(p => partiDenetle(p, "hükümet " + h.no));
+    if (h.lakap != null && (typeof h.lakap !== "string" || !h.lakap.trim())) hatalar.push("hükümet adı boş olamaz: " + h.no);
+    if (h.onemli != null && h.onemli !== true) hatalar.push("onemli yalnızca true olabilir: " + h.no);
+    if (h.onemli && !h.lakap) hatalar.push("öne çıkan hükümetin adı olmalı: " + h.no);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(h.baslangic) || (h.bitis != null && !/^\d{4}-\d{2}-\d{2}$/.test(h.bitis)))
       hatalar.push("hükümet tarihi gün dahil olmalı: " + h.no);
     const s = S.hukumetler[i + 1];

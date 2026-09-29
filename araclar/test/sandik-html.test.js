@@ -288,3 +288,14 @@ test("yerel: kazanılan belediye başkanlıkları kartta ve pencerede", () => {
   assert.ok(h.includes("ilan &lt;x&gt;"));
   assert.equal(M.panelHTML(kayit("2004-03-yerel"), F).html.includes("Kazanılan belediye"), false);
 });
+
+test("hükümet şeridi: yaygın adı numaranın yanında, öne çıkan hükümet büyük gösterilir", () => {
+  const sade = M.seritHTML(F.hukumetler[1]);
+  assert.doesNotMatch(sade, /s-lakap|s-serit-onemli/);
+  const h = M.seritHTML(Object.assign({}, F.hukumetler[0], { lakap: "ANASOL-M", onemli: true }));
+  assert.match(h, /class="s-serit s-serit-onemli"/);
+  assert.match(h, /57\. Hükümet<\/b> <span class="s-lakap">ANASOL-M<\/span> · /);
+  const k = M.seritHTML(Object.assign({}, F.hukumetler[0], { lakap: "A<B" }));
+  assert.match(k, /class="s-serit"/);
+  assert.match(k, /A&lt;B/);
+});

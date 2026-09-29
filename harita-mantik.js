@@ -130,8 +130,9 @@
           (yok ? '<li><i class="h-i-yok"></i>o tarihte ayrı il değildi<span>' + yok + " il</span></li>" : "") + "</ul>";
       }
       const liste = renkler(ilSonuc);
-      // genel seçimde il kazanan partilerin Türkiye geneli oy oranı; il kazanamayanların toplamı "Diğer"
-      const ulusal = new Map(), genel = k && k.tur === "genel" && Array.isArray(k.sonuc);
+      // genel ve yerel seçimde il kazanan partilerin Türkiye geneli oy oranı (yerelde belediye meclisi oyu);
+      // il kazanamayanların toplamı "Diğer"
+      const ulusal = new Map(), genel = !!k && (k.tur === "genel" || k.tur === "yerel") && Array.isArray(k.sonuc);
       let diger = 0, digerBilinir = genel;
       if (genel) for (const x of k.sonuc) {
         const y = M.oyDegeri(x, k), a = x.parti || x.ad;
@@ -139,7 +140,8 @@
         else if (y == null) digerBilinir = false; else diger += y;
       }
       const oyYaz = a => ulusal.get(a) != null ? O.yuzdeYaz(ulusal.get(a)) + " oy · " : "";
-      return '<ul class="h-lejant">' + liste.map(p => '<li><i style="background:' + p.dolgu + '"></i>' +
+      const yerelNot = genel && k.tur === "yerel" && ulusal.size ? '<li class="h-not">Oy oranları: Türkiye geneli belediye meclisi oyu</li>' : "";
+      return '<ul class="h-lejant">' + yerelNot + liste.map(p => '<li><i style="background:' + p.dolgu + '"></i>' +
         (p.id ? '<a class="p-git" href="index.html#' + p.id + '">' + M.kacis(p.kisa) + "</a>" : M.kacis(p.kisa)) +
         "<span>" + oyYaz(p.anahtar) + p.il + " il</span></li>").join("") +
         (genel && digerBilinir && diger > 0 ? '<li><i class="h-i-diger"></i>Diğer<span>' + O.yuzdeYaz(diger) + " oy</span></li>" : "") +

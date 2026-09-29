@@ -42,6 +42,11 @@
 }
 .s-serit a{color:inherit;text-underline-offset:3px;text-decoration-color:var(--cizgi)}
 .s-bitis{font-size:11px;color:var(--soluk);margin-top:2px}
+.s-lakap{font-weight:600;color:#2A2E22;background:rgba(0,0,0,.05);border-radius:3px;padding:0 5px;white-space:nowrap}
+.s-serit-onemli{border-left-width:7px;padding:9px 12px;font-size:13.5px;background:rgba(245,245,240,.9);
+  box-shadow:inset 0 0 0 1px var(--cizgi)}
+.s-serit-onemli .s-lakap{font-size:15px;background:none;padding:0 2px}
+.s-serit-onemli .s-bitis{font-size:11.5px}
 
 /* genel seçim kartı: solda meclis yarım dairesi, sağda sandalye listesi */
 .s-meclis{display:flex;gap:14px;align-items:flex-start}

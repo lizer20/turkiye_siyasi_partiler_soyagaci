@@ -4759,3 +4759,38 @@ kazananı kaynakla kesinse o gösterilir; kesin değilse il boş kalır, not "se
 - **1973 Ağrı → boş.** Tr. Vikipedi "Ağrı'da 1973 Türkiye yerel seçimleri" (arama özeti): ilk sayımda DP (Cevdet Elçi)
   CHP'yi 25 oyla geçti; il seçim kurulu 33 oyu iptal edince CHP kazanmış sayıldı; YSK DP itirazını haklı bulup seçimi
   yeniledi (2.6.1974, CHP kazandı). Seçim günü sonucu tek bir kazanana bağlanamıyor.
+
+## Hükümet adları ve öne çıkan hükümetler {#hukumet-adlari} (2026-09-29)
+
+**Kullanıcı isteği:** "hükümetlerin eğer halk arasında yaygın olarak bilinen bir adı varsa onu yanında belirt veya
+hükümet diğerlerine göre çok büyük bir öneme sahipse o hükümeti diğerlerine göre biraz daha büyük göster ve adını
+yanında belirt, mesela 1974 CHP–MSP veya Milliyetçi Cephe gibi."
+
+**Kural:** `lakap` yalnızca en az iki bağımsız kaynakta o hükümetin adı olarak geçiyorsa yazılır. `onemli: true`
+(şeritte daha büyük gösterim) yalnızca adı olan ve kullanıcının örneklerindeki gibi dönemine damga vuran
+hükümetlere verildi: CHP–MSP (Kıbrıs Harekâtı), iki Milliyetçi Cephe, REFAHYOL (28 Şubat süreci), ANASOL-M
+(verideki en uzun süreli koalisyon: 28.5.1999–18.11.2002). Adı olmayan bir hükümet "önemli" diye büyütülmedi
+(doğrulayıcı bunu hata sayar); böyle bir öneri kullanıcı kararıdır.
+
+| No | Ad | Büyük | Kaynaklar |
+|---|---|---|---|
+| 37 | CHP–MSP koalisyonu | evet | Tr. Vikipedi "37. Türkiye Hükûmeti" ("CHP ve MSP koalisyon hükûmetidir"); Gazete Vatan, "Türkiye'nin koalisyon hükümetleri" (7.7.2015): "CHP–MSP Koalisyonu" |
+| 39 | I. Milliyetçi Cephe | evet | Tr. Vikipedi "39. Türkiye Hükûmeti" ("I. Milliyetçi Cephe Hükûmeti"); Gazete Vatan (7.7.2015): "1. MC"; YÖK Açık Bilim, tez "Birinci ve İkinci Milliyetçi Cephe Hükümetleri" |
+| 41 | II. Milliyetçi Cephe | evet | Tr. Vikipedi "41. Türkiye Hükûmeti" ("II. Milliyetçi Cephe Hükûmeti"); YÖK Açık Bilim, tez "İkinci Milliyetçi Cephe Hükümeti (21.07.1977 - 05.01.1978)"; Yeni Akit, "31 Aralık 1977: 2. Milliyetçi Cephe Hükümetinin Bir Gensoru ile Düşürülmesi" |
+| 53 | ANAYOL | hayır | Tr. Vikipedi "53. Türkiye Hükûmeti" ("ANAYOL Hükûmeti"); Milliyet, "Anayol bozulmadan Refahyol arayışı!" |
+| 54 | REFAHYOL | evet | Tr. Vikipedi "54. Türkiye Hükûmeti" ("REFAHYOL Hükûmeti"); Gazete Vatan (7.7.2015): "REFAHYOL"; Milliyet (aynı haber) |
+| 55 | ANASOL-D | hayır | Tr. Vikipedi "55. Türkiye Hükûmeti" ("ANASOL-D Hükûmeti"); Gazete Vatan (7.7.2015): "ANASOL–D" |
+| 57 | ANASOL-M | evet | Tr. Vikipedi "57. Türkiye Hükûmeti" ("ANASOL-M Hükûmeti"); Vehbi Dinçerler (eski bakan) sitesi, "ANASOL-M Hükümeti (DSP-ANAP-MHP 28.06.1999-18.11.2002)" |
+| 63 | Seçim hükümeti | hayır | Tr. Vikipedi "63. Türkiye Hükûmeti" ("Seçim Hükûmeti"); VOA Türkçe, "İlk 'Seçim Hükümeti' İlklerle Kuruldu" (2015) |
+
+**Bilerek eklenmeyenler:**
+- 42. hükümet "Motel Hükûmeti": yalnızca Tr. Vikipedi'de bulundu (SeçimTürk ve Düşünce Mektebi sayfaları adı
+  kullanmıyor; soL haber sayfası erişilemedi). "Güneş Motel olayı" yaygın bilinse de hükümetin adı olarak ikinci
+  kaynak yok.
+- 33. hükümet "Beyin Takımı": Tr. Vikipedi maddesinde geçmiyor; kaynak bulunamadı.
+- "I. Menderes", "V. Ecevit" gibi başbakan sıralı adlar: halk arasındaki ad değil, her hükümette var; eklenmedi.
+
+**Harita (aynı gün):** yerel seçim haritası lejantında il kazanan partilerin yanında Türkiye geneli belediye
+meclisi oy oranı ve kalanların toplamı "Diğer" gösterilir (genel seçimdeki gibi; oranlar Sandık kaydındaki
+ülke geneli sonuçtan). 1963 resmî ilanında parti oyları toplamı geçerli oydan 185.299 eksik olduğundan "Diğer"
+yalnızca ilanda sayılan partileri toplar.

@@ -173,3 +173,14 @@ test("yerel: kazanılan belediye başkanlıkları denetlenir", () => {
   assert.equal(hatalar(S), "");
   assert.match(uyarilar(S), /kazanılan başkanlık 7 < seçimi yapılan 10 \(not yok\)/);
 });
+
+test("hükümet adı ve öne çıkarma: ad boş olamaz, öne çıkan hükümetin adı olmalı", () => {
+  const S = kopya();
+  S.hukumetler[0].lakap = " ";
+  assert.match(hatalar(S), /hükümet adı boş olamaz: 57/);
+  const T = kopya();
+  T.hukumetler[0].onemli = true;
+  assert.match(hatalar(T), /öne çıkan hükümetin adı olmalı: 57/);
+  T.hukumetler[0].lakap = "ANASOL-M";
+  assert.equal(hatalar(T), "");
+});

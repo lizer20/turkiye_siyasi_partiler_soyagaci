@@ -344,7 +344,9 @@
       const kisi = h.basbakan || h.baskan;
       const partiler = h.partiler && h.partiler.length ? h.partiler.map(p => partiBag(p)).join("–") : (TIP_ETIKET[h.tip] || kacis(h.tip || "—"));
       const aralik = O.tarihYaz(h.baslangic, true) + " – " + (h.bitis ? O.tarihYaz(h.bitis, true) : "görevde");
-      return '<div class="s-serit" style="--aile:' + renk + '"><b>' + bas + "</b> · " + kacis(kisi) + " · " +
+      // halk arasında bilinen adı (kaynaklı) numaranın yanında; siyasi tarihte öne çıkanlar biraz daha büyük
+      const lakap = h.lakap ? ' <span class="s-lakap">' + kacis(h.lakap) + "</span>" : "";
+      return '<div class="s-serit' + (h.onemli ? " s-serit-onemli" : "") + '" style="--aile:' + renk + '"><b>' + bas + "</b>" + lakap + " · " + kacis(kisi) + " · " +
         partiler + " · " + aralik +
         (h.bitisNedeni ? '<div class="s-bitis">bitti: ' + kacis(BITIS_ETIKET[h.bitisNedeni]) +
           (h.bitisNedeni === "diger" && h.not ? " — " + kacis(h.not) : "") + "</div>" : "") + "</div>";

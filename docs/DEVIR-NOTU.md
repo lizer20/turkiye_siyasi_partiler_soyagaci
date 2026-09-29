@@ -321,6 +321,9 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
   haritaları 1961, 1982, 1987, 1988, 2007, 2010 için bitti. **2017 referandumu açık:** YSK il tablosuna
   (ysk.gov.tr sayfaları, sonuc.ysk.gov.tr, acikveri.ysk.gov.tr, web.archive.org) çalışma ortamından erişilemedi;
   kullanıcı dosyayı sağlarsa `$SP/ref/ref-yaz.js` düzeninde eklenir (bkz. kaynak defteri "referandum haritaları").
+- **29 Eylül 2026 (sonra):** yerel seçim haritası lejantına Türkiye geneli belediye meclisi oy oranı + "Diğer";
+  hükümetlere kaynaklı yaygın adlar (`lakap`) ve öne çıkan beşine büyük şerit (`onemli: true`) — bkz. kaynak
+  defteri "Hükümet adları". 42. hükümet "Motel Hükûmeti" tek kaynaklı olduğu için eklenmedi.
 
 ---
 

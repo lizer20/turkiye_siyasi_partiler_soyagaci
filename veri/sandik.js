@@ -795,6 +795,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-37
     { no: 37, basbakan: "Bülent Ecevit", partiler: ["chp23", "msp"],
+      lakap: "CHP–MSP koalisyonu", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1974-01-26", bitis: "1974-11-17", tip: "koalisyon", bitisNedeni: "istifa",
       not: "Kıbrıs Barış Harekâtı'nın ardından erken seçim umuduyla 18 Eylül 1974'te istifa etti; yerine yeni hükümet kurulamayınca 17 Kasım 1974'e kadar çekilme statüsünde görevde kaldı." },
 
@@ -805,6 +806,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-39
     { no: 39, basbakan: "Süleyman Demirel", partiler: ["ap", "msp", "cgp", "mhp69"],
+      lakap: "I. Milliyetçi Cephe", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1975-03-31", bitis: "1977-06-21", tip: "koalisyon", bitisNedeni: "secim",
       not: "1. Milliyetçi Cephe hükümeti; 5 Haziran 1977 seçiminin ardından sona erdi." },
 
@@ -815,6 +817,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-41
     { no: 41, basbakan: "Süleyman Demirel", partiler: ["ap", "msp", "mhp69"],
+      lakap: "II. Milliyetçi Cephe", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1977-07-21", bitis: "1978-01-05", tip: "koalisyon", bitisNedeni: "guvensizlik",
       not: "2. Milliyetçi Cephe hükümeti; Güneş Motel Hadisesi'nde AP'den istifa eden milletvekillerinin desteğiyle verilen bir gensoruyla düştü." },
 
@@ -881,16 +884,19 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 53, basbakan: "Mesut Yılmaz", partiler: ["anap", "dyp"],
+      lakap: "ANAYOL", // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1996-03-06", bitis: "1996-06-28", tip: "koalisyon", bitisNedeni: "istifa",
       not: "ANAP–DYP (ANAYOL) koalisyonu; güvenoylamasına ilişkin yargı kararının ardından istifa etmek zorunda kaldı." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 54, basbakan: "Necmettin Erbakan", partiler: ["rp", "dyp"],
+      lakap: "REFAHYOL", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1996-06-28", bitis: "1997-06-30", tip: "koalisyon", bitisNedeni: "istifa",
       not: "RP–DYP (REFAHYOL) koalisyonu; bir yılın sonunda olağandışı koşullarda istifa ederek görevi bıraktı." },
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 55, basbakan: "Mesut Yılmaz", partiler: ["anap", "dsp", "dtp97"],
+      lakap: "ANASOL-D", // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1997-06-30", bitis: "1999-01-11", tip: "koalisyon", bitisNedeni: "guvensizlik",
       not: "ANAP–DSP–DTP koalisyon protokolüyle kurulan üç partili azınlık hükümeti; güvenoylamasıyla düşürüldü." },
 
@@ -901,6 +907,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 57, basbakan: "Bülent Ecevit", partiler: ["dsp", "mhp93", "anap"],
+      lakap: "ANASOL-M", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1999-05-28", bitis: "2002-11-18", tip: "koalisyon", bitisNedeni: "erken-secim",
       not: "DSP–MHP–ANAP koalisyonu; 21. Dönem Meclisi'nin erken seçim kararıyla 3 Kasım 2002'de yapılan genel seçimin ardından sona erdi." },
 
@@ -934,6 +941,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hükümetler-58-64
     { no: 63, basbakan: "Ahmet Davutoğlu", partiler: ["akp", "hdp"],
+      lakap: "Seçim hükümeti", // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "2015-08-28", bitis: "2015-11-24", tip: "koalisyon", bitisNedeni: "erken-secim",
       not: "Anayasa'nın 114. maddesine göre kurulan geçici seçim hükümetinde AK Parti'nin yanında iki HDP milletvekili bakan oldu, Adalet, İçişleri ve Ulaştırma bakanlıkları ise bağımsızlara verildi." },
 
