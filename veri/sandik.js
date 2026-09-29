@@ -205,6 +205,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 5861239, kullanilan: 3937626, gecerli: 2901695, kaynakFarki: 185299,
       sonuc: [ { parti: "ap", oy: 1356610 }, { parti: "chp23", oy: 1037939 }, { parti: "ytp", oy: 122459 }, { parti: "mp62", oy: 79174 }, { parti: "ckmp", oy: 63113 }, { parti: "tip61", oy: 18397 }, { ad: "Bağımsız", oy: 38704 } ],
+      belediye: { yapilan: 1028, sonuc: [ { parti: "ap", sayi: 505 }, { parti: "chp23", sayi: 335 }, { parti: "ytp", sayi: 58 }, { parti: "ckmp", sayi: 9 }, { parti: "mp62", sayi: 8 }, { ad: "Bağımsız", sayi: 113 } ],
+        not: "YSK'nın seçim arşivindeki sonuç tablosu; tablo sonradan yenilenen seçimleri içerip içermediğini belirtmiyor." },
       buyuksehir: {
         istanbul: { parti: "chp23", aday: "Haşim İşcan" }, ankara: { parti: "chp23" }, izmir: { parti: "ap" }
       },
@@ -232,6 +234,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 6155701, kullanilan: 3498737, gecerli: 2848207,
       sonuc: [ { parti: "ap", oy: 1412044 }, { parti: "chp23", oy: 991161 }, { parti: "gp", oy: 126384 }, { parti: "mp62", oy: 98619 }, { parti: "tip61", oy: 55610 }, { parti: "ckmp", oy: 42506 }, { parti: "tbp", oy: 33777 }, { parti: "ytp", oy: 21741 }, { ad: "Bağımsız", oy: 66365 } ],
+      belediye: { yapilan: 1238, sonuc: [ { parti: "ap", sayi: 693 }, { parti: "chp23", sayi: 292 }, { parti: "gp", sayi: 23 }, { parti: "mp62", sayi: 12 }, { parti: "ytp", sayi: 9 }, { parti: "ckmp", sayi: 7 }, { ad: "Bağımsız", sayi: 202 } ],
+        not: "YSK'nın seçim arşivindeki sonuç tablosu; tablo sonradan yenilenen seçimleri içerip içermediğini belirtmiyor." },
       buyuksehir: { istanbul: { parti: "ap" }, ankara: { parti: "ap" }, izmir: { parti: "ap" } },
       not: "AP çoğu ilde kazandı; İstanbul (Fahri Atabey), Ankara (Ekrem Barlas) ve İzmir'i de AP aldı. İstanbul için DİE'nin il tablosunda kent ilçelerinin toplamı AP 134.730, CHP 99.313'tür. Aynı gün 5 ilde milletvekili ara seçimi de yapıldı." },
 
@@ -265,6 +269,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 8607082, kullanilan: 4706719, gecerli: 3914801,
       sonuc: [ { parti: "chp23", oy: 1624490 }, { parti: "ap", oy: 1382150 }, { parti: "demp70", oy: 351746 }, { parti: "msp", oy: 212477 }, { ad: "Bağımsız", oy: 150621 }, { parti: "cgp", oy: 102908 }, { parti: "mhp69", oy: 62165 }, { parti: "tbp", oy: 19860 }, { parti: "mp62", oy: 8384 } ],
+      belediye: { yapilan: 1620, sonuc: [ { parti: "ap", sayi: 643 }, { parti: "chp23", sayi: 554 }, { parti: "demp70", sayi: 104 }, { parti: "cgp", sayi: 37 }, { parti: "msp", sayi: 31 }, { ad: "Bağımsız", sayi: 246 } ],
+        not: "YSK'nın seçim arşivindeki sonuç tablosu; tablo sonradan yenilenen seçimleri içerip içermediğini belirtmiyor. Tablonun başlığında 1.620 başkanlık yazıyor, partilere dağılan başkanlıkların toplamı ise 1.615; fark kaynakta açıklanmıyor." },
       buyuksehir: { istanbul: { parti: "chp23" }, ankara: { parti: "chp23" }, izmir: { parti: "chp23" } },
       not: "CHP, İstanbul (Ahmet İsvan), Ankara (Vedat Dalokay) ve İzmir (İhsan Alyanak) dahil büyük şehirlerde kazandı." },
 
@@ -285,6 +291,8 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 12067618, kullanilan: 6197718, gecerli: 5680318,
       sonuc: [ { parti: "chp23", oy: 2663642 }, { parti: "ap", oy: 2148885 }, { parti: "msp", oy: 315733 }, { parti: "mhp69", oy: 302831 }, { ad: "Bağımsız", oy: 107953 }, { parti: "demp70", oy: 51411 }, { parti: "cgp", oy: 40587 }, { parti: "tbp", oy: 23506 }, { parti: "tip75", oy: 15992 }, { ad: "Türkiye Sosyalist İşçi Partisi", oy: 6417 }, { ad: "Sosyalist Devrim Partisi", oy: 3280 }, { ad: "Türkiye Ulusal Kadınlar Partisi", oy: 81 } ],
+      belediye: { yapilan: 1710, sonuc: [ { parti: "ap", sayi: 708 }, { parti: "chp23", sayi: 707 }, { parti: "mhp69", sayi: 55 }, { parti: "msp", sayi: 51 }, { parti: "cgp", sayi: 9 }, { parti: "demp70", sayi: 4 }, { parti: "tbp", sayi: 1 }, { ad: "Bağımsız", sayi: 175 } ],
+        not: "YSK'nın seçim arşivindeki sonuç tablosu; tablo sonradan yenilenen seçimleri içerip içermediğini belirtmiyor." },
       buyuksehir: { istanbul: { parti: "chp23" }, ankara: { parti: "chp23" }, izmir: { parti: "chp23" } },
       not: "CHP, İstanbul, Ankara ve İzmir dahil büyük şehirlerde yine kazandı." },
 
@@ -322,6 +330,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 12341328, kullanilan: 10559948, gecerli: 9873876,
       sonuc: [ { parti: "anap", oy: 4295246 }, { parti: "sodep", oy: 2521392 }, { parti: "dyp", oy: 1189978 }, { parti: "hp83", oy: 803795 }, { parti: "mdp", oy: 561038 }, { parti: "rp", oy: 384201 }, { ad: "Bağımsız", oy: 118226 } ],
+      belediye: { yapilan: 1701, sonuc: [ { parti: "anap", sayi: 883 }, { parti: "sodep", sayi: 284 }, { parti: "dyp", sayi: 238 }, { parti: "mdp", sayi: 106 }, { parti: "hp83", sayi: 94 }, { parti: "rp", sayi: 16 }, { ad: "Bağımsız", sayi: 80 } ],
+        buyuksehir: [ { parti: "anap", sayi: 3 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı (seçim günü tutanakları)." },
       buyuksehir: { istanbul: { parti: "anap" }, ankara: { parti: "anap" }, izmir: { parti: "anap" } },
       not: "12 Eylül sonrası ilk yerel seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -358,6 +369,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 18090657, kullanilan: 14107146, gecerli: 13237086,
       sonuc: [ { parti: "shp", oy: 4389132 }, { parti: "dyp", oy: 3137522 }, { parti: "anap", oy: 3111259 }, { parti: "rp", oy: 1181950 }, { parti: "dsp", oy: 890164 }, { parti: "mcp", oy: 436951 }, { ad: "IDP", oy: 69195 }, { ad: "Bağımsız", oy: 20913 } ],
+      belediye: { yapilan: 1976, sonuc: [ { parti: "shp", sayi: 650 }, { parti: "anap", sayi: 565 }, { parti: "dyp", sayi: 552 }, { parti: "rp", sayi: 74 }, { parti: "dsp", sayi: 38 }, { parti: "mcp", sayi: 24 }, { ad: "Islahatçı Demokrasi Partisi", sayi: 6 }, { ad: "Bağımsız", sayi: 63 } ],
+        buyuksehir: [ { parti: "shp", sayi: 6 }, { parti: "dyp", sayi: 1 }, { parti: "rp", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı (seçim günü tutanakları). 1.976 başkanlık seçiminin 4'ü sonuçlanmadı (Bitlis ve Pervari'de eşit oy, iki beldede iptal)." },
       buyuksehir: { istanbul: { parti: "shp" }, ankara: { parti: "shp" }, izmir: { parti: "shp" } },
       not: "ANAP'ın 1984'e göre oy kaybettiği, SHP'nin İstanbul, Ankara ve İzmir'i kazandığı seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -384,6 +398,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 23366089, kullanilan: 21102428, gecerli: 19734355,
       sonuc: [ { parti: "anap", oy: 4482333 }, { parti: "rp", oy: 3776425 }, { parti: "dyp", oy: 3728521 }, { parti: "shp", oy: 3316716 }, { parti: "dsp", oy: 1649104 }, { parti: "mhp93", oy: 1508713 }, { parti: "chp92", oy: 851232 }, { parti: "bbp", oy: 211136 }, { parti: "dp92", oy: 65022 }, { ad: "Yeniden Doğuş Partisi", oy: 35754 }, { ad: "Millet Partisi", oy: 34197 }, { parti: "ip92", oy: 32559 }, { ad: "SBP", oy: 21011 }, { ad: "Bağımsız", oy: 21632 } ],
+      belediye: { yapilan: 2695, sonuc: [ { parti: "dyp", sayi: 882 }, { parti: "anap", sayi: 789 }, { parti: "shp", sayi: 432 }, { parti: "rp", sayi: 324 }, { parti: "mhp93", sayi: 118 }, { parti: "chp92", sayi: 63 }, { parti: "dsp", sayi: 23 }, { parti: "bbp", sayi: 11 }, { parti: "dp92", sayi: 6 }, { ad: "Bağımsız", sayi: 44 } ],
+        buyuksehir: [ { parti: "rp", sayi: 6 }, { parti: "anap", sayi: 3 }, { parti: "dyp", sayi: 3 }, { parti: "shp", sayi: 2 }, { parti: "chp92", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; ilan tarihinden sonraki iptal ve değişiklikler dahil değil. 2.695 başkanlık seçiminin 3'ü sonuçlanmadı." },
       buyuksehir: { istanbul: { parti: "rp" }, ankara: { parti: "rp" }, izmir: { parti: "dyp" } },
       not: "Refah Partisi'nin İstanbul ve Ankara büyükşehir belediyelerini kazandığı seçim. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır (seçim günü tutanaklarına göre; sonraki iptal ve yenilemeler dahil değil); bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -404,6 +421,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 28889819, kullanilan: 24527241, gecerli: 23164822,
       sonuc: [ { parti: "fp", oy: 4225409 }, { parti: "anap", oy: 3956557 }, { parti: "dsp", oy: 3755293 }, { parti: "mhp93", oy: 3636853 }, { parti: "chp92", oy: 3074207 }, { parti: "dyp", oy: 2896847 }, { parti: "hadep", oy: 800599 }, { parti: "bbp", oy: 302651 }, { parti: "dtp97", oy: 159864 }, { parti: "odp", oy: 152030 }, { ad: "Millet Partisi", oy: 33338 }, { ad: "Barış Partisi", oy: 38467 }, { parti: "dp92", oy: 32781 }, { parti: "emep", oy: 22398 }, { parti: "ldp", oy: 20203 }, { parti: "ip92", oy: 20597 }, { ad: "Yeniden Doğuş Partisi", oy: 13523 }, { ad: "Demokrasi ve Barış Partisi", oy: 3474 }, { ad: "Değişen Türkiye Partisi", oy: 3110 }, { ad: "Sosyalist İktidar Partisi", oy: 392 }, { parti: "dehap", oy: 115 }, { ad: "Bağımsız", oy: 16114 } ],
+      belediye: { yapilan: 3200, sonuc: [ { parti: "anap", sayi: 778 }, { parti: "dyp", sayi: 737 }, { parti: "mhp93", sayi: 499 }, { parti: "fp", sayi: 484 }, { parti: "chp92", sayi: 366 }, { parti: "dsp", sayi: 184 }, { parti: "hadep", sayi: 36 }, { parti: "bbp", sayi: 25 }, { parti: "dtp97", sayi: 14 }, { ad: "Barış Partisi", sayi: 6 }, { parti: "dp92", sayi: 4 }, { parti: "odp", sayi: 2 }, { ad: "Demokrasi ve Barış Partisi", sayi: 1 }, { ad: "Bağımsız", sayi: 52 } ],
+        buyuksehir: [ { parti: "dsp", sayi: 4 }, { parti: "fp", sayi: 4 }, { parti: "chp92", sayi: 3 }, { parti: "anap", sayi: 2 }, { parti: "hadep", sayi: 1 }, { parti: "mhp93", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı (seçim günü tutanakları). 3.200 başkanlık seçiminden 12 beldenin seçimi iptal edildi." },
       buyuksehir: { istanbul: { parti: "fp" }, ankara: { parti: "fp" }, izmir: { parti: "dsp" } },
       not: "Genel seçimle aynı gün yapıldı. Ülke geneli sayılar yalnızca YSK'nın Resmî Gazete'de yayımlanan kararına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -431,6 +451,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 34213138, kullanilan: 25067950, gecerli: 23893656,
       sonuc: [ { parti: "akp", oy: 9635145 }, { parti: "chp92", oy: 4912313 }, { parti: "mhp93", oy: 2500601 }, { parti: "dyp", oy: 2286020 }, { ad: "Sosyaldemokrat Halk Partisi", oy: 1204431 }, { parti: "sp", oy: 1111017 }, { parti: "anap", oy: 682264 }, { ad: "Genç Parti", oy: 607847 }, { parti: "dsp", oy: 484555 }, { parti: "bbp", oy: 179090 }, { parti: "ytp02", oy: 56912 }, { parti: "ip92", oy: 33770 }, { parti: "odp", oy: 29269 }, { parti: "emep", oy: 28011 }, { parti: "dp92", oy: 3742 }, { parti: "ldp", oy: 391 }, { ad: "Diğer", partiSayisi: 4, oy: 98310 }, { ad: "Bağımsız", oy: 39968 } ],
+      belediye: { yapilan: 3193, sonuc: [ { parti: "akp", sayi: 1750 }, { parti: "chp92", sayi: 467 }, { parti: "dyp", sayi: 388 }, { parti: "mhp93", sayi: 247 }, { parti: "anap", sayi: 100 }, { ad: "Sosyaldemokrat Halk Partisi (2002)", sayi: 64 }, { parti: "sp", sayi: 63 }, { parti: "dsp", sayi: 30 }, { ad: "Genç Parti", sayi: 13 }, { parti: "bbp", sayi: 10 }, { parti: "ytp02", sayi: 5 }, { parti: "odp", sayi: 2 }, { ad: "Bağımsız Türkiye Partisi", sayi: 1 }, { parti: "dp92", sayi: 1 }, { ad: "Bağımsız", sayi: 52 } ],
+        buyuksehir: [ { parti: "akp", sayi: 12 }, { parti: "chp92", sayi: 2 }, { ad: "Sosyaldemokrat Halk Partisi (2002)", sayi: 1 }, { parti: "dsp", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilen 15 belde ve itirazı süren 1 belde dahil değil." },
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
       not: "AK Parti'nin ilk yerel seçiminde 3.193 belediye başkanlığı ve 34.477 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -463,6 +486,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 39787986, kullanilan: 33447257, gecerli: 32072363,
       sonuc: [ { parti: "akp", oy: 12237325 }, { parti: "chp92", oy: 7966710 }, { parti: "mhp93", oy: 5336695 }, { parti: "sp", oy: 1807745 }, { parti: "dtp", oy: 1687733 }, { parti: "dp07", oy: 1181074 }, { parti: "dsp", oy: 945722 }, { parti: "bbp", oy: 508055 }, { parti: "anap", oy: 202976 }, { parti: "odp", oy: 25557 }, { parti: "emep", oy: 21100 }, { parti: "ldp", oy: 2451 }, { parti: "ip92", oy: 2258 }, { parti: "bdp", oy: 203 }, { ad: "Diğer", partiSayisi: 5, oy: 103126 }, { ad: "Bağımsız", oy: 43633 } ],
+      belediye: { yapilan: 2903, sonuc: [ { parti: "akp", sayi: 1442 }, { parti: "chp92", sayi: 503 }, { parti: "mhp93", sayi: 483 }, { parti: "dp07", sayi: 148 }, { parti: "dtp", sayi: 96 }, { parti: "sp", sayi: 80 }, { parti: "dsp", sayi: 60 }, { parti: "bbp", sayi: 20 }, { parti: "anap", sayi: 16 }, { parti: "odp", sayi: 4 }, { ad: "Bağımsız Türkiye Partisi", sayi: 4 }, { parti: "emep", sayi: 2 }, { ad: "Bağımsız", sayi: 45 } ],
+        buyuksehir: [ { parti: "akp", sayi: 10 }, { parti: "chp92", sayi: 3 }, { parti: "mhp93", sayi: 1 }, { parti: "dsp", sayi: 1 }, { parti: "dtp", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilip 7 Haziran 2009'da yenilenen 28 belediye dahil değil." },
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
       not: "32.392 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -485,6 +511,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 48843157, kullanilan: 43543717, gecerli: 41527387,
       sonuc: [ { parti: "akp", oy: 17802976 }, { parti: "chp92", oy: 10938262 }, { parti: "mhp93", oy: 7399119 }, { parti: "bdp", oy: 1729297 }, { parti: "sp", oy: 1180322 }, { parti: "hdp", oy: 881830 }, { parti: "bbp", oy: 628729 }, { parti: "dp07", oy: 287209 }, { parti: "dsp", oy: 144337 }, { parti: "ip92", oy: 100021 }, { parti: "odp", oy: 45204 }, { parti: "ldp", oy: 9122 }, { parti: "emep", oy: 489 }, { parti: "hudapar", oy: 87726 }, { ad: "Diğer", partiSayisi: 8, oy: 243150 }, { ad: "Bağımsız", oy: 49594 } ],
+      belediye: { yapilan: 1351, sonuc: [ { parti: "akp", sayi: 799 }, { parti: "chp92", sayi: 226 }, { parti: "mhp93", sayi: 166 }, { parti: "bdp", sayi: 97 }, { parti: "sp", sayi: 27 }, { parti: "dp07", sayi: 14 }, { parti: "dsp", sayi: 6 }, { parti: "bbp", sayi: 6 }, { ad: "Türkiye Komünist Partisi", sayi: 1 }, { parti: "odp", sayi: 1 }, { ad: "Millet Partisi (1992)", sayi: 1 }, { ad: "Hak ve Özgürlükler Partisi", sayi: 1 }, { parti: "ldp", sayi: 1 }, { ad: "Bağımsız", sayi: 5 } ],
+        buyuksehir: [ { parti: "akp", sayi: 18 }, { parti: "chp92", sayi: 6 }, { parti: "mhp93", sayi: 3 }, { parti: "bdp", sayi: 2 }, { ad: "Bağımsız", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilen 13 belediye dahil değil. YSK'nın sonraki bir tablosunda AK Parti 800, DSP 5 yazıyor; burada ilandaki sayılar esas alındı." },
       buyuksehir: { istanbul: { parti: "akp" }, ankara: { parti: "akp" }, izmir: { parti: "chp92" } },
       not: "Büyükşehir belediye başkanlığı seçimi bu kez 16 yerine 30 ilde yapıldı ve 20.500 belediye meclisi üyeliği için oy verildi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -536,6 +565,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 53203842, kullanilan: 44881860, gecerli: 42998754,
       sonuc: [ { parti: "akp", oy: 18299576 }, { parti: "chp92", oy: 12625346 }, { parti: "mhp93", oy: 3209416 }, { parti: "iyi", oy: 3142757 }, { parti: "hdp", oy: 2409485 }, { parti: "sp", oy: 1291757 }, { parti: "bbp", oy: 818872 }, { parti: "dsp", oy: 379689 }, { parti: "dp07", oy: 378093 }, { parti: "vatan", oy: 83091 }, { ad: "Diğer", partiSayisi: 2, oy: 240575 }, { ad: "Bağımsız", oy: 120097 } ],
+      belediye: { yapilan: 1355, sonuc: [ { parti: "akp", sayi: 742 }, { parti: "chp92", sayi: 240 }, { parti: "mhp93", sayi: 233 }, { parti: "hdp", sayi: 57 }, { parti: "iyi", sayi: 24 }, { parti: "sp", sayi: 21 }, { parti: "bbp", sayi: 10 }, { parti: "dp07", sayi: 8 }, { parti: "dsp", sayi: 6 }, { ad: "Türkiye Komünist Partisi", sayi: 1 }, { ad: "Bağımsız", sayi: 13 } ],
+        buyuksehir: [ { parti: "akp", sayi: 15 }, { parti: "chp92", sayi: 10 }, { parti: "hdp", sayi: 3 }, { parti: "mhp93", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilen 4 belediye dahil değil. İstanbul büyükşehir seçimi iptal edildiği için büyükşehir sayısı 29'dur." },
       buyuksehir: { ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
       not: "İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
@@ -565,6 +597,9 @@ window.SANDIK = {
       olcu: "belediye-meclisi",
       kayitli: 57716975, kullanilan: 45079928, gecerli: 42848693,
       sonuc: [ { parti: "chp92", oy: 15200699 }, { parti: "akp", oy: 13874511 }, { parti: "yrp", oy: 2991882 }, { parti: "mhp93", oy: 2508414 }, { parti: "dem", oy: 2409155 }, { parti: "iyi", oy: 1967898 }, { parti: "zafer", oy: 1102172 }, { parti: "sp", oy: 561064 }, { parti: "bbp", oy: 525400 }, { parti: "tip17", oy: 261656 }, { parti: "deva", oy: 186090 }, { parti: "dp07", oy: 145134 }, { parti: "memleket", oy: 115553 }, { parti: "dsp", oy: 50925 }, { parti: "gelecek", oy: 47867 }, { parti: "vatan", oy: 37350 }, { parti: "emep", oy: 36506 }, { parti: "hudapar", oy: 274486 }, { ad: "Diğer", partiSayisi: 15, oy: 429712 }, { ad: "Bağımsız", oy: 122219 } ],
+      belediye: { yapilan: 1356, sonuc: [ { parti: "akp", sayi: 526 }, { parti: "chp92", sayi: 395 }, { parti: "mhp93", sayi: 218 }, { parti: "dem", sayi: 74 }, { parti: "yrp", sayi: 62 }, { parti: "iyi", sayi: 30 }, { parti: "bbp", sayi: 20 }, { parti: "dp07", sayi: 5 }, { parti: "deva", sayi: 4 }, { parti: "sp", sayi: 4 }, { ad: "Sol Parti", sayi: 2 }, { parti: "dsp", sayi: 2 }, { parti: "memleket", sayi: 1 }, { parti: "hudapar", sayi: 1 }, { parti: "tip17", sayi: 1 }, { ad: "Bağımsız", sayi: 11 } ],
+        buyuksehir: [ { parti: "chp92", sayi: 14 }, { parti: "akp", sayi: 12 }, { parti: "dem", sayi: 3 }, { parti: "yrp", sayi: 1 } ],
+        not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilen 7 belediye dahil değil." },
       buyuksehir: { istanbul: { parti: "chp92" }, ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
       not: "Aksaray-Güzelyurt, Kayseri-Pınarbaşı, Şanlıurfa-Hilvan ve Sivas-Yıldızeli-Güneykaya belediye meclisi seçimleri iptal edildiği için bu sayılara dahil değildir. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." }
   ],

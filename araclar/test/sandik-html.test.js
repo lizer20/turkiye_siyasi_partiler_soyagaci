@@ -272,3 +272,19 @@ test("panel, sayfanın verdiği haritayı genel ve yerel seçimde gösterir", ()
   assert.ok(y.includes("<i>HARITA</i>"));
   assert.ok(!M.panelHTML(kayit("1999-04-genel"), F).html.includes("HARITA"));
 });
+
+test("yerel: kazanılan belediye başkanlıkları kartta ve pencerede", () => {
+  const k = structuredClone(kayit("2004-03-yerel"));
+  k.belediye = { yapilan: 12, sonuc: [{ parti: "dsp", sayi: 6 }, { ad: "Bağımsız", sayi: 3 }, { ad: "Genç Parti", sayi: 2 }],
+                 buyuksehir: [{ parti: "dsp", sayi: 1 }], not: "ilan <x>" };
+  const kart = M.kartHTML(k);
+  assert.match(kart, /başkanlık · <b>DSP<\/b> 6 · <b>Genç Parti<\/b> 2/);
+  assert.ok(!/Bağımsız<\/b>/.test(kart));
+  const h = M.panelHTML(k, F).html;
+  assert.match(h, /Kazanılan belediye başkanlıkları · 11/);
+  assert.match(h, /DSP<\/a><span>6 · %54,5/);
+  assert.match(h, /Genç Parti<span>2 · %18,2/);
+  assert.match(h, /Kazanılan büyükşehir başkanlıkları · 1/);
+  assert.ok(h.includes("ilan &lt;x&gt;"));
+  assert.equal(M.panelHTML(kayit("2004-03-yerel"), F).html.includes("Kazanılan belediye"), false);
+});

@@ -160,3 +160,16 @@ test("kaynakFarki: ilandaki açıklanmamış eksik toplamda hesaba katılır", (
   k.kaynakFarki = 50;
   assert.doesNotMatch(hatalar(S), /2002-11-genel: oy toplamı/);
 });
+
+test("yerel: kazanılan belediye başkanlıkları denetlenir", () => {
+  const S = kopya();
+  const k = bul(S, "2004-03-yerel");
+  k.belediye = { yapilan: 10, sonuc: [{ parti: "yokparti", sayi: 5 }, { ad: "Bağımsız", sayi: 0 }, { parti: "dsp", sayi: 7 }] };
+  const h = hatalar(S);
+  assert.match(h, /bilinmeyen parti: yokparti \(2004-03-yerel belediye\)/);
+  assert.match(h, /2004-03-yerel belediye: geçersiz sayı 0/);
+  assert.match(h, /kazanılan başkanlık 12 > seçimi yapılan 10/);
+  k.belediye = { yapilan: 10, sonuc: [{ parti: "dsp", sayi: 7 }] };
+  assert.equal(hatalar(S), "");
+  assert.match(uyarilar(S), /kazanılan başkanlık 7 < seçimi yapılan 10 \(not yok\)/);
+});

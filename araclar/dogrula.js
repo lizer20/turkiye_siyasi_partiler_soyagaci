@@ -91,6 +91,21 @@ function dogrulaSandik(P, S) {
     }
     if (k.tur === "yerel" && k.buyuksehir)
       for (const sehir of Object.keys(k.buyuksehir)) partiDenetle(k.buyuksehir[sehir].parti, k.id + " " + sehir);
+    // kazanılan belediye başkanlıkları: parti kimliği geçerli, sayılar pozitif tam sayı, toplam seçimi yapılanı aşmaz
+    if (k.tur === "yerel" && k.belediye) {
+      for (const [ad, l] of [["belediye", k.belediye.sonuc || []], ["büyükşehir sayısı", k.belediye.buyuksehir || []]]) {
+        for (const x of l) {
+          if (x.parti) partiDenetle(x.parti, k.id + " " + ad);
+          else if (!x.ad) hatalar.push(k.id + " " + ad + ": satırda parti ya da ad yok");
+          if (!Number.isInteger(x.sayi) || x.sayi <= 0) hatalar.push(k.id + " " + ad + ": geçersiz sayı " + x.sayi);
+        }
+      }
+      const t = (k.belediye.sonuc || []).reduce((a, x) => a + x.sayi, 0);
+      if (k.belediye.yapilan != null && t > k.belediye.yapilan)
+        hatalar.push(k.id + ": kazanılan başkanlık " + t + " > seçimi yapılan " + k.belediye.yapilan);
+      else if (k.belediye.yapilan != null && t < k.belediye.yapilan && !k.belediye.not)
+        uyarilar.push(k.id + ": kazanılan başkanlık " + t + " < seçimi yapılan " + k.belediye.yapilan + " (not yok)");
+    }
     if (k.tur === "referandum") {
       secmenDenetle(k, k);
       if (!REF_SONUC.includes(k.karar)) hatalar.push(k.id + ": bilinmeyen referandum sonucu " + k.karar);

@@ -148,6 +148,24 @@
       return satirlar.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0))
         .map(s => { const a = partiAdi(s); return { kisa: a.kisa, deger: oyDegeri(s, k), renk: a.renk }; });
     }
+    // kazanılan belediye başkanlıkları (k.belediye): çubuk için yüzdeler, en çok kazananlar önce
+    function baskanlikToplami(l) { return (l || []).reduce((a, x) => a + x.sayi, 0); }
+    function baskanlikBolutleri(l) {
+      const t = baskanlikToplami(l);
+      return (l || []).map(x => { const a = partiAdi(x); return { kisa: a.kisa, deger: t ? x.sayi / t * 100 : null, renk: a.renk }; });
+    }
+    function baskanlikHTML(k) {
+      const b = k.belediye; if (!b) return "";
+      const satir = x => '<li><i style="background:' + partiAdi(x).renk + '"></i>' + satirAdi(x) + "<span>" +
+        O.sayiYaz(x.sayi) + " · " + O.yuzdeYaz(x.sayi / baskanlikToplami(b.sonuc) * 100) + "</span></li>";
+      let h = '<div class="p-etiket">Kazanılan belediye başkanlıkları · ' + O.sayiYaz(baskanlikToplami(b.sonuc)) + "</div>" +
+        cubukHTML(baskanlikBolutleri(b.sonuc), "belediye başkanlıkları") + "<ul>" + b.sonuc.map(satir).join("") + "</ul>";
+      if (b.buyuksehir && b.buyuksehir.length)
+        h += '<div class="p-etiket">Kazanılan büyükşehir başkanlıkları · ' + O.sayiYaz(baskanlikToplami(b.buyuksehir)) + "</div><ul>" +
+          b.buyuksehir.map(x => '<li><i style="background:' + partiAdi(x).renk + '"></i>' + satirAdi(x) + "<span>" + O.sayiYaz(x.sayi) + "</span></li>").join("") + "</ul>";
+      if (b.not) h += '<div class="p-dipnot">' + kacis(b.not) + "</div>";
+      return h;
+    }
     function ustHTML(k) {
       return '<div class="s-ust"><span class="s-tarih">' + O.tarihYaz(k.tarih, true) + "</span>" + rozetHTML(k.tur) + "</div>";
     }
@@ -291,6 +309,8 @@
         govde = olculebilir ? cubukHTML(oyBolutleri(k, k.sonuc || []), "oy") +
           ilkUcHTML(k, partiler.slice().sort((a, b) => (oyDegeri(b, k) || 0) - (oyDegeri(a, k) || 0)), false)
           : '<div class="s-not">' + (k.kapsam ? "yalnız " + kacis(k.kapsam) : "oy dağılımı kayıtlı değil") + "</div>";
+        if (k.belediye) govde += '<div class="s-baskanlik">başkanlık · ' + k.belediye.sonuc.filter(x => x.ad !== BAGIMSIZ).slice(0, 3)
+          .map(x => "<b>" + kacis(partiAdi(x).kisa) + "</b> " + O.sayiYaz(x.sayi)).join(" · ") + "</div>";
         if (k.buyuksehir) govde += '<div class="s-sehirler">' + SEHIRLER.filter(x => k.buyuksehir[x[0]])
           .map(x => x[1] + " · <b>" + kacis(partiAdi(k.buyuksehir[x[0]]).kisa) + "</b>").join("<br>") + "</div>";
       } else if (k.tur === "referandum") {
@@ -394,6 +414,7 @@
           (oyDegeri(c, k) || 0) - (oyDegeri(a, k) || 0));
         h += harita;
         h += liste("Sonuç", sirali.map(s => sonucSatiri(k, s, false)));
+        h += baskanlikHTML(k);
         if (k.buyuksehir) h += liste("Büyükşehirler", SEHIRLER.filter(x => k.buyuksehir[x[0]]).map(x =>
           "<li><b>" + x[1] + "</b>" + partiBag(k.buyuksehir[x[0]].parti) + "<span>" + kacis(k.buyuksehir[x[0]].aday) + "</span></li>"));
       } else if (k.tur === "referandum") {
