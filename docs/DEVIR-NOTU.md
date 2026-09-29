@@ -317,6 +317,10 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
 - **Sonraya bırakıldı:** tek partinin il il oy oranı haritası, iki seçim arası değişim haritası,
   veriyi indirilebilir dosya olarak sunma.
 - **Süresiz ertelendi:** bütün verinin baştan sona ikinci denetimi — diğer işler bitince yeniden konuşulacak.
+- **Durum (29 Eylül 2026):** telefon kontrolü, belediye sayıları, parti→harita bağlantısı bitti; referandum
+  haritaları 1961, 1982, 1987, 1988, 2007, 2010 için bitti. **2017 referandumu açık:** YSK il tablosuna
+  (ysk.gov.tr sayfaları, sonuc.ysk.gov.tr, acikveri.ysk.gov.tr, web.archive.org) çalışma ortamından erişilemedi;
+  kullanıcı dosyayı sağlarsa `$SP/ref/ref-yaz.js` düzeninde eklenir (bkz. kaynak defteri "referandum haritaları").
 
 ---
 
