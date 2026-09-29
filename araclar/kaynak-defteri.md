@@ -4719,3 +4719,16 @@ Kaynak kısaltmaları:
   (2002), Millet Partisi (1994/1999 yerel; 2014 belediye), Demokrasi ve Barış Partisi, Bağımsız Türkiye Partisi, Barış
   Partisi, Türkiye Ulusal Kadınlar Partisi, TSİP, Sosyalist Devrim Partisi, Sosyalist İktidar Partisi, SBP, IDP /
   Islahatçı Demokrasi Partisi, Sol Parti, Hak ve Özgürlükler Partisi, Değişen Türkiye Partisi.
+
+### Haritada (il ipuçlarında) geçen dört parti daha (2026-09-29)
+
+`veri/il-sonuclari.js`'te kaynaktaki kısaltmayla duran anahtarlar da tarandı: KP (1954 genel, 19 il), VP (1957 genel,
+İstanbul ve İzmir), TURK PARTİ (Haziran 2015, Kastamonu), HKP (Kasım 2015, 4 il); ayrıca BTP, HAK-PAR ve 2019
+Tunceli kazananı TKP kimliklere bağlandı. Eklenen düğümler:
+
+| Kimlik | Parti | Yıl · durum · sütun | Dayanak |
+|---|---|---|---|
+| tkp52 | Türkiye Köylü Partisi | 1952–1958 · devredildi · Milliyetçi | TBMM-P s. 53 (CMP'nin Türkiye Köylü Partisi ile birleşip CKMP adını alması, 19.11.1958 — bu defterin `cmp` maddesi) + VP (19.5.1952, Remzi Oğuz Arık; Türk milliyetçiliği, tarımcılık). Bağ `tkp52→ckmp` katılma. 1954 il tablosundaki "KP" TÜİK'in bu parti için kullandığı kısaltma. |
+| vp54 | Vatan Partisi (1954) | 1954–1957 · kapatıldı · Sosyalist sol | VP (22.10.1954, Kıvılcımlı; 30.12.1957 İstanbul Sulh Ceza 57/227 kararıyla kapatıldı). 27.10.1957 seçimine katılması tarihle tutarlı. Tek kaynak. |
+| turkparti | Toplumsal Uzlaşma Reform ve Kalkınma Partisi (TURK PARTİ) | 2010–2015 · feshedildi · Liberal | Sabah seçim sayfası (kısaltma TURK PARTİ; 2010; Özgüç; program: "insan haklarına kişisel özgürlüklere ilişkin öncelik") + VP (2.3.2010 Türkiye Hareketi; 5.12.2015 olağan kongre kararıyla fesih). **Çelişki:** bir web arama özeti "AYM 23.4.2022" diyordu; belgeye bağlanamadı, VP'deki fesih tarihi yazıldı. YCB-F'de (2026) yok — faal değil, tutarlı. |
+| hkp | Halkın Kurtuluş Partisi | 2005– · faal · Sosyalist sol | YCB-F (15.06.2005) + VP (Nurullah Efe; komünizm; 1920 TKP'si ve 1954 Vatan Partisi'nin mirasçısı olduğunu ileri sürer — bağ kurulmadı, iddia tüzel bağ değil). |

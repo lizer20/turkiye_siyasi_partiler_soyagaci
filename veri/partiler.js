@@ -103,6 +103,10 @@ window.PARTILER = (function(){
     hakpar:{k:"Abdülmelik Fırat", o:"11 Şubat 2002'de kuruldu. Kürt kimliğiyle öne çıkar ve Türkiye'nin federal bir yapıya kavuşmasını savunur; bu yönüyle HEP'ten HDP'ye uzanan çizgideki partilerden ayrılır."},
     edp:{o:"ÖDP'den ayrılan Özgürlükçü Sol Hareket, SHP ve Alevi Bektaşi Federasyonu yöneticilerinin görüşmeleriyle Mart 2010'da kuruldu. 25 Kasım 2012'de Yeşiller Partisi ile birleşerek Yeşiller ve Sol Gelecek Partisi'ni oluşturdu."},
     solparti:{o:"Özgürlük ve Dayanışma Partisi'nin 22 Aralık 2019'daki 8. Olağanüstü Kongresi'nde adını değiştirmesiyle doğdu. Tüzel kişiliği, 1994'te kurulan Birleşik Sosyalist Parti'ye uzanır."},
+    tkp52:{k:"Remzi Oğuz Arık", o:"19 Mayıs 1952'de kuruldu; Türk milliyetçiliği ve tarımcılığı savundu. 1957 seçiminden sonra Cumhuriyetçi Millet Partisi ile birleşti; birleşik parti 1958'de Cumhuriyetçi Köylü Millet Partisi adını aldı."},
+    vp54:{k:"Hikmet Kıvılcımlı", o:"22 Ekim 1954'te kuruldu. 30 Aralık 1957'de İstanbul Sulh Ceza Hakimliği kararıyla \"komünist metotla çalıştığı\" gerekçesiyle kapatıldı."},
+    turkparti:{k:"Ahmet Eyüp Özgüç", o:"2 Mart 2010'da kurulan Türkiye Hareketi'nin tüzük değişikliğiyle aldığı ad. Programında insan haklarına ve kişisel özgürlüklere öncelik verdiğini belirtti; 2015 seçimlerine katıldı ve aynı yıl kongre kararıyla feshedildi."},
+    hkp:{k:"Nurullah Efe", o:"15 Haziran 2005'te kuruldu. 1920'de kurulan TKP'nin ve Kıvılcımlı'nın 1954'te kurduğu Vatan Partisi'nin siyasi mirasçısı olduğunu ileri süren komünist bir partidir."}
   };
 
   const DONEMLER = [
@@ -310,7 +314,15 @@ window.PARTILER = (function(){
     {id:"edp", kisa:"EDP", ad:"Eşitlik ve Demokrasi Partisi", yil:"2010 – 2012", durum:"katildi", aile:4, donem:6,
      not:"SHP ve ÖDP'den ayrılanlar; 2012'de Yeşiller ile birleşti"},
     {id:"solparti", kisa:"SOL Parti", ad:"Sol Parti", yil:"2019 –", durum:"faal", aile:4, donem:7,
-     not:"ÖDP'nin ad değişikliği"}
+     not:"ÖDP'nin ad değişikliği"},
+    {id:"tkp52", kisa:"TKP", ad:"Türkiye Köylü Partisi", yil:"1952 – 1958", durum:"katildi", aile:3, donem:1,
+     not:"Remzi Oğuz Arık; 1958'de CMP ile birleşip CKMP oldu"},
+    {id:"vp54", kisa:"VP", ad:"Vatan Partisi", yil:"1954 – 1957", durum:"kapatildi", aile:4, donem:1,
+     not:"Hikmet Kıvılcımlı; mahkeme kararıyla kapatıldı"},
+    {id:"turkparti", kisa:"TURK PARTİ", ad:"Toplumsal Uzlaşma Reform ve Kalkınma Partisi", yil:"2010 – 2015", durum:"kapandi", aile:6, donem:6,
+     not:"Ahmet Eyüp Özgüç; 2015'te kongre kararıyla feshedildi"},
+    {id:"hkp", kisa:"HKP", ad:"Halkın Kurtuluş Partisi", yil:"2005 –", durum:"faal", aile:4, donem:6,
+     not:"Nurullah Efe; komünist parti"}
   ];
 
   const E = [
@@ -354,7 +366,7 @@ window.PARTILER = (function(){
     ["tkp20","thif","devam"], ["tkp20","tbkp","katilma"], ["tip61","tip75","devam"], ["tip75","tbkp","katilma"],
     ["tip75","odp","bolunme"], ["tip75","emep","bolunme"],
     ["tip61","tip17","bolunme"], ["ip92","vatan","devam"],
-    ["idp","mp92","devam"], ["anap","ydp","bolunme"], ["ydp","genc","devam"], ["sip93","tkp01","devam"], ["dbp96","hakpar","katilma"], ["dsp","depar","bolunme"], ["shp02","edp","katilma"], ["odp","edp","bolunme"], ["edp","yesilsol","katilma"], ["odp","solparti","devam"]
+    ["idp","mp92","devam"], ["anap","ydp","bolunme"], ["ydp","genc","devam"], ["sip93","tkp01","devam"], ["dbp96","hakpar","katilma"], ["dsp","depar","bolunme"], ["shp02","edp","katilma"], ["odp","edp","bolunme"], ["edp","yesilsol","katilma"], ["odp","solparti","devam"], ["tkp52","ckmp","katilma"]
   ];
 
   const ROZET = {
