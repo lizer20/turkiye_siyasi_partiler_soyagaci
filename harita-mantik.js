@@ -137,8 +137,30 @@
         (yok ? '<li><i class="h-i-yok"></i>o tarihte ayrı il değildi<span>' + yok + " il</span></li>" : "") + "</ul>";
     }
 
+    /* Referandumda Türkiye geneli evet/hayır oranı (Sandık kaydındaki resmî sonuç) */
+    function referandumOzetHTML(k) {
+      if (!k || k.evet == null || k.hayir == null) return "";
+      const g = k.gecerli || (k.evet + k.hayir), e = k.evet / g * 100, h = k.hayir / g * 100;
+      const satir = (ad, pay, oy, renk) => '<li><i style="background:' + renk + '"></i><b>' + ad + "</b><span>" +
+        O.yuzdeYaz(pay) + " · " + O.sayiYaz(oy) + " oy</span></li>";
+      return '<div class="h-ozet"><div class="p-etiket">Türkiye geneli</div>' +
+        '<div class="h-ozet-cubuk" role="img" aria-label="' + M.kacis("Evet " + O.yuzdeYaz(e) + ", Hayır " + O.yuzdeYaz(h)) + '">' +
+        '<span style="width:' + e.toFixed(2) + '%;background:#3A6EA5"></span><span style="width:' + h.toFixed(2) + '%;background:#B8502A"></span></div>' +
+        '<ul class="h-lejant">' + satir("Evet", e, k.evet, "#3A6EA5") + satir("Hayır", h, k.hayir, "#B8502A") + "</ul>" +
+        (k.karar ? '<div class="h-ozet-karar">' + (k.karar === "kabul" ? "kabul edildi" : "reddedildi") + "</div>" : "") + "</div>";
+    }
+
     function tabloHTML(k, veri) {
       const { iller: ilSonuc } = iller(k, veri);
+      if (referandumMu(veri)) {
+        const satirlar = IL.iller.slice().sort((a, b) => a.ad.localeCompare(b.ad, "tr"))
+          .filter(il => ilSonuc.get(il.plaka).durum === "var")
+          .map(il => { const r = ilSonuc.get(il.plaka);
+            return '<tr><th scope="row">' + M.kacis(il.ad) + "</th><td>" + r.kazanan + "</td><td>" + O.yuzdeYaz(r.evetPay) +
+              "</td><td>" + O.yuzdeYaz(100 - r.evetPay) + "</td></tr>"; });
+        return '<table class="h-tablo"><thead><tr><th scope="col">İl</th><th scope="col">Çoğunluk</th>' +
+          '<th scope="col">Evet</th><th scope="col">Hayır</th></tr></thead><tbody>' + satirlar.join("") + "</tbody></table>";
+      }
       const satirlar = IL.iller.slice().sort((a, b) => a.ad.localeCompare(b.ad, "tr"))
         .filter(il => ilSonuc.get(il.plaka).durum !== "yok")
         .map(il => { const r = ilSonuc.get(il.plaka);
@@ -146,13 +168,11 @@
             (/^seçim tekrarlandı/.test(r.not || "") ? " <small>(seçim tekrarlandı)</small>" : "") +
             "</td><td>" + M.kacis(r.sira.slice(1, 3).map(s => kisaAd(s.anahtar) + (s.pay != null ? " " + O.yuzdeYaz(s.pay) : "")).join(" · ")) +
             "</td><td>" + (r.sira[0] && r.sira[0].pay != null ? O.yuzdeYaz(r.sira[0].pay) : r.sira[0] && r.sira[0].oy != null ? O.sayiYaz(r.sira[0].oy) + " oy" : "—") + "</td></tr>"; });
-      const ref = referandumMu(veri);
-      return '<table class="h-tablo"><thead><tr><th scope="col">İl</th><th scope="col">' + (ref ? "Çoğunluk" : "Birinci") + "</th>" +
-        '<th scope="col">' + (ref ? "Diğer" : "Sonrakiler") + '</th><th scope="col">' + (ref ? "Çoğunluğun payı" : "Birincinin payı") +
-        "</th></tr></thead><tbody>" + satirlar.join("") + "</tbody></table>";
+      return '<table class="h-tablo"><thead><tr><th scope="col">İl</th><th scope="col">Birinci</th>' +
+        '<th scope="col">Sonrakiler</th><th scope="col">Birincinin payı</th></tr></thead><tbody>' + satirlar.join("") + "</tbody></table>";
     }
 
-    return { ilBul, iller, renkler, karistir, ipucu, haritaSVG, lejantHTML, tabloHTML };
+    return { ilBul, iller, renkler, karistir, ipucu, haritaSVG, lejantHTML, tabloHTML, referandumOzetHTML };
   }
   return { olustur };
 });

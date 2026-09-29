@@ -49,7 +49,8 @@
       " · " + olcu + '</span><a href="sandik.html#' + k.id + '">seçimin ayrıntıları →</a>';
     cizim.innerHTML = H.haritaSVG(k, v, { buyuk: true });
     ilGoster(null);
-    yan.innerHTML = '<div class="p-etiket">' + (k.tur === "referandum" ? "İllerin oyu" : "İl kazanan") + '</div>' + H.lejantHTML(k, v) +
+    yan.innerHTML = (k.tur === "referandum" ? H.referandumOzetHTML(k) : "") +
+      '<div class="p-etiket">' + (k.tur === "referandum" ? "İllerin oyu" : "İl kazanan") + '</div>' + H.lejantHTML(k, v) +
       (v.not ? '<div class="h-not">' + M.kacis(v.not) + "</div>" : "");
     tablo.innerHTML = H.tabloHTML(k, v);
     history.replaceState(null, "", "#" + id);

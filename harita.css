@@ -16,6 +16,13 @@
 .h-lejant .h-taraf{border-bottom:none;padding-top:8px}
 .h-lejant .h-taraf b{font-weight:600}
 .h-lejant span{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--soluk)}
+.h-ozet{margin-bottom:14px}
+.h-ozet-cubuk{display:flex;height:12px;margin:6px 0 4px;background:var(--h-bos)}
+.h-ozet-cubuk span{display:block;height:100%}
+.h-ozet-cubuk span+span{margin-left:2px}
+.h-ozet .h-lejant b{font-weight:600}
+.h-ozet .h-lejant span{font-size:12px;color:#2A2E22}
+.h-ozet-karar{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--soluk);margin-top:4px}
 .gizli{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* sayfa */

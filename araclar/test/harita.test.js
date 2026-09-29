@@ -80,3 +80,16 @@ test("referandum: evet oranına göre çoğunluk ve renk basamağı", () => {
   assert.match(svg, /data-plaka="09"[^>]*fill="#F2CDB8"/);   // hayır %50–55
   assert.match(H.lejantHTML(k, veri), /Evet çoğunlukta<\/b><span>1 il/);
 });
+
+test("referandum: Türkiye geneli özet ve il tablosunda evet/hayır yüzdeleri", () => {
+  const ozet = H.referandumOzetHTML({ evet: 60, hayir: 40, gecerli: 100, karar: "kabul" });
+  assert.match(ozet, /Türkiye geneli/);
+  assert.match(ozet, /<b>Evet<\/b><span>%60,0 · 60 oy/);
+  assert.match(ozet, /<b>Hayır<\/b><span>%40,0 · 40 oy/);
+  assert.match(ozet, /kabul edildi/);
+  assert.equal(H.referandumOzetHTML({}), "");
+  const veri = { olcu: "referandum", iller: { "Adana": { gecerli: 100, evet: 62, hayir: 38 } } };
+  const t = H.tabloHTML(k, veri);
+  assert.match(t, /<th scope="col">Evet<\/th><th scope="col">Hayır<\/th>/);
+  assert.match(t, /Adana<\/th><td>Evet<\/td><td>%62,0<\/td><td>%38,0/);
+});
