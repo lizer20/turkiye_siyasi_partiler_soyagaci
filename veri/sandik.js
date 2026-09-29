@@ -568,8 +568,8 @@ window.SANDIK = {
       belediye: { yapilan: 1355, sonuc: [ { parti: "akp", sayi: 742 }, { parti: "chp92", sayi: 240 }, { parti: "mhp93", sayi: 233 }, { parti: "hdp", sayi: 57 }, { parti: "iyi", sayi: 24 }, { parti: "sp", sayi: 21 }, { parti: "bbp", sayi: 10 }, { parti: "dp07", sayi: 8 }, { parti: "dsp", sayi: 6 }, { parti: "tkp01", sayi: 1 }, { ad: "Bağımsız", sayi: 13 } ],
         buyuksehir: [ { parti: "akp", sayi: 15 }, { parti: "chp92", sayi: 10 }, { parti: "hdp", sayi: 3 }, { parti: "mhp93", sayi: 1 } ],
         not: "YSK'nın Resmî Gazete'deki kesin sonuç ilanı; iptal edilen 4 belediye dahil değil. İstanbul büyükşehir seçimi iptal edildiği için büyükşehir sayısı 29'dur." },
-      buyuksehir: { ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
-      not: "İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
+      buyuksehir: { istanbul: { parti: "chp92", dipnot: "seçim tekrarlandı" }, ankara: { parti: "chp92" }, izmir: { parti: "chp92" } },
+      not: "İstanbul'da 31 Mart'ta CHP adayı Ekrem İmamoğlu önde bitirdi ve 17 Nisan'da mazbatasını aldı; İstanbul Büyükşehir Belediye Başkanlığı seçimi YSK'nın 6 Mayıs 2019 tarihli kararıyla iptal edilip 23 Haziran'da yenilendi. Ülke geneli sayılar yalnızca YSK'nın resmî ilanına dayanır; bağımsız ikinci bir kaynak bulunamadı." },
 
     // kaynak: araclar/kaynak-defteri.md#2019-06-yerel
     { id: "2019-06-yerel", tur: "yerel", tarih: "2019-06-23", kapsam: "İstanbul",

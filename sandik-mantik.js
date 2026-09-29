@@ -312,7 +312,8 @@
         if (k.belediye) govde += '<div class="s-baskanlik">başkanlık · ' + k.belediye.sonuc.filter(x => x.ad !== BAGIMSIZ).slice(0, 3)
           .map(x => "<b>" + kacis(partiAdi(x).kisa) + "</b> " + O.sayiYaz(x.sayi)).join(" · ") + "</div>";
         if (k.buyuksehir) govde += '<div class="s-sehirler">' + SEHIRLER.filter(x => k.buyuksehir[x[0]])
-          .map(x => x[1] + " · <b>" + kacis(partiAdi(k.buyuksehir[x[0]]).kisa) + "</b>").join("<br>") + "</div>";
+          .map(x => x[1] + " · <b>" + kacis(partiAdi(k.buyuksehir[x[0]]).kisa) + "</b>" +
+            (k.buyuksehir[x[0]].dipnot ? " (" + kacis(k.buyuksehir[x[0]].dipnot) + ")" : "")).join("<br>") + "</div>";
       } else if (k.tur === "referandum") {
         const e = O.yuzde(k.evet, k.gecerli), h = O.yuzde(k.hayir, k.gecerli);
         govde = '<div class="s-baslik s-konu" title="' + kacis(k.konu) + '">' + kacis(k.konu) + "</div>" +
@@ -416,7 +417,8 @@
         h += liste("Sonuç", sirali.map(s => sonucSatiri(k, s, false)));
         h += baskanlikHTML(k);
         if (k.buyuksehir) h += liste("Büyükşehirler", SEHIRLER.filter(x => k.buyuksehir[x[0]]).map(x =>
-          "<li><b>" + x[1] + "</b>" + partiBag(k.buyuksehir[x[0]].parti) + "<span>" + kacis(k.buyuksehir[x[0]].aday) + "</span></li>"));
+          "<li><b>" + x[1] + "</b>" + partiBag(k.buyuksehir[x[0]].parti) + "<span>" +
+            [k.buyuksehir[x[0]].aday, k.buyuksehir[x[0]].dipnot].filter(Boolean).map(kacis).join(" · ") + "</span></li>"));
       } else if (k.tur === "referandum") {
         h += '<div class="p-ozet">' + kacis(k.konu) + "</div>";
         h += meta(["katılım " + O.yuzdeYaz(katilimDegeri(k)), k.karar === "kabul" ? "kabul" : "ret"]);

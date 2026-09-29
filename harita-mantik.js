@@ -143,6 +143,7 @@
         .filter(il => ilSonuc.get(il.plaka).durum !== "yok")
         .map(il => { const r = ilSonuc.get(il.plaka);
           return "<tr><th scope=\"row\">" + M.kacis(il.ad) + "</th><td>" + (r.kazanan ? M.kacis(kisaAd(r.kazanan)) : "—") +
+            (/^seçim tekrarlandı/.test(r.not || "") ? " <small>(seçim tekrarlandı)</small>" : "") +
             "</td><td>" + M.kacis(r.sira.slice(1, 3).map(s => kisaAd(s.anahtar) + (s.pay != null ? " " + O.yuzdeYaz(s.pay) : "")).join(" · ")) +
             "</td><td>" + (r.sira[0] && r.sira[0].pay != null ? O.yuzdeYaz(r.sira[0].pay) : r.sira[0] && r.sira[0].oy != null ? O.sayiYaz(r.sira[0].oy) + " oy" : "—") + "</td></tr>"; });
       const ref = referandumMu(veri);

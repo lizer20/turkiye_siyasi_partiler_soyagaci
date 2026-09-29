@@ -4732,3 +4732,30 @@ Tunceli kazananı TKP kimliklere bağlandı. Eklenen düğümler:
 | vp54 | Vatan Partisi (1954) | 1954–1957 · kapatıldı · Sosyalist sol | VP (22.10.1954, Kıvılcımlı; 30.12.1957 İstanbul Sulh Ceza 57/227 kararıyla kapatıldı). 27.10.1957 seçimine katılması tarihle tutarlı. Tek kaynak. |
 | turkparti | Toplumsal Uzlaşma Reform ve Kalkınma Partisi (TURK PARTİ) | 2010–2015 · feshedildi · Liberal | Sabah seçim sayfası (kısaltma TURK PARTİ; 2010; Özgüç; program: "insan haklarına kişisel özgürlüklere ilişkin öncelik") + VP (2.3.2010 Türkiye Hareketi; 5.12.2015 olağan kongre kararıyla fesih). **Çelişki:** bir web arama özeti "AYM 23.4.2022" diyordu; belgeye bağlanamadı, VP'deki fesih tarihi yazıldı. YCB-F'de (2026) yok — faal değil, tutarlı. |
 | hkp | Halkın Kurtuluş Partisi | 2005– · faal · Sosyalist sol | YCB-F (15.06.2005) + VP (Nurullah Efe; komünizm; 1920 TKP'si ve 1954 Vatan Partisi'nin mirasçısı olduğunu ileri sürer — bağ kurulmadı, iddia tüzel bağ değil). |
+
+## Tekrarlanan seçimler: ilk seçimin sonucu + "seçim tekrarlandı" dipnotu (2026-09-29)
+
+**Kullanıcı kararı:** "31 Mart 2019 seçiminde İstanbul'u CHP olarak göster ve dipnot olarak seçim tekrarlandı olarak
+kayda geçir … bütün yeniden yapılan seçimlere aynısını uygula." Önceki kural (yenilenen il boş) değişti: ilk seçimin
+kazananı kaynakla kesinse o gösterilir; kesin değilse il boş kalır, not "seçim tekrarlandı: …" diye başlar
+(harita tablosunda da "(seçim tekrarlandı)" yazar). Oy sayıları kaynaklar arasında tutmadığı için yazılmadı.
+
+- **2019 İstanbul → CHP.** Tr. Vikipedi "2019 İstanbul ara yerel seçimi": YSK Başkanı'nın açıklamasına göre İmamoğlu
+  4.159.650 oyla önde; 17 Nisan 2019'da mazbatasını aldı; YSK 6 Mayıs 2019'da 7'ye karşı 4 oyla iptal etti. VOA Türkçe
+  ("İstanbul Seçimlerinde Kim Kazandı Kim Kaybetti?"): "Bir önceki seçimi yaklaşık 14 bin farkla önde bitiren İmamoğlu".
+  Oy sayısı yazılmadı (bir arama özeti 4.169.765 – 4.156.036 veriyordu; tutmuyor). Harita il notu + Sandık
+  `2019-03-yerel.buyuksehir.istanbul = { parti: "chp92", dipnot: "seçim tekrarlandı" }`; kart ve pencere dipnotu
+  gösteriyor. Belediye sayıları (RG ilanı: 29 büyükşehir) değiştirilmedi — resmî ilan İstanbul'u saymıyor, not bunu söylüyor.
+- **1994 Nevşehir → RP.** Anadolu Ajansı, "Siyasi tarihin en ilginç seçim iptali" (`aa.com.tr/tr/politika/…/1450658`):
+  ilk seçimi RP adayı Yalçın Demir (~%32, ~9 bin oy) kazandı; DYP ambleminin ters basılması gerekçesiyle YSK 4'e
+  karşı 3 oyla iptal etti; 3 Temmuz'da tekrarlanan seçimi yine Demir kazandı (~%45). Tek kaynak (yenileme sonucu
+  TÜİK ile tutarlı).
+- **2014 Yalova → boş.** Tr. Vikipedi: 30 Mart CHP (Salman) 27.229 – AK Parti (Koçal) 27.223 (CHP +6). En. Vikipedi:
+  "subsequent recounts requested by the AKP put Koçal ahead by a single vote", kazanan belirlenemedi → çelişki.
+  Yenileme 1.6.2014: CHP 29.227 – AK Parti 28.999.
+- **2014 Ağrı → boş.** Tr. Vikipedi: 30 Mart AK Parti (Arslan) 20.616 – BDP (Sakık) 20.610 (AK Parti +6). Hürriyet
+  "İşte Ağrı'da seçimi iptal ettiren yırtık torba": Sakık'ın "10 oy farkla kazandığı açıklanan" seçim; ilçe seçim
+  kurulu 6 Nisan 2014'te iptal etti → çelişki. Yenileme 1.6.2014: BDP 23.460 – AK Parti 20.609.
+- **1973 Ağrı → boş.** Tr. Vikipedi "Ağrı'da 1973 Türkiye yerel seçimleri" (arama özeti): ilk sayımda DP (Cevdet Elçi)
+  CHP'yi 25 oyla geçti; il seçim kurulu 33 oyu iptal edince CHP kazanmış sayıldı; YSK DP itirazını haklı bulup seçimi
+  yeniledi (2.6.1974, CHP kazandı). Seçim günü sonucu tek bir kazanana bağlanamıyor.
