@@ -105,7 +105,7 @@
   const H = window.HaritaMantik && window.ILLER ? window.HaritaMantik.olustur(window.ILLER, M, O) : null;
   function haritaHTML(k) {
     if (!H || !V[k.id]) return "";
-    return '<div class="p-etiket">' + (k.tur === "genel" ? "İllere göre birinci parti" : "İl merkezi belediye başkanlıkları") +
+    return '<div class="p-etiket">' + (k.tur === "genel" ? "İllere göre birinci parti" : k.tur === "referandum" ? "İllere göre evet ve hayır" : "İl merkezi belediye başkanlıkları") +
       '</div><div class="p-harita">' + H.haritaSVG(k, V[k.id]) + '<div class="h-secili"></div>' + H.lejantHTML(k, V[k.id]) +
       '<div class="p-harita-bag"><a href="harita.html#' + k.id + '">büyük haritada aç →</a></div></div>';
   }

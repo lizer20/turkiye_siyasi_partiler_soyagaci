@@ -68,3 +68,15 @@ test("SVG: 81 il yolu, ipuçları kaçırılmış, açıklama il sayılarını v
   assert.match(lj, /o tarihte ayrı il değildi<span>79 il/);
   assert.match(H.tabloHTML(k, veri), /<th scope="row">Adana<\/th>/);
 });
+
+test("referandum: evet oranına göre çoğunluk ve renk basamağı", () => {
+  const veri = { olcu: "referandum", iller: { "Adana": { gecerli: 100, evet: 62, hayir: 38 }, "Aydın": { gecerli: 100, evet: 47, hayir: 53 } } };
+  const { iller } = H.iller(k, veri);
+  assert.equal(iller.get("01").kazanan, "Evet");
+  assert.equal(iller.get("09").kazanan, "Hayır");
+  assert.match(H.ipucu(w.ILLER.iller[0], iller.get("01")), /Adana — Evet %62,0 · Hayır %38,0/);
+  const svg = H.haritaSVG(k, veri);
+  assert.match(svg, /data-plaka="01"[^>]*fill="#7FA6CC"/);   // evet %55–65
+  assert.match(svg, /data-plaka="09"[^>]*fill="#F2CDB8"/);   // hayır %50–55
+  assert.match(H.lejantHTML(k, veri), /Evet çoğunlukta<\/b><span>1 il/);
+});

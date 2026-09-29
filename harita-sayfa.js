@@ -7,7 +7,7 @@
   const H = window.HaritaMantik.olustur(window.ILLER, M, O);
 
   // yalnızca il verisi olan seçimler
-  const secimler = S.secimler.filter(k => (k.tur === "genel" || k.tur === "yerel") && V[k.id]);
+  const secimler = S.secimler.filter(k => (k.tur === "genel" || k.tur === "yerel" || k.tur === "referandum") && V[k.id]);
   let tur = "genel";
 
   const sec = document.getElementById("hSecim");
@@ -44,12 +44,12 @@
       return;
     }
     const v = V[id];
-    const olcu = k.tur === "genel" ? "ilde en çok oyu alan parti" : "il merkezi / büyükşehir belediye başkanlığı";
+    const olcu = k.tur === "genel" ? "ilde en çok oyu alan parti" : k.tur === "referandum" ? "ilde evet ya da hayır oyunun oranı" : "il merkezi / büyükşehir belediye başkanlığı";
     baslik.innerHTML = "<b>" + k.tarih.slice(0, 4) + " " + M.TUR_AD[k.tur] + "</b><span>" + O.tarihYaz(k.tarih) +
       " · " + olcu + '</span><a href="sandik.html#' + k.id + '">seçimin ayrıntıları →</a>';
     cizim.innerHTML = H.haritaSVG(k, v, { buyuk: true });
     ilGoster(null);
-    yan.innerHTML = '<div class="p-etiket">İl kazanan</div>' + H.lejantHTML(k, v) +
+    yan.innerHTML = '<div class="p-etiket">' + (k.tur === "referandum" ? "İllerin oyu" : "İl kazanan") + '</div>' + H.lejantHTML(k, v) +
       (v.not ? '<div class="h-not">' + M.kacis(v.not) + "</div>" : "");
     tablo.innerHTML = H.tabloHTML(k, v);
     history.replaceState(null, "", "#" + id);

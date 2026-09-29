@@ -402,6 +402,7 @@
         h += liste("Sonuç", [
           "<li><b>Evet</b><span>" + O.yuzdeYaz(O.yuzde(k.evet, k.gecerli)) + " · " + O.sayiYaz(k.evet) + " oy</span></li>",
           "<li><b>Hayır</b><span>" + O.yuzdeYaz(O.yuzde(k.hayir, k.gecerli)) + " · " + O.sayiYaz(k.hayir) + " oy</span></li>"]);
+        h += harita;
         for (const [t, ad] of [["evet", "Evet dedi"], ["hayir", "Hayır dedi"], ["boykot", "Boykot etti"], ["serbest", "Serbest bıraktı"]]) {
           const p = (k.tutumlar || []).filter(x => x.tutum === t);
           if (p.length) h += '<div class="p-etiket">' + ad + '</div><div class="p-ozet">' + p.map(x => partiBag(x.parti)).join(", ") + "</div>";

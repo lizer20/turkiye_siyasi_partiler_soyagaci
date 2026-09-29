@@ -4619,3 +4619,27 @@ bu toplam denetimiyle seçildi.
 - **Bilinmiyor (1):** Tunceli (bağımsızlar toplamı %39,4, SODEP %35,7).
 - Sonuç: 67 il; ANAP 55, SODEP 7, MDP 2, RP 2, bilinmiyor 1.
 - 1930–1955 yerel seçimleri için il il sonuç veren bir kaynak bulunamadığından bu yıllara harita eklenmedi.
+
+## Harita — referandum haritaları (2026-09-29)
+
+Kaynak: YSK Halkoylaması Arşivi il tabloları (`ysk.gov.tr/doc/dosyalar/docs/…`): 1961
+(`1961Referandum/9-Temmuz-1961-Halk-Oylaması.pdf`), 1982 (`1982Referandum/7-Kasım-1982-Halk-Oylaması.pdf`),
+1987 (`1987Referandum/6-Eylul-1987-Halkoylaması.pdf`), 1988 (`1988Referandum/25-Eylul-1988-Halk-Oylaması.pdf`),
+2007 (`2007Referandum/iller/turkiye.pdf`), 2010 (`2010Referandum/KesinSonuc/ilSonuclari.pdf`).
+`pdftotext -layout` ile okundu; her satırda geçerli = evet + hayır denetlendi (hepsi tuttu).
+
+- **İl toplamları (denetim):** 1961 evet 6.348.092 / hayır 3.933.944; 1982 17.215.559 / 1.626.431 —
+  Sandık kayıtlarıyla birebir. 1987 67 il: 11.605.417 / 11.497.531 (kayıt il + gümrük). 2007 ve 2010:
+  81 il toplamı belgelerin TOPLAM satırıyla birebir (19.403.987 / 8.738.794; 21.667.427 / 15.781.873).
+- **1988 kaydında düzeltme:** 67 il toplamı evet 8.025.131, hayır 14.911.631; gümrük 4 kapı evet 9.802,
+  hayır 10.314. Kayıttaki 8.034.933 / 14.921.945 (ve kayıtlı 26.739.227, kullanılan 23.750.873, geçerli
+  22.956.878) il + gümrük toplamına **birebir** eşit. Yani sayılar doğru, ama kayıt notundaki ve bu
+  defterin 1988 maddesindeki "yalnızca il toplamı, gümrük dahil değil" ifadesi yanlıştı (%88,82 katılım
+  her iki kapsamda da aynı yuvarlanıyor). Not "67 ilin ve 4 gümrük kapısının toplamı" olarak düzeltildi.
+- Haritada yalnızca il sandıkları var (gümrük kapısı, yurt dışı, ceza infaz kurumu oyları il değil).
+- Çoğunluk sayıları: 1961 evet 56 – hayır 11 il (kayıt notuyla aynı); 1982 evet 67; 1987 evet 27 –
+  hayır 40; 1988 evet 1 – hayır 66; 2007 evet 74 – hayır 7; 2010 evet 62 – hayır 19.
+- **2017:** il tablosu için YSK'nın `sonuc.ysk.gov.tr`, `acikveri.ysk.gov.tr` ve arşiv sayfası bu
+  çalışma ortamından açılamadı (bağlantı reddedildi); il il resmî kaynak bulunmadan harita eklenmedi.
+- Renkler: evet mavi (#C3D5E8 → #1F4A7A), hayır turuncu (#F2CDB8 → #7F2E14); basamaklar %50–55,
+  %55–65, %65–80, %80 ve üstü.

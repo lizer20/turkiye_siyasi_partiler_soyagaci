@@ -351,7 +351,7 @@ window.SANDIK = {
       kayitli: 26739227, kullanilan: 23750873, gecerli: 22956878,
       evet: 8034933, hayir: 14921945, karar: "ret",
       tutumlar: [ { parti: "anap", tutum: "evet" }, { parti: "dyp", tutum: "hayir" }, { parti: "shp", tutum: "hayir" } ],
-      not: "Katılım %88,8 — Türkiye'de sonucu 'hayır' çıkan tek referandum. Sayılar yalnızca il toplamlarıdır; gümrük kapısı oyları dahil değildir." },
+      not: "Katılım %88,8 — Türkiye'de sonucu 'hayır' çıkan tek referandum. Sayılar 67 ilin ve 4 gümrük kapısının toplamıdır." },
 
     // kaynak: araclar/kaynak-defteri.md#1989-03-yerel
     { id: "1989-03-yerel", tur: "yerel", tarih: "1989-03-26",

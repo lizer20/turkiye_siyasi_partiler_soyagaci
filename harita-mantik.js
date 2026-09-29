@@ -31,7 +31,11 @@
         const il = ilBul(ad);
         if (!il) { eslesmeyen.push(ad); continue; }
         let r;
-        if (v.oy && typeof v.oy === "object") {                 // genel seçim: il il parti oyları
+        if (v.evet != null && v.hayir != null) {                // referandum: evet/hayır
+          const g = v.gecerli || (v.evet + v.hayir), pe = v.evet / g * 100;
+          const e = { anahtar: "Evet", oy: v.evet, pay: pe }, h = { anahtar: "Hayır", oy: v.hayir, pay: 100 - pe };
+          r = { durum: "var", kazanan: v.evet >= v.hayir ? "Evet" : "Hayır", evetPay: pe, sira: v.evet >= v.hayir ? [e, h] : [h, e] };
+        } else if (v.oy && typeof v.oy === "object") {                 // genel seçim: il il parti oyları
           const sira = Object.entries(v.oy).filter(([, n]) => n != null)
             .sort((a, b) => b[1] - a[1])
             .map(([a, n]) => ({ anahtar: a, oy: n, pay: v.gecerli ? n / v.gecerli * 100 : null }));
@@ -72,7 +76,19 @@
       return liste;
     }
 
-    function kisaAd(a) { return M.partiAdi(satir(a)).kisa; }
+    /* Referandum: evet oranına göre karşıt iki renk dizisi (mavi = evet, turuncu = hayır); oran arttıkça koyulaşır. */
+    const REF_BASAMAK = [
+      { alt: 80, ust: 101, taraf: "Evet", dolgu: "#1F4A7A" }, { alt: 65, ust: 80, taraf: "Evet", dolgu: "#3A6EA5" },
+      { alt: 55, ust: 65, taraf: "Evet", dolgu: "#7FA6CC" }, { alt: 50, ust: 55, taraf: "Evet", dolgu: "#C3D5E8" },
+      { alt: 50, ust: 55, taraf: "Hayır", dolgu: "#F2CDB8" }, { alt: 55, ust: 65, taraf: "Hayır", dolgu: "#E08A62" },
+      { alt: 65, ust: 80, taraf: "Hayır", dolgu: "#B8502A" }, { alt: 80, ust: 101, taraf: "Hayır", dolgu: "#7F2E14" }];
+    function refBasamak(r) {
+      const p = r.kazanan === "Evet" ? r.evetPay : 100 - r.evetPay;
+      return REF_BASAMAK.find(b => b.taraf === r.kazanan && p >= b.alt && p < b.ust);
+    }
+    const referandumMu = veri => veri && veri.olcu === "referandum";
+
+    function kisaAd(a) { return a === "Evet" || a === "Hayır" ? a : M.partiAdi(satir(a)).kisa; }
     function ipucu(il, r) {
       if (r.durum === "yok") return il.ad + " — bu seçimde ayrı bir il değildi";
       if (r.durum === "bilinmiyor") return il.ad + " — " + (r.not || "sonuç bilinmiyor");
@@ -84,16 +100,17 @@
     function haritaSVG(k, veri, secenek) {
       const s = secenek || {};
       const { iller: ilSonuc } = iller(k, veri);
-      const renk = new Map(renkler(ilSonuc).map(p => [p.anahtar, p.dolgu]));
+      const ref = referandumMu(veri);
+      const renk = ref ? null : new Map(renkler(ilSonuc).map(p => [p.anahtar, p.dolgu]));
       const yollar = IL.iller.map(il => {
         const r = ilSonuc.get(il.plaka);
-        const dolgu = r.durum === "var" ? renk.get(r.kazanan) : r.durum === "yok" ? "url(#h-tarama)" : "var(--h-bos)";
+        const dolgu = r.durum === "var" ? (ref ? refBasamak(r).dolgu : renk.get(r.kazanan)) : r.durum === "yok" ? "url(#h-tarama)" : "var(--h-bos)";
         return '<path class="h-il h-' + r.durum + '" data-plaka="' + il.plaka + '" d="' + il.d + '" fill="' + dolgu +
           '"><title>' + M.kacis(ipucu(il, r)) + "</title></path>";
       }).join("");
       const say = [...ilSonuc.values()].filter(r => r.durum === "var").length;
       return '<svg class="h-harita' + (s.buyuk ? " h-buyuk" : "") + '" viewBox="' + IL.viewBox + '" role="img" aria-label="' +
-        M.kacis("İllere göre kazanan parti haritası, " + say + " il") + '">' +
+        M.kacis((ref ? "İllere göre referandum sonucu haritası, " : "İllere göre kazanan parti haritası, ") + say + " il") + '">' +
         '<defs><pattern id="h-tarama" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">' +
         '<rect width="6" height="6" fill="var(--h-yok)"/><line x1="0" y1="0" x2="0" y2="6" stroke="var(--h-cizgi)" stroke-width="1.6"/>' +
         "</pattern></defs>" + yollar + "</svg>";
@@ -101,9 +118,18 @@
 
     function lejantHTML(k, veri) {
       const { iller: ilSonuc } = iller(k, veri);
-      const liste = renkler(ilSonuc);
       const yok = [...ilSonuc.values()].filter(r => r.durum === "yok").length;
       const bil = [...ilSonuc.values()].filter(r => r.durum === "bilinmiyor").length;
+      if (referandumMu(veri)) {
+        const say = new Map(); for (const r of ilSonuc.values()) if (r.durum === "var") { const b = refBasamak(r); say.set(b, (say.get(b) || 0) + 1); }
+        const taraf = t => { const n = [...ilSonuc.values()].filter(r => r.kazanan === t).length;
+          return '<li class="h-taraf"><b>' + t + " çoğunlukta</b><span>" + n + " il</span></li>" +
+            REF_BASAMAK.filter(b => b.taraf === t).sort((a, b) => b.alt - a.alt).map(b => '<li><i style="background:' + b.dolgu + '"></i>' +
+              "%" + b.alt + (b.ust > 100 ? " ve üstü" : "–" + b.ust) + "<span>" + (say.get(b) || 0) + " il</span></li>").join(""); };
+        return '<ul class="h-lejant">' + taraf("Evet") + taraf("Hayır") +
+          (yok ? '<li><i class="h-i-yok"></i>o tarihte ayrı il değildi<span>' + yok + " il</span></li>" : "") + "</ul>";
+      }
+      const liste = renkler(ilSonuc);
       return '<ul class="h-lejant">' + liste.map(p => '<li><i style="background:' + p.dolgu + '"></i>' +
         (p.id ? '<a class="p-git" href="index.html#' + p.id + '">' + M.kacis(p.kisa) + "</a>" : M.kacis(p.kisa)) +
         "<span>" + p.il + " il</span></li>").join("") +
@@ -119,8 +145,10 @@
           return "<tr><th scope=\"row\">" + M.kacis(il.ad) + "</th><td>" + (r.kazanan ? M.kacis(kisaAd(r.kazanan)) : "—") +
             "</td><td>" + M.kacis(r.sira.slice(1, 3).map(s => kisaAd(s.anahtar) + (s.pay != null ? " " + O.yuzdeYaz(s.pay) : "")).join(" · ")) +
             "</td><td>" + (r.sira[0] && r.sira[0].pay != null ? O.yuzdeYaz(r.sira[0].pay) : r.sira[0] && r.sira[0].oy != null ? O.sayiYaz(r.sira[0].oy) + " oy" : "—") + "</td></tr>"; });
-      return '<table class="h-tablo"><thead><tr><th scope="col">İl</th><th scope="col">Birinci</th>' +
-        '<th scope="col">Sonrakiler</th><th scope="col">Birincinin payı</th></tr></thead><tbody>' + satirlar.join("") + "</tbody></table>";
+      const ref = referandumMu(veri);
+      return '<table class="h-tablo"><thead><tr><th scope="col">İl</th><th scope="col">' + (ref ? "Çoğunluk" : "Birinci") + "</th>" +
+        '<th scope="col">' + (ref ? "Diğer" : "Sonrakiler") + '</th><th scope="col">' + (ref ? "Çoğunluğun payı" : "Birincinin payı") +
+        "</th></tr></thead><tbody>" + satirlar.join("") + "</tbody></table>";
     }
 
     return { ilBul, iller, renkler, karistir, ipucu, haritaSVG, lejantHTML, tabloHTML };
