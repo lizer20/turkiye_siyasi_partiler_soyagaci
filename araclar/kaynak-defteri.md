@@ -4467,7 +4467,12 @@ toplamları için kullanıcı kararı ("resmî ilan yeterli") uygulandı.
   71.050 – 69.014. İkinci kaynak: yukarıdaki 1968 bölümündeki sonsoz.com.tr / Hürriyet derlemesi.
 - **İzmir → AP:** [B] DİE *1968* kitabı (`kutuphane.tuik.gov.tr/pdf/0015244.pdf`, PDF s. 757), İzmir satırı:
   AP 46.942, CHP 17.697. İkinci kaynak: Ege Üniversitesi tez özeti (Osman Kibar).
-- **İstanbul yazılmadı:** DİE'de yalnız 14 ilçe toplanarak AP önde çıkıyor; açıkça gösteren belge yok.
+- ~~**İstanbul yazılmadı:** DİE'de yalnız 14 ilçe toplanarak AP önde çıkıyor; açıkça gösteren belge yok.~~
+  **Güncelleme (2026-09-27, harita çalışması):** İstanbul → AP yazıldı. Gerekçe: aynı DİE tablosunda Ankara
+  için kent ilçelerinin toplamı (AP 70.913 – CHP 68.923) YSK kararındaki resmî sonuca (71.050 – 69.014)
+  çok yakın çıkıyor; yani ilçe toplamı yöntemi kazananı doğru veriyor. İstanbul'da fark büyük (AP 134.730 –
+  CHP 99.313; Bakırköy gibi sınırda kalan ilçeler çıkarılsa da sonuç değişmiyor) ve ikincil kaynaklarla
+  (AP'li Fahri Atabey) aynı. Aynı gerekçeyle 1963 Ankara → CHP (CHP 63.684 – AP 57.527; Halil Sezai Erkut).
 
 ### 1973-12-yerel ve 1977-12-yerel — büyükşehirler: üçü de CHP
 - **1973: [B] DİE *1973 Mahalli İdareler Seçimi*** (`kutuphane.tuik.gov.tr/pdf/0015468.pdf`, s. 58–59, 90–91)
