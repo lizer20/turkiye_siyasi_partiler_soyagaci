@@ -243,5 +243,13 @@
 
     .araclar{gap:12px}
     .yil-filtre{width:100%}
-    .yil-filtre input[type=range]{flex:1}
+    .yil-filtre input[type=range]{flex:1;height:32px}
+  }
+  /* Telefon: küçük yazılar okunur boyuta, dokunma alanları parmağa uygun */
+  @media (max-width:560px){
+    .ustmenu-link .uzun{display:none}
+    .ustmenu-ic{padding:0 6px;flex-wrap:nowrap;justify-content:space-between}
+    .ustmenu-link{padding:14px 8px 12px;letter-spacing:.06em}
+    .rozet{font-size:10.5px;padding:2px 6px}
+    .p-git{padding:3px 0}
   }

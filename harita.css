@@ -3,8 +3,10 @@
 .h-harita{display:block;width:100%;height:auto}
 .h-harita .h-il{stroke:#F5F5F0;stroke-width:.6;stroke-linejoin:round;transition:opacity .15s}
 .h-harita .h-bilinmiyor{stroke:var(--cizgi)}
-.h-harita:hover .h-il{opacity:.55}
-.h-harita .h-il:hover{opacity:1;stroke:var(--murekkep);stroke-width:1.2}
+@media (hover:hover){
+  .h-harita:hover .h-il{opacity:.55}
+  .h-harita .h-il:hover{opacity:1;stroke:var(--murekkep);stroke-width:1.2}
+}
 .h-lejant{list-style:none;margin:0;padding:0;font-size:12.5px;color:#2A2E22}
 .h-lejant li{display:flex;align-items:center;gap:8px;padding:4px 0;border-bottom:1px dotted var(--cizgi)}
 .h-lejant li:last-child{border-bottom:none}
@@ -39,6 +41,21 @@
 .h-tablo th,.h-tablo td{text-align:left;padding:4px 6px;border-bottom:1px dotted var(--cizgi);font-weight:400}
 .h-tablo thead th{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--soluk)}
 .h-tablo tbody th{font-weight:600}
+.h-secili{min-height:2.6em;margin-top:8px;padding:7px 10px;font-size:13px;line-height:1.4;color:#2A2E22;
+  background:rgba(21,24,16,.04);border-left:3px solid var(--cizgi)}
+.h-secili:empty{display:none}
+.h-harita .h-il.h-secik{stroke:var(--murekkep);stroke-width:1.6;opacity:1}
+.h-harita .h-il{cursor:pointer}
+@media (max-width:560px){
+  .tur-dugme{min-height:38px;padding-left:12px;padding-right:12px}
+  .h-secim select{min-height:38px}
+  .h-secim button{min-width:38px;min-height:38px}
+  .h-yan .p-etiket,.h-tablo thead th{font-size:11px}
+  .h-lejant li{padding:7px 0}
+  .h-ayrinti{overflow-x:auto}
+  .h-tablo{font-size:12px}
+  .h-tablo th,.h-tablo td{padding-left:4px;padding-right:4px}
+}
 @media (max-width:760px){
   .h-duzen{grid-template-columns:1fr}
   .h-sahne{padding:12px 10px}

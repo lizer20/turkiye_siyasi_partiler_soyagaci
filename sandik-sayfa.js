@@ -106,7 +106,7 @@
   function haritaHTML(k) {
     if (!H || !V[k.id]) return "";
     return '<div class="p-etiket">' + (k.tur === "genel" ? "İllere göre birinci parti" : "İl merkezi belediye başkanlıkları") +
-      '</div><div class="p-harita">' + H.haritaSVG(k, V[k.id]) + H.lejantHTML(k, V[k.id]) +
+      '</div><div class="p-harita">' + H.haritaSVG(k, V[k.id]) + '<div class="h-secili"></div>' + H.lejantHTML(k, V[k.id]) +
       '<div class="p-harita-bag"><a href="harita.html#' + k.id + '">büyük haritada aç →</a></div></div>';
   }
   function ac(id) {
@@ -118,6 +118,17 @@
   rows.addEventListener("click", e => {
     const k = e.target.closest(".s-kart"); if (k) ac(k.dataset.id);
   });
+  // paneldeki küçük haritada dokunulan ilin bilgisi haritanın altında yazılır (telefonda üzerine gelmek yok)
+  function panelIl(e) {
+    const yol = e.target.closest && e.target.closest(".p-harita .h-il"); if (!yol) return;
+    const kap = yol.closest(".p-harita");
+    kap.querySelectorAll(".h-secik").forEach(x => x.classList.remove("h-secik"));
+    yol.classList.add("h-secik");
+    const t = yol.querySelector("title");
+    kap.querySelector(".h-secili").textContent = t ? t.textContent : "";
+  }
+  document.getElementById("p-govde").addEventListener("click", panelIl);
+  document.getElementById("p-govde").addEventListener("mouseover", panelIl);
   rows.addEventListener("keydown", e => {
     const k = e.target.closest(".s-kart");
     if (k && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); ac(k.dataset.id); }

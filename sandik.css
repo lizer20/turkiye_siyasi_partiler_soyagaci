@@ -94,6 +94,15 @@
 #rows.filtreli .s-oge{opacity:.25}
 #rows.filtreli .s-oge.sonuc{opacity:1}
 
+@media (max-width:560px){
+  .t-rozet{font-size:10.5px}
+  .cubuk-yok,.s-baraj,.s-not,.s-sehirler{font-size:12px}
+  .s-koltuk .s-kb span{font-size:10px}
+  .s-oycubuk{font-size:11px}
+  #panel .p-tablo thead th,#panel .p-grup th{font-size:10.5px}
+  #panel .p-tablo small{font-size:11px}
+  .tur-dugme{min-height:38px;padding-left:11px;padding-right:11px}
+}
 @media (max-width:760px){
   .s-satir{grid-template-columns:1fr}
   .s-oge[data-tur="genel"]{grid-column:auto}

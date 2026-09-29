@@ -14,6 +14,18 @@
   const cizim = document.getElementById("hCizim"), yan = document.getElementById("hYan");
   const baslik = document.getElementById("hBaslik"), tablo = document.getElementById("hTablo");
   const turDugmeleri = document.querySelectorAll(".tur-dugme");
+  const seciliKutu = document.getElementById("hSecili");
+
+  // Telefonda fareyle üzerine gelmek olmadığı için dokunulan (ya da üzerine gelinen) ilin bilgisi haritanın altında yazılır
+  function ilGoster(yol) {
+    cizim.querySelectorAll(".h-secik").forEach(e => e.classList.remove("h-secik"));
+    if (!yol) { seciliKutu.textContent = "Sonucunu görmek için bir ile dokunun ya da üzerine gelin."; return; }
+    yol.classList.add("h-secik");
+    const t = yol.querySelector("title");
+    seciliKutu.textContent = t ? t.textContent : "";
+  }
+  cizim.addEventListener("click", e => ilGoster(e.target.closest(".h-il")));
+  cizim.addEventListener("mouseover", e => { const y = e.target.closest(".h-il"); if (y) ilGoster(y); });
 
   function liste() { return secimler.filter(k => k.tur === tur); }
   function seceneklerKur(secili) {
@@ -28,7 +40,7 @@
     if (!k) {
       baslik.innerHTML = "";
       cizim.innerHTML = '<div class="h-bos-mesaj">Bu tür için henüz il il sonuç eklenmedi.</div>';
-      yan.innerHTML = ""; tablo.innerHTML = "";
+      yan.innerHTML = ""; tablo.innerHTML = ""; seciliKutu.textContent = "";
       return;
     }
     const v = V[id];
@@ -36,6 +48,7 @@
     baslik.innerHTML = "<b>" + k.tarih.slice(0, 4) + " " + M.TUR_AD[k.tur] + "</b><span>" + O.tarihYaz(k.tarih) +
       " · " + olcu + '</span><a href="sandik.html#' + k.id + '">seçimin ayrıntıları →</a>';
     cizim.innerHTML = H.haritaSVG(k, v, { buyuk: true });
+    ilGoster(null);
     yan.innerHTML = '<div class="p-etiket">İl kazanan</div>' + H.lejantHTML(k, v) +
       (v.not ? '<div class="h-not">' + M.kacis(v.not) + "</div>" : "");
     tablo.innerHTML = H.tabloHTML(k, v);
