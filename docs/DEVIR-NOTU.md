@@ -309,6 +309,15 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
 - **22 Eylül 2026: "bütün dönemleri hiç ara vermeden tamamla artık"** → dönem durakları kaldırıldı
 - **25 Eylül 2026: "yaptığın her şeyi şimdilik durdur ve proje taşıma notu oluştur…"** → bu dosya
 
+**Harita sonrası iş listesi (29 Eylül 2026, kullanıcı kararı):**
+- **Yapılacak (öncelik sırasıyla):** telefon ekranı kontrolü (öncelikli) → yerel seçimlerde partilerin
+  kazandığı belediye sayıları → referandum haritaları (il il evet/hayır) → parti sayfasından haritaya bağlantı.
+- **Kalıcı olarak kaldırıldı:** haritadaki "sonuç bilinmiyor" illerini gazete arşiviyle doldurmak — bir daha önerme.
+- **Yapılmayacak:** halkın seçtiği cumhurbaşkanlığı seçimleri (2014/2018/2023) için harita.
+- **Sonraya bırakıldı:** tek partinin il il oy oranı haritası, iki seçim arası değişim haritası,
+  veriyi indirilebilir dosya olarak sunma.
+- **Süresiz ertelendi:** bütün verinin baştan sona ikinci denetimi — diğer işler bitince yeniden konuşulacak.
+
 ---
 
 ## 9. AÇIK İŞLER — yeni oturumun ilk bakacağı yer
