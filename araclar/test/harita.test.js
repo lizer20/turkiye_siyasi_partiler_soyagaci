@@ -93,3 +93,16 @@ test("referandum: Türkiye geneli özet ve il tablosunda evet/hayır yüzdeleri"
   assert.match(t, /<th scope="col">Evet<\/th><th scope="col">Hayır<\/th>/);
   assert.match(t, /Adana<\/th><td>Evet<\/td><td>%62,0<\/td><td>%38,0/);
 });
+
+test("genel seçim lejantı: il kazananların Türkiye geneli oy oranı ve kalanlar 'Diğer'", () => {
+  const kg = { id: "x", tur: "genel", tarih: "2000-01-01", gecerli: 100,
+    sonuc: [{ parti: "akp", oy: 50 }, { parti: "chp92", oy: 30 }, { parti: "mhp93", oy: 15 }, { ad: "Bağımsız", oy: 5 }] };
+  const veri = { iller: { "Adana": { gecerli: 10, oy: { akp: 6, chp92: 4 } }, "İzmir": { gecerli: 10, oy: { chp92: 6, akp: 4 } } } };
+  const l = H.lejantHTML(kg, veri);
+  assert.match(l, /AK Parti<\/a><span>%50,0 oy · 1 il/);
+  assert.match(l, /CHP<\/a><span>%30,0 oy · 1 il/);
+  assert.match(l, /Diğer<span>%20,0 oy/);
+  // oranı bilinmeyen parti varsa "Diğer" gösterilmez
+  kg.sonuc[2] = { parti: "mhp93", oy: null };
+  assert.ok(!/Diğer/.test(H.lejantHTML(kg, veri)));
+});
