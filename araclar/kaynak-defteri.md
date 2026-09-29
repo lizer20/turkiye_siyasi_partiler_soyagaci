@@ -4673,3 +4673,49 @@ ayrıca kontrol edildi (1989 ve 1999 metin katmanından birebir; 2024'te RG ile 
 - **2014-03-yerel** — yapılan 1351; AK PARTİ 799, CHP 226, MHP 166, BDP 97, SAADET 27, DP 14, DSP 6, BBP 6, Bağımsız 5, TKP 1, ÖDP 1, MİLLET 1, HAK-PAR 1, LDP 1; büyükşehir: AK PARTİ 18, BDP 2, CHP 6, MHP 3, Bağımsız 1. Kaynak: Resmî Gazete 6 Mayıs 2014 (mükerrer), YSK kesin sonuç ilanı - Liste 2, Liste 3, Liste 5 (Açıklama). (Mükerrer sayı numarası PDF'te görünmüyor; 7 Mayıs 2014 sayısı 28993 olduğundan bu, 6 Mayıs 2014 tarihli mükerrerdir.) (`https://www.resmigazete.gov.tr/eskiler/2014/05/20140506M1-1.pdf`, PDF s.2 (Liste-2 büyükşehir), s.3 (Liste-3 belediye), s.5 (Liste-5 Açıklama)).
 - **2019-03-yerel** — yapılan 1355; AK PARTİ 742, CHP 240, MHP 233, HDP 57, İYİ PARTİ 24, SAADET 21, Bağımsız 13, BBP 10, DP 8, DSP 6, TKP 1; büyükşehir: AK PARTİ 15, CHP 10, HDP 3, MHP 1. Kaynak: Resmî Gazete 22 Mayıs 2019 (mükerrer), sayı 30781, YSK Kararı No 2019/4577 (20.05.2019) - Liste-2, Liste-3 (`https://www.resmigazete.gov.tr/eskiler/2019/05/20190522M1-1.pdf`, Karar PDF s.3 (Liste-2), s.4 (Liste-3); YSK sitesindeki kopya: karar/dosya/78050/2019-4577.pdf).
 - **2024-03-yerel** — yapılan 1356; AK PARTİ 526, CHP 395, MHP 218, DEM PARTİ 74, YENİDEN REFAH 62, İYİ PARTİ 30, BÜYÜK BİRLİK 20, Bağımsız 11, DP 5, DEVA PARTİSİ 4, SAADET 4, SOL PARTİ 2, DSP 2, MEMLEKET 1, HÜDA PAR 1, TİP 1; büyükşehir: AK PARTİ 12, CHP 14, DEM PARTİ 3, YENİDEN REFAH 1. Kaynak: Resmî Gazete 7 Mayıs 2024, sayı 32539, YSK Kararı No 2024/2367 (6.5.2024) - Liste-2, Liste-3 (`https://www.resmigazete.gov.tr/eskiler/2024/05/20240507-5.pdf`, PDF s.4-5 (Liste-2 büyükşehir), s.6-7 (Liste-3 belediye başkanlığı)).
+
+## Soyağacı eklemeleri — seçim verisinde geçen partiler (2026-09-29)
+
+**Kullanıcı isteği (2026-09-29):** Genç Parti, ikinci SHP, Barış Partisi, Millet Partisi, Yeniden Doğuş Partisi,
+Demokrasi ve Barış Partisi, Değişen Türkiye Partisi, Sosyalist İktidar Partisi, SBP, IDP, TSİP, Sosyalist Devrim
+Partisi, Türkiye Ulusal Kadınlar Partisi ve "seçim ekranında görünüp ağaçta olmayan" bütün partiler eklensin; bir
+yere bağlanmıyorsa yalnızca ideolojik sütununa konabilir. (Türkiye Değişim Partisi zaten `tdp` olarak ağaçtaydı.)
+Tarama: `veri/sandik.js`'teki bütün `{ ad: … }` satırları (adaylar, "Diğer", "Bağımsız" hariç) → 20 ad, 17 parti.
+Eklenen 18 düğüm (17 + bağlantı için EDP), 10 bağ; ÖDP "1996 – 2019, devredildi" oldu. Sandık'taki 30 adlı
+satır parti kimliğine bağlandı.
+
+Kaynak kısaltmaları:
+- **[B] YCB-F** — Yargıtay Cumhuriyet Başsavcılığı, "Faaliyette olan siyasi partiler (kuruluş tarihine göre)",
+  16.02.2026 (`yargitaycb.gov.tr/documents/16022026FaalPartiler-kuruluştarihinegöre-1771227999.pdf`; yerel
+  kopya `$SP/B/faal.pdf`): Millet Partisi 22.03.1984, Genç Parti 26.11.1992, TSİP 03.01.1993, TKP 16.08.1993,
+  Sol Parti 08.06.1994, BTP 25.09.2001, HAK-PAR 11.02.2002.
+- **VP** — Türkçe Vikipedi madde metni (`tr.wikipedia.org/w/index.php?title=…&action=raw`); ikinci kaynak niteliğinde.
+- **AYM** — Anayasa Mahkemesi siyasi parti kararları bilgi bankası (`siyasipartikararlar.anayasa.gov.tr/SP/1995/1/1`,
+  "Sosyalist Birlik Partisi").
+- **Haber** — Gazete Duvar "ÖDP'nin yeni adı Sol Parti oldu" (22.12.2019), Evrensel (`evrensel.net/haber/393673`),
+  BirGün (`birgun.net/haber/alper-tas-sol-parti-yi-anlatti-281419`).
+
+| Kimlik | Parti | Yıl · durum · sütun | Dayanak |
+|---|---|---|---|
+| tukp | Türkiye Ulusal Kadınlar Partisi | 1972–1981 · kapatıldı · Liberal | VP (17.11.1972; 16.10.1981'de kapatıldı; "ilk yasal kadın partisi"). **Sütun:** feminist, hak temelli parti; yedi sütundan hiçbirine tam uymuyor, en yakın Liberal. Tek kaynak. |
+| tsip74 | Türkiye Sosyalist İşçi Partisi | 1974–1981 · kapatıldı · Sosyalist sol | VP (16.6.1974; kurucular; "12 Mart sonrası ilk sosyalist parti"); 1993'teki yeniden kuruluş YCB-F (03.01.1993) ile tutarlı. |
+| sdp75 | Sosyalist Devrim Partisi | 1975–1981 · kapatıldı · Sosyalist sol | VP (30.5.1975 Sosyalist Parti; 1977'de SDP adı; Aybar). Tek kaynak. |
+| idp → mp92 | IDP → Millet Partisi | 1984–1992 → 1992– · Milliyetçi | YCB-F (Millet Partisi kuruluş 22.03.1984 = IDP'nin kuruluşu) + VP (IDP 22.3.1984, 23.11.1992'de ad değişikliği). Bağ `idp→mp92` devam. |
+| sbp91 | Sosyalist Birlik Partisi | 1991–1995 · kapatıldı · Sosyalist sol | VP (15.1.1991, Sadun Aren, AYM 19.7.1995) + AYM (1995/1 kaydı). Bağ yok (kurucuların hangi partilerden geldiği "kopan bir grup" diye belirsiz). |
+| ydp → genc | Yeniden Doğuş → Genç Parti | 1992–2002 → 2002– · Merkez sağ | YCB-F (Genç Parti kuruluş 26.11.1992 = YDP) + VP (YDP 23.11.1992, ANAP'tan ayrılan Güzel; 23.8.2002 ad değişikliği; 2002'de %7,25 — Sandık kaydıyla tutarlı). Bağlar `anap→ydp` bölünme, `ydp→genc` devam. VP ideoloji: liberalizm / merkez sağ; Genç Parti: merkez ve merkez sağ. |
+| sip93 → tkp01 | SİP → TKP | 1993–2001 → 2001– · Sosyalist sol | YCB-F (TKP kuruluş 16.08.1993 = SİP) + VP (SİP 16.8.1993, 11.11.2001'de TKP adı). 1920 TKP'siyle bağ kurulmadı (ayrı tüzel kişilik). |
+| baris96 | Barış Partisi | 1996–1999 · feshedildi · Cumhuriyetçi/sosyal demokrat | VP (10.12.1996, Veziroğlu, 9.5.1999 fesih, "merkez sol"). 1999 yerel sonucu (6 başkanlık) RG ilanıyla tutarlı. Tek kaynak. |
+| dbp96 | Demokrasi ve Barış Partisi | 1996–2002 · devredildi · Radikal sol (Kürt siyasi hareketi sütunu) | VP (11.3.1996, Karakoç, 2.3.2002'de HAK-PAR ile birleşti). Bağ `dbp96→hakpar` katılma. Tek kaynak. |
+| depar | Değişen Türkiye Partisi | 1998–2002 · feshedildi · Cumhuriyetçi/sosyal demokrat | VP (24.2.1998, Çapoğlu DSP'den ayrıldı, "merkez sol", 3.3.2002 fesih). Bağ `dsp→depar` bölünme. Tek kaynak. |
+| shp02 | Sosyaldemokrat Halk Partisi | 2002–2010 · devredildi · Cumhuriyetçi/sosyal demokrat | VP (24.5.2002, Karayalçın, 13.3.2010'da EDP ile birleşme). Bağ `shp02→edp` katılma. |
+| btp | Bağımsız Türkiye Partisi | 2001– · faal · Milliyetçi | YCB-F (25.09.2001) + VP (Haydar Baş; Türk milliyetçiliği, ekonomik milliyetçilik). |
+| hakpar | Hak ve Özgürlükler Partisi | 2002– · faal · Radikal sol (Kürt siyasi hareketi sütunu) | YCB-F (11.02.2002) + VP (Abdülmelik Fırat; federalizm). |
+| edp | Eşitlik ve Demokrasi Partisi | 2010–2012 · devredildi · Sosyalist sol | VP (Mart 2010; ÖDP'den ayrılan Özgürlükçü Sol Hareket + SHP + ABF; 25.11.2012'de Yeşiller ile birleşip Yeşiller ve Sol Gelecek Partisi = `yesilsol`). Seçim verisinde geçmiyor; SHP (2002) ile YSP arasındaki bağ için eklendi. Bağlar `odp→edp` bölünme, `edp→yesilsol` katılma. |
+| solparti | Sol Parti | 2019– · faal · Sosyalist sol | YCB-F (Sol Parti kuruluş 08.06.1994 = BSP/ÖDP tüzel kişiliği) + Haber (22.12.2019 8. Olağanüstü Kongre'de ÖDP'nin adı Sol Parti oldu). Bağ `odp→solparti` devam; `odp` artık "1996 – 2019, devredildi". |
+
+- "Tek kaynak" işaretli satırlarda YCB'nin kapanmış partiler sayfalarına (sipar) bu ortamdan erişilemedi
+  ("Sayfaya Erişiminiz Engellenmiştir"); ikinci kaynak sonraki bir turda aranabilir.
+- Sandık'ta bağlanan adlar: Genç Parti, Yeniden Doğuş Partisi, Türkiye Komünist Partisi, Sosyaldemokrat Halk Partisi
+  (2002), Millet Partisi (1994/1999 yerel; 2014 belediye), Demokrasi ve Barış Partisi, Bağımsız Türkiye Partisi, Barış
+  Partisi, Türkiye Ulusal Kadınlar Partisi, TSİP, Sosyalist Devrim Partisi, Sosyalist İktidar Partisi, SBP, IDP /
+  Islahatçı Demokrasi Partisi, Sol Parti, Hak ve Özgürlükler Partisi, Değişen Türkiye Partisi.

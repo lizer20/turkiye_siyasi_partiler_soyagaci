@@ -83,7 +83,26 @@ window.PARTILER = (function(){
     tbp:{k:"Hasan Tahsin Berkman", o:"Alevi kökenli bir grup siyasetçi tarafından Birlik Partisi adıyla kuruldu; Atatürkçülük ve laiklik vurgusuyla başladı, zamanla sola kaydı. 1969'da sekiz milletvekiliyle meclise girdi, 1971'de adını Türkiye Birlik Partisi olarak değiştirdi. 12 Eylül'ün ardından kapatıldı."},
     mdp:{k:"Turgut Sunalp", o:"12 Eylül sonrasında askerî yönetimin desteğiyle kurulan ilk parti oldu ve 1983 seçiminde 71 milletvekiliyle üçüncü parti oldu. 4 Mayıs 1986'daki olağanüstü kongresinde kendini feshetti."},
     hudapar:{k:"Mehmet Hüseyin Yılmaz, ardından Zekeriya Yapıcıoğlu", o:"Kapatılan Mustazaf-Der derneğinin eski genel başkanı Mehmet Hüseyin Yılmaz tarafından kuruldu; akademik çalışmalarda İslami referanslı, muhafazakâr bir Kürt partisi olarak tanımlanır. 2023 seçiminde adaylarını AK Parti listelerinden gösterdi."},
-    tip17:{k:"Erkan Baş", o:"1961'de kurulan TİP'in adını yeniden kullanan sosyalist parti; ikisi arasında hukuki süreklilik yoktur. 2018 ve 2023'te ittifaklar yoluyla meclise girdi ve sosyalist solun uzun aradan sonra parlamentodaki sesi oldu."}
+    tip17:{k:"Erkan Baş", o:"1961'de kurulan TİP'in adını yeniden kullanan sosyalist parti; ikisi arasında hukuki süreklilik yoktur. 2018 ve 2023'te ittifaklar yoluyla meclise girdi ve sosyalist solun uzun aradan sonra parlamentodaki sesi oldu."},
+    // --- ağaca sonradan eklenen, seçim verisinde geçen partiler ---
+    tukp:{k:"Melike Bayburt, ardından Mübeccel Göktuna", o:"17 Kasım 1972'de 16 kişi tarafından kuruldu; Türkiye'nin ilk yasal kadın partisidir. Meclisteki erkek egemenliğini azaltmayı ve kadın haklarını hayata geçirmeyi amaçladı. 12 Eylül'den sonra bütün partilerle birlikte kapatıldı."},
+    tsip74:{k:"Ahmet Kaçmaz, Yalçın Yusufoğlu, Oya Baydar ve arkadaşları; genel başkan Turgut Koçak", o:"12 Mart muhtırasından sonra kurulan ilk sosyalist parti oldu (16 Haziran 1974). 12 Eylül'den sonra kapatıldı; aynı adla 1993'te yeniden kuruldu."},
+    sdp75:{k:"Mehmet Ali Aybar", o:"1971'de TİP'ten ayrılan Aybar ve arkadaşlarınca 30 Mayıs 1975'te Sosyalist Parti adıyla kuruldu; 1977 kurultayında Sosyalist Devrim Partisi adını aldı. Demokratik sosyalizmi savundu; 12 Eylül'den sonra kapatıldı."},
+    idp:{k:"Aykut Edibali", o:"Yeniden Millî Mücadele dergisi çevresinden 48 kişinin katılımıyla 22 Mart 1984'te kuruldu. 1992'de olağanüstü kongresinde adını Millet Partisi olarak değiştirdi."},
+    mp92:{k:"Aykut Edibali", o:"Islahatçı Demokrasi Partisi'nin 23 Kasım 1992'deki olağanüstü kongresinde aldığı ad; 1948 ve 1962'deki Millet Partilerinden ayrı bir partidir. Yargıtay Cumhuriyet Başsavcılığı kayıtlarında kuruluş tarihi IDP'nin kuruluş tarihidir (22 Mart 1984)."},
+    sbp91:{k:"Sadun Aren", o:"TBKP, TSİP ve Sosyalist Parti'den kopan bir grup ile bağımsız sosyalist aydınlar tarafından 15 Ocak 1991'de kuruldu. Girdiği tek seçim 1994 yerel seçimi oldu; Anayasa Mahkemesi 1995'te kapattı."},
+    ydp:{k:"Hasan Celal Güzel", o:"ANAP'tan ayrılan Hasan Celal Güzel tarafından 23 Kasım 1992'de kuruldu. 2002'de Cem Uzan ve arkadaşlarının katılmasıyla adını Genç Parti olarak değiştirdi."},
+    sip93:{o:"1978'de TİP'teki ayrışmadan doğan Sosyalist İktidar grubunun, Anayasa Mahkemesince kapatılan Sosyalist Türkiye Partisi'nin ardından 16 Ağustos 1993'te kurduğu parti. 2001'de adını Türkiye Komünist Partisi olarak değiştirdi."},
+    baris96:{k:"Ali Haydar Veziroğlu", o:"1995'te kurulan Demokratik Barış Hareketi'nin 10 Aralık 1996'da partileşmesiyle doğdu. 1999 yerel seçiminde altı belediye başkanlığı kazandı; aynı yıl son kongresinde kendini feshetti."},
+    dbp96:{k:"Refik Karakoç", o:"Demokrasi ve Değişim Partisi hakkında kapatma davası açılınca parti yöneticilerince 11 Mart 1996'da kuruldu. 2002'de Hak ve Özgürlükler Partisi ile birleşti."},
+    depar:{k:"Gökhan Çapoğlu", o:"DSP'den siyasete atılıp partiden ayrılan akademisyen Gökhan Çapoğlu tarafından 24 Şubat 1998'de kuruldu. 1999 seçiminde %0,12 oy aldı; 2002'de olağanüstü kongresinde kendini kapattı."},
+    genc:{k:"Cem Uzan", o:"Cem Uzan ve arkadaşlarının katıldığı Yeniden Doğuş Partisi'nin 23 Ağustos 2002'de adını değiştirmesiyle doğdu. 2002 genel seçiminde %7,25 oy aldı ama yüzde 10 barajını aşamadı."},
+    shp02:{k:"Murat Karayalçın", o:"24 Mayıs 2002'de kuruldu; 1985–1995 arasındaki Sosyaldemokrat Halkçı Parti'den ayrı bir partidir. 2004 yerel seçiminde DEHAP ve soldaki küçük partilerle ittifak yaptı. 2010'da Eşitlik ve Demokrasi Partisi ile birleşti."},
+    btp:{k:"Ata Selçuk; 2002'den itibaren Haydar Baş", o:"25 Eylül 2001'de kuruldu; 2002'de genel başkanlığına Haydar Baş seçildi. \"Millî Ekonomi Modeli\" adlı devletçi bir ekonomi programını savundu."},
+    tkp01:{o:"Sosyalist İktidar Partisi'nin 2001'de adını değiştirmesiyle doğdu; Yargıtay Cumhuriyet Başsavcılığı kayıtlarında kuruluş tarihi SİP'in kuruluş tarihidir (16 Ağustos 1993). 1920'de kurulan TKP'den ayrı bir tüzel kişiliktir."},
+    hakpar:{k:"Abdülmelik Fırat", o:"11 Şubat 2002'de kuruldu. Kürt kimliğiyle öne çıkar ve Türkiye'nin federal bir yapıya kavuşmasını savunur; bu yönüyle HEP'ten HDP'ye uzanan çizgideki partilerden ayrılır."},
+    edp:{o:"ÖDP'den ayrılan Özgürlükçü Sol Hareket, SHP ve Alevi Bektaşi Federasyonu yöneticilerinin görüşmeleriyle Mart 2010'da kuruldu. 25 Kasım 2012'de Yeşiller Partisi ile birleşerek Yeşiller ve Sol Gelecek Partisi'ni oluşturdu."},
+    solparti:{o:"Özgürlük ve Dayanışma Partisi'nin 22 Aralık 2019'daki 8. Olağanüstü Kongresi'nde adını değiştirmesiyle doğdu. Tüzel kişiliği, 1994'te kurulan Birleşik Sosyalist Parti'ye uzanır."},
   };
 
   const DONEMLER = [
@@ -199,8 +218,8 @@ window.PARTILER = (function(){
     {id:"dep", kisa:"DEP", ad:"Demokrasi Partisi", yil:"1993 – 1994", durum:"kapatildi", aile:5, donem:5},
     {id:"hadep", kisa:"HADEP", ad:"Halkın Demokrasi Partisi", yil:"1994 – 2003", durum:"kapatildi", aile:5, donem:5},
     {id:"dehap", kisa:"DEHAP", ad:"Demokratik Halk Partisi", yil:"1997 – 2005", durum:"katildi", aile:5, donem:5},
-    {id:"odp", kisa:"ÖDP", ad:"Özgürlük ve Dayanışma Partisi", yil:"1996 –", durum:"faal", aile:4, donem:5,
-     not:"Sosyalist grupların birleşmesi"},
+    {id:"odp", kisa:"ÖDP", ad:"Özgürlük ve Dayanışma Partisi", yil:"1996 – 2019", durum:"katildi", aile:4, donem:5,
+     not:"Sosyalist grupların birleşmesi; 2019'da adı Sol Parti oldu"},
     {id:"emep", kisa:"EMEP", ad:"Emek Partisi", yil:"1996 –", durum:"faal", aile:4, donem:5},
     {id:"ip92", kisa:"İP", ad:"İşçi Partisi", yil:"1992 – 2015", durum:"katildi", aile:4, donem:5,
      not:"Perinçek çizgisi"},
@@ -253,7 +272,45 @@ window.PARTILER = (function(){
     {id:"dem", kisa:"DEM Parti", ad:"Halkların Eşitlik ve Demokrasi Partisi", yil:"2023 –", durum:"faal", aile:5, donem:7,
      not:"Yeşil Sol Parti'nin ad değişikliği"},
     {id:"tip17", kisa:"TİP", ad:"Türkiye İşçi Partisi", yil:"2017 –", durum:"faal", aile:4, donem:7,
-     not:"Tarihsel TİP adının yeniden kullanımı"}
+     not:"Tarihsel TİP adının yeniden kullanımı"},
+
+    // --- sonradan eklenenler: seçim verisinde geçen, ağaçta olmayan partiler ---
+    {id:"tukp", kisa:"TUKP", ad:"Türkiye Ulusal Kadınlar Partisi", yil:"1972 – 1981", durum:"kapatildi", aile:6, donem:3,
+     not:"Türkiye'nin ilk yasal kadın partisi"},
+    {id:"tsip74", kisa:"TSİP", ad:"Türkiye Sosyalist İşçi Partisi", yil:"1974 – 1981", durum:"kapatildi", aile:4, donem:3,
+     not:"12 Mart sonrası kurulan ilk sosyalist parti"},
+    {id:"sdp75", kisa:"SDP", ad:"Sosyalist Devrim Partisi", yil:"1975 – 1981", durum:"kapatildi", aile:4, donem:3,
+     not:"Aybar'ın partisi; kuruluştaki adı Sosyalist Parti"},
+    {id:"idp", kisa:"IDP", ad:"Islahatçı Demokrasi Partisi", yil:"1984 – 1992", durum:"katildi", aile:3, donem:4,
+     not:"1992'de adı Millet Partisi oldu"},
+    {id:"mp92", kisa:"MP", ad:"Millet Partisi", yil:"1992 –", durum:"faal", aile:3, donem:5,
+     not:"IDP'nin ad değişikliği; Aykut Edibali"},
+    {id:"sbp91", kisa:"SBP", ad:"Sosyalist Birlik Partisi", yil:"1991 – 1995", durum:"kapatildi", aile:4, donem:5,
+     not:"Sadun Aren; Anayasa Mahkemesince kapatıldı"},
+    {id:"ydp", kisa:"YDP", ad:"Yeniden Doğuş Partisi", yil:"1992 – 2002", durum:"katildi", aile:1, donem:5,
+     not:"ANAP'tan ayrılan Güzel; 2002'de adı Genç Parti oldu"},
+    {id:"sip93", kisa:"SİP", ad:"Sosyalist İktidar Partisi", yil:"1993 – 2001", durum:"katildi", aile:4, donem:5,
+     not:"2001'de adı Türkiye Komünist Partisi oldu"},
+    {id:"baris96", kisa:"BP", ad:"Barış Partisi", yil:"1996 – 1999", durum:"kapandi", aile:0, donem:5,
+     not:"Ali Haydar Veziroğlu; 1999'da kendini feshetti"},
+    {id:"dbp96", kisa:"DBP", ad:"Demokrasi ve Barış Partisi", yil:"1996 – 2002", durum:"katildi", aile:5, donem:5,
+     not:"Refik Karakoç; 2002'de HAK-PAR ile birleşti"},
+    {id:"depar", kisa:"DEPAR", ad:"Değişen Türkiye Partisi", yil:"1998 – 2002", durum:"kapandi", aile:0, donem:5,
+     not:"DSP'den ayrılan Gökhan Çapoğlu"},
+    {id:"genc", kisa:"Genç Parti", ad:"Genç Parti", yil:"2002 –", durum:"faal", aile:1, donem:6,
+     not:"Cem Uzan; YDP'nin ad değişikliği"},
+    {id:"shp02", kisa:"SHP", ad:"Sosyaldemokrat Halk Partisi", yil:"2002 – 2010", durum:"katildi", aile:0, donem:6,
+     not:"Murat Karayalçın; 2010'da EDP ile birleşti"},
+    {id:"btp", kisa:"BTP", ad:"Bağımsız Türkiye Partisi", yil:"2001 –", durum:"faal", aile:3, donem:6,
+     not:"Haydar Baş; \"Millî Ekonomi Modeli\""},
+    {id:"tkp01", kisa:"TKP", ad:"Türkiye Komünist Partisi", yil:"2001 –", durum:"faal", aile:4, donem:6,
+     not:"SİP'in ad değişikliği; 1920 TKP'sinden ayrı parti"},
+    {id:"hakpar", kisa:"HAK-PAR", ad:"Hak ve Özgürlükler Partisi", yil:"2002 –", durum:"faal", aile:5, donem:6,
+     not:"Kürt kimliği ve federal yapı savunusu"},
+    {id:"edp", kisa:"EDP", ad:"Eşitlik ve Demokrasi Partisi", yil:"2010 – 2012", durum:"katildi", aile:4, donem:6,
+     not:"SHP ve ÖDP'den ayrılanlar; 2012'de Yeşiller ile birleşti"},
+    {id:"solparti", kisa:"SOL Parti", ad:"Sol Parti", yil:"2019 –", durum:"faal", aile:4, donem:7,
+     not:"ÖDP'nin ad değişikliği"}
   ];
 
   const E = [
@@ -296,7 +353,8 @@ window.PARTILER = (function(){
 
     ["tkp20","thif","devam"], ["tkp20","tbkp","katilma"], ["tip61","tip75","devam"], ["tip75","tbkp","katilma"],
     ["tip75","odp","bolunme"], ["tip75","emep","bolunme"],
-    ["tip61","tip17","bolunme"], ["ip92","vatan","devam"]
+    ["tip61","tip17","bolunme"], ["ip92","vatan","devam"],
+    ["idp","mp92","devam"], ["anap","ydp","bolunme"], ["ydp","genc","devam"], ["sip93","tkp01","devam"], ["dbp96","hakpar","katilma"], ["dsp","depar","bolunme"], ["shp02","edp","katilma"], ["odp","edp","bolunme"], ["edp","yesilsol","katilma"], ["odp","solparti","devam"]
   ];
 
   const ROZET = {
