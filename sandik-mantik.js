@@ -441,10 +441,32 @@
       return liste("Girdiği genel seçimler", genel) + liste("Girdiği yerel seçimler", yerel);
     }
 
+    /* ---- soyağacı künyesi: partinin haritada birinci çıktığı iller (V = window.IL_SONUCLARI) ---- */
+    function ilKazanani(v) {
+      if (v.kazanan !== undefined) return v.kazanan;                 // yerel
+      if (!v.oy) return null;                                        // referandum vb.
+      let en = null, n = 0;
+      for (const [a, x] of Object.entries(v.oy)) if (x != null && x > n) { en = a; n = x; }
+      return en;
+    }
+    function birinciIller(id, S, V) {
+      return S.secimler.filter(k => (k.tur === "genel" || k.tur === "yerel") && V && V[k.id]).map(k => {
+        const iller = Object.values(V[k.id].iller || {});
+        return { kayit: k, il: iller.filter(v => ilKazanani(v) === id).length, toplam: iller.length };
+      }).filter(x => x.il > 0);
+    }
+    function haritaKunyeHTML(id, S, V) {
+      const l = birinciIller(id, S, V);
+      return liste("Haritada birinci çıktığı iller", l.map(x => '<li><a class="p-git" href="harita.html#' + x.kayit.id + '">' +
+        x.kayit.tarih.slice(0, 4) + " " + (x.kayit.tur === "genel" ? "genel" : "yerel") + "</a><span>" +
+        O.sayiYaz(x.il) + " il" + (x.kayit.tur === "yerel" ? " (il merkezi)" : "") + "</span></li>"));
+    }
+
     return { BAGIMSIZ, DIGER, NOTR, KESINTI, TUR_ETIKET, TUR_AD, BITIS_ETIKET,
              partiAdi, oyDegeri, katilimDegeri, siralaGenel, baslikGenel, meclisDurumu,
              donemBul, kronoloji, sonrakiHukumetler, partininSecimleri,
-             kacis, rozetHTML, cubukHTML, meclisGruplari, meclisSVG, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML };
+             kacis, rozetHTML, cubukHTML, meclisGruplari, meclisSVG, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML,
+             birinciIller, haritaKunyeHTML };
   }
   return { olustur };
 });

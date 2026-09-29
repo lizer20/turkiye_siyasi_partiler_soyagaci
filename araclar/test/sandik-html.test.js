@@ -178,6 +178,18 @@ test("künye: aynı yıl aynı türde iki seçim ay adıyla ayrışır", () => {
   assert.match(h, />Kas 1999</);
 });
 
+test("künye: haritada birinci çıktığı iller (genel: en çok oy, yerel: kazanan)", () => {
+  const V = { "1999-04-genel": { olcu: "genel", iller: { "Adana": { oy: { dsp: 50, mhp93: 40 } }, "Aydın": { oy: { mhp93: 60, dsp: 10 } }, "Bolu": { oy: { dsp: null } } } },
+              "2004-03-yerel": { olcu: "yerel", iller: { "Adana": { kazanan: "dsp" }, "Aydın": { kazanan: null } } } };
+  const l = M.birinciIller("dsp", F, V);
+  assert.deepEqual(l.map(x => [x.kayit.id, x.il, x.toplam]), [["1999-04-genel", 1, 3], ["2004-03-yerel", 1, 2]]);
+  const h = M.haritaKunyeHTML("dsp", F, V);
+  assert.match(h, /Haritada birinci çıktığı iller/);
+  assert.match(h, /href="harita\.html#1999-04-genel">1999 genel<\/a><span>1 il</);
+  assert.match(h, /href="harita\.html#2004-03-yerel">2004 yerel<\/a><span>1 il \(il merkezi\)/);
+  assert.equal(M.haritaKunyeHTML("tcf", F, V), "");
+});
+
 test("künye: seçim kaydı olmayan partide boş", () => {
   assert.equal(M.kunyeSecimleriHTML("tcf", F), "");
 });
