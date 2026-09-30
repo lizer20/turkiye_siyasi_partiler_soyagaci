@@ -4816,7 +4816,7 @@ yalnızca ilanda sayılan partileri toplar.
 ## Genel başkanlar {#genel-baskanlar} (2026-09-30)
 
 **Kullanıcı isteği:** parti pencerelerine genel başkanlar (görev yıllarıyla). Veri: `veri/genel-baskanlar.js`
-(90 parti). Pencerede "Genel başkanlar" bölümü; ağaçtaki arama kutusu genel başkan adıyla da parti bulur.
+(91 parti). Pencerede "Genel başkanlar" bölümü; ağaçtaki arama kutusu genel başkan adıyla da parti bulur.
 
 **Yöntem ve kurallar**
 - Ana kaynak: Türkçe Vikipedi'deki parti maddeleri (`action=raw`), çoğunda "Genel başkanlar" tablosu; tablo
@@ -4841,8 +4841,10 @@ yalnızca ilanda sayılan partileri toplar.
   Turgut Koçak'ın seçildiği cümle maddede "kaynak belirt" işaretli. HADEP maddesindeki listede Hatip Dicle de
   var, ama yılı yok ve HADEP genel başkanlığı İngilizce maddede de geçmiyor → doğrulanamadığı için alınmadı. TKP (2001): 2014–2017 bölünme ve "kolektif önderlik" dönemi; 2017 sonrası kolektif önderlik satırı
   yerine Kemal Okuyan (Yargıtay kaydında 2023'ten beri genel başkan) yazıldı.
-- **Listesi olmayanlar:** TKP (1920) ve THİF (genel sekreterlikle yönetildi, dönem dönem liste yok), DEP
-  (maddede başkan yok), Yeşil Sol Parti (2012–2023 eş sözcülük; liste yok).
+- **Listesi olmayanlar:** TKP (1920) ve THİF (genel sekreterlikle yönetildi, dönem dönem liste yok), Yeşil Sol
+  Parti (2012–2023 eş sözcülük; liste yok). DEP'in Tr. maddesinde başkan yok; genel denetimde (30 Eylül) En.
+  Vikipedi "Democracy Party (Turkey)" bilgi kutusundan eklendi: Yaşar Kaya Haziran–Aralık 1993, Hatip Dicle Aralık
+  1993 – Haziran 1994 (tek kaynak).
 
 | Parti | Kısa | Ana kaynak | İkinci kaynak |
 |---|---|---|---|
@@ -4887,6 +4889,7 @@ yalnızca ilanda sayılan partileri toplar.
 | `mhp93` | MHP | Tr. Vikipedi "Milliyetçi Hareket Partisi" | En. Vikipedi: 2/2 ad geçiyor |
 | `bbp` | BBP | Tr. Vikipedi "Büyük Birlik Partisi" | En. Vikipedi: 3/3 ad geçiyor |
 | `fp` | FP | Tr. Vikipedi "Fazilet Partisi" | En. Vikipedi: 2/2 ad geçiyor |
+| `dep` | DEP | En. Vikipedi "Democracy Party (Turkey)" (Tr. maddede yok) | — |
 | `hadep` | HADEP | Tr. Vikipedi "Halkın Demokrasi Partisi" | — |
 | `dehap` | DEHAP | Tr. Vikipedi "Demokratik Halk Partisi (Türkiye)" | — |
 | `odp` | ÖDP | Tr. Vikipedi "Sol Parti (Türkiye)" | En. Vikipedi: 7/7 ad geçiyor |
@@ -4936,3 +4939,36 @@ yalnızca ilanda sayılan partileri toplar.
 | `vp54` | VP | Tr. Vikipedi "Vatan Partisi (1954)" | — |
 | `turkparti` | TURK PARTİ | Tr. Vikipedi "Toplumsal Uzlaşma Reform ve Kalkınma Partisi" | — |
 | `hkp` | HKP | Tr. Vikipedi "Halkın Kurtuluş Partisi" | — |
+
+## Genel denetim (2026-09-30) — yapıldı ve kapatıldı
+
+Kullanıcı kararı: "her şeyi bitirdikten sonra" genel denetim, ardından kalemin kapatılması. Çalışma dosyaları
+`$SP/denetim/`, `$SP/gb/`.
+
+1. **Doğrulayıcı ve testler:** `node araclar/dogrula.js` hata yok (uyarılar: 23→24 ve 43→44 hükümet boşlukları —
+   27 Mayıs ve 12 Eylül darbeleri, beklenen); `node --test araclar/test/*.test.js` 89/89.
+2. **Parti kuruluş/kapanış yılları ↔ Tr. Vikipedi bilgi kutuları (91 parti):** 6 fark. Dördü beklenen (Güven
+   Partisi/CGP ve TİP 1961/1975 aynı maddeyi paylaşıyor; MÇP 1983'te Muhafazakâr Parti adıyla kuruldu, 1985'te
+   ad değiştirdi). İki çelişki: DEP (Tr. 1991, "ek kaynak gerekli" işaretli; En. Vikipedi 7.5.1993) ve TKP 1920
+   kapanışı (Tr. 8.10.1987 Brüksel duyurusu; En. Vikipedi 1988, gizli kongrede birleşme). İkisinde de ikinci kaynak
+   bizim yılımızı (1993, 1988) destekliyor → değişiklik yok.
+3. **Hükümet tarihleri (65) ↔ Tr. Vikipedi "Türkiye hükûmetleri listesi":** 14 hükümette gün farkı. Bizim tarihler
+   TBMM Başkanlığı'nın *Hükümetler, Programları ve Genel Kurul Görüşmeleri* ciltlerinden ve "bitiş = sonraki
+   hükümetin başlangıcı" kuralıyla; Vikipedi bazı yerlerde istifa/cumhurbaşkanı seçilme gününü bitiş alıyor
+   (46, 49, 25, 63) → değişiklik yok.
+4. **Genel seçim sandalye ve oy oranları (27 seçim) ↔ Tr. Vikipedi seçim maddeleri:** 1946–2023 arasında sandalye
+   ve ilk dört oy oranı birebir (1969'daki fark bağımsızların Vikipedi kutusunda olmamasından). 1950'de DP 408 /
+   416 farkı kayıt notunda zaten açıklanıyor (TBMM 408, YSK/TÜİK 416). 1923–1943 toplam milletvekili sayılarında
+   Vikipedi farklı; bizim sayılar TÜİK Tablo 5, TESAV ve Lüleci (2023) ile üç kaynaklı → değişiklik yok.
+5. **İl sonuçları ↔ ülke geneli:** il geçerli oy toplamı ülke toplamının %99,7–100'ü (2015 sonrası ~%97: yurt dışı
+   oyları); referandumlarda %96,7–100 (gümrük, cezaevi, yurt dışı). İllerde ilk 5 parti tam tablolardan seçildiği
+   için (`il-genel-yaz.js`) il birincileri güvenilir.
+6. **Bağlantılar:** tarayıcıda 4 sayfa + 94 parti penceresi + bütün seçim ve harita pencereleri açıldı; 170 iç
+   bağlantının hepsi var olan bir parti/seçim/haritaya gidiyor; konsol hatası yok.
+7. **Soy bağları:** 13 bağ, öncülün kapanışından yıllar sonra kurulan partiye "fikrî soy" olarak gidiyor (CHP →
+   HP/SODEP/DSP, AP → ANAP, TİP → YDH/ÖDP/EMEP/TİP 2017, DP 1946 → DP 1992, TKP → TBKP); tasarım gereği, değişiklik yok.
+8. **Düzeltmeler:** (a) Parti penceresindeki "Kurucu" başlığı "Kurucu ve öncü isimler" oldu — MSP (kurucu Süleyman
+   Arif Emre; yazan Erbakan), RP (Ali Türkmen/Ahmet Tekdal; Erbakan), FP (İsmail Alptekin; Kutan), DYP (Ahmet Nusret
+   Tuna; Demirel/Çiller), MÇP (Mehmet Pamak/Ali Koç; Türkeş), BDP (Mustafa Ayzit; Demirtaş), DP 2007 ve DEP'te yazan
+   isimler kurucu değil öne çıkan liderlerdi; kesin sıra artık "Genel başkanlar" listesinde. (b) DEP genel
+   başkanları eklendi (yukarıda).

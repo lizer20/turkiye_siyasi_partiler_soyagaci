@@ -205,6 +205,10 @@ window.GENEL_BASKANLAR = {
     {"ad": "İsmail Alptekin", "bas": "1997", "bit": "1998"},
     {"ad": "Recai Kutan", "bas": "1998", "bit": "2001"}
   ],
+  "dep": [
+    {"ad": "Yaşar Kaya", "bas": "1993", "bit": "1993"},
+    {"ad": "Hatip Dicle", "bas": "1993", "bit": "1994"}
+  ],
   "hadep": [
     {"ad": "Murat Bozlak", "bas": "1994", "bit": "1999"},
     {"ad": "Ahmet Turan Demir", "bas": null, "bit": null}
