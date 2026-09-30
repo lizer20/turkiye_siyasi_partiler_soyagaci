@@ -4783,6 +4783,12 @@ hükümetlere verildi: CHP–MSP (Kıbrıs Harekâtı), iki Milliyetçi Cephe, R
 | 57 | ANASOL-M | evet | Tr. Vikipedi "57. Türkiye Hükûmeti" ("ANASOL-M Hükûmeti"); Vehbi Dinçerler (eski bakan) sitesi, "ANASOL-M Hükümeti (DSP-ANAP-MHP 28.06.1999-18.11.2002)" |
 | 63 | Seçim hükümeti | hayır | Tr. Vikipedi "63. Türkiye Hükûmeti" ("Seçim Hükûmeti"); VOA Türkçe, "İlk 'Seçim Hükümeti' İlklerle Kuruldu" (2015) |
 
+**Kullanıcı kararı (2026-09-30):** "26. hükümet ilk koalisyon olarak yazılsın, ANAYOL, ANASOL-D de eklensin" →
+26. hükümete `lakap: "İlk koalisyon"` (bir lakap değil, kullanıcının istediği tanım) ve 26, 53, 55 büyük şeride
+alındı (`onemli: true`). 26 için kaynaklar: Tr. Vikipedi "26. Türkiye Hükûmeti" ("Cumhuriyet tarihinin ilk
+koalisyon hükûmetidir"); Gazete Vatan, "Türkiye'nin koalisyon hükümetleri" (7.7.2015) listesinin ilk kaydı
+(VIII. İnönü, CHP–AP koalisyonu, 20.11.1961).
+
 **Bilerek eklenmeyenler:**
 - 42. hükümet "Motel Hükûmeti": yalnızca Tr. Vikipedi'de bulundu (SeçimTürk ve Düşünce Mektebi sayfaları adı
   kullanmıyor; soL haber sayfası erişilemedi). "Güneş Motel olayı" yaygın bilinse de hükümetin adı olarak ikinci

@@ -323,7 +323,8 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
   kullanıcı dosyayı sağlarsa `$SP/ref/ref-yaz.js` düzeninde eklenir (bkz. kaynak defteri "referandum haritaları").
 - **29 Eylül 2026 (sonra):** yerel seçim haritası lejantına Türkiye geneli belediye meclisi oy oranı + "Diğer";
   hükümetlere kaynaklı yaygın adlar (`lakap`) ve öne çıkan beşine büyük şerit (`onemli: true`) — bkz. kaynak
-  defteri "Hükümet adları". 42. hükümet "Motel Hükûmeti" tek kaynaklı olduğu için eklenmedi.
+  defteri "Hükümet adları". 30 Eylül: kullanıcı isteğiyle 26. hükümet "İlk koalisyon", ANAYOL ve ANASOL-D de
+  büyük şeritte (toplam sekiz). 42. hükümet "Motel Hükûmeti" tek kaynaklı olduğu için eklenmedi.
 
 ---
 

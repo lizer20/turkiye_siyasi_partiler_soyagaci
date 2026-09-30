@@ -738,6 +738,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumet-26
     { no: 26, basbakan: "İsmet İnönü", partiler: ["chp23", "ap"],
+      lakap: "İlk koalisyon", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1961-11-20", bitis: "1962-06-25", tip: "koalisyon", bitisNedeni: null,
       not: "Cumhuriyet tarihinin ilk koalisyon hükümeti." },
 
@@ -884,7 +885,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 53, basbakan: "Mesut Yılmaz", partiler: ["anap", "dyp"],
-      lakap: "ANAYOL", // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
+      lakap: "ANAYOL", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1996-03-06", bitis: "1996-06-28", tip: "koalisyon", bitisNedeni: "istifa",
       not: "ANAP–DYP (ANAYOL) koalisyonu; güvenoylamasına ilişkin yargı kararının ardından istifa etmek zorunda kaldı." },
 
@@ -896,7 +897,7 @@ window.SANDIK = {
 
     // kaynak: araclar/kaynak-defteri.md#hukumetler-48-57
     { no: 55, basbakan: "Mesut Yılmaz", partiler: ["anap", "dsp", "dtp97"],
-      lakap: "ANASOL-D", // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
+      lakap: "ANASOL-D", onemli: true, // kaynak: araclar/kaynak-defteri.md#hukumet-adlari
       baslangic: "1997-06-30", bitis: "1999-01-11", tip: "koalisyon", bitisNedeni: "guvensizlik",
       not: "ANAP–DSP–DTP koalisyon protokolüyle kurulan üç partili azınlık hükümeti; güvenoylamasıyla düşürüldü." },
 
