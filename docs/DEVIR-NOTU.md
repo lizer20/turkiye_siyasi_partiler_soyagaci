@@ -318,13 +318,21 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
   veriyi indirilebilir dosya olarak sunma.
 - **Süresiz ertelendi:** bütün verinin baştan sona ikinci denetimi — diğer işler bitince yeniden konuşulacak.
 - **Durum (29 Eylül 2026):** telefon kontrolü, belediye sayıları, parti→harita bağlantısı bitti; referandum
-  haritaları 1961, 1982, 1987, 1988, 2007, 2010 için bitti. **2017 referandumu açık:** YSK il tablosuna
+  haritaları 1961, 1982, 1987, 1988, 2007, 2010 için bitti. **2017 referandumu 30 Eylül'de eklendi** (YSK
+  sonuc.ysk.gov.tr servisinden; bkz. kaynak defteri). Eski not: YSK il tablosuna
   (ysk.gov.tr sayfaları, sonuc.ysk.gov.tr, acikveri.ysk.gov.tr, web.archive.org) çalışma ortamından erişilemedi;
   kullanıcı dosyayı sağlarsa `$SP/ref/ref-yaz.js` düzeninde eklenir (bkz. kaynak defteri "referandum haritaları").
 - **29 Eylül 2026 (sonra):** yerel seçim haritası lejantına Türkiye geneli belediye meclisi oy oranı + "Diğer";
   hükümetlere kaynaklı yaygın adlar (`lakap`) ve öne çıkan beşine büyük şerit (`onemli: true`) — bkz. kaynak
   defteri "Hükümet adları". 30 Eylül: kullanıcı isteğiyle 26. hükümet "İlk koalisyon", ANAYOL ve ANASOL-D de
   büyük şeritte (toplam sekiz). 42. hükümet "Motel Hükûmeti" tek kaynaklı olduğu için eklenmedi.
+
+**30 Eylül 2026 kullanıcı kararları:**
+- **Yapılacak:** 2017 referandum haritası (YSK dışı kaynaklar da olur; YSK'ya erişim için "bütün izinleri veriyorum");
+  parti pencerelerine genel başkanlar (kaynaklı, görev tarihleriyle).
+- **İstenmiyor (bir daha önerme):** tek partinin il il oy oranı haritası, iki seçim arası değişim haritası, veri
+  indirme; kapatılan partiler zaman çizelgesi, seçim kuralları (baraj, sistem, sandalye) zaman çizelgesi, ara seçim haritası.
+- **Genel denetim:** her şey bittikten sonra yapılacak; bitince bu kalem kapatılacak.
 
 ---
 

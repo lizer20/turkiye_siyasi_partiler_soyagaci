@@ -4639,8 +4639,19 @@ Kaynak: YSK Halkoylaması Arşivi il tabloları (`ysk.gov.tr/doc/dosyalar/docs/�
 - Haritada yalnızca il sandıkları var (gümrük kapısı, yurt dışı, ceza infaz kurumu oyları il değil).
 - Çoğunluk sayıları: 1961 evet 56 – hayır 11 il (kayıt notuyla aynı); 1982 evet 67; 1987 evet 27 –
   hayır 40; 1988 evet 1 – hayır 66; 2007 evet 74 – hayır 7; 2010 evet 62 – hayır 19.
-- **2017:** il tablosu için YSK'nın `sonuc.ysk.gov.tr`, `acikveri.ysk.gov.tr` ve arşiv sayfası bu
-  çalışma ortamından açılamadı (bağlantı reddedildi); il il resmî kaynak bulunmadan harita eklenmedi.
+- **2017 (2026-09-30 eklendi):** YSK Sandık Sonuçları sistemi `sonuc.ysk.gov.tr` (bağlantı aralıklı; tekrar
+  deneyerek). Seçim listesi `api/getSecimList?secimSayi=30&araSecim=0&yenilemeSecimi=0` → "2017 HALKOYLAMASI"
+  `secim_ID` 15575 (sitenin kodunda kimlik `id*3+102` = 46827 olarak gönderiliyor), seçim türü 7 (HALKOYLAMASI).
+  İl tablosu: `api/getSecimSandikSonucList?secimId=46827&secimTuru=7&yurtIciDisi=1&sorguTuru=2` (diğer
+  parametreler boş) → 81 il birleştirme tutanağı; sütun başlıkları `api/getSandikSecimSonucBaslikList`:
+  `bagimsiz1_ALDIGI_OY` = EVET, `bagimsiz2_ALDIGI_OY` = HAYIR. **Denetim:** her ilde evet + hayır = geçerli
+  (81/81); 81 il toplamı geçerli 47.528.949, oy kullanan 48.374.576, geçersiz 845.627 — YSK'nın yurt içi
+  sonucu (`api/getSecimSonucList`, aynı sistem) ve En. Vikipedi'nin YSK'ya dayanan yurt içi sütunuyla birebir.
+  İl toplamı evet 24.325.633 / hayır 23.203.316; Sandık kaydı (yurt dışı + gümrük dahil) 25.157.463 /
+  23.779.141. Çoğunluk: evet 48 il, hayır 33 il (haritadan sayılır). **Vikipedi il tablosu kullanılmadı:**
+  Tr./En. Vikipedi'deki il sayıları gayriresmî sayıma dayanıyor — 77 ilde resmî sonuçtan onlarca/yüzlerce oy
+  farklı, satırların çoğunda evet + hayır ≠ geçerli, Yalova evet "71,59"/7.159 (resmî 71.929), Niğde'de geçerli
+  = oy kullanan. Ham dosyalar: `$SP/ref17/tablo.json`, `ysk2017.json`.
 - Renkler: evet mavi (#C3D5E8 → #1F4A7A), hayır turuncu (#F2CDB8 → #7F2E14); basamaklar %50–55,
   %55–65, %65–80, %80 ve üstü.
 
