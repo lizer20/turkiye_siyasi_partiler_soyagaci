@@ -450,6 +450,17 @@
       return { html: h, renk: kartRengi(k) };
     }
 
+    /* ---- soyağacı künyesi: genel başkanlar (GB = window.GENEL_BASKANLAR) ---- */
+    function genelBaskanlarHTML(id, GB) {
+      const l = GB && GB[id];
+      if (!l || !l.length) return "";
+      const yil = x => x.gorevde ? (x.bas || "?") + " – görevde"
+        : x.bas == null && x.bit == null ? "" : x.bas === x.bit ? x.bas : (x.bas || "?") + " – " + (x.bit || "?");
+      const satirlar = l.map(x => "<li><b>" + kacis(x.ad) + "</b><span>" + yil(x) +
+        (x.not ? '<em class="p-bnot">' + kacis(x.not) + "</em>" : "") + "</span></li>");
+      return liste(l.every(x => / ve /.test(x.ad)) ? "Eş genel başkanlar" : "Genel başkanlar", satirlar);
+    }
+
     /* ---- soyağacı künyesi: partinin girdiği seçimler ---- */
     function kunyeSecimleriHTML(id, S) {
       const s = partininSecimleri(id, S);
@@ -490,7 +501,7 @@
     return { BAGIMSIZ, DIGER, NOTR, KESINTI, TUR_ETIKET, TUR_AD, BITIS_ETIKET,
              partiAdi, oyDegeri, katilimDegeri, siralaGenel, baslikGenel, meclisDurumu,
              donemBul, kronoloji, sonrakiHukumetler, partininSecimleri,
-             kacis, rozetHTML, cubukHTML, meclisGruplari, meclisSVG, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML,
+             kacis, rozetHTML, genelBaskanlarHTML, cubukHTML, meclisGruplari, meclisSVG, kartHTML, seritHTML, panelHTML, kunyeSecimleriHTML,
              birinciIller, haritaKunyeHTML };
   }
   return { olustur };

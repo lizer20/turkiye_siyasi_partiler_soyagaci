@@ -184,3 +184,20 @@ test("hükümet adı ve öne çıkarma: ad boş olamaz, öne çıkan hükümetin
   T.hukumetler[0].lakap = "ANASOL-M";
   assert.equal(hatalar(T), "");
 });
+
+test("genel başkanlar: gerçek veri hatasız; bozuk kayıtlar yakalanır", () => {
+  const { dogrulaBaskanlar } = require("../dogrula");
+  const G = yukle(["veri/genel-baskanlar.js"]).GENEL_BASKANLAR;
+  assert.deepEqual(dogrulaBaskanlar(P, G).hatalar, []);
+  const h = dogrulaBaskanlar(P, {
+    yokparti: [{ ad: "A", bas: "1990", bit: "1991" }],
+    ap: [{ ad: "A", bas: "1970", bit: "1965" }, { ad: "B", bas: "196", bit: null }, { ad: "C", bas: "1960", bit: null, gorevde: true }],
+    akp: [{ ad: "D", bas: "2001", bit: "2014" }]
+  }).hatalar.join("\n");
+  assert.match(h, /bilinmeyen parti yokparti/);
+  assert.match(h, /bitişi başlangıçtan önce: ap → A/);
+  assert.match(h, /dört haneli olmalı: ap → B/);
+  assert.match(h, /faal olmayan partide görevdeki genel başkan: ap → C/);
+  assert.match(h, /tarih sırasında değil: ap → B/);
+  assert.match(dogrulaBaskanlar(P, { akp: [{ ad: "D", bas: "2001", bit: "2014" }] }).uyarilar.join(), /görevdeki genel başkanı yok: akp/);
+});

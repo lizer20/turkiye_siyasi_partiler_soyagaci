@@ -186,6 +186,31 @@ function dogrulaPartiler(P) {
   return { hatalar, uyarilar };
 }
 
+// genel başkanlar: parti kimliği, yıl biçimi, sıra, "görevde" yalnızca faal partide ve en sonda
+function dogrulaBaskanlar(P, GB) {
+  const hatalar = [], uyarilar = [];
+  const durum = new Map(P.N.map(n => [n.id, n.durum]));
+  const YIL = /^\d{4}$/;
+  for (const [id, l] of Object.entries(GB || {})) {
+    if (!durum.has(id)) { hatalar.push("genel başkan: bilinmeyen parti " + id); continue; }
+    if (!Array.isArray(l) || !l.length) { hatalar.push("genel başkan listesi boş: " + id); continue; }
+    let onceki = null;
+    l.forEach((x, i) => {
+      const yer = id + " → " + (x && x.ad);
+      if (!x || typeof x.ad !== "string" || !x.ad.trim()) { hatalar.push("genel başkan adı yok: " + id); return; }
+      for (const k of ["bas", "bit"]) if (x[k] != null && !YIL.test(x[k])) hatalar.push("genel başkan yılı dört haneli olmalı: " + yer);
+      if (x.bas && x.bit && x.bas > x.bit) hatalar.push("genel başkan bitişi başlangıçtan önce: " + yer);
+      if (x.gorevde && (x.bit != null || i !== l.length - 1)) hatalar.push("görevdeki genel başkan en sonda ve bitişsiz olmalı: " + yer);
+      if (x.gorevde && durum.get(id) !== "faal") hatalar.push("faal olmayan partide görevdeki genel başkan: " + yer);
+      const ilk = x.bas || x.bit;
+      if (ilk && onceki && ilk < onceki) hatalar.push("genel başkanlar tarih sırasında değil: " + yer);
+      if (ilk) onceki = x.bit || x.bas;
+    });
+    if (durum.get(id) === "faal" && !l[l.length - 1].gorevde) uyarilar.push("faal partinin görevdeki genel başkanı yok: " + id);
+  }
+  return { hatalar, uyarilar };
+}
+
 function dogrula(P, S) {
   const a = dogrulaPartiler(P);
   if (!S) return a;
@@ -193,11 +218,12 @@ function dogrula(P, S) {
   return { hatalar: a.hatalar.concat(b.hatalar), uyarilar: a.uyarilar.concat(b.uyarilar) };
 }
 
-module.exports = { dogrula, dogrulaPartiler, dogrulaSandik };
+module.exports = { dogrula, dogrulaPartiler, dogrulaSandik, dogrulaBaskanlar };
 
 if (require.main === module) {
-  const w = yukle(["veri/partiler.js", "veri/sandik.js"]);
-  const { hatalar, uyarilar } = dogrula(w.PARTILER, w.SANDIK);
+  const w = yukle(["veri/partiler.js", "veri/sandik.js", "veri/genel-baskanlar.js"]);
+  const a = dogrula(w.PARTILER, w.SANDIK), g = dogrulaBaskanlar(w.PARTILER, w.GENEL_BASKANLAR);
+  const hatalar = a.hatalar.concat(g.hatalar), uyarilar = a.uyarilar.concat(g.uyarilar);
   uyarilar.forEach(u => console.log("uyarı: " + u));
   hatalar.forEach(h => console.log("HATA:  " + h));
   console.log(hatalar.length ? hatalar.length + " hata" : "hata yok");

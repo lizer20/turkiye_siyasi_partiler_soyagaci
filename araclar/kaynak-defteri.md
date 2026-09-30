@@ -4811,3 +4811,128 @@ koalisyon hükûmetidir"); Gazete Vatan, "Türkiye'nin koalisyon hükümetleri" 
 meclisi oy oranı ve kalanların toplamı "Diğer" gösterilir (genel seçimdeki gibi; oranlar Sandık kaydındaki
 ülke geneli sonuçtan). 1963 resmî ilanında parti oyları toplamı geçerli oydan 185.299 eksik olduğundan "Diğer"
 yalnızca ilanda sayılan partileri toplar.
+
+
+## Genel başkanlar {#genel-baskanlar} (2026-09-30)
+
+**Kullanıcı isteği:** parti pencerelerine genel başkanlar (görev yıllarıyla). Veri: `veri/genel-baskanlar.js`
+(90 parti). Pencerede "Genel başkanlar" bölümü; ağaçtaki arama kutusu genel başkan adıyla da parti bulur.
+
+**Yöntem ve kurallar**
+- Ana kaynak: Türkçe Vikipedi'deki parti maddeleri (`action=raw`), çoğunda "Genel başkanlar" tablosu; tablo
+  yoksa bilgi kutusu ve metindeki açık ifadeler ("… genel başkanlığa seçildi"). CHP ve AK Parti için ayrı
+  "genel başkanları listesi" maddeleri. Ham dosyalar: `$SP/gb/raw/`, taslak `$SP/gb/taslak.py`.
+- İkinci kaynak: İngilizce Vikipedi'deki karşılık maddeler (`$SP/gb/en/`), 51 partide adlar karşılaştırıldı
+  (`$SP/gb/karsilastir.py`); hiçbir parti için **çelişki** çıkmadı — "geçmiyor" sonuçları İngilizce maddenin o
+  kişiyi anmadığını gösterir, farklı bir ad vermediğini değil. Diğer partiler tek kaynaklıdır (tablo).
+- Yalnızca yıl yazılır (gün/ay yok). Kaynakta yılı olmayan başkanda yıl `null` ("?" gösterilir), tahmin yok.
+- Vekâleten (geçici) görev yapanlar listelenmez (CHP 1938 Bayar, 1972 Kırıkoğlu, 1980–81 Üstündağ; DYP 1993
+  Gölhan; ANAP 2002–03 Pakdemirli, 2004–05 Özsoy; MHP 1997 Çolak, T. Türkeş; BBP 2011, 2015 Öznur; DSP 2009
+  Başaran; CKMP 1962–64 Dinçer; Memleket 2025 Güven; HÜDA PAR 2018 Yavuz; Zafer 2025 Şehirlioğlu; ÖDP 2007–08
+  Ulusaler); araya giren vekâlet ayrı satır açmıyorsa not'ta anılır (BBP, Zafer, ÖDP, SP).
+- Aynı maddeyi paylaşan partiler dönemle ayrıldı: CHP 1923–1981 / 1992–; MHP 1969–1981 / 1993– (1983–1993
+  MÇP ayrı); İP 1992–2015 / Vatan 2015–; ÖDP 1996–2019 / Sol Parti 2019–; TİP 1961–1971 / 1975–; Güven
+  Partisi 1967–1973 / CGP 1973–; IDP 1984–1992 / Millet Partisi 1992–; HDP / DEM.
+- **CHP 2026:** Tr. Vikipedi listesi: Özgür Özel 8.11.2023–21.5.2026; 21 Mayıs 2026'da Ankara Bölge Adliye
+  Mahkemesi 36. Hukuk Dairesi 38. Olağan Kurultay'ın kesin hükümsüzlüğüne ve karar kesinleşene kadar genel
+  başkanlığı Kemal Kılıçdaroğlu'nun tedbiren üstlenmesine karar verdi → Kılıçdaroğlu "2026 – görevde", not'la.
+- Kararsız ya da iç çelişkili yerler: MP (1948) tablosunda Bayur'un bitişi (1.6.1952) ile Kentli'nin başlangıcı
+  (1.5.1952) çakışıyor; metin Kentli'yi 1951 kongresine bağlıyor → yıllar tablodaki gibi, tek kaynak. TSİP'te
+  Turgut Koçak'ın seçildiği cümle maddede "kaynak belirt" işaretli. HADEP maddesindeki listede Hatip Dicle de
+  var, ama yılı yok ve HADEP genel başkanlığı İngilizce maddede de geçmiyor → doğrulanamadığı için alınmadı. TKP (2001): 2014–2017 bölünme ve "kolektif önderlik" dönemi; 2017 sonrası kolektif önderlik satırı
+  yerine Kemal Okuyan (Yargıtay kaydında 2023'ten beri genel başkan) yazıldı.
+- **Listesi olmayanlar:** TKP (1920) ve THİF (genel sekreterlikle yönetildi, dönem dönem liste yok), DEP
+  (maddede başkan yok), Yeşil Sol Parti (2012–2023 eş sözcülük; liste yok).
+
+| Parti | Kısa | Ana kaynak | İkinci kaynak |
+|---|---|---|---|
+| `chp23` | CHP | Tr. Vikipedi "Cumhuriyet Halk Partisi genel başkanları listesi" | En. Vikipedi: 3/3 ad geçiyor |
+| `tcf` | TCF | Tr. Vikipedi "Terakkiperver Cumhuriyet Fırkası" | — |
+| `scf` | SCF | Tr. Vikipedi "Serbest Cumhuriyet Fırkası" | — |
+| `dp46` | DP | Tr. Vikipedi "Demokrat Parti (1946)" | En. Vikipedi: 2/2 ad geçiyor |
+| `mp48` | MP | Tr. Vikipedi "Millet Partisi (1948)" | En. Vikipedi: 4/4 ad geçiyor |
+| `tkp52` | TKP | Tr. Vikipedi "Türkiye Köylü Partisi" | — |
+| `cmp` | CMP | Tr. Vikipedi "Cumhuriyetçi Millet Partisi" | — |
+| `hurriyet` | HP | Tr. Vikipedi "Hürriyet Partisi" | — |
+| `ckmp` | CKMP | Tr. Vikipedi "Cumhuriyetçi Köylü Millet Partisi" | En. Vikipedi: 3/3 ad geçiyor |
+| `ap` | AP | Tr. Vikipedi "Adalet Partisi (1961-1981)" | En. Vikipedi: 2/2 ad geçiyor |
+| `ytp` | YTP | Tr. Vikipedi "Yeni Türkiye Partisi (1961)" | — |
+| `demp70` | DP | Tr. Vikipedi "Demokratik Parti (Türkiye)" | En. Vikipedi: 2/2 ad geçiyor |
+| `mhp69` | MHP | Tr. Vikipedi "Milliyetçi Hareket Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `mp62` | MP | Tr. Vikipedi "Millet Partisi (1962)" | — |
+| `tbp` | TBP | Tr. Vikipedi "Türkiye Birlik Partisi" | — |
+| `mnp` | MNP | Tr. Vikipedi "Millî Nizam Partisi" | — |
+| `gp` | GP | Tr. Vikipedi "Cumhuriyetçi Güven Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `tip61` | TİP | Tr. Vikipedi "Türkiye İşçi Partisi (1961)" | En. Vikipedi: 2/5 ad geçiyor |
+| `cp72` | CP | Tr. Vikipedi "Cumhuriyetçi Parti (Türkiye)" | — |
+| `cgp` | CGP | Tr. Vikipedi "Cumhuriyetçi Güven Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `msp` | MSP | Tr. Vikipedi "Millî Selamet Partisi" | En. Vikipedi: 2/2 ad geçiyor |
+| `tip75` | TİP | Tr. Vikipedi "Türkiye İşçi Partisi (1961)" | En. Vikipedi: 1/1 ad geçiyor |
+| `hp83` | HP | Tr. Vikipedi "Halkçı Parti" | En. Vikipedi: 2/2 ad geçiyor |
+| `sodep` | SODEP | Tr. Vikipedi "Sosyal Demokrasi Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `shp` | SHP | Tr. Vikipedi "Sosyaldemokrat Halkçı Parti" | En. Vikipedi: 3/3 ad geçiyor |
+| `dsp` | DSP | Tr. Vikipedi "Demokratik Sol Parti" | En. Vikipedi: 7/7 ad geçiyor |
+| `anap` | ANAP | Tr. Vikipedi "Anavatan Partisi" | En. Vikipedi: 7/7 ad geçiyor |
+| `dyp` | DYP | Tr. Vikipedi "Doğru Yol Partisi" | En. Vikipedi: 6/6 ad geçiyor |
+| `rp` | RP | Tr. Vikipedi "Refah Partisi" | En. Vikipedi: 3/3 ad geçiyor |
+| `mcp` | MÇP | Tr. Vikipedi "Milliyetçi Çalışma Partisi" | En. Vikipedi: 2/5 ad geçiyor |
+| `mdp` | MDP | Tr. Vikipedi "Milliyetçi Demokrasi Partisi" | En. Vikipedi: 2/2 ad geçiyor |
+| `hep` | HEP | Tr. Vikipedi "Halkın Emek Partisi" | — |
+| `tbkp` | TBKP | Tr. Vikipedi "Türkiye Birleşik Komünist Partisi" | — |
+| `chp92` | CHP | Tr. Vikipedi "Cumhuriyet Halk Partisi genel başkanları listesi" | En. Vikipedi: 8/8 ad geçiyor |
+| `dp92` | DP | Tr. Vikipedi "Demokrat Parti (1992)" | — |
+| `dtp97` | DTP | Tr. Vikipedi "Demokrat Türkiye Partisi" | En. Vikipedi: 1/4 ad geçiyor |
+| `ldp` | LDP | Tr. Vikipedi "Liberal Demokrat Parti (Türkiye)" | En. Vikipedi: 7/7 ad geçiyor |
+| `ydh` | YDH | Tr. Vikipedi "Yeni Demokrasi Hareketi" | — |
+| `mhp93` | MHP | Tr. Vikipedi "Milliyetçi Hareket Partisi" | En. Vikipedi: 2/2 ad geçiyor |
+| `bbp` | BBP | Tr. Vikipedi "Büyük Birlik Partisi" | En. Vikipedi: 3/3 ad geçiyor |
+| `fp` | FP | Tr. Vikipedi "Fazilet Partisi" | En. Vikipedi: 2/2 ad geçiyor |
+| `hadep` | HADEP | Tr. Vikipedi "Halkın Demokrasi Partisi" | — |
+| `dehap` | DEHAP | Tr. Vikipedi "Demokratik Halk Partisi (Türkiye)" | — |
+| `odp` | ÖDP | Tr. Vikipedi "Sol Parti (Türkiye)" | En. Vikipedi: 7/7 ad geçiyor |
+| `emep` | EMEP | Tr. Vikipedi "Emek Partisi" | En. Vikipedi: 5/5 ad geçiyor |
+| `ip92` | İP | Tr. Vikipedi "Vatan Partisi (2015)" | En. Vikipedi: 1/1 ad geçiyor |
+| `akp` | AK Parti | Tr. Vikipedi "Adalet ve Kalkınma Partisi genel başkanları listesi" | En. Vikipedi: 4/4 ad geçiyor |
+| `sp` | SP | Tr. Vikipedi "Saadet Partisi" | En. Vikipedi: 8/8 ad geçiyor |
+| `has` | HAS Parti | Tr. Vikipedi "Halkın Sesi Partisi" | — |
+| `ytp02` | YTP | Tr. Vikipedi "Yeni Türkiye Partisi (2002)" | — |
+| `anadolu` | Anadolu P. | Tr. Vikipedi "Anadolu Partisi" | — |
+| `dp07` | DP | Tr. Vikipedi "Demokrat Parti (2007)" | En. Vikipedi: 4/5 ad geçiyor |
+| `dtp` | DTP | Tr. Vikipedi "Demokratik Toplum Partisi" | En. Vikipedi: 5/5 ad geçiyor |
+| `bdp` | BDP | Tr. Vikipedi "Barış ve Demokrasi Partisi" | En. Vikipedi: 3/6 ad geçiyor |
+| `hdp` | HDP | Tr. Vikipedi "Halkların Demokratik Partisi" | En. Vikipedi: 14/14 ad geçiyor |
+| `hudapar` | HÜDA PAR | Tr. Vikipedi "Hür Dava Partisi" | En. Vikipedi: 2/4 ad geçiyor |
+| `vatan` | Vatan P. | Tr. Vikipedi "Vatan Partisi (2015)" | En. Vikipedi: 1/1 ad geçiyor |
+| `memleket` | Memleket P. | Tr. Vikipedi "Memleket Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `tdp` | TDP | Tr. Vikipedi "Türkiye Değişim Partisi" | — |
+| `yeniparti` | Yeni Parti | Tr. Vikipedi "Yeni Parti (2026)" | — |
+| `yrp` | YRP | Tr. Vikipedi "Yeniden Refah Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `gelecek` | Gelecek P. | Tr. Vikipedi "Gelecek Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `deva` | DEVA | Tr. Vikipedi "Demokrasi ve Atılım Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `yeniyol` | Yeni Yol | Tr. Vikipedi "Yeni Yol" | — |
+| `iyi` | İYİ Parti | Tr. Vikipedi "İYİ Parti" | En. Vikipedi: 2/2 ad geçiyor |
+| `zafer` | Zafer P. | Tr. Vikipedi "Zafer Partisi" | En. Vikipedi: 1/1 ad geçiyor |
+| `anahtar` | A Parti | Tr. Vikipedi "Anahtar Parti" | — |
+| `dem` | DEM Parti | Tr. Vikipedi "Halkların Eşitlik ve Demokrasi Partisi" | — |
+| `tip17` | TİP | Tr. Vikipedi "Türkiye İşçi Partisi (2017)" | — |
+| `tukp` | TUKP | Tr. Vikipedi "Türkiye Ulusal Kadınlar Partisi" | — |
+| `tsip74` | TSİP | Tr. Vikipedi "Türkiye Sosyalist İşçi Partisi" | — |
+| `sdp75` | SDP | Tr. Vikipedi "Sosyalist Devrim Partisi" | — |
+| `idp` | IDP | Tr. Vikipedi "Islahatçı Demokrasi Partisi" | — |
+| `mp92` | MP | Tr. Vikipedi "Millet Partisi (1992)" | — |
+| `sbp91` | SBP | Tr. Vikipedi "Sosyalist Birlik Partisi (Türkiye)" | — |
+| `ydp` | YDP | Tr. Vikipedi "Yeniden Doğuş Partisi (Türkiye)" | — |
+| `sip93` | SİP | Tr. Vikipedi "Sosyalist İktidar Partisi" | — |
+| `baris96` | BP | Tr. Vikipedi "Barış Partisi" | — |
+| `dbp96` | DBP | Tr. Vikipedi "Demokrasi ve Barış Partisi" | — |
+| `depar` | DEPAR | Tr. Vikipedi "Değişen Türkiye Partisi" | — |
+| `genc` | Genç Parti | Tr. Vikipedi "Genç Parti" | En. Vikipedi: 3/3 ad geçiyor |
+| `shp02` | SHP | Tr. Vikipedi "Sosyaldemokrat Halk Partisi" | En. Vikipedi: 2/3 ad geçiyor |
+| `btp` | BTP | Tr. Vikipedi "Bağımsız Türkiye Partisi" | En. Vikipedi: 5/6 ad geçiyor |
+| `tkp01` | TKP | Tr. Vikipedi "Türkiye Komünist Partisi (2001)" | En. Vikipedi: 3/3 ad geçiyor |
+| `hakpar` | HAK-PAR | Tr. Vikipedi "Hak ve Özgürlükler Partisi" | En. Vikipedi: 8/8 ad geçiyor |
+| `edp` | EDP | Tr. Vikipedi "Eşitlik ve Demokrasi Partisi" | — |
+| `solparti` | SOL Parti | Tr. Vikipedi "Sol Parti (Türkiye)" | En. Vikipedi: 0/0 ad geçiyor |
+| `vp54` | VP | Tr. Vikipedi "Vatan Partisi (1954)" | — |
+| `turkparti` | TURK PARTİ | Tr. Vikipedi "Toplumsal Uzlaşma Reform ve Kalkınma Partisi" | — |
+| `hkp` | HKP | Tr. Vikipedi "Halkın Kurtuluş Partisi" | — |

@@ -299,3 +299,22 @@ test("hükümet şeridi: yaygın adı numaranın yanında, öne çıkan hüküme
   assert.match(k, /class="s-serit"/);
   assert.match(k, /A&lt;B/);
 });
+
+test("genel başkanlar: yıl aralığı, görevde, bilinmeyen yıl, not ve eş başkanlık başlığı", () => {
+  const GB = {
+    a: [{ ad: "Birinci", bas: "1950", bit: "1960" }, { ad: "İkinci", bas: "1960", bit: "1960" },
+      { ad: "Üçüncü", bas: null, bit: null }, { ad: "Dördüncü <x>", bas: "1970", bit: null, gorevde: true, not: "vekil dönemi" }],
+    b: [{ ad: "X ve Y", bas: "2012", bit: "2013" }],
+    c: [{ ad: "Yarım", bas: "1966", bit: null }]
+  };
+  const h = M.genelBaskanlarHTML("a", GB);
+  assert.match(h, /Genel başkanlar/);
+  assert.match(h, /<b>Birinci<\/b><span>1950 – 1960<\/span>/);
+  assert.match(h, /<b>İkinci<\/b><span>1960<\/span>/);
+  assert.match(h, /<b>Üçüncü<\/b><span><\/span>/);
+  assert.match(h, /Dördüncü &lt;x&gt;<\/b><span>1970 – görevde<em class="p-bnot">vekil dönemi<\/em>/);
+  assert.match(M.genelBaskanlarHTML("b", GB), /Eş genel başkanlar/);
+  assert.match(M.genelBaskanlarHTML("c", GB), /1966 – \?/);
+  assert.equal(M.genelBaskanlarHTML("yok", GB), "");
+  assert.equal(M.genelBaskanlarHTML("a", undefined), "");
+});

@@ -333,6 +333,8 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
 - **İstenmiyor (bir daha önerme):** tek partinin il il oy oranı haritası, iki seçim arası değişim haritası, veri
   indirme; kapatılan partiler zaman çizelgesi, seçim kuralları (baraj, sistem, sandalye) zaman çizelgesi, ara seçim haritası.
 - **Genel denetim:** her şey bittikten sonra yapılacak; bitince bu kalem kapatılacak.
+- **Durum (30 Eylül):** 2017 referandum haritası eklendi; genel başkanlar eklendi (`veri/genel-baskanlar.js`,
+  90 parti, doğrulayıcıda `dogrulaBaskanlar`). Sırada: genel denetim.
 
 ---
 

@@ -138,7 +138,7 @@
   </div>
 
   <div class="araclar">
-    <input id="ara" class="ara-kutu" type="search" placeholder="Parti ara… (ör. AKP, Demokrat)" autocomplete="off" aria-label="Parti ara">
+    <input id="ara" class="ara-kutu" type="search" placeholder="Parti ya da genel başkan ara… (ör. AKP, Demirel)" autocomplete="off" aria-label="Parti ya da genel başkan ara">
     <div class="yil-filtre">
       <span>yıl</span>
       <input id="yilKaydirici" type="range" step="1" aria-label="Yıl filtresi">
@@ -174,6 +174,7 @@
 
 <script src="veri/partiler.js"></script>
 <script src="veri/sandik.js"></script>
+<script src="veri/genel-baskanlar.js"></script>
 <script src="veri/il-sonuclari.js"></script>
 <script src="ortak.js"></script>
 <script src="sandik-mantik.js"></script>
@@ -301,7 +302,8 @@
     }
     if(arama){
       const q=arama.toLocaleLowerCase("tr");
-      const hedef=(n.kisa+" "+n.ad).toLocaleLowerCase("tr");
+      const gb=(window.GENEL_BASKANLAR||{})[n.id]||[];
+      const hedef=(n.kisa+" "+n.ad+" "+gb.map(x=>x.ad).join(" ")).toLocaleLowerCase("tr");
       if(hedef.indexOf(q)===-1) return false;
     }
     return true;
@@ -399,6 +401,7 @@
         ' · '+AILE[n.aile].ad+'</div>'+
       (b.k?'<div class="p-etiket">Kurucu</div><div class="p-kurucu">'+b.k+'</div>':'')+
       (b.o?'<div class="p-etiket">Özet</div><div class="p-ozet">'+b.o+'</div>':'')+
+      SM.genelBaskanlarHTML(id, window.GENEL_BASKANLAR)+
       (n.sembol?'<div class="p-etiket">Sembol</div><div class="p-sembol">'+n.sembol+'</div>':'')+
       (oncul.length?'<div class="p-etiket">Nereden geldi</div><ul>'+satirlar(oncul)+'</ul>':'')+
       (ardil.length?'<div class="p-etiket">Nereye gitti</div><ul>'+satirlar(ardil)+'</ul>':'');
