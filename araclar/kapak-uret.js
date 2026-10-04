@@ -45,7 +45,7 @@ const KARTLAR = [
       .sag::before{content:"";position:absolute;inset:0;${k.harita ? "display:none;" : ""}background:linear-gradient(90deg,rgba(216,218,207,.85),rgba(216,218,207,0) 22%)}
     </style></head><body><div class="k"><div class="sol"><div class="ust">${k.ust}</div><h1>${k.baslik}</h1><p>${k.alt}</p>
       <div class="serit">${RENK.map(r => `<i style="background:${r}"></i>`).join("")}</div>
-      <div class="alan">emrebiltekin.me/turkiye_siyasi_partiler_soyagaci</div></div><div class="sag"></div></div></body></html>`;
+      <div class="alan">emrebiltekin.me/soyagaci</div></div><div class="sag"></div></div></body></html>`;
     const h = path.join(GECICI, k.ad + ".html"); fs.writeFileSync(h, html);
     await c.goto("file://" + h); await c.waitForTimeout(500);
     await c.screenshot({ path: path.join(KOK, "paylasim", "kapak-" + k.ad + ".png") });

@@ -530,3 +530,8 @@ Yeniden incelemeler: "Yalnızca bu aralığı yeniden incele (`BASE..HEAD`). Pak
 - **Kullanıcı Türkçe konuşuyor ve teknik olmayan bir dil istiyor**; gerçekten kendisinin
   vereceği kararlar dışında soru sorulmasını istemiyor ("bütün dönemleri hiç ara vermeden
   tamamla artık").
+
+- **4 Ekim 2026 — adres değişikliği (kullanıcı kararı):** adres çok uzun olduğu için GitHub deposunun adı
+  `turkiye_siyasi_partiler_soyagaci` → `soyagaci` yapıldı; yeni adres **https://emrebiltekin.me/soyagaci/**.
+  Kullanıcı eski adresin çalışmaz hâle geleceğini kabul ederek bu seçeneği seçti (alt alan adı ve yeni alan adı
+  seçenekleri de sunulmuştu). Sayfalardaki `og:url`, `og:image`, `canonical` ve kapak görsellerindeki adres güncellendi.
