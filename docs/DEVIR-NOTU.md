@@ -336,6 +336,13 @@ Commit mesajlarının sonunda: `Co-Authored-By: Claude Opus 5 <noreply@anthropic
 - **Durum (30 Eylül):** 2017 referandum haritası eklendi; genel başkanlar eklendi (`veri/genel-baskanlar.js`,
   91 parti, doğrulayıcıda `dogrulaBaskanlar`). **Genel denetim 30 Eylül'de yapıldı ve kapatıldı** (bkz. kaynak
   defteri "Genel denetim"); açık iş kalmadı.
+- **4 Ekim 2026 — son iş ve kapanış:** paylaşım görünümü eklendi (her sayfada `og:*`, `twitter:*`, `canonical`,
+  site simgesi `paylasim/simge.svg` + `simge-180.png`, `theme-color`; görseller `paylasim/kapak-*.png`, 1200×630).
+  Görsellerdeki sayılar (parti, seçim, hükümet, harita) veriden okunur; veri değişirse
+  `PW_CHROMIUM=/opt/pw-browsers/chromium NODE_PATH=$(npm root -g) node araclar/kapak-uret.js` ile yeniden üretilir.
+  Kullanıcı: "3'ü yapalım ve bu projeyi bitirelim" → **proje kullanıcı kararıyla tamamlandı.** 30 Eylül'de
+  önerilen diğer işler (siyasetçinin izi, güncellik taraması, erişilebilirlik, basılabilir poster, meclis
+  sandalye değişimi, İngilizce sürüm) yapılmadı; kullanıcı yeniden açmadıkça önerilmez.
 
 ---
 
